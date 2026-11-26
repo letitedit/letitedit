@@ -1,0 +1,1016 @@
+{
+  "format": "letitedit-look-settings/1",
+  "id": "pack-clean-explainer",
+  "defaults_are": "taste",
+  "share": false,
+  "values": {
+    "format": "letitedit-style/3",
+    "name": "Clean Explainer",
+    "description": "A 16:9 YouTube video that teaches one thing well; every graphic earns its place by making something clearer.",
+    "colors": {
+      "primary": "#1B1F24",
+      "secondary": "#F4A261",
+      "accent": "#2A9D8F",
+      "dark": "#1B1F24",
+      "light": "#FFFFFF",
+      "paper": "#F5F4EF"
+    },
+    "fonts": {
+      "heading": {
+        "family": "Plus Jakarta Sans",
+        "weight": 800
+      },
+      "body": {
+        "family": "Inter",
+        "weight": 500
+      },
+      "captions": {
+        "family": "Inter",
+        "weight": 600
+      }
+    },
+    "captions": {
+      "font": "captions",
+      "size": 44,
+      "fill": "light",
+      "outline": null,
+      "shadow": null,
+      "background": "#000000A6",
+      "position": "bottom",
+      "margin": 0.06,
+      "max_chars": 42,
+      "max_lines": 2,
+      "case": "as_spoken"
+    },
+    "text": {
+      "font": "heading",
+      "size": 64,
+      "fill": "light",
+      "outline": {
+        "color": "dark",
+        "width": 4
+      }
+    },
+    "graphics": {
+      "title_card": {
+        "background": "dark",
+        "font": "heading",
+        "subtitle_font": "body",
+        "size": 110,
+        "subtitle_size": 44,
+        "fill": "light",
+        "subtitle_fill": "secondary",
+        "accent": "accent"
+      },
+      "chapter_card": {
+        "font": "heading",
+        "number_size": 120,
+        "size": 70,
+        "kicker_size": 30,
+        "fill": "light",
+        "accent": "secondary",
+        "band": true,
+        "band_color": "dark",
+        "band_opacity": 0.62,
+        "outline": null,
+        "outline_width": 0
+      },
+      "lower_third": {
+        "font": "heading",
+        "subtitle_font": "body",
+        "size": 52,
+        "subtitle_size": 34,
+        "fill": "light",
+        "subtitle_fill": "secondary",
+        "panel": "dark",
+        "panel_opacity": 0.86,
+        "accent": "accent",
+        "margin_y": 0.12
+      },
+      "callout": {
+        "font": "body",
+        "size": 40,
+        "fill": "dark",
+        "label": "paper",
+        "line": "secondary",
+        "ring": "secondary",
+        "distance": 0.2
+      },
+      "big_number": {
+        "font": "heading",
+        "size": 150,
+        "label_font": "body",
+        "label_size": 44,
+        "fill": "secondary",
+        "label_fill": "light",
+        "outline": "dark",
+        "outline_width": 4
+      }
+    },
+    "music": {
+      "zones": {
+        "talk": -28.0,
+        "montage": -12.0,
+        "quiet": -30.0,
+        "swell": -3.0,
+        "end": -8.0
+      },
+      "duck_under_speech": true,
+      "merge_gap": 4.0,
+      "attack": 0.3,
+      "release": 0.9,
+      "crossfade": 3.0,
+      "fade_in": 1.5,
+      "fade_out": 3.0,
+      "dialogue_lufs": null,
+      "sources": [],
+      "notes": "Light, without lyrics or busy melody; up in the intro, between chapters and on the result; out (or at -28 dB) under steps.",
+      "likes": [],
+      "avoid": [],
+      "theme": null
+    },
+    "sfx": {
+      "gain_db": -20.0,
+      "map": {
+        "chime": "assets/ding_confirm_04.mp3",
+        "swish": "assets/whoosh_fast_02.mp3",
+        "paper": "assets/paper.wav"
+      },
+      "events": {
+        "text": "paper",
+        "transition": "swish",
+        "reveal": "chime"
+      }
+    },
+    "editing": {
+      "max_pause": 0.45,
+      "pad_in": 0.1,
+      "pad_out": 0.25,
+      "blur_pad": true,
+      "transitions": "cut",
+      "pace": "medium",
+      "intro": null,
+      "outro": null
+    },
+    "export": {
+      "preset": "high_quality_h264",
+      "loudness": -14.0
+    },
+    "look": {
+      "about": "Clean and true to life - colours as they are, a touch of contrast; shots matched to each other.",
+      "effects": [
+        {
+          "filter": "hue_lightness_saturation",
+          "params": {
+            "av.s": 1.03
+          }
+        }
+      ]
+    },
+    "taste": "",
+    "label": "Clean explainer",
+    "summary": "Calm, clear teaching - chapter cards, labels that point at things, one idea at a time, music only between parts.",
+    "kind": "long",
+    "tags": [
+      "explainer",
+      "educational",
+      "tutorial",
+      "how-to",
+      "long form",
+      "chapters",
+      "clean",
+      "youtube"
+    ],
+    "preview": "preview.jpg",
+    "recipe": "recipe.md",
+    "credits": [
+      {
+        "file": "assets/ding_confirm_04.mp3",
+        "source": "Kenney.nl: Kenney interface-sounds: Audio\\confirmation_004.ogg (https://kenney.nl/assets/interface-sounds); copy of ding_confirm_04.mp3 from the local sound library (04 Dings & Sparkles)",
+        "licence": "CC0 1.0 (public domain)"
+      },
+      {
+        "file": "assets/whoosh_fast_02.mp3",
+        "source": "Freesound.org: swosh-22.flac by qubodup (freesound #60009) (https://freesound.org/people/qubodup/sounds/60009/); copy of whoosh_fast_02.mp3 from the local sound library (08 Whooshes & Transitions)",
+        "licence": "CC0 1.0 (Creative Commons 0)"
+      },
+      {
+        "file": "assets/paper.wav",
+        "source": "synthesised by tools\\styles\\sounds.py (paper)",
+        "licence": "letitedit's own (generated)"
+      },
+      {
+        "file": "preview.jpg",
+        "source": "Original preview imagery; hands, objects, places and titles only",
+        "licence": "Original letitedit footage: hands, objects, places and titles only; no faces"
+      }
+    ],
+    "effects": {
+      "chapter": {
+        "kind": "graphic",
+        "about": "A chapter card (number and name on a band) over the first shot of each part.",
+        "template": "chapter_card",
+        "len": 3.0,
+        "sfx": "swish",
+        "rules": {
+          "triggers": [
+            "topic_change"
+          ],
+          "density": {
+            "per_min": 3,
+            "min_gap_s": 20.0
+          },
+          "duration_s": [
+            2.5,
+            4.0
+          ],
+          "when": "The start of each part; three to five parts [CLU], named like the chapter markers (first at 0:00, each at least 10 s [HED, YT]; in a short video parts of 20-30 s are fine). Params number, title."
+        }
+      },
+      "label": {
+        "kind": "popup",
+        "about": "A short label naming what is on screen (six words at most, sentence case) [CLU].",
+        "size": 0.32,
+        "position": "upper_left",
+        "in": "fade",
+        "out": "fade",
+        "in_s": 0.2,
+        "out_s": 0.2,
+        "hold_s": 2.4,
+        "font": "heading",
+        "fill": "dark",
+        "stroke_width": 0,
+        "outline": 14,
+        "outline_color": "paper",
+        "shadow": true,
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "mention",
+            "list_item"
+          ],
+          "density": {
+            "per_min": 4,
+            "min_gap_s": 8.0
+          },
+          "duration_s": [
+            1.5,
+            3.5
+          ],
+          "never": [
+            "overlapping"
+          ],
+          "when": "A part, a tool or a value the viewer must recognise, 250-400 ms after it appears [CLU]; on screen 1.5-3 s [OVS]. Give asset {text}; exact values as recorded."
+        }
+      },
+      "point_at": {
+        "kind": "graphic",
+        "about": "A ring and a line pointing at a fixed spot in the shot, with its label.",
+        "template": "callout",
+        "len": 3.0,
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "mention"
+          ],
+          "density": {
+            "per_min": 3,
+            "min_gap_s": 10.0
+          },
+          "duration_s": [
+            2.0,
+            4.0
+          ],
+          "when": "The exact part being talked about, when it holds still; params text, target_x, target_y. A moving part - letitedit_annotate (it tracks). One pointer at a time [modes]."
+        }
+      },
+      "step_label": {
+        "kind": "popup",
+        "about": "\"Step 2 of 4: tighten the set screw\" in the top-left while the step plays.",
+        "size": 0.42,
+        "position": [
+          0.25,
+          0.2
+        ],
+        "in": "slide_right",
+        "out": "fade",
+        "in_s": 0.3,
+        "out_s": 0.25,
+        "hold_s": 4.0,
+        "font": "heading",
+        "fill": "light",
+        "stroke": "dark",
+        "stroke_width": 6,
+        "shadow": true,
+        "sfx": "paper",
+        "rules": {
+          "triggers": [
+            "list_item"
+          ],
+          "density": {
+            "per_min": 4,
+            "min_gap_s": 10.0
+          },
+          "duration_s": [
+            3.0,
+            10.0
+          ],
+          "when": "Each step's spoken start, worded like the chapter, numbered as promised [modes]; within a second of it. A short step may follow 10 s after the one before."
+        }
+      },
+      "key_point": {
+        "kind": "text_pop",
+        "about": "The one sentence to remember, in a few words, centred, with a soft chime.",
+        "size": 0.62,
+        "font": "heading",
+        "fill": "light",
+        "stroke": "dark",
+        "stroke_width": 8,
+        "tilt": 0,
+        "in": "fade",
+        "out": "fade",
+        "hold_s": 2.2,
+        "sfx": "chime",
+        "rules": {
+          "triggers": [
+            "emphasis",
+            "reveal"
+          ],
+          "density": {
+            "per_min": 1,
+            "min_gap_s": 45.0
+          },
+          "duration_s": [
+            1.8,
+            3.5
+          ],
+          "when": "The takeaway of a part, at most once per part; exactly what was said, shortened, never a new claim."
+        }
+      },
+      "gentle_push": {
+        "kind": "zoom_punch",
+        "about": "A slow, small push-in (106%) as an attention cue [HED 3.5%, CLU 5-10%].",
+        "scale": 1.06,
+        "ramp_s": 0.6,
+        "rules": {
+          "triggers": [
+            "emphasis",
+            "question",
+            "topic_change"
+          ],
+          "density": {
+            "per_min": 3,
+            "min_gap_s": 15.0
+          },
+          "when": "About every 25-45 s on a long talking stretch [HED], on the line that matters; never during a step the viewer must copy [modes]."
+        }
+      },
+      "fact_number": {
+        "kind": "graphic",
+        "about": "A number that matters counting up with its label.",
+        "template": "big_number",
+        "len": 3.0,
+        "sfx": "chime",
+        "rules": {
+          "triggers": [
+            "number"
+          ],
+          "density": {
+            "per_min": 1,
+            "min_gap_s": 30.0
+          },
+          "duration_s": [
+            2.0,
+            4.0
+          ],
+          "when": "A figure the explanation turns on (a cost, a size, a time); params value, prefix, suffix, label."
+        }
+      },
+      "section_dissolve": {
+        "kind": "transition",
+        "about": "A short dissolve between parts (0.3 s) [CLU].",
+        "transition": {
+          "type": "dissolve",
+          "len": 0.3
+        },
+        "rules": {
+          "triggers": [
+            "topic_change"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 30.0
+          },
+          "when": "Between chapters only; cuts everywhere else."
+        }
+      },
+      "cutaway": {
+        "kind": "broll",
+        "about": "A shot of what is being explained, the voice carrying on.",
+        "fit": "blur_pad",
+        "len": 3.0,
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "mention",
+            "list_item"
+          ],
+          "density": {
+            "per_min": 4,
+            "min_gap_s": 8.0
+          },
+          "duration_s": [
+            2.0,
+            6.0
+          ],
+          "when": "Proof and orientation shots; never over a step being copied, never over the warning or the why [modes]."
+        }
+      }
+    },
+    "fx": {
+      "track": "Effects",
+      "sfx_track": "Effect sounds",
+      "broll_track": "B-roll",
+      "density": {
+        "per_10s": 2,
+        "per_min": 8,
+        "min_gap_s": 3.0
+      },
+      "safe_zone": null,
+      "never": [
+        "overlapping"
+      ],
+      "rhythm": "Something changes every 10-20 s at the start and every 25-40 s later; labels where they make things clearer."
+    },
+    "popups": {
+      "track": null,
+      "sfx_track": null,
+      "min_gap_s": 4.0,
+      "max_total": null,
+      "entries": []
+    },
+    "hook": {
+      "max_s": 8.0,
+      "approaches": [
+        "result_first",
+        "question",
+        "stakes",
+        "number"
+      ],
+      "text": {
+        "max_words": 8,
+        "case": "as_said",
+        "position": "bottom",
+        "size": 0.5,
+        "fill": "light",
+        "stroke": "dark",
+        "stroke_width": 6,
+        "font": "heading"
+      },
+      "rules": "The outcome in the first 0-5 s, then the promise and the shape (\"in four steps\") [CLU, JH]. No channel intro, no \"in this video\" [JH]. A cold open may show the result working for a few seconds before the title.",
+      "avoid": [
+        "greetings",
+        "channel intros",
+        "a long title sequence"
+      ]
+    },
+    "broll": {
+      "amount": "some",
+      "kinds": [],
+      "favorites": "",
+      "notes": ""
+    },
+    "shots": {
+      "framing": "medium",
+      "camera": "handheld",
+      "punch_ins": "some",
+      "notes": ""
+    },
+    "signature": {
+      "touches": []
+    },
+    "measured": {},
+    "provenance": {
+      "made_by": "letitedit style library, wave 1",
+      "date": "2026-10-29",
+      "measured": "none yet (no reference videos in style-references)",
+      "sources": [
+        {
+          "url": "https://air.io/en/youtube-hacks/advanced-retention-editing-cutting-patterns-that-keep-viewers-past-minute-8",
+          "title": "AIR Media-Tech retention editing",
+          "used_for": "how often the picture changes in long-form, music levels, restraint with transitions",
+          "licence": "none found (numbers only)"
+        },
+        {
+          "url": "https://www.clueso.io/blog/how-to-make-tasteful-screen-capture-videos",
+          "title": "Clueso screen-capture playbook",
+          "used_for": "label length, push-in size, text sizes, chapters, transitions, hook",
+          "licence": "none found (numbers only)"
+        },
+        {
+          "url": "https://github.com/pycodebr/heditor/blob/main/skills/heditor/references/long-form.md",
+          "title": "Heditor long-form guide",
+          "used_for": "caption line length, pause trimming, attention-cue spacing, chapters",
+          "licence": "MIT, Copyright (c) 2026 PycodeBR (Felipe Azambuja) (consulted only; no text adapted)"
+        }
+      ],
+      "notes": "The tutorial rules in letitedit-modes (tutorial-explainer) come first; this style sets the look and the rhythm. Tags in ..\\SOURCES.md."
+    }
+  },
+  "asset_root": "resources",
+  "files": {
+    "assets/ding_confirm_04.mp3": "resources/fc980bfe2960074bfd0111dd.mp3",
+    "assets/paper.wav": "resources/38329503578e5e93e92a58dd.wav",
+    "assets/whoosh_fast_02.mp3": "resources/b28911d6f30c5f10b353b924.mp3",
+    "preview.jpg": "resources/4a0a6436f61d836cb7d83510.jpg",
+    "recipe.md": "recipe.md"
+  },
+  "links": {
+    "recipe": "recipe.md",
+    "preview": "preview.jpg"
+  },
+  "legacy": {
+    "format": "letitedit-style/3",
+    "source": "style.yaml",
+    "pack": "clean-explainer",
+    "data": {
+      "format": "letitedit-style/3",
+      "name": "Clean Explainer",
+      "label": "Clean explainer",
+      "summary": "Calm, clear teaching - chapter cards, labels that point at things, one idea at a time, music only between parts.",
+      "kind": "long",
+      "tags": [
+        "explainer",
+        "educational",
+        "tutorial",
+        "how-to",
+        "long form",
+        "chapters",
+        "clean",
+        "youtube"
+      ],
+      "recipe": "recipe.md",
+      "preview": "preview.jpg",
+      "description": "A 16:9 YouTube video that teaches one thing well; every graphic earns its place by making something clearer.",
+      "colors": {
+        "primary": "#1B1F24",
+        "secondary": "#F4A261",
+        "accent": "#2A9D8F",
+        "paper": "#F5F4EF",
+        "dark": "#1B1F24",
+        "light": "#FFFFFF"
+      },
+      "fonts": {
+        "heading": {
+          "family": "Plus Jakarta Sans",
+          "weight": 800
+        },
+        "body": {
+          "family": "Inter",
+          "weight": 500
+        },
+        "captions": {
+          "family": "Inter",
+          "weight": 600
+        }
+      },
+      "graphics": {
+        "title_card": {
+          "background": "dark",
+          "font": "heading",
+          "subtitle_font": "body",
+          "size": 110,
+          "subtitle_size": 44,
+          "fill": "light",
+          "subtitle_fill": "secondary",
+          "accent": "accent"
+        },
+        "chapter_card": {
+          "font": "heading",
+          "number_size": 120,
+          "size": 70,
+          "kicker_size": 30,
+          "fill": "light",
+          "accent": "secondary",
+          "band": true,
+          "band_color": "dark",
+          "band_opacity": 0.62,
+          "outline": null,
+          "outline_width": 0
+        },
+        "lower_third": {
+          "font": "heading",
+          "subtitle_font": "body",
+          "size": 52,
+          "subtitle_size": 34,
+          "fill": "light",
+          "subtitle_fill": "secondary",
+          "panel": "dark",
+          "panel_opacity": 0.86,
+          "accent": "accent",
+          "margin_y": 0.12
+        },
+        "callout": {
+          "font": "body",
+          "size": 40,
+          "fill": "dark",
+          "label": "paper",
+          "line": "secondary",
+          "ring": "secondary",
+          "distance": 0.2
+        },
+        "big_number": {
+          "font": "heading",
+          "size": 150,
+          "label_font": "body",
+          "label_size": 44,
+          "fill": "secondary",
+          "label_fill": "light",
+          "outline": "dark",
+          "outline_width": 4
+        }
+      },
+      "captions": {
+        "font": "captions",
+        "size": 44,
+        "fill": "light",
+        "outline": null,
+        "background": "#000000A6",
+        "position": "bottom",
+        "margin": 0.06,
+        "max_chars": 42,
+        "max_lines": 2,
+        "case": "as_spoken"
+      },
+      "text": {
+        "font": "heading",
+        "size": 64,
+        "fill": "light",
+        "outline": {
+          "color": "dark",
+          "width": 4
+        }
+      },
+      "editing": {
+        "max_pause": 0.45,
+        "pad_in": 0.1,
+        "pad_out": 0.25,
+        "blur_pad": true,
+        "transitions": "cut",
+        "pace": "medium"
+      },
+      "music": {
+        "zones": {
+          "talk": -28.0,
+          "montage": -12.0,
+          "quiet": -30.0,
+          "end": -8.0
+        },
+        "notes": "Light, without lyrics or busy melody; up in the intro, between chapters and on the result; out (or at -28 dB) under steps."
+      },
+      "export": {
+        "preset": "high_quality_h264",
+        "loudness": -14.0
+      },
+      "look": {
+        "about": "Clean and true to life - colours as they are, a touch of contrast; shots matched to each other.",
+        "effects": [
+          {
+            "filter": "hue_lightness_saturation",
+            "params": {
+              "av.s": 1.03
+            }
+          }
+        ]
+      },
+      "sfx": {
+        "gain_db": -20.0,
+        "map": {
+          "chime": "assets/ding_confirm_04.mp3",
+          "swish": "assets/whoosh_fast_02.mp3",
+          "paper": "assets/paper.wav"
+        },
+        "events": {
+          "text": "paper",
+          "transition": "swish",
+          "reveal": "chime"
+        }
+      },
+      "fx": {
+        "track": "Effects",
+        "sfx_track": "Effect sounds",
+        "broll_track": "B-roll",
+        "density": {
+          "per_10s": 2,
+          "per_min": 8,
+          "min_gap_s": 3.0
+        },
+        "safe_zone": null,
+        "never": [
+          "overlapping"
+        ],
+        "rhythm": "Something changes every 10-20 s at the start and every 25-40 s later; labels where they make things clearer."
+      },
+      "effects": {
+        "chapter": {
+          "kind": "graphic",
+          "about": "A chapter card (number and name on a band) over the first shot of each part.",
+          "template": "chapter_card",
+          "len": 3.0,
+          "sfx": "swish",
+          "rules": {
+            "triggers": [
+              "topic_change"
+            ],
+            "density": {
+              "per_min": 3,
+              "min_gap_s": 20.0
+            },
+            "duration_s": [
+              2.5,
+              4.0
+            ],
+            "when": "The start of each part; three to five parts [CLU], named like the chapter markers (first at 0:00, each at least 10 s [HED, YT]; in a short video parts of 20-30 s are fine). Params number, title."
+          }
+        },
+        "label": {
+          "kind": "popup",
+          "about": "A short label naming what is on screen (six words at most, sentence case) [CLU].",
+          "size": 0.32,
+          "position": "upper_left",
+          "in": "fade",
+          "out": "fade",
+          "in_s": 0.2,
+          "out_s": 0.2,
+          "hold_s": 2.4,
+          "font": "heading",
+          "fill": "dark",
+          "stroke_width": 0,
+          "outline": 14,
+          "outline_color": "paper",
+          "shadow": true,
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "mention",
+              "list_item"
+            ],
+            "density": {
+              "per_min": 4,
+              "min_gap_s": 8.0
+            },
+            "duration_s": [
+              1.5,
+              3.5
+            ],
+            "never": [
+              "overlapping"
+            ],
+            "when": "A part, a tool or a value the viewer must recognise, 250-400 ms after it appears [CLU]; on screen 1.5-3 s [OVS]. Give asset {text}; exact values as recorded."
+          }
+        },
+        "point_at": {
+          "kind": "graphic",
+          "about": "A ring and a line pointing at a fixed spot in the shot, with its label.",
+          "template": "callout",
+          "len": 3.0,
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "mention"
+            ],
+            "density": {
+              "per_min": 3,
+              "min_gap_s": 10.0
+            },
+            "duration_s": [
+              2.0,
+              4.0
+            ],
+            "when": "The exact part being talked about, when it holds still; params text, target_x, target_y. A moving part - letitedit_annotate (it tracks). One pointer at a time [modes]."
+          }
+        },
+        "step_label": {
+          "kind": "popup",
+          "about": "\"Step 2 of 4: tighten the set screw\" in the top-left while the step plays.",
+          "size": 0.42,
+          "position": [
+            0.25,
+            0.2
+          ],
+          "in": "slide_right",
+          "out": "fade",
+          "in_s": 0.3,
+          "out_s": 0.25,
+          "hold_s": 4.0,
+          "font": "heading",
+          "fill": "light",
+          "stroke": "dark",
+          "stroke_width": 6,
+          "shadow": true,
+          "sfx": "paper",
+          "rules": {
+            "triggers": [
+              "list_item"
+            ],
+            "density": {
+              "per_min": 4,
+              "min_gap_s": 10.0
+            },
+            "duration_s": [
+              3.0,
+              10.0
+            ],
+            "when": "Each step's spoken start, worded like the chapter, numbered as promised [modes]; within a second of it. A short step may follow 10 s after the one before."
+          }
+        },
+        "key_point": {
+          "kind": "text_pop",
+          "about": "The one sentence to remember, in a few words, centred, with a soft chime.",
+          "size": 0.62,
+          "font": "heading",
+          "fill": "light",
+          "stroke": "dark",
+          "stroke_width": 8,
+          "tilt": 0,
+          "in": "fade",
+          "out": "fade",
+          "hold_s": 2.2,
+          "sfx": "chime",
+          "rules": {
+            "triggers": [
+              "emphasis",
+              "reveal"
+            ],
+            "density": {
+              "per_min": 1,
+              "min_gap_s": 45.0
+            },
+            "duration_s": [
+              1.8,
+              3.5
+            ],
+            "when": "The takeaway of a part, at most once per part; exactly what was said, shortened, never a new claim."
+          }
+        },
+        "gentle_push": {
+          "kind": "zoom_punch",
+          "about": "A slow, small push-in (106%) as an attention cue [HED 3.5%, CLU 5-10%].",
+          "scale": 1.06,
+          "ramp_s": 0.6,
+          "rules": {
+            "triggers": [
+              "emphasis",
+              "question",
+              "topic_change"
+            ],
+            "density": {
+              "per_min": 3,
+              "min_gap_s": 15.0
+            },
+            "when": "About every 25-45 s on a long talking stretch [HED], on the line that matters; never during a step the viewer must copy [modes]."
+          }
+        },
+        "fact_number": {
+          "kind": "graphic",
+          "about": "A number that matters counting up with its label.",
+          "template": "big_number",
+          "len": 3.0,
+          "sfx": "chime",
+          "rules": {
+            "triggers": [
+              "number"
+            ],
+            "density": {
+              "per_min": 1,
+              "min_gap_s": 30.0
+            },
+            "duration_s": [
+              2.0,
+              4.0
+            ],
+            "when": "A figure the explanation turns on (a cost, a size, a time); params value, prefix, suffix, label."
+          }
+        },
+        "section_dissolve": {
+          "kind": "transition",
+          "about": "A short dissolve between parts (0.3 s) [CLU].",
+          "transition": {
+            "type": "dissolve",
+            "len": 0.3
+          },
+          "rules": {
+            "triggers": [
+              "topic_change"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 30.0
+            },
+            "when": "Between chapters only; cuts everywhere else."
+          }
+        },
+        "cutaway": {
+          "kind": "broll",
+          "about": "A shot of what is being explained, the voice carrying on.",
+          "fit": "blur_pad",
+          "len": 3.0,
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "mention",
+              "list_item"
+            ],
+            "density": {
+              "per_min": 4,
+              "min_gap_s": 8.0
+            },
+            "duration_s": [
+              2.0,
+              6.0
+            ],
+            "when": "Proof and orientation shots; never over a step being copied, never over the warning or the why [modes]."
+          }
+        }
+      },
+      "popups": {
+        "min_gap_s": 4.0,
+        "entries": []
+      },
+      "hook": {
+        "max_s": 8.0,
+        "approaches": [
+          "result_first",
+          "question",
+          "stakes",
+          "number"
+        ],
+        "text": {
+          "max_words": 8,
+          "case": "as_said",
+          "position": "bottom",
+          "size": 0.5,
+          "fill": "light",
+          "stroke": "dark",
+          "stroke_width": 6,
+          "font": "heading"
+        },
+        "rules": "The outcome in the first 0-5 s, then the promise and the shape (\"in four steps\") [CLU, JH]. No channel intro, no \"in this video\" [JH]. A cold open may show the result working for a few seconds before the title.",
+        "avoid": [
+          "greetings",
+          "channel intros",
+          "a long title sequence"
+        ]
+      },
+      "credits": [
+        {
+          "file": "assets/ding_confirm_04.mp3",
+          "source": "Kenney.nl: Kenney interface-sounds: Audio\\confirmation_004.ogg (https://kenney.nl/assets/interface-sounds); copy of ding_confirm_04.mp3 from the local sound library (04 Dings & Sparkles)",
+          "licence": "CC0 1.0 (public domain)"
+        },
+        {
+          "file": "assets/whoosh_fast_02.mp3",
+          "source": "Freesound.org: swosh-22.flac by qubodup (freesound #60009) (https://freesound.org/people/qubodup/sounds/60009/); copy of whoosh_fast_02.mp3 from the local sound library (08 Whooshes & Transitions)",
+          "licence": "CC0 1.0 (Creative Commons 0)"
+        },
+        {
+          "file": "assets/paper.wav",
+          "source": "synthesised by tools\\styles\\sounds.py (paper)",
+          "licence": "letitedit's own (generated)"
+        },
+        {
+          "file": "preview.jpg",
+          "source": "Original preview imagery; hands, objects, places and titles only",
+          "licence": "Original letitedit footage: hands, objects, places and titles only; no faces"
+        }
+      ],
+      "measured": {},
+      "provenance": {
+        "made_by": "letitedit style library, wave 1",
+        "date": "2026-10-29",
+        "measured": "none yet (no reference videos in style-references)",
+        "sources": [
+          {
+            "url": "https://air.io/en/youtube-hacks/advanced-retention-editing-cutting-patterns-that-keep-viewers-past-minute-8",
+            "title": "AIR Media-Tech retention editing",
+            "used_for": "how often the picture changes in long-form, music levels, restraint with transitions",
+            "licence": "none found (numbers only)"
+          },
+          {
+            "url": "https://www.clueso.io/blog/how-to-make-tasteful-screen-capture-videos",
+            "title": "Clueso screen-capture playbook",
+            "used_for": "label length, push-in size, text sizes, chapters, transitions, hook",
+            "licence": "none found (numbers only)"
+          },
+          {
+            "url": "https://github.com/pycodebr/heditor/blob/main/skills/heditor/references/long-form.md",
+            "title": "Heditor long-form guide",
+            "used_for": "caption line length, pause trimming, attention-cue spacing, chapters",
+            "licence": "MIT, Copyright (c) 2026 PycodeBR (Felipe Azambuja) (consulted only; no text adapted)"
+          }
+        ],
+        "notes": "The tutorial rules in letitedit-modes (tutorial-explainer) come first; this style sets the look and the rhythm. Tags in ..\\SOURCES.md."
+      }
+    }
+  }
+}

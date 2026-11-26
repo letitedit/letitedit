@@ -1,0 +1,287 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>How letitedit works</title><style>
+:root{--background:#0a0a0a;--foreground:#f5f5f5;--muted-foreground:#a3a3a3;--card:#111111;--popover:#1a1a1a;
+--popover-foreground:#f5f5f5;--border:#262626;--chart-1:#346bf1;--chart-2:#2dd4bf;--radius:10px;
+--font-sans:system-ui,'Segoe UI',Arial,sans-serif}
+html{background:var(--background)}body{margin:0 auto;padding:24px 16px;max-width:760px}
+section{margin:0 0 44px}.intro{color:var(--muted-foreground);font-size:13px;margin:0 0 28px}
+*{box-sizing:border-box}body{font-family:var(--font-sans);font-size:14px;line-height:1.4;color:var(--foreground)}
+#d0 .h{font-weight:600;font-size:15px;margin:0 0 2px}
+#d0 .s{color:var(--muted-foreground);font-size:12.5px;margin:0 0 12px}
+#d0 .row{display:grid;grid-template-columns:168px 1fr;gap:10px;align-items:center;height:30px}
+#d0 .lab{font-size:13px;text-align:right}
+#d0 .track{display:flex;align-items:center;gap:8px;height:100%}
+#d0 .bar{height:16px;border-radius:0 4px 4px 0;background:var(--chart-1);min-width:3px}
+#d0 .bar.hi{background:var(--chart-2)}
+#d0 .bar.q{background:var(--muted-foreground);opacity:.55}
+#d0 .val{font-size:13px;font-weight:600;white-space:nowrap}
+#d0 .val span{font-weight:400;color:var(--muted-foreground);font-size:12px}
+#d0 .gap{height:26px}
+#d0 .lt{font-size:13px;font-weight:600;margin:12px 0 5px}
+#d0 .lane{display:flex;gap:5px;align-items:stretch}
+#d0 .n{flex:1;min-width:0;border:1px solid color-mix(in srgb,var(--foreground) 24%,transparent);border-radius:var(--radius);padding:9px 10px;font-size:12.5px;line-height:1.3;display:flex;align-items:center}
+#d0 .lane.new .n{border-color:var(--chart-2);border-width:2px}
+#d0 .ar{align-self:center;color:var(--muted-foreground);font-size:15px}
+#d0 .t{width:70px;flex:none;align-self:center;text-align:right;font-weight:700;font-size:17px;line-height:1.05;white-space:nowrap}
+#d0 .note{font-size:12px;color:var(--muted-foreground);margin-top:4px}
+#d0 #tip{position:fixed;display:none;max-width:260px;padding:6px 9px;border-radius:6px;background:var(--popover);color:var(--popover-foreground);border:1px solid var(--border);font-size:12px;pointer-events:none;z-index:9}
+@media(max-width:560px){#d0 .row{grid-template-columns:118px 1fr}#d0 .lane{flex-direction:column}#d0 .ar{transform:rotate(90deg)}#d0 .t{width:auto;text-align:left}}
+#d1 .h{font-weight:600;font-size:15px;margin:0 0 2px}
+#d1 .s{color:var(--muted-foreground);font-size:12.5px;margin:0 0 10px}
+#d1 .lane{display:flex;gap:5px;align-items:stretch;margin-bottom:12px}
+#d1 .n{flex:1;min-width:0;border:1px solid color-mix(in srgb,var(--foreground) 24%,transparent);border-radius:var(--radius);padding:9px 10px;font-size:12.5px;line-height:1.3}
+#d1 .n b{display:block}
+#d1 .n.hot{border:2px solid var(--chart-3)}
+#d1 .ar{align-self:center;color:var(--muted-foreground);font-size:15px;font-variant-emoji:text}
+#d1 .row{display:grid;grid-template-columns:150px 1fr;gap:10px;align-items:center;min-height:25px}
+#d1 .lab{font-size:12.5px;text-align:right;line-height:1.2}
+#d1 .track{display:flex;align-items:center;gap:8px}
+#d1 .bar{height:15px;border-radius:0 4px 4px 0;background:var(--chart-1);min-width:3px}
+#d1 .bar.was{background:var(--muted-foreground);opacity:.55}
+#d1 .bar.est{background:var(--chart-1);opacity:.55}
+#d1 .val{font-size:12.5px;font-weight:600;white-space:nowrap}
+#d1 .val span{font-weight:400;color:var(--muted-foreground);font-size:12px}
+#d1 .sp{height:10px}
+#d1 .gap{height:24px}
+#d1 .note{font-size:12px;color:var(--muted-foreground);margin-top:8px}
+#d1 .leg{display:flex;gap:14px;font-size:12px;margin:0 0 6px;color:var(--muted-foreground)}
+#d1 .leg i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+@media(max-width:560px){#d1 .lane{flex-direction:column}#d1 .ar{transform:rotate(90deg)}#d1 .row{grid-template-columns:104px 1fr}}
+#d2 .h{font-weight:600;font-size:15px;margin:0 0 2px}
+#d2 .s{color:var(--muted-foreground);font-size:12.5px;margin:0 0 12px}
+#d2 .group{border:1px solid color-mix(in srgb,var(--foreground) 24%,transparent);border-radius:var(--radius);padding:16px}
+#d2 .gt{font-size:13px;font-weight:600;margin-bottom:8px}
+#d2 .gt span{font-weight:400;color:var(--muted-foreground)}
+#d2 .four{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+#d2 .n{border:1px solid color-mix(in srgb,var(--foreground) 18%,transparent);border-radius:var(--radius);padding:9px 10px;font-size:12px;line-height:1.3}
+#d2 .n b{display:block;font-size:12.5px;margin-bottom:3px}
+#d2 .n em{display:block;font-style:normal;color:var(--muted-foreground);font-size:11px;margin-top:4px}
+#d2 .down{text-align:center;color:var(--muted-foreground);font-size:12px;padding:3px 0}
+#d2 .chips{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;font-size:12.5px}
+#d2 .chips div{text-align:center}
+#d2 .chips b{display:block;font-size:14px}
+#d2 .chips span{color:var(--muted-foreground);font-size:12px}
+#d2 .grid{display:grid;grid-template-columns:150px 118px 1fr;font-size:12.5px;line-height:1.3}
+#d2 .grid>div{padding:6px 8px 6px 0;border-top:1px solid color-mix(in srgb,var(--foreground) 14%,transparent)}
+#d2 .grid>.hd{font-weight:600;border-top:0;color:var(--muted-foreground);font-size:12px}
+#d2 .gap{height:24px}
+#d2 .r{display:grid;grid-template-columns:82px 1fr 205px;gap:10px;align-items:center;min-height:38px}
+#d2 .r .m{font-size:12.5px;font-weight:600;line-height:1.15}
+#d2 .r .m span{display:block;font-weight:400;color:var(--muted-foreground);font-size:11.5px}
+#d2 .st{display:flex;gap:2px;align-items:center}
+#d2 .seg{height:18px}
+#d2 .seg:last-of-type{border-radius:0 4px 4px 0}
+#d2 .a{background:var(--chart-1)}
+#d2 .c{background:var(--chart-2)}
+#d2 .st b{font-size:12.5px;margin-left:6px;white-space:nowrap}
+#d2 .r .w{font-size:12px;line-height:1.25;color:var(--muted-foreground)}
+#d2 .leg{display:flex;gap:14px;font-size:12px;margin:0 0 6px;color:var(--muted-foreground)}
+#d2 .leg i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+#d2 .note{font-size:12px;color:var(--muted-foreground);margin-top:6px}
+@media(max-width:560px){#d2 .four,.chips{grid-template-columns:1fr 1fr}#d2 .grid{grid-template-columns:110px 84px 1fr}#d2 .r{grid-template-columns:64px 1fr}#d2 .r .w{grid-column:2}}
+#d3 .h{font-weight:600;font-size:15px;margin:0 0 2px}
+#d3 .s{color:var(--muted-foreground);font-size:12.5px;margin:0 0 10px}
+#d3 .b{border:1px solid color-mix(in srgb,var(--foreground) 24%,transparent);border-radius:var(--radius);padding:12px 16px;font-size:12.5px;line-height:1.32}
+#d3 .b>b{display:block;font-size:13.5px;margin-bottom:2px}
+#d3 .add{background:color-mix(in srgb,var(--chart-1) 15%,transparent);border-color:var(--chart-1)}
+#d3 .stock{background:color-mix(in srgb,var(--foreground) 7%,transparent)}
+#d3 .files{background:transparent}
+#d3 .leg{display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--muted-foreground);margin-bottom:10px}
+#d3 .leg i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:5px;vertical-align:-2px;border:1px solid transparent}
+#d3 .sub{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:8px}
+#d3 .sub div{border:1px solid color-mix(in srgb,var(--chart-1) 55%,transparent);border-radius:calc(var(--radius) - 2px);padding:6px 8px;font-size:12px;line-height:1.25}
+#d3 .lk{display:flex;justify-content:center;gap:36px;color:var(--muted-foreground);font-size:12px;padding:4px 0;flex-wrap:wrap;font-variant-emoji:text}
+#d3 .two{display:grid;grid-template-columns:1fr 1.45fr;gap:8px}
+#d3 .tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+#d3 .tags span{border:1px solid color-mix(in srgb,var(--chart-1) 55%,transparent);border-radius:999px;padding:1px 8px;font-size:11.5px}
+#d3 .gap{height:26px}
+#d3 .flow{display:flex;gap:4px;align-items:stretch}
+#d3 .st{flex:1;min-width:0;border:1px solid var(--chart-1);background:color-mix(in srgb,var(--chart-1) 15%,transparent);border-radius:var(--radius);padding:9px 8px;font-size:11.5px;line-height:1.25}
+#d3 .st b{display:block;font-size:13px;margin-bottom:3px}
+#d3 .st em{display:block;font-style:normal;color:var(--muted-foreground);margin-top:5px;font-size:11px}
+#d3 .ar{align-self:center;color:var(--muted-foreground);font-size:13px}
+#d3 .io{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:6px}
+#d3 .lbl{font-size:12px;font-weight:600;margin-bottom:3px}
+#d3 .tl{font-size:12px;color:var(--muted-foreground);margin-top:10px}
+#d3 .time{display:flex;gap:2px;margin-top:3px;height:20px;font-size:11px}
+#d3 .time div{display:flex;align-items:center;justify-content:center;background:color-mix(in srgb,var(--foreground) 12%,transparent);white-space:nowrap;overflow:hidden}
+#d3 .time div:last-child{border-radius:0 4px 4px 0}
+@media(max-width:560px){#d3 .sub{grid-template-columns:1fr 1fr}#d3 .two,.io{grid-template-columns:1fr}#d3 .flow{flex-direction:column}#d3 .ar{transform:rotate(90deg)}}
+#d4 .h{font-weight:600;font-size:15px;margin:0 0 2px}
+#d4 .s{color:var(--muted-foreground);font-size:12.5px;margin:0 0 10px}
+#d4 .hd,#d4 .t{display:grid;grid-template-columns:150px 16px 1fr 16px 186px;gap:5px;align-items:stretch}
+#d4 .hd{font-size:12px;font-weight:600;color:var(--muted-foreground);margin-bottom:4px}
+#d4 .t{margin-bottom:7px}
+#d4 .x{border:1px solid color-mix(in srgb,var(--foreground) 24%,transparent);border-radius:var(--radius);padding:8px 10px;font-size:12px;line-height:1.28}
+#d4 .m{border-color:var(--chart-1);background:color-mix(in srgb,var(--chart-1) 15%,transparent)}
+#d4 .m b{display:block;font-size:13px}
+#d4 .m small{display:block;font-size:11px;color:var(--muted-foreground);margin-top:2px}
+#d4 .names{display:block;font-size:11.5px;color:var(--muted-foreground);margin-top:3px;line-height:1.3}
+#d4 .ar{align-self:center;color:var(--muted-foreground);font-size:13px;font-variant-emoji:text}
+#d4 .en{font-size:11px;color:var(--muted-foreground);display:block;margin-top:3px}
+@media(max-width:560px){#d4 .hd{display:none}#d4 .t{grid-template-columns:1fr;margin-bottom:14px}#d4 .ar{display:none}}
+#d5 .h{font-weight:600;font-size:15px;margin:0 0 2px}
+#d5 .s{color:var(--muted-foreground);font-size:12.5px;margin:0 0 10px}
+#d5 .leg{display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--muted-foreground);margin-bottom:10px}
+#d5 .leg i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:5px;vertical-align:-2px;border:1px solid transparent}
+#d5 .top,#d5 .rw{display:grid;grid-template-columns:104px 1fr 1fr;gap:6px;align-items:stretch}
+#d5 .top{font-size:13px;font-weight:600;margin-bottom:6px}
+#d5 .top div:first-child{visibility:hidden}
+#d5 .rw{margin-bottom:6px}
+#d5 .l{font-size:12px;font-weight:600;color:var(--muted-foreground);align-self:center;line-height:1.2}
+#d5 .x{border:1px solid color-mix(in srgb,var(--foreground) 24%,transparent);border-radius:var(--radius);padding:9px 12px;font-size:12.5px;line-height:1.3}
+#d5 .st{background:color-mix(in srgb,var(--foreground) 7%,transparent)}
+#d5 .ad{background:color-mix(in srgb,var(--chart-1) 15%,transparent);border-color:var(--chart-1)}
+#d5 .note{font-size:12px;color:var(--muted-foreground);margin-top:8px}
+#d5 .gap{height:22px}
+#d5 .lp{display:flex;align-items:center;gap:4px;flex-wrap:wrap;font-size:12px;margin:0 0 8px}
+#d5 .lp span{border:1px solid color-mix(in srgb,var(--foreground) 24%,transparent);border-radius:var(--radius);padding:6px 8px;line-height:1.2}
+#d5 .lp span.ad{border-color:var(--chart-1)}
+#d5 .lp i{font-style:normal;color:var(--muted-foreground);font-variant-emoji:text}
+#d5 .lp b{width:70px;font-size:12px;color:var(--muted-foreground)}
+#d5 .lt{font-size:13px;font-weight:600;margin-bottom:5px}
+@media(max-width:560px){#d5 .top,.rw{grid-template-columns:1fr 1fr}#d5 .top div:first-child{display:none}#d5 .l{grid-column:1/3;margin-top:6px}}
+</style></head><body>
+<div class="intro">How letitedit works, drawn on 1 Nov 2026 from the code and the real New video run (tests/first-cut-scenes, tests/agent-scene-look). Update it when the system changes.</div>
+<section id="d0">
+<div class="h">Where the 119 minutes went</div><div class="s">The real New video: Claude Opus, quiet PC, measured from the run's own log. Hover for detail.</div>
+<div role="img" aria-label="Word-by-word captions 35 minutes, AI thinking and writing 34, timeline edits 14, full exports 13, reviews 6, looking at the scenes 3, everything else 14">
+<div class="row" data-tip="15 runs of the AI's own caption scripts. About two-thirds of this was the mask refresh shown in the next diagram."><div class="lab">Word-by-word captions</div><div class="track"><div class="bar" style="width:70%"></div><div class="val">35 min</div></div></div>
+<div class="row" data-tip="About 215,000 tokens of writing over 112 replies, including 28,000 characters of scene code."><div class="lab">AI thinking and writing</div><div class="track"><div class="bar" style="width:67.2%"></div><div class="val">34 min</div></div></div>
+<div class="row" data-tip="15 edits. Four ran past 2 minutes, mostly the cut-out and redrawing captions after a re-cut."><div class="lab">Timeline edits</div><div class="track"><div class="bar" style="width:28.7%"></div><div class="val">14 min</div></div></div>
+<div class="row" data-tip="4 full exports, 1.5 to 4 minutes each."><div class="lab">Full exports</div><div class="track"><div class="bar" style="width:24.9%"></div><div class="val">13 min</div></div></div>
+<div class="row" data-tip="4 reviews, 1.3 to 2 minutes each, including the critic."><div class="lab">Reviews</div><div class="track"><div class="bar" style="width:12%"></div><div class="val">6 min</div></div></div>
+<div class="row" data-tip="2 scene-alone previews, 1 full scene render, 1 range export, 3 looks."><div class="lab"><b>Looking at the scenes</b></div><div class="track"><div class="bar hi" style="width:6%"></div><div class="val">3 min <span>what a fast look would shrink</span></div></div></div>
+<div class="row" data-tip="Opening candidates 4 min, voice clean-up, music, transcribing, timing checks."><div class="lab">Everything else</div><div class="track"><div class="bar q" style="width:27.7%"></div><div class="val">14 min</div></div></div>
+</div>
+<div class="gap"></div>
+<div class="h">How a scene reaches eyes</div><div class="s">Times are from the real run, except the last row, which I tested today on the same film-road scene.</div>
+<div class="lt">You, in the app (built)</div><div class="lane"><div class="n">Scene code</div><div class="ar">→</div><div class="n">Browser layer over the player</div><div class="ar">→</div><div class="n">You watch as the playhead moves</div><div class="t">live</div></div>
+<div class="lt">The AI today: the scene alone</div><div class="lane"><div class="n">Scene code</div><div class="ar">→</div><div class="n">A new browser starts and draws stills</div><div class="ar">→</div><div class="n">No you, no captions in the picture</div><div class="t">11-15 s</div></div>
+<div class="lt">The AI today: in place, with you and the captions</div><div class="lane"><div class="n">Scene code</div><div class="ar">→</div><div class="n">Render the scene: 87 s</div><div class="ar">→</div><div class="n">Export that range: 48 s</div><div class="ar">→</div><div class="n">Look at it: 5 s</div><div class="t">139 s</div></div>
+<div class="note">Its normal frame check can't see scenes at all: in the run it showed only you and the room, even after the scene was rendered.</div>
+<div class="lt">The AI with a fast look (tested today, not built)</div><div class="lane new"><div class="n">Scene code</div><div class="ar">→</div><div class="n">Browser stays open: 12 frames in 1.1 s</div><div class="ar">→</div><div class="n">Footage + scene + you and captions, layered</div><div class="ar">→</div><div class="n">Picture sheet and error check</div><div class="t">2.3 s</div></div>
+<div class="note">16.5 s for the first look, then 2.3 s after each code change. Matches the export chain (average difference 0.5 of 255 levels). It caught a typo, a blank scene and a frozen scene without anyone looking.</div>
+<div id="tip"></div><script>
+const tip=document.getElementById('tip');document.querySelectorAll('[data-tip]').forEach(e=>{e.addEventListener('mousemove',v=>{tip.textContent=e.dataset.tip;tip.style.display='block';tip.style.left=Math.min(v.clientX+12,innerWidth-270)+'px';tip.style.top=(v.clientY+12)+'px'});e.addEventListener('mouseleave',()=>tip.style.display='none')});
+</script></section>
+<section id="d1">
+<div class="h">The hidden cost: a refresh inside every edit</div><div class="s">Most of the slow "captions" time was really this. Found and measured today.</div>
+<div class="lane"><div class="n"><b>The AI edits the timeline</b>Captions, picture, anything over a scene</div><div class="ar">→</div><div class="n hot"><b>Live layer masks redrawn</b>Every frame of every scene: 77 s with one scene, 122 s with two</div><div class="ar">→</div><div class="n"><b>Only then can the AI continue</b>About 21 times in that run: roughly 30 minutes</div></div>
+<div class="s" style="margin-bottom:12px">The masks keep you and the captions in front of a scene in the live player. They matter when someone plays the video, not after every AI edit.</div>
+<div class="leg"><span><i style="background:var(--muted-foreground);opacity:.55"></i>In the real run</span><span><i style="background:var(--chart-1)"></i>Same scripts on a copy, without the refresh</span></div>
+<div role="img" aria-label="Caption rebuild: 150 seconds in the run, 24 without the refresh. Fit and apply: 190 seconds in the run, 60 without the refresh.">
+<div class="row"><div class="lab">Caption rebuild</div><div class="track"><div class="bar was" style="width:68%"></div><div class="val">150 s</div></div></div>
+<div class="row"><div class="lab"></div><div class="track"><div class="bar" style="width:10.9%"></div><div class="val">24 s</div></div></div>
+<div class="sp"></div>
+<div class="row"><div class="lab">Fit captions and apply</div><div class="track"><div class="bar was" style="width:86%"></div><div class="val">190 s</div></div></div>
+<div class="row"><div class="lab"></div><div class="track"><div class="bar" style="width:27.1%"></div><div class="val">60 s</div></div></div>
+</div>
+<div class="gap"></div>
+<div class="h">What each fix would do to that run</div><div class="s">Lengths to a handed-over first cut.</div>
+<div role="img" aria-label="As it ran: 119 minutes and still revising. With the two-round limit: about 87. With no wait for the refresh as well: about 65. With the fast look as well: about 62.">
+<div class="row"><div class="lab">As it ran</div><div class="track"><div class="bar was" style="width:74%"></div><div class="val">119 min <span>still revising</span></div></div></div>
+<div class="row"><div class="lab">Two-round limit</div><div class="track"><div class="bar" style="width:54.1%"></div><div class="val">about 87 <span>in the newest build</span></div></div></div>
+<div class="row"><div class="lab">+ no wait for the refresh</div><div class="track"><div class="bar est" style="width:40.4%"></div><div class="val">about 65 <span>not built</span></div></div></div>
+<div class="row"><div class="lab">+ fast look for the AI</div><div class="track"><div class="bar est" style="width:38.5%"></div><div class="val">about 62 <span>not built</span></div></div></div>
+</div>
+<div class="note">Only "as it ran" is measured. The other three are my arithmetic from that run's log and today's timings, and none has been seen in a real run. The first review would land near minute 50 instead of 66.</div>
+</section>
+<section id="d2">
+<div class="h">The review loop today</div><div class="s">What runs after each export, and what decides whether to go round again.</div>
+<div class="group"><div class="gt">Review bundle <span>runs on the exported video, 1.3 to 2 minutes</span></div><div class="four">
+<div class="n"><b>Measured checks</b>Length, loudness, peak, cuts per minute, longest still shot, silences, first speech<em>code</em></div>
+<div class="n"><b>Project checks</b>Caption reading speed, captions over a face, words cut at clip edges, shrunken picture, stale export<em>code</em></div>
+<div class="n"><b>The brief</b>Must-keep lines, must-avoid material, exact claims, the ending<em>code</em></div>
+<div class="n"><b>The critic</b>A separate run of an AI: a different one if the person has it, else the same one as a fresh session. Sees a frame a second, the transcript, brief and plan. Not the editor's reasoning, earlier reviews or the sound<em>AI judgment</em></div>
+</div></div>
+<div class="down">↓ findings, each critical, major or minor</div>
+<div class="group"><div class="gt">Verdict <span>a fixed rule in code</span></div><div class="chips">
+<div><b>blocked</b><span>any critical</span></div><div><b>revise</b><span>any major</span></div><div><b>incomplete</b><span>a needed check didn't run</span></div><div><b>ready</b><span>none of those</span></div></div></div>
+<div class="down">↓</div>
+<div class="group"><div class="gt">Another round? <span>a written rule the AI follows, nothing in code stops it</span></div><div style="font-size:12.5px">Fix what it can and review again: two full rounds, then hand it over and say what needs you. Before today the rule had no limit. This limit hasn't been seen in a real run yet.</div></div>
+<div class="down">↓</div>
+<div class="group"><div class="gt">You <span>the final say</span></div><div style="font-size:12.5px">Watch it, then type, talk or draw your notes. Each change is one Undo.</div></div>
+<div class="gap"></div>
+<div class="h">Round by round in the real run</div><div class="s">Major findings at each review. After round 2, nearly all were things only you can supply.</div>
+<div class="leg"><span><i style="background:var(--chart-1)"></i>Measured and project checks</span><span><i style="background:var(--chart-2)"></i>The critic</span></div>
+<div role="img" aria-label="Major findings per review. Review 1: 6 measured, 4 critic. Review 2: 4 critic. Review 3: 3 critic. Review 4: 1 measured, 4 critic.">
+<div class="r"><div class="m">Review 1<span>minute 66</span></div><div class="st"><div class="seg a" style="width:48%"></div><div class="seg c" style="width:32%"></div><b>10</b></div><div class="w">Captions too fast or over the face, plus the critic's list</div></div>
+<div class="r"><div class="m">Review 2<span>minute 87</span></div><div class="st"><div class="seg c" style="width:32%"></div><b>4</b></div><div class="w">Captions fixed, library scene added: the best round</div></div>
+<div class="r"><div class="m">Review 3<span>minute 98</span></div><div class="st"><div class="seg c" style="width:24%"></div><b>3</b></div><div class="w">Small picture changes and a caption note</div></div>
+<div class="r"><div class="m">Review 4<span>minute 115</span></div><div class="st"><div class="seg a" style="width:8%"></div><div class="seg c" style="width:32%"></div><b>5</b></div><div class="w">A trimmed line, and a new clipped sound. Stopped at 119</div></div>
+</div>
+<div class="note">The critic kept raising the same four: no real demo, a muddled sentence in the recording, no proof of the followers, no sign-up address. The AI can't fix those, so the verdict could never reach "ready".</div>
+<div class="gap"></div>
+<div class="h">Who controls what</div><div class="s" style="margin-bottom:6px"></div>
+<div class="grid"><div class="hd">What</div><div class="hd">Set by</div><div class="hd">Today</div>
+<div>Number of rounds</div><div>Written rule</div><div>Two full rounds (new). The AI could ignore it</div>
+<div>"Good enough"</div><div>Code</div><div>No critical or major finding, and every needed check ran</div>
+<div>What counts as a problem</div><div>Code and critic</div><div>Fixed limits, plus one AI's opinion. It starts fresh each time, so it can wobble</div>
+<div>How hard the AI thinks</div><div>Panel settings</div><div>Model and effort you pick. Opus or GPT-6.1-Sol at medium by default</div>
+<div>Looks and taste</div><div>AI and critic</div><div>From frames only. Skills tell them what to look for</div>
+<div>Sound</div><div>Numbers only</div><div>Loudness is measured. Nobody listens except you</div>
+</div>
+</section>
+<section id="d3">
+<div class="h">letitedit, top to bottom</div><div class="s">Each layer only talks to the ones next to it.</div>
+<div class="leg"><span><i style="background:color-mix(in srgb,var(--foreground) 7%,transparent);border-color:color-mix(in srgb,var(--foreground) 24%,transparent)"></i>Comes with Claude Code or Codex</span><span><i style="background:color-mix(in srgb,var(--chart-1) 15%,transparent);border-color:var(--chart-1)"></i>letitedit adds</span></div>
+<div class="b files"><b>You</b>Click, type, talk, draw. Watch and listen.</div>
+<div class="lk"><span>↕</span></div>
+<div class="b add"><b>The letitedit window</b>A customized Shotcut editor. Your edits and the AI's land in the same timeline.
+<div class="sub"><div>Player, with the live scene layer</div><div>Timeline, one Undo per change</div><div>New video, Review, progress bar</div><div>AI panel, showing the AI's real screen</div></div></div>
+<div class="lk"><span>↕ your request goes in as text; its screen comes back</span></div>
+<div class="b stock"><b>The AI program: Claude Code or Codex</b>The real program on your own subscription. It thinks, decides and asks permission. It also has its own hands: read and write files, run shell commands.</div>
+<div class="lk"><span>↓ reads</span><span>↓ calls</span></div>
+<div class="two"><div class="b add"><b>17 skills</b>Written know-how: story, pacing, captions, sound, scenes, review. They guide the AI; code doesn't enforce them.</div>
+<div class="b add"><b>Tool server: 76 tools</b>Each call also feeds the progress bar. Edits reach your open window as one Undo.<div class="tags"><span>Understand</span><span>Edit</span><span>Draw</span><span>Sound</span><span>Check</span><span>Deliver</span><span>Run</span></div></div></div>
+<div class="lk"><span>↓ runs on your PC, one heavy job at a time</span></div>
+<div class="b add"><b>Engines</b>melt (the export engine), ffmpeg, Whisper speech-to-text, HyperFrames with Edge (scenes), BiRefNet (cut-out), music and voice models.</div>
+<div class="lk"><span>↓ reads and writes</span></div>
+<div class="b files"><b>Your files</b>Footage (never changed) → the timeline file (.mlt) → a side folder with scene versions, openings and plans → MP4 and review.md.</div>
+<div class="gap"></div>
+<div class="h">One New video, start to finish</div><div class="s">The six steps on the progress bar, with what goes in and comes out.</div>
+<div class="io"><div class="b files"><div class="lbl">In</div>A folder of footage, what you're making, a style or sliders, your notes.</div><div class="b files"><div class="lbl">Out</div>An open timeline, the MP4, review.md, other openings behind New hook, a list of shots worth filming.</div></div>
+<div class="flow">
+<div class="st"><b>1 Watch</b>Words, shots, frames<em>→ footage log</em></div><div class="ar">→</div>
+<div class="st"><b>2 Pick</b>Best lines, story, which line gets a scene<em>→ story plan</em></div><div class="ar">→</div>
+<div class="st"><b>3 Cut</b>Rough cut from the plan<em>→ timeline</em></div><div class="ar">→</div>
+<div class="st"><b>4 Polish</b>Tighter cuts, picture changes, scenes<em>→ timeline</em></div><div class="ar">→</div>
+<div class="st"><b>5 Finish</b>Music, sound, captions, graphics<em>→ MP4</em></div><div class="ar">→</div>
+<div class="st"><b>6 Check</b>Review bundle<em>→ verdict, review.md</em></div></div>
+<div class="tl">Minutes in the real run: steps 1-2, step 3, steps 4-5, step 6, then the later rounds.</div>
+<div class="time" role="img" aria-label="Steps 1 and 2 took 10 minutes, step 3 took 7, steps 4 and 5 took 39, step 6 took 9, then rounds 2 to 4 took 53 minutes"><div style="flex:10">10</div><div style="flex:7">7</div><div style="flex:39">39: scene, music, captions</div><div style="flex:9">9</div><div style="flex:53;background:color-mix(in srgb,var(--chart-2) 26%,transparent)">53: rounds 2, 3, 4</div></div>
+</section>
+<section id="d4">
+<div class="h">The 76 tools: what goes in, what comes out</div><div class="s">The last run called 35 of them, 133 calls in all, plus 38 shell commands of its own. "Used" counts that run.</div>
+<div class="hd"><div>Goes in</div><div></div><div>Tools</div><div></div><div>Comes out</div></div>
+<div class="t"><div class="x">Video files or a folder</div><div class="ar">→</div><div class="x m"><b>Understand the footage</b><small>17 tools, 9 used</small><span class="names">footage, words, transcript, segments, look, ask_frames, search, find_ranges, find_takes, speakers, hear, places, archive, library, note, log_frames, log_write</span><span class="en">Runs on: Whisper, ffmpeg, a cut detector</span></div><div class="ar">→</div><div class="x">Every word with its time, shots, frame sheets, best moments, retakes</div></div>
+<div class="t"><div class="x">The timeline, plus changes by clip</div><div class="ar">→</div><div class="x m"><b>Edit the timeline</b><small>16 tools, 8 used</small><span class="names">project_new, timeline_read, timeline_apply, timeline_undo, import, export_edit, try, bin, hooks, import_srt, versions, reframe, match_shots, fix, annotate, caption_fit</span><span class="en">Runs on: the timeline writer, melt, your open window</span></div><div class="ar">→</div><div class="x">A changed timeline, one Undo, frames of the change (scenes don't show yet)</div></div>
+<div class="t"><div class="x">Code the AI writes, or a style or asset name</div><div class="ar">→</div><div class="x m"><b>Draw and decorate</b><small>12 tools, 5 used</small><span class="names">code_scene, motion, graphic, style, import_style, assets, fonts, effects, vfx_effects, 3d, map, track</span><span class="en">Runs on: HyperFrames with Edge, Python drawing, melt effects, BiRefNet</span></div><div class="ar">→</div><div class="x">A scene, motion clip, graphic or effect on the timeline</div></div>
+<div class="t"><div class="x">Songs, text, the timeline</div><div class="ar">→</div><div class="x m"><b>Sound</b><small>9 tools, 2 used</small><span class="names">soundtrack, fit_music, music_make, separate, voice, sync, dub_lines, dub, dub_voices</span><span class="en">Runs on: ACE-Step, local voice models, melt</span></div><div class="ar">→</div><div class="x">Music cut to the story, new music, voices, dubs, a mix</div></div>
+<div class="t"><div class="x">The timeline or an export</div><div class="ar">→</div><div class="x m"><b>Check</b><small>10 tools, 4 used</small><span class="names">check_frames, check_range, check_audio, overview, stills, timing, measure, quality_gate, critic, review_bundle</span><span class="en">Runs on: melt, ffmpeg, the person's AI for the critic</span></div><div class="ar">→</div><div class="x">Frames, short clips, numbers, a verdict, review.md</div></div>
+<div class="t"><div class="x">The timeline and where it's going</div><div class="ar">→</div><div class="x m"><b>Deliver</b><small>3 tools, 3 used</small><span class="names">export, export_job, platforms</span><span class="en">Runs on: melt in cached chunks, the PC's render lock</span></div><div class="ar">→</div><div class="x">A finished MP4 at the right loudness, thumbnails, other sizes</div></div>
+<div class="t"><div class="x">A question or a note</div><div class="ar">→</div><div class="x m"><b>Run the show</b><small>9 tools, 4 used</small><span class="names">guide, command_help, status, jobs, journal, hardware, instances, editor, show</span></div><div class="ar">→</div><div class="x">How-to text, what's running, what you're looking at, progress notes</div></div>
+</section>
+<section id="d5">
+<div class="h">Stock Claude or Codex, and letitedit</div><div class="s">The AI program is the same in both. The difference is what surrounds it.</div>
+<div class="leg"><span><i style="background:color-mix(in srgb,var(--foreground) 7%,transparent);border-color:color-mix(in srgb,var(--foreground) 24%,transparent)"></i>Comes with Claude Code or Codex</span><span><i style="background:color-mix(in srgb,var(--chart-1) 15%,transparent);border-color:var(--chart-1)"></i>letitedit adds</span></div>
+<div class="lt">The usual loop</div>
+<div class="lp"><b>Stock</b><span>You type</span><i>→</i><span>AI writes a script</span><i>→</i><span>Full render</span><i>→</i><span>You watch the file</span><i>→</i><span>You type notes</span><i>↺</i></div>
+<div class="lp"><b>letitedit</b><span>You type, talk or draw</span><i>→</i><span class="ad">AI edits the timeline</span><i>→</i><span class="ad">Lands in your window</span><i>→</i><span class="ad">You watch or change it</span><i>↺</i></div>
+<div class="gap"></div>
+<div class="top"><div></div><div>Stock Claude or Codex</div><div>With letitedit</div></div>
+<div class="rw"><div class="l">The AI</div><div class="x st">Claude Code or Codex on your subscription</div><div class="x st">The same program, shown inside the panel</div></div>
+<div class="rw"><div class="l">Asking permission</div><div class="x st">Asks before shell commands</div><div class="x st">The same. letitedit's own tools don't ask. All 38 prompts came from shell commands</div></div>
+<div class="rw"><div class="l">Where you work</div><div class="x st">A terminal or chat window</div><div class="x ad">A video editor: player, timeline, buttons</div></div>
+<div class="rw"><div class="l">What it knows</div><div class="x st">What the model already knows</div><div class="x ad">Plus 17 skills on story, pacing, captions, sound, scenes</div></div>
+<div class="rw"><div class="l">Its hands</div><div class="x st">Read and write files, run shell commands</div><div class="x ad">Those, plus 78 video tools</div></div>
+<div class="rw"><div class="l">What does the work</div><div class="x st">Whatever it writes or installs: ffmpeg, Python, a motion library</div><div class="x ad">Ready engines: melt, ffmpeg, Whisper, HyperFrames, cut-out, music and voice models</div></div>
+<div class="rw"><div class="l">What you get</div><div class="x st">An MP4, and a script only the AI can really change</div><div class="x ad">A timeline you can edit by hand, and the MP4</div></div>
+<div class="rw"><div class="l">"Music quieter"</div><div class="x st">It changes the script and renders the video again</div><div class="x ad">One edit, one Undo, audible at once. The export redoes only what changed</div></div>
+<div class="rw"><div class="l">A drawn scene</div><div class="x st">Render it, then watch the file</div><div class="x ad">Plays live in your player. Export draws it at full quality</div></div>
+<div class="rw"><div class="l">Checking</div><div class="x st">Looks at stills if it chooses to, and grades its own work</div><div class="x ad">Fixed checks, a second AI as critic, one verdict</div></div>
+<div class="rw"><div class="l">Your PC</div><div class="x st">Nothing stops two heavy renders at once</div><div class="x ad">One heavy job at a time</div></div>
+<div class="rw"><div class="l">While you wait</div><div class="x st">Its text scrolling by</div><div class="x ad">A progress bar: the step and a time range</div></div>
+<div class="note">Stock depends on what the AI chooses to write, so that column is the typical path, not a fixed one. The last head-to-head I can find is from mid-October: letitedit won 7 of 22 pairs against stock Claude, ahead on captions and sound, behind on story and pacing. It hasn't been rerun since the skills were rebuilt on 28 Oct.</div>
+</section>
+</body></html>

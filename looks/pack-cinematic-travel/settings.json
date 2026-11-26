@@ -1,0 +1,953 @@
+{
+  "format": "letitedit-look-settings/1",
+  "id": "pack-cinematic-travel",
+  "defaults_are": "taste",
+  "share": false,
+  "values": {
+    "format": "letitedit-style/3",
+    "name": "Cinematic Travel",
+    "description": "A 15-40 s vertical travel film made of moving shots, built on one song, with one title and small place names; no talking needed.",
+    "colors": {
+      "primary": "#F5F0E6",
+      "secondary": "#E8C07D",
+      "accent": "#E07A3F",
+      "dark": "#0A0A0A",
+      "light": "#F5F0E6",
+      "teal": "#2E6F78"
+    },
+    "fonts": {
+      "heading": {
+        "family": "Bodoni Moda",
+        "weight": 500,
+        "italic": true
+      },
+      "body": {
+        "family": "Josefin Sans",
+        "weight": 300
+      },
+      "captions": {
+        "family": "Josefin Sans",
+        "weight": 400
+      },
+      "tag": {
+        "family": "Josefin Sans",
+        "weight": 400
+      }
+    },
+    "captions": {
+      "font": "captions",
+      "size": 48,
+      "fill": "light",
+      "outline": null,
+      "shadow": {
+        "color": "#000000AA",
+        "x": 2,
+        "y": 3
+      },
+      "background": null,
+      "position": "bottom",
+      "margin": 0.3,
+      "max_chars": 18,
+      "max_lines": 2,
+      "case": "as_spoken"
+    },
+    "text": {
+      "font": "heading",
+      "size": 110,
+      "fill": "light",
+      "outline": null
+    },
+    "graphics": {
+      "word_captions": {
+        "style": "karaoke",
+        "font": "captions",
+        "size": 52,
+        "fill": "light",
+        "highlight": "secondary",
+        "outline": null,
+        "outline_width": 0,
+        "shadow": "#000000AA",
+        "position": 0.66,
+        "max_width": 0.76,
+        "uppercase": false,
+        "pop_scale": 1.0
+      },
+      "title_card": {
+        "background": "none",
+        "font": "heading",
+        "subtitle_font": "tag",
+        "size": 118,
+        "subtitle_size": 30,
+        "fill": "light",
+        "subtitle_fill": "secondary",
+        "accent": "#00000000",
+        "shadow": "#000000B0"
+      }
+    },
+    "music": {
+      "zones": {
+        "talk": -20.0,
+        "montage": 0.0,
+        "quiet": -24.0,
+        "swell": -3.0,
+        "end": 0.0
+      },
+      "duck_under_speech": true,
+      "merge_gap": 4.0,
+      "attack": 0.3,
+      "release": 0.9,
+      "crossfade": 3.0,
+      "fade_in": 1.5,
+      "fade_out": 3.0,
+      "dialogue_lufs": null,
+      "sources": [],
+      "notes": "One cinematic, ambient or acoustic piece the person may publish (music-library: Cinematic / Adventure, Ambient / Dreamy). It starts with the first shot and ends on its own ending or a held final chord; footage sound 12-18 dB under it [GEN].",
+      "likes": [],
+      "avoid": [],
+      "theme": null
+    },
+    "sfx": {
+      "gain_db": -12.0,
+      "map": {
+        "air": "synth/whoosh-soft",
+        "air_long": "synth/whoosh-long",
+        "hit": "synth/hit-cinematic",
+        "boom": "synth/boom-deep",
+        "swell": "synth/reverse-swell",
+        "riser": "synth/riser-2s",
+        "shutter": "library/camera-shutter_click_04"
+      },
+      "events": {
+        "hook": "hit",
+        "transition": "air",
+        "reveal": "swell",
+        "flash": "air"
+      }
+    },
+    "editing": {
+      "max_pause": 0.0,
+      "pad_in": 0.0,
+      "pad_out": 0.0,
+      "blur_pad": false,
+      "transitions": "cut",
+      "pace": "slow",
+      "intro": null,
+      "outro": null
+    },
+    "export": {
+      "preset": "social_h264",
+      "loudness": -14.0
+    },
+    "look": {
+      "about": "Filmic - a little desaturated, cooler shadows and warmer highlights (a soft teal and orange), light grain and a soft vignette [EDS cinematic saturation down; POW teal and orange for landscapes; HOL grain at low strength].",
+      "effects": [
+        {
+          "filter": "hue_lightness_saturation",
+          "params": {
+            "av.s": 0.9
+          }
+        },
+        {
+          "filter": "color",
+          "params": {
+            "lift_r": 0.0,
+            "lift_g": 0.004,
+            "lift_b": 0.02,
+            "gamma_r": 1.0,
+            "gamma_g": 0.98,
+            "gamma_b": 0.97,
+            "gain_r": 1.06,
+            "gain_g": 1.0,
+            "gain_b": 0.92
+          }
+        },
+        {
+          "filter": "grain",
+          "params": {
+            "noise": 5,
+            "contrast": 100,
+            "brightness": 100
+          }
+        },
+        {
+          "filter": "vignette",
+          "params": {
+            "radius": 1.0,
+            "smooth": 2.0,
+            "opacity": 0.45,
+            "mode": 1
+          }
+        }
+      ]
+    },
+    "taste": "",
+    "label": "Cinematic travel",
+    "summary": "A short film of a place - letterbox bars, slow motion, a filmic grade, place names in a corner, music and the place's own sound.",
+    "kind": "short",
+    "tags": [
+      "travel",
+      "cinematic",
+      "montage",
+      "music",
+      "slow motion",
+      "letterbox",
+      "no talking",
+      "b-roll",
+      "place",
+      "shorts"
+    ],
+    "preview": "preview.jpg",
+    "recipe": "recipe.md",
+    "credits": [
+      {
+        "file": "preview.jpg",
+        "source": "Frames of National Park Service Yosemite b-roll, with this Look's own type; no people",
+        "licence": "Public domain (stated on the source page); courtesy National Park Service, no endorsement"
+      }
+    ],
+    "effects": {
+      "bars": {
+        "kind": "graphic",
+        "about": "Letterbox bars for the whole video - the film frame. Each bar a tenth of a tall frame; on a wide frame use ratio 2.39 [POW 2.35:1, HOL].",
+        "template": "letterbox",
+        "params": {
+          "bar": 0.1
+        },
+        "track": "Bars",
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "hook"
+          ],
+          "density": {
+            "per_min": 1
+          },
+          "when": "Once, at 0, as long as the picture (len = its length). Place it before any title, tag or caption so their tracks draw over it."
+        }
+      },
+      "title": {
+        "kind": "graphic",
+        "about": "The film's name in two or three words, a high-contrast italic serif fading in over a moving shot, with a small spaced line under it (the place, the season) [POW simple fade-ins, minimal titles].",
+        "template": "title_card",
+        "len": 3.2,
+        "sfx": "hit",
+        "sfx_offset_s": -0.23,
+        "rules": {
+          "triggers": [
+            "hook",
+            "ending"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 10.0
+          },
+          "duration_s": [
+            2.5,
+            4.5
+          ],
+          "when": "Once on the opening shot (params title, subtitle), maybe a quiet last line on the final wide. Never a logo first; never over a face."
+        }
+      },
+      "place_tag": {
+        "kind": "popup",
+        "about": "The place in small spaced capitals with a detail line, in a top corner under the bar; fades in and out [POW place names in corners, not the centre].",
+        "position": [
+          0.3,
+          0.2
+        ],
+        "size": 0.44,
+        "in": "fade",
+        "out": "fade",
+        "in_s": 0.5,
+        "out_s": 0.5,
+        "hold_s": 2.2,
+        "font": "tag",
+        "fill": "light",
+        "stroke": null,
+        "stroke_width": 0,
+        "shadow": true,
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "place"
+          ],
+          "density": {
+            "per_min": 3,
+            "min_gap_s": 8.0
+          },
+          "placement": {
+            "avoid": [
+              "covered",
+              "face"
+            ]
+          },
+          "duration_s": [
+            2.0,
+            4.0
+          ],
+          "never": [
+            "over_face",
+            "outside_safe_zone"
+          ],
+          "when": "Where the place changes (a new town, a road, a beach). Real names only - from the person, the footage's GPS or the brief; give asset {text} as two lines, e.g. \"BIG SUR\\nCALIFORNIA\". No tag when the place is unknown."
+        }
+      },
+      "slow_push": {
+        "kind": "zoom_punch",
+        "about": "A slow push-in (105% over 3 s), so a still shot keeps breathing.",
+        "scale": 1.05,
+        "ramp_s": 3.0,
+        "rules": {
+          "triggers": [
+            "cut",
+            "pause",
+            "reveal"
+          ],
+          "density": {
+            "per_min": 6,
+            "min_gap_s": 4.0
+          },
+          "when": "On static wides and details only (a sign, a window, a horizon); never on a shot that already moves."
+        }
+      },
+      "air_cut": {
+        "kind": "whoosh",
+        "about": "A soft air whoosh landing on a cut between two moving shots (a match on motion, a whip).",
+        "sfx": "air",
+        "sfx_offset_s": -0.51,
+        "rules": {
+          "triggers": [
+            "cut"
+          ],
+          "density": {
+            "per_10s": 1,
+            "min_gap_s": 6.0
+          },
+          "when": "Two or three per 30 s at most [SHB], only where the motion carries across the cut (a pan into a pan)."
+        }
+      },
+      "time_dissolve": {
+        "kind": "transition",
+        "about": "A slow dissolve where time passes or the place changes (0.8 s).",
+        "transition": {
+          "type": "dissolve",
+          "len": 0.8
+        },
+        "rules": {
+          "triggers": [
+            "topic_change"
+          ],
+          "density": {
+            "per_min": 3,
+            "min_gap_s": 8.0
+          },
+          "when": "Day into dusk, road into camp; hard cuts everywhere else [POW simple cuts for 90% of edits; EDS 1 s transitions]."
+        }
+      },
+      "light_leak": {
+        "kind": "light_leak",
+        "about": "Warm light drifting over a cut into a golden-hour or sunset shot.",
+        "len": 1.4,
+        "rules": {
+          "triggers": [
+            "cut",
+            "reveal"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 12.0
+          },
+          "when": "Into the sunset or the most beautiful shot; once or twice a video."
+        }
+      },
+      "swell_reveal": {
+        "kind": "sfx",
+        "about": "A reverse swell that ends on the reveal (the view opening up).",
+        "sfx": "swell",
+        "sfx_offset_s": -1.49,
+        "rules": {
+          "triggers": [
+            "reveal"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 15.0
+          },
+          "when": "The moment the view opens up - a pull-back, a door opening, the coast appearing - ideally with the music's lift."
+        }
+      },
+      "shutter": {
+        "kind": "sfx",
+        "about": "A camera shutter on a held frame (a photo moment).",
+        "sfx": "shutter",
+        "rules": {
+          "triggers": [
+            "cut"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 15.0
+          },
+          "when": "Only on a freeze or a still photo."
+        }
+      }
+    },
+    "fx": {
+      "track": "Effects",
+      "sfx_track": "Effect sounds",
+      "broll_track": "B-roll",
+      "density": {
+        "per_10s": 4,
+        "per_min": null,
+        "min_gap_s": 0.3
+      },
+      "safe_zone": "phone",
+      "never": [
+        "outside_safe_zone",
+        "overlapping"
+      ],
+      "rhythm": "Slow-fast-slow - held wides to open and close, quicker moving shots in the middle, a reveal on the music's lift."
+    },
+    "popups": {
+      "track": null,
+      "sfx_track": null,
+      "min_gap_s": 5.0,
+      "max_total": null,
+      "entries": []
+    },
+    "hook": {
+      "max_s": 2.0,
+      "approaches": [
+        "mid_action",
+        "result_first"
+      ],
+      "text": {
+        "max_words": 3,
+        "case": "as_said",
+        "position": "center",
+        "size": 0.6,
+        "fill": "light",
+        "stroke": null,
+        "stroke_width": 0,
+        "font": "heading"
+      },
+      "rules": "Frame 0 is the most striking moving shot, the title already fading in and the music's first hit under it. With no speech, letitedit_hooks offers picture moments only when picture facts are cached; otherwise pick the opening shot by eye and say why.",
+      "avoid": [
+        "black frames",
+        "a slow fade from black",
+        "logo first",
+        "greetings"
+      ]
+    },
+    "broll": {
+      "amount": "some",
+      "kinds": [],
+      "favorites": "",
+      "notes": ""
+    },
+    "shots": {
+      "framing": "medium",
+      "camera": "handheld",
+      "punch_ins": "some",
+      "notes": ""
+    },
+    "signature": {
+      "touches": []
+    },
+    "measured": {},
+    "provenance": {
+      "made_by": "letitedit style library, wave 2",
+      "date": "2026-10-30",
+      "measured": "none yet (no reference videos in style-references)",
+      "sources": [
+        {
+          "url": "https://github.com/mindsurf0176/editstyle/blob/master/awesome-editstyles/presets/cinematic.md",
+          "title": "EditStyle cinematic preset",
+          "used_for": "slow-fast-slow rhythm, desaturation, about 1 s transitions, captions off",
+          "licence": "MIT, Copyright (c) 2026 Minseo (consulted only; no text adapted)"
+        },
+        {
+          "url": "https://blog.powr.io/travel-video-editing-how-to-craft-cinematic-engaging-footage/",
+          "title": "POWR travel video editing",
+          "used_for": "no clip past about 5 s, cuts for 90% of edits, teal and orange, 2.35:1 bars, minimal titles, place names in corners",
+          "licence": "none found (numbers only)"
+        },
+        {
+          "url": "https://shotbook.art/blog/how-to-find-and-use-speed-ramp-references-for-video-editing",
+          "title": "ShotBook speed ramps",
+          "used_for": "gentle travel ramps (to 35-50% speed), 2-3 ramps per 30-60 s",
+          "licence": "none found (numbers only)"
+        },
+        {
+          "url": "https://www.choppity.com/tools/recreate-video-editing-style/tom-noske/",
+          "title": "Choppity analysis of a cinematic Reel creator",
+          "used_for": "cuts every 1-4 s, letterboxed b-roll",
+          "licence": "none found (numbers only; the creator is not named in the pack)"
+        }
+      ],
+      "notes": "Speed changes are steps (clips at 0.5x), not smooth ramps (no fx kind yet). Tune the numbers on the person's reference Reels when they arrive. Tags in ..\\SOURCES.md."
+    }
+  },
+  "asset_root": "resources",
+  "files": {
+    "preview.jpg": "resources/4dcd51b2e262eda9067640a8.jpg",
+    "recipe.md": "recipe.md"
+  },
+  "links": {
+    "recipe": "recipe.md",
+    "preview": "preview.jpg"
+  },
+  "legacy": {
+    "format": "letitedit-style/3",
+    "source": "style.yaml",
+    "pack": "cinematic-travel",
+    "data": {
+      "format": "letitedit-style/3",
+      "name": "Cinematic Travel",
+      "label": "Cinematic travel",
+      "summary": "A short film of a place - letterbox bars, slow motion, a filmic grade, place names in a corner, music and the place's own sound.",
+      "kind": "short",
+      "tags": [
+        "travel",
+        "cinematic",
+        "montage",
+        "music",
+        "slow motion",
+        "letterbox",
+        "no talking",
+        "b-roll",
+        "place",
+        "shorts"
+      ],
+      "recipe": "recipe.md",
+      "preview": "preview.jpg",
+      "description": "A 15-40 s vertical travel film made of moving shots, built on one song, with one title and small place names; no talking needed.",
+      "colors": {
+        "primary": "#F5F0E6",
+        "secondary": "#E8C07D",
+        "accent": "#E07A3F",
+        "teal": "#2E6F78",
+        "dark": "#0A0A0A",
+        "light": "#F5F0E6"
+      },
+      "fonts": {
+        "heading": {
+          "family": "Bodoni Moda",
+          "weight": 500,
+          "italic": true
+        },
+        "body": {
+          "family": "Josefin Sans",
+          "weight": 300
+        },
+        "captions": {
+          "family": "Josefin Sans",
+          "weight": 400
+        },
+        "tag": {
+          "family": "Josefin Sans",
+          "weight": 400
+        }
+      },
+      "graphics": {
+        "word_captions": {
+          "style": "karaoke",
+          "font": "captions",
+          "size": 52,
+          "fill": "light",
+          "highlight": "secondary",
+          "outline": null,
+          "outline_width": 0,
+          "shadow": "#000000AA",
+          "position": 0.66,
+          "max_width": 0.76,
+          "uppercase": false,
+          "pop_scale": 1.0
+        },
+        "title_card": {
+          "background": "none",
+          "font": "heading",
+          "subtitle_font": "tag",
+          "size": 118,
+          "subtitle_size": 30,
+          "fill": "light",
+          "subtitle_fill": "secondary",
+          "accent": "#00000000",
+          "shadow": "#000000B0"
+        }
+      },
+      "captions": {
+        "font": "captions",
+        "size": 48,
+        "fill": "light",
+        "outline": null,
+        "shadow": {
+          "color": "#000000AA",
+          "x": 2,
+          "y": 3
+        },
+        "position": "bottom",
+        "margin": 0.3,
+        "max_chars": 18,
+        "max_lines": 2,
+        "case": "as_spoken"
+      },
+      "text": {
+        "font": "heading",
+        "size": 110,
+        "fill": "light",
+        "outline": null
+      },
+      "editing": {
+        "max_pause": 0.0,
+        "pad_in": 0.0,
+        "pad_out": 0.0,
+        "blur_pad": false,
+        "transitions": "cut",
+        "pace": "slow"
+      },
+      "music": {
+        "zones": {
+          "talk": -20.0,
+          "montage": 0.0,
+          "end": 0.0
+        },
+        "notes": "One cinematic, ambient or acoustic piece the person may publish (music-library: Cinematic / Adventure, Ambient / Dreamy). It starts with the first shot and ends on its own ending or a held final chord; footage sound 12-18 dB under it [GEN]."
+      },
+      "export": {
+        "preset": "social_h264",
+        "loudness": -14.0
+      },
+      "look": {
+        "about": "Filmic - a little desaturated, cooler shadows and warmer highlights (a soft teal and orange), light grain and a soft vignette [EDS cinematic saturation down; POW teal and orange for landscapes; HOL grain at low strength].",
+        "effects": [
+          {
+            "filter": "hue_lightness_saturation",
+            "params": {
+              "av.s": 0.9
+            }
+          },
+          {
+            "filter": "color",
+            "params": {
+              "lift_r": 0.0,
+              "lift_g": 0.004,
+              "lift_b": 0.02,
+              "gamma_r": 1.0,
+              "gamma_g": 0.98,
+              "gamma_b": 0.97,
+              "gain_r": 1.06,
+              "gain_g": 1.0,
+              "gain_b": 0.92
+            }
+          },
+          {
+            "filter": "grain",
+            "params": {
+              "noise": 5,
+              "contrast": 100,
+              "brightness": 100
+            }
+          },
+          {
+            "filter": "vignette",
+            "params": {
+              "radius": 1.0,
+              "smooth": 2.0,
+              "opacity": 0.45,
+              "mode": 1
+            }
+          }
+        ]
+      },
+      "sfx": {
+        "gain_db": -12.0,
+        "map": {
+          "air": "synth/whoosh-soft",
+          "air_long": "synth/whoosh-long",
+          "hit": "synth/hit-cinematic",
+          "boom": "synth/boom-deep",
+          "swell": "synth/reverse-swell",
+          "riser": "synth/riser-2s",
+          "shutter": "library/camera-shutter_click_04"
+        },
+        "events": {
+          "hook": "hit",
+          "transition": "air",
+          "reveal": "swell",
+          "flash": "air"
+        }
+      },
+      "fx": {
+        "track": "Effects",
+        "sfx_track": "Effect sounds",
+        "broll_track": "B-roll",
+        "density": {
+          "per_10s": 4,
+          "min_gap_s": 0.3
+        },
+        "safe_zone": "phone",
+        "never": [
+          "outside_safe_zone",
+          "overlapping"
+        ],
+        "rhythm": "Slow-fast-slow - held wides to open and close, quicker moving shots in the middle, a reveal on the music's lift."
+      },
+      "effects": {
+        "bars": {
+          "kind": "graphic",
+          "about": "Letterbox bars for the whole video - the film frame. Each bar a tenth of a tall frame; on a wide frame use ratio 2.39 [POW 2.35:1, HOL].",
+          "template": "letterbox",
+          "params": {
+            "bar": 0.1
+          },
+          "track": "Bars",
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "hook"
+            ],
+            "density": {
+              "per_min": 1
+            },
+            "when": "Once, at 0, as long as the picture (len = its length). Place it before any title, tag or caption so their tracks draw over it."
+          }
+        },
+        "title": {
+          "kind": "graphic",
+          "about": "The film's name in two or three words, a high-contrast italic serif fading in over a moving shot, with a small spaced line under it (the place, the season) [POW simple fade-ins, minimal titles].",
+          "template": "title_card",
+          "len": 3.2,
+          "sfx": "hit",
+          "sfx_offset_s": -0.23,
+          "rules": {
+            "triggers": [
+              "hook",
+              "ending"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 10.0
+            },
+            "duration_s": [
+              2.5,
+              4.5
+            ],
+            "when": "Once on the opening shot (params title, subtitle), maybe a quiet last line on the final wide. Never a logo first; never over a face."
+          }
+        },
+        "place_tag": {
+          "kind": "popup",
+          "about": "The place in small spaced capitals with a detail line, in a top corner under the bar; fades in and out [POW place names in corners, not the centre].",
+          "position": [
+            0.3,
+            0.2
+          ],
+          "size": 0.44,
+          "in": "fade",
+          "out": "fade",
+          "in_s": 0.5,
+          "out_s": 0.5,
+          "hold_s": 2.2,
+          "font": "tag",
+          "fill": "light",
+          "stroke": null,
+          "stroke_width": 0,
+          "shadow": true,
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "place"
+            ],
+            "density": {
+              "per_min": 3,
+              "min_gap_s": 8.0
+            },
+            "placement": {
+              "avoid": [
+                "covered",
+                "face"
+              ]
+            },
+            "duration_s": [
+              2.0,
+              4.0
+            ],
+            "never": [
+              "over_face",
+              "outside_safe_zone"
+            ],
+            "when": "Where the place changes (a new town, a road, a beach). Real names only - from the person, the footage's GPS or the brief; give asset {text} as two lines, e.g. \"BIG SUR\\nCALIFORNIA\". No tag when the place is unknown."
+          }
+        },
+        "slow_push": {
+          "kind": "zoom_punch",
+          "about": "A slow push-in (105% over 3 s), so a still shot keeps breathing.",
+          "scale": 1.05,
+          "ramp_s": 3.0,
+          "rules": {
+            "triggers": [
+              "cut",
+              "pause",
+              "reveal"
+            ],
+            "density": {
+              "per_min": 6,
+              "min_gap_s": 4.0
+            },
+            "when": "On static wides and details only (a sign, a window, a horizon); never on a shot that already moves."
+          }
+        },
+        "air_cut": {
+          "kind": "whoosh",
+          "about": "A soft air whoosh landing on a cut between two moving shots (a match on motion, a whip).",
+          "sfx": "air",
+          "sfx_offset_s": -0.51,
+          "rules": {
+            "triggers": [
+              "cut"
+            ],
+            "density": {
+              "per_10s": 1,
+              "min_gap_s": 6.0
+            },
+            "when": "Two or three per 30 s at most [SHB], only where the motion carries across the cut (a pan into a pan)."
+          }
+        },
+        "time_dissolve": {
+          "kind": "transition",
+          "about": "A slow dissolve where time passes or the place changes (0.8 s).",
+          "transition": {
+            "type": "dissolve",
+            "len": 0.8
+          },
+          "rules": {
+            "triggers": [
+              "topic_change"
+            ],
+            "density": {
+              "per_min": 3,
+              "min_gap_s": 8.0
+            },
+            "when": "Day into dusk, road into camp; hard cuts everywhere else [POW simple cuts for 90% of edits; EDS 1 s transitions]."
+          }
+        },
+        "light_leak": {
+          "kind": "light_leak",
+          "about": "Warm light drifting over a cut into a golden-hour or sunset shot.",
+          "len": 1.4,
+          "rules": {
+            "triggers": [
+              "cut",
+              "reveal"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 12.0
+            },
+            "when": "Into the sunset or the most beautiful shot; once or twice a video."
+          }
+        },
+        "swell_reveal": {
+          "kind": "sfx",
+          "about": "A reverse swell that ends on the reveal (the view opening up).",
+          "sfx": "swell",
+          "sfx_offset_s": -1.49,
+          "rules": {
+            "triggers": [
+              "reveal"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 15.0
+            },
+            "when": "The moment the view opens up - a pull-back, a door opening, the coast appearing - ideally with the music's lift."
+          }
+        },
+        "shutter": {
+          "kind": "sfx",
+          "about": "A camera shutter on a held frame (a photo moment).",
+          "sfx": "shutter",
+          "rules": {
+            "triggers": [
+              "cut"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 15.0
+            },
+            "when": "Only on a freeze or a still photo."
+          }
+        }
+      },
+      "popups": {
+        "min_gap_s": 5.0,
+        "entries": []
+      },
+      "hook": {
+        "max_s": 2.0,
+        "approaches": [
+          "mid_action",
+          "result_first"
+        ],
+        "text": {
+          "max_words": 3,
+          "case": "as_said",
+          "position": "center",
+          "size": 0.6,
+          "fill": "light",
+          "stroke": null,
+          "stroke_width": 0,
+          "font": "heading"
+        },
+        "rules": "Frame 0 is the most striking moving shot, the title already fading in and the music's first hit under it. With no speech, letitedit_hooks offers picture moments only when picture facts are cached; otherwise pick the opening shot by eye and say why.",
+        "avoid": [
+          "black frames",
+          "a slow fade from black",
+          "logo first",
+          "greetings"
+        ]
+      },
+      "credits": [
+        {
+          "file": "preview.jpg",
+          "source": "Original preview imagery; hands, objects, places and titles only",
+          "licence": "Original letitedit footage: hands, objects, places and titles only; no faces"
+        }
+      ],
+      "measured": {},
+      "provenance": {
+        "made_by": "letitedit style library, wave 2",
+        "date": "2026-10-30",
+        "measured": "none yet (no reference videos in style-references)",
+        "sources": [
+          {
+            "url": "https://github.com/mindsurf0176/editstyle/blob/master/awesome-editstyles/presets/cinematic.md",
+            "title": "EditStyle cinematic preset",
+            "used_for": "slow-fast-slow rhythm, desaturation, about 1 s transitions, captions off",
+            "licence": "MIT, Copyright (c) 2026 Minseo (consulted only; no text adapted)"
+          },
+          {
+            "url": "https://blog.powr.io/travel-video-editing-how-to-craft-cinematic-engaging-footage/",
+            "title": "POWR travel video editing",
+            "used_for": "no clip past about 5 s, cuts for 90% of edits, teal and orange, 2.35:1 bars, minimal titles, place names in corners",
+            "licence": "none found (numbers only)"
+          },
+          {
+            "url": "https://shotbook.art/blog/how-to-find-and-use-speed-ramp-references-for-video-editing",
+            "title": "ShotBook speed ramps",
+            "used_for": "gentle travel ramps (to 35-50% speed), 2-3 ramps per 30-60 s",
+            "licence": "none found (numbers only)"
+          },
+          {
+            "url": "https://www.choppity.com/tools/recreate-video-editing-style/tom-noske/",
+            "title": "Choppity analysis of a cinematic Reel creator",
+            "used_for": "cuts every 1-4 s, letterboxed b-roll",
+            "licence": "none found (numbers only; the creator is not named in the pack)"
+          }
+        ],
+        "notes": "Speed changes are steps (clips at 0.5x), not smooth ramps (no fx kind yet). Tune the numbers on the person's reference Reels when they arrive. Tags in ..\\SOURCES.md."
+      }
+    }
+  }
+}

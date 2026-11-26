@@ -1,0 +1,5 @@
+Every song here was released into the public domain by its album's own licence on the Internet Archive:
+CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/), the Public Domain Mark 1.0
+(https://creativecommons.org/publicdomain/mark/1.0/) or Creative Commons' older public domain dedication.
+library.csv gives each song's exact designation, its licence URL and its source page. This list records
+what each source states; it is not legal advice.

@@ -1,0 +1,6 @@
+Pixabay Content License - summary (from https://pixabay.com/service/license-summary/ on 2026-10-04; full license: https://pixabay.com/service/license/)
+
+Allowed: use Content for free; no attribution required (credit appreciated); modify or adapt Content into new works.
+Not allowed: sell or distribute Content on a standalone basis (unchanged); use Content containing recognisable trademarks/logos commercially in relation to goods and services; immoral, illegal, misleading or deceptive use; use as part of a trademark or business name.
+Pixabay Terms of Service also forbid scripts/robots and bulk or systematic copying, so Pixabay sounds in this library are downloaded by hand only (see "_Download Shortlist.html").
+Some Pixabay audio is registered with YouTube Content ID by its author; skip any item whose page shows a Content ID notice.

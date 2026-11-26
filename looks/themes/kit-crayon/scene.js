@@ -1,0 +1,6 @@
+const H = M.look.crayon.start(c.w, c.h), C = H.c, S = H.smooth(Array.from({length: 12}, (_, i) => [SUN.x + Math.cos(i / 12 * 6.28) * SUN.r, SUN.y + Math.sin(i / 12 * 6.28) * SUN.r]), true, 8), paper = H.sheetPlate();
+const pic = H.picture('boat', (k) => { k.fill(SKY, C.sky, {angle: .9, gap: 11, w: 10, alpha: .6, keep: H.around([HILL, S, SAIL, JIB])}); k.part();
+  k.fill(SEA, C.blue, {angle: .1, gap: 7, w: 9}); k.part(); k.fill(HILL, C.green, {angle: .15, gap: 7, w: 9}); k.shade(HILL.map(([x, y]) => [x, y + K(50)]), C.green, {over: 1}); k.part();
+  k.fill(S, C.yellow, {gap: 5}); k.shade(S.map(([x, y]) => [x + K(16), y + K(16)]), C.orange, {over: .7}); k.line(S, C.orange, 6, {closed: true}); k.part();
+  k.paper(HULL); k.fill(HULL, C.red, {angle: .1}); k.line(HULL, C.black, 6, {closed: true}); k.part(); k.paper(SAIL); k.fill(SAIL, C.pink, {angle: 1.4}); k.line(SAIL, C.black, 5, {closed: true}); k.paper(JIB); k.fill(JIB, C.orange, {angle: 1.4}); k.line(JIB, C.black, 5, {closed: true}); k.line(MAST, C.black, 7, {}); });
+return (t) => { H.begin(g); paper.draw(g); pic.draw(g, {progress: t / 4.5, take: 0}); H.begin(g); H.finish(g); };

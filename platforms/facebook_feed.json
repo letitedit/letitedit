@@ -1,0 +1,252 @@
+{
+  "id": "facebook_feed",
+  "name": "Facebook feed video",
+  "schema": "letitedit-platform/1",
+  "checked": "2026-11-19",
+  "video": {
+    "feed_videos_are_reels": {
+      "value": true,
+      "source": "https://about.fb.com/news/2025/06/making-it-easier-create-videos-facebook/",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "Since June 2025 every new video is shared as a reel; the Video tab became the Reels tab."
+    },
+    "aspect_ratios": {
+      "value": {
+        "supported": "16:9 to 9:16",
+        "feed_recommended": [
+          "1:1",
+          "4:5"
+        ]
+      },
+      "source": "https://www.facebook.com/business/m/one-sheeters/video-requirements",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "Feed 1:1 and 4:5 from https://www.facebook.com/business/help/103816146375741."
+    },
+    "resolutions": {
+      "value": {
+        "ads_recommended": "1440x1800 (4:5)",
+        "max_width_px": 4000,
+        "width_divisible_by": 16
+      },
+      "source": "https://www.facebook.com/business/ads-guide/update/video/facebook-feed",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "Width rule from https://www.facebook.com/help/1041366099316573."
+    },
+    "frame_rates": {
+      "value": "at or below 30 fps (edited-video help page); 24-60 for reels",
+      "source": "https://www.facebook.com/help/1041366099316573",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "max_length_s": {
+      "value": 14400,
+      "source": "https://www.facebook.com/business/m/one-sheeters/video-requirements",
+      "checked": "2026-10-19",
+      "status": "official-ads",
+      "note": "Feed: 240 minutes max; ads guide: 1 s to 241 min."
+    },
+    "max_file_size_bytes": {
+      "value": 1000000000,
+      "source": "https://support.buffer.com/articles/sharing-videos-through-buffer-LOe2p2rnAI",
+      "checked": "2026-11-19",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: Facebook videos up to 1 GB; Meta's ads guide gives 4 GB for feed ads. The stricter 1 GB is kept (it was 4 x 1024^3 bytes before 19 Nov)."
+    },
+    "container": {
+      "value": [
+        "MP4",
+        "MOV"
+      ],
+      "source": "https://www.facebook.com/help/1041366099316573",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "Many other formats accepted (https://www.facebook.com/help/218673814818907)."
+    },
+    "video_codec": {
+      "value": "H.264",
+      "source": "https://www.facebook.com/help/1041366099316573",
+      "checked": "2026-10-19",
+      "status": "official"
+    }
+  },
+  "audio": {
+    "codec": {
+      "value": "AAC, stereo",
+      "source": "https://www.facebook.com/help/1041366099316573",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "sample_rate_hz": {
+      "value": 44100,
+      "source": "https://www.facebook.com/help/1041366099316573",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "bitrate_kbps": {
+      "value": "128+",
+      "source": "https://www.facebook.com/business/ads-guide/update/video/facebook-feed",
+      "checked": "2026-10-19",
+      "status": "official-ads"
+    },
+    "loudness_normalisation": {
+      "value": null,
+      "source": "https://www.facebook.com/help/1041366099316573",
+      "checked": "2026-10-19",
+      "status": "not documented"
+    }
+  },
+  "safe_zones": {
+    "value": [],
+    "source": "https://www.facebook.com/business/ads-guide/update/video/facebook-feed",
+    "checked": "2026-10-19",
+    "status": "not documented",
+    "note": "No overlay areas published for feed. Ads guide: for some objectives the ad footer (headline, description, call-to-action) is not displayed on mobile feed.",
+    "confidence": "n/a"
+  },
+  "captions": {
+    "placement": {
+      "value": "Post text appears above the video in feed.",
+      "source": "https://www.facebook.com/business/ads-guide/update/video/facebook-feed",
+      "checked": "2026-10-19",
+      "status": "unconfirmed"
+    }
+  },
+  "thumbnail": {
+    "value": null,
+    "source": "https://www.facebook.com/business/ads-guide/update/video/facebook-feed",
+    "checked": "2026-10-19",
+    "status": "not documented"
+  },
+  "text_limits": {
+    "post_text_chars": {
+      "value": null,
+      "source": "https://www.facebook.com/business/ads-guide/update/video/facebook-feed",
+      "checked": "2026-10-19",
+      "status": "not documented"
+    },
+    "primary_text_ads": {
+      "value": "50-150",
+      "source": "https://www.facebook.com/business/ads-guide/update/video/facebook-feed",
+      "checked": "2026-10-19",
+      "status": "official-ads"
+    },
+    "headline_ads": {
+      "value": 27,
+      "source": "https://www.facebook.com/business/ads-guide/update/video/facebook-feed",
+      "checked": "2026-10-19",
+      "status": "official-ads"
+    }
+  },
+  "export_preset": {
+    "width": {
+      "value": 1080,
+      "source": "https://www.facebook.com/business/help/103816146375741",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "4:5 at 1080 wide; Meta ads guide recommends 1440x1800."
+    },
+    "height": {
+      "value": 1350,
+      "source": "https://www.facebook.com/business/help/103816146375741",
+      "checked": "2026-10-19",
+      "status": "unconfirmed",
+      "note": "1350 = 1080 x 5/4."
+    },
+    "fps": {
+      "value": 30,
+      "source": "https://www.facebook.com/help/1041366099316573",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "At or below 30."
+    },
+    "container": {
+      "value": "mp4",
+      "source": "https://www.facebook.com/help/1041366099316573",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "vcodec": {
+      "value": "libx264",
+      "source": "https://www.facebook.com/help/1041366099316573",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "pix_fmt": {
+      "value": "yuv420p",
+      "source": "https://www.facebook.com/business/help/1197310377458196",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "video_bitrate_kbps": {
+      "value": null,
+      "source": "https://www.facebook.com/help/1041366099316573",
+      "checked": "2026-10-19",
+      "status": "not documented"
+    },
+    "acodec": {
+      "value": "aac",
+      "source": "https://www.facebook.com/help/1041366099316573",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "audio_bitrate_kbps": {
+      "value": 128,
+      "source": "https://www.facebook.com/business/ads-guide/update/video/facebook-feed",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "Minimum."
+    },
+    "sample_rate_hz": {
+      "value": 44100,
+      "source": "https://www.facebook.com/help/1041366099316573",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "loudness_lufs": {
+      "value": null,
+      "source": "https://www.facebook.com/help/1041366099316573",
+      "checked": "2026-10-19",
+      "status": "not documented"
+    }
+  },
+  "images": {
+    "aspect_ratios": {
+      "value": [
+        "4:5",
+        "1:1"
+      ],
+      "source": "https://www.facebook.com/business/ads-guide/update/image",
+      "checked": "2026-11-19",
+      "status": "official-ads",
+      "note": "Meta's image ad guide gives 4:5 for the feed (3% tolerance); 1:1 is the other common feed shape, not listed there."
+    },
+    "sizes": {
+      "value": {
+        "feed_4x5": "1080x1350",
+        "feed_1x1": "1080x1080"
+      },
+      "source": "https://www.facebook.com/business/ads-guide/update/image",
+      "checked": "2026-11-19",
+      "status": "unconfirmed",
+      "note": "The guide recommends 1440x1800 for 4:5 and a 600 px minimum width; 1080 wide is the size the apps show."
+    },
+    "formats": {
+      "value": [
+        "JPG",
+        "PNG"
+      ],
+      "source": "https://www.facebook.com/business/ads-guide/update/image",
+      "checked": "2026-11-19",
+      "status": "official-ads"
+    },
+    "max_file_size_bytes": {
+      "value": 30000000,
+      "source": "https://www.facebook.com/business/ads-guide/update/image",
+      "checked": "2026-11-19",
+      "status": "official-ads"
+    }
+  }
+}

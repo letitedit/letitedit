@@ -1,0 +1,10 @@
+Animated emoji in this folder: Noto Emoji Animation by Google
+https://googlefonts.github.io/noto-emoji-animation/
+
+Google licenses these animations under the Creative Commons Attribution 4.0 International licence
+(CC BY 4.0, https://creativecommons.org/licenses/by/4.0/). The SIL Open Font License text beside this file
+covers the Noto Emoji font, not these animations.
+
+A video that shows one of these animations owes this credit line in its description or credits:
+  "Animated emoji: Noto Emoji Animation by Google, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"
+letitedit's assets.credits(files) lists the credit lines a project owes.

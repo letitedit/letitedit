@@ -1,0 +1,126 @@
+{
+  "contract_version": "1.5",
+  "job_id": "ch-demo-2026-11-20-0007",
+  "kind": "short",
+  "priority": "channel",
+  "requested_by": {
+    "app": "letitedit-channel",
+    "app_version": "0.1.0",
+    "channel_id": "demo"
+  },
+  "output_dir": "C:\\Users\\Sam\\AppData\\Local\\letitedit Channel\\channels\\demo\\studio\\ch-demo-2026-11-20-0007",
+  "inputs": {
+    "tier": "preview",
+    "idea": {
+      "idea_id": "idea-0193",
+      "pattern": "guess-the-price",
+      "hook_line": "Guess what this cost in 1984",
+      "on_screen_text": [
+        "No Googling!"
+      ],
+      "target_seconds": 25,
+      "about": "The 6V-92 engine; keep the badge close-up; nothing about where we park.",
+      "title": "What did this engine cost in 1984?"
+    },
+    "sources": {
+      "pieces": [
+        {
+          "path": "D:\\Footage\\Café days\\IMG_1234.MOV",
+          "in": 12.4,
+          "out": 31.0
+        },
+        {
+          "moment_id": "m_1c46f56715ad4bca0afc"
+        }
+      ],
+      "strict": true
+    },
+    "look_id": "bus-life",
+    "brand_kit": {
+      "end_card": "C:\\Users\\Sam\\AppData\\Local\\letitedit Channel\\channels\\demo\\brand\\end.mov",
+      "logo": "C:\\Users\\Sam\\AppData\\Local\\letitedit Channel\\channels\\demo\\brand\\logo.png",
+      "handle": "@yourchannel"
+    },
+    "rules": [
+      {
+        "id": "blur-plates",
+        "kind": "must",
+        "text": "Blur licence plates everywhere (not the 6V-92 engine badge)",
+        "check": "blur_plates"
+      },
+      {
+        "id": "no-house-numbers",
+        "kind": "never",
+        "text": "Never show a house number",
+        "check": "house_numbers"
+      },
+      {
+        "id": "no-kids-faces",
+        "kind": "never",
+        "text": "Never show the kids' faces"
+      },
+      {
+        "id": "prefer-big-captions",
+        "kind": "prefer",
+        "text": "Prefer big captions, readable at a glance"
+      },
+      {
+        "id": "prefer-street-open",
+        "kind": "prefer",
+        "text": "Prefer opening on a wide shot of the street"
+      }
+    ],
+    "music": {
+      "mode": "ai_decides",
+      "allowed_sources": [
+        "letitedit_library",
+        "youtube_audio_library",
+        "pixabay"
+      ],
+      "attribution_ok": false,
+      "content_id": "must_be_clear"
+    },
+    "captions": "word-highlight",
+    "platforms": [
+      {
+        "id": "youtube_shorts",
+        "max_mb": 25
+      },
+      {
+        "id": "tiktok",
+        "max_mb": 25
+      },
+      {
+        "id": "instagram_reels",
+        "max_mb": 25
+      },
+      {
+        "id": "facebook_reels",
+        "max_mb": 25
+      }
+    ],
+    "deliver": {
+      "srt": true,
+      "cover": true,
+      "project": true,
+      "post_text": true
+    },
+    "overlay_text": [
+      {
+        "text": "@yourchannel",
+        "placement": "top"
+      },
+      {
+        "text": "Made with AI images",
+        "platforms": [
+          "facebook_reels",
+          "facebook_story"
+        ],
+        "placement": "bottom",
+        "if": [
+          "ai_generated_media"
+        ]
+      }
+    ]
+  }
+}

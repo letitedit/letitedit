@@ -1,0 +1,1867 @@
+{
+  "format": "letitedit-look-settings/1",
+  "id": "pack-lots-going-on",
+  "defaults_are": "taste",
+  "share": false,
+  "values": {
+    "format": "letitedit-style/3",
+    "name": "Lots Going On",
+    "description": "A dense talking-head Short where something changes on screen every one to two seconds.",
+    "colors": {
+      "primary": "#FFFFFF",
+      "secondary": "#FFE600",
+      "accent": "#FF2E88",
+      "dark": "#0B0B0B",
+      "light": "#FFFFFF",
+      "info": "#00E5FF",
+      "go": "#46FF5A"
+    },
+    "fonts": {
+      "heading": {
+        "family": "Luckiest Guy",
+        "weight": 400
+      },
+      "body": {
+        "family": "Inter",
+        "weight": 800
+      },
+      "captions": {
+        "family": "Archivo Black",
+        "weight": 400
+      }
+    },
+    "captions": {
+      "font": "captions",
+      "size": 76,
+      "fill": "light",
+      "outline": {
+        "color": "dark",
+        "width": 8
+      },
+      "shadow": null,
+      "background": null,
+      "position": "bottom",
+      "margin": 0.37,
+      "max_chars": 12,
+      "max_lines": 1,
+      "case": "upper"
+    },
+    "text": {
+      "font": "heading",
+      "size": 110,
+      "fill": "secondary",
+      "outline": {
+        "color": "dark",
+        "width": 10
+      }
+    },
+    "graphics": {
+      "word_captions": {
+        "style": "pop",
+        "font": "captions",
+        "size": 84,
+        "fill": "light",
+        "highlight": "go",
+        "outline": "dark",
+        "outline_width": 9,
+        "shadow": "#000000A0",
+        "position": 0.55,
+        "max_width": 0.78,
+        "uppercase": true,
+        "pop_scale": 1.22
+      }
+    },
+    "music": {
+      "zones": {
+        "talk": -20.0,
+        "montage": -6.0,
+        "quiet": -24.0,
+        "swell": -3.0,
+        "end": -4.0
+      },
+      "duck_under_speech": true,
+      "merge_gap": 4.0,
+      "attack": 0.3,
+      "release": 0.9,
+      "crossfade": 3.0,
+      "fade_in": 1.5,
+      "fade_out": 3.0,
+      "dialogue_lufs": null,
+      "sources": [],
+      "notes": "A driving electronic or hip-hop bed, 20 dB under the voice [MON, RES]; it comes up hard in any gap without words.",
+      "likes": [],
+      "avoid": [],
+      "theme": null
+    },
+    "sfx": {
+      "gain_db": -10.0,
+      "map": {
+        "pop": "assets/pop_cartoon_02.mp3",
+        "pop_hi": "assets/pop_pluck_02.mp3",
+        "swish": "assets/whoosh_fast_02.mp3",
+        "whoosh": "assets/whoosh_fast_03.mp3",
+        "impact": "assets/bonk_punch-heavy_01.mp3",
+        "bass_hit": "assets/bass_hit.wav",
+        "glitch": "assets/glitch.wav",
+        "boing": "assets/boing_spring_02.mp3",
+        "cash": "assets/cash_register_01_0-1.5.wav",
+        "riser": "assets/riser_short_01_0.9-2.95.wav",
+        "scratch": "assets/record-scratch_dj_02.mp3",
+        "click": "assets/click_ui_02.mp3",
+        "sparkle": "assets/magic_twinkle_01.mp3",
+        "ding": "assets/ding_bell_03.mp3",
+        "laugh": "assets/laugh_audience_05_0-2.2.wav",
+        "fail": "assets/fail_sad-trombone_02_0.08-2.75.wav"
+      },
+      "events": {
+        "popup": "pop",
+        "text": "swish",
+        "transition": "whoosh",
+        "punchline": "impact",
+        "shake": "impact",
+        "zoom": "click",
+        "flash": "whoosh",
+        "count": "ding",
+        "place": "pop_hi",
+        "reveal": "sparkle",
+        "hook": "bass_hit"
+      }
+    },
+    "editing": {
+      "max_pause": 0.15,
+      "pad_in": 0.04,
+      "pad_out": 0.08,
+      "blur_pad": true,
+      "transitions": "cut",
+      "pace": "fast",
+      "intro": null,
+      "outro": null
+    },
+    "export": {
+      "preset": "social_h264",
+      "loudness": -14.0
+    },
+    "look": {
+      "about": "Punchy - saturated and a little contrasty, so it reads as loud as it sounds.",
+      "effects": [
+        {
+          "filter": "hue_lightness_saturation",
+          "params": {
+            "av.s": 1.18
+          }
+        },
+        {
+          "filter": "color",
+          "params": {
+            "lift_r": 0.0,
+            "lift_g": 0.0,
+            "lift_b": 0.0,
+            "gamma_r": 0.96,
+            "gamma_g": 0.96,
+            "gamma_b": 0.96,
+            "gain_r": 1.06,
+            "gain_g": 1.06,
+            "gain_b": 1.06
+          }
+        }
+      ]
+    },
+    "taste": "",
+    "label": "Lots going on",
+    "summary": "Maximum energy - a zoom, pop-up, sound or layout change every couple of seconds, and fast captions.",
+    "kind": "short",
+    "tags": [
+      "talking head",
+      "maximal",
+      "energetic",
+      "pop-ups",
+      "sound effects",
+      "zooms",
+      "split screen",
+      "captions",
+      "shorts"
+    ],
+    "preview": "preview.jpg",
+    "recipe": "recipe.md",
+    "credits": [
+      {
+        "file": "assets/bass_hit.wav",
+        "source": "synthesised by tools\\styles\\sounds.py (bass_hit)",
+        "licence": "letitedit's own (generated)"
+      },
+      {
+        "file": "assets/glitch.wav",
+        "source": "synthesised by tools\\styles\\sounds.py (glitch)",
+        "licence": "letitedit's own (generated)"
+      },
+      {
+        "file": "assets/pop_cartoon_02.mp3",
+        "source": "Freesound.org: Plop! by Breviceps (freesound #447910) (https://freesound.org/people/Breviceps/sounds/447910/); copy of pop_cartoon_02.mp3 from the local sound library (02 Cartoon & Comedy)",
+        "licence": "CC0 1.0 (Creative Commons 0)"
+      },
+      {
+        "file": "assets/pop_pluck_02.mp3",
+        "source": "Kenney.nl: Kenney interface-sounds: Audio\\pluck_002.ogg (https://kenney.nl/assets/interface-sounds); copy of pop_pluck_02.mp3 from the local sound library (02 Cartoon & Comedy)",
+        "licence": "CC0 1.0 (public domain)"
+      },
+      {
+        "file": "assets/whoosh_fast_02.mp3",
+        "source": "Freesound.org: swosh-22.flac by qubodup (freesound #60009) (https://freesound.org/people/qubodup/sounds/60009/); copy of whoosh_fast_02.mp3 from the local sound library (08 Whooshes & Transitions)",
+        "licence": "CC0 1.0 (Creative Commons 0)"
+      },
+      {
+        "file": "assets/whoosh_fast_03.mp3",
+        "source": "Freesound.org: Swosh / Whoosh / Air Cut by qubodup (freesound #60030) (https://freesound.org/people/qubodup/sounds/60030/); copy of whoosh_fast_03.mp3 from the local sound library (08 Whooshes & Transitions)",
+        "licence": "CC0 1.0 (Creative Commons 0)"
+      },
+      {
+        "file": "assets/bonk_punch-heavy_01.mp3",
+        "source": "Kenney.nl: Kenney impact-sounds: Audio\\impactPunch_heavy_000.ogg (https://kenney.nl/assets/impact-sounds); copy of bonk_punch-heavy_01.mp3 from the local sound library (02 Cartoon & Comedy)",
+        "licence": "CC0 1.0 (public domain)"
+      },
+      {
+        "file": "assets/boing_spring_02.mp3",
+        "source": "Freesound.org: Boink_v3.wav by simon.rue (freesound #61847) (https://freesound.org/people/simon.rue/sounds/61847/); copy of boing_spring_02.mp3 from the local sound library (02 Cartoon & Comedy)",
+        "licence": "CC0 1.0 (Creative Commons 0)"
+      },
+      {
+        "file": "assets/cash_register_01_0-1.5.wav",
+        "source": "Freesound.org: Cash Register Purchase by Zott820 (freesound #209578) (https://freesound.org/people/Zott820/sounds/209578/); trimmed copy (0-1.5 s) of cash_register_01.mp3 from the local sound library (04 Dings & Sparkles)",
+        "licence": "CC0 1.0 (Creative Commons 0)"
+      },
+      {
+        "file": "assets/riser_short_01_0.9-2.95.wav",
+        "source": "Freesound.org: Riser sound effect short.wav by syntheffects (freesound #685256) (https://freesound.org/people/syntheffects/sounds/685256/); trimmed copy (0.9-2.95 s) of riser_short_01.mp3 from the local sound library (08 Whooshes & Transitions)",
+        "licence": "CC0 1.0 (Creative Commons 0)"
+      },
+      {
+        "file": "assets/record-scratch_dj_02.mp3",
+        "source": "Freesound.org: record_scratch.wav by ludvique (freesound #71853) (https://freesound.org/people/ludvique/sounds/71853/); copy of record-scratch_dj_02.mp3 from the local sound library (02 Cartoon & Comedy)",
+        "licence": "CC0 1.0 (Creative Commons 0)"
+      },
+      {
+        "file": "assets/click_ui_02.mp3",
+        "source": "Kenney.nl: Kenney ui-audio: Audio\\click2.ogg (https://kenney.nl/assets/ui-audio); copy of click_ui_02.mp3 from the local sound library (06 Real World & DIY)",
+        "licence": "CC0 1.0 (public domain)"
+      },
+      {
+        "file": "assets/magic_twinkle_01.mp3",
+        "source": "Freesound.org: Heal - Rpg by colorsCrimsonTears (freesound #562292) (https://freesound.org/people/colorsCrimsonTears/sounds/562292/); copy of magic_twinkle_01.mp3 from the local sound library (04 Dings & Sparkles)",
+        "licence": "CC0 1.0 (Creative Commons 0)"
+      },
+      {
+        "file": "assets/ding_bell_03.mp3",
+        "source": "Freesound.org: correct by ertfelda (freesound #243701) (https://freesound.org/people/ertfelda/sounds/243701/); copy of ding_bell_03.mp3 from the local sound library (04 Dings & Sparkles)",
+        "licence": "CC0 1.0 (Creative Commons 0)"
+      },
+      {
+        "file": "assets/laugh_audience_05_0-2.2.wav",
+        "source": "Freesound.org: laugh7.wav by ondrosik (freesound #207797) (https://freesound.org/people/ondrosik/sounds/207797/); trimmed copy (0-2.2 s) of laugh_audience_05.mp3 from the local sound library (01 Crowd Reactions)",
+        "licence": "CC0 1.0 (Creative Commons 0)"
+      },
+      {
+        "file": "assets/fail_sad-trombone_02_0.08-2.75.wav",
+        "source": "Freesound.org: horn_fail_wahwah_3.wav by TaranP (freesound #362204) (https://freesound.org/people/TaranP/sounds/362204/); trimmed copy (0.08-2.75 s) of fail_sad-trombone_02.mp3 from the local sound library (07 Music Stings)",
+        "licence": "CC0 1.0 (Creative Commons 0)"
+      },
+      {
+        "file": "preview.jpg",
+        "source": "Original preview imagery; hands, objects, places and titles only",
+        "licence": "Original letitedit footage: hands, objects, places and titles only; no faces"
+      }
+    ],
+    "effects": {
+      "thing_pop": {
+        "kind": "popup",
+        "about": "Every concrete thing named pops up as a die-cut sticker beside the speaker, with a pop.",
+        "size": 0.25,
+        "in": "pop",
+        "out": "pop",
+        "in_s": 0.2,
+        "out_s": 0.15,
+        "hold_s": 0.9,
+        "outline": 12,
+        "wiggle": 4,
+        "sfx": "pop",
+        "rules": {
+          "triggers": [
+            "mention",
+            "brand",
+            "list_item"
+          ],
+          "density": {
+            "per_10s": 3,
+            "min_gap_s": 1.2
+          },
+          "placement": {
+            "zone": "opposite_face",
+            "avoid": [
+              "face",
+              "captions",
+              "covered"
+            ]
+          },
+          "duration_s": [
+            0.6,
+            1.8
+          ],
+          "never": [
+            "over_face",
+            "over_captions"
+          ],
+          "when": "Every thing you could picture (a tool, a part, a product, a price tag, an animal). Emoji or the person's own picture; never a company logo they didn't give you."
+        }
+      },
+      "word_slam": {
+        "kind": "text_pop",
+        "about": "The stressed word slams in big and tilted above the captions.",
+        "size": 0.7,
+        "fill": "secondary",
+        "stroke": "dark",
+        "stroke_width": 14,
+        "tilt": -6,
+        "in": "pop",
+        "out": "pop",
+        "hold_s": 0.6,
+        "sfx": "swish",
+        "rules": {
+          "triggers": [
+            "emphasis",
+            "punchline",
+            "reveal",
+            "reaction"
+          ],
+          "density": {
+            "per_10s": 2,
+            "min_gap_s": 2.5
+          },
+          "placement": {
+            "zone": "above_captions",
+            "avoid": [
+              "face",
+              "captions",
+              "covered"
+            ]
+          },
+          "duration_s": [
+            0.5,
+            1.2
+          ],
+          "never": [
+            "over_face"
+          ],
+          "when": "The one word a sentence leans on (\"NEVER\", \"FREE\", \"BROKEN\"). One per sentence at most."
+        }
+      },
+      "number_pop": {
+        "kind": "text_pop",
+        "about": "Numbers and prices as big cyan numerals, with a ding (a till for money).",
+        "size": 0.55,
+        "fill": "info",
+        "stroke": "dark",
+        "stroke_width": 12,
+        "tilt": 4,
+        "hold_s": 0.9,
+        "sfx": "ding",
+        "rules": {
+          "triggers": [
+            "number"
+          ],
+          "density": {
+            "per_10s": 2,
+            "min_gap_s": 2.0
+          },
+          "placement": {
+            "zone": "above_captions",
+            "avoid": [
+              "face",
+              "captions",
+              "covered"
+            ]
+          },
+          "duration_s": [
+            0.6,
+            1.6
+          ],
+          "never": [
+            "over_face"
+          ],
+          "when": "Every number that matters, written as numerals ($12, 2 tabs, 3 hrs). Money gets sfx cash."
+        }
+      },
+      "punch_in": {
+        "kind": "zoom_punch",
+        "about": "A snap push-in that holds to the next cut (118%, the top of the sharp range [MON]).",
+        "scale": 1.18,
+        "ramp_s": 0.05,
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "emphasis",
+            "punchline",
+            "question",
+            "topic_change",
+            "cut"
+          ],
+          "density": {
+            "per_10s": 3,
+            "min_gap_s": 1.5
+          },
+          "when": "Every second cut or so, alternating with no punch, so the framing keeps changing; on the stressed word."
+        }
+      },
+      "zoom_bump": {
+        "kind": "zoom_punch",
+        "about": "A quick in-and-out bump (0.3 s) on a beat or a word, with a click.",
+        "scale": 1.2,
+        "ramp_s": 0.07,
+        "len": 0.3,
+        "sfx": "click",
+        "rules": {
+          "triggers": [
+            "emphasis",
+            "list_item",
+            "number",
+            "reaction"
+          ],
+          "density": {
+            "per_10s": 2,
+            "min_gap_s": 2.0
+          },
+          "duration_s": [
+            0.2,
+            0.5
+          ],
+          "when": "Inside a long take where nothing else changes; on a list item or a number."
+        }
+      },
+      "shake_hit": {
+        "kind": "shake",
+        "about": "A hard shake with an impact.",
+        "amount": 0.6,
+        "len": 0.3,
+        "sfx": "impact",
+        "rules": {
+          "triggers": [
+            "punchline",
+            "reveal",
+            "reaction"
+          ],
+          "density": {
+            "per_min": 4,
+            "min_gap_s": 5.0
+          },
+          "when": "A real surprise, a fail, the punchline's last word."
+        }
+      },
+      "glitch_hit": {
+        "kind": "glitch",
+        "about": "A short digital glitch on a cut, with its crackle.",
+        "amount": 0.7,
+        "len": 0.25,
+        "sfx": "glitch",
+        "rules": {
+          "triggers": [
+            "topic_change",
+            "reveal",
+            "reaction",
+            "cut"
+          ],
+          "density": {
+            "per_min": 4,
+            "min_gap_s": 6.0
+          },
+          "when": "A jump to a new topic, a \"wait, what?\" moment. Not two in a row."
+        }
+      },
+      "flash_cut": {
+        "kind": "flash",
+        "about": "A white flash over a cut (0.15 s), with a whoosh.",
+        "color": "light",
+        "len": 0.15,
+        "opacity": 0.8,
+        "sfx": "whoosh",
+        "sfx_offset_s": -0.14,
+        "rules": {
+          "triggers": [
+            "topic_change",
+            "reveal",
+            "cut"
+          ],
+          "density": {
+            "per_10s": 1,
+            "min_gap_s": 4.0
+          },
+          "when": "A new section, the first look at a result. Never more than three flashes a second [RES]."
+        }
+      },
+      "whoosh_cut": {
+        "kind": "whoosh",
+        "about": "A whoosh landing on a cut.",
+        "sfx": "whoosh",
+        "sfx_offset_s": -0.14,
+        "rules": {
+          "triggers": [
+            "cut",
+            "topic_change"
+          ],
+          "density": {
+            "per_10s": 2,
+            "min_gap_s": 2.5
+          },
+          "when": "Cuts between ideas that have no other effect."
+        }
+      },
+      "split_broll": {
+        "kind": "broll",
+        "about": "The thing being described fills the bottom half while the speaker stays in the top half (a split layout).",
+        "fit": "bottom",
+        "radius": 0,
+        "len": 2.6,
+        "sfx": "swish",
+        "rules": {
+          "triggers": [
+            "mention",
+            "list_item"
+          ],
+          "density": {
+            "per_min": 6,
+            "min_gap_s": 5.0
+          },
+          "duration_s": [
+            1.5,
+            4.0
+          ],
+          "never": [
+            "over_face",
+            {
+              "first_s": 1.0
+            }
+          ],
+          "when": "There is footage of the exact thing said and the speaker's face sits in the top half. Starts within 1.5 s of the word, 4 s at most [MON]. Use the half for the thing, never a random shot."
+        }
+      },
+      "cutaway": {
+        "kind": "broll",
+        "about": "A full-frame cutaway of the thing being said, 1-2 s.",
+        "fit": "cover",
+        "len": 1.4,
+        "sfx": "swish",
+        "rules": {
+          "triggers": [
+            "mention",
+            "list_item"
+          ],
+          "density": {
+            "per_10s": 1,
+            "min_gap_s": 4.0
+          },
+          "duration_s": [
+            0.8,
+            2.5
+          ],
+          "never": [
+            {
+              "first_s": 1.0
+            }
+          ],
+          "when": "Short punches of the exact thing; the voice carries on underneath."
+        }
+      },
+      "riser_reveal": {
+        "kind": "sfx",
+        "about": "A riser that builds into a reveal (it ends on the moment).",
+        "sfx": "riser",
+        "sfx_offset_s": -1.86,
+        "rules": {
+          "triggers": [
+            "reveal",
+            "punchline"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 15.0
+          },
+          "when": "The build right before the payoff or the result; the music can dip under it."
+        }
+      },
+      "bass_drop": {
+        "kind": "sfx",
+        "about": "A sub hit on the payoff word.",
+        "sfx": "bass_hit",
+        "rules": {
+          "triggers": [
+            "punchline",
+            "reveal",
+            "hook"
+          ],
+          "density": {
+            "per_min": 3,
+            "min_gap_s": 8.0
+          },
+          "when": "The first frame of the hook and the payoff, under the word, never over it."
+        }
+      },
+      "reaction_sticker": {
+        "kind": "popup",
+        "about": "A reaction sticker (an emoji or a short word like \"WAIT\" or \"OOPS\") with a cartoon sound.",
+        "size": 0.22,
+        "in": "spin",
+        "out": "pop",
+        "hold_s": 0.8,
+        "outline": 10,
+        "sfx": "boing",
+        "rules": {
+          "triggers": [
+            "reaction",
+            "question",
+            "punchline"
+          ],
+          "density": {
+            "per_min": 4,
+            "min_gap_s": 6.0
+          },
+          "placement": {
+            "zone": "opposite_face",
+            "avoid": [
+              "face",
+              "captions",
+              "covered"
+            ]
+          },
+          "duration_s": [
+            0.6,
+            1.5
+          ],
+          "never": [
+            "over_face",
+            "over_captions"
+          ],
+          "when": "A fail, a surprise, a question to the viewer, a joke landing."
+        }
+      },
+      "crowd_laugh": {
+        "kind": "sfx",
+        "about": "A short audience laugh under a joke that lands.",
+        "sfx": "laugh",
+        "sfx_gain_db": -16,
+        "rules": {
+          "triggers": [
+            "punchline",
+            "reaction"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 20.0
+          },
+          "when": "A real joke or a self-own that got a smile; starts after the last word, never under it."
+        }
+      },
+      "fail_sting": {
+        "kind": "sfx",
+        "about": "A sad-trombone sting on a real fail.",
+        "sfx": "fail",
+        "rules": {
+          "triggers": [
+            "reaction",
+            "reveal"
+          ],
+          "density": {
+            "per_min": 1
+          },
+          "when": "Something really went wrong on camera (it broke, it didn't fit); never on a success, never twice."
+        }
+      },
+      "place_tag": {
+        "kind": "location",
+        "about": "A place tag when a place is named.",
+        "params": {
+          "position": "top-left"
+        },
+        "len": 2.5,
+        "rules": {
+          "triggers": [
+            "place"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 15.0
+          },
+          "placement": {
+            "avoid": [
+              "covered"
+            ]
+          }
+        }
+      }
+    },
+    "fx": {
+      "track": "Effects",
+      "sfx_track": "Effect sounds",
+      "broll_track": "B-roll",
+      "density": {
+        "per_10s": 7,
+        "per_min": null,
+        "min_gap_s": 0.5
+      },
+      "safe_zone": "phone",
+      "never": [
+        "outside_safe_zone",
+        "overlapping"
+      ],
+      "rhythm": "Something changes every 1-2 s (a zoom, a pop-up, a word, a sound, a layout); the payoff gets a beat of quiet."
+    },
+    "popups": {
+      "track": null,
+      "sfx_track": null,
+      "min_gap_s": 1.2,
+      "max_total": 8,
+      "entries": [
+        {
+          "id": "money",
+          "words": [
+            "bucks",
+            "dollars",
+            "dollar",
+            "money",
+            "cheap",
+            "expensive",
+            "price"
+          ],
+          "asset": "emoji:money bag",
+          "zone": "opposite_face",
+          "size": 0.22,
+          "in": "drop",
+          "out": "pop",
+          "hold_s": 0.9,
+          "outline": 10,
+          "sfx": "cash",
+          "max_per_video": 2,
+          "cooldown_s": 12,
+          "avoid": [
+            "face",
+            "captions",
+            "covered"
+          ]
+        },
+        {
+          "id": "idea",
+          "words": [
+            "idea",
+            "figured out",
+            "realized",
+            "trick",
+            "genius"
+          ],
+          "asset": "emoji:light bulb",
+          "zone": "opposite_face",
+          "size": 0.2,
+          "in": "pop",
+          "out": "pop",
+          "hold_s": 0.9,
+          "outline": 10,
+          "sfx": "sparkle",
+          "max_per_video": 2,
+          "cooldown_s": 12,
+          "avoid": [
+            "face",
+            "captions",
+            "covered"
+          ]
+        },
+        {
+          "id": "wow",
+          "words": [
+            "crazy",
+            "insane",
+            "wild",
+            "unbelievable",
+            "no way"
+          ],
+          "asset": "emoji:exploding head",
+          "zone": "opposite_face",
+          "size": 0.22,
+          "in": "spin",
+          "out": "pop",
+          "hold_s": 0.8,
+          "outline": 10,
+          "sfx": "boing",
+          "max_per_video": 2,
+          "cooldown_s": 12,
+          "avoid": [
+            "face",
+            "captions",
+            "covered"
+          ]
+        },
+        {
+          "id": "careful",
+          "words": [
+            "careful",
+            "warning",
+            "danger",
+            "dangerous"
+          ],
+          "asset": "emoji:warning",
+          "zone": "opposite_face",
+          "size": 0.2,
+          "in": "pop",
+          "out": "pop",
+          "hold_s": 0.9,
+          "outline": 10,
+          "sfx": "pop_hi",
+          "max_per_video": 2,
+          "cooldown_s": 12,
+          "avoid": [
+            "face",
+            "captions",
+            "covered"
+          ]
+        },
+        {
+          "id": "done",
+          "words": [
+            "fixed",
+            "finished",
+            "it works",
+            "done"
+          ],
+          "asset": "emoji:check mark button",
+          "zone": "opposite_face",
+          "size": 0.2,
+          "in": "pop",
+          "out": "pop",
+          "hold_s": 0.9,
+          "outline": 10,
+          "sfx": "ding",
+          "max_per_video": 2,
+          "cooldown_s": 12,
+          "avoid": [
+            "face",
+            "captions",
+            "covered"
+          ]
+        },
+        {
+          "id": "fire",
+          "words": [
+            "fire",
+            "hot",
+            "heat"
+          ],
+          "asset": "emoji:fire",
+          "zone": "opposite_face",
+          "size": 0.2,
+          "in": "pop",
+          "out": "pop",
+          "hold_s": 0.8,
+          "outline": 10,
+          "sfx": "pop",
+          "max_per_video": 1,
+          "cooldown_s": 20,
+          "avoid": [
+            "face",
+            "captions",
+            "covered"
+          ]
+        }
+      ]
+    },
+    "hook": {
+      "max_s": 2.5,
+      "approaches": [
+        "result_first",
+        "question",
+        "number",
+        "stakes",
+        "quote",
+        "mid_action"
+      ],
+      "text": {
+        "max_words": 5,
+        "case": "upper",
+        "position": "top",
+        "size": 0.8,
+        "fill": "secondary",
+        "stroke": "dark",
+        "font": "heading"
+      },
+      "rules": "Frame 0 is already moving - mid-sentence, a sticker or a word already on screen, a sub hit under it. The hook text says the promise in five words or fewer [JH]; hook and the \"here's what's coming\" line done by ~3 s.",
+      "avoid": [
+        "greetings",
+        "intros",
+        "logo cards",
+        "slow fades"
+      ]
+    },
+    "broll": {
+      "amount": "some",
+      "kinds": [],
+      "favorites": "",
+      "notes": ""
+    },
+    "shots": {
+      "framing": "medium",
+      "camera": "handheld",
+      "punch_ins": "some",
+      "notes": ""
+    },
+    "signature": {
+      "touches": []
+    },
+    "measured": {},
+    "provenance": {
+      "made_by": "letitedit style library, wave 1",
+      "date": "2026-10-29",
+      "measured": "none yet (no reference videos in style-references\\lots going on)",
+      "sources": [
+        {
+          "url": "https://monty.fast/blog/how-to-edit-talking-head-videos/",
+          "title": "Monty talking-head guide",
+          "used_for": "baseline change rate (about 4 s), punch-in range, b-roll length, music level",
+          "licence": "none found (numbers only)"
+        },
+        {
+          "url": "https://ascynd.io/en/blog/hormozi-captions",
+          "title": "Ascynd caption guide",
+          "used_for": "caption look (1-3 words, ALL CAPS, one highlighted word, green alternative)",
+          "licence": "none found (numbers only)"
+        },
+        {
+          "url": "https://blitzcutai.com/blog/best-caption-style-instagram-reels-2026",
+          "title": "BlitzCut Reels captions",
+          "used_for": "caption size and position",
+          "licence": "none found (numbers only)"
+        }
+      ],
+      "notes": "The density is this style's own choice (about double a normal talking head); it has no source and should be tuned on the person's references when they arrive. Tags and checks in ..\\SOURCES.md."
+    }
+  },
+  "asset_root": "resources",
+  "files": {
+    "assets/bass_hit.wav": "resources/1240a009542e924e7b5dc42b.wav",
+    "assets/boing_spring_02.mp3": "resources/8e419ff38729318eaf248f91.mp3",
+    "assets/bonk_punch-heavy_01.mp3": "resources/710539674d504934742f8b3f.mp3",
+    "assets/cash_register_01_0-1.5.wav": "resources/3559bb4a77761096731ecfd9.wav",
+    "assets/click_ui_02.mp3": "resources/4540dff572fcf57ac2d41cd9.mp3",
+    "assets/ding_bell_03.mp3": "resources/d7ca415f0499c2f0e884fffe.mp3",
+    "assets/fail_sad-trombone_02_0.08-2.75.wav": "resources/66150f2af547a2a7aee5ad32.wav",
+    "assets/glitch.wav": "resources/af003d50c0eb824900229d52.wav",
+    "assets/laugh_audience_05_0-2.2.wav": "resources/590a7433241240be20a76531.wav",
+    "assets/magic_twinkle_01.mp3": "resources/7ac92056ef05d16cf5f72be9.mp3",
+    "assets/pop_cartoon_02.mp3": "resources/967bab863cb9ce8b5f6eab32.mp3",
+    "assets/pop_pluck_02.mp3": "resources/dd86d57d68f15557861d6553.mp3",
+    "assets/record-scratch_dj_02.mp3": "resources/e0317f33c97b0a6c2404c719.mp3",
+    "assets/riser_short_01_0.9-2.95.wav": "resources/ec1a49be5892787e8eeada45.wav",
+    "assets/whoosh_fast_02.mp3": "resources/b28911d6f30c5f10b353b924.mp3",
+    "assets/whoosh_fast_03.mp3": "resources/68a9be5e205fc0a89d7a429e.mp3",
+    "preview.jpg": "resources/bdbffb4fe34f1d2a3e2a0d88.jpg",
+    "recipe.md": "recipe.md"
+  },
+  "links": {
+    "recipe": "recipe.md",
+    "preview": "preview.jpg"
+  },
+  "legacy": {
+    "format": "letitedit-style/3",
+    "source": "style.yaml",
+    "pack": "lots-going-on",
+    "data": {
+      "format": "letitedit-style/3",
+      "name": "Lots Going On",
+      "label": "Lots going on",
+      "summary": "Maximum energy - a zoom, pop-up, sound or layout change every couple of seconds, and fast captions.",
+      "kind": "short",
+      "tags": [
+        "talking head",
+        "maximal",
+        "energetic",
+        "pop-ups",
+        "sound effects",
+        "zooms",
+        "split screen",
+        "captions",
+        "shorts"
+      ],
+      "recipe": "recipe.md",
+      "preview": "preview.jpg",
+      "description": "A dense talking-head Short where something changes on screen every one to two seconds.",
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#FFE600",
+        "accent": "#FF2E88",
+        "info": "#00E5FF",
+        "go": "#46FF5A",
+        "dark": "#0B0B0B",
+        "light": "#FFFFFF"
+      },
+      "fonts": {
+        "heading": {
+          "family": "Luckiest Guy",
+          "weight": 400
+        },
+        "body": {
+          "family": "Inter",
+          "weight": 800
+        },
+        "captions": {
+          "family": "Archivo Black",
+          "weight": 400
+        }
+      },
+      "graphics": {
+        "word_captions": {
+          "style": "pop",
+          "font": "captions",
+          "size": 84,
+          "fill": "light",
+          "highlight": "go",
+          "outline": "dark",
+          "outline_width": 9,
+          "shadow": "#000000A0",
+          "position": 0.55,
+          "max_width": 0.78,
+          "uppercase": true,
+          "pop_scale": 1.22
+        }
+      },
+      "captions": {
+        "font": "captions",
+        "size": 76,
+        "fill": "light",
+        "outline": {
+          "color": "dark",
+          "width": 8
+        },
+        "position": "bottom",
+        "margin": 0.37,
+        "max_chars": 12,
+        "max_lines": 1,
+        "case": "upper"
+      },
+      "text": {
+        "font": "heading",
+        "size": 110,
+        "fill": "secondary",
+        "outline": {
+          "color": "dark",
+          "width": 10
+        }
+      },
+      "editing": {
+        "max_pause": 0.15,
+        "pad_in": 0.04,
+        "pad_out": 0.08,
+        "blur_pad": true,
+        "transitions": "cut",
+        "pace": "fast"
+      },
+      "music": {
+        "zones": {
+          "talk": -20.0,
+          "montage": -6.0,
+          "end": -4.0
+        },
+        "notes": "A driving electronic or hip-hop bed, 20 dB under the voice [MON, RES]; it comes up hard in any gap without words."
+      },
+      "export": {
+        "preset": "social_h264",
+        "loudness": -14.0
+      },
+      "look": {
+        "about": "Punchy - saturated and a little contrasty, so it reads as loud as it sounds.",
+        "effects": [
+          {
+            "filter": "hue_lightness_saturation",
+            "params": {
+              "av.s": 1.18
+            }
+          },
+          {
+            "filter": "color",
+            "params": {
+              "lift_r": 0.0,
+              "lift_g": 0.0,
+              "lift_b": 0.0,
+              "gamma_r": 0.96,
+              "gamma_g": 0.96,
+              "gamma_b": 0.96,
+              "gain_r": 1.06,
+              "gain_g": 1.06,
+              "gain_b": 1.06
+            }
+          }
+        ]
+      },
+      "sfx": {
+        "gain_db": -10.0,
+        "map": {
+          "pop": "assets/pop_cartoon_02.mp3",
+          "pop_hi": "assets/pop_pluck_02.mp3",
+          "swish": "assets/whoosh_fast_02.mp3",
+          "whoosh": "assets/whoosh_fast_03.mp3",
+          "impact": "assets/bonk_punch-heavy_01.mp3",
+          "bass_hit": "assets/bass_hit.wav",
+          "glitch": "assets/glitch.wav",
+          "boing": "assets/boing_spring_02.mp3",
+          "cash": "assets/cash_register_01_0-1.5.wav",
+          "riser": "assets/riser_short_01_0.9-2.95.wav",
+          "scratch": "assets/record-scratch_dj_02.mp3",
+          "click": "assets/click_ui_02.mp3",
+          "sparkle": "assets/magic_twinkle_01.mp3",
+          "ding": "assets/ding_bell_03.mp3",
+          "laugh": "assets/laugh_audience_05_0-2.2.wav",
+          "fail": "assets/fail_sad-trombone_02_0.08-2.75.wav"
+        },
+        "events": {
+          "popup": "pop",
+          "text": "swish",
+          "transition": "whoosh",
+          "punchline": "impact",
+          "shake": "impact",
+          "zoom": "click",
+          "flash": "whoosh",
+          "count": "ding",
+          "place": "pop_hi",
+          "reveal": "sparkle",
+          "hook": "bass_hit"
+        }
+      },
+      "fx": {
+        "track": "Effects",
+        "sfx_track": "Effect sounds",
+        "broll_track": "B-roll",
+        "density": {
+          "per_10s": 7,
+          "min_gap_s": 0.5
+        },
+        "safe_zone": "phone",
+        "never": [
+          "outside_safe_zone",
+          "overlapping"
+        ],
+        "rhythm": "Something changes every 1-2 s (a zoom, a pop-up, a word, a sound, a layout); the payoff gets a beat of quiet."
+      },
+      "effects": {
+        "thing_pop": {
+          "kind": "popup",
+          "about": "Every concrete thing named pops up as a die-cut sticker beside the speaker, with a pop.",
+          "size": 0.25,
+          "in": "pop",
+          "out": "pop",
+          "in_s": 0.2,
+          "out_s": 0.15,
+          "hold_s": 0.9,
+          "outline": 12,
+          "wiggle": 4,
+          "sfx": "pop",
+          "rules": {
+            "triggers": [
+              "mention",
+              "brand",
+              "list_item"
+            ],
+            "density": {
+              "per_10s": 3,
+              "min_gap_s": 1.2
+            },
+            "placement": {
+              "zone": "opposite_face",
+              "avoid": [
+                "face",
+                "captions",
+                "covered"
+              ]
+            },
+            "duration_s": [
+              0.6,
+              1.8
+            ],
+            "never": [
+              "over_face",
+              "over_captions"
+            ],
+            "when": "Every thing you could picture (a tool, a part, a product, a price tag, an animal). Emoji or the person's own picture; never a company logo they didn't give you."
+          }
+        },
+        "word_slam": {
+          "kind": "text_pop",
+          "about": "The stressed word slams in big and tilted above the captions.",
+          "size": 0.7,
+          "fill": "secondary",
+          "stroke": "dark",
+          "stroke_width": 14,
+          "tilt": -6,
+          "in": "pop",
+          "out": "pop",
+          "hold_s": 0.6,
+          "sfx": "swish",
+          "rules": {
+            "triggers": [
+              "emphasis",
+              "punchline",
+              "reveal",
+              "reaction"
+            ],
+            "density": {
+              "per_10s": 2,
+              "min_gap_s": 2.5
+            },
+            "placement": {
+              "zone": "above_captions",
+              "avoid": [
+                "face",
+                "captions",
+                "covered"
+              ]
+            },
+            "duration_s": [
+              0.5,
+              1.2
+            ],
+            "never": [
+              "over_face"
+            ],
+            "when": "The one word a sentence leans on (\"NEVER\", \"FREE\", \"BROKEN\"). One per sentence at most."
+          }
+        },
+        "number_pop": {
+          "kind": "text_pop",
+          "about": "Numbers and prices as big cyan numerals, with a ding (a till for money).",
+          "size": 0.55,
+          "fill": "info",
+          "stroke": "dark",
+          "stroke_width": 12,
+          "tilt": 4,
+          "hold_s": 0.9,
+          "sfx": "ding",
+          "rules": {
+            "triggers": [
+              "number"
+            ],
+            "density": {
+              "per_10s": 2,
+              "min_gap_s": 2.0
+            },
+            "placement": {
+              "zone": "above_captions",
+              "avoid": [
+                "face",
+                "captions",
+                "covered"
+              ]
+            },
+            "duration_s": [
+              0.6,
+              1.6
+            ],
+            "never": [
+              "over_face"
+            ],
+            "when": "Every number that matters, written as numerals ($12, 2 tabs, 3 hrs). Money gets sfx cash."
+          }
+        },
+        "punch_in": {
+          "kind": "zoom_punch",
+          "about": "A snap push-in that holds to the next cut (118%, the top of the sharp range [MON]).",
+          "scale": 1.18,
+          "ramp_s": 0.05,
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "emphasis",
+              "punchline",
+              "question",
+              "topic_change",
+              "cut"
+            ],
+            "density": {
+              "per_10s": 3,
+              "min_gap_s": 1.5
+            },
+            "when": "Every second cut or so, alternating with no punch, so the framing keeps changing; on the stressed word."
+          }
+        },
+        "zoom_bump": {
+          "kind": "zoom_punch",
+          "about": "A quick in-and-out bump (0.3 s) on a beat or a word, with a click.",
+          "scale": 1.2,
+          "ramp_s": 0.07,
+          "len": 0.3,
+          "sfx": "click",
+          "rules": {
+            "triggers": [
+              "emphasis",
+              "list_item",
+              "number",
+              "reaction"
+            ],
+            "density": {
+              "per_10s": 2,
+              "min_gap_s": 2.0
+            },
+            "duration_s": [
+              0.2,
+              0.5
+            ],
+            "when": "Inside a long take where nothing else changes; on a list item or a number."
+          }
+        },
+        "shake_hit": {
+          "kind": "shake",
+          "about": "A hard shake with an impact.",
+          "amount": 0.6,
+          "len": 0.3,
+          "sfx": "impact",
+          "rules": {
+            "triggers": [
+              "punchline",
+              "reveal",
+              "reaction"
+            ],
+            "density": {
+              "per_min": 4,
+              "min_gap_s": 5.0
+            },
+            "when": "A real surprise, a fail, the punchline's last word."
+          }
+        },
+        "glitch_hit": {
+          "kind": "glitch",
+          "about": "A short digital glitch on a cut, with its crackle.",
+          "amount": 0.7,
+          "len": 0.25,
+          "sfx": "glitch",
+          "rules": {
+            "triggers": [
+              "topic_change",
+              "reveal",
+              "reaction",
+              "cut"
+            ],
+            "density": {
+              "per_min": 4,
+              "min_gap_s": 6.0
+            },
+            "when": "A jump to a new topic, a \"wait, what?\" moment. Not two in a row."
+          }
+        },
+        "flash_cut": {
+          "kind": "flash",
+          "about": "A white flash over a cut (0.15 s), with a whoosh.",
+          "color": "light",
+          "len": 0.15,
+          "opacity": 0.8,
+          "sfx": "whoosh",
+          "sfx_offset_s": -0.14,
+          "rules": {
+            "triggers": [
+              "topic_change",
+              "reveal",
+              "cut"
+            ],
+            "density": {
+              "per_10s": 1,
+              "min_gap_s": 4.0
+            },
+            "when": "A new section, the first look at a result. Never more than three flashes a second [RES]."
+          }
+        },
+        "whoosh_cut": {
+          "kind": "whoosh",
+          "about": "A whoosh landing on a cut.",
+          "sfx": "whoosh",
+          "sfx_offset_s": -0.14,
+          "rules": {
+            "triggers": [
+              "cut",
+              "topic_change"
+            ],
+            "density": {
+              "per_10s": 2,
+              "min_gap_s": 2.5
+            },
+            "when": "Cuts between ideas that have no other effect."
+          }
+        },
+        "split_broll": {
+          "kind": "broll",
+          "about": "The thing being described fills the bottom half while the speaker stays in the top half (a split layout).",
+          "fit": "bottom",
+          "radius": 0,
+          "len": 2.6,
+          "sfx": "swish",
+          "rules": {
+            "triggers": [
+              "mention",
+              "list_item"
+            ],
+            "density": {
+              "per_min": 6,
+              "min_gap_s": 5.0
+            },
+            "duration_s": [
+              1.5,
+              4.0
+            ],
+            "never": [
+              "over_face",
+              {
+                "first_s": 1.0
+              }
+            ],
+            "when": "There is footage of the exact thing said and the speaker's face sits in the top half. Starts within 1.5 s of the word, 4 s at most [MON]. Use the half for the thing, never a random shot."
+          }
+        },
+        "cutaway": {
+          "kind": "broll",
+          "about": "A full-frame cutaway of the thing being said, 1-2 s.",
+          "fit": "cover",
+          "len": 1.4,
+          "sfx": "swish",
+          "rules": {
+            "triggers": [
+              "mention",
+              "list_item"
+            ],
+            "density": {
+              "per_10s": 1,
+              "min_gap_s": 4.0
+            },
+            "duration_s": [
+              0.8,
+              2.5
+            ],
+            "never": [
+              {
+                "first_s": 1.0
+              }
+            ],
+            "when": "Short punches of the exact thing; the voice carries on underneath."
+          }
+        },
+        "riser_reveal": {
+          "kind": "sfx",
+          "about": "A riser that builds into a reveal (it ends on the moment).",
+          "sfx": "riser",
+          "sfx_offset_s": -1.86,
+          "rules": {
+            "triggers": [
+              "reveal",
+              "punchline"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 15.0
+            },
+            "when": "The build right before the payoff or the result; the music can dip under it."
+          }
+        },
+        "bass_drop": {
+          "kind": "sfx",
+          "about": "A sub hit on the payoff word.",
+          "sfx": "bass_hit",
+          "rules": {
+            "triggers": [
+              "punchline",
+              "reveal",
+              "hook"
+            ],
+            "density": {
+              "per_min": 3,
+              "min_gap_s": 8.0
+            },
+            "when": "The first frame of the hook and the payoff, under the word, never over it."
+          }
+        },
+        "reaction_sticker": {
+          "kind": "popup",
+          "about": "A reaction sticker (an emoji or a short word like \"WAIT\" or \"OOPS\") with a cartoon sound.",
+          "size": 0.22,
+          "in": "spin",
+          "out": "pop",
+          "hold_s": 0.8,
+          "outline": 10,
+          "sfx": "boing",
+          "rules": {
+            "triggers": [
+              "reaction",
+              "question",
+              "punchline"
+            ],
+            "density": {
+              "per_min": 4,
+              "min_gap_s": 6.0
+            },
+            "placement": {
+              "zone": "opposite_face",
+              "avoid": [
+                "face",
+                "captions",
+                "covered"
+              ]
+            },
+            "duration_s": [
+              0.6,
+              1.5
+            ],
+            "never": [
+              "over_face",
+              "over_captions"
+            ],
+            "when": "A fail, a surprise, a question to the viewer, a joke landing."
+          }
+        },
+        "crowd_laugh": {
+          "kind": "sfx",
+          "about": "A short audience laugh under a joke that lands.",
+          "sfx": "laugh",
+          "sfx_gain_db": -16,
+          "rules": {
+            "triggers": [
+              "punchline",
+              "reaction"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 20.0
+            },
+            "when": "A real joke or a self-own that got a smile; starts after the last word, never under it."
+          }
+        },
+        "fail_sting": {
+          "kind": "sfx",
+          "about": "A sad-trombone sting on a real fail.",
+          "sfx": "fail",
+          "rules": {
+            "triggers": [
+              "reaction",
+              "reveal"
+            ],
+            "density": {
+              "per_min": 1
+            },
+            "when": "Something really went wrong on camera (it broke, it didn't fit); never on a success, never twice."
+          }
+        },
+        "place_tag": {
+          "kind": "location",
+          "about": "A place tag when a place is named.",
+          "params": {
+            "position": "top-left"
+          },
+          "len": 2.5,
+          "rules": {
+            "triggers": [
+              "place"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 15.0
+            },
+            "placement": {
+              "avoid": [
+                "covered"
+              ]
+            }
+          }
+        }
+      },
+      "popups": {
+        "min_gap_s": 1.2,
+        "max_total": 8,
+        "entries": [
+          {
+            "id": "money",
+            "words": [
+              "bucks",
+              "dollars",
+              "dollar",
+              "money",
+              "cheap",
+              "expensive",
+              "price"
+            ],
+            "asset": "emoji:money bag",
+            "zone": "opposite_face",
+            "size": 0.22,
+            "in": "drop",
+            "out": "pop",
+            "hold_s": 0.9,
+            "outline": 10,
+            "sfx": "cash",
+            "max_per_video": 2,
+            "cooldown_s": 12,
+            "avoid": [
+              "face",
+              "captions",
+              "covered"
+            ]
+          },
+          {
+            "id": "idea",
+            "words": [
+              "idea",
+              "figured out",
+              "realized",
+              "trick",
+              "genius"
+            ],
+            "asset": "emoji:light bulb",
+            "zone": "opposite_face",
+            "size": 0.2,
+            "in": "pop",
+            "out": "pop",
+            "hold_s": 0.9,
+            "outline": 10,
+            "sfx": "sparkle",
+            "max_per_video": 2,
+            "cooldown_s": 12,
+            "avoid": [
+              "face",
+              "captions",
+              "covered"
+            ]
+          },
+          {
+            "id": "wow",
+            "words": [
+              "crazy",
+              "insane",
+              "wild",
+              "unbelievable",
+              "no way"
+            ],
+            "asset": "emoji:exploding head",
+            "zone": "opposite_face",
+            "size": 0.22,
+            "in": "spin",
+            "out": "pop",
+            "hold_s": 0.8,
+            "outline": 10,
+            "sfx": "boing",
+            "max_per_video": 2,
+            "cooldown_s": 12,
+            "avoid": [
+              "face",
+              "captions",
+              "covered"
+            ]
+          },
+          {
+            "id": "careful",
+            "words": [
+              "careful",
+              "warning",
+              "danger",
+              "dangerous"
+            ],
+            "asset": "emoji:warning",
+            "zone": "opposite_face",
+            "size": 0.2,
+            "in": "pop",
+            "out": "pop",
+            "hold_s": 0.9,
+            "outline": 10,
+            "sfx": "pop_hi",
+            "max_per_video": 2,
+            "cooldown_s": 12,
+            "avoid": [
+              "face",
+              "captions",
+              "covered"
+            ]
+          },
+          {
+            "id": "done",
+            "words": [
+              "fixed",
+              "finished",
+              "it works",
+              "done"
+            ],
+            "asset": "emoji:check mark button",
+            "zone": "opposite_face",
+            "size": 0.2,
+            "in": "pop",
+            "out": "pop",
+            "hold_s": 0.9,
+            "outline": 10,
+            "sfx": "ding",
+            "max_per_video": 2,
+            "cooldown_s": 12,
+            "avoid": [
+              "face",
+              "captions",
+              "covered"
+            ]
+          },
+          {
+            "id": "fire",
+            "words": [
+              "fire",
+              "hot",
+              "heat"
+            ],
+            "asset": "emoji:fire",
+            "zone": "opposite_face",
+            "size": 0.2,
+            "in": "pop",
+            "out": "pop",
+            "hold_s": 0.8,
+            "outline": 10,
+            "sfx": "pop",
+            "max_per_video": 1,
+            "cooldown_s": 20,
+            "avoid": [
+              "face",
+              "captions",
+              "covered"
+            ]
+          }
+        ]
+      },
+      "hook": {
+        "max_s": 2.5,
+        "approaches": [
+          "result_first",
+          "question",
+          "number",
+          "stakes",
+          "quote",
+          "mid_action"
+        ],
+        "text": {
+          "max_words": 5,
+          "case": "upper",
+          "position": "top",
+          "size": 0.8,
+          "fill": "secondary",
+          "stroke": "dark",
+          "font": "heading"
+        },
+        "rules": "Frame 0 is already moving - mid-sentence, a sticker or a word already on screen, a sub hit under it. The hook text says the promise in five words or fewer [JH]; hook and the \"here's what's coming\" line done by ~3 s.",
+        "avoid": [
+          "greetings",
+          "intros",
+          "logo cards",
+          "slow fades"
+        ]
+      },
+      "credits": [
+        {
+          "file": "assets/bass_hit.wav",
+          "source": "synthesised by tools\\styles\\sounds.py (bass_hit)",
+          "licence": "letitedit's own (generated)"
+        },
+        {
+          "file": "assets/glitch.wav",
+          "source": "synthesised by tools\\styles\\sounds.py (glitch)",
+          "licence": "letitedit's own (generated)"
+        },
+        {
+          "file": "assets/pop_cartoon_02.mp3",
+          "source": "Freesound.org: Plop! by Breviceps (freesound #447910) (https://freesound.org/people/Breviceps/sounds/447910/); copy of pop_cartoon_02.mp3 from the local sound library (02 Cartoon & Comedy)",
+          "licence": "CC0 1.0 (Creative Commons 0)"
+        },
+        {
+          "file": "assets/pop_pluck_02.mp3",
+          "source": "Kenney.nl: Kenney interface-sounds: Audio\\pluck_002.ogg (https://kenney.nl/assets/interface-sounds); copy of pop_pluck_02.mp3 from the local sound library (02 Cartoon & Comedy)",
+          "licence": "CC0 1.0 (public domain)"
+        },
+        {
+          "file": "assets/whoosh_fast_02.mp3",
+          "source": "Freesound.org: swosh-22.flac by qubodup (freesound #60009) (https://freesound.org/people/qubodup/sounds/60009/); copy of whoosh_fast_02.mp3 from the local sound library (08 Whooshes & Transitions)",
+          "licence": "CC0 1.0 (Creative Commons 0)"
+        },
+        {
+          "file": "assets/whoosh_fast_03.mp3",
+          "source": "Freesound.org: Swosh / Whoosh / Air Cut by qubodup (freesound #60030) (https://freesound.org/people/qubodup/sounds/60030/); copy of whoosh_fast_03.mp3 from the local sound library (08 Whooshes & Transitions)",
+          "licence": "CC0 1.0 (Creative Commons 0)"
+        },
+        {
+          "file": "assets/bonk_punch-heavy_01.mp3",
+          "source": "Kenney.nl: Kenney impact-sounds: Audio\\impactPunch_heavy_000.ogg (https://kenney.nl/assets/impact-sounds); copy of bonk_punch-heavy_01.mp3 from the local sound library (02 Cartoon & Comedy)",
+          "licence": "CC0 1.0 (public domain)"
+        },
+        {
+          "file": "assets/boing_spring_02.mp3",
+          "source": "Freesound.org: Boink_v3.wav by simon.rue (freesound #61847) (https://freesound.org/people/simon.rue/sounds/61847/); copy of boing_spring_02.mp3 from the local sound library (02 Cartoon & Comedy)",
+          "licence": "CC0 1.0 (Creative Commons 0)"
+        },
+        {
+          "file": "assets/cash_register_01_0-1.5.wav",
+          "source": "Freesound.org: Cash Register Purchase by Zott820 (freesound #209578) (https://freesound.org/people/Zott820/sounds/209578/); trimmed copy (0-1.5 s) of cash_register_01.mp3 from the local sound library (04 Dings & Sparkles)",
+          "licence": "CC0 1.0 (Creative Commons 0)"
+        },
+        {
+          "file": "assets/riser_short_01_0.9-2.95.wav",
+          "source": "Freesound.org: Riser sound effect short.wav by syntheffects (freesound #685256) (https://freesound.org/people/syntheffects/sounds/685256/); trimmed copy (0.9-2.95 s) of riser_short_01.mp3 from the local sound library (08 Whooshes & Transitions)",
+          "licence": "CC0 1.0 (Creative Commons 0)"
+        },
+        {
+          "file": "assets/record-scratch_dj_02.mp3",
+          "source": "Freesound.org: record_scratch.wav by ludvique (freesound #71853) (https://freesound.org/people/ludvique/sounds/71853/); copy of record-scratch_dj_02.mp3 from the local sound library (02 Cartoon & Comedy)",
+          "licence": "CC0 1.0 (Creative Commons 0)"
+        },
+        {
+          "file": "assets/click_ui_02.mp3",
+          "source": "Kenney.nl: Kenney ui-audio: Audio\\click2.ogg (https://kenney.nl/assets/ui-audio); copy of click_ui_02.mp3 from the local sound library (06 Real World & DIY)",
+          "licence": "CC0 1.0 (public domain)"
+        },
+        {
+          "file": "assets/magic_twinkle_01.mp3",
+          "source": "Freesound.org: Heal - Rpg by colorsCrimsonTears (freesound #562292) (https://freesound.org/people/colorsCrimsonTears/sounds/562292/); copy of magic_twinkle_01.mp3 from the local sound library (04 Dings & Sparkles)",
+          "licence": "CC0 1.0 (Creative Commons 0)"
+        },
+        {
+          "file": "assets/ding_bell_03.mp3",
+          "source": "Freesound.org: correct by ertfelda (freesound #243701) (https://freesound.org/people/ertfelda/sounds/243701/); copy of ding_bell_03.mp3 from the local sound library (04 Dings & Sparkles)",
+          "licence": "CC0 1.0 (Creative Commons 0)"
+        },
+        {
+          "file": "assets/laugh_audience_05_0-2.2.wav",
+          "source": "Freesound.org: laugh7.wav by ondrosik (freesound #207797) (https://freesound.org/people/ondrosik/sounds/207797/); trimmed copy (0-2.2 s) of laugh_audience_05.mp3 from the local sound library (01 Crowd Reactions)",
+          "licence": "CC0 1.0 (Creative Commons 0)"
+        },
+        {
+          "file": "assets/fail_sad-trombone_02_0.08-2.75.wav",
+          "source": "Freesound.org: horn_fail_wahwah_3.wav by TaranP (freesound #362204) (https://freesound.org/people/TaranP/sounds/362204/); trimmed copy (0.08-2.75 s) of fail_sad-trombone_02.mp3 from the local sound library (07 Music Stings)",
+          "licence": "CC0 1.0 (Creative Commons 0)"
+        },
+        {
+          "file": "preview.jpg",
+          "source": "Original preview imagery; hands, objects, places and titles only",
+          "licence": "Original letitedit footage: hands, objects, places and titles only; no faces"
+        }
+      ],
+      "measured": {},
+      "provenance": {
+        "made_by": "letitedit style library, wave 1",
+        "date": "2026-10-29",
+        "measured": "none yet (no reference videos in style-references\\lots going on)",
+        "sources": [
+          {
+            "url": "https://monty.fast/blog/how-to-edit-talking-head-videos/",
+            "title": "Monty talking-head guide",
+            "used_for": "baseline change rate (about 4 s), punch-in range, b-roll length, music level",
+            "licence": "none found (numbers only)"
+          },
+          {
+            "url": "https://ascynd.io/en/blog/hormozi-captions",
+            "title": "Ascynd caption guide",
+            "used_for": "caption look (1-3 words, ALL CAPS, one highlighted word, green alternative)",
+            "licence": "none found (numbers only)"
+          },
+          {
+            "url": "https://blitzcutai.com/blog/best-caption-style-instagram-reels-2026",
+            "title": "BlitzCut Reels captions",
+            "used_for": "caption size and position",
+            "licence": "none found (numbers only)"
+          }
+        ],
+        "notes": "The density is this style's own choice (about double a normal talking head); it has no source and should be tuned on the person's references when they arrive. Tags and checks in ..\\SOURCES.md."
+      }
+    }
+  }
+}

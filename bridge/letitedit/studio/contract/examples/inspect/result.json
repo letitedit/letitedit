@@ -1,0 +1,128 @@
+{
+  "contract_version": "1.1",
+  "job_id": "ch-demo-inspect-0005",
+  "kind": "inspect",
+  "state": "done",
+  "started": "2026-11-20T01:10:00-08:00",
+  "finished": "2026-11-20T01:40:00-08:00",
+  "attempts": 1,
+  "versions": {
+    "contract": "1.1",
+    "letitedit": "20261118.3",
+    "tools": "7b0da5c5"
+  },
+  "cost": {
+    "wall_s": 140,
+    "waited_s": 0,
+    "measured": true
+  },
+  "outputs": [
+    {
+      "role": "evidence",
+      "path": "evidence/watermark-1.jpg",
+      "bytes": 30000,
+      "sha256": "8d278e795c0464d47b33e6cf6d0f8ed4c14e5e3936547b48de1452443683e39c",
+      "location_metadata": "none"
+    },
+    {
+      "role": "transcript",
+      "path": "transcript.json",
+      "bytes": 2100,
+      "sha256": "8fd629d51de0f077cd07bd169f2d285a772c550935e0c5be11511105933c3427"
+    }
+  ],
+  "output": {
+    "duration_s": 18.3,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "hdr": "sdr",
+    "watermarks": {
+      "status": "found",
+      "how": "vision_model",
+      "items": [
+        {
+          "what": "CapCut watermark, bottom right",
+          "start": 0.0,
+          "end": 18.3,
+          "confidence": 0.88,
+          "frames": [
+            {
+              "path": "evidence/watermark-1.jpg",
+              "at": 2.0
+            }
+          ]
+        }
+      ]
+    },
+    "end_cards": {
+      "status": "found",
+      "how": "vision_model",
+      "items": [
+        {
+          "what": "CapCut end card",
+          "start": 16.8,
+          "end": 18.3,
+          "confidence": 0.9
+        }
+      ]
+    },
+    "music": {
+      "status": "found",
+      "how": "sound_analysis",
+      "items": [
+        {
+          "what": "Music with vocals",
+          "start": 0.0,
+          "end": 16.8
+        }
+      ],
+      "looks_like_known_song": "unknown",
+      "vocals": "yes",
+      "why": "Mastered music with vocals all the way through; letitedit has no song fingerprints on this PC, so it cannot say which song."
+    },
+    "film_tv": {
+      "status": "could_not_check",
+      "how": "not_checked",
+      "reason": "No local way to recognise film or TV footage yet."
+    },
+    "transcript": {
+      "status": "found",
+      "path": "transcript.json",
+      "language": "en",
+      "text": "Three things nobody tells you about bus life."
+    },
+    "choices": {
+      "look_id": null,
+      "hook_kind": "number_or_list",
+      "first_3s": "Text \"3 things nobody tells you\" over a wide of the bus at dusk.",
+      "duration_s": 18.3,
+      "cuts_per_min": 39.0,
+      "words_per_min": 140.0,
+      "caption_style": null,
+      "music_kind": "in_source_footage",
+      "broll_share": null,
+      "moments": [],
+      "measured": [
+        "duration_s",
+        "cuts_per_min",
+        "words_per_min"
+      ]
+    },
+    "location_metadata": {
+      "status": "present",
+      "found": [
+        "location.ISO6709"
+      ]
+    },
+    "rights": {
+      "risk": "high",
+      "reasons": [
+        "Another app's watermark and end card",
+        "Music with vocals of unknown origin",
+        "It carries a location tag, which is never copied into what letitedit makes"
+      ]
+    }
+  },
+  "warnings": []
+}

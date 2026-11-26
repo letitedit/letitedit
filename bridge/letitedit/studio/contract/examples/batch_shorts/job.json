@@ -1,0 +1,93 @@
+{
+  "contract_version": "1.1",
+  "job_id": "ch-demo-batch-0002",
+  "kind": "batch_shorts",
+  "priority": "channel",
+  "requested_by": {
+    "app": "letitedit-channel",
+    "app_version": "0.1.0",
+    "channel_id": "demo"
+  },
+  "output_dir": "C:\\Users\\Sam\\AppData\\Local\\letitedit Channel\\channels\\demo\\studio\\ch-demo-batch-0002",
+  "inputs": {
+    "tier": "preview",
+    "sources": {
+      "find_in": [
+        "D:\\Footage\\Café days"
+      ],
+      "avoid_moments": [
+        "m_1c46f56715ad4bca0afc"
+      ]
+    },
+    "ideas": [
+      {
+        "idea_id": "idea-0193",
+        "pattern": "guess-the-price",
+        "hook_line": "Guess what this cost in 1984",
+        "target_seconds": 25,
+        "title": "What did this engine cost in 1984?",
+        "overlay_text": [
+          {
+            "text": "Made with AI images",
+            "platforms": [
+              "facebook_reels",
+              "facebook_story"
+            ],
+            "placement": "bottom",
+            "if": [
+              "ai_generated_media"
+            ]
+          }
+        ]
+      },
+      {
+        "idea_id": "idea-0194",
+        "pattern": "day-in-the-life",
+        "target_seconds": 30
+      },
+      {
+        "idea_id": "idea-0195",
+        "pattern": "fail-then-fix",
+        "target_seconds": 35
+      }
+    ],
+    "look_id": "bus-life",
+    "rules": [
+      {
+        "id": "blur-plates",
+        "kind": "must",
+        "text": "Blur licence plates everywhere (not the 6V-92 engine badge)",
+        "check": "blur_plates"
+      },
+      {
+        "id": "no-house-numbers",
+        "kind": "never",
+        "text": "Never show a house number",
+        "check": "house_numbers"
+      },
+      {
+        "id": "no-kids-faces",
+        "kind": "never",
+        "text": "Never show the kids' faces"
+      }
+    ],
+    "captions": "word-highlight",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels"
+    ],
+    "music": {
+      "mode": "ai_decides",
+      "attribution_ok": false,
+      "content_id": "must_be_clear"
+    },
+    "overlay_text": [
+      {
+        "text": "@yourchannel",
+        "placement": "top"
+      }
+    ]
+  }
+}

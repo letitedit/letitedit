@@ -1,0 +1,5 @@
+# The Release's files: the draft release staging-<tag> must hold exactly these.
+letitedit-1.0.0-beta-20261126.6-msys2-sources.tar
+letitedit-Setup-1.0.0-20261126.6.exe
+mlt-63218a28-src.tar.gz
+shotcut-src-26.9.27.txz

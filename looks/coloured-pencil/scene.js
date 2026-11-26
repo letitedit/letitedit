@@ -1,0 +1,11 @@
+const H = M.look.colouredPencil.start(c.w, c.h), P = H.paper(), W = H.work('boat'), C = H.palette, b = K(1);
+H.layIn(W, T([[0,640]])[0], T([[1080,640]])[0], {seed: 2});
+H.hatching(W, SKY, {col: C.sky, gap: 3*b, a: .6, seed: 10, dens: (x, y) => .35 + .5 * (1 - (y - Y(0)) / K(640))});
+H.hatching(W, SKY, {col: C.violet, gap: 4*b, a: .4, seed: 11, dens: (x, y) => .55 * (1 - (y - Y(0)) / K(640))});
+H.hatching(W, H.ellipse(SUN.x, SUN.y, SUN.r, SUN.r), {col: C.yellow, gap: 2.2*b, a: .95, seed: 12, press: 2});
+H.hatching(W, HILL, {col: C.grass, gap: 2.6*b, a: .8, seed: 13, dens: H.across(HILL, .3)}); H.hatching(W, HILL, {col: C.moss, gap: 3.2*b, a: .75, seed: 14, dens: (x,y) => H.across(HILL,.3)(x,y)*.8});
+H.hatching(W, SEA, {col: C.teal, gap: 2.8*b, a: .75, seed: 15}); H.hatching(W, SEA, {col: C.indigo, gap: 3.6*b, a: .55, seed: 16, dens: (x, y) => (y - Y(640)) / K(440)});
+H.hatching(W, HULL, {col: C.brick, gap: 2*b, a: .95, seed: 17, press: 2}); H.cross(W, HULL, {col: C.black, gap: 4*b, seed: 18, dens: (x, y) => (y - Y(700)) / K(100)});
+H.hatching(W, SAIL, {col: C.ochre, gap: 3*b, a: .5, seed: 19, dens: () => .4}); H.hatching(W, JIB, {col: C.rose, gap: 3*b, a: .6, seed: 20, dens: () => .55});
+[HULL, SAIL, JIB].forEach((s, i) => H.contour(W, s, {closed: true, seed: 30 + i, smooth: false})); H.contour(W, MAST, {seed: 34, w: 2.2, smooth: false}); WAVES.forEach((w, i) => H.contour(W, w, {seed: 40 + i, col: C.indigo}));
+return (t) => { H.begin(g); P.draw(g); W.draw(g, {p: Math.min(1, t / 5.6)}); H.begin(g); H.finish(g); };

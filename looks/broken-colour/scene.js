@@ -1,0 +1,11 @@
+const B = M.look.brokenColour.start(c.w, c.h), C = B.palette, u = K(1), hz = Y(640);
+const pic = B.canvas('boat');
+const sky = (x, y) => { const d = Math.hypot(x - SUN.x, y - SUN.y) / K(620); return d < .14 ? C.white : B.mixC(d < .32 ? C.yellow : C.orange, d < .62 ? C.rose : C.cobalt, Math.min(1, d)); };
+const sea = (x, y) => { const on = Math.abs(x - SUN.x) < (y - hz) * .4 + 50*u; return on ? (Math.sin(y * .09) > -.1 ? C.yellow : C.orange) : B.mixC(C.cobalt, C.ultramarine, (y - hz) / K(440)); };
+B.dabs(pic, {step: 90*u, kind: 2, w: 80*u, len: 160*u, alpha: .7, color: (x, y) => y < hz ? sky(x, y) : sea(x, y), seed: 3, per: .25, hj: .02, lj: .03});
+B.dabs(pic, {step: 24*u, y1: hz, ang: () => -.1, color: sky, seed: 5, per: .1, patch: 260*u});
+B.dabs(pic, {step: 20*u, y0: hz, ang: () => 0, len: 44*u, w: 11*u, color: sea, seed: 7, per: .1, lj: .08, sat: [.95, 1.4]});
+B.dabs(pic, {step: 13*u, y0: Y(400), y1: hz + 4, ang: () => .1, w: 9*u, len: 26*u, color: (x, y) => B.inside(HILL, x, y) ? C.violet : null, seed: 9, per: .12});
+B.dabs(pic, {step: 9*u, y0: Y(300), y1: Y(810), ang: () => 1.1, w: 8*u, len: 20*u, color: (x, y) => B.inside(HULL, x, y) ? C.dark : B.inside(SAIL, x, y) ? C.white : B.inside(JIB, x, y) ? C.orange : null, seed: 11, per: .12});
+B.lay(pic, [B.mark(MAST[1], MAST[0], C.dark, {kind: 1, w: 7*u, seed: 40})], {per: 4});
+return (t) => { B.begin(g); pic.draw(g, {p: Math.min(1, t / 5)}); };

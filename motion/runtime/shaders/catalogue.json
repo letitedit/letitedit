@@ -1,0 +1,194 @@
+[
+  {
+    "name": "simplex2D",
+    "kind": "background",
+    "defaults": {
+      "scale": 3.0,
+      "speed": 0.2,
+      "colorA": [
+        0.08,
+        0.12,
+        0.22
+      ],
+      "colorB": [
+        0.25,
+        0.65,
+        0.7
+      ]
+    },
+    "author": "Ian McEwan / Ashima Arts",
+    "licence": "MIT",
+    "source": "https://raw.githubusercontent.com/stegu/webgl-noise/22434e04d7753f7e949e8d724ab3da2864c17a0f/src/noise2D.glsl",
+    "licence_source": "https://raw.githubusercontent.com/stegu/webgl-noise/22434e04d7753f7e949e8d724ab3da2864c17a0f/LICENSE",
+    "source_sha256": "b0f27c923227e8b2d7618f09dc666e2397f608ca7929f798da632647c3f41884",
+    "file": "simplex2D.glsl"
+  },
+  {
+    "name": "classic2D",
+    "kind": "background",
+    "defaults": {
+      "scale": 3.0,
+      "speed": 0.2,
+      "colorA": [
+        0.08,
+        0.12,
+        0.22
+      ],
+      "colorB": [
+        0.25,
+        0.65,
+        0.7
+      ]
+    },
+    "author": "Stefan Gustavson",
+    "licence": "MIT",
+    "source": "https://raw.githubusercontent.com/stegu/webgl-noise/22434e04d7753f7e949e8d724ab3da2864c17a0f/src/classicnoise2D.glsl",
+    "licence_source": "https://raw.githubusercontent.com/stegu/webgl-noise/22434e04d7753f7e949e8d724ab3da2864c17a0f/LICENSE",
+    "source_sha256": "8be368391b941b0c44d24122ee3d383341bc81dc809bd82bffdd2b5b7debff3b",
+    "file": "classic2D.glsl"
+  },
+  {
+    "name": "simplex3D",
+    "kind": "background",
+    "defaults": {
+      "scale": 3.0,
+      "speed": 0.2,
+      "colorA": [
+        0.08,
+        0.12,
+        0.22
+      ],
+      "colorB": [
+        0.25,
+        0.65,
+        0.7
+      ]
+    },
+    "author": "Ian McEwan / Ashima Arts; Stefan Gustavson",
+    "licence": "MIT",
+    "source": "https://raw.githubusercontent.com/stegu/webgl-noise/22434e04d7753f7e949e8d724ab3da2864c17a0f/src/noise3D.glsl",
+    "licence_source": "https://raw.githubusercontent.com/stegu/webgl-noise/22434e04d7753f7e949e8d724ab3da2864c17a0f/LICENSE",
+    "source_sha256": "bf18982b8edd25218b5096cba6f7838a0508416be51acd1fd88d0ba8acb5169e",
+    "file": "simplex3D.glsl"
+  },
+  {
+    "name": "film",
+    "kind": "filter",
+    "defaults": {
+      "intensity": 0.5,
+      "grayscale": false
+    },
+    "author": "three.js authors",
+    "licence": "MIT",
+    "source": "https://raw.githubusercontent.com/mrdoob/three.js/0af9729d0c143a86a1d725d6e2c3ad83301f3f34/examples/jsm/shaders/FilmShader.js",
+    "licence_source": "https://raw.githubusercontent.com/mrdoob/three.js/0af9729d0c143a86a1d725d6e2c3ad83301f3f34/LICENSE",
+    "source_sha256": "8da49468c1f058c6d75a5c9a6569f7774b61b6d4e923d14db3ac800e3de5b3dd",
+    "file": "film.js"
+  },
+  {
+    "name": "vignette",
+    "kind": "filter",
+    "defaults": {
+      "offset": 1.0,
+      "darkness": 1.0
+    },
+    "author": "three.js authors; Eskil Steenberg (formula)",
+    "licence": "MIT",
+    "source": "https://raw.githubusercontent.com/mrdoob/three.js/0af9729d0c143a86a1d725d6e2c3ad83301f3f34/examples/jsm/shaders/VignetteShader.js",
+    "licence_source": "https://raw.githubusercontent.com/mrdoob/three.js/0af9729d0c143a86a1d725d6e2c3ad83301f3f34/LICENSE",
+    "source_sha256": "ca778b3a63faef50c5c2305e7c642916febbdae22f255b2db384ec1b86702642",
+    "file": "vignette.js"
+  },
+  {
+    "name": "rgbShift",
+    "kind": "filter",
+    "defaults": {
+      "amount": 0.005,
+      "angle": 0.0
+    },
+    "author": "three.js authors; Tom Butterworth",
+    "licence": "MIT",
+    "source": "https://raw.githubusercontent.com/mrdoob/three.js/0af9729d0c143a86a1d725d6e2c3ad83301f3f34/examples/jsm/shaders/RGBShiftShader.js",
+    "licence_source": "https://raw.githubusercontent.com/mrdoob/three.js/0af9729d0c143a86a1d725d6e2c3ad83301f3f34/LICENSE",
+    "source_sha256": "69e7872f4719533013da7ca2a0bbbf9f369bc85a6efb6db76361a75fd4816b8b",
+    "file": "rgbShift.js"
+  },
+  {
+    "name": "horizontalBlur",
+    "kind": "filter",
+    "defaults": {
+      "h": 0.001953125
+    },
+    "author": "three.js authors",
+    "licence": "MIT",
+    "source": "https://raw.githubusercontent.com/mrdoob/three.js/0af9729d0c143a86a1d725d6e2c3ad83301f3f34/examples/jsm/shaders/HorizontalBlurShader.js",
+    "licence_source": "https://raw.githubusercontent.com/mrdoob/three.js/0af9729d0c143a86a1d725d6e2c3ad83301f3f34/LICENSE",
+    "source_sha256": "a155715ca3bfe4fd1f9efc51f189fecd5c53160df47dd571a7d5936dc436ab0c",
+    "file": "horizontalBlur.js"
+  },
+  {
+    "name": "verticalBlur",
+    "kind": "filter",
+    "defaults": {
+      "v": 0.001953125
+    },
+    "author": "three.js authors",
+    "licence": "MIT",
+    "source": "https://raw.githubusercontent.com/mrdoob/three.js/0af9729d0c143a86a1d725d6e2c3ad83301f3f34/examples/jsm/shaders/VerticalBlurShader.js",
+    "licence_source": "https://raw.githubusercontent.com/mrdoob/three.js/0af9729d0c143a86a1d725d6e2c3ad83301f3f34/LICENSE",
+    "source_sha256": "67792abdf08ba2305fc2a2f45ca151f55b66a82f5aebbe45230246cdb72181d7",
+    "file": "verticalBlur.js"
+  },
+  {
+    "name": "crossWarp",
+    "kind": "transition",
+    "defaults": {},
+    "author": "Eke Peter",
+    "licence": "MIT",
+    "source": "https://raw.githubusercontent.com/gl-transitions/gl-transitions/bb4c58bfa842808cfb531a68af236f6481be66d1/transitions/CrossWarp.glsl",
+    "licence_source": "https://raw.githubusercontent.com/gl-transitions/gl-transitions/bb4c58bfa842808cfb531a68af236f6481be66d1/LICENSE",
+    "source_sha256": "a3a8a4800489f26f8ff3be6b63ccef2ab53279d97df16d469db3d4f57b7df381",
+    "file": "crossWarp.glsl"
+  },
+  {
+    "name": "directionalWipe",
+    "kind": "transition",
+    "defaults": {
+      "direction": [
+        1.0,
+        -1.0
+      ],
+      "smoothness": 0.5
+    },
+    "author": "gre",
+    "licence": "MIT",
+    "source": "https://raw.githubusercontent.com/gl-transitions/gl-transitions/bb4c58bfa842808cfb531a68af236f6481be66d1/transitions/DirectionalWipe.glsl",
+    "licence_source": "https://raw.githubusercontent.com/gl-transitions/gl-transitions/bb4c58bfa842808cfb531a68af236f6481be66d1/LICENSE",
+    "source_sha256": "561ed1d6ece1df699bff208a4e30d411748b156e390959c684c63c128e1b5394",
+    "file": "directionalWipe.glsl"
+  },
+  {
+    "name": "fade",
+    "kind": "transition",
+    "defaults": {},
+    "author": "gre",
+    "licence": "MIT",
+    "source": "https://raw.githubusercontent.com/gl-transitions/gl-transitions/bb4c58bfa842808cfb531a68af236f6481be66d1/transitions/Fade.glsl",
+    "licence_source": "https://raw.githubusercontent.com/gl-transitions/gl-transitions/bb4c58bfa842808cfb531a68af236f6481be66d1/LICENSE",
+    "source_sha256": "4fbafcd1e5b536b37e256c27a6d7a3d217460b3a6dea0cfee343c3db8b06c5ed",
+    "file": "fade.glsl"
+  },
+  {
+    "name": "filmBurn",
+    "kind": "transition",
+    "defaults": {
+      "Seed": 2.31
+    },
+    "author": "Anastasia Dunbar",
+    "licence": "MIT",
+    "source": "https://raw.githubusercontent.com/gl-transitions/gl-transitions/bb4c58bfa842808cfb531a68af236f6481be66d1/transitions/FilmBurn.glsl",
+    "licence_source": "https://raw.githubusercontent.com/gl-transitions/gl-transitions/bb4c58bfa842808cfb531a68af236f6481be66d1/LICENSE",
+    "source_sha256": "cbd7ffe97b9e582bb0d775f81ddf309a263746d4d48bae08777e788118cb9dac",
+    "file": "filmBurn.glsl"
+  }
+]

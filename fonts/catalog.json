@@ -1,0 +1,8919 @@
+{
+ "source": "https://github.com/google/fonts",
+ "families": [
+  {
+   "family": "ABeeZee",
+   "category": "Sans Serif",
+   "popularity": 182,
+   "weights": [
+    "400",
+    "400i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Easy Reading": 100,
+    "Calm": 81,
+    "Business": 75,
+    "Humanist": 75,
+    "Competent": 50,
+    "Rugged": 40,
+    "Sincere": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "ABeeZee-Italic.ttf",
+    "ABeeZee-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\ABeeZee"
+  },
+  {
+   "family": "Abel",
+   "category": "Sans Serif",
+   "popularity": 159,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Calm": 65,
+    "Sincere": 40,
+    "Geometric": 40,
+    "Neo Grotesque": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Abel-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Abel"
+  },
+  {
+   "family": "Aboreto",
+   "category": "Display",
+   "popularity": 569,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Vintage": 89,
+    "Kwanzaa": 76,
+    "Humanist": 70,
+    "Glyphic": 50,
+    "Sincere": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Aboreto-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Aboreto"
+  },
+  {
+   "family": "Abril Fatface",
+   "category": "Display",
+   "popularity": 175,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Fat Face": 90,
+    "Modern": 90,
+    "Vintage": 76,
+    "Loud": 64,
+    "Rugged": 60
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "AbrilFatface-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Abril Fatface"
+  },
+  {
+   "family": "Agbalumo",
+   "category": "Display",
+   "popularity": 613,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Kwanzaa": 92,
+    "Hanukkah": 86,
+    "Brush": 80,
+    "Happy": 73,
+    "Valentine's Day": 65,
+    "Cute": 63,
+    "Active": 55,
+    "Rugged": 55,
+    "Vintage": 55,
+    "Innovative": 52
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Agbalumo-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Agbalumo"
+  },
+  {
+   "family": "Albert Sans",
+   "category": "Sans Serif",
+   "popularity": 174,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Geometric": 60
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "AlbertSans-Italic[wght].ttf",
+    "AlbertSans[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Albert Sans"
+  },
+  {
+   "family": "Alegreya",
+   "category": "Serif",
+   "popularity": 251,
+   "weights": [
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Humanist Venetian": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Alegreya-Italic[wght].ttf",
+    "Alegreya[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Alegreya"
+  },
+  {
+   "family": "Alegreya Sans",
+   "category": "Sans Serif",
+   "popularity": 210,
+   "weights": [
+    "100",
+    "100i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Humanist": 100,
+    "Competent": 80,
+    "Business": 72,
+    "Sincere": 60,
+    "Calm": 58,
+    "Rugged": 54
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "AlegreyaSans-Black.ttf",
+    "AlegreyaSans-BlackItalic.ttf",
+    "AlegreyaSans-Bold.ttf",
+    "AlegreyaSans-BoldItalic.ttf",
+    "AlegreyaSans-ExtraBold.ttf",
+    "AlegreyaSans-ExtraBoldItalic.ttf",
+    "AlegreyaSans-Italic.ttf",
+    "AlegreyaSans-Light.ttf",
+    "AlegreyaSans-LightItalic.ttf",
+    "AlegreyaSans-Medium.ttf",
+    "AlegreyaSans-MediumItalic.ttf",
+    "AlegreyaSans-Regular.ttf",
+    "AlegreyaSans-Thin.ttf",
+    "AlegreyaSans-ThinItalic.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Alegreya Sans"
+  },
+  {
+   "family": "Aleo",
+   "category": "Serif",
+   "popularity": 264,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Humanist": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Aleo-Italic[wght].ttf",
+    "Aleo[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Aleo"
+  },
+  {
+   "family": "Alex Brush",
+   "category": "Handwriting",
+   "popularity": 350,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Artistic": 99,
+    "Holi": 87,
+    "Valentine's Day": 87,
+    "Lunar New Year": 86,
+    "Fancy": 76,
+    "Formal": 70,
+    "Active": 68,
+    "Excited": 68,
+    "Vintage": 68,
+    "Kwanzaa": 58,
+    "Sincere": 55,
+    "Sophisticated": 46
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "AlexBrush-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Alex Brush"
+  },
+  {
+   "family": "Alfa Slab One",
+   "category": "Display",
+   "popularity": 120,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Loud": 88,
+    "Rugged": 75,
+    "Fat Face": 70,
+    "Vintage": 51,
+    "Geometric": 50,
+    "Humanist": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "AlfaSlabOne-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Alfa Slab One"
+  },
+  {
+   "family": "Allura",
+   "category": "Handwriting",
+   "popularity": 279,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Artistic": 99,
+    "Formal": 90,
+    "Lunar New Year": 84,
+    "Vintage": 76,
+    "Valentine's Day": 75,
+    "Fancy": 69,
+    "Excited": 66,
+    "Happy": 40,
+    "Sophisticated": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Allura-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Allura"
+  },
+  {
+   "family": "Almarai",
+   "category": "Sans Serif",
+   "popularity": 164,
+   "weights": [
+    "300",
+    "400",
+    "700",
+    "800"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Neo Grotesque": 100,
+    "Business": 88,
+    "Calm": 81,
+    "Sincere": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Almarai-Bold.ttf",
+    "Almarai-ExtraBold.ttf",
+    "Almarai-Light.ttf",
+    "Almarai-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Almarai"
+  },
+  {
+   "family": "Amarante",
+   "category": "Display",
+   "popularity": 624,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Art Nouveau": 100,
+    "Vintage": 85,
+    "Sincere": 77,
+    "Rugged": 55,
+    "Artistic": 53,
+    "Innovative": 50,
+    "Awkward": 41
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Amarante-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Amarante"
+  },
+  {
+   "family": "Amatic SC",
+   "category": "Handwriting",
+   "popularity": 260,
+   "weights": [
+    "400",
+    "700"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Handwritten": 100,
+    "Christmas": 85,
+    "Lunar New Year": 76,
+    "Halloween": 75,
+    "Awkward": 41
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "AmaticSC-Bold.ttf",
+    "AmaticSC-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Amatic SC"
+  },
+  {
+   "family": "Amiri",
+   "category": "Serif",
+   "popularity": 214,
+   "weights": [
+    "400",
+    "400i",
+    "700",
+    "700i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Old Style Garalde": 100,
+    "Business": 80,
+    "Competent": 60
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Amiri-Bold.ttf",
+    "Amiri-BoldItalic.ttf",
+    "Amiri-Italic.ttf",
+    "Amiri-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Amiri"
+  },
+  {
+   "family": "Andada Pro",
+   "category": "Serif",
+   "popularity": 237,
+   "weights": [
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Humanist": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "AndadaPro-Italic[wght].ttf",
+    "AndadaPro[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Andada Pro"
+  },
+  {
+   "family": "Anek Telugu",
+   "category": "Sans Serif",
+   "popularity": 140,
+   "weights": [
+    "100",
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800"
+   ],
+   "variable_axes": [
+    "wdth",
+    "wght"
+   ],
+   "tags": {
+    "Humanist": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "AnekTelugu[wdth,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Anek Telugu"
+  },
+  {
+   "family": "Angkor",
+   "category": "Display",
+   "popularity": 634,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Vintage": 78,
+    "Loud": 70,
+    "Rugged": 70
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Angkor-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Angkor"
+  },
+  {
+   "family": "Anton",
+   "category": "Sans Serif",
+   "popularity": 80,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Loud": 80,
+    "Neo Grotesque": 70,
+    "Rugged": 69,
+    "Vintage": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Anton-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Anton"
+  },
+  {
+   "family": "Architects Daughter",
+   "category": "Handwriting",
+   "popularity": 347,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Awkward": 71,
+    "Artistic": 62,
+    "Sincere": 60,
+    "Childlike": 49,
+    "Happy": 44,
+    "Active": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "ArchitectsDaughter-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Architects Daughter"
+  },
+  {
+   "family": "Archivo",
+   "category": "Sans Serif",
+   "popularity": 47,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wdth",
+    "wght"
+   ],
+   "tags": {
+    "Grotesque": 70
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Archivo-Italic[wdth,wght].ttf",
+    "Archivo[wdth,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Archivo"
+  },
+  {
+   "family": "Archivo Black",
+   "category": "Sans Serif",
+   "popularity": 42,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Rugged": 78,
+    "Grotesque": 70,
+    "Sincere": 60,
+    "Loud": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "ArchivoBlack-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Archivo Black"
+  },
+  {
+   "family": "Archivo Narrow",
+   "category": "Sans Serif",
+   "popularity": 171,
+   "weights": [
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Grotesque": 70
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "ArchivoNarrow-Italic[wght].ttf",
+    "ArchivoNarrow[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Archivo Narrow"
+  },
+  {
+   "family": "Arimo",
+   "category": "Sans Serif",
+   "popularity": 14,
+   "weights": [
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {},
+   "licence_folder": "ofl",
+   "files": [
+    "Arimo-Italic[wght].ttf",
+    "Arimo[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Arimo"
+  },
+  {
+   "family": "Arvo",
+   "category": "Serif",
+   "popularity": 144,
+   "weights": [
+    "400",
+    "400i",
+    "700",
+    "700i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Geometric": 100,
+    "Rugged": 60,
+    "Vintage": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Arvo-Bold.ttf",
+    "Arvo-BoldItalic.ttf",
+    "Arvo-Italic.ttf",
+    "Arvo-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Arvo"
+  },
+  {
+   "family": "Asap",
+   "category": "Sans Serif",
+   "popularity": 161,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wdth",
+    "wght"
+   ],
+   "tags": {
+    "Rounded": 80,
+    "Humanist": 75
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Asap-Italic[wdth,wght].ttf",
+    "Asap[wdth,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Asap"
+  },
+  {
+   "family": "Assistant",
+   "category": "Sans Serif",
+   "popularity": 93,
+   "weights": [
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Geometric": 60
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Assistant[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Assistant"
+  },
+  {
+   "family": "Atkinson Hyperlegible",
+   "category": "Sans Serif",
+   "popularity": 205,
+   "weights": [
+    "400",
+    "400i",
+    "700",
+    "700i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Calm": 84,
+    "Business": 72,
+    "Sincere": 72,
+    "Grotesque": 70,
+    "Rugged": 56
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "AtkinsonHyperlegible-Bold.ttf",
+    "AtkinsonHyperlegible-BoldItalic.ttf",
+    "AtkinsonHyperlegible-Italic.ttf",
+    "AtkinsonHyperlegible-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Atkinson Hyperlegible"
+  },
+  {
+   "family": "Audiowide",
+   "category": "Display",
+   "popularity": 268,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Techno": 100,
+    "Futuristic": 92,
+    "Rugged": 85,
+    "Vintage": 60,
+    "Stiff": 52
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Audiowide-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Audiowide"
+  },
+  {
+   "family": "Averia Libre",
+   "category": "Display",
+   "popularity": 519,
+   "weights": [
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "700",
+    "700i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Rounded": 100,
+    "Rugged": 45
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "AveriaLibre-Bold.ttf",
+    "AveriaLibre-BoldItalic.ttf",
+    "AveriaLibre-Italic.ttf",
+    "AveriaLibre-Light.ttf",
+    "AveriaLibre-LightItalic.ttf",
+    "AveriaLibre-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Averia Libre"
+  },
+  {
+   "family": "Averia Serif Libre",
+   "category": "Display",
+   "popularity": 471,
+   "weights": [
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "700",
+    "700i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Vintage": 80,
+    "Awkward": 41
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "AveriaSerifLibre-Bold.ttf",
+    "AveriaSerifLibre-BoldItalic.ttf",
+    "AveriaSerifLibre-Italic.ttf",
+    "AveriaSerifLibre-Light.ttf",
+    "AveriaSerifLibre-LightItalic.ttf",
+    "AveriaSerifLibre-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Averia Serif Libre"
+  },
+  {
+   "family": "Baloo 2",
+   "category": "Display",
+   "popularity": 178,
+   "weights": [
+    "400",
+    "500",
+    "600",
+    "700",
+    "800"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Rounded": 100,
+    "Rugged": 45
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Baloo2[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Baloo 2"
+  },
+  {
+   "family": "Baloo Bhai 2",
+   "category": "Display",
+   "popularity": 600,
+   "weights": [
+    "400",
+    "500",
+    "600",
+    "700",
+    "800"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Rounded": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "BalooBhai2[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Baloo Bhai 2"
+  },
+  {
+   "family": "Baloo Da 2",
+   "category": "Display",
+   "popularity": 632,
+   "weights": [
+    "400",
+    "500",
+    "600",
+    "700",
+    "800"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Rounded": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "BalooDa2[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Baloo Da 2"
+  },
+  {
+   "family": "Balsamiq Sans",
+   "category": "Display",
+   "popularity": 434,
+   "weights": [
+    "400",
+    "400i",
+    "700",
+    "700i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Rounded": 100,
+    "Happy": 40,
+    "Vintage": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "BalsamiqSans-Bold.ttf",
+    "BalsamiqSans-BoldItalic.ttf",
+    "BalsamiqSans-Italic.ttf",
+    "BalsamiqSans-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Balsamiq Sans"
+  },
+  {
+   "family": "Bangers",
+   "category": "Display",
+   "popularity": 270,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Playful": 91,
+    "Loud": 80,
+    "Happy": 75,
+    "Halloween": 75,
+    "Excited": 74,
+    "Vintage": 70,
+    "Active": 67,
+    "Christmas": 61,
+    "Rugged": 60
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Bangers-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Bangers"
+  },
+  {
+   "family": "Barlow",
+   "category": "Sans Serif",
+   "popularity": 50,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Calm": 82,
+    "Grotesque": 80,
+    "Rounded": 80,
+    "Rugged": 50,
+    "Vintage": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Barlow-Black.ttf",
+    "Barlow-BlackItalic.ttf",
+    "Barlow-Bold.ttf",
+    "Barlow-BoldItalic.ttf",
+    "Barlow-ExtraBold.ttf",
+    "Barlow-ExtraBoldItalic.ttf",
+    "Barlow-ExtraLight.ttf",
+    "Barlow-ExtraLightItalic.ttf",
+    "Barlow-Italic.ttf",
+    "Barlow-Light.ttf",
+    "Barlow-LightItalic.ttf",
+    "Barlow-Medium.ttf",
+    "Barlow-MediumItalic.ttf",
+    "Barlow-Regular.ttf",
+    "Barlow-SemiBold.ttf",
+    "Barlow-SemiBoldItalic.ttf",
+    "Barlow-Thin.ttf",
+    "Barlow-ThinItalic.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Barlow"
+  },
+  {
+   "family": "Barlow Condensed",
+   "category": "Sans Serif",
+   "popularity": 75,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Grotesque": 80,
+    "Rounded": 80,
+    "Calm": 70,
+    "Rugged": 55,
+    "Business": 40,
+    "Vintage": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "BarlowCondensed-Black.ttf",
+    "BarlowCondensed-BlackItalic.ttf",
+    "BarlowCondensed-Bold.ttf",
+    "BarlowCondensed-BoldItalic.ttf",
+    "BarlowCondensed-ExtraBold.ttf",
+    "BarlowCondensed-ExtraBoldItalic.ttf",
+    "BarlowCondensed-ExtraLight.ttf",
+    "BarlowCondensed-ExtraLightItalic.ttf",
+    "BarlowCondensed-Italic.ttf",
+    "BarlowCondensed-Light.ttf",
+    "BarlowCondensed-LightItalic.ttf",
+    "BarlowCondensed-Medium.ttf",
+    "BarlowCondensed-MediumItalic.ttf",
+    "BarlowCondensed-Regular.ttf",
+    "BarlowCondensed-SemiBold.ttf",
+    "BarlowCondensed-SemiBoldItalic.ttf",
+    "BarlowCondensed-Thin.ttf",
+    "BarlowCondensed-ThinItalic.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Barlow Condensed"
+  },
+  {
+   "family": "Barlow Semi Condensed",
+   "category": "Sans Serif",
+   "popularity": 138,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Grotesque": 80,
+    "Rounded": 80,
+    "Calm": 72,
+    "Rugged": 50,
+    "Competent": 40,
+    "Vintage": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "BarlowSemiCondensed-Black.ttf",
+    "BarlowSemiCondensed-BlackItalic.ttf",
+    "BarlowSemiCondensed-Bold.ttf",
+    "BarlowSemiCondensed-BoldItalic.ttf",
+    "BarlowSemiCondensed-ExtraBold.ttf",
+    "BarlowSemiCondensed-ExtraBoldItalic.ttf",
+    "BarlowSemiCondensed-ExtraLight.ttf",
+    "BarlowSemiCondensed-ExtraLightItalic.ttf",
+    "BarlowSemiCondensed-Italic.ttf",
+    "BarlowSemiCondensed-Light.ttf",
+    "BarlowSemiCondensed-LightItalic.ttf",
+    "BarlowSemiCondensed-Medium.ttf",
+    "BarlowSemiCondensed-MediumItalic.ttf",
+    "BarlowSemiCondensed-Regular.ttf",
+    "BarlowSemiCondensed-SemiBold.ttf",
+    "BarlowSemiCondensed-SemiBoldItalic.ttf",
+    "BarlowSemiCondensed-Thin.ttf",
+    "BarlowSemiCondensed-ThinItalic.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Barlow Semi Condensed"
+  },
+  {
+   "family": "Barriecito",
+   "category": "Display",
+   "popularity": 461,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Playful": 95,
+    "Awkward": 92,
+    "Halloween": 75,
+    "Wacky": 70,
+    "Excited": 45
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Barriecito-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Barriecito"
+  },
+  {
+   "family": "Baskervville",
+   "category": "Serif",
+   "popularity": 246,
+   "weights": [
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Transitional": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Baskervville-Italic[wght].ttf",
+    "Baskervville[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Baskervville"
+  },
+  {
+   "family": "Be Vietnam Pro",
+   "category": "Sans Serif",
+   "popularity": 181,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Neo Grotesque": 100,
+    "Calm": 83,
+    "Business": 55,
+    "Rugged": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "BeVietnamPro-Black.ttf",
+    "BeVietnamPro-BlackItalic.ttf",
+    "BeVietnamPro-Bold.ttf",
+    "BeVietnamPro-BoldItalic.ttf",
+    "BeVietnamPro-ExtraBold.ttf",
+    "BeVietnamPro-ExtraBoldItalic.ttf",
+    "BeVietnamPro-ExtraLight.ttf",
+    "BeVietnamPro-ExtraLightItalic.ttf",
+    "BeVietnamPro-Italic.ttf",
+    "BeVietnamPro-Light.ttf",
+    "BeVietnamPro-LightItalic.ttf",
+    "BeVietnamPro-Medium.ttf",
+    "BeVietnamPro-MediumItalic.ttf",
+    "BeVietnamPro-Regular.ttf",
+    "BeVietnamPro-SemiBold.ttf",
+    "BeVietnamPro-SemiBoldItalic.ttf",
+    "BeVietnamPro-Thin.ttf",
+    "BeVietnamPro-ThinItalic.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Be Vietnam Pro"
+  },
+  {
+   "family": "Bebas Neue",
+   "category": "Sans Serif",
+   "popularity": 44,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Neo Grotesque": 100,
+    "Rugged": 65,
+    "Vintage": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "BebasNeue-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Bebas Neue"
+  },
+  {
+   "family": "Berkshire Swash",
+   "category": "Handwriting",
+   "popularity": 328,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Christmas": 99,
+    "Upright Script": 50,
+    "Cute": 47,
+    "Vintage": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "BerkshireSwash-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Berkshire Swash"
+  },
+  {
+   "family": "Bevan",
+   "category": "Serif",
+   "popularity": 475,
+   "weights": [
+    "400",
+    "400i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Rugged": 68,
+    "Loud": 67,
+    "Vintage": 60,
+    "Fat Face": 60,
+    "Humanist": 60,
+    "Geometric": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Bevan-Italic.ttf",
+    "Bevan-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Bevan"
+  },
+  {
+   "family": "Big Shoulders",
+   "category": "Display",
+   "popularity": 558,
+   "weights": [
+    "100",
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900"
+   ],
+   "variable_axes": [
+    "opsz",
+    "wght"
+   ],
+   "tags": {
+    "Calm": 60,
+    "Grotesque": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "BigShoulders[opsz,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Big Shoulders"
+  },
+  {
+   "family": "Bitcount Single",
+   "category": "Display",
+   "popularity": 477,
+   "weights": [
+    "100",
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900"
+   ],
+   "variable_axes": [
+    "CRSV",
+    "ELSH",
+    "ELXP",
+    "slnt",
+    "wght"
+   ],
+   "tags": {
+    "Pixel": 100,
+    "Playful": 75,
+    "Awkward": 70,
+    "Vintage": 60,
+    "Techno": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "BitcountSingle[CRSV,ELSH,ELXP,slnt,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Bitcount Single"
+  },
+  {
+   "family": "Bitter",
+   "category": "Serif",
+   "popularity": 100,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Scotch": 80
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Bitter-Italic[wght].ttf",
+    "Bitter[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Bitter"
+  },
+  {
+   "family": "Black Ops One",
+   "category": "Display",
+   "popularity": 67,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Stiff": 96,
+    "Rugged": 95,
+    "Loud": 91,
+    "Active": 52,
+    "Geometric": 50,
+    "Stencil": 50,
+    "Vintage": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "BlackOpsOne-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Black Ops One"
+  },
+  {
+   "family": "Bodoni Moda",
+   "category": "Serif",
+   "popularity": 154,
+   "weights": [
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "opsz",
+    "wght"
+   ],
+   "tags": {
+    "Modern": 100,
+    "Blackletter": 100,
+    "Calm": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "BodoniModa-Italic[opsz,wght].ttf",
+    "BodoniModa[opsz,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Bodoni Moda"
+  },
+  {
+   "family": "Boogaloo",
+   "category": "Display",
+   "popularity": 585,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Informal": 100,
+    "Sincere": 82,
+    "Playful": 80,
+    "Happy": 78,
+    "Hanukkah": 74,
+    "Cute": 70,
+    "Christmas": 66,
+    "Vintage": 65,
+    "Valentine's Day": 51,
+    "Rugged": 50,
+    "Upright Script": 50,
+    "Excited": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Boogaloo-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Boogaloo"
+  },
+  {
+   "family": "Bowlby One",
+   "category": "Display",
+   "popularity": 529,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Grotesque": 100,
+    "Loud": 87,
+    "Rugged": 60,
+    "Vintage": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "BowlbyOne-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Bowlby One"
+  },
+  {
+   "family": "Bowlby One SC",
+   "category": "Display",
+   "popularity": 464,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Grotesque": 100,
+    "Kwanzaa": 94,
+    "Loud": 77,
+    "Rugged": 65,
+    "Vintage": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "BowlbyOneSC-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Bowlby One SC"
+  },
+  {
+   "family": "Bree Serif",
+   "category": "Serif",
+   "popularity": 243,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Humanist": 100,
+    "Business": 70,
+    "Rugged": 50,
+    "Sincere": 49
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "BreeSerif-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Bree Serif"
+  },
+  {
+   "family": "Bricolage Grotesque",
+   "category": "Sans Serif",
+   "popularity": 58,
+   "weights": [
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800"
+   ],
+   "variable_axes": [
+    "opsz",
+    "wdth",
+    "wght"
+   ],
+   "tags": {
+    "Neo Grotesque": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "BricolageGrotesque[opsz,wdth,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Bricolage Grotesque"
+  },
+  {
+   "family": "Bungee",
+   "category": "Display",
+   "popularity": 147,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Hanukkah": 94,
+    "Rugged": 75,
+    "Geometric": 70,
+    "Stiff": 65,
+    "Innovative": 60,
+    "Rounded": 60,
+    "Loud": 59,
+    "Vintage": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Bungee-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Bungee"
+  },
+  {
+   "family": "Bungee Shade",
+   "category": "Display",
+   "popularity": 910,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Rugged": 75,
+    "Geometric": 70,
+    "Stiff": 65,
+    "Innovative": 60,
+    "Rounded": 60,
+    "Vintage": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "BungeeShade-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Bungee Shade"
+  },
+  {
+   "family": "Cabin",
+   "category": "Sans Serif",
+   "popularity": 101,
+   "weights": [
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i"
+   ],
+   "variable_axes": [
+    "wdth",
+    "wght"
+   ],
+   "tags": {
+    "Humanist": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Cabin-Italic[wdth,wght].ttf",
+    "Cabin[wdth,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Cabin"
+  },
+  {
+   "family": "Cabin Sketch",
+   "category": "Display",
+   "popularity": 468,
+   "weights": [
+    "400",
+    "700"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Distressed": 100,
+    "Artistic": 97,
+    "Playful": 93,
+    "Rugged": 85,
+    "Vintage": 66,
+    "Awkward": 55
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "CabinSketch-Bold.ttf",
+    "CabinSketch-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Cabin Sketch"
+  },
+  {
+   "family": "Cairo",
+   "category": "Sans Serif",
+   "popularity": 89,
+   "weights": [
+    "1000",
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900"
+   ],
+   "variable_axes": [
+    "slnt",
+    "wght"
+   ],
+   "tags": {
+    "Superellipse": 90,
+    "Calm": 74
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Cairo[slnt,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Cairo"
+  },
+  {
+   "family": "Calistoga",
+   "category": "Display",
+   "popularity": 455,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Transitional": 80,
+    "Sincere": 78,
+    "Rugged": 70,
+    "Hanukkah": 54,
+    "Vintage": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Calistoga-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Calistoga"
+  },
+  {
+   "family": "Caprasimo",
+   "category": "Display",
+   "popularity": 515,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Transitional": 100,
+    "Loud": 79,
+    "Sincere": 76,
+    "Vintage": 62,
+    "Rugged": 58,
+    "Cute": 54
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Caprasimo-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Caprasimo"
+  },
+  {
+   "family": "Cardo",
+   "category": "Serif",
+   "popularity": 236,
+   "weights": [
+    "400",
+    "400i",
+    "700"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Old Style Garalde": 100,
+    "Vintage": 78,
+    "Sincere": 70,
+    "Business": 55,
+    "Competent": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Cardo-Bold.ttf",
+    "Cardo-Italic.ttf",
+    "Cardo-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Cardo"
+  },
+  {
+   "family": "Carter One",
+   "category": "Display",
+   "popularity": 518,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Hanukkah": 95,
+    "Active": 81,
+    "Humanist": 80,
+    "Excited": 78,
+    "Rugged": 63,
+    "Loud": 60,
+    "Vintage": 50,
+    "Glyphic": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "CarterOne.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Carter One"
+  },
+  {
+   "family": "Catamaran",
+   "category": "Sans Serif",
+   "popularity": 223,
+   "weights": [
+    "100",
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Neo Grotesque": 80,
+    "Rugged": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Catamaran[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Catamaran"
+  },
+  {
+   "family": "Caveat",
+   "category": "Handwriting",
+   "popularity": 103,
+   "weights": [
+    "400",
+    "500",
+    "600",
+    "700"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Handwritten": 100,
+    "Informal": 100,
+    "Awkward": 51
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Caveat[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Caveat"
+  },
+  {
+   "family": "Chakra Petch",
+   "category": "Sans Serif",
+   "popularity": 153,
+   "weights": [
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Techno": 100,
+    "Futuristic": 89,
+    "Stiff": 85,
+    "Vintage": 70,
+    "Rugged": 59,
+    "Calm": 45
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "ChakraPetch-Bold.ttf",
+    "ChakraPetch-BoldItalic.ttf",
+    "ChakraPetch-ExtraLight.ttf",
+    "ChakraPetch-ExtraLightItalic.ttf",
+    "ChakraPetch-Italic.ttf",
+    "ChakraPetch-Light.ttf",
+    "ChakraPetch-LightItalic.ttf",
+    "ChakraPetch-Medium.ttf",
+    "ChakraPetch-MediumItalic.ttf",
+    "ChakraPetch-Regular.ttf",
+    "ChakraPetch-SemiBold.ttf",
+    "ChakraPetch-SemiBoldItalic.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Chakra Petch"
+  },
+  {
+   "family": "Changa One",
+   "category": "Display",
+   "popularity": 108,
+   "weights": [
+    "400",
+    "400i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Rugged": 80,
+    "Superellipse": 50,
+    "Techno": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "ChangaOne-Italic.ttf",
+    "ChangaOne-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Changa One"
+  },
+  {
+   "family": "Chango",
+   "category": "Display",
+   "popularity": 584,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Cute": 84,
+    "Loud": 80,
+    "Woodtype": 80,
+    "Rugged": 60,
+    "Vintage": 60,
+    "Innovative": 55
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Chango-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Chango"
+  },
+  {
+   "family": "Chelsea Market",
+   "category": "Display",
+   "popularity": 344,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Distressed": 100,
+    "Awkward": 90,
+    "Geometric": 50,
+    "Vintage": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "ChelseaMarket-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Chelsea Market"
+  },
+  {
+   "family": "Chewy",
+   "category": "Display",
+   "popularity": 548,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Playful": 91,
+    "Cute": 87,
+    "Brush": 80,
+    "Happy": 73,
+    "Blobby": 70,
+    "Loud": 62,
+    "Vintage": 60,
+    "Rugged": 40
+   },
+   "licence_folder": "apache",
+   "files": [
+    "Chewy-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Chewy"
+  },
+  {
+   "family": "Chonburi",
+   "category": "Display",
+   "popularity": 621,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Modern": 100,
+    "Loud": 64,
+    "Rugged": 55,
+    "Vintage": 52
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Chonburi-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Chonburi"
+  },
+  {
+   "family": "Cinzel",
+   "category": "Serif",
+   "popularity": 129,
+   "weights": [
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Old Style Garalde": 100,
+    "Christmas": 86
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Cinzel[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Cinzel"
+  },
+  {
+   "family": "Cinzel Decorative",
+   "category": "Display",
+   "popularity": 389,
+   "weights": [
+    "400",
+    "700",
+    "900"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Old Style Garalde": 100,
+    "Vintage": 91,
+    "Sincere": 40,
+    "Medieval": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "CinzelDecorative-Black.ttf",
+    "CinzelDecorative-Bold.ttf",
+    "CinzelDecorative-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Cinzel Decorative"
+  },
+  {
+   "family": "Climate Crisis",
+   "category": "Display",
+   "popularity": 1289,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [
+    "YEAR"
+   ],
+   "tags": {
+    "Loud": 92,
+    "Rugged": 78,
+    "Awkward": 76,
+    "Holi": 73,
+    "Active": 71,
+    "Innovative": 71,
+    "Geometric": 70,
+    "Futuristic": 68,
+    "Happy": 50,
+    "Cute": 42
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "ClimateCrisis[YEAR].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Climate Crisis"
+  },
+  {
+   "family": "Coda",
+   "category": "Display",
+   "popularity": 560,
+   "weights": [
+    "400",
+    "800"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Superellipse": 90,
+    "Futuristic": 72,
+    "Rugged": 53,
+    "Calm": 52,
+    "Stiff": 43
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Coda-ExtraBold.ttf",
+    "Coda-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Coda"
+  },
+  {
+   "family": "Comfortaa",
+   "category": "Display",
+   "popularity": 148,
+   "weights": [
+    "300",
+    "400",
+    "500",
+    "600",
+    "700"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Geometric": 100,
+    "Rounded": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Comfortaa[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Comfortaa"
+  },
+  {
+   "family": "Comic Neue",
+   "category": "Handwriting",
+   "popularity": 265,
+   "weights": [
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "700",
+    "700i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Sincere": 90,
+    "Childlike": 84,
+    "Rounded": 80,
+    "Cute": 66,
+    "Playful": 60,
+    "Happy": 45,
+    "Vintage": 40,
+    "Brush": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "ComicNeue-Bold.ttf",
+    "ComicNeue-BoldItalic.ttf",
+    "ComicNeue-Italic.ttf",
+    "ComicNeue-Light.ttf",
+    "ComicNeue-LightItalic.ttf",
+    "ComicNeue-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Comic Neue"
+  },
+  {
+   "family": "Comic Relief",
+   "category": "Display",
+   "popularity": 453,
+   "weights": [
+    "400",
+    "700"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Rounded": 100,
+    "Childlike": 94,
+    "Sincere": 70,
+    "Happy": 62,
+    "Playful": 62,
+    "Vintage": 51,
+    "Brush": 50,
+    "Calm": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "ComicRelief-Bold.ttf",
+    "ComicRelief-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Comic Relief"
+  },
+  {
+   "family": "Concert One",
+   "category": "Display",
+   "popularity": 394,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Grotesque": 80,
+    "Calm": 55,
+    "Rugged": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "ConcertOne-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Concert One"
+  },
+  {
+   "family": "Cookie",
+   "category": "Handwriting",
+   "popularity": 369,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Formal": 100,
+    "Handwritten": 80,
+    "Fancy": 79,
+    "Sophisticated": 72,
+    "Vintage": 65,
+    "Artistic": 59,
+    "Happy": 44,
+    "Cute": 40,
+    "Upright Script": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Cookie-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Cookie"
+  },
+  {
+   "family": "Corben",
+   "category": "Display",
+   "popularity": 636,
+   "weights": [
+    "400",
+    "700"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Vintage": 60,
+    "Valentine's Day": 52,
+    "Modern": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Corben-Bold.ttf",
+    "Corben-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Corben"
+  },
+  {
+   "family": "Cormorant",
+   "category": "Serif",
+   "popularity": 193,
+   "weights": [
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Old Style Garalde": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Cormorant-Italic[wght].ttf",
+    "Cormorant[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Cormorant"
+  },
+  {
+   "family": "Cormorant Garamond",
+   "category": "Serif",
+   "popularity": 65,
+   "weights": [
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Old Style Garalde": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "CormorantGaramond-Italic[wght].ttf",
+    "CormorantGaramond[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Cormorant Garamond"
+  },
+  {
+   "family": "Courgette",
+   "category": "Handwriting",
+   "popularity": 259,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Hanukkah": 98,
+    "Sincere": 92,
+    "Valentine's Day": 85,
+    "Informal": 80,
+    "Active": 74,
+    "Happy": 71,
+    "Excited": 66,
+    "Vintage": 55,
+    "Artistic": 48
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Courgette-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Courgette"
+  },
+  {
+   "family": "Courier Prime",
+   "category": "Monospace",
+   "popularity": 221,
+   "weights": [
+    "400",
+    "400i",
+    "700",
+    "700i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Monospace": 100,
+    "Vintage": 80,
+    "Sincere": 76,
+    "Clarendon": 70,
+    "Rugged": 55,
+    "Competent": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "CourierPrime-Bold.ttf",
+    "CourierPrime-BoldItalic.ttf",
+    "CourierPrime-Italic.ttf",
+    "CourierPrime-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Courier Prime"
+  },
+  {
+   "family": "Coustard",
+   "category": "Serif",
+   "popularity": 949,
+   "weights": [
+    "400",
+    "900"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Rugged": 65,
+    "Sincere": 57,
+    "Vintage": 45,
+    "Humanist Venetian": 40,
+    "Transitional": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Coustard-Black.ttf",
+    "Coustard-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Coustard"
+  },
+  {
+   "family": "Creepster",
+   "category": "Display",
+   "popularity": 285,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Halloween": 100,
+    "Rugged": 87,
+    "Vintage": 85,
+    "Distressed": 80,
+    "Excited": 69,
+    "Loud": 54,
+    "Playful": 47
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Creepster-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Creepster"
+  },
+  {
+   "family": "Crimson Pro",
+   "category": "Serif",
+   "popularity": 240,
+   "weights": [
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Old Style Garalde": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "CrimsonPro-Italic[wght].ttf",
+    "CrimsonPro[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Crimson Pro"
+  },
+  {
+   "family": "Crimson Text",
+   "category": "Serif",
+   "popularity": 130,
+   "weights": [
+    "400",
+    "400i",
+    "600",
+    "600i",
+    "700",
+    "700i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Old Style Garalde": 100,
+    "Business": 88,
+    "Competent": 80,
+    "Sincere": 68
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "CrimsonText-Bold.ttf",
+    "CrimsonText-BoldItalic.ttf",
+    "CrimsonText-Italic.ttf",
+    "CrimsonText-Regular.ttf",
+    "CrimsonText-SemiBold.ttf",
+    "CrimsonText-SemiBoldItalic.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Crimson Text"
+  },
+  {
+   "family": "DM Mono",
+   "category": "Monospace",
+   "popularity": 152,
+   "weights": [
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Monospace": 100,
+    "Geometric": 100,
+    "Calm": 65,
+    "Rugged": 50,
+    "Vintage": 45
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "DMMono-Italic.ttf",
+    "DMMono-Light.ttf",
+    "DMMono-LightItalic.ttf",
+    "DMMono-Medium.ttf",
+    "DMMono-MediumItalic.ttf",
+    "DMMono-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\DM Mono"
+  },
+  {
+   "family": "DM Sans",
+   "category": "Sans Serif",
+   "popularity": 21,
+   "weights": [
+    "100",
+    "1000",
+    "1000i",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "opsz",
+    "wght"
+   ],
+   "tags": {
+    "Geometric": 100,
+    "Calm": 83
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "DMSans-Italic[opsz,wght].ttf",
+    "DMSans[opsz,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\DM Sans"
+  },
+  {
+   "family": "DM Serif Display",
+   "category": "Serif",
+   "popularity": 102,
+   "weights": [
+    "400",
+    "400i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Transitional": 100,
+    "Vintage": 75,
+    "Business": 60,
+    "Rugged": 45
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "DMSerifDisplay-Italic.ttf",
+    "DMSerifDisplay-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\DM Serif Display"
+  },
+  {
+   "family": "DM Serif Text",
+   "category": "Serif",
+   "popularity": 244,
+   "weights": [
+    "400",
+    "400i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Transitional": 100,
+    "Business": 80,
+    "Rugged": 45
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "DMSerifText-Italic.ttf",
+    "DMSerifText-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\DM Serif Text"
+  },
+  {
+   "family": "Damion",
+   "category": "Handwriting",
+   "popularity": 382,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Vintage": 80,
+    "Sincere": 77,
+    "Playful": 71,
+    "Cute": 68
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Damion-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Damion"
+  },
+  {
+   "family": "Dancing Script",
+   "category": "Handwriting",
+   "popularity": 78,
+   "weights": [
+    "400",
+    "500",
+    "600",
+    "700"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Valentine's Day": 96,
+    "Lunar New Year": 82
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "DancingScript[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Dancing Script"
+  },
+  {
+   "family": "Dela Gothic One",
+   "category": "Display",
+   "popularity": 372,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Grotesque": 80,
+    "Rugged": 75,
+    "Loud": 54,
+    "Cute": 50,
+    "Vintage": 40,
+    "Woodtype": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "DelaGothicOne-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Dela Gothic One"
+  },
+  {
+   "family": "Delius",
+   "category": "Handwriting",
+   "popularity": 231,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Christmas": 82,
+    "Sincere": 80,
+    "Happy": 65,
+    "Childlike": 50,
+    "Vintage": 45,
+    "Calm": 42
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Delius-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Delius"
+  },
+  {
+   "family": "Domine",
+   "category": "Serif",
+   "popularity": 151,
+   "weights": [
+    "400",
+    "500",
+    "600",
+    "700"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Modern": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Domine[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Domine"
+  },
+  {
+   "family": "Doppio One",
+   "category": "Sans Serif",
+   "popularity": 212,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Humanist": 100,
+    "Calm": 74,
+    "Rugged": 70,
+    "Stiff": 63
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "DoppioOne-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Doppio One"
+  },
+  {
+   "family": "Dosis",
+   "category": "Sans Serif",
+   "popularity": 109,
+   "weights": [
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Rounded": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Dosis[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Dosis"
+  },
+  {
+   "family": "DynaPuff",
+   "category": "Display",
+   "popularity": 563,
+   "weights": [
+    "400",
+    "500",
+    "600",
+    "700"
+   ],
+   "variable_axes": [
+    "wdth",
+    "wght"
+   ],
+   "tags": {
+    "Glyphic": 100,
+    "Rounded": 100,
+    "Blobby": 100,
+    "Holi": 80,
+    "Valentine's Day": 68,
+    "Christmas": 63,
+    "Wacky": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "DynaPuff[wdth,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\DynaPuff"
+  },
+  {
+   "family": "EB Garamond",
+   "category": "Serif",
+   "popularity": 81,
+   "weights": [
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Old Style Garalde": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "EBGaramond-Italic[wght].ttf",
+    "EBGaramond[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\EB Garamond"
+  },
+  {
+   "family": "Eater",
+   "category": "Display",
+   "popularity": 591,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Halloween": 100,
+    "Wacky": 100,
+    "Playful": 97,
+    "Excited": 95,
+    "Awkward": 93,
+    "Rugged": 58
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Eater-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Eater"
+  },
+  {
+   "family": "Encode Sans",
+   "category": "Sans Serif",
+   "popularity": 208,
+   "weights": [
+    "100",
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900"
+   ],
+   "variable_axes": [
+    "wdth",
+    "wght"
+   ],
+   "tags": {
+    "Humanist": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "EncodeSans[wdth,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Encode Sans"
+  },
+  {
+   "family": "Epilogue",
+   "category": "Sans Serif",
+   "popularity": 155,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Geometric": 80
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Epilogue-Italic[wght].ttf",
+    "Epilogue[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Epilogue"
+  },
+  {
+   "family": "Exo",
+   "category": "Sans Serif",
+   "popularity": 191,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Superellipse": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Exo-Italic[wght].ttf",
+    "Exo[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Exo"
+  },
+  {
+   "family": "Exo 2",
+   "category": "Sans Serif",
+   "popularity": 123,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Superellipse": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Exo2-Italic[wght].ttf",
+    "Exo2[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Exo 2"
+  },
+  {
+   "family": "Figtree",
+   "category": "Sans Serif",
+   "popularity": 41,
+   "weights": [
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Geometric": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Figtree-Italic[wght].ttf",
+    "Figtree[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Figtree"
+  },
+  {
+   "family": "Fira Code",
+   "category": "Monospace",
+   "popularity": 209,
+   "weights": [
+    "300",
+    "400",
+    "500",
+    "600",
+    "700"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Monospace": 100,
+    "Humanist": 80
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "FiraCode[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Fira Code"
+  },
+  {
+   "family": "Fira Sans",
+   "category": "Sans Serif",
+   "popularity": 59,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Humanist": 100,
+    "Business": 93,
+    "Competent": 90,
+    "Calm": 74,
+    "Sincere": 60,
+    "Rugged": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "FiraSans-Black.ttf",
+    "FiraSans-BlackItalic.ttf",
+    "FiraSans-Bold.ttf",
+    "FiraSans-BoldItalic.ttf",
+    "FiraSans-ExtraBold.ttf",
+    "FiraSans-ExtraBoldItalic.ttf",
+    "FiraSans-ExtraLight.ttf",
+    "FiraSans-ExtraLightItalic.ttf",
+    "FiraSans-Italic.ttf",
+    "FiraSans-Light.ttf",
+    "FiraSans-LightItalic.ttf",
+    "FiraSans-Medium.ttf",
+    "FiraSans-MediumItalic.ttf",
+    "FiraSans-Regular.ttf",
+    "FiraSans-SemiBold.ttf",
+    "FiraSans-SemiBoldItalic.ttf",
+    "FiraSans-Thin.ttf",
+    "FiraSans-ThinItalic.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Fira Sans"
+  },
+  {
+   "family": "Fira Sans Condensed",
+   "category": "Sans Serif",
+   "popularity": 222,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Competent": 89,
+    "Business": 88,
+    "Calm": 65,
+    "Sincere": 55,
+    "Rugged": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "FiraSansCondensed-Black.ttf",
+    "FiraSansCondensed-BlackItalic.ttf",
+    "FiraSansCondensed-Bold.ttf",
+    "FiraSansCondensed-BoldItalic.ttf",
+    "FiraSansCondensed-ExtraBold.ttf",
+    "FiraSansCondensed-ExtraBoldItalic.ttf",
+    "FiraSansCondensed-ExtraLight.ttf",
+    "FiraSansCondensed-ExtraLightItalic.ttf",
+    "FiraSansCondensed-Italic.ttf",
+    "FiraSansCondensed-Light.ttf",
+    "FiraSansCondensed-LightItalic.ttf",
+    "FiraSansCondensed-Medium.ttf",
+    "FiraSansCondensed-MediumItalic.ttf",
+    "FiraSansCondensed-Regular.ttf",
+    "FiraSansCondensed-SemiBold.ttf",
+    "FiraSansCondensed-SemiBoldItalic.ttf",
+    "FiraSansCondensed-Thin.ttf",
+    "FiraSansCondensed-ThinItalic.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Fira Sans Condensed"
+  },
+  {
+   "family": "Fjalla One",
+   "category": "Sans Serif",
+   "popularity": 87,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Grotesque": 100,
+    "Rugged": 65,
+    "Hanukkah": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "FjallaOne-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Fjalla One"
+  },
+  {
+   "family": "Forum",
+   "category": "Display",
+   "popularity": 368,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Modern": 100,
+    "Awkward": 43
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Forum-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Forum"
+  },
+  {
+   "family": "Frank Ruhl Libre",
+   "category": "Serif",
+   "popularity": 206,
+   "weights": [
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Hanukkah": 99,
+    "Modern": 80
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "FrankRuhlLibre[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Frank Ruhl Libre"
+  },
+  {
+   "family": "Fraunces",
+   "category": "Serif",
+   "popularity": 83,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "SOFT",
+    "WONK",
+    "opsz",
+    "wght"
+   ],
+   "tags": {
+    "Old Style Garalde": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Fraunces-Italic[SOFT,WONK,opsz,wght].ttf",
+    "Fraunces[SOFT,WONK,opsz,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Fraunces"
+  },
+  {
+   "family": "Fredoka",
+   "category": "Sans Serif",
+   "popularity": 118,
+   "weights": [
+    "300",
+    "400",
+    "500",
+    "600",
+    "700"
+   ],
+   "variable_axes": [
+    "wdth",
+    "wght"
+   ],
+   "tags": {
+    "Geometric": 100,
+    "Rounded": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Fredoka[wdth,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Fredoka"
+  },
+  {
+   "family": "Fugaz One",
+   "category": "Display",
+   "popularity": 298,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Geometric": 80,
+    "Rugged": 75,
+    "Active": 60,
+    "Vintage": 60
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "FugazOne-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Fugaz One"
+  },
+  {
+   "family": "Funnel Display",
+   "category": "Display",
+   "popularity": 556,
+   "weights": [
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Grotesque": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "FunnelDisplay[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Funnel Display"
+  },
+  {
+   "family": "Gabarito",
+   "category": "Display",
+   "popularity": 341,
+   "weights": [
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Geometric": 100,
+    "Kwanzaa": 80
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Gabarito[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Gabarito"
+  },
+  {
+   "family": "Geist",
+   "category": "Sans Serif",
+   "popularity": 95,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Neo Grotesque": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Geist-Italic[wght].ttf",
+    "Geist[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Geist"
+  },
+  {
+   "family": "Geist Mono",
+   "category": "Monospace",
+   "popularity": 139,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Monospace": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "GeistMono-Italic[wght].ttf",
+    "GeistMono[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Geist Mono"
+  },
+  {
+   "family": "Geologica",
+   "category": "Sans Serif",
+   "popularity": 192,
+   "weights": [
+    "100",
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900"
+   ],
+   "variable_axes": [
+    "CRSV",
+    "SHRP",
+    "slnt",
+    "wght"
+   ],
+   "tags": {
+    "Humanist": 90,
+    "Calm": 82
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Geologica[CRSV,SHRP,slnt,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Geologica"
+  },
+  {
+   "family": "Germania One",
+   "category": "Display",
+   "popularity": 511,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Blackletter": 100,
+    "Vintage": 78,
+    "Artistic": 77,
+    "Rugged": 60,
+    "Awkward": 45
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "GermaniaOne-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Germania One"
+  },
+  {
+   "family": "Gloria Hallelujah",
+   "category": "Handwriting",
+   "popularity": 343,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Handwritten": 100,
+    "Informal": 100,
+    "Childlike": 79,
+    "Awkward": 75,
+    "Artistic": 51,
+    "Excited": 50,
+    "Happy": 44
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "GloriaHallelujah.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Gloria Hallelujah"
+  },
+  {
+   "family": "Goldman",
+   "category": "Display",
+   "popularity": 401,
+   "weights": [
+    "400",
+    "700"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Techno": 100,
+    "Superellipse": 90,
+    "Rugged": 74,
+    "Futuristic": 72,
+    "Stiff": 72
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Goldman-Bold.ttf",
+    "Goldman-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Goldman"
+  },
+  {
+   "family": "Google Sans",
+   "category": "Sans Serif",
+   "popularity": 4,
+   "weights": [
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i"
+   ],
+   "variable_axes": [
+    "GRAD",
+    "opsz",
+    "wght"
+   ],
+   "tags": {
+    "Competent": 100,
+    "Geometric": 85,
+    "Calm": 80,
+    "Diwali": 60
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "GoogleSans-Italic[GRAD,opsz,wght].ttf",
+    "GoogleSans[GRAD,opsz,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Google Sans"
+  },
+  {
+   "family": "Google Sans Flex",
+   "category": "Sans Serif",
+   "popularity": 115,
+   "weights": [
+    "1",
+    "100",
+    "1000",
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900"
+   ],
+   "variable_axes": [
+    "GRAD",
+    "ROND",
+    "opsz",
+    "slnt",
+    "wdth",
+    "wght"
+   ],
+   "tags": {
+    "Geometric": 85
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "GoogleSansFlex[GRAD,ROND,opsz,slnt,wdth,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Google Sans Flex"
+  },
+  {
+   "family": "Grandstander",
+   "category": "Display",
+   "popularity": 539,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Playful": 57,
+    "Kwanzaa": 51,
+    "Wacky": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Grandstander-Italic[wght].ttf",
+    "Grandstander[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Grandstander"
+  },
+  {
+   "family": "Gravitas One",
+   "category": "Display",
+   "popularity": 172,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Fat Face": 100,
+    "Woodtype": 100,
+    "Vintage": 84,
+    "Loud": 74,
+    "Valentine's Day": 66,
+    "Rugged": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "GravitasOne.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Gravitas One"
+  },
+  {
+   "family": "Great Vibes",
+   "category": "Handwriting",
+   "popularity": 173,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Artistic": 99,
+    "Valentine's Day": 97,
+    "Christmas": 93,
+    "Fancy": 90,
+    "Diwali": 90,
+    "Lunar New Year": 90,
+    "Vintage": 88,
+    "Holi": 84,
+    "Formal": 80,
+    "Hanukkah": 80,
+    "Sophisticated": 73
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "GreatVibes-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Great Vibes"
+  },
+  {
+   "family": "Handlee",
+   "category": "Handwriting",
+   "popularity": 421,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Handwritten": 100,
+    "Brush": 80,
+    "Childlike": 77,
+    "Sincere": 77,
+    "Vintage": 60,
+    "Cute": 50,
+    "Informal": 50,
+    "Happy": 48
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Handlee-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Handlee"
+  },
+  {
+   "family": "Hanken Grotesk",
+   "category": "Sans Serif",
+   "popularity": 143,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Neo Grotesque": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "HankenGrotesk-Italic[wght].ttf",
+    "HankenGrotesk[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Hanken Grotesk"
+  },
+  {
+   "family": "Heebo",
+   "category": "Sans Serif",
+   "popularity": 66,
+   "weights": [
+    "100",
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Grotesque": 90
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Heebo[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Heebo"
+  },
+  {
+   "family": "Hind",
+   "category": "Sans Serif",
+   "popularity": 127,
+   "weights": [
+    "300",
+    "400",
+    "500",
+    "600",
+    "700"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Humanist": 100,
+    "Calm": 92,
+    "Competent": 50,
+    "Rugged": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Hind-Bold.ttf",
+    "Hind-Light.ttf",
+    "Hind-Medium.ttf",
+    "Hind-Regular.ttf",
+    "Hind-SemiBold.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Hind"
+  },
+  {
+   "family": "Hind Madurai",
+   "category": "Sans Serif",
+   "popularity": 234,
+   "weights": [
+    "300",
+    "400",
+    "500",
+    "600",
+    "700"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Humanist": 100,
+    "Calm": 75,
+    "Business": 70,
+    "Sincere": 70,
+    "Competent": 50,
+    "Rugged": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "HindMadurai-Bold.ttf",
+    "HindMadurai-Light.ttf",
+    "HindMadurai-Medium.ttf",
+    "HindMadurai-Regular.ttf",
+    "HindMadurai-SemiBold.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Hind Madurai"
+  },
+  {
+   "family": "Hind Siliguri",
+   "category": "Sans Serif",
+   "popularity": 105,
+   "weights": [
+    "300",
+    "400",
+    "500",
+    "600",
+    "700"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Humanist": 100,
+    "Business": 70,
+    "Sincere": 70,
+    "Calm": 51,
+    "Competent": 50,
+    "Rugged": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "HindSiliguri-Bold.ttf",
+    "HindSiliguri-Light.ttf",
+    "HindSiliguri-Medium.ttf",
+    "HindSiliguri-Regular.ttf",
+    "HindSiliguri-SemiBold.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Hind Siliguri"
+  },
+  {
+   "family": "Homemade Apple",
+   "category": "Handwriting",
+   "popularity": 357,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Handwritten": 100,
+    "Sincere": 91,
+    "Informal": 80,
+    "Artistic": 72,
+    "Awkward": 58,
+    "Vintage": 53,
+    "Playful": 50,
+    "Childlike": 45,
+    "Cute": 40,
+    "Happy": 40
+   },
+   "licence_folder": "apache",
+   "files": [
+    "HomemadeApple-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Homemade Apple"
+  },
+  {
+   "family": "IBM Plex Mono",
+   "category": "Monospace",
+   "popularity": 71,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Monospace": 100,
+    "Neo Grotesque": 80,
+    "Calm": 75,
+    "Rugged": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "IBMPlexMono-Bold.ttf",
+    "IBMPlexMono-BoldItalic.ttf",
+    "IBMPlexMono-ExtraLight.ttf",
+    "IBMPlexMono-ExtraLightItalic.ttf",
+    "IBMPlexMono-Italic.ttf",
+    "IBMPlexMono-Light.ttf",
+    "IBMPlexMono-LightItalic.ttf",
+    "IBMPlexMono-Medium.ttf",
+    "IBMPlexMono-MediumItalic.ttf",
+    "IBMPlexMono-Regular.ttf",
+    "IBMPlexMono-SemiBold.ttf",
+    "IBMPlexMono-SemiBoldItalic.ttf",
+    "IBMPlexMono-Thin.ttf",
+    "IBMPlexMono-ThinItalic.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\IBM Plex Mono"
+  },
+  {
+   "family": "IBM Plex Sans",
+   "category": "Sans Serif",
+   "popularity": 51,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i"
+   ],
+   "variable_axes": [
+    "wdth",
+    "wght"
+   ],
+   "tags": {
+    "Neo Grotesque": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "IBMPlexSans-Italic[wdth,wght].ttf",
+    "IBMPlexSans[wdth,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\IBM Plex Sans"
+  },
+  {
+   "family": "IBM Plex Sans Arabic",
+   "category": "Sans Serif",
+   "popularity": 179,
+   "weights": [
+    "100",
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Neo Grotesque": 100,
+    "Business": 90,
+    "Competent": 90,
+    "Calm": 80,
+    "Sincere": 70,
+    "Rugged": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "IBMPlexSansArabic-Bold.ttf",
+    "IBMPlexSansArabic-ExtraLight.ttf",
+    "IBMPlexSansArabic-Light.ttf",
+    "IBMPlexSansArabic-Medium.ttf",
+    "IBMPlexSansArabic-Regular.ttf",
+    "IBMPlexSansArabic-SemiBold.ttf",
+    "IBMPlexSansArabic-Thin.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\IBM Plex Sans Arabic"
+  },
+  {
+   "family": "IBM Plex Serif",
+   "category": "Serif",
+   "popularity": 183,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Scotch": 100,
+    "Business": 92,
+    "Competent": 90,
+    "Sincere": 90,
+    "Rugged": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "IBMPlexSerif-Bold.ttf",
+    "IBMPlexSerif-BoldItalic.ttf",
+    "IBMPlexSerif-ExtraLight.ttf",
+    "IBMPlexSerif-ExtraLightItalic.ttf",
+    "IBMPlexSerif-Italic.ttf",
+    "IBMPlexSerif-Light.ttf",
+    "IBMPlexSerif-LightItalic.ttf",
+    "IBMPlexSerif-Medium.ttf",
+    "IBMPlexSerif-MediumItalic.ttf",
+    "IBMPlexSerif-Regular.ttf",
+    "IBMPlexSerif-SemiBold.ttf",
+    "IBMPlexSerif-SemiBoldItalic.ttf",
+    "IBMPlexSerif-Thin.ttf",
+    "IBMPlexSerif-ThinItalic.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\IBM Plex Serif"
+  },
+  {
+   "family": "Inconsolata",
+   "category": "Monospace",
+   "popularity": 52,
+   "weights": [
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900"
+   ],
+   "variable_axes": [
+    "wdth",
+    "wght"
+   ],
+   "tags": {
+    "Monospace": 100,
+    "Humanist": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Inconsolata[wdth,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Inconsolata"
+  },
+  {
+   "family": "Indie Flower",
+   "category": "Handwriting",
+   "popularity": 199,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Handwritten": 100,
+    "Informal": 100,
+    "Happy": 89,
+    "Playful": 78,
+    "Awkward": 75,
+    "Childlike": 72,
+    "Cute": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "IndieFlower-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Indie Flower"
+  },
+  {
+   "family": "Instrument Sans",
+   "category": "Sans Serif",
+   "popularity": 116,
+   "weights": [
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i"
+   ],
+   "variable_axes": [
+    "wdth",
+    "wght"
+   ],
+   "tags": {
+    "Geometric": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "InstrumentSans-Italic[wdth,wght].ttf",
+    "InstrumentSans[wdth,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Instrument Sans"
+  },
+  {
+   "family": "Instrument Serif",
+   "category": "Serif",
+   "popularity": 86,
+   "weights": [
+    "400",
+    "400i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Modern": 100,
+    "Scotch": 100,
+    "Vintage": 80,
+    "Sincere": 67,
+    "Business": 55
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "InstrumentSerif-Italic.ttf",
+    "InstrumentSerif-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Instrument Serif"
+  },
+  {
+   "family": "Inter",
+   "category": "Sans Serif",
+   "popularity": 5,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "opsz",
+    "wght"
+   ],
+   "tags": {
+    "Neo Grotesque": 100,
+    "Competent": 91,
+    "Calm": 80
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Inter-Italic[opsz,wght].ttf",
+    "Inter[opsz,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Inter"
+  },
+  {
+   "family": "Inter Tight",
+   "category": "Sans Serif",
+   "popularity": 77,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Neo Grotesque": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "InterTight-Italic[wght].ttf",
+    "InterTight[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Inter Tight"
+  },
+  {
+   "family": "Italianno",
+   "category": "Handwriting",
+   "popularity": 390,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Formal": 100,
+    "Handwritten": 100,
+    "Artistic": 99,
+    "Vintage": 90,
+    "Sophisticated": 83,
+    "Valentine's Day": 74,
+    "Sincere": 60,
+    "Fancy": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Italianno-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Italianno"
+  },
+  {
+   "family": "Jersey 25",
+   "category": "Display",
+   "popularity": 531,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Pixel": 100,
+    "Vintage": 85,
+    "Rugged": 55,
+    "Stiff": 55,
+    "Awkward": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Jersey25-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Jersey 25"
+  },
+  {
+   "family": "JetBrains Mono",
+   "category": "Monospace",
+   "popularity": 43,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Monospace": 100,
+    "Geometric": 70
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "JetBrainsMono-Italic[wght].ttf",
+    "JetBrainsMono[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\JetBrains Mono"
+  },
+  {
+   "family": "Josefin Sans",
+   "category": "Sans Serif",
+   "popularity": 76,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Geometric": 100,
+    "Rugged": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "JosefinSans-Italic[wght].ttf",
+    "JosefinSans[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Josefin Sans"
+  },
+  {
+   "family": "Jost",
+   "category": "Sans Serif",
+   "popularity": 53,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Geometric": 100,
+    "Rounded": 80,
+    "Kwanzaa": 68
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Jost-Italic[wght].ttf",
+    "Jost[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Jost"
+  },
+  {
+   "family": "Kablammo",
+   "category": "Display",
+   "popularity": 546,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [
+    "MORF"
+   ],
+   "tags": {
+    "Blobby": 100,
+    "Wacky": 100,
+    "Playful": 99,
+    "Innovative": 95,
+    "Awkward": 94,
+    "Excited": 94,
+    "Halloween": 90,
+    "Active": 84,
+    "Happy": 84,
+    "Holi": 81,
+    "Loud": 64,
+    "Cute": 63,
+    "Vintage": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Kablammo[MORF].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Kablammo"
+  },
+  {
+   "family": "Kalam",
+   "category": "Handwriting",
+   "popularity": 203,
+   "weights": [
+    "300",
+    "400",
+    "700"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Handwritten": 100,
+    "Informal": 100,
+    "Holi": 100,
+    "Brush": 100,
+    "Diwali": 89,
+    "Active": 79,
+    "Childlike": 70,
+    "Sincere": 70,
+    "Artistic": 42,
+    "Cute": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Kalam-Bold.ttf",
+    "Kalam-Light.ttf",
+    "Kalam-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Kalam"
+  },
+  {
+   "family": "Kanit",
+   "category": "Sans Serif",
+   "popularity": 34,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Calm": 89,
+    "Humanist": 80,
+    "Superellipse": 70,
+    "Rugged": 60,
+    "Techno": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Kanit-Black.ttf",
+    "Kanit-BlackItalic.ttf",
+    "Kanit-Bold.ttf",
+    "Kanit-BoldItalic.ttf",
+    "Kanit-ExtraBold.ttf",
+    "Kanit-ExtraBoldItalic.ttf",
+    "Kanit-ExtraLight.ttf",
+    "Kanit-ExtraLightItalic.ttf",
+    "Kanit-Italic.ttf",
+    "Kanit-Light.ttf",
+    "Kanit-LightItalic.ttf",
+    "Kanit-Medium.ttf",
+    "Kanit-MediumItalic.ttf",
+    "Kanit-Regular.ttf",
+    "Kanit-SemiBold.ttf",
+    "Kanit-SemiBoldItalic.ttf",
+    "Kanit-Thin.ttf",
+    "Kanit-ThinItalic.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Kanit"
+  },
+  {
+   "family": "Karla",
+   "category": "Sans Serif",
+   "popularity": 64,
+   "weights": [
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Grotesque": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Karla-Italic[wght].ttf",
+    "Karla[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Karla"
+  },
+  {
+   "family": "Kaushan Script",
+   "category": "Handwriting",
+   "popularity": 294,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Artistic": 97,
+    "Hanukkah": 92,
+    "Active": 89,
+    "Happy": 61,
+    "Vintage": 60,
+    "Excited": 59,
+    "Playful": 52,
+    "Informal": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "KaushanScript-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Kaushan Script"
+  },
+  {
+   "family": "Knewave",
+   "category": "Display",
+   "popularity": 586,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Handwritten": 100,
+    "Informal": 100,
+    "Brush": 100,
+    "Playful": 94,
+    "Rugged": 84,
+    "Blobby": 80,
+    "Awkward": 77,
+    "Excited": 77,
+    "Loud": 64,
+    "Vintage": 63,
+    "Holi": 59
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Knewave-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Knewave"
+  },
+  {
+   "family": "Lalezar",
+   "category": "Sans Serif",
+   "popularity": 415,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Humanist": 100,
+    "Loud": 54,
+    "Sincere": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Lalezar-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Lalezar"
+  },
+  {
+   "family": "Lato",
+   "category": "Sans Serif",
+   "popularity": 9,
+   "weights": [
+    "100",
+    "100i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "700",
+    "700i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Humanist": 100,
+    "Competent": 91,
+    "Calm": 88,
+    "Business": 80,
+    "Sincere": 60,
+    "Rugged": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Lato-Black.ttf",
+    "Lato-BlackItalic.ttf",
+    "Lato-Bold.ttf",
+    "Lato-BoldItalic.ttf",
+    "Lato-ExtraBold.ttf",
+    "Lato-ExtraBoldItalic.ttf",
+    "Lato-ExtraLight.ttf",
+    "Lato-ExtraLightItalic.ttf",
+    "Lato-Italic.ttf",
+    "Lato-Light.ttf",
+    "Lato-LightItalic.ttf",
+    "Lato-Medium.ttf",
+    "Lato-MediumItalic.ttf",
+    "Lato-Regular.ttf",
+    "Lato-SemiBold.ttf",
+    "Lato-SemiBoldItalic.ttf",
+    "Lato-Thin.ttf",
+    "Lato-ThinItalic.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Lato"
+  },
+  {
+   "family": "League Gothic",
+   "category": "Sans Serif",
+   "popularity": 254,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [
+    "wdth"
+   ],
+   "tags": {
+    "Grotesque": 100,
+    "Rugged": 60,
+    "Superellipse": 60,
+    "Vintage": 55
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "LeagueGothic[wdth].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\League Gothic"
+  },
+  {
+   "family": "League Spartan",
+   "category": "Sans Serif",
+   "popularity": 186,
+   "weights": [
+    "100",
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Geometric": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "LeagueSpartan[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\League Spartan"
+  },
+  {
+   "family": "Lemonada",
+   "category": "Display",
+   "popularity": 512,
+   "weights": [
+    "300",
+    "400",
+    "500",
+    "600",
+    "700"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Brush": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Lemonada[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Lemonada"
+  },
+  {
+   "family": "Lexend",
+   "category": "Sans Serif",
+   "popularity": 94,
+   "weights": [
+    "100",
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Easy Reading": 100,
+    "Geometric": 100,
+    "Rugged": 45
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Lexend[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Lexend"
+  },
+  {
+   "family": "Lexend Deca",
+   "category": "Sans Serif",
+   "popularity": 184,
+   "weights": [
+    "100",
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Easy Reading": 100,
+    "Geometric": 100,
+    "Rugged": 45
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "LexendDeca[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Lexend Deca"
+  },
+  {
+   "family": "Libre Barcode 128",
+   "category": "Display",
+   "popularity": 631,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Barcode": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "LibreBarcode128-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Libre Barcode 128"
+  },
+  {
+   "family": "Libre Barcode 39",
+   "category": "Display",
+   "popularity": 333,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Barcode": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "LibreBarcode39-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Libre Barcode 39"
+  },
+  {
+   "family": "Libre Baskerville",
+   "category": "Serif",
+   "popularity": 61,
+   "weights": [
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Transitional": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "LibreBaskerville-Italic[wght].ttf",
+    "LibreBaskerville[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Libre Baskerville"
+  },
+  {
+   "family": "Libre Caslon Text",
+   "category": "Serif",
+   "popularity": 248,
+   "weights": [
+    "400",
+    "400i",
+    "700"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Old Style Garalde": 100,
+    "Business": 78,
+    "Competent": 66,
+    "Vintage": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "LibreCaslonText-Italic[wght].ttf",
+    "LibreCaslonText[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Libre Caslon Text"
+  },
+  {
+   "family": "Libre Franklin",
+   "category": "Sans Serif",
+   "popularity": 79,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Grotesque": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "LibreFranklin-Italic[wght].ttf",
+    "LibreFranklin[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Libre Franklin"
+  },
+  {
+   "family": "Lilita One",
+   "category": "Display",
+   "popularity": 170,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Humanist": 100,
+    "Rugged": 65,
+    "Kwanzaa": 55,
+    "Loud": 52,
+    "Vintage": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "LilitaOne-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Lilita One"
+  },
+  {
+   "family": "Limelight",
+   "category": "Display",
+   "popularity": 442,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Artistic": 100,
+    "Art Deco": 100,
+    "Kwanzaa": 98,
+    "Vintage": 90,
+    "Christmas": 75,
+    "Loud": 57,
+    "Awkward": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Limelight-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Limelight"
+  },
+  {
+   "family": "Literata",
+   "category": "Serif",
+   "popularity": 220,
+   "weights": [
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "opsz",
+    "wght"
+   ],
+   "tags": {
+    "Transitional": 100,
+    "Competent": 70
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Literata-Italic[opsz,wght].ttf",
+    "Literata[opsz,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Literata"
+  },
+  {
+   "family": "Lobster",
+   "category": "Display",
+   "popularity": 145,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Fancy": 92,
+    "Artistic": 75,
+    "Vintage": 70,
+    "Sincere": 65,
+    "Loud": 50,
+    "Playful": 50,
+    "Cute": 42,
+    "Happy": 40,
+    "Informal": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Lobster-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Lobster"
+  },
+  {
+   "family": "Lobster Two",
+   "category": "Display",
+   "popularity": 92,
+   "weights": [
+    "400",
+    "400i",
+    "700",
+    "700i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Artistic": 75,
+    "Vintage": 70,
+    "Sincere": 67,
+    "Playful": 50,
+    "Happy": 40,
+    "Informal": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "LobsterTwo-Bold.ttf",
+    "LobsterTwo-BoldItalic.ttf",
+    "LobsterTwo-Italic.ttf",
+    "LobsterTwo-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Lobster Two"
+  },
+  {
+   "family": "Londrina Solid",
+   "category": "Display",
+   "popularity": 555,
+   "weights": [
+    "100",
+    "300",
+    "400",
+    "900"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Grotesque": 100,
+    "Excited": 68,
+    "Playful": 58,
+    "Rugged": 50,
+    "Awkward": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "LondrinaSolid-Black.ttf",
+    "LondrinaSolid-Light.ttf",
+    "LondrinaSolid-Regular.ttf",
+    "LondrinaSolid-Thin.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Londrina Solid"
+  },
+  {
+   "family": "Lora",
+   "category": "Serif",
+   "popularity": 39,
+   "weights": [
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Transitional": 60
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Lora-Italic[wght].ttf",
+    "Lora[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Lora"
+  },
+  {
+   "family": "Luckiest Guy",
+   "category": "Display",
+   "popularity": 224,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Playful": 96,
+    "Excited": 86,
+    "Loud": 84,
+    "Holi": 77,
+    "Lunar New Year": 73,
+    "Christmas": 67,
+    "Valentine's Day": 66,
+    "Rugged": 65,
+    "Happy": 64,
+    "Wacky": 40
+   },
+   "licence_folder": "apache",
+   "files": [
+    "LuckiestGuy-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Luckiest Guy"
+  },
+  {
+   "family": "Manrope",
+   "category": "Sans Serif",
+   "popularity": 30,
+   "weights": [
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Neo Grotesque": 100,
+    "Rugged": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Manrope[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Manrope"
+  },
+  {
+   "family": "Marcellus",
+   "category": "Serif",
+   "popularity": 188,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Vintage": 75,
+    "Rugged": 45
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Marcellus-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Marcellus"
+  },
+  {
+   "family": "Maven Pro",
+   "category": "Sans Serif",
+   "popularity": 162,
+   "weights": [
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Humanist": 50,
+    "Rugged": 44
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "MavenPro[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Maven Pro"
+  },
+  {
+   "family": "Merienda",
+   "category": "Handwriting",
+   "popularity": 407,
+   "weights": [
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Handwritten": 100,
+    "Brush": 100,
+    "Hanukkah": 88,
+    "Lunar New Year": 78,
+    "Diwali": 75,
+    "Christmas": 68,
+    "Informal": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Merienda[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Merienda"
+  },
+  {
+   "family": "Merriweather",
+   "category": "Serif",
+   "popularity": 35,
+   "weights": [
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "opsz",
+    "wdth",
+    "wght"
+   ],
+   "tags": {
+    "Old Style Garalde": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Merriweather-Italic[opsz,wdth,wght].ttf",
+    "Merriweather[opsz,wdth,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Merriweather"
+  },
+  {
+   "family": "Merriweather Sans",
+   "category": "Sans Serif",
+   "popularity": 110,
+   "weights": [
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Humanist": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "MerriweatherSans-Italic[wght].ttf",
+    "MerriweatherSans[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Merriweather Sans"
+  },
+  {
+   "family": "Metamorphous",
+   "category": "Display",
+   "popularity": 599,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Medieval": 100,
+    "Artistic": 93,
+    "Awkward": 78,
+    "Innovative": 76,
+    "Vintage": 75
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Metamorphous-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Metamorphous"
+  },
+  {
+   "family": "Monoton",
+   "category": "Display",
+   "popularity": 387,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Geometric": 100,
+    "Inline": 100,
+    "Kwanzaa": 99,
+    "Artistic": 93,
+    "Vintage": 90,
+    "Art Deco": 80,
+    "Excited": 72,
+    "Rugged": 61,
+    "Awkward": 60
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Monoton-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Monoton"
+  },
+  {
+   "family": "Montserrat",
+   "category": "Sans Serif",
+   "popularity": 7,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Geometric": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Montserrat-Italic[wght].ttf",
+    "Montserrat[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Montserrat"
+  },
+  {
+   "family": "Montserrat Alternates",
+   "category": "Sans Serif",
+   "popularity": 226,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Geometric": 100,
+    "Calm": 78,
+    "Rugged": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "MontserratAlternates-Black.ttf",
+    "MontserratAlternates-BlackItalic.ttf",
+    "MontserratAlternates-Bold.ttf",
+    "MontserratAlternates-BoldItalic.ttf",
+    "MontserratAlternates-ExtraBold.ttf",
+    "MontserratAlternates-ExtraBoldItalic.ttf",
+    "MontserratAlternates-ExtraLight.ttf",
+    "MontserratAlternates-ExtraLightItalic.ttf",
+    "MontserratAlternates-Italic.ttf",
+    "MontserratAlternates-Light.ttf",
+    "MontserratAlternates-LightItalic.ttf",
+    "MontserratAlternates-Medium.ttf",
+    "MontserratAlternates-MediumItalic.ttf",
+    "MontserratAlternates-Regular.ttf",
+    "MontserratAlternates-SemiBold.ttf",
+    "MontserratAlternates-SemiBoldItalic.ttf",
+    "MontserratAlternates-Thin.ttf",
+    "MontserratAlternates-ThinItalic.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Montserrat Alternates"
+  },
+  {
+   "family": "Mukta",
+   "category": "Sans Serif",
+   "popularity": 125,
+   "weights": [
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Humanist": 100,
+    "Calm": 94,
+    "Business": 80,
+    "Competent": 60,
+    "Sincere": 45,
+    "Rugged": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Mukta-Bold.ttf",
+    "Mukta-ExtraBold.ttf",
+    "Mukta-ExtraLight.ttf",
+    "Mukta-Light.ttf",
+    "Mukta-Medium.ttf",
+    "Mukta-Regular.ttf",
+    "Mukta-SemiBold.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Mukta"
+  },
+  {
+   "family": "Mulish",
+   "category": "Sans Serif",
+   "popularity": 48,
+   "weights": [
+    "1000",
+    "1000i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Geometric": 60,
+    "Humanist": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Mulish-Italic[wght].ttf",
+    "Mulish[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Mulish"
+  },
+  {
+   "family": "MuseoModerno",
+   "category": "Display",
+   "popularity": 543,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Geometric": 100,
+    "Rugged": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "MuseoModerno-Italic[wght].ttf",
+    "MuseoModerno[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\MuseoModerno"
+  },
+  {
+   "family": "New Rocker",
+   "category": "Display",
+   "popularity": 642,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Blackletter": 100,
+    "Vintage": 90,
+    "Halloween": 90,
+    "Awkward": 80,
+    "Rugged": 65,
+    "Artistic": 58
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "NewRocker-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\New Rocker"
+  },
+  {
+   "family": "News Cycle",
+   "category": "Sans Serif",
+   "popularity": 242,
+   "weights": [
+    "400",
+    "700"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Humanist": 80,
+    "Calm": 79,
+    "Business": 50,
+    "Rugged": 45,
+    "Sincere": 45
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "NewsCycle-Bold.ttf",
+    "NewsCycle-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\News Cycle"
+  },
+  {
+   "family": "Newsreader",
+   "category": "Serif",
+   "popularity": 126,
+   "weights": [
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i"
+   ],
+   "variable_axes": [
+    "opsz",
+    "wght"
+   ],
+   "tags": {
+    "Transitional": 100,
+    "Competent": 83
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Newsreader-Italic[opsz,wght].ttf",
+    "Newsreader[opsz,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Newsreader"
+  },
+  {
+   "family": "Nothing You Could Do",
+   "category": "Handwriting",
+   "popularity": 406,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Handwritten": 100,
+    "Informal": 100,
+    "Vintage": 80,
+    "Excited": 76,
+    "Awkward": 70,
+    "Active": 68,
+    "Childlike": 65,
+    "Sincere": 45
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "NothingYouCouldDo.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Nothing You Could Do"
+  },
+  {
+   "family": "Noto Sans",
+   "category": "Sans Serif",
+   "popularity": 20,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wdth",
+    "wght"
+   ],
+   "tags": {
+    "Humanist": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "NotoSans-Italic[wdth,wght].ttf",
+    "NotoSans[wdth,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Noto Sans"
+  },
+  {
+   "family": "Noto Serif",
+   "category": "Serif",
+   "popularity": 62,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wdth",
+    "wght"
+   ],
+   "tags": {
+    "Transitional": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "NotoSerif-Italic[wdth,wght].ttf",
+    "NotoSerif[wdth,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Noto Serif"
+  },
+  {
+   "family": "Nunito",
+   "category": "Sans Serif",
+   "popularity": 25,
+   "weights": [
+    "1000",
+    "1000i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Rounded": 100,
+    "Neo Grotesque": 80
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Nunito-Italic[wght].ttf",
+    "Nunito[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Nunito"
+  },
+  {
+   "family": "Nunito Sans",
+   "category": "Sans Serif",
+   "popularity": 26,
+   "weights": [
+    "1000",
+    "1000i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "YTLC",
+    "opsz",
+    "wdth",
+    "wght"
+   ],
+   "tags": {
+    "Rounded": 100,
+    "Neo Grotesque": 80
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "NunitoSans-Italic[YTLC,opsz,wdth,wght].ttf",
+    "NunitoSans[YTLC,opsz,wdth,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Nunito Sans"
+  },
+  {
+   "family": "Oleo Script",
+   "category": "Display",
+   "popularity": 202,
+   "weights": [
+    "400",
+    "700"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Vintage": 75,
+    "Kwanzaa": 71,
+    "Active": 65,
+    "Happy": 50,
+    "Loud": 42
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "OleoScript-Bold.ttf",
+    "OleoScript-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Oleo Script"
+  },
+  {
+   "family": "Onest",
+   "category": "Sans Serif",
+   "popularity": 176,
+   "weights": [
+    "100",
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Neo Grotesque": 90
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Onest[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Onest"
+  },
+  {
+   "family": "Open Sans",
+   "category": "Sans Serif",
+   "popularity": 3,
+   "weights": [
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i"
+   ],
+   "variable_axes": [
+    "wdth",
+    "wght"
+   ],
+   "tags": {
+    "Humanist": 80,
+    "Kwanzaa": 73
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "OpenSans-Italic[wdth,wght].ttf",
+    "OpenSans[wdth,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Open Sans"
+  },
+  {
+   "family": "Orbitron",
+   "category": "Sans Serif",
+   "popularity": 131,
+   "weights": [
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Techno": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Orbitron[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Orbitron"
+  },
+  {
+   "family": "Original Surfer",
+   "category": "Display",
+   "popularity": 645,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Wacky": 100,
+    "Playful": 92,
+    "Glyphic": 80,
+    "Vintage": 72,
+    "Awkward": 70,
+    "Happy": 70
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "OriginalSurfer-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Original Surfer"
+  },
+  {
+   "family": "Oswald",
+   "category": "Sans Serif",
+   "popularity": 19,
+   "weights": [
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Grotesque": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Oswald[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Oswald"
+  },
+  {
+   "family": "Outfit",
+   "category": "Sans Serif",
+   "popularity": 33,
+   "weights": [
+    "100",
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Geometric": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Outfit[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Outfit"
+  },
+  {
+   "family": "Overpass",
+   "category": "Sans Serif",
+   "popularity": 128,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Grotesque": 90
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Overpass-Italic[wght].ttf",
+    "Overpass[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Overpass"
+  },
+  {
+   "family": "Oxanium",
+   "category": "Display",
+   "popularity": 267,
+   "weights": [
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Superellipse": 100,
+    "Techno": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Oxanium[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Oxanium"
+  },
+  {
+   "family": "Oxygen",
+   "category": "Sans Serif",
+   "popularity": 122,
+   "weights": [
+    "300",
+    "400",
+    "700"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Business": 88,
+    "Calm": 87,
+    "Competent": 60,
+    "Humanist": 60,
+    "Rugged": 50,
+    "Sincere": 50,
+    "Grotesque": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Oxygen-Bold.ttf",
+    "Oxygen-Light.ttf",
+    "Oxygen-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Oxygen"
+  },
+  {
+   "family": "PT Sans",
+   "category": "Sans Serif",
+   "popularity": 45,
+   "weights": [
+    "400",
+    "400i",
+    "700",
+    "700i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Humanist": 100,
+    "Calm": 90,
+    "Business": 85,
+    "Competent": 85,
+    "Sincere": 60,
+    "Rugged": 45
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "PT_Sans-Web-Bold.ttf",
+    "PT_Sans-Web-BoldItalic.ttf",
+    "PT_Sans-Web-Italic.ttf",
+    "PT_Sans-Web-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\PT Sans"
+  },
+  {
+   "family": "PT Sans Narrow",
+   "category": "Sans Serif",
+   "popularity": 146,
+   "weights": [
+    "400",
+    "700"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Humanist": 100,
+    "Calm": 79,
+    "Business": 72,
+    "Competent": 45,
+    "Rugged": 45
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "PT_Sans-Narrow-Web-Bold.ttf",
+    "PT_Sans-Narrow-Web-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\PT Sans Narrow"
+  },
+  {
+   "family": "PT Serif",
+   "category": "Serif",
+   "popularity": 68,
+   "weights": [
+    "400",
+    "400i",
+    "700",
+    "700i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Transitional": 100,
+    "Business": 90,
+    "Competent": 85,
+    "Sincere": 79,
+    "Rugged": 45,
+    "Vintage": 45
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "PT_Serif-Web-Bold.ttf",
+    "PT_Serif-Web-BoldItalic.ttf",
+    "PT_Serif-Web-Italic.ttf",
+    "PT_Serif-Web-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\PT Serif"
+  },
+  {
+   "family": "Pacifico",
+   "category": "Handwriting",
+   "popularity": 134,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Informal": 80,
+    "Lunar New Year": 75,
+    "Hanukkah": 68,
+    "Valentine's Day": 65,
+    "Vintage": 64,
+    "Artistic": 61,
+    "Loud": 50,
+    "Playful": 50,
+    "Handwritten": 50,
+    "Childlike": 40,
+    "Cute": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Pacifico-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Pacifico"
+  },
+  {
+   "family": "Parisienne",
+   "category": "Handwriting",
+   "popularity": 412,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Formal": 100,
+    "Artistic": 99,
+    "Vintage": 75,
+    "Fancy": 73,
+    "Sophisticated": 72
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Parisienne-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Parisienne"
+  },
+  {
+   "family": "Passion One",
+   "category": "Display",
+   "popularity": 304,
+   "weights": [
+    "400",
+    "700",
+    "900"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Humanist": 100,
+    "Kwanzaa": 86,
+    "Loud": 80,
+    "Rugged": 70,
+    "Woodtype": 50,
+    "Vintage": 42,
+    "Stiff": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "PassionOne-Black.ttf",
+    "PassionOne-Bold.ttf",
+    "PassionOne-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Passion One"
+  },
+  {
+   "family": "Patrick Hand",
+   "category": "Handwriting",
+   "popularity": 292,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Handwritten": 100,
+    "Informal": 100,
+    "Upright Script": 100,
+    "Childlike": 78,
+    "Sincere": 55,
+    "Playful": 43
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "PatrickHand-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Patrick Hand"
+  },
+  {
+   "family": "Patua One",
+   "category": "Display",
+   "popularity": 253,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Transitional": 100,
+    "Sincere": 81,
+    "Rugged": 60,
+    "Vintage": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "PatuaOne-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Patua One"
+  },
+  {
+   "family": "Paytone One",
+   "category": "Sans Serif",
+   "popularity": 277,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Geometric": 80,
+    "Vintage": 62,
+    "Rugged": 60,
+    "Loud": 41
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "PaytoneOne-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Paytone One"
+  },
+  {
+   "family": "Permanent Marker",
+   "category": "Handwriting",
+   "popularity": 190,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Handwritten": 100,
+    "Informal": 100,
+    "Brush": 100,
+    "Artistic": 97,
+    "Rugged": 83,
+    "Sincere": 80,
+    "Christmas": 80,
+    "Active": 72,
+    "Awkward": 68,
+    "Excited": 68,
+    "Holi": 60,
+    "Childlike": 50
+   },
+   "licence_folder": "apache",
+   "files": [
+    "PermanentMarker-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Permanent Marker"
+  },
+  {
+   "family": "Pinyon Script",
+   "category": "Handwriting",
+   "popularity": 331,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Artistic": 100,
+    "Formal": 100,
+    "Christmas": 95,
+    "Lunar New Year": 93,
+    "Sophisticated": 91,
+    "Vintage": 90,
+    "Fancy": 59
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "PinyonScript-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Pinyon Script"
+  },
+  {
+   "family": "Pirata One",
+   "category": "Display",
+   "popularity": 422,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Blackletter": 100,
+    "Vintage": 85,
+    "Artistic": 80,
+    "Rugged": 55,
+    "Loud": 47,
+    "Awkward": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "PirataOne-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Pirata One"
+  },
+  {
+   "family": "Pixelify Sans",
+   "category": "Display",
+   "popularity": 456,
+   "weights": [
+    "400",
+    "500",
+    "600",
+    "700"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Pixel": 100,
+    "Techno": 90,
+    "Awkward": 60,
+    "Rugged": 55
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "PixelifySans[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Pixelify Sans"
+  },
+  {
+   "family": "Play",
+   "category": "Sans Serif",
+   "popularity": 168,
+   "weights": [
+    "400",
+    "700"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Superellipse": 90,
+    "Futuristic": 88,
+    "Stiff": 65,
+    "Business": 50,
+    "Rugged": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Play-Bold.ttf",
+    "Play-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Play"
+  },
+  {
+   "family": "Playball",
+   "category": "Display",
+   "popularity": 342,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Formal": 80,
+    "Lunar New Year": 80,
+    "Vintage": 72,
+    "Artistic": 65,
+    "Sophisticated": 58
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Playball-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Playball"
+  },
+  {
+   "family": "Playfair",
+   "category": "Serif",
+   "popularity": 239,
+   "weights": [
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "opsz",
+    "wdth",
+    "wght"
+   ],
+   "tags": {
+    "Didone": 100,
+    "Christmas": 57
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Playfair-Italic[opsz,wdth,wght].ttf",
+    "Playfair[opsz,wdth,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Playfair"
+  },
+  {
+   "family": "Playfair Display",
+   "category": "Serif",
+   "popularity": 24,
+   "weights": [
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Didone": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "PlayfairDisplay-Italic[wght].ttf",
+    "PlayfairDisplay[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Playfair Display"
+  },
+  {
+   "family": "Plus Jakarta Sans",
+   "category": "Sans Serif",
+   "popularity": 38,
+   "weights": [
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Geometric": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "PlusJakartaSans-Italic[wght].ttf",
+    "PlusJakartaSans[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Plus Jakarta Sans"
+  },
+  {
+   "family": "Poiret One",
+   "category": "Display",
+   "popularity": 363,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Geometric": 100,
+    "Vintage": 70,
+    "Business": 41
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "PoiretOne-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Poiret One"
+  },
+  {
+   "family": "Poppins",
+   "category": "Sans Serif",
+   "popularity": 8,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Geometric": 100,
+    "Calm": 85,
+    "Business": 60,
+    "Rugged": 50,
+    "Sincere": 50,
+    "Competent": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Poppins-Black.ttf",
+    "Poppins-BlackItalic.ttf",
+    "Poppins-Bold.ttf",
+    "Poppins-BoldItalic.ttf",
+    "Poppins-ExtraBold.ttf",
+    "Poppins-ExtraBoldItalic.ttf",
+    "Poppins-ExtraLight.ttf",
+    "Poppins-ExtraLightItalic.ttf",
+    "Poppins-Italic.ttf",
+    "Poppins-Light.ttf",
+    "Poppins-LightItalic.ttf",
+    "Poppins-Medium.ttf",
+    "Poppins-MediumItalic.ttf",
+    "Poppins-Regular.ttf",
+    "Poppins-SemiBold.ttf",
+    "Poppins-SemiBoldItalic.ttf",
+    "Poppins-Thin.ttf",
+    "Poppins-ThinItalic.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Poppins"
+  },
+  {
+   "family": "Prata",
+   "category": "Serif",
+   "popularity": 255,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Didone": 100,
+    "Vintage": 84,
+    "Sincere": 66,
+    "Business": 60
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Prata-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Prata"
+  },
+  {
+   "family": "Press Start 2P",
+   "category": "Display",
+   "popularity": 215,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Pixel": 100,
+    "Techno": 90,
+    "Vintage": 88,
+    "Awkward": 78,
+    "Rugged": 50,
+    "Stiff": 50,
+    "Playful": 45,
+    "Futuristic": 44
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "PressStart2P-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Press Start 2P"
+  },
+  {
+   "family": "Prompt",
+   "category": "Sans Serif",
+   "popularity": 55,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Calm": 94,
+    "Sincere": 60,
+    "Business": 55,
+    "Geometric": 50,
+    "Neo Grotesque": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Prompt-Black.ttf",
+    "Prompt-BlackItalic.ttf",
+    "Prompt-Bold.ttf",
+    "Prompt-BoldItalic.ttf",
+    "Prompt-ExtraBold.ttf",
+    "Prompt-ExtraBoldItalic.ttf",
+    "Prompt-ExtraLight.ttf",
+    "Prompt-ExtraLightItalic.ttf",
+    "Prompt-Italic.ttf",
+    "Prompt-Light.ttf",
+    "Prompt-LightItalic.ttf",
+    "Prompt-Medium.ttf",
+    "Prompt-MediumItalic.ttf",
+    "Prompt-Regular.ttf",
+    "Prompt-SemiBold.ttf",
+    "Prompt-SemiBoldItalic.ttf",
+    "Prompt-Thin.ttf",
+    "Prompt-ThinItalic.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Prompt"
+  },
+  {
+   "family": "Public Sans",
+   "category": "Sans Serif",
+   "popularity": 82,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Grotesque": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "PublicSans-Italic[wght].ttf",
+    "PublicSans[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Public Sans"
+  },
+  {
+   "family": "Questrial",
+   "category": "Sans Serif",
+   "popularity": 163,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Geometric": 100,
+    "Sincere": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Questrial-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Questrial"
+  },
+  {
+   "family": "Quicksand",
+   "category": "Sans Serif",
+   "popularity": 40,
+   "weights": [
+    "300",
+    "400",
+    "500",
+    "600",
+    "700"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Geometric": 100,
+    "Rounded": 100,
+    "Rugged": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Quicksand[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Quicksand"
+  },
+  {
+   "family": "Racing Sans One",
+   "category": "Display",
+   "popularity": 337,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Humanist": 100,
+    "Active": 71,
+    "Loud": 62,
+    "Rugged": 55,
+    "Vintage": 55
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "RacingSansOne-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Racing Sans One"
+  },
+  {
+   "family": "Rajdhani",
+   "category": "Sans Serif",
+   "popularity": 99,
+   "weights": [
+    "300",
+    "400",
+    "500",
+    "600",
+    "700"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Superellipse": 100,
+    "Futuristic": 77,
+    "Calm": 70,
+    "Stiff": 65,
+    "Rugged": 50,
+    "Humanist": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Rajdhani-Bold.ttf",
+    "Rajdhani-Light.ttf",
+    "Rajdhani-Medium.ttf",
+    "Rajdhani-Regular.ttf",
+    "Rajdhani-SemiBold.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Rajdhani"
+  },
+  {
+   "family": "Rakkas",
+   "category": "Display",
+   "popularity": 536,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Humanist Venetian": 100,
+    "Vintage": 85,
+    "Loud": 64,
+    "Rugged": 53
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Rakkas-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Rakkas"
+  },
+  {
+   "family": "Raleway",
+   "category": "Sans Serif",
+   "popularity": 22,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Geometric": 80
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Raleway-Italic[wght].ttf",
+    "Raleway[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Raleway"
+  },
+  {
+   "family": "Ramabhadra",
+   "category": "Sans Serif",
+   "popularity": 135,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Grotesque": 100,
+    "Calm": 72,
+    "Business": 60
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Ramabhadra-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Ramabhadra"
+  },
+  {
+   "family": "Rammetto One",
+   "category": "Display",
+   "popularity": 378,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Humanist": 100,
+    "Rugged": 70,
+    "Loud": 69,
+    "Awkward": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "RammettoOne-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Rammetto One"
+  },
+  {
+   "family": "Readex Pro",
+   "category": "Sans Serif",
+   "popularity": 249,
+   "weights": [
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700"
+   ],
+   "variable_axes": [
+    "HEXP",
+    "wght"
+   ],
+   "tags": {
+    "Easy Reading": 100,
+    "Geometric": 100,
+    "Calm": 86
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "ReadexPro[HEXP,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Readex Pro"
+  },
+  {
+   "family": "Red Hat Display",
+   "category": "Sans Serif",
+   "popularity": 114,
+   "weights": [
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Geometric": 90
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "RedHatDisplay-Italic[wght].ttf",
+    "RedHatDisplay[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Red Hat Display"
+  },
+  {
+   "family": "Red Hat Text",
+   "category": "Sans Serif",
+   "popularity": 233,
+   "weights": [
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Geometric": 80
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "RedHatText-Italic[wght].ttf",
+    "RedHatText[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Red Hat Text"
+  },
+  {
+   "family": "Red Rose",
+   "category": "Display",
+   "popularity": 577,
+   "weights": [
+    "300",
+    "400",
+    "500",
+    "600",
+    "700"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Glyphic": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "RedRose[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Red Rose"
+  },
+  {
+   "family": "Reenie Beanie",
+   "category": "Handwriting",
+   "popularity": 371,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Handwritten": 100,
+    "Active": 64,
+    "Excited": 62,
+    "Awkward": 42
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "ReenieBeanie.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Reenie Beanie"
+  },
+  {
+   "family": "Rethink Sans",
+   "category": "Sans Serif",
+   "popularity": 227,
+   "weights": [
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Grotesque": 100,
+    "Vintage": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "RethinkSans-Italic[wght].ttf",
+    "RethinkSans[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Rethink Sans"
+  },
+  {
+   "family": "Righteous",
+   "category": "Display",
+   "popularity": 238,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Geometric": 100,
+    "Rugged": 66,
+    "Vintage": 60
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Righteous-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Righteous"
+  },
+  {
+   "family": "Roboto",
+   "category": "Sans Serif",
+   "popularity": 2,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wdth",
+    "wght"
+   ],
+   "tags": {
+    "Neo Grotesque": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Roboto-Italic[wdth,wght].ttf",
+    "Roboto[wdth,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Roboto"
+  },
+  {
+   "family": "Roboto Condensed",
+   "category": "Sans Serif",
+   "popularity": 16,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Neo Grotesque": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "RobotoCondensed-Italic[wght].ttf",
+    "RobotoCondensed[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Roboto Condensed"
+  },
+  {
+   "family": "Roboto Flex",
+   "category": "Sans Serif",
+   "popularity": 107,
+   "weights": [
+    "100",
+    "1000",
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900"
+   ],
+   "variable_axes": [
+    "GRAD",
+    "XOPQ",
+    "XTRA",
+    "YOPQ",
+    "YTAS",
+    "YTDE",
+    "YTFI",
+    "YTLC",
+    "YTUC",
+    "opsz",
+    "slnt",
+    "wdth",
+    "wght"
+   ],
+   "tags": {
+    "Neo Grotesque": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "RobotoFlex[GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Roboto Flex"
+  },
+  {
+   "family": "Roboto Mono",
+   "category": "Monospace",
+   "popularity": 17,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Monospace": 100,
+    "Neo Grotesque": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "RobotoMono-Italic[wght].ttf",
+    "RobotoMono[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Roboto Mono"
+  },
+  {
+   "family": "Roboto Serif",
+   "category": "Serif",
+   "popularity": 200,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "GRAD",
+    "opsz",
+    "wdth",
+    "wght"
+   ],
+   "tags": {
+    "Modern": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "RobotoSerif-Italic[GRAD,opsz,wdth,wght].ttf",
+    "RobotoSerif[GRAD,opsz,wdth,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Roboto Serif"
+  },
+  {
+   "family": "Roboto Slab",
+   "category": "Serif",
+   "popularity": 28,
+   "weights": [
+    "100",
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Geometric": 70
+   },
+   "licence_folder": "apache",
+   "files": [
+    "RobotoSlab[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Roboto Slab"
+  },
+  {
+   "family": "Rock Salt",
+   "category": "Handwriting",
+   "popularity": 358,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Handwritten": 100,
+    "Informal": 100,
+    "Excited": 88,
+    "Vintage": 65,
+    "Active": 56,
+    "Rugged": 55,
+    "Awkward": 41
+   },
+   "licence_folder": "apache",
+   "files": [
+    "RockSalt-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Rock Salt"
+  },
+  {
+   "family": "Rowdies",
+   "category": "Display",
+   "popularity": 258,
+   "weights": [
+    "300",
+    "400",
+    "700"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Humanist": 80,
+    "Loud": 69,
+    "Rugged": 65
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Rowdies-Bold.ttf",
+    "Rowdies-Light.ttf",
+    "Rowdies-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Rowdies"
+  },
+  {
+   "family": "Rubik",
+   "category": "Sans Serif",
+   "popularity": 29,
+   "weights": [
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Neo Grotesque": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Rubik-Italic[wght].ttf",
+    "Rubik[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Rubik"
+  },
+  {
+   "family": "Rubik Mono One",
+   "category": "Sans Serif",
+   "popularity": 305,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Neo Grotesque": 100,
+    "Rugged": 80,
+    "Loud": 54,
+    "Stiff": 45
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "RubikMonoOne-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Rubik Mono One"
+  },
+  {
+   "family": "Russo One",
+   "category": "Sans Serif",
+   "popularity": 263,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Rugged": 65,
+    "Stiff": 64,
+    "Futuristic": 60,
+    "Superellipse": 60,
+    "Loud": 44,
+    "Techno": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "RussoOne-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Russo One"
+  },
+  {
+   "family": "Rye",
+   "category": "Display",
+   "popularity": 439,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Tuscan": 100,
+    "Woodtype": 100,
+    "Vintage": 90,
+    "Artistic": 82,
+    "Rugged": 75,
+    "Awkward": 59
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Rye-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Rye"
+  },
+  {
+   "family": "Sacramento",
+   "category": "Handwriting",
+   "popularity": 302,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Informal": 90,
+    "Vintage": 78,
+    "Artistic": 62,
+    "Cute": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Sacramento-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Sacramento"
+  },
+  {
+   "family": "Saira",
+   "category": "Sans Serif",
+   "popularity": 60,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wdth",
+    "wght"
+   ],
+   "tags": {
+    "Superellipse": 80
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Saira-Italic[wdth,wght].ttf",
+    "Saira[wdth,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Saira"
+  },
+  {
+   "family": "Saira Condensed",
+   "category": "Sans Serif",
+   "popularity": 196,
+   "weights": [
+    "100",
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Superellipse": 80,
+    "Calm": 69,
+    "Futuristic": 68,
+    "Stiff": 55,
+    "Rugged": 52
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "SairaCondensed-Black.ttf",
+    "SairaCondensed-Bold.ttf",
+    "SairaCondensed-ExtraBold.ttf",
+    "SairaCondensed-ExtraLight.ttf",
+    "SairaCondensed-Light.ttf",
+    "SairaCondensed-Medium.ttf",
+    "SairaCondensed-Regular.ttf",
+    "SairaCondensed-SemiBold.ttf",
+    "SairaCondensed-Thin.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Saira Condensed"
+  },
+  {
+   "family": "Sanchez",
+   "category": "Serif",
+   "popularity": 194,
+   "weights": [
+    "400",
+    "400i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Humanist": 90,
+    "Business": 70,
+    "Rugged": 58,
+    "Sincere": 50,
+    "Vintage": 50,
+    "Competent": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Sanchez-Italic.ttf",
+    "Sanchez-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Sanchez"
+  },
+  {
+   "family": "Sancreek",
+   "category": "Display",
+   "popularity": 649,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Tuscan": 100,
+    "Vintage": 90,
+    "Woodtype": 90,
+    "Rugged": 75,
+    "Halloween": 75,
+    "Artistic": 50,
+    "Awkward": 50,
+    "Loud": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Sancreek-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Sancreek"
+  },
+  {
+   "family": "Sarabun",
+   "category": "Sans Serif",
+   "popularity": 217,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Humanist": 100,
+    "Calm": 79,
+    "Business": 65,
+    "Rugged": 48
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Sarabun-Bold.ttf",
+    "Sarabun-BoldItalic.ttf",
+    "Sarabun-ExtraBold.ttf",
+    "Sarabun-ExtraBoldItalic.ttf",
+    "Sarabun-ExtraLight.ttf",
+    "Sarabun-ExtraLightItalic.ttf",
+    "Sarabun-Italic.ttf",
+    "Sarabun-Light.ttf",
+    "Sarabun-LightItalic.ttf",
+    "Sarabun-Medium.ttf",
+    "Sarabun-MediumItalic.ttf",
+    "Sarabun-Regular.ttf",
+    "Sarabun-SemiBold.ttf",
+    "Sarabun-SemiBoldItalic.ttf",
+    "Sarabun-Thin.ttf",
+    "Sarabun-ThinItalic.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Sarabun"
+  },
+  {
+   "family": "Satisfy",
+   "category": "Handwriting",
+   "popularity": 166,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Vintage": 82,
+    "Informal": 70,
+    "Artistic": 49,
+    "Rugged": 45,
+    "Handwritten": 40
+   },
+   "licence_folder": "apache",
+   "files": [
+    "Satisfy-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Satisfy"
+  },
+  {
+   "family": "Schibsted Grotesk",
+   "category": "Sans Serif",
+   "popularity": 97,
+   "weights": [
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Grotesque": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "SchibstedGrotesk-Italic[wght].ttf",
+    "SchibstedGrotesk[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Schibsted Grotesk"
+  },
+  {
+   "family": "Shadows Into Light",
+   "category": "Handwriting",
+   "popularity": 167,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Handwritten": 100,
+    "Informal": 100,
+    "Halloween": 90,
+    "Excited": 79,
+    "Rugged": 50,
+    "Awkward": 44
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "ShadowsIntoLight.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Shadows Into Light"
+  },
+  {
+   "family": "Share Tech",
+   "category": "Sans Serif",
+   "popularity": 72,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Neo Grotesque": 70,
+    "Superellipse": 70,
+    "Futuristic": 67,
+    "Stiff": 52,
+    "Rugged": 50,
+    "Sincere": 45
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "ShareTech-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Share Tech"
+  },
+  {
+   "family": "Shrikhand",
+   "category": "Display",
+   "popularity": 554,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Holi": 99,
+    "Diwali": 92,
+    "Loud": 84,
+    "Active": 75,
+    "Vintage": 70,
+    "Transitional": 70,
+    "Rugged": 65,
+    "Cute": 52
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Shrikhand-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Shrikhand"
+  },
+  {
+   "family": "Sigmar One",
+   "category": "Display",
+   "popularity": 588,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Humanist": 100,
+    "Kwanzaa": 97,
+    "Loud": 75,
+    "Rugged": 60,
+    "Vintage": 56
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "SigmarOne-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Sigmar One"
+  },
+  {
+   "family": "Signika",
+   "category": "Sans Serif",
+   "popularity": 225,
+   "weights": [
+    "300",
+    "400",
+    "500",
+    "600",
+    "700"
+   ],
+   "variable_axes": [
+    "GRAD",
+    "wght"
+   ],
+   "tags": {
+    "Humanist": 100,
+    "Calm": 66,
+    "Competent": 60
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Signika[GRAD,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Signika"
+  },
+  {
+   "family": "Silkscreen",
+   "category": "Display",
+   "popularity": 597,
+   "weights": [
+    "400",
+    "700"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Pixel": 100,
+    "Futuristic": 88,
+    "Techno": 80,
+    "Vintage": 75,
+    "Awkward": 65,
+    "Rugged": 65,
+    "Stiff": 52
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Silkscreen-Bold.ttf",
+    "Silkscreen-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Silkscreen"
+  },
+  {
+   "family": "Skranji",
+   "category": "Display",
+   "popularity": 460,
+   "weights": [
+    "400",
+    "700"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Awkward": 69,
+    "Rugged": 60,
+    "Kwanzaa": 53,
+    "Loud": 52,
+    "Medieval": 50,
+    "Vintage": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Skranji-Bold.ttf",
+    "Skranji-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Skranji"
+  },
+  {
+   "family": "Slabo 13px",
+   "category": "Serif",
+   "popularity": 213,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Humanist": 100,
+    "Business": 85,
+    "Competent": 73,
+    "Rugged": 56,
+    "Sincere": 50,
+    "Calm": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Slabo13px-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Slabo 13px"
+  },
+  {
+   "family": "Slabo 27px",
+   "category": "Serif",
+   "popularity": 141,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Humanist": 100,
+    "Business": 85,
+    "Competent": 73,
+    "Rugged": 56,
+    "Sincere": 50,
+    "Vintage": 45
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Slabo27px-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Slabo 27px"
+  },
+  {
+   "family": "Smooch Sans",
+   "category": "Sans Serif",
+   "popularity": 73,
+   "weights": [
+    "100",
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Superellipse": 80
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "SmoochSans[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Smooch Sans"
+  },
+  {
+   "family": "Sniglet",
+   "category": "Display",
+   "popularity": 781,
+   "weights": [
+    "400",
+    "800"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Rounded": 100,
+    "Cute": 77,
+    "Happy": 70,
+    "Excited": 55
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Sniglet-ExtraBold.ttf",
+    "Sniglet-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Sniglet"
+  },
+  {
+   "family": "Sofia Sans",
+   "category": "Sans Serif",
+   "popularity": 230,
+   "weights": [
+    "1",
+    "100",
+    "1000",
+    "1000i",
+    "100i",
+    "1i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Neo Grotesque": 80
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "SofiaSans-Italic[wght].ttf",
+    "SofiaSans[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Sofia Sans"
+  },
+  {
+   "family": "Sora",
+   "category": "Sans Serif",
+   "popularity": 90,
+   "weights": [
+    "100",
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Neo Grotesque": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Sora[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Sora"
+  },
+  {
+   "family": "Source Code Pro",
+   "category": "Monospace",
+   "popularity": 69,
+   "weights": [
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Monospace": 100,
+    "Humanist": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "SourceCodePro-Italic[wght].ttf",
+    "SourceCodePro[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Source Code Pro"
+  },
+  {
+   "family": "Source Sans 3",
+   "category": "Sans Serif",
+   "popularity": 49,
+   "weights": [
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Humanist": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "SourceSans3-Italic[wght].ttf",
+    "SourceSans3[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Source Sans 3"
+  },
+  {
+   "family": "Source Serif 4",
+   "category": "Serif",
+   "popularity": 119,
+   "weights": [
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "opsz",
+    "wght"
+   ],
+   "tags": {
+    "Transitional": 100,
+    "Competent": 92
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "SourceSerif4-Italic[opsz,wght].ttf",
+    "SourceSerif4[opsz,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Source Serif 4"
+  },
+  {
+   "family": "Space Grotesk",
+   "category": "Sans Serif",
+   "popularity": 56,
+   "weights": [
+    "300",
+    "400",
+    "500",
+    "600",
+    "700"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Neo Grotesque": 100,
+    "Techno": 100,
+    "Grotesque": 80
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "SpaceGrotesk[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Space Grotesk"
+  },
+  {
+   "family": "Space Mono",
+   "category": "Monospace",
+   "popularity": 158,
+   "weights": [
+    "400",
+    "400i",
+    "700",
+    "700i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Monospace": 100,
+    "Neo Grotesque": 100,
+    "Techno": 100,
+    "Grotesque": 80,
+    "Calm": 64,
+    "Futuristic": 63,
+    "Rugged": 50,
+    "Sincere": 50,
+    "Business": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "SpaceMono-Bold.ttf",
+    "SpaceMono-BoldItalic.ttf",
+    "SpaceMono-Italic.ttf",
+    "SpaceMono-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Space Mono"
+  },
+  {
+   "family": "Special Elite",
+   "category": "Display",
+   "popularity": 283,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Clarendon": 100,
+    "Distressed": 100,
+    "Rugged": 90,
+    "Vintage": 90,
+    "Awkward": 70,
+    "Techno": 40
+   },
+   "licence_folder": "apache",
+   "files": [
+    "SpecialElite-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Special Elite"
+  },
+  {
+   "family": "Spectral",
+   "category": "Serif",
+   "popularity": 180,
+   "weights": [
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Transitional": 100,
+    "Competent": 80,
+    "Business": 77,
+    "Rugged": 50,
+    "Sincere": 50,
+    "Vintage": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Spectral-Bold.ttf",
+    "Spectral-BoldItalic.ttf",
+    "Spectral-ExtraBold.ttf",
+    "Spectral-ExtraBoldItalic.ttf",
+    "Spectral-ExtraLight.ttf",
+    "Spectral-ExtraLightItalic.ttf",
+    "Spectral-Italic.ttf",
+    "Spectral-Light.ttf",
+    "Spectral-LightItalic.ttf",
+    "Spectral-Medium.ttf",
+    "Spectral-MediumItalic.ttf",
+    "Spectral-Regular.ttf",
+    "Spectral-SemiBold.ttf",
+    "Spectral-SemiBoldItalic.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Spectral"
+  },
+  {
+   "family": "Squada One",
+   "category": "Display",
+   "popularity": 545,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Grotesque": 100,
+    "Vintage": 80,
+    "Superellipse": 80,
+    "Stiff": 70,
+    "Rugged": 65
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "SquadaOne-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Squada One"
+  },
+  {
+   "family": "Staatliches",
+   "category": "Display",
+   "popularity": 355,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Grotesque": 100,
+    "Vintage": 75,
+    "Rugged": 70,
+    "Stiff": 57
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Staatliches-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Staatliches"
+  },
+  {
+   "family": "Stardos Stencil",
+   "category": "Display",
+   "popularity": 581,
+   "weights": [
+    "400",
+    "700"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Stencil": 100,
+    "Vintage": 80,
+    "Rugged": 70,
+    "Scotch": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "StardosStencil-Bold.ttf",
+    "StardosStencil-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Stardos Stencil"
+  },
+  {
+   "family": "Syne",
+   "category": "Sans Serif",
+   "popularity": 189,
+   "weights": [
+    "400",
+    "500",
+    "600",
+    "700",
+    "800"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Neo Grotesque": 100
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Syne[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Syne"
+  },
+  {
+   "family": "Tajawal",
+   "category": "Sans Serif",
+   "popularity": 137,
+   "weights": [
+    "200",
+    "300",
+    "400",
+    "500",
+    "700",
+    "800",
+    "900"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Humanist": 100,
+    "Calm": 74,
+    "Business": 70,
+    "Rugged": 50,
+    "Sincere": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Tajawal-Black.ttf",
+    "Tajawal-Bold.ttf",
+    "Tajawal-ExtraBold.ttf",
+    "Tajawal-ExtraLight.ttf",
+    "Tajawal-Light.ttf",
+    "Tajawal-Medium.ttf",
+    "Tajawal-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Tajawal"
+  },
+  {
+   "family": "Tangerine",
+   "category": "Handwriting",
+   "popularity": 360,
+   "weights": [
+    "400",
+    "700"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Formal": 100,
+    "Fancy": 97,
+    "Vintage": 92,
+    "Valentine's Day": 92,
+    "Diwali": 90,
+    "Artistic": 89,
+    "Sincere": 80,
+    "Sophisticated": 59
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Tangerine-Bold.ttf",
+    "Tangerine-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Tangerine"
+  },
+  {
+   "family": "Teko",
+   "category": "Sans Serif",
+   "popularity": 149,
+   "weights": [
+    "300",
+    "400",
+    "500",
+    "600",
+    "700"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Superellipse": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Teko[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Teko"
+  },
+  {
+   "family": "Tektur",
+   "category": "Display",
+   "popularity": 549,
+   "weights": [
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900"
+   ],
+   "variable_axes": [
+    "wdth",
+    "wght"
+   ],
+   "tags": {
+    "Geometric": 80,
+    "Techno": 80
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Tektur[wdth,wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Tektur"
+  },
+  {
+   "family": "Tinos",
+   "category": "Serif",
+   "popularity": 250,
+   "weights": [
+    "400",
+    "400i",
+    "700",
+    "700i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Business": 82,
+    "Competent": 70,
+    "Sincere": 70,
+    "Transitional": 50,
+    "Rugged": 45,
+    "Vintage": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Tinos-Bold.ttf",
+    "Tinos-BoldItalic.ttf",
+    "Tinos-Italic.ttf",
+    "Tinos-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Tinos"
+  },
+  {
+   "family": "Titan One",
+   "category": "Display",
+   "popularity": 219,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Humanist": 100,
+    "Loud": 87,
+    "Rugged": 70,
+    "Vintage": 44,
+    "Cute": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "TitanOne-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Titan One"
+  },
+  {
+   "family": "Titillium Web",
+   "category": "Sans Serif",
+   "popularity": 63,
+   "weights": [
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "900"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Calm": 85,
+    "Competent": 65,
+    "Stiff": 60,
+    "Grotesque": 60,
+    "Rugged": 50,
+    "Business": 44
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "TitilliumWeb-Black.ttf",
+    "TitilliumWeb-Bold.ttf",
+    "TitilliumWeb-BoldItalic.ttf",
+    "TitilliumWeb-ExtraLight.ttf",
+    "TitilliumWeb-ExtraLightItalic.ttf",
+    "TitilliumWeb-Italic.ttf",
+    "TitilliumWeb-Light.ttf",
+    "TitilliumWeb-LightItalic.ttf",
+    "TitilliumWeb-Regular.ttf",
+    "TitilliumWeb-SemiBold.ttf",
+    "TitilliumWeb-SemiBoldItalic.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Titillium Web"
+  },
+  {
+   "family": "Ubuntu",
+   "category": "Sans Serif",
+   "popularity": 32,
+   "weights": [
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "700",
+    "700i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Neo Grotesque": 100,
+    "Kwanzaa": 90,
+    "Calm": 73,
+    "Business": 70,
+    "Competent": 60,
+    "Futuristic": 60
+   },
+   "licence_folder": "ufl",
+   "files": [
+    "Ubuntu-Bold.ttf",
+    "Ubuntu-BoldItalic.ttf",
+    "Ubuntu-Italic.ttf",
+    "Ubuntu-Light.ttf",
+    "Ubuntu-LightItalic.ttf",
+    "Ubuntu-Medium.ttf",
+    "Ubuntu-MediumItalic.ttf",
+    "Ubuntu-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Ubuntu"
+  },
+  {
+   "family": "Ultra",
+   "category": "Serif",
+   "popularity": 513,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Fat Face": 100,
+    "Loud": 90,
+    "Clarendon": 90,
+    "Vintage": 75,
+    "Rugged": 70
+   },
+   "licence_folder": "apache",
+   "files": [
+    "Ultra-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Ultra"
+  },
+  {
+   "family": "Unbounded",
+   "category": "Sans Serif",
+   "popularity": 187,
+   "weights": [
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Humanist": 50,
+    "Neo Grotesque": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Unbounded[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Unbounded"
+  },
+  {
+   "family": "Unica One",
+   "category": "Display",
+   "popularity": 430,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Futuristic": 93,
+    "Geometric": 80,
+    "Vintage": 60,
+    "Kwanzaa": 57,
+    "Rugged": 55,
+    "Stiff": 47,
+    "Neo Grotesque": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "UnicaOne-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Unica One"
+  },
+  {
+   "family": "UnifrakturMaguntia",
+   "category": "Display",
+   "popularity": 589,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Artistic": 100,
+    "Blackletter": 100,
+    "Vintage": 88,
+    "Rugged": 60,
+    "Sincere": 60
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "UnifrakturMaguntia-Book.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\UnifrakturMaguntia"
+  },
+  {
+   "family": "Urbanist",
+   "category": "Sans Serif",
+   "popularity": 98,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Geometric": 100,
+    "Vintage": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Urbanist-Italic[wght].ttf",
+    "Urbanist[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Urbanist"
+  },
+  {
+   "family": "Varela Round",
+   "category": "Sans Serif",
+   "popularity": 185,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Hanukkah": 100,
+    "Calm": 85,
+    "Humanist": 80,
+    "Rounded": 80,
+    "Sincere": 50,
+    "Business": 41
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "VarelaRound-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Varela Round"
+  },
+  {
+   "family": "Viga",
+   "category": "Sans Serif",
+   "popularity": 232,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Rugged": 55,
+    "Loud": 50,
+    "Humanist": 50,
+    "Neo Grotesque": 50,
+    "Stiff": 43
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Viga-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Viga"
+  },
+  {
+   "family": "Vollkorn",
+   "category": "Serif",
+   "popularity": 211,
+   "weights": [
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Transitional": 80
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Vollkorn-Italic[wght].ttf",
+    "Vollkorn[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Vollkorn"
+  },
+  {
+   "family": "Work Sans",
+   "category": "Sans Serif",
+   "popularity": 36,
+   "weights": [
+    "100",
+    "100i",
+    "200",
+    "200i",
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i",
+    "800",
+    "800i",
+    "900",
+    "900i"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Neo Grotesque": 60,
+    "Grotesque": 50,
+    "Vintage": 40
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "WorkSans-Italic[wght].ttf",
+    "WorkSans[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Work Sans"
+  },
+  {
+   "family": "Yanone Kaffeesatz",
+   "category": "Sans Serif",
+   "popularity": 229,
+   "weights": [
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700"
+   ],
+   "variable_axes": [
+    "wght"
+   ],
+   "tags": {
+    "Humanist": 100,
+    "Hanukkah": 51
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "YanoneKaffeesatz[wght].ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Yanone Kaffeesatz"
+  },
+  {
+   "family": "Yellowtail",
+   "category": "Handwriting",
+   "popularity": 276,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Vintage": 88,
+    "Handwritten": 70,
+    "Artistic": 52,
+    "Rugged": 50,
+    "Sincere": 45,
+    "Happy": 42
+   },
+   "licence_folder": "apache",
+   "files": [
+    "Yellowtail-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Yellowtail"
+  },
+  {
+   "family": "Yeseva One",
+   "category": "Display",
+   "popularity": 392,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Vintage": 75,
+    "Didone": 70,
+    "Rugged": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "YesevaOne-Regular.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Yeseva One"
+  },
+  {
+   "family": "Zeyada",
+   "category": "Handwriting",
+   "popularity": 136,
+   "weights": [
+    "400"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Informal": 90,
+    "Artistic": 71,
+    "Awkward": 55,
+    "Vintage": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "Zeyada.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Zeyada"
+  },
+  {
+   "family": "Zilla Slab",
+   "category": "Serif",
+   "popularity": 169,
+   "weights": [
+    "300",
+    "300i",
+    "400",
+    "400i",
+    "500",
+    "500i",
+    "600",
+    "600i",
+    "700",
+    "700i"
+   ],
+   "variable_axes": [],
+   "tags": {
+    "Business": 88,
+    "Humanist": 70,
+    "Competent": 60,
+    "Rugged": 60,
+    "Sincere": 50
+   },
+   "licence_folder": "ofl",
+   "files": [
+    "ZillaSlab-Bold.ttf",
+    "ZillaSlab-BoldItalic.ttf",
+    "ZillaSlab-Italic.ttf",
+    "ZillaSlab-Light.ttf",
+    "ZillaSlab-LightItalic.ttf",
+    "ZillaSlab-Medium.ttf",
+    "ZillaSlab-MediumItalic.ttf",
+    "ZillaSlab-Regular.ttf",
+    "ZillaSlab-SemiBold.ttf",
+    "ZillaSlab-SemiBoldItalic.ttf"
+   ],
+   "folder": "C:\\LetItEdit\\fonts\\library\\Zilla Slab"
+  }
+ ]
+}

@@ -1,0 +1,1062 @@
+{
+  "format": "letitedit-look-settings/1",
+  "id": "pack-documentary-essay",
+  "defaults_are": "taste",
+  "share": false,
+  "values": {
+    "format": "letitedit-style/3",
+    "name": "Documentary",
+    "description": "Real events told as a film - observation and the person's own words, titled and dated, scored scene by scene.",
+    "colors": {
+      "primary": "#F4F1EA",
+      "secondary": "#C9A227",
+      "accent": "#B03A2E",
+      "dark": "#0E0E0E",
+      "light": "#F4F1EA",
+      "bone": "#EDE6D6"
+    },
+    "fonts": {
+      "heading": {
+        "family": "Cormorant Garamond",
+        "weight": 600
+      },
+      "body": {
+        "family": "Source Sans 3",
+        "weight": 400
+      },
+      "captions": {
+        "family": "Source Sans 3",
+        "weight": 500
+      },
+      "mono": {
+        "family": "IBM Plex Mono",
+        "weight": 500
+      }
+    },
+    "captions": {
+      "font": "captions",
+      "size": 40,
+      "fill": "light",
+      "outline": null,
+      "shadow": {
+        "color": "#000000CC",
+        "x": 2,
+        "y": 2
+      },
+      "background": null,
+      "position": "bottom",
+      "margin": 0.06,
+      "max_chars": 42,
+      "max_lines": 2,
+      "case": "as_spoken"
+    },
+    "text": {
+      "font": "heading",
+      "size": 70,
+      "fill": "light",
+      "outline": null
+    },
+    "graphics": {
+      "title_card": {
+        "background": "dark",
+        "font": "heading",
+        "subtitle_font": "mono",
+        "size": 120,
+        "subtitle_size": 34,
+        "fill": "light",
+        "subtitle_fill": "secondary",
+        "accent": "secondary"
+      },
+      "chapter_card": {
+        "font": "heading",
+        "number_size": 110,
+        "size": 72,
+        "kicker_size": 28,
+        "fill": "light",
+        "accent": "secondary",
+        "band": false,
+        "outline": null,
+        "outline_width": 0
+      },
+      "lower_third": {
+        "font": "heading",
+        "subtitle_font": "mono",
+        "size": 54,
+        "subtitle_size": 28,
+        "fill": "light",
+        "subtitle_fill": "secondary",
+        "panel": "dark",
+        "panel_opacity": 0.55,
+        "accent": "accent",
+        "margin_y": 0.13
+      }
+    },
+    "music": {
+      "zones": {
+        "talk": -22.0,
+        "montage": -6.0,
+        "quiet": -30.0,
+        "swell": -3.0,
+        "end": -4.0
+      },
+      "duck_under_speech": true,
+      "merge_gap": 4.0,
+      "attack": 0.3,
+      "release": 0.9,
+      "crossfade": 3.0,
+      "fade_in": 1.5,
+      "fade_out": 3.0,
+      "dialogue_lufs": null,
+      "sources": [],
+      "notes": "Ambient or cinematic pieces, a different one per act; off for the scene that carries itself; one silence before the turn.",
+      "likes": [],
+      "avoid": [],
+      "theme": null
+    },
+    "sfx": {
+      "gain_db": -16.0,
+      "map": {
+        "impact": "assets/impact.wav",
+        "shutter": "assets/camera-shutter_click_04.mp3",
+        "drone": "assets/drone.wav",
+        "paper": "assets/paper.wav",
+        "whoosh": "assets/swoosh_transition_02_0.2-1.6.wav",
+        "heartbeat": "assets/heartbeat.wav"
+      },
+      "events": {
+        "text": "paper",
+        "reveal": "impact",
+        "transition": "whoosh"
+      }
+    },
+    "editing": {
+      "max_pause": 0.7,
+      "pad_in": 0.15,
+      "pad_out": 0.4,
+      "blur_pad": true,
+      "transitions": "cut",
+      "pace": "slow",
+      "intro": null,
+      "outro": null
+    },
+    "export": {
+      "preset": "high_quality_h264",
+      "loudness": -14.0
+    },
+    "look": {
+      "about": "Muted and filmic - a little desaturated, cooler shadows and warmer highlights, light grain, a soft vignette [EDU slightly desaturated].",
+      "effects": [
+        {
+          "filter": "hue_lightness_saturation",
+          "params": {
+            "av.s": 0.8
+          }
+        },
+        {
+          "filter": "color",
+          "params": {
+            "lift_r": 0.0,
+            "lift_g": 0.006,
+            "lift_b": 0.018,
+            "gamma_r": 1.0,
+            "gamma_g": 0.99,
+            "gamma_b": 0.98,
+            "gain_r": 1.03,
+            "gain_g": 1.0,
+            "gain_b": 0.96
+          }
+        },
+        {
+          "filter": "grain",
+          "params": {
+            "noise": 8,
+            "contrast": 100,
+            "brightness": 100
+          }
+        },
+        {
+          "filter": "vignette",
+          "params": {
+            "radius": 0.55,
+            "smooth": 3.0,
+            "opacity": 0.75,
+            "mode": 1
+          }
+        }
+      ]
+    },
+    "taste": "",
+    "label": "Documentary",
+    "summary": "A short-film feel - a quiet cold open, date and place cards, serif titles, a muted grade, music that changes by scene.",
+    "kind": "long",
+    "tags": [
+      "documentary",
+      "video essay",
+      "story",
+      "cinematic",
+      "long form",
+      "serif",
+      "youtube"
+    ],
+    "preview": "preview.jpg",
+    "recipe": "recipe.md",
+    "credits": [
+      {
+        "file": "assets/impact.wav",
+        "source": "synthesised by tools\\styles\\sounds.py (impact)",
+        "licence": "letitedit's own (generated)"
+      },
+      {
+        "file": "assets/drone.wav",
+        "source": "synthesised by tools\\styles\\sounds.py (drone)",
+        "licence": "letitedit's own (generated)"
+      },
+      {
+        "file": "assets/paper.wav",
+        "source": "synthesised by tools\\styles\\sounds.py (paper)",
+        "licence": "letitedit's own (generated)"
+      },
+      {
+        "file": "assets/heartbeat.wav",
+        "source": "synthesised by tools\\styles\\sounds.py (heartbeat)",
+        "licence": "letitedit's own (generated)"
+      },
+      {
+        "file": "assets/camera-shutter_click_04.mp3",
+        "source": "Freesound.org: Camera Shutter by roachpowder (freesound #170229) (https://freesound.org/people/roachpowder/sounds/170229/); copy of camera-shutter_click_04.mp3 from the local sound library (06 Real World & DIY)",
+        "licence": "CC0 1.0 (Creative Commons 0)"
+      },
+      {
+        "file": "assets/swoosh_transition_02_0.2-1.6.wav",
+        "source": "Freesound.org: Deep Whoosh #1 by Kinoton (freesound #351256) (https://freesound.org/people/Kinoton/sounds/351256/); trimmed copy (0.2-1.6 s) of swoosh_transition_02.mp3 from the local sound library (08 Whooshes & Transitions)",
+        "licence": "CC0 1.0 (Creative Commons 0)"
+      },
+      {
+        "file": "preview.jpg",
+        "source": "Original preview imagery; hands, objects, places and titles only",
+        "licence": "Original letitedit footage: hands, objects, places and titles only; no faces"
+      }
+    ],
+    "effects": {
+      "act_title": {
+        "kind": "graphic",
+        "about": "A serif title on black between acts (3-4 s), with a low hit or in silence.",
+        "template": "title_card",
+        "len": 3.5,
+        "sfx": "impact",
+        "rules": {
+          "triggers": [
+            "topic_change",
+            "hook"
+          ],
+          "density": {
+            "per_min": 1,
+            "min_gap_s": 40.0
+          },
+          "duration_s": [
+            2.5,
+            5.0
+          ],
+          "when": "The film's title after the cold open, and a new act's name; never more than one hit per film besides the title. Params title, subtitle."
+        }
+      },
+      "date_card": {
+        "kind": "popup",
+        "about": "A date or a place in typewriter type, lower left, as a new scene starts; silent (no hit on every card). Date and place on two lines (\"SEPTEMBER 22\\nTHE BACK BEDROOM\").",
+        "position": [
+          0.2,
+          0.86
+        ],
+        "size": 0.36,
+        "font": "mono",
+        "fill": "light",
+        "stroke_width": 0,
+        "shadow": true,
+        "in": "fade",
+        "out": "fade",
+        "in_s": 0.4,
+        "out_s": 0.5,
+        "hold_s": 3.0,
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "place",
+            "topic_change"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 20.0
+          },
+          "duration_s": [
+            2.5,
+            5.0
+          ],
+          "never": [
+            "overlapping"
+          ],
+          "when": "Where the viewer needs to know when or where (a new day, a new place, \"9 days later\") [modes]; upper case; always in time order. Give asset {text}."
+        }
+      },
+      "name_tag": {
+        "kind": "graphic",
+        "about": "A person's name and why they matter, at their first appearance [modes].",
+        "template": "lower_third",
+        "len": 4.5,
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "mention"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 20.0
+          },
+          "duration_s": [
+            3.0,
+            6.0
+          ],
+          "when": "The first time each person appears on camera; params title (name), subtitle (role or place)."
+        }
+      },
+      "key_phrase": {
+        "kind": "text_pop",
+        "about": "A key phrase in serif italic beside the speaker (centred when no face is on screen), fading in and out [EDU key phrases only].",
+        "size": 0.5,
+        "zone": "opposite_face",
+        "position": "center",
+        "font": {
+          "family": "Cormorant Garamond",
+          "weight": 600,
+          "italic": true
+        },
+        "fill": "light",
+        "stroke_width": 0,
+        "tilt": 0,
+        "shadow": true,
+        "in": "fade",
+        "out": "fade",
+        "in_s": 0.5,
+        "out_s": 0.5,
+        "hold_s": 2.5,
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "emphasis",
+            "reveal"
+          ],
+          "density": {
+            "per_min": 1,
+            "min_gap_s": 45.0
+          },
+          "duration_s": [
+            2.5,
+            4.5
+          ],
+          "never": [
+            "overlapping",
+            "over_face"
+          ],
+          "when": "A phrase the film turns on, in the speaker's exact words [modes], twice or three times a film at most."
+        }
+      },
+      "slow_push": {
+        "kind": "zoom_punch",
+        "about": "A slow push-in (106% over 4 s) on a held shot.",
+        "scale": 1.06,
+        "ramp_s": 4.0,
+        "rules": {
+          "triggers": [
+            "emphasis",
+            "reveal",
+            "pause"
+          ],
+          "density": {
+            "per_min": 3,
+            "min_gap_s": 12.0
+          },
+          "when": "Holds on faces after a line that lands, on stills and on wide establishing shots [modes, hold after revelations]."
+        }
+      },
+      "photo_click": {
+        "kind": "sfx",
+        "about": "A camera shutter on a still photo or a freeze.",
+        "sfx": "shutter",
+        "rules": {
+          "triggers": [
+            "cut"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 15.0
+          },
+          "when": "Only when a still or a freeze-frame appears."
+        }
+      },
+      "tension_bed": {
+        "kind": "sfx",
+        "about": "A low drone under a held, tense moment, with the music out.",
+        "sfx": "drone",
+        "rules": {
+          "triggers": [
+            "pause",
+            "reveal"
+          ],
+          "density": {
+            "per_min": 1
+          },
+          "when": "Once or twice per film, under the moment before the turn; never with music on top."
+        }
+      },
+      "time_dissolve": {
+        "kind": "transition",
+        "about": "A slow dissolve where time passes (0.8 s).",
+        "transition": {
+          "type": "dissolve",
+          "len": 0.8
+        },
+        "rules": {
+          "triggers": [
+            "topic_change"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 20.0
+          },
+          "when": "Time passing or a change of place only [AOTC, modes]; hard cuts everywhere else."
+        }
+      },
+      "cutaway": {
+        "kind": "broll",
+        "about": "An observational shot over the speaker's words.",
+        "fit": "blur_pad",
+        "len": 4.0,
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "mention",
+            "place"
+          ],
+          "density": {
+            "per_min": 4,
+            "min_gap_s": 8.0
+          },
+          "duration_s": [
+            3.0,
+            8.0
+          ],
+          "when": "Behaviour and place over neutral stretches, never over the emotional line (keep the face) [modes]."
+        }
+      }
+    },
+    "fx": {
+      "track": "Effects",
+      "sfx_track": "Effect sounds",
+      "broll_track": "B-roll",
+      "density": {
+        "per_10s": 2,
+        "per_min": 6,
+        "min_gap_s": 4.0
+      },
+      "safe_zone": null,
+      "never": [
+        "overlapping"
+      ],
+      "rhythm": "Long holds and slow pushes; a card where time or place changes; sound that punctuates; one silence."
+    },
+    "popups": {
+      "track": null,
+      "sfx_track": null,
+      "min_gap_s": 5.0,
+      "max_total": null,
+      "entries": []
+    },
+    "hook": {
+      "max_s": 15.0,
+      "approaches": [
+        "question",
+        "stakes",
+        "quote",
+        "mid_action"
+      ],
+      "text": {
+        "max_words": 6,
+        "case": "as_said",
+        "position": "bottom",
+        "size": 0.45,
+        "fill": "light",
+        "stroke": null,
+        "stroke_width": 0,
+        "font": "heading"
+      },
+      "rules": "Pick the opening for the feel - contemplative (wordless shots of 3-5 s with sound layered in, the first line after the picture has set the place) or urgent (time, place and stakes in one breath) [modes]. Withhold the outcome, never the premise; the title comes after the cold open. No \"Hi, my name is\" [ITE].",
+      "avoid": [
+        "greetings",
+        "a stack of facts",
+        "the ending first"
+      ]
+    },
+    "broll": {
+      "amount": "some",
+      "kinds": [],
+      "favorites": "",
+      "notes": ""
+    },
+    "shots": {
+      "framing": "medium",
+      "camera": "handheld",
+      "punch_ins": "some",
+      "notes": ""
+    },
+    "signature": {
+      "touches": []
+    },
+    "measured": {},
+    "provenance": {
+      "made_by": "letitedit style library, wave 1",
+      "date": "2026-10-29",
+      "measured": "none yet (no reference videos in style-references)",
+      "sources": [
+        {
+          "url": "https://blog.editorduel.com/blog/johnny-harris-detective-story-formula-explainer-videos",
+          "title": "EditorDuel case study of a documentary-explainer channel",
+          "used_for": "key-phrase overlays only, slightly desaturated grade, sound that punctuates, faster toward revelations",
+          "licence": "none found (observations only)"
+        },
+        {
+          "url": "https://umbrellacreators.com/blog/how-to-edit-video-essays",
+          "title": "Umbrella Creators video essays",
+          "used_for": "argument and evidence shape, source cards with author and year, music low and changing at chapters, not cutting every sentence",
+          "licence": "none found (observations only)"
+        },
+        {
+          "url": "https://air.io/en/youtube-hacks/advanced-retention-editing-cutting-patterns-that-keep-viewers-past-minute-8",
+          "title": "AIR Media-Tech retention editing",
+          "used_for": "picture-change rate early in a long video",
+          "licence": "none found (numbers only)"
+        }
+      ],
+      "notes": "The documentary playbook in letitedit-modes (the strongest-evidenced mode) comes first; this style adds the look, the cards and the sound. No creator's name is used for the style. Tags in ..\\SOURCES.md."
+    }
+  },
+  "asset_root": "resources",
+  "files": {
+    "assets/camera-shutter_click_04.mp3": "resources/938ce48decb20585aab900cc.mp3",
+    "assets/drone.wav": "resources/c0e9cb0080d1cd619ead69f3.wav",
+    "assets/heartbeat.wav": "resources/391d60aa235b121a212c8983.wav",
+    "assets/impact.wav": "resources/1aa30fcce7cfaac7190ca67e.wav",
+    "assets/paper.wav": "resources/38329503578e5e93e92a58dd.wav",
+    "assets/swoosh_transition_02_0.2-1.6.wav": "resources/10cb6c8d7158c1475dcef988.wav",
+    "preview.jpg": "resources/15eef89ca001d09eb7cda97e.jpg",
+    "recipe.md": "recipe.md"
+  },
+  "links": {
+    "recipe": "recipe.md",
+    "preview": "preview.jpg"
+  },
+  "legacy": {
+    "format": "letitedit-style/3",
+    "source": "style.yaml",
+    "pack": "documentary-essay",
+    "data": {
+      "format": "letitedit-style/3",
+      "name": "Documentary",
+      "label": "Documentary",
+      "summary": "A short-film feel - a quiet cold open, date and place cards, serif titles, a muted grade, music that changes by scene.",
+      "kind": "long",
+      "tags": [
+        "documentary",
+        "video essay",
+        "story",
+        "cinematic",
+        "long form",
+        "serif",
+        "youtube"
+      ],
+      "recipe": "recipe.md",
+      "preview": "preview.jpg",
+      "description": "Real events told as a film - observation and the person's own words, titled and dated, scored scene by scene.",
+      "colors": {
+        "primary": "#F4F1EA",
+        "secondary": "#C9A227",
+        "accent": "#B03A2E",
+        "bone": "#EDE6D6",
+        "dark": "#0E0E0E",
+        "light": "#F4F1EA"
+      },
+      "fonts": {
+        "heading": {
+          "family": "Cormorant Garamond",
+          "weight": 600
+        },
+        "body": {
+          "family": "Source Sans 3",
+          "weight": 400
+        },
+        "captions": {
+          "family": "Source Sans 3",
+          "weight": 500
+        },
+        "mono": {
+          "family": "IBM Plex Mono",
+          "weight": 500
+        }
+      },
+      "graphics": {
+        "title_card": {
+          "background": "dark",
+          "font": "heading",
+          "subtitle_font": "mono",
+          "size": 120,
+          "subtitle_size": 34,
+          "fill": "light",
+          "subtitle_fill": "secondary",
+          "accent": "secondary"
+        },
+        "chapter_card": {
+          "font": "heading",
+          "number_size": 110,
+          "size": 72,
+          "kicker_size": 28,
+          "fill": "light",
+          "accent": "secondary",
+          "band": false,
+          "outline": null,
+          "outline_width": 0
+        },
+        "lower_third": {
+          "font": "heading",
+          "subtitle_font": "mono",
+          "size": 54,
+          "subtitle_size": 28,
+          "fill": "light",
+          "subtitle_fill": "secondary",
+          "panel": "dark",
+          "panel_opacity": 0.55,
+          "accent": "accent",
+          "margin_y": 0.13
+        }
+      },
+      "captions": {
+        "font": "captions",
+        "size": 40,
+        "fill": "light",
+        "outline": null,
+        "shadow": {
+          "color": "#000000CC",
+          "x": 2,
+          "y": 2
+        },
+        "position": "bottom",
+        "margin": 0.06,
+        "max_chars": 42,
+        "max_lines": 2,
+        "case": "as_spoken"
+      },
+      "text": {
+        "font": "heading",
+        "size": 70,
+        "fill": "light",
+        "outline": null
+      },
+      "editing": {
+        "max_pause": 0.7,
+        "pad_in": 0.15,
+        "pad_out": 0.4,
+        "blur_pad": true,
+        "transitions": "cut",
+        "pace": "slow"
+      },
+      "music": {
+        "zones": {
+          "talk": -22.0,
+          "montage": -6.0,
+          "quiet": -30.0,
+          "swell": -3.0,
+          "end": -4.0
+        },
+        "notes": "Ambient or cinematic pieces, a different one per act; off for the scene that carries itself; one silence before the turn."
+      },
+      "export": {
+        "preset": "high_quality_h264",
+        "loudness": -14.0
+      },
+      "look": {
+        "about": "Muted and filmic - a little desaturated, cooler shadows and warmer highlights, light grain, a soft vignette [EDU slightly desaturated].",
+        "effects": [
+          {
+            "filter": "hue_lightness_saturation",
+            "params": {
+              "av.s": 0.8
+            }
+          },
+          {
+            "filter": "color",
+            "params": {
+              "lift_r": 0.0,
+              "lift_g": 0.006,
+              "lift_b": 0.018,
+              "gamma_r": 1.0,
+              "gamma_g": 0.99,
+              "gamma_b": 0.98,
+              "gain_r": 1.03,
+              "gain_g": 1.0,
+              "gain_b": 0.96
+            }
+          },
+          {
+            "filter": "grain",
+            "params": {
+              "noise": 8,
+              "contrast": 100,
+              "brightness": 100
+            }
+          },
+          {
+            "filter": "vignette",
+            "params": {
+              "radius": 0.55,
+              "smooth": 3.0,
+              "opacity": 0.75,
+              "mode": 1
+            }
+          }
+        ]
+      },
+      "sfx": {
+        "gain_db": -16.0,
+        "map": {
+          "impact": "assets/impact.wav",
+          "shutter": "assets/camera-shutter_click_04.mp3",
+          "drone": "assets/drone.wav",
+          "paper": "assets/paper.wav",
+          "whoosh": "assets/swoosh_transition_02_0.2-1.6.wav",
+          "heartbeat": "assets/heartbeat.wav"
+        },
+        "events": {
+          "text": "paper",
+          "reveal": "impact",
+          "transition": "whoosh"
+        }
+      },
+      "fx": {
+        "track": "Effects",
+        "sfx_track": "Effect sounds",
+        "broll_track": "B-roll",
+        "density": {
+          "per_10s": 2,
+          "per_min": 6,
+          "min_gap_s": 4.0
+        },
+        "safe_zone": null,
+        "never": [
+          "overlapping"
+        ],
+        "rhythm": "Long holds and slow pushes; a card where time or place changes; sound that punctuates; one silence."
+      },
+      "effects": {
+        "act_title": {
+          "kind": "graphic",
+          "about": "A serif title on black between acts (3-4 s), with a low hit or in silence.",
+          "template": "title_card",
+          "len": 3.5,
+          "sfx": "impact",
+          "rules": {
+            "triggers": [
+              "topic_change",
+              "hook"
+            ],
+            "density": {
+              "per_min": 1,
+              "min_gap_s": 40.0
+            },
+            "duration_s": [
+              2.5,
+              5.0
+            ],
+            "when": "The film's title after the cold open, and a new act's name; never more than one hit per film besides the title. Params title, subtitle."
+          }
+        },
+        "date_card": {
+          "kind": "popup",
+          "about": "A date or a place in typewriter type, lower left, as a new scene starts; silent (no hit on every card). Date and place on two lines (\"SEPTEMBER 22\\nTHE BACK BEDROOM\").",
+          "position": [
+            0.2,
+            0.86
+          ],
+          "size": 0.36,
+          "font": "mono",
+          "fill": "light",
+          "stroke_width": 0,
+          "shadow": true,
+          "in": "fade",
+          "out": "fade",
+          "in_s": 0.4,
+          "out_s": 0.5,
+          "hold_s": 3.0,
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "place",
+              "topic_change"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 20.0
+            },
+            "duration_s": [
+              2.5,
+              5.0
+            ],
+            "never": [
+              "overlapping"
+            ],
+            "when": "Where the viewer needs to know when or where (a new day, a new place, \"9 days later\") [modes]; upper case; always in time order. Give asset {text}."
+          }
+        },
+        "name_tag": {
+          "kind": "graphic",
+          "about": "A person's name and why they matter, at their first appearance [modes].",
+          "template": "lower_third",
+          "len": 4.5,
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "mention"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 20.0
+            },
+            "duration_s": [
+              3.0,
+              6.0
+            ],
+            "when": "The first time each person appears on camera; params title (name), subtitle (role or place)."
+          }
+        },
+        "key_phrase": {
+          "kind": "text_pop",
+          "about": "A key phrase in serif italic beside the speaker (centred when no face is on screen), fading in and out [EDU key phrases only].",
+          "size": 0.5,
+          "zone": "opposite_face",
+          "position": "center",
+          "font": {
+            "family": "Cormorant Garamond",
+            "weight": 600,
+            "italic": true
+          },
+          "fill": "light",
+          "stroke_width": 0,
+          "tilt": 0,
+          "shadow": true,
+          "in": "fade",
+          "out": "fade",
+          "in_s": 0.5,
+          "out_s": 0.5,
+          "hold_s": 2.5,
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "emphasis",
+              "reveal"
+            ],
+            "density": {
+              "per_min": 1,
+              "min_gap_s": 45.0
+            },
+            "duration_s": [
+              2.5,
+              4.5
+            ],
+            "never": [
+              "overlapping",
+              "over_face"
+            ],
+            "when": "A phrase the film turns on, in the speaker's exact words [modes], twice or three times a film at most."
+          }
+        },
+        "slow_push": {
+          "kind": "zoom_punch",
+          "about": "A slow push-in (106% over 4 s) on a held shot.",
+          "scale": 1.06,
+          "ramp_s": 4.0,
+          "rules": {
+            "triggers": [
+              "emphasis",
+              "reveal",
+              "pause"
+            ],
+            "density": {
+              "per_min": 3,
+              "min_gap_s": 12.0
+            },
+            "when": "Holds on faces after a line that lands, on stills and on wide establishing shots [modes, hold after revelations]."
+          }
+        },
+        "photo_click": {
+          "kind": "sfx",
+          "about": "A camera shutter on a still photo or a freeze.",
+          "sfx": "shutter",
+          "rules": {
+            "triggers": [
+              "cut"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 15.0
+            },
+            "when": "Only when a still or a freeze-frame appears."
+          }
+        },
+        "tension_bed": {
+          "kind": "sfx",
+          "about": "A low drone under a held, tense moment, with the music out.",
+          "sfx": "drone",
+          "rules": {
+            "triggers": [
+              "pause",
+              "reveal"
+            ],
+            "density": {
+              "per_min": 1
+            },
+            "when": "Once or twice per film, under the moment before the turn; never with music on top."
+          }
+        },
+        "time_dissolve": {
+          "kind": "transition",
+          "about": "A slow dissolve where time passes (0.8 s).",
+          "transition": {
+            "type": "dissolve",
+            "len": 0.8
+          },
+          "rules": {
+            "triggers": [
+              "topic_change"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 20.0
+            },
+            "when": "Time passing or a change of place only [AOTC, modes]; hard cuts everywhere else."
+          }
+        },
+        "cutaway": {
+          "kind": "broll",
+          "about": "An observational shot over the speaker's words.",
+          "fit": "blur_pad",
+          "len": 4.0,
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "mention",
+              "place"
+            ],
+            "density": {
+              "per_min": 4,
+              "min_gap_s": 8.0
+            },
+            "duration_s": [
+              3.0,
+              8.0
+            ],
+            "when": "Behaviour and place over neutral stretches, never over the emotional line (keep the face) [modes]."
+          }
+        }
+      },
+      "popups": {
+        "min_gap_s": 5.0,
+        "entries": []
+      },
+      "hook": {
+        "max_s": 15.0,
+        "approaches": [
+          "question",
+          "stakes",
+          "quote",
+          "mid_action"
+        ],
+        "text": {
+          "max_words": 6,
+          "case": "as_said",
+          "position": "bottom",
+          "size": 0.45,
+          "fill": "light",
+          "stroke": null,
+          "stroke_width": 0,
+          "font": "heading"
+        },
+        "rules": "Pick the opening for the feel - contemplative (wordless shots of 3-5 s with sound layered in, the first line after the picture has set the place) or urgent (time, place and stakes in one breath) [modes]. Withhold the outcome, never the premise; the title comes after the cold open. No \"Hi, my name is\" [ITE].",
+        "avoid": [
+          "greetings",
+          "a stack of facts",
+          "the ending first"
+        ]
+      },
+      "credits": [
+        {
+          "file": "assets/impact.wav",
+          "source": "synthesised by tools\\styles\\sounds.py (impact)",
+          "licence": "letitedit's own (generated)"
+        },
+        {
+          "file": "assets/drone.wav",
+          "source": "synthesised by tools\\styles\\sounds.py (drone)",
+          "licence": "letitedit's own (generated)"
+        },
+        {
+          "file": "assets/paper.wav",
+          "source": "synthesised by tools\\styles\\sounds.py (paper)",
+          "licence": "letitedit's own (generated)"
+        },
+        {
+          "file": "assets/heartbeat.wav",
+          "source": "synthesised by tools\\styles\\sounds.py (heartbeat)",
+          "licence": "letitedit's own (generated)"
+        },
+        {
+          "file": "assets/camera-shutter_click_04.mp3",
+          "source": "Freesound.org: Camera Shutter by roachpowder (freesound #170229) (https://freesound.org/people/roachpowder/sounds/170229/); copy of camera-shutter_click_04.mp3 from the local sound library (06 Real World & DIY)",
+          "licence": "CC0 1.0 (Creative Commons 0)"
+        },
+        {
+          "file": "assets/swoosh_transition_02_0.2-1.6.wav",
+          "source": "Freesound.org: Deep Whoosh #1 by Kinoton (freesound #351256) (https://freesound.org/people/Kinoton/sounds/351256/); trimmed copy (0.2-1.6 s) of swoosh_transition_02.mp3 from the local sound library (08 Whooshes & Transitions)",
+          "licence": "CC0 1.0 (Creative Commons 0)"
+        },
+        {
+          "file": "preview.jpg",
+          "source": "Original preview imagery; hands, objects, places and titles only",
+          "licence": "Original letitedit footage: hands, objects, places and titles only; no faces"
+        }
+      ],
+      "measured": {},
+      "provenance": {
+        "made_by": "letitedit style library, wave 1",
+        "date": "2026-10-29",
+        "measured": "none yet (no reference videos in style-references)",
+        "sources": [
+          {
+            "url": "https://blog.editorduel.com/blog/johnny-harris-detective-story-formula-explainer-videos",
+            "title": "EditorDuel case study of a documentary-explainer channel",
+            "used_for": "key-phrase overlays only, slightly desaturated grade, sound that punctuates, faster toward revelations",
+            "licence": "none found (observations only)"
+          },
+          {
+            "url": "https://umbrellacreators.com/blog/how-to-edit-video-essays",
+            "title": "Umbrella Creators video essays",
+            "used_for": "argument and evidence shape, source cards with author and year, music low and changing at chapters, not cutting every sentence",
+            "licence": "none found (observations only)"
+          },
+          {
+            "url": "https://air.io/en/youtube-hacks/advanced-retention-editing-cutting-patterns-that-keep-viewers-past-minute-8",
+            "title": "AIR Media-Tech retention editing",
+            "used_for": "picture-change rate early in a long video",
+            "licence": "none found (numbers only)"
+          }
+        ],
+        "notes": "The documentary playbook in letitedit-modes (the strongest-evidenced mode) comes first; this style adds the look, the cards and the sound. No creator's name is used for the style. Tags in ..\\SOURCES.md."
+      }
+    }
+  }
+}

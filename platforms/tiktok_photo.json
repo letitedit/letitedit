@@ -1,0 +1,239 @@
+{
+  "id": "tiktok_photo",
+  "name": "TikTok photo post",
+  "schema": "letitedit-platform/1",
+  "checked": "2026-11-19",
+  "video": {
+    "aspect_ratios": {
+      "value": {
+        "vertical": "9:16"
+      },
+      "source": "https://developers.tiktok.com/doc/content-posting-api-reference-photo-post",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "resolutions": {
+      "value": {
+        "common": "1080x1920"
+      },
+      "source": "https://support.buffer.com/articles/ideal-image-sizes-and-formats-for-your-buffer-posts-JxHNGZFvf9",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: photos up to 1080x1920."
+    },
+    "frame_rates": {
+      "value": null,
+      "source": "https://developers.tiktok.com/doc/content-posting-api-reference-photo-post",
+      "checked": "2026-11-19",
+      "status": "not documented"
+    },
+    "min_length_s": {
+      "value": null,
+      "source": "https://developers.tiktok.com/doc/content-posting-api-reference-photo-post",
+      "checked": "2026-11-19",
+      "status": "not documented"
+    },
+    "max_length_s": {
+      "value": null,
+      "source": "https://developers.tiktok.com/doc/content-posting-api-reference-photo-post",
+      "checked": "2026-11-19",
+      "status": "not documented"
+    },
+    "max_file_size_bytes": {
+      "value": null,
+      "source": "https://developers.tiktok.com/doc/content-posting-api-reference-photo-post",
+      "checked": "2026-11-19",
+      "status": "not documented"
+    },
+    "container": {
+      "value": null,
+      "source": "https://developers.tiktok.com/doc/content-posting-api-reference-photo-post",
+      "checked": "2026-11-19",
+      "status": "not documented"
+    },
+    "video_codec": {
+      "value": null,
+      "source": "https://developers.tiktok.com/doc/content-posting-api-reference-photo-post",
+      "checked": "2026-11-19",
+      "status": "not documented"
+    }
+  },
+  "audio": {
+    "codec": {
+      "value": "AAC",
+      "source": "https://developers.tiktok.com/doc/content-posting-api-reference-photo-post",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "bitrate_kbps": {
+      "value": 128,
+      "source": "https://developers.tiktok.com/doc/content-posting-api-reference-photo-post",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "loudness_normalisation": {
+      "value": null,
+      "source": "https://developers.tiktok.com/doc/content-posting-api-reference-photo-post",
+      "checked": "2026-11-19",
+      "status": "not documented"
+    }
+  },
+  "safe_zones": {
+    "value": [
+      {
+        "name": "bottom: caption, username, sound",
+        "x": 0,
+        "y": 0.8,
+        "w": 1,
+        "h": 0.2
+      },
+      {
+        "name": "right edge (buttons sit here)",
+        "x": 0.88,
+        "y": 0.3,
+        "w": 0.12,
+        "h": 0.5
+      }
+    ],
+    "source": "https://developers.tiktok.com/doc/content-posting-api-reference-photo-post",
+    "checked": "2026-11-19",
+    "status": "unconfirmed",
+    "note": "Taken from TikTok video posts, whose buttons photo posts share.",
+    "confidence": "low"
+  },
+  "captions": {
+    "placement": {
+      "value": null,
+      "source": "https://developers.tiktok.com/doc/content-posting-api-reference-photo-post",
+      "checked": "2026-11-19",
+      "status": "not documented"
+    }
+  },
+  "thumbnail": {
+    "value": null,
+    "source": "https://developers.tiktok.com/doc/content-posting-api-reference-photo-post",
+    "checked": "2026-11-19",
+    "status": "not documented"
+  },
+  "text_limits": {
+    "title_chars": {
+      "value": 90,
+      "source": "https://developers.tiktok.com/doc/content-posting-api-reference-photo-post",
+      "checked": "2026-11-19",
+      "status": "official",
+      "note": "UTF-16 runes, for photo posts."
+    },
+    "description_chars": {
+      "value": 4000,
+      "source": "https://developers.tiktok.com/doc/content-posting-api-reference-photo-post",
+      "checked": "2026-11-19",
+      "status": "official",
+      "note": "UTF-16 runes, for photo posts."
+    }
+  },
+  "export_preset": {
+    "width": {
+      "value": 1080,
+      "source": "https://support.buffer.com/articles/ideal-image-sizes-and-formats-for-your-buffer-posts-JxHNGZFvf9",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: photos up to 1080x1920."
+    },
+    "height": {
+      "value": 1920,
+      "source": "https://support.buffer.com/articles/ideal-image-sizes-and-formats-for-your-buffer-posts-JxHNGZFvf9",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: photos up to 1080x1920."
+    },
+    "fps": {
+      "value": 30,
+      "source": "https://developers.tiktok.com/doc/content-posting-api-reference-photo-post",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "container": {
+      "value": "mp4",
+      "source": "https://developers.tiktok.com/doc/content-posting-api-reference-photo-post",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "vcodec": {
+      "value": "libx264",
+      "source": "https://developers.tiktok.com/doc/content-posting-api-reference-photo-post",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "pix_fmt": {
+      "value": "yuv420p",
+      "source": "https://developers.tiktok.com/doc/content-posting-api-reference-photo-post",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "video_bitrate_kbps": {
+      "value": 8000,
+      "source": "https://developers.tiktok.com/doc/content-posting-api-reference-photo-post",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "acodec": {
+      "value": "aac",
+      "source": "https://developers.tiktok.com/doc/content-posting-api-reference-photo-post",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "audio_bitrate_kbps": {
+      "value": 128,
+      "source": "https://developers.tiktok.com/doc/content-posting-api-reference-photo-post",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "sample_rate_hz": {
+      "value": 48000,
+      "source": "https://developers.tiktok.com/doc/content-posting-api-reference-photo-post",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "loudness_lufs": {
+      "value": null,
+      "source": "https://developers.tiktok.com/doc/content-posting-api-reference-photo-post",
+      "checked": "2026-11-19",
+      "status": "not documented"
+    }
+  },
+  "images": {
+    "max_photos": {
+      "value": 10,
+      "source": "https://support.buffer.com/articles/attaching-images-videos-and-other-media-to-your-posts-eudySt0TnS",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: up to 10 photos per TikTok post through Buffer. TikTok itself takes up to 35 (its photo post API, https://developers.tiktok.com/doc/content-posting-api-reference-photo-post); the stricter 10 is kept."
+    },
+    "sizes": {
+      "value": {
+        "story_9x16": "1080x1920"
+      },
+      "source": "https://support.buffer.com/articles/ideal-image-sizes-and-formats-for-your-buffer-posts-JxHNGZFvf9",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: photos up to 1080x1920."
+    },
+    "formats": {
+      "value": [
+        "JPG",
+        "WEBP"
+      ],
+      "source": "https://support.buffer.com/articles/ideal-image-sizes-and-formats-for-your-buffer-posts-JxHNGZFvf9",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: JPG or WebP (PNG and HEIC are converted)."
+    },
+    "max_file_size_bytes": {
+      "value": 8000000,
+      "source": "https://support.buffer.com/articles/ideal-image-sizes-and-formats-for-your-buffer-posts-JxHNGZFvf9",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: the page lists both \"up to 8MB\" and \"20MB\" per photo; the stricter 8 MB is kept."
+    }
+  }
+}

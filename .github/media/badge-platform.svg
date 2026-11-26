@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="22" role="img" aria-label="Windows: beta">
+<title>Windows: beta</title>
+<clipPath id="r"><rect width="100" height="22" rx="4"/></clipPath>
+<g clip-path="url(#r)"><rect width="60" height="22" fill="#161A1D"/><rect x="60" width="40" height="22" fill="#C8653B"/></g>
+<g fill="#F4EFE6" text-anchor="middle" font-family="Verdana,DejaVu Sans,Geneva,sans-serif" font-size="11">
+<text x="30.0" y="15">Windows</text><text x="80.0" y="15" fill="#F4EFE6">beta</text></g>
+</svg>

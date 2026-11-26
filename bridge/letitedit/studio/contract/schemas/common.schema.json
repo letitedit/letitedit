@@ -1,0 +1,1529 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://letitedit.app/studio/1/common.schema.json",
+  "title": "letitedit Studio contract 1.x: shared pieces",
+  "description": "Definitions shared by job.json, status.json, events.jsonl, result.json and every kind. Readers ignore fields they don't know (additive within a major version).",
+  "$defs": {
+    "contract_version": {
+      "type": "string",
+      "pattern": "^1\\.[0-9]+$",
+      "description": "MAJOR.MINOR. This schema set is major 1 (written now: 1.6); a minor only adds."
+    },
+    "job_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,119}$",
+      "description": "Chosen by the caller, unique per letitedit install. The same id with the same job.json is the same job (idempotent)."
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "capabilities",
+        "index",
+        "match",
+        "inspect",
+        "short",
+        "batch_shorts",
+        "still",
+        "revise",
+        "retext",
+        "hooks",
+        "conform",
+        "learn"
+      ]
+    },
+    "making_kind": {
+      "type": "string",
+      "enum": [
+        "short",
+        "batch_shorts",
+        "still",
+        "revise",
+        "retext",
+        "hooks",
+        "conform"
+      ]
+    },
+    "time": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\\.[0-9]+)?(Z|[+-][0-9]{2}:[0-9]{2})$",
+      "description": "ISO 8601 with its UTC offset, e.g. 2026-11-19T00:30:05-08:00 (Z for UTC)."
+    },
+    "seconds": {
+      "type": "number",
+      "minimum": 0
+    },
+    "abs_path": {
+      "type": "string",
+      "minLength": 3,
+      "description": "An absolute Windows path as the caller wrote it (drive letter or UNC; spaces and any Unicode allowed). Forward or back slashes."
+    },
+    "rel_path": {
+      "type": "string",
+      "pattern": "^(?![/\\\\])(?![A-Za-z]:)(?!.*(^|/)\\.\\.(/|$))[^\\\\]+$",
+      "description": "A path inside the job folder, with forward slashes, never absolute and never '..'."
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "file_id": {
+      "type": "string",
+      "pattern": "^f_[0-9a-z]{16,40}$",
+      "description": "A file's content identity: the same for copies and renames of one file (its size plus a hash of its first 2 MB, as letitedit's archive keys files)."
+    },
+    "moment_id": {
+      "type": "string",
+      "pattern": "^m_[0-9a-z]{16,40}$",
+      "description": "Minted once by index and never reused or recomputed; see CONTRACT.md 'Moment ids'."
+    },
+    "platform": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]{0,40}$",
+      "description": "A platform preset id from capabilities.platforms (e.g. youtube_shorts, tiktok, instagram_reels, facebook_reels, x). Open list."
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "urgent",
+        "normal",
+        "dev",
+        "channel_urgent",
+        "channel"
+      ],
+      "description": "Studio lane. 'channel_urgent' = 'urgent' and 'channel' = 'normal' (accepted names, normalised in status.json). The person's own work is always above every lane and cannot be asked for."
+    },
+    "ai_choice": {
+      "type": "object",
+      "properties": {
+        "engine": {
+          "type": "string",
+          "enum": [
+            "claude",
+            "codex"
+          ]
+        },
+        "model": {
+          "type": "string"
+        },
+        "effort": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "range": {
+      "type": "object",
+      "required": [
+        "in",
+        "out"
+      ],
+      "properties": {
+        "in": {
+          "$ref": "#/$defs/seconds"
+        },
+        "out": {
+          "$ref": "#/$defs/seconds"
+        }
+      }
+    },
+    "source_ref": {
+      "description": "One piece of source footage: a file with an optional range, or a moment from index.",
+      "oneOf": [
+        {
+          "type": "object",
+          "required": [
+            "path"
+          ],
+          "properties": {
+            "path": {
+              "$ref": "#/$defs/abs_path"
+            },
+            "in": {
+              "$ref": "#/$defs/seconds"
+            },
+            "out": {
+              "$ref": "#/$defs/seconds"
+            },
+            "note": {
+              "type": "string"
+            }
+          },
+          "not": {
+            "required": [
+              "moment_id"
+            ]
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "moment_id"
+          ],
+          "properties": {
+            "moment_id": {
+              "$ref": "#/$defs/moment_id"
+            },
+            "note": {
+              "type": "string"
+            }
+          },
+          "not": {
+            "required": [
+              "path"
+            ]
+          }
+        }
+      ]
+    },
+    "rule": {
+      "type": "object",
+      "required": [
+        "id",
+        "kind",
+        "text"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "must",
+            "never",
+            "prefer"
+          ],
+          "description": "must and never are requirements. prefer (1.5) ranks below every must and never: letitedit follows it unless it conflicts with a must or never, and between two prefers that conflict the earlier one in the job's list wins. A prefer not met never changes the review's verdict on its own."
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "check": {
+          "type": "string",
+          "description": "Optional detector hint from capabilities.rule_checks (e.g. blur_plates). Unknown hints are kept and the rule is checked as text."
+        }
+      }
+    },
+    "brand_kit": {
+      "type": "object",
+      "properties": {
+        "intro": {
+          "$ref": "#/$defs/abs_path"
+        },
+        "end_card": {
+          "$ref": "#/$defs/abs_path"
+        },
+        "logo": {
+          "$ref": "#/$defs/abs_path"
+        },
+        "fonts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "colours": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^#[0-9A-Fa-f]{6}$"
+          }
+        },
+        "handle": {
+          "type": "string",
+          "description": "The account name shown on end cards, e.g. @yourchannel."
+        }
+      }
+    },
+    "music_policy": {
+      "type": "object",
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": [
+            "ai_decides",
+            "library",
+            "written",
+            "file",
+            "none",
+            "added_in_app_later"
+          ],
+          "description": "added_in_app_later: the person adds a song in the phone app; the cut is made to sit under one, no music is put in the files."
+        },
+        "file": {
+          "$ref": "#/$defs/abs_path"
+        },
+        "allowed_sources": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "letitedit_library",
+              "youtube_audio_library",
+              "pixabay",
+              "written",
+              "ai_made",
+              "person_file"
+            ]
+          }
+        },
+        "attribution_ok": {
+          "type": "boolean",
+          "description": "false: only music that needs no credit line."
+        },
+        "content_id": {
+          "type": "string",
+          "enum": [
+            "must_be_clear",
+            "unknown_ok"
+          ],
+          "description": "must_be_clear: only music known not to be registered with Content ID."
+        }
+      }
+    },
+    "ai_labels": {
+      "type": "object",
+      "required": [
+        "generated_picture",
+        "generated_voice",
+        "generated_music",
+        "altered_real_footage",
+        "items",
+        "platforms"
+      ],
+      "properties": {
+        "generated_picture": {
+          "type": "boolean"
+        },
+        "generated_voice": {
+          "type": "boolean"
+        },
+        "generated_music": {
+          "type": "boolean"
+        },
+        "altered_real_footage": {
+          "type": "boolean",
+          "description": "Real footage changed by a model in a way a viewer could take as real (e.g. an object removed or a face changed). A colour grade or a blur is not."
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "what",
+              "kind",
+              "realistic"
+            ],
+            "properties": {
+              "what": {
+                "type": "string"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "picture",
+                  "video",
+                  "voice",
+                  "music",
+                  "altered_footage",
+                  "drawn_graphic"
+                ]
+              },
+              "realistic": {
+                "type": "boolean",
+                "description": "Could pass for a real recording."
+              },
+              "tool": {
+                "type": "string"
+              },
+              "start": {
+                "$ref": "#/$defs/seconds"
+              },
+              "end": {
+                "$ref": "#/$defs/seconds"
+              }
+            }
+          }
+        },
+        "platforms": {
+          "type": "object",
+          "description": "Per platform id: letitedit's reading of that platform's labelling rule for these items.",
+          "additionalProperties": {
+            "type": "object",
+            "required": [
+              "label"
+            ],
+            "properties": {
+              "label": {
+                "type": "string",
+                "enum": [
+                  "required",
+                  "not_required",
+                  "unknown"
+                ]
+              },
+              "why": {
+                "type": "string"
+              },
+              "rule_as_of": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "licence": {
+      "type": "object",
+      "required": [
+        "id",
+        "commercial_use"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "enum": [
+            "own",
+            "CC0-1.0",
+            "public-domain",
+            "MIT",
+            "CC-BY-4.0",
+            "lottie-simple-licence",
+            "pixabay-content-licence",
+            "pexels-licence",
+            "generated",
+            "made-by-letitedit",
+            "written-for-this-video",
+            "made-on-this-pc",
+            "OFL-1.1",
+            "Apache-2.0",
+            "Ubuntu-font-1.0",
+            "unknown"
+          ],
+          "description": "1.4: one of a closed list (CONTRACT.md, \"Licences\"). unknown means letitedit could not tell, and nothing is claimed: treat it as not cleared. 1.6 adds the font licences OFL-1.1, Apache-2.0 and Ubuntu-font-1.0, sent only for a job whose contract_version is 1.6 or later; an earlier job gets unknown with the licence named in note."
+        },
+        "attribution_required": {
+          "type": "boolean",
+          "description": "Whether the licence asks for a credit. Absent for unknown."
+        },
+        "attribution_text": {
+          "type": "string",
+          "description": "The credit to give, filled when attribution_required is true."
+        },
+        "commercial_use": {
+          "type": "string",
+          "enum": [
+            "allowed",
+            "allowed_with_credit",
+            "forbidden",
+            "unknown"
+          ],
+          "description": "1.4: what the licence's own terms say about commercial use. A reading of the licence text, not legal advice. Limits a value cannot hold are in note."
+        },
+        "note": {
+          "type": "string",
+          "description": "1.4: the limits of the licence that a field cannot hold, or what is known of an unknown one (a source page)."
+        },
+        "content_id_registered": {
+          "type": "string",
+          "enum": [
+            "no",
+            "yes",
+            "unknown"
+          ]
+        },
+        "url": {
+          "type": "string"
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "sources",
+        "assets"
+      ],
+      "properties": {
+        "sources": {
+          "type": "array",
+          "description": "Every range of the caller's footage that is in the output. A frame used as a still (role still_frame, and a photo) is one frame: its in equals its out.",
+          "items": {
+            "type": "object",
+            "required": [
+              "path",
+              "file_id",
+              "in",
+              "out",
+              "role"
+            ],
+            "properties": {
+              "path": {
+                "$ref": "#/$defs/abs_path"
+              },
+              "file_id": {
+                "$ref": "#/$defs/file_id"
+              },
+              "moment_ids": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/moment_id"
+                }
+              },
+              "in": {
+                "$ref": "#/$defs/seconds",
+                "description": "For a still frame or a photo, in == out: the one frame used."
+              },
+              "out": {
+                "$ref": "#/$defs/seconds"
+              },
+              "role": {
+                "type": "string",
+                "enum": [
+                  "main",
+                  "broll",
+                  "audio_only",
+                  "still_frame",
+                  "photo"
+                ]
+              },
+              "at": {
+                "$ref": "#/$defs/seconds",
+                "description": "Where it starts in the output."
+              }
+            }
+          }
+        },
+        "assets": {
+          "type": "array",
+          "description": "Everything in the output that is not the caller's footage: stock, generated, library, drawn, fetched, fonts.",
+          "items": {
+            "type": "object",
+            "required": [
+              "kind",
+              "what",
+              "source",
+              "licence",
+              "ai_generated"
+            ],
+            "properties": {
+              "kind": {
+                "type": "string",
+                "minLength": 1,
+                "examples": [
+                  "stock_video",
+                  "stock_picture",
+                  "generated_picture",
+                  "generated_video",
+                  "generated_voice",
+                  "library_sound",
+                  "library_sticker",
+                  "drawn_scene",
+                  "graphic",
+                  "motion_clip",
+                  "web_picture",
+                  "font",
+                  "brand_kit",
+                  "reference"
+                ],
+                "description": "What the asset is. Open list (CONTRACT.md section 2): a reader treats a value it does not know as \"other\". Known values: stock_video, stock_picture, generated_picture, generated_video, generated_voice, library_sound, library_sticker, drawn_scene, graphic, motion_clip, web_picture, font, brand_kit, reference."
+              },
+              "what": {
+                "type": "string"
+              },
+              "source": {
+                "type": "string",
+                "description": "e.g. pixabay, letitedit_library, code_scene, motion, image_generator, google_fonts, the web page."
+              },
+              "url": {
+                "type": "string"
+              },
+              "path": {
+                "type": "string"
+              },
+              "licence": {
+                "$ref": "#/$defs/licence"
+              },
+              "ai_generated": {
+                "type": "boolean"
+              },
+              "ranges": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/range"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "music_used": {
+      "type": "object",
+      "required": [
+        "tracks",
+        "policy_met"
+      ],
+      "properties": {
+        "tracks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "title",
+              "source",
+              "licence"
+            ],
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "artist": {
+                "type": "string"
+              },
+              "source": {
+                "type": "string",
+                "enum": [
+                  "letitedit_library",
+                  "youtube_audio_library",
+                  "pixabay",
+                  "written",
+                  "ai_made",
+                  "person_file",
+                  "in_source_footage"
+                ]
+              },
+              "licence": {
+                "$ref": "#/$defs/licence"
+              },
+              "path": {
+                "type": "string"
+              },
+              "sha256": {
+                "$ref": "#/$defs/sha256"
+              },
+              "ranges": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/range"
+                }
+              }
+            }
+          }
+        },
+        "policy_met": {
+          "type": "string",
+          "enum": [
+            "yes",
+            "no",
+            "could_not_check",
+            "no_policy"
+          ]
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "evidence_frame": {
+      "type": "object",
+      "required": [
+        "path",
+        "at"
+      ],
+      "properties": {
+        "path": {
+          "$ref": "#/$defs/rel_path"
+        },
+        "at": {
+          "$ref": "#/$defs/seconds"
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "rule_result": {
+      "type": "object",
+      "required": [
+        "id",
+        "status",
+        "how"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "applied",
+            "not_applicable",
+            "could_not_check",
+            "not_met"
+          ]
+        },
+        "how": {
+          "type": "string",
+          "enum": [
+            "detector",
+            "ai_review",
+            "by_construction",
+            "not_checked"
+          ],
+          "description": "detector: a measuring tool found it; ai_review: the editing AI or the critic judged it from frames; by_construction: the job's own settings guarantee it (e.g. no music)."
+        },
+        "reason": {
+          "type": "string",
+          "description": "Required for not_applicable, could_not_check and not_met: one plain line."
+        },
+        "gave_way_to": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "description": "1.5, prefer rules only: the ids of the rules it gave way to (a must, a never or an earlier prefer). Its status is then not_applicable and its reason names them."
+        },
+        "ranges": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "start",
+              "end",
+              "note"
+            ],
+            "properties": {
+              "start": {
+                "$ref": "#/$defs/seconds"
+              },
+              "end": {
+                "$ref": "#/$defs/seconds"
+              },
+              "note": {
+                "type": "string",
+                "maxLength": 200
+              }
+            }
+          }
+        },
+        "frames": {
+          "type": "array",
+          "maxItems": 3,
+          "items": {
+            "$ref": "#/$defs/evidence_frame"
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "not_applicable",
+                  "could_not_check",
+                  "not_met"
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "reason"
+            ]
+          }
+        }
+      ]
+    },
+    "hook_kind": {
+      "type": "string",
+      "enum": [
+        "question",
+        "bold_claim",
+        "result_first",
+        "mid_action",
+        "number_or_list",
+        "guess_or_challenge",
+        "before_after",
+        "story_tease",
+        "reaction",
+        "how_to",
+        "other"
+      ],
+      "description": "A fixed list; a new value is a minor version."
+    },
+    "choices": {
+      "type": "object",
+      "description": "What this video is, for tying results back to choices. Measured values come from the exported timeline; described values come from the AI.",
+      "required": [
+        "look_id",
+        "hook_kind",
+        "first_3s",
+        "duration_s",
+        "cuts_per_min",
+        "words_per_min",
+        "caption_style",
+        "music_kind",
+        "broll_share",
+        "moments"
+      ],
+      "properties": {
+        "look_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "look_name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "theme_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pattern": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "The idea's pattern as given in job.json, echoed."
+        },
+        "hook_kind": {
+          "$ref": "#/$defs/hook_kind"
+        },
+        "hook_line": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "first_3s": {
+          "type": "string",
+          "description": "One plain line: what is seen and heard in the first 3 seconds."
+        },
+        "duration_s": {
+          "$ref": "#/$defs/seconds"
+        },
+        "cuts_per_min": {
+          "type": "number",
+          "minimum": 0
+        },
+        "words_per_min": {
+          "type": "number",
+          "minimum": 0
+        },
+        "caption_style": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "A caption style id from capabilities, 'none', or null when unknown (inspect)."
+        },
+        "music_kind": {
+          "type": "string",
+          "enum": [
+            "none",
+            "library",
+            "written",
+            "ai_made",
+            "person_file",
+            "added_in_app_later",
+            "in_source_footage",
+            "unknown"
+          ]
+        },
+        "music_mood": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "broll_share": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Share of the running time not on the main footage."
+        },
+        "moments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "file_id",
+              "in",
+              "out"
+            ],
+            "properties": {
+              "moment_id": {
+                "$ref": "#/$defs/moment_id"
+              },
+              "file_id": {
+                "$ref": "#/$defs/file_id"
+              },
+              "in": {
+                "$ref": "#/$defs/seconds"
+              },
+              "out": {
+                "$ref": "#/$defs/seconds"
+              }
+            }
+          }
+        },
+        "measured": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Which of the fields above were measured rather than described."
+        }
+      }
+    },
+    "text_item": {
+      "type": "object",
+      "required": [
+        "id",
+        "kind",
+        "start",
+        "end",
+        "text",
+        "editable"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable through retext and revise of the same item."
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "on_screen",
+            "caption"
+          ]
+        },
+        "start": {
+          "$ref": "#/$defs/seconds"
+        },
+        "end": {
+          "$ref": "#/$defs/seconds"
+        },
+        "text": {
+          "type": "string"
+        },
+        "editable": {
+          "type": "string",
+          "enum": [
+            "live",
+            "remake",
+            "baked"
+          ],
+          "description": "live: a text item on the timeline, changed in place. remake: drawn by letitedit (a code scene, a motion clip, a graphic) from a source it keeps, drawn again with the new text, no AI. baked: inside a picture letitedit can't redraw (a generated image, the footage itself): retext refuses it."
+        },
+        "max_chars": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "When known: the longest text that still fits its box."
+        },
+        "platforms": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/platform"
+          },
+          "description": "Absent: in every platform's file."
+        },
+        "box": {
+          "type": "object",
+          "required": [
+            "x",
+            "y",
+            "w",
+            "h"
+          ],
+          "description": "Where the text sits, as fractions 0-1 of the frame from the top-left, at its widest; so a tap on the picture maps to an id.",
+          "properties": {
+            "x": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "y": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "w": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "h": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        },
+        "overlay": {
+          "type": "object",
+          "description": "Present when this item came from the job's overlay_text (contract 1.1): where it came from and, per platform file, whether it was applied and why.",
+          "required": [
+            "from",
+            "files"
+          ],
+          "properties": {
+            "from": {
+              "type": "string",
+              "description": "The job field it came from, e.g. inputs.overlay_text.0 or inputs.ideas.2.overlay_text.0."
+            },
+            "placement": {
+              "type": "string"
+            },
+            "platforms": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/platform"
+              },
+              "description": "The item's platforms, as the job asked (absent: every file)."
+            },
+            "if": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "files": {
+              "type": "array",
+              "description": "One entry per file the job made: a platform's video, a still's size (or platform), or a preview's proxy.",
+              "items": {
+                "type": "object",
+                "required": [
+                  "applied",
+                  "why"
+                ],
+                "properties": {
+                  "platform": {
+                    "$ref": "#/$defs/platform"
+                  },
+                  "size": {
+                    "type": "string",
+                    "description": "A still's size id (story_9x16, feed_4x5, feed_1x1)."
+                  },
+                  "proxy": {
+                    "const": true,
+                    "description": "A preview's phone proxy (a preview has no platform files)."
+                  },
+                  "applied": {
+                    "type": "boolean"
+                  },
+                  "why": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "One plain line, e.g. \"the video has a generated picture at 4.2 s\", \"not one of this item's platforms\"."
+                  }
+                },
+                "anyOf": [
+                  {
+                    "required": [
+                      "platform"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "size"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "proxy"
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "output_file": {
+      "type": "object",
+      "required": [
+        "role",
+        "path",
+        "bytes",
+        "sha256"
+      ],
+      "properties": {
+        "role": {
+          "type": "string",
+          "minLength": 1,
+          "examples": [
+            "video",
+            "srt",
+            "cover",
+            "project",
+            "proxy",
+            "poster",
+            "image",
+            "motion_still",
+            "review",
+            "transcript",
+            "index",
+            "evidence",
+            "other"
+          ],
+          "description": "What the file is for. Open list (CONTRACT.md section 2): a reader treats a value it does not know as \"other\". Known values: video, srt, cover, project, proxy, poster, image, motion_still, review, transcript, index, evidence, other."
+        },
+        "path": {
+          "$ref": "#/$defs/rel_path"
+        },
+        "platform": {
+          "$ref": "#/$defs/platform"
+        },
+        "size": {
+          "type": "string",
+          "description": "For stills: story_9x16, feed_4x5, feed_1x1."
+        },
+        "set_index": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "A carousel card's place in its set."
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "width": {
+          "type": "integer"
+        },
+        "height": {
+          "type": "integer"
+        },
+        "fps": {
+          "type": "number"
+        },
+        "duration_s": {
+          "$ref": "#/$defs/seconds"
+        },
+        "codec": {
+          "type": "string"
+        },
+        "loudness_lufs": {
+          "type": "number"
+        },
+        "true_peak_dbtp": {
+          "type": "number"
+        },
+        "location_metadata": {
+          "type": "string",
+          "enum": [
+            "none"
+          ],
+          "description": "No GPS, location.ISO6709, ©xyz or EXIF/XMP location in the file's metadata, boxes or a video's SEI messages (H.264 and HEVC only): letitedit strips all metadata at every write and checks the written file. A sound stream's inside is not read; a video is decoded only to its first frame."
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "role": {
+                "enum": [
+                  "video",
+                  "cover",
+                  "proxy",
+                  "poster",
+                  "image",
+                  "motion_still",
+                  "evidence"
+                ]
+              }
+            },
+            "required": [
+              "role"
+            ]
+          },
+          "then": {
+            "required": [
+              "location_metadata"
+            ]
+          }
+        }
+      ]
+    },
+    "proxy": {
+      "type": "object",
+      "required": [
+        "poster"
+      ],
+      "description": "For a phone to stream: about 720x1280 (1280x720 landscape) H.264, under about 8 MB, and a poster frame. A still without motion has only the poster.",
+      "properties": {
+        "video": {
+          "$ref": "#/$defs/rel_path"
+        },
+        "poster": {
+          "$ref": "#/$defs/rel_path"
+        },
+        "width": {
+          "type": "integer"
+        },
+        "height": {
+          "type": "integer"
+        },
+        "bytes": {
+          "type": "integer"
+        }
+      }
+    },
+    "review": {
+      "type": "object",
+      "required": [
+        "verdict",
+        "plain"
+      ],
+      "properties": {
+        "verdict": {
+          "type": "string",
+          "enum": [
+            "ready",
+            "revise",
+            "incomplete",
+            "blocked",
+            "not_reviewed"
+          ]
+        },
+        "plain": {
+          "type": "string",
+          "description": "review.md's plain section, as written."
+        },
+        "path": {
+          "$ref": "#/$defs/rel_path"
+        },
+        "critical": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "major": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "minor": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "critic": {
+          "$ref": "#/$defs/ai_choice"
+        },
+        "not_checked": {
+          "type": "array",
+          "description": "1.3: the checks letitedit's review couldn't do, each with why. Absent when it did them all. A verdict with one never reads ready. check is an open list: speech (the review couldn't hear the video's speech, or a long stretch of its talk), editorial review, brief, technical measurements, pictures, story integrity and others.",
+          "items": {
+            "type": "object",
+            "required": [
+              "check",
+              "why"
+            ],
+            "properties": {
+              "check": {
+                "type": "string"
+              },
+              "why": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "cost": {
+      "type": "object",
+      "required": [
+        "wall_s",
+        "measured"
+      ],
+      "properties": {
+        "wall_s": {
+          "$ref": "#/$defs/seconds",
+          "description": "Started to finished, waits included."
+        },
+        "waited_s": {
+          "$ref": "#/$defs/seconds",
+          "description": "Of wall_s: waiting for the PC lock, memory, the person's own work or an AI usage limit."
+        },
+        "ai": {
+          "$ref": "#/$defs/ai_choice"
+        },
+        "tokens": {
+          "type": "object",
+          "properties": {
+            "input": {
+              "type": "integer"
+            },
+            "cache_write": {
+              "type": "integer"
+            },
+            "cache_read": {
+              "type": "integer"
+            },
+            "output": {
+              "type": "integer"
+            },
+            "total": {
+              "type": "integer"
+            }
+          }
+        },
+        "usd_api_equivalent": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "What the tokens would cost at API prices; the person pays through their own subscription. null when the model has no published price."
+        },
+        "steps": {
+          "type": "integer"
+        },
+        "stages": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "stage",
+              "wall_s"
+            ],
+            "properties": {
+              "stage": {
+                "type": "string"
+              },
+              "wall_s": {
+                "$ref": "#/$defs/seconds"
+              },
+              "tokens": {
+                "type": "integer"
+              }
+            }
+          }
+        },
+        "measured": {
+          "type": "boolean",
+          "description": "false when the AI's session logs couldn't be read: tokens are then absent."
+        }
+      }
+    },
+    "versions": {
+      "type": "object",
+      "required": [
+        "contract",
+        "letitedit"
+      ],
+      "properties": {
+        "contract": {
+          "$ref": "#/$defs/contract_version"
+        },
+        "letitedit": {
+          "type": "string",
+          "description": "The promoted build, e.g. 20261118.3."
+        },
+        "tools": {
+          "type": "string",
+          "description": "The tool code's commit."
+        },
+        "look": {
+          "type": "string",
+          "description": "The Look card's hash, when a Look was used."
+        }
+      }
+    },
+    "error": {
+      "type": "object",
+      "required": [
+        "code",
+        "message",
+        "retry"
+      ],
+      "properties": {
+        "code": {
+          "type": "string",
+          "description": "Open list; see CONTRACT.md 'Errors'.",
+          "examples": [
+            "invalid_job",
+            "unsupported_version",
+            "job_id_conflict",
+            "output_dir_refused",
+            "source_missing",
+            "source_unreadable",
+            "look_unknown",
+            "from_job_unusable",
+            "ai_unavailable",
+            "ai_limit",
+            "ai_failed",
+            "render_failed",
+            "out_of_memory",
+            "disk_full",
+            "timeout",
+            "interrupted_too_often",
+            "not_editable",
+            "kind_not_installed",
+            "location_not_removed",
+            "internal",
+            "hdr_not_supported",
+            "hdr_not_delivered"
+          ]
+        },
+        "message": {
+          "type": "string",
+          "description": "Plain English for a person: what went wrong and what to do."
+        },
+        "retry": {
+          "type": "string",
+          "enum": [
+            "yes",
+            "after",
+            "after_change",
+            "no"
+          ],
+          "description": "yes: the same job again may work; after: wait retry_after_s first; after_change: only after the job or the PC changes (said in message); no: it won't work. A cancelled job says yes: a retry can work, but a cancel is the person's choice and only the person retries it."
+        },
+        "retry_after_s": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Seconds to wait before retrying. Always present for ai_limit (contract 1.1): the AI's own reset time when it gives one, else 3600."
+        },
+        "stage": {
+          "type": "string"
+        },
+        "detail": {
+          "type": "string",
+          "description": "Technical detail for a log, never shown as the message."
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "code": {
+                "const": "ai_limit"
+              }
+            },
+            "required": [
+              "code"
+            ]
+          },
+          "then": {
+            "required": [
+              "retry_after_s"
+            ]
+          }
+        }
+      ]
+    },
+    "warning": {
+      "type": "object",
+      "required": [
+        "code",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "message": {
+          "type": "string"
+        },
+        "field": {
+          "type": "string"
+        }
+      }
+    },
+    "platform_target": {
+      "description": "A platform to deliver for: its id, or {id, max_mb} to cap each file's size (letitedit lowers the bitrate to fit).",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/platform"
+        },
+        {
+          "type": "object",
+          "required": [
+            "id"
+          ],
+          "properties": {
+            "id": {
+              "$ref": "#/$defs/platform"
+            },
+            "max_mb": {
+              "type": "number",
+              "minimum": 1,
+              "description": "Megabytes (1,000,000 bytes). Absent: the platform preset's cap."
+            }
+          }
+        }
+      ]
+    },
+    "overlay_item": {
+      "type": "object",
+      "description": "Words put on the picture as the caller asks (contract 1.1): placed clear of faces and each platform's covered areas, the way captions are placed. Reported in the result's text_items with overlay.files saying, per platform file, whether it was applied and why.",
+      "required": [
+        "text"
+      ],
+      "properties": {
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "platforms": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/platform"
+          },
+          "description": "Only these platforms' files get it. Absent: every file."
+        },
+        "placement": {
+          "type": "string",
+          "enum": [
+            "safe_area",
+            "top",
+            "bottom",
+            "caption_zone"
+          ],
+          "default": "safe_area",
+          "description": "safe_area: where letitedit finds room inside the platform's uncovered area (the default). top or bottom: at the top or bottom of that area. caption_zone: the Look's caption zone, when it has one (else safe_area, said in why)."
+        },
+        "if": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "examples": [
+              "ai_generated_media"
+            ]
+          },
+          "description": "Conditions, all of which must hold for the item to be applied. Open list: a condition letitedit does not know is not met, and why says so. ai_generated_media: the result's own provenance holds AI-made picture or sound (CONTRACT.md 'overlay_text')."
+        }
+      }
+    },
+    "overlay_text": {
+      "type": "array",
+      "maxItems": 10,
+      "items": {
+        "$ref": "#/$defs/overlay_item"
+      },
+      "description": "Words on the picture (contract 1.1). Absent: none."
+    }
+  }
+}

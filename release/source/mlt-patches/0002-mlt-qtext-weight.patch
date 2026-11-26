@@ -1,0 +1,44 @@
+letitedit: Qt 6 font weights in qtext. The qtext producer (Text clips, the text filter, count) passes the CSS weight to
+Qt instead of the Qt 5 formula (bold renders bold); the qtext filter (Simple Text, captions burn-in, timer, GPS text)
+decodes the w * 10 + 10 form letitedit writes for plain italics instead of Qt clamping it to its heaviest weight.
+From engine-patches/mlt-qtext-weight; applies after 0001 on MLT 63218a28d21f1e64b5b9e6671b4ff9146023282c.
+
+diff --git a/src/modules/qt/filter_qtext.cpp b/src/modules/qt/filter_qtext.cpp
+index 67f0fc28..27cfecce 100644
+--- a/src/modules/qt/filter_qtext.cpp
++++ b/src/modules/qt/filter_qtext.cpp
+@@ -198,7 +198,12 @@ static QRectF get_text_path(QPainterPath *qpath,
+ #if (QT_VERSION < QT_VERSION_CHECK(6, 0, 0))
+     font.setWeight(QFont::Weight((mlt_properties_get_int(filter_properties, "weight") / 10) - 1));
+ #else
+-    font.setWeight(QFont::Weight(mlt_properties_get_int(filter_properties, "weight")));
++    // letitedit: values above 1000 are the (w * 10 + 10) form the qtext producer's Qt 5 formula decodes (letitedit
++    // writes it for plain italics); decode them here too instead of letting Qt clamp them to its heaviest weight.
++    int weight = mlt_properties_get_int(filter_properties, "weight");
++    if (weight > 1000)
++        weight = (weight - 10) / 10;
++    font.setWeight(QFont::Weight(weight));
+ #endif
+     switch (style[0]) {
+     case 'i':
+diff --git a/src/modules/qt/producer_qtext.cpp b/src/modules/qt/producer_qtext.cpp
+index 9954e8e7..1d705a4e 100644
+--- a/src/modules/qt/producer_qtext.cpp
++++ b/src/modules/qt/producer_qtext.cpp
+@@ -178,7 +178,16 @@ static void generate_qpath(mlt_properties producer_properties)
+     QFont font;
+     font.setPixelSize(mlt_properties_get_int(producer_properties, "size"));
+     font.setFamily(mlt_properties_get(producer_properties, "family"));
++#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
+     font.setWeight(QFont::Weight((mlt_properties_get_int(producer_properties, "weight") / 10) - 1));
++#else
++    // letitedit: Qt 6 takes CSS weights (100-900) directly; dividing by 10 asked for less than Thin, so bold never
++    // rendered. Values above 1000 are the (w * 10 + 10) form older workarounds wrote; decode them.
++    int weight = mlt_properties_get_int(producer_properties, "weight");
++    if (weight > 1000)
++        weight = (weight - 10) / 10;
++    font.setWeight(QFont::Weight(weight > 0 ? qBound(1, weight, 1000) : 400));
++#endif
+     switch (style[0]) {
+     case 'i':
+     case 'I':

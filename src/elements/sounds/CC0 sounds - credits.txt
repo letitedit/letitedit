@@ -1,0 +1,71 @@
+CC0 sound effects for the Elements panel (letitedit)
+====================================================
+
+Every sound here is free to use in any video, including commercial and monetised ones, with no credit
+line needed. They replace Shotcut's bundled GDC sounds, whose licence forbids AI use.
+
+Sources: Kenney.nl (CC0), Freesound.org (CC0 sounds only) and Wikimedia Commons (public domain / CC0),
+from the CC0 library letitedit keeps in assets\sfx\library (license_log.csv lists every original);
+and "letitedit" = made by letitedit's own code (tools\assets\synth_sfx.py, no outside recordings),
+released under CC0 1.0. Converted to FLAC (the Elements panel lists .flac files).
+CC0 1.0: https://creativecommons.org/publicdomain/zero/1.0/
+
+File                         | Source | Licence | Original | Link
+--------------------------------------------------------------------------------------------------------------
+Pop Bloop.flac               | Kenney.nl | CC0 1.0 (public domain) | Kenney interface-sounds: Audio\drop_002.ogg | https://kenney.nl/assets/interface-sounds
+Pop Pep.flac                 | Kenney.nl | CC0 1.0 (public domain) | Kenney digital-audio: Audio\pepSound3.ogg | https://kenney.nl/assets/digital-audio
+Pop Cartoon.flac             | Freesound.org | CC0 1.0 (Creative Commons 0) | Plop! by Breviceps (freesound #447910) | https://freesound.org/people/Breviceps/sounds/447910/
+Pop Cork.flac                | Freesound.org | CC0 1.0 (Creative Commons 0) | Champagne Cork by KenRT (freesound #392624) | https://freesound.org/people/KenRT/sounds/392624/
+Whoosh Fast.flac             | Freesound.org | CC0 1.0 (Creative Commons 0) | Swosh / Whoosh / Air Cut by qubodup (freesound #60030) | https://freesound.org/people/qubodup/sounds/60030/
+Whoosh Quick.flac            | Freesound.org | CC0 1.0 (Creative Commons 0) | Swipe Whoosh by qubodup (freesound #60007) | https://freesound.org/people/qubodup/sounds/60007/
+Whoosh Zip Up.flac           | Kenney.nl | CC0 1.0 (public domain) | Kenney interface-sounds: Audio\maximize_002.ogg | https://kenney.nl/assets/interface-sounds
+Whoosh Soft.flac             | letitedit | CC0-1.0 | synth/whoosh-soft | tools/assets/synth_sfx.py
+Swoosh Transition.flac       | Freesound.org | CC0 1.0 (Creative Commons 0) | Swoosh 5 by Electroviolence (freesound #234553) | https://freesound.org/people/Electroviolence/sounds/234553/
+Swipe.flac                   | letitedit | CC0-1.0 | synth/swipe | tools/assets/synth_sfx.py
+Riser 2s.flac                | letitedit | CC0-1.0 | synth/riser-2s | tools/assets/synth_sfx.py
+Riser 4s.flac                | letitedit | CC0-1.0 | synth/riser-4s | tools/assets/synth_sfx.py
+Reverse Swell.flac           | letitedit | CC0-1.0 | synth/reverse-swell | tools/assets/synth_sfx.py
+Downlifter.flac              | letitedit | CC0-1.0 | synth/downlifter | tools/assets/synth_sfx.py
+Boom Deep.flac               | letitedit | CC0-1.0 | synth/boom-deep | tools/assets/synth_sfx.py
+Bass Drop.flac               | letitedit | CC0-1.0 | synth/bass-drop | tools/assets/synth_sfx.py
+Impact Cinematic.flac        | letitedit | CC0-1.0 | synth/hit-cinematic | tools/assets/synth_sfx.py
+Zoom Hit.flac                | letitedit | CC0-1.0 | synth/zoom-hit | tools/assets/synth_sfx.py
+Punch Heavy.flac             | Kenney.nl | CC0 1.0 (public domain) | Kenney impact-sounds: Audio\impactPunch_heavy_000.ogg | https://kenney.nl/assets/impact-sounds
+Slap.flac                    | Freesound.org | CC0 1.0 (Creative Commons 0) | Gun Shot.wav by Bird_man (freesound #275151) | https://freesound.org/people/Bird_man/sounds/275151/
+Glitch.flac                  | letitedit | CC0-1.0 | synth/glitch-2 | tools/assets/synth_sfx.py
+Glitch Long.flac             | letitedit | CC0-1.0 | synth/glitch-4 | tools/assets/synth_sfx.py
+Glitch Burst.flac            | letitedit | CC0-1.0 | synth/glitch-burst | tools/assets/synth_sfx.py
+Ding Confirm.flac            | Kenney.nl | CC0 1.0 (public domain) | Kenney interface-sounds: Audio\confirmation_001.ogg | https://kenney.nl/assets/interface-sounds
+Ding Three Tone.flac         | Kenney.nl | CC0 1.0 (public domain) | Kenney digital-audio: Audio\threeTone1.ogg | https://kenney.nl/assets/digital-audio
+Bell Service Desk.flac       | Freesound.org | CC0 1.0 (Creative Commons 0) | desk bell center.mp3 by tonmayster (freesound #685111) | https://freesound.org/people/tonmayster/sounds/685111/
+Bicycle Bell.flac            | Freesound.org | CC0 1.0 (Creative Commons 0) | Bike Bell.wav by bsumusictech (freesound #81875) | https://freesound.org/people/bsumusictech/sounds/81875/
+Magic Twinkle.flac           | Freesound.org | CC0 1.0 (Creative Commons 0) | Heal - Rpg by colorsCrimsonTears (freesound #562292) | https://freesound.org/people/colorsCrimsonTears/sounds/562292/
+Sparkle.flac                 | letitedit | CC0-1.0 | synth/sparkle | tools/assets/synth_sfx.py
+Notification.flac            | letitedit | CC0-1.0 | synth/notify-up | tools/assets/synth_sfx.py
+Cash Register.flac           | Freesound.org | CC0 1.0 (Creative Commons 0) | Store Scanner Beep by zerolagtime (freesound #144418) | https://freesound.org/people/zerolagtime/sounds/144418/
+Coins.flac                   | Kenney.nl | CC0 1.0 (public domain) | Kenney rpg-audio: Audio\handleCoins.ogg | https://kenney.nl/assets/rpg-audio
+Level Up.flac                | Kenney.nl | CC0 1.0 (public domain) | Kenney digital-audio: Audio\powerUp1.ogg | https://kenney.nl/assets/digital-audio
+Ta-Da.flac                   | Freesound.org | CC0 1.0 (Creative Commons 0) | Tada Fanfare A by plasterbrain (freesound #397355) | https://freesound.org/people/plasterbrain/sounds/397355/
+Error Buzz.flac              | Kenney.nl | CC0 1.0 (public domain) | Kenney interface-sounds: Audio\error_005.ogg | https://kenney.nl/assets/interface-sounds
+Sad Trombone.flac            | Freesound.org | CC0 1.0 (Creative Commons 0) | wah wah sad trombone.wav by kirbydx (freesound #175409) | https://freesound.org/people/kirbydx/sounds/175409/
+Rimshot.flac                 | Freesound.org | CC0 1.0 (Creative Commons 0) | rim_shot_closed.aif by Heigh-hoo (freesound #19436) | https://freesound.org/people/Heigh-hoo/sounds/19436/
+Boing.flac                   | Freesound.org | CC0 1.0 (Creative Commons 0) | Bounce by Jofae (freesound #383240) | https://freesound.org/people/Jofae/sounds/383240/
+Slide Whistle.flac           | Freesound.org | CC0 1.0 (Creative Commons 0) | "Coach" Whistle.aiff by connersaw8 (freesound #161662) | https://freesound.org/people/connersaw8/sounds/161662/
+Record Scratch.flac          | Freesound.org | CC0 1.0 (Creative Commons 0) | record_scratch.wav by simkiott (freesound #43404) | https://freesound.org/people/simkiott/sounds/43404/
+Record Scratch Short.flac    | Kenney.nl | CC0 1.0 (public domain) | Kenney interface-sounds: Audio\scratch_002.ogg | https://kenney.nl/assets/interface-sounds
+Cheer Crowd.flac             | Freesound.org | CC0 1.0 (Creative Commons 0) | Cheer 2.wav by jayfrosting (freesound #333404) | https://freesound.org/people/jayfrosting/sounds/333404/
+Applause.flac                | Wikimedia Commons | CC0 1.0 | 277021 sandermotions applause-2.wav | https://commons.wikimedia.org/wiki/File:277021_sandermotions_applause-2.wav
+Laugh Audience.flac          | Freesound.org | CC0 1.0 (Creative Commons 0) | Crowd laughing and clapping inside a bar in Chile (Valparaiso) by felix.blume (freesound #397034) | https://freesound.org/people/felix.blume/sounds/397034/
+Giggle.flac                  | Wikimedia Commons | CC0 1.0 | Short clip of girl laughing.wav | https://commons.wikimedia.org/wiki/File:Short_clip_of_girl_laughing.wav
+Gasp Crowd.flac              | Freesound.org | CC0 1.0 (Creative Commons 0) | kids_WOAH.wav by DesignDean (freesound #397317) | https://freesound.org/people/DesignDean/sounds/397317/
+Aww Crowd.flac               | Freesound.org | CC0 1.0 (Creative Commons 0) | aww.wav by phmiller42 (freesound #124996) | https://freesound.org/people/phmiller42/sounds/124996/
+Boo Crowd.flac               | Freesound.org | CC0 1.0 (Creative Commons 0) | boo.wav by dr_skitz (freesound #353925) | https://freesound.org/people/dr_skitz/sounds/353925/
+Voice Wow.flac               | Freesound.org | CC0 1.0 (Creative Commons 0) | WOW male voice by ahab2000 (freesound #398933) | https://freesound.org/people/ahab2000/sounds/398933/
+Voice Oh Yeah.flac           | Freesound.org | CC0 1.0 (Creative Commons 0) | 28a-voc02.wav by davidou (freesound #88447) | https://freesound.org/people/davidou/sounds/88447/
+Voice Uh Oh.flac             | Freesound.org | CC0 1.0 (Creative Commons 0) | Uh Oh.mp3 by Ant103010 (freesound #504654) | https://freesound.org/people/Ant103010/sounds/504654/
+Voice Woo Hoo.flac           | Freesound.org | CC0 1.0 (Creative Commons 0) | woohoo by unfa (freesound #468898) | https://freesound.org/people/unfa/sounds/468898/
+Camera Shutter.flac          | Freesound.org | CC0 1.0 (Creative Commons 0) | Camera Shutter by roachpowder (freesound #170229) | https://freesound.org/people/roachpowder/sounds/170229/
+Click.flac                   | Kenney.nl | CC0 1.0 (public domain) | Kenney ui-audio: Audio\click2.ogg | https://kenney.nl/assets/ui-audio
+Drum Roll.flac               | Freesound.org | CC0 1.0 (Creative Commons 0) | drumroll.wav by adriann (freesound #191718) | https://freesound.org/people/adriann/sounds/191718/
+Suspense Sting.flac          | Freesound.org | CC0 1.0 (Creative Commons 0) | Surprise by qubodup (freesound #814055) | https://freesound.org/people/qubodup/sounds/814055/
+Heartbeat.flac               | letitedit | CC0-1.0 | synth/heartbeat | tools/assets/synth_sfx.py

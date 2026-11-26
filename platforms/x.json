@@ -1,0 +1,215 @@
+{
+  "id": "x",
+  "name": "X (Twitter) video",
+  "schema": "letitedit-platform/1",
+  "checked": "2026-11-19",
+  "video": {
+    "aspect_ratios": {
+      "value": {
+        "vertical": "9:16",
+        "horizontal": "16:9",
+        "square": "1:1"
+      },
+      "source": "https://help.x.com/en/using-x/x-videos",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "resolutions": {
+      "value": {
+        "common": "1080x1920"
+      },
+      "source": "https://help.x.com/en/using-x/x-videos",
+      "checked": "2026-11-19",
+      "status": "unconfirmed",
+      "note": "Value from letitedit Channel's spec (19 Nov 2026); the page refused automated reading or does not publish it, so it is unconfirmed. Re-check by hand."
+    },
+    "frame_rates": {
+      "value": {
+        "max": 60
+      },
+      "source": "https://help.x.com/en/using-x/x-videos",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "min_length_s": {
+      "value": 0.5,
+      "source": "https://support.buffer.com/articles/sharing-videos-through-buffer-LOe2p2rnAI",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: video plays on X itself only within 0.5-140 s and 512 MB; a longer or larger one (Buffer takes up to 1 GB) is shown as a link to Buffer's player."
+    },
+    "max_length_s": {
+      "value": 140,
+      "source": "https://support.buffer.com/articles/sharing-videos-through-buffer-LOe2p2rnAI",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: video plays on X itself only within 0.5-140 s and 512 MB; a longer or larger one (Buffer takes up to 1 GB) is shown as a link to Buffer's player."
+    },
+    "max_file_size_bytes": {
+      "value": 512000000,
+      "source": "https://support.buffer.com/articles/sharing-videos-through-buffer-LOe2p2rnAI",
+      "checked": "2026-11-19",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer, and X's own help (an account without Premium): video plays on X itself only within 0.5-140 s and 512 MB (read as 512,000,000 bytes, the stricter reading; it was 512 x 1024 x 1024 before 19 Nov); a longer or larger one (Buffer takes up to 1 GB) is shown as a link to Buffer's player."
+    },
+    "container": {
+      "value": "MP4",
+      "source": "https://support.buffer.com/articles/sharing-videos-through-buffer-LOe2p2rnAI",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: Buffer converts uploads to H.264 MP4."
+    },
+    "video_codec": {
+      "value": "H.264",
+      "source": "https://support.buffer.com/articles/sharing-videos-through-buffer-LOe2p2rnAI",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: Buffer converts uploads to H.264 MP4."
+    }
+  },
+  "audio": {
+    "codec": {
+      "value": "AAC",
+      "source": "https://help.x.com/en/using-x/x-videos",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "bitrate_kbps": {
+      "value": 128,
+      "source": "https://help.x.com/en/using-x/x-videos",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "loudness_normalisation": {
+      "value": null,
+      "source": "https://help.x.com/en/using-x/x-videos",
+      "checked": "2026-11-19",
+      "status": "not documented"
+    }
+  },
+  "safe_zones": {
+    "value": [],
+    "source": "https://help.x.com/en/using-x/x-videos",
+    "checked": "2026-11-19",
+    "status": "not documented",
+    "note": "X publishes no covered areas.",
+    "confidence": "n/a"
+  },
+  "captions": {
+    "placement": {
+      "value": null,
+      "source": "https://help.x.com/en/using-x/x-videos",
+      "checked": "2026-11-19",
+      "status": "not documented"
+    }
+  },
+  "thumbnail": {
+    "value": null,
+    "source": "https://help.x.com/en/using-x/x-videos",
+    "checked": "2026-11-19",
+    "status": "not documented"
+  },
+  "text_limits": {
+    "post_chars": {
+      "value": 280,
+      "source": "https://help.x.com/en/using-x/x-videos",
+      "checked": "2026-11-19",
+      "status": "unconfirmed",
+      "note": "Without a paid account."
+    }
+  },
+  "export_preset": {
+    "width": {
+      "value": 1080,
+      "source": "https://help.x.com/en/using-x/x-videos",
+      "checked": "2026-11-19",
+      "status": "unconfirmed",
+      "note": "Value from letitedit Channel's spec (19 Nov 2026); the page refused automated reading or does not publish it, so it is unconfirmed. Re-check by hand."
+    },
+    "height": {
+      "value": 1920,
+      "source": "https://help.x.com/en/using-x/x-videos",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "fps": {
+      "value": 30,
+      "source": "https://help.x.com/en/using-x/x-videos",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "container": {
+      "value": "mp4",
+      "source": "https://support.buffer.com/articles/sharing-videos-through-buffer-LOe2p2rnAI",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: Buffer converts uploads to H.264 MP4."
+    },
+    "vcodec": {
+      "value": "libx264",
+      "source": "https://support.buffer.com/articles/sharing-videos-through-buffer-LOe2p2rnAI",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: Buffer converts uploads to H.264 MP4 (libx264 writes H.264)."
+    },
+    "pix_fmt": {
+      "value": "yuv420p",
+      "source": "https://help.x.com/en/using-x/x-videos",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "video_bitrate_kbps": {
+      "value": 8000,
+      "source": "https://help.x.com/en/using-x/x-videos",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "acodec": {
+      "value": "aac",
+      "source": "https://help.x.com/en/using-x/x-videos",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "audio_bitrate_kbps": {
+      "value": 128,
+      "source": "https://help.x.com/en/using-x/x-videos",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "sample_rate_hz": {
+      "value": 48000,
+      "source": "https://help.x.com/en/using-x/x-videos",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "loudness_lufs": {
+      "value": null,
+      "source": "https://help.x.com/en/using-x/x-videos",
+      "checked": "2026-11-19",
+      "status": "not documented"
+    },
+    "max_file_size_bytes": {
+      "value": 512000000,
+      "source": "https://support.buffer.com/articles/sharing-videos-through-buffer-LOe2p2rnAI",
+      "checked": "2026-11-19",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer, and X's own help (an account without Premium): video plays on X itself only within 0.5-140 s and 512 MB (read as 512,000,000 bytes, the stricter reading; it was 512 x 1024 x 1024 before 19 Nov); a longer or larger one (Buffer takes up to 1 GB) is shown as a link to Buffer's player."
+    }
+  },
+  "images": {
+    "max_photos": {
+      "value": 4,
+      "source": "https://support.buffer.com/articles/attaching-images-videos-and-other-media-to-your-posts-eudySt0TnS",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: up to 4 images, or 1 video, per post."
+    },
+    "max_file_size_bytes": {
+      "value": 5000000,
+      "source": "https://support.buffer.com/articles/attaching-images-videos-and-other-media-to-your-posts-eudySt0TnS",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: images up to 5 MB."
+    }
+  }
+}

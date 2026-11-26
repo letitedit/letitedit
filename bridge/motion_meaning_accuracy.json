@@ -1,0 +1,1043 @@
+{
+ "model": "Qwen/Qwen3.5-4B (4-bit nf4, model_tools vision worker)",
+ "model_repo": "Qwen/Qwen3.5-4B",
+ "design": "6f",
+ "prompt_version": 1,
+ "prompt_hash": "4298d528c6",
+ "measured": "2026-10-28",
+ "label_set": "C:\\LetItEdit\\cache\\timing-tests\\b6\\labelset",
+ "label_set_name": "b6 label set (28 Oct 2026)",
+ "items": 103,
+ "events": 80,
+ "shots": 23,
+ "held_out_items": 30,
+ "sets": {
+  "quick": 21,
+  "broll": 28,
+  "story-mini": 27,
+  "story-rear-ac": 27
+ },
+ "accuracy": {
+  "action": 0.709,
+  "completes": 0.75,
+  "size": 0.796,
+  "camera": 0.641,
+  "subject": 0.544,
+  "what": 0.675
+ },
+ "n": {
+  "action": 103,
+  "completes": 48,
+  "size": 103,
+  "camera": 103,
+  "subject": 103,
+  "what": 103
+ },
+ "precision": {
+  "action": {
+   "animal moves": [
+    1,
+    1
+   ],
+   "camera move only": [
+    14,
+    19
+   ],
+   "hands working": [
+    37,
+    51
+   ],
+   "part moves": [
+    0,
+    4
+   ],
+   "person gestures": [
+    6,
+    9
+   ],
+   "person moves": [
+    1,
+    4
+   ],
+   "tool use": [
+    2,
+    3
+   ],
+   "vehicle moves": [
+    12,
+    12
+   ]
+  },
+  "completes": {
+   "no": [
+    8,
+    12
+   ],
+   "yes": [
+    28,
+    36
+   ]
+  },
+  "size": {
+   "close-up": [
+    60,
+    74
+   ],
+   "medium": [
+    10,
+    17
+   ],
+   "wide": [
+    12,
+    12
+   ]
+  },
+  "camera": {
+   "handheld": [
+    61,
+    84
+   ],
+   "locked off": [
+    5,
+    19
+   ]
+  },
+  "subject": {
+   "animal": [
+    1,
+    1
+   ],
+   "hands": [
+    18,
+    44
+   ],
+   "landscape": [
+    1,
+    1
+   ],
+   "part or machine": [
+    12,
+    18
+   ],
+   "person": [
+    13,
+    15
+   ],
+   "room or building": [
+    2,
+    4
+   ],
+   "tool": [
+    1,
+    5
+   ],
+   "vehicle": [
+    8,
+    15
+   ]
+  }
+ },
+ "lenient": {
+  "action": 0.903,
+  "size": 0.883,
+  "subject": 0.796
+ },
+ "held_out": {
+  "action": 0.733,
+  "completes": 0.833,
+  "size": 0.733,
+  "camera": 0.567,
+  "subject": 0.433,
+  "what": 0.633
+ },
+ "dev": {
+  "action": 0.699,
+  "completes": 0.722,
+  "size": 0.822,
+  "camera": 0.671,
+  "subject": 0.589,
+  "what": 0.692
+ },
+ "per_set": {
+  "quick": {
+   "action": 0.905,
+   "completes": 0.769,
+   "size": 0.571,
+   "camera": 0.619,
+   "subject": 0.667,
+   "what": 0.69
+  },
+  "broll": {
+   "action": 0.643,
+   "completes": 0.583,
+   "size": 0.821,
+   "camera": 0.393,
+   "subject": 0.536,
+   "what": 0.768
+  },
+  "story-mini": {
+   "action": 0.593,
+   "completes": 0.9,
+   "size": 0.889,
+   "camera": 0.815,
+   "subject": 0.519,
+   "what": 0.519
+  },
+  "story-rear-ac": {
+   "action": 0.741,
+   "completes": 0.769,
+   "size": 0.852,
+   "camera": 0.741,
+   "subject": 0.481,
+   "what": 0.722
+  }
+ },
+ "per_kind": {
+  "event": {
+   "action": 0.7,
+   "completes": 0.718,
+   "size": 0.775,
+   "camera": 0.65,
+   "subject": 0.537,
+   "what": 0.644
+  },
+  "shot": {
+   "action": 0.739,
+   "completes": 0.889,
+   "size": 0.87,
+   "camera": 0.609,
+   "subject": 0.565,
+   "what": 0.783
+  }
+ },
+ "completes_decided": {
+  "accuracy": 0.75,
+  "n": 48
+ },
+ "completes_when_reference_unclear": {
+  "yes": 45,
+  "no": 10
+ },
+ "seconds_per_item": {
+  "mean": 5.15,
+  "median": 4.54,
+  "n": 103,
+  "basis": "model generation time per item (model_tools.describe run_s / items in its call; load time excluded)"
+ },
+ "what_grades": {
+  "right": 50,
+  "partly": 39,
+  "wrong": 14
+ },
+ "designs": {
+  "6f": {
+   "accuracy": {
+    "action": 0.709,
+    "completes": 0.75,
+    "size": 0.796,
+    "camera": 0.641,
+    "subject": 0.544,
+    "what": 0.675
+   },
+   "n": {
+    "action": 103,
+    "completes": 48,
+    "size": 103,
+    "camera": 103,
+    "subject": 103,
+    "what": 103
+   },
+   "lenient": {
+    "action": 0.903,
+    "size": 0.883,
+    "subject": 0.796
+   },
+   "precision": {
+    "action": {
+     "animal moves": [
+      1,
+      1
+     ],
+     "camera move only": [
+      14,
+      19
+     ],
+     "hands working": [
+      37,
+      51
+     ],
+     "part moves": [
+      0,
+      4
+     ],
+     "person gestures": [
+      6,
+      9
+     ],
+     "person moves": [
+      1,
+      4
+     ],
+     "tool use": [
+      2,
+      3
+     ],
+     "vehicle moves": [
+      12,
+      12
+     ]
+    },
+    "completes": {
+     "no": [
+      8,
+      12
+     ],
+     "yes": [
+      28,
+      36
+     ]
+    },
+    "size": {
+     "close-up": [
+      60,
+      74
+     ],
+     "medium": [
+      10,
+      17
+     ],
+     "wide": [
+      12,
+      12
+     ]
+    },
+    "camera": {
+     "handheld": [
+      61,
+      84
+     ],
+     "locked off": [
+      5,
+      19
+     ]
+    },
+    "subject": {
+     "animal": [
+      1,
+      1
+     ],
+     "hands": [
+      18,
+      44
+     ],
+     "landscape": [
+      1,
+      1
+     ],
+     "part or machine": [
+      12,
+      18
+     ],
+     "person": [
+      13,
+      15
+     ],
+     "room or building": [
+      2,
+      4
+     ],
+     "tool": [
+      1,
+      5
+     ],
+     "vehicle": [
+      8,
+      15
+     ]
+    }
+   },
+   "missing": {
+    "action": 0,
+    "completes": 0,
+    "size": 0,
+    "camera": 0,
+    "subject": 0
+   },
+   "completes_decided": {
+    "accuracy": 0.75,
+    "n": 48
+   },
+   "completes_when_reference_unclear": {
+    "yes": 45,
+    "no": 10
+   },
+   "what_grades": {
+    "right": 50,
+    "partly": 39,
+    "wrong": 14
+   },
+   "held_out": {
+    "action": 0.733,
+    "completes": 0.833,
+    "size": 0.733,
+    "camera": 0.567,
+    "subject": 0.433,
+    "what": 0.633
+   },
+   "dev": {
+    "action": 0.699,
+    "completes": 0.722,
+    "size": 0.822,
+    "camera": 0.671,
+    "subject": 0.589,
+    "what": 0.692
+   },
+   "per_set": {
+    "quick": {
+     "action": 0.905,
+     "completes": 0.769,
+     "size": 0.571,
+     "camera": 0.619,
+     "subject": 0.667,
+     "what": 0.69
+    },
+    "broll": {
+     "action": 0.643,
+     "completes": 0.583,
+     "size": 0.821,
+     "camera": 0.393,
+     "subject": 0.536,
+     "what": 0.768
+    },
+    "story-mini": {
+     "action": 0.593,
+     "completes": 0.9,
+     "size": 0.889,
+     "camera": 0.815,
+     "subject": 0.519,
+     "what": 0.519
+    },
+    "story-rear-ac": {
+     "action": 0.741,
+     "completes": 0.769,
+     "size": 0.852,
+     "camera": 0.741,
+     "subject": 0.481,
+     "what": 0.722
+    }
+   },
+   "per_kind": {
+    "event": {
+     "action": 0.7,
+     "completes": 0.718,
+     "size": 0.775,
+     "camera": 0.65,
+     "subject": 0.537,
+     "what": 0.644
+    },
+    "shot": {
+     "action": 0.739,
+     "completes": 0.889,
+     "size": 0.87,
+     "camera": 0.609,
+     "subject": 0.565,
+     "what": 0.783
+    }
+   },
+   "seconds_per_item": {
+    "mean": 5.15,
+    "median": 4.54,
+    "n": 103,
+    "basis": "model generation time per item (model_tools.describe run_s / items in its call; load time excluded)"
+   },
+   "items": 103
+  },
+  "3f": {
+   "accuracy": {
+    "action": 0.66,
+    "completes": 0.688,
+    "size": 0.796,
+    "camera": 0.612,
+    "subject": 0.524
+   },
+   "n": {
+    "action": 103,
+    "completes": 48,
+    "size": 103,
+    "camera": 103,
+    "subject": 103
+   },
+   "lenient": {
+    "action": 0.864,
+    "size": 0.874,
+    "subject": 0.767
+   },
+   "precision": {
+    "action": {
+     "animal moves": [
+      1,
+      1
+     ],
+     "camera move only": [
+      10,
+      16
+     ],
+     "hands working": [
+      37,
+      52
+     ],
+     "part moves": [
+      0,
+      6
+     ],
+     "person gestures": [
+      5,
+      7
+     ],
+     "person moves": [
+      0,
+      4
+     ],
+     "tool use": [
+      3,
+      5
+     ],
+     "vehicle moves": [
+      12,
+      12
+     ]
+    },
+    "completes": {
+     "no": [
+      8,
+      15
+     ],
+     "yes": [
+      25,
+      33
+     ]
+    },
+    "size": {
+     "close-up": [
+      61,
+      76
+     ],
+     "medium": [
+      10,
+      16
+     ],
+     "wide": [
+      11,
+      11
+     ]
+    },
+    "camera": {
+     "handheld": [
+      57,
+      79
+     ],
+     "locked off": [
+      6,
+      24
+     ]
+    },
+    "subject": {
+     "animal": [
+      1,
+      1
+     ],
+     "hands": [
+      18,
+      47
+     ],
+     "landscape": [
+      2,
+      2
+     ],
+     "object": [
+      0,
+      1
+     ],
+     "part or machine": [
+      10,
+      14
+     ],
+     "person": [
+      13,
+      15
+     ],
+     "room or building": [
+      2,
+      4
+     ],
+     "tool": [
+      0,
+      5
+     ],
+     "vehicle": [
+      8,
+      14
+     ]
+    }
+   },
+   "missing": {
+    "action": 0,
+    "completes": 0,
+    "size": 0,
+    "camera": 0,
+    "subject": 0
+   },
+   "completes_decided": {
+    "accuracy": 0.688,
+    "n": 48
+   },
+   "completes_when_reference_unclear": {
+    "yes": 41,
+    "no": 14
+   },
+   "held_out": {
+    "action": 0.733,
+    "completes": 0.667,
+    "size": 0.733,
+    "camera": 0.5,
+    "subject": 0.467
+   },
+   "dev": {
+    "action": 0.63,
+    "completes": 0.694,
+    "size": 0.822,
+    "camera": 0.658,
+    "subject": 0.548
+   },
+   "per_set": {
+    "quick": {
+     "action": 0.762,
+     "completes": 0.769,
+     "size": 0.571,
+     "camera": 0.667,
+     "subject": 0.667
+    },
+    "broll": {
+     "action": 0.643,
+     "completes": 0.583,
+     "size": 0.786,
+     "camera": 0.286,
+     "subject": 0.571
+    },
+    "story-mini": {
+     "action": 0.556,
+     "completes": 0.9,
+     "size": 0.889,
+     "camera": 0.778,
+     "subject": 0.407
+    },
+    "story-rear-ac": {
+     "action": 0.704,
+     "completes": 0.538,
+     "size": 0.889,
+     "camera": 0.741,
+     "subject": 0.481
+    }
+   },
+   "per_kind": {
+    "event": {
+     "action": 0.637,
+     "completes": 0.641,
+     "size": 0.775,
+     "camera": 0.625,
+     "subject": 0.5
+    },
+    "shot": {
+     "action": 0.739,
+     "completes": 0.889,
+     "size": 0.87,
+     "camera": 0.565,
+     "subject": 0.609
+    }
+   },
+   "seconds_per_item": {
+    "mean": 2.92,
+    "median": 2.72,
+    "n": 103,
+    "basis": "model generation time per item (model_tools.describe run_s / items in its call; load time excluded)"
+   },
+   "items": 103
+  },
+  "strip": {
+   "accuracy": {
+    "action": 0.67,
+    "completes": 0.688,
+    "size": 0.786,
+    "camera": 0.592,
+    "subject": 0.534
+   },
+   "n": {
+    "action": 103,
+    "completes": 48,
+    "size": 103,
+    "camera": 103,
+    "subject": 103
+   },
+   "lenient": {
+    "action": 0.864,
+    "size": 0.932,
+    "subject": 0.757
+   },
+   "precision": {
+    "action": {
+     "animal moves": [
+      1,
+      1
+     ],
+     "camera move only": [
+      4,
+      5
+     ],
+     "hands working": [
+      39,
+      54
+     ],
+     "part moves": [
+      0,
+      8
+     ],
+     "person gestures": [
+      6,
+      8
+     ],
+     "person moves": [
+      3,
+      8
+     ],
+     "tool use": [
+      4,
+      5
+     ],
+     "vehicle moves": [
+      12,
+      14
+     ]
+    },
+    "completes": {
+     "no": [
+      1,
+      1
+     ],
+     "yes": [
+      32,
+      47
+     ]
+    },
+    "size": {
+     "close-up": [
+      53,
+      59
+     ],
+     "medium": [
+      16,
+      30
+     ],
+     "wide": [
+      12,
+      14
+     ]
+    },
+    "camera": {
+     "handheld": [
+      41,
+      49
+     ],
+     "locked off": [
+      20,
+      54
+     ]
+    },
+    "subject": {
+     "animal": [
+      1,
+      1
+     ],
+     "hands": [
+      17,
+      44
+     ],
+     "landscape": [
+      1,
+      1
+     ],
+     "object": [
+      2,
+      2
+     ],
+     "part or machine": [
+      11,
+      16
+     ],
+     "person": [
+      15,
+      18
+     ],
+     "room or building": [
+      0,
+      1
+     ],
+     "tool": [
+      0,
+      4
+     ],
+     "vehicle": [
+      8,
+      16
+     ]
+    }
+   },
+   "missing": {
+    "action": 0,
+    "completes": 0,
+    "size": 0,
+    "camera": 0,
+    "subject": 0
+   },
+   "completes_decided": {
+    "accuracy": 0.688,
+    "n": 48
+   },
+   "completes_when_reference_unclear": {
+    "yes": 52,
+    "no": 3
+   },
+   "held_out": {
+    "action": 0.667,
+    "completes": 0.833,
+    "size": 0.8,
+    "camera": 0.567,
+    "subject": 0.467
+   },
+   "dev": {
+    "action": 0.671,
+    "completes": 0.639,
+    "size": 0.781,
+    "camera": 0.603,
+    "subject": 0.562
+   },
+   "per_set": {
+    "quick": {
+     "action": 0.81,
+     "completes": 0.769,
+     "size": 0.571,
+     "camera": 0.714,
+     "subject": 0.667
+    },
+    "broll": {
+     "action": 0.571,
+     "completes": 0.333,
+     "size": 0.821,
+     "camera": 0.286,
+     "subject": 0.536
+    },
+    "story-mini": {
+     "action": 0.667,
+     "completes": 0.9,
+     "size": 0.815,
+     "camera": 0.667,
+     "subject": 0.481
+    },
+    "story-rear-ac": {
+     "action": 0.667,
+     "completes": 0.769,
+     "size": 0.889,
+     "camera": 0.741,
+     "subject": 0.481
+    }
+   },
+   "per_kind": {
+    "event": {
+     "action": 0.65,
+     "completes": 0.718,
+     "size": 0.775,
+     "camera": 0.637,
+     "subject": 0.575
+    },
+    "shot": {
+     "action": 0.739,
+     "completes": 0.556,
+     "size": 0.826,
+     "camera": 0.435,
+     "subject": 0.391
+    }
+   },
+   "seconds_per_item": {
+    "mean": 3.19,
+    "median": 3.2,
+    "n": 103,
+    "basis": "model generation time per item (model_tools.describe run_s / items in its call; load time excluded)"
+   },
+   "items": 103
+  }
+ },
+ "confusion": {
+  "action": {
+   "hands working -> hands working": 37,
+   "camera move only -> camera move only": 14,
+   "vehicle moves -> vehicle moves": 12,
+   "camera move only -> hands working": 6,
+   "person gestures -> person gestures": 6,
+   "tool use -> hands working": 6,
+   "person gestures -> person moves": 3,
+   "camera move only -> person gestures": 2,
+   "hands working -> camera move only": 2,
+   "nothing happens -> part moves": 2,
+   "person moves -> camera move only": 2,
+   "tool use -> tool use": 2,
+   "animal moves -> animal moves": 1,
+   "camera move only -> part moves": 1,
+   "camera move only -> tool use": 1,
+   "hands working -> part moves": 1,
+   "hands working -> person gestures": 1,
+   "nothing happens -> hands working": 1,
+   "part moves -> hands working": 1,
+   "person moves -> person moves": 1,
+   "tool use -> camera move only": 1
+  },
+  "completes": {
+   "yes -> yes": 28,
+   "no -> no": 8,
+   "no -> yes": 8,
+   "yes -> no": 4
+  },
+  "size": {
+   "close-up -> close-up": 60,
+   "medium -> close-up": 14,
+   "wide -> wide": 12,
+   "medium -> medium": 10,
+   "close-up -> medium": 4,
+   "wide -> medium": 3
+  },
+  "camera": {
+   "handheld -> handheld": 61,
+   "locked off -> handheld": 23,
+   "handheld -> locked off": 14,
+   "locked off -> locked off": 5
+  },
+  "subject": {
+   "hands -> hands": 18,
+   "part or machine -> hands": 15,
+   "person -> person": 13,
+   "part or machine -> part or machine": 12,
+   "vehicle -> vehicle": 8,
+   "landscape -> vehicle": 7,
+   "room or building -> hands": 4,
+   "object -> part or machine": 3,
+   "person -> hands": 3,
+   "hands -> tool": 2,
+   "object -> hands": 2,
+   "part or machine -> tool": 2,
+   "person -> room or building": 2,
+   "room or building -> room or building": 2,
+   "animal -> animal": 1,
+   "animal -> hands": 1,
+   "hands -> part or machine": 1,
+   "landscape -> landscape": 1,
+   "part or machine -> person": 1,
+   "room or building -> part or machine": 1,
+   "room or building -> person": 1,
+   "tool -> part or machine": 1,
+   "tool -> tool": 1,
+   "vehicle -> hands": 1
+  }
+ },
+ "completes_only_prompt": {
+  "v1": {
+   "accuracy": 0.646,
+   "n": 48,
+   "dev": 0.694,
+   "dev_n": 36,
+   "held_out": 0.5,
+   "held_out_n": 12,
+   "answers_when_reference_unclear": {
+    "no": 42,
+    "yes": 13
+   },
+   "confusion": {
+    "yes -> yes": 20,
+    "yes -> no": 12,
+    "no -> no": 11,
+    "no -> yes": 5
+   },
+   "prompt": "run_done.py DONE_PROMPT (6f frames, one question)"
+  },
+  "flip": {
+   "accuracy": 0.667,
+   "n": 48,
+   "dev": 0.694,
+   "dev_n": 36,
+   "held_out": 0.583,
+   "held_out_n": 12,
+   "answers_when_reference_unclear": {
+    "yes": 27,
+    "no": 20,
+    "null": 8
+   },
+   "confusion": {
+    "yes -> yes": 25,
+    "no -> yes": 8,
+    "no -> no": 7,
+    "yes -> no": 6,
+    "no -> None": 1,
+    "yes -> None": 1
+   },
+   "prompt": "run_done.py FLIP_PROMPT (still going?) (6f frames, one question)"
+  }
+ },
+ "camera_measured": {
+  "fallback": {
+   "accuracy": 0.767,
+   "n": 30,
+   "all": {
+    "n": 103,
+    "accuracy": 0.816
+   },
+   "dev": {
+    "n": 73,
+    "accuracy": 0.836
+   },
+   "thresholds": {
+    "cam_jitter": 0.064,
+    "cam_drift": 0.035
+   },
+   "basis": "thresholds fitted on the dev split; accuracy = the held-out split",
+   "method": "jitter = median |shift - 0.25 s running mean| x analysed fps; drift = net shift / window s (frame widths), shots.features camera estimate; handheld when either is over its threshold"
+  },
+  "store": {
+   "accuracy": 0.786,
+   "n": 103,
+   "dev": [
+    0.795,
+    73
+   ],
+   "held_out": [
+    0.767,
+    30
+   ],
+   "sure_only": [
+    0.811,
+    95
+   ],
+   "confusion": {
+    "handheld -> locked off": 4,
+    "handheld -> handheld": 71,
+    "locked off -> handheld": 18,
+    "locked off -> locked off": 10
+   },
+   "basis": "timing_signals 'motion' lane camera_label over the frames the model saw: 'static' on 60% of them = locked off, else handheld; not tuned on this set"
+  }
+ },
+ "scoring": {
+  "action/size/subject": "strict: the reference's first answer ('lenient': any answer the reference lists as defensible)",
+  "completes": "items whose reference is yes or no; a model 'unclear' counts wrong",
+  "camera": "all items (the model); the measured labels under camera_measured",
+  "what": "free words graded independently: 1 right, 0.5 partly, 0 wrong (mean)",
+  "precision": "[right, said] per answer the model gave (strict), for confidence"
+ },
+ "references": "An independent reviewer labelled every item from an 8-frame sheet plus a first/last blend before reading any model answer (labelset/labels.py); the prompt and design were chosen on the dev split only"
+}

@@ -1,0 +1,10 @@
+Editorial sound effects: CC0 1.0 Universal
+https://creativecommons.org/publicdomain/zero/1.0/
+
+15 recordings from BigSoundBank: Joseph SARDIN, except turned page by DavidGreck.
+Two public-library flash effects from SFXMint are AI-generated designed sounds,
+not authentic vintage recordings. No account-created Studio sounds are used.
+Each individual source page declares CC0. Source pages, download URLs, authors,
+checked dates, declarations and source hashes: editorial-sfx-sources.json.
+Processed output hashes, trims, fades and measurements: ../manifest/editorial-sfx.json.
+CC0 permits modification and redistribution, including in commercial installers.

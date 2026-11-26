@@ -1,0 +1,7 @@
+const E = M.look.embroidery.start(c.w, c.h), F = E.c, cloth = E.linen(), R = K(490), cx = X(540), cy = Y(540), U = K(1), hoop = E.hoop('h', cx, cy, R);
+const fillS = (a, b, wf, col) => E.satin([a, b], wf, 3.2*U, 2.8*U, () => col, {split: 70*U});
+const parts = E.work('all', () => [...fillS(T([[350,750]])[0], T([[790,750]])[0], (t) => 42*U * (1 - .18 * Math.abs(2 * t - 1)), F.oxblood),
+  ...E.stem(MAST, 16*U, 4.4*U, F.plum, 3), ...fillS(T([[586,640]])[0], T([[586,330]])[0], (t) => 8*U + (1 - t) * 76*U, F.butter), ...fillS(T([[545,640]])[0], T([[545,380]])[0], (t) => 6*U + (1 - t) * 58*U, F.coral),
+  ...E.knots(SUN.x, SUN.y, K(52), K(52), 6*U, (u, v) => (u * u + v * v < .4 ? F.butter : F.ochre), 3), ...E.stem(E.smooth(HILL.slice(1, 7), false, 8), 16*U, 4*U, F.moss, 4), ...E.fishbone(E.smooth(T([[120,540],[300,560],[470,620]]), false, 8), (t) => K(52) * Math.sin(Math.PI * Math.min(1, t * 1.02)), 7*U, 2.6*U, (s) => s < 0 ? F.sage : F.moss),
+  ...WAVES.slice(0, 5).flatMap((w, i) => E.running(E.smooth(w, false, 8), 10*U, 7*U, 2.2*U, F.cornflower)), ...E.running(T([[120,640],[960,640]]), 12*U, 8*U, 2.2*U, F.teal), ...E.words('BOAT', X(370), Y(880), K(46), F.plum)]);
+return (t) => { E.begin(g); cloth.draw(g); parts.draw(g, {progress: t / 4.6}); hoop.draw(g); E.begin(g); E.finish(g); };

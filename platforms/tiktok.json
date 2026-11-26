@@ -1,0 +1,243 @@
+{
+  "id": "tiktok",
+  "name": "TikTok",
+  "schema": "letitedit-platform/1",
+  "checked": "2026-10-19",
+  "video": {
+    "aspect_ratios": {
+      "value": {
+        "vertical (recommended)": "9:16",
+        "horizontal": "16:9",
+        "square": "1:1"
+      },
+      "source": "https://ads.tiktok.com/help/article/video-ads-specifications",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "From the In-Feed ad specs; organic upload accepts any size 360-4096 px a side (API guide)."
+    },
+    "resolutions": {
+      "value": {
+        "min_side_px": 360,
+        "max_side_px": 4096,
+        "common": "1080x1920"
+      },
+      "source": "https://developers.tiktok.com/docs/en/content-posting-api-media-transfer-guide",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "1080x1920 is the 9:16 frame at 1080 wide (ads guide minimum for 9:16 is 540x960)."
+    },
+    "frame_rates": {
+      "value": {
+        "min": 23,
+        "max": 60
+      },
+      "source": "https://developers.tiktok.com/docs/en/content-posting-api-media-transfer-guide",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "min_length_s": {
+      "value": null,
+      "source": "https://developers.tiktok.com/docs/en/content-posting-api-media-transfer-guide",
+      "checked": "2026-10-19",
+      "status": "not documented"
+    },
+    "max_length_s": {
+      "value": 600,
+      "source": "https://developers.tiktok.com/docs/en/content-posting-api-media-transfer-guide",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "API guide: all creators can post 3-minute videos, some 5 or 10 minutes; the per-account maximum is returned by the Query Creator Info endpoint. TikTok Help (read 2026-10-27): TikTok Studio web uploads up to 30 minutes (MP4/WebM, at least 720x1280, under 10 GB); app uploads up to 60 minutes; in-app recording up to 10 minutes. Creator Rewards needs videos at least one minute long (Help Center and US terms, 2026-07-20) with 1,000+ qualified For You views (a view over 5 s)."
+    },
+    "max_file_size_bytes": {
+      "value": 4294967296,
+      "source": "https://developers.tiktok.com/docs/en/content-posting-api-media-transfer-guide",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "4 GB (API upload)."
+    },
+    "container": {
+      "value": [
+        "MP4 (recommended)",
+        "WebM",
+        "MOV"
+      ],
+      "source": "https://developers.tiktok.com/docs/en/content-posting-api-media-transfer-guide",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "video_codec": {
+      "value": [
+        "H.264 (recommended)",
+        "H.265",
+        "VP8",
+        "VP9"
+      ],
+      "source": "https://developers.tiktok.com/docs/en/content-posting-api-media-transfer-guide",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "video_bitrate": {
+      "value": {
+        "min_kbps_ads": 516
+      },
+      "source": "https://ads.tiktok.com/help/article/video-ads-specifications",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "Only a minimum is published (ads)."
+    }
+  },
+  "audio": {
+    "codec": {
+      "value": null,
+      "source": "https://developers.tiktok.com/docs/en/content-posting-api-media-transfer-guide",
+      "checked": "2026-10-19",
+      "status": "not documented"
+    },
+    "loudness_normalisation": {
+      "value": null,
+      "source": "https://developers.tiktok.com/docs/en/content-posting-api-media-transfer-guide",
+      "checked": "2026-10-19",
+      "status": "not documented",
+      "note": "TikTok publishes no loudness target or normalisation behaviour."
+    }
+  },
+  "safe_zones": {
+    "value": [
+      {
+        "name": "top: Following / For You tabs",
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.068
+      },
+      {
+        "name": "bottom: caption, username, sound, hashtags",
+        "x": 0,
+        "y": 0.809,
+        "w": 1,
+        "h": 0.191
+      },
+      {
+        "name": "right: profile, like, comment, save, share column",
+        "x": 0.889,
+        "y": 0,
+        "w": 0.111,
+        "h": 1
+      }
+    ],
+    "source": "https://www.aicarousels.com/free-tools/tiktok-safe-zone-checker",
+    "checked": "2026-10-19",
+    "status": "unconfirmed",
+    "note": "TikTok's ad specs say the safe zone depends on orientation, caption length and extra formats and offer downloadable overlay files but no numbers https://ads.tiktok.com/help/article/video-ads-specifications. Figures here are a third-party checker for 1080x1920 (131 px top, 367 px bottom, 120 px sides); other third-party guides give 900x1492 or 900x1400 centred safe areas.",
+    "confidence": "low"
+  },
+  "captions": {
+    "placement": {
+      "value": "Ad captions: up to 4 lines displayed, white fixed font (Spark Ads); organic caption sits over the bottom of the frame (see safe_zones).",
+      "source": "https://ads.tiktok.com/help/article/video-ads-specifications",
+      "checked": "2026-10-19",
+      "status": "official"
+    }
+  },
+  "thumbnail": {
+    "value": {
+      "cover": "a frame of the video, chosen by timestamp (video_cover_timestamp_ms); default first frame"
+    },
+    "source": "https://developers.tiktok.com/doc/content-posting-api-reference-direct-post",
+    "checked": "2026-10-19",
+    "status": "official",
+    "note": "No separate cover image size is published."
+  },
+  "text_limits": {
+    "caption_chars": {
+      "value": 2200,
+      "source": "https://developers.tiktok.com/doc/content-posting-api-reference-direct-post",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "Direct Post API title (the caption): 2200 UTF-16 runes."
+    },
+    "hashtags": {
+      "value": null,
+      "source": "https://developers.tiktok.com/doc/content-posting-api-reference-direct-post",
+      "checked": "2026-10-19",
+      "status": "not documented"
+    }
+  },
+  "export_preset": {
+    "width": {
+      "value": 1080,
+      "source": "https://ads.tiktok.com/help/article/video-ads-specifications",
+      "checked": "2026-10-19",
+      "status": "unconfirmed",
+      "note": "9:16 recommended (ads); 1080 wide not stated."
+    },
+    "height": {
+      "value": 1920,
+      "source": "https://ads.tiktok.com/help/article/video-ads-specifications",
+      "checked": "2026-10-19",
+      "status": "unconfirmed"
+    },
+    "fps": {
+      "value": "source (23-60)",
+      "source": "https://developers.tiktok.com/docs/en/content-posting-api-media-transfer-guide",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "container": {
+      "value": "mp4",
+      "source": "https://developers.tiktok.com/docs/en/content-posting-api-media-transfer-guide",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "vcodec": {
+      "value": "libx264",
+      "source": "https://developers.tiktok.com/docs/en/content-posting-api-media-transfer-guide",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "pix_fmt": {
+      "value": "yuv420p",
+      "source": "https://developers.tiktok.com/docs/en/content-posting-api-media-transfer-guide",
+      "checked": "2026-10-19",
+      "status": "unconfirmed"
+    },
+    "video_bitrate_kbps": {
+      "value": null,
+      "source": "https://ads.tiktok.com/help/article/video-ads-specifications",
+      "checked": "2026-10-19",
+      "status": "not documented",
+      "note": "Only a 516 kbps minimum is published."
+    },
+    "acodec": {
+      "value": "aac",
+      "source": "https://developers.tiktok.com/docs/en/content-posting-api-media-transfer-guide",
+      "checked": "2026-10-19",
+      "status": "unconfirmed",
+      "note": "Audio codec not stated by TikTok."
+    },
+    "audio_bitrate_kbps": {
+      "value": null,
+      "source": "https://developers.tiktok.com/docs/en/content-posting-api-media-transfer-guide",
+      "checked": "2026-10-19",
+      "status": "not documented"
+    },
+    "sample_rate_hz": {
+      "value": null,
+      "source": "https://developers.tiktok.com/docs/en/content-posting-api-media-transfer-guide",
+      "checked": "2026-10-19",
+      "status": "not documented"
+    },
+    "loudness_lufs": {
+      "value": null,
+      "source": "https://developers.tiktok.com/docs/en/content-posting-api-media-transfer-guide",
+      "checked": "2026-10-19",
+      "status": "not documented"
+    },
+    "max_file_size_bytes": {
+      "value": 4294967296,
+      "source": "https://developers.tiktok.com/docs/en/content-posting-api-media-transfer-guide",
+      "checked": "2026-10-19",
+      "status": "official"
+    }
+  }
+}

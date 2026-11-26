@@ -1,0 +1,18 @@
+WRITTEN OFFER FOR SOURCE CODE
+
+This copy of letitedit 1.0.0 beta contains software licensed under the GNU General Public License version 2 or
+3 and the GNU Lesser General Public License version 2.1 or 3, including: the Shotcut-based editor (GPL-3.0), MLT
+(LGPL-2.1+/GPL), FFmpeg (GPL-3.0 as built), x264 and x265 (GPL-2.0+), Qt 6.11.2 (LGPL-3.0), espeak-ng (GPL-3.0) and
+the other components listed in THIRD-PARTY-NOTICES.md.
+
+For at least three years from the date you received this copy, and for as long as spare parts or customer support
+for this version are offered, letitedit (teamletitedit@gmail.com) will give anyone who has received
+the object code, on request, a complete machine-readable copy of the corresponding source code of these components,
+on a physical medium customarily used for software interchange or by download, for a charge no more than the cost
+of physically performing the distribution. The source is also available at: https://github.com/letitedit/letitedit/releases/tag/v1.0.0-beta-20261126.6.
+
+The corresponding source consists of: the release's "Source code" archives (the tools at the top, the editor in
+src/), MLT's source mlt-63218a28-src.tar.gz with letitedit's patches in release/source/mlt-patches/, the MSYS2
+source packages listed in release/source/msys2-sources.tsv (attached to the release as one tar), and Shotcut
+26.9.27's own source, shotcut-src-26.9.27.txz (attached to the release; how each part is built:
+release/source/BUILD.txt).

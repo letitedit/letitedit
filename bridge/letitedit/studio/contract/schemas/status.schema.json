@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://letitedit.app/studio/1/status.schema.json",
+  "title": "status.json: where a job is now",
+  "description": "Rewritten whole (write to a temporary file, then replace) at every change and at least every 10 s while running. A reader that meets a half-written or locked file reads again a moment later.",
+  "type": "object",
+  "required": ["contract_version", "job_id", "kind", "state", "progress", "message", "updated", "attempt", "priority"],
+  "properties": {
+    "contract_version": {"$ref": "common.schema.json#/$defs/contract_version"},
+    "job_id": {"$ref": "common.schema.json#/$defs/job_id"},
+    "kind": {"$ref": "common.schema.json#/$defs/kind"},
+    "tier": {"type": "string", "enum": ["preview", "final"]},
+    "state": {
+      "type": "string",
+      "enum": ["queued", "running", "done", "failed", "cancelled"],
+      "description": "done, failed and cancelled are final: result.json exists. A job resuming after a crash or a restart is queued (resuming: true) or running again. Right after submit a job is queued or running (a free worker may have started it already); a caller reads either. A job whose folder held a cancel file when letitedit claimed it is cancelled at once and never runs."
+    },
+    "stage": {"type": ["string", "null"], "description": "The current step, from the kind's stages (CONTRACT.md). Open list."},
+    "stage_index": {"type": "integer", "minimum": 0},
+    "stages_total": {"type": "integer", "minimum": 0},
+    "progress": {"type": "number", "minimum": 0, "maximum": 1},
+    "counts": {"type": "object", "description": "1.2: while a stage works through a job's files (index: files, transcripts, moments), how many it has done of how many, with the minutes of footage (the files stage, which finds the lengths, gives no minutes). `progress` moves within the stage too. Kept after the stage, until the next stage reports its own.", "required": ["stage", "files_done", "files_total"], "properties": {"stage": {"type": "string"}, "files_done": {"type": "integer", "minimum": 0}, "files_total": {"type": "integer", "minimum": 0}, "footage_min_done": {"type": "number", "minimum": 0}, "footage_min_total": {"type": "number", "minimum": 0}}},
+    "message": {"type": "string", "description": "One plain line for a person."},
+    "updated": {"$ref": "common.schema.json#/$defs/time"},
+    "heartbeat": {"$ref": "common.schema.json#/$defs/time", "description": "While running: renewed at least every 10 s. Older than 60 s with state running: letitedit's process stopped; the job will resume or fail cleanly."},
+    "submitted": {"$ref": "common.schema.json#/$defs/time"},
+    "started": {"$ref": "common.schema.json#/$defs/time"},
+    "finished": {"$ref": "common.schema.json#/$defs/time"},
+    "attempt": {"type": "integer", "minimum": 0},
+    "max_attempts": {"type": "integer", "minimum": 1},
+    "resuming": {"type": "boolean", "description": "Queued or running again after its process stopped (crash, restart); it continues from its last finished stage."},
+    "priority": {"type": "string", "enum": ["urgent", "normal", "dev"]},
+    "queue": {
+      "type": "object",
+      "description": "Its place among Studio jobs: one Studio job runs at a time.",
+      "required": ["position"],
+      "properties": {
+        "position": {"type": "integer", "minimum": 0, "description": "0: running; 1: next; n: n-1 Studio jobs ahead of it."},
+        "jobs_ahead": {"type": "integer", "minimum": 0},
+        "running_job": {"type": ["string", "null"]}
+      }
+    },
+    "waiting_on": {
+      "description": "null when not waiting.",
+      "oneOf": [
+        {"type": "null"},
+        {
+          "type": "object",
+          "required": ["what", "since"],
+          "properties": {
+            "what": {"type": "string", "minLength": 1, "examples": ["pc_lock", "memory", "person_working", "ai_limit", "studio_queue", "previous_job"], "description": "Open list (CONTRACT.md section 2): a reader treats a value it doesn't know as \"other\". Known values: pc_lock, memory, person_working, ai_limit, studio_queue, previous_job."},
+            "since": {"$ref": "common.schema.json#/$defs/time"},
+            "detail": {"type": "string"},
+            "ahead": {"type": "integer", "minimum": 0, "description": "pc_lock: how many waiters are ahead of this job in the PC lock's line."},
+            "holder": {"type": "string", "description": "pc_lock: who holds it, in plain words."},
+            "until": {"$ref": "common.schema.json#/$defs/time", "description": "ai_limit: when the usage limit resets, when known."}
+          }
+        }
+      ]
+    },
+    "cancel_requested": {"type": "boolean"},
+    "events": {"type": "integer", "minimum": 0, "description": "The seq of the last line written to events.jsonl."},
+    "outputs_so_far": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/rel_path"}, "description": "Files already finished. Provisional until result.json says done."},
+    "warnings": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/warning"}},
+    "error": {"$ref": "common.schema.json#/$defs/error"}
+  }
+}

@@ -1,0 +1,870 @@
+{
+  "format": "letitedit-look-settings/1",
+  "id": "pack-beat-montage",
+  "defaults_are": "taste",
+  "share": false,
+  "values": {
+    "format": "letitedit-style/3",
+    "name": "Beat Montage",
+    "description": "A 10-30 s music-led montage of moving shots, built on one song, with one title word and no captions.",
+    "colors": {
+      "primary": "#FFFFFF",
+      "secondary": "#E8FF3A",
+      "accent": "#FF3B30",
+      "dark": "#050505",
+      "light": "#FFFFFF"
+    },
+    "fonts": {
+      "heading": {
+        "family": "Anton",
+        "weight": 400
+      },
+      "body": {
+        "family": "Inter Tight",
+        "weight": 700
+      },
+      "captions": {
+        "family": "Anton",
+        "weight": 400
+      }
+    },
+    "captions": {
+      "font": "captions",
+      "size": 72,
+      "fill": "light",
+      "outline": {
+        "color": "dark",
+        "width": 6
+      },
+      "shadow": null,
+      "background": null,
+      "position": "middle",
+      "margin": 0.0,
+      "max_chars": 14,
+      "max_lines": 1,
+      "case": "upper"
+    },
+    "text": {
+      "font": "heading",
+      "size": 150,
+      "fill": "light",
+      "outline": null
+    },
+    "graphics": {},
+    "music": {
+      "zones": {
+        "talk": -20.0,
+        "montage": 0.0,
+        "quiet": -24.0,
+        "swell": -3.0,
+        "end": 0.0
+      },
+      "duck_under_speech": true,
+      "merge_gap": 4.0,
+      "attack": 0.3,
+      "release": 0.9,
+      "crossfade": 3.0,
+      "fade_in": 1.5,
+      "fade_out": 3.0,
+      "dialogue_lufs": null,
+      "sources": [],
+      "notes": "One energetic song is the soundtrack, full level; it starts on beat one and ends on its own ending or a hard cut on the final beat [EDS, modes].",
+      "likes": [],
+      "avoid": [],
+      "theme": null
+    },
+    "sfx": {
+      "gain_db": -8.0,
+      "map": {
+        "bass_hit": "assets/bass_hit.wav",
+        "impact": "assets/impact.wav",
+        "whoosh": "assets/whoosh_fast_03.mp3",
+        "swish": "assets/whoosh_fast_02.mp3",
+        "riser": "assets/riser_short_01_0.9-2.95.wav",
+        "glitch": "assets/glitch.wav",
+        "sub_drop": "assets/sub_drop.wav"
+      },
+      "events": {
+        "flash": "bass_hit",
+        "shake": "impact",
+        "transition": "whoosh",
+        "text": "swish",
+        "reveal": "impact",
+        "hook": "sub_drop"
+      }
+    },
+    "editing": {
+      "max_pause": 0.0,
+      "pad_in": 0.0,
+      "pad_out": 0.0,
+      "blur_pad": false,
+      "transitions": "cut",
+      "pace": "fast",
+      "intro": null,
+      "outro": null
+    },
+    "export": {
+      "preset": "social_h264",
+      "loudness": -14.0
+    },
+    "look": {
+      "about": "Cool and contrasty - deeper blacks, punchier colour, slightly darker overall [EDS music video].",
+      "effects": [
+        {
+          "filter": "hue_lightness_saturation",
+          "params": {
+            "av.s": 1.25
+          }
+        },
+        {
+          "filter": "color",
+          "params": {
+            "lift_r": 0.0,
+            "lift_g": 0.0,
+            "lift_b": 0.012,
+            "gamma_r": 0.93,
+            "gamma_g": 0.95,
+            "gamma_b": 0.98,
+            "gain_r": 1.04,
+            "gain_g": 1.05,
+            "gain_b": 1.08
+          }
+        },
+        {
+          "filter": "vignette",
+          "params": {
+            "radius": 1.0,
+            "smooth": 2.0,
+            "opacity": 0.6,
+            "mode": 1
+          }
+        }
+      ]
+    },
+    "taste": "",
+    "label": "Beat-synced montage",
+    "summary": "Music-led - cuts on the beat, speed changes into the drop, flashes and hits on the big moments.",
+    "kind": "short",
+    "tags": [
+      "montage",
+      "music",
+      "beat sync",
+      "velocity",
+      "speed ramps",
+      "no talking",
+      "travel",
+      "shorts"
+    ],
+    "preview": "preview.jpg",
+    "recipe": "recipe.md",
+    "credits": [
+      {
+        "file": "assets/bass_hit.wav",
+        "source": "synthesised by tools\\styles\\sounds.py (bass_hit)",
+        "licence": "letitedit's own (generated)"
+      },
+      {
+        "file": "assets/impact.wav",
+        "source": "synthesised by tools\\styles\\sounds.py (impact)",
+        "licence": "letitedit's own (generated)"
+      },
+      {
+        "file": "assets/glitch.wav",
+        "source": "synthesised by tools\\styles\\sounds.py (glitch)",
+        "licence": "letitedit's own (generated)"
+      },
+      {
+        "file": "assets/sub_drop.wav",
+        "source": "synthesised by tools\\styles\\sounds.py (sub_drop)",
+        "licence": "letitedit's own (generated)"
+      },
+      {
+        "file": "assets/whoosh_fast_03.mp3",
+        "source": "Freesound.org: Swosh / Whoosh / Air Cut by qubodup (freesound #60030) (https://freesound.org/people/qubodup/sounds/60030/); copy of whoosh_fast_03.mp3 from the local sound library (08 Whooshes & Transitions)",
+        "licence": "CC0 1.0 (Creative Commons 0)"
+      },
+      {
+        "file": "assets/whoosh_fast_02.mp3",
+        "source": "Freesound.org: swosh-22.flac by qubodup (freesound #60009) (https://freesound.org/people/qubodup/sounds/60009/); copy of whoosh_fast_02.mp3 from the local sound library (08 Whooshes & Transitions)",
+        "licence": "CC0 1.0 (Creative Commons 0)"
+      },
+      {
+        "file": "assets/riser_short_01_0.9-2.95.wav",
+        "source": "Freesound.org: Riser sound effect short.wav by syntheffects (freesound #685256) (https://freesound.org/people/syntheffects/sounds/685256/); trimmed copy (0.9-2.95 s) of riser_short_01.mp3 from the local sound library (08 Whooshes & Transitions)",
+        "licence": "CC0 1.0 (Creative Commons 0)"
+      },
+      {
+        "file": "preview.jpg",
+        "source": "This Look's own poster: a frame of National Park Service Yosemite b-roll; no identifiable people",
+        "licence": "Public domain (stated on the source page); courtesy National Park Service, no endorsement"
+      }
+    ],
+    "effects": {
+      "title_slam": {
+        "kind": "text_pop",
+        "about": "One huge condensed word on a downbeat (the place, the theme), white, no tilt.",
+        "size": 0.85,
+        "font": "heading",
+        "fill": "light",
+        "stroke": null,
+        "stroke_width": 0,
+        "tilt": 0,
+        "shadow": true,
+        "in": "pop",
+        "out": "pop",
+        "in_s": 0.12,
+        "out_s": 0.12,
+        "hold_s": 0.9,
+        "sfx": "bass_hit",
+        "sfx_offset_s": -0.017,
+        "rules": {
+          "triggers": [
+            "hook",
+            "topic_change",
+            "ending"
+          ],
+          "density": {
+            "per_10s": 1,
+            "min_gap_s": 4.0
+          },
+          "placement": {
+            "zone": "center",
+            "avoid": [
+              "covered"
+            ]
+          },
+          "duration_s": [
+            0.5,
+            2.0
+          ],
+          "when": "The opening downbeat and maybe the last; one or two words, upper case."
+        }
+      },
+      "beat_flash": {
+        "kind": "flash",
+        "about": "A white flash on a big downbeat or the drop (0.12 s).",
+        "color": "light",
+        "len": 0.12,
+        "opacity": 0.75,
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "cut",
+            "reveal"
+          ],
+          "density": {
+            "per_10s": 2,
+            "min_gap_s": 1.0
+          },
+          "when": "The drop and two or three big downbeats; never more than three flashes a second [RES], never on every beat."
+        }
+      },
+      "drop_shake": {
+        "kind": "shake",
+        "about": "A hard camera shake on the drop, with an impact.",
+        "amount": 0.7,
+        "len": 0.35,
+        "sfx": "impact",
+        "sfx_offset_s": -0.017,
+        "rules": {
+          "triggers": [
+            "reveal",
+            "cut"
+          ],
+          "density": {
+            "per_min": 4,
+            "min_gap_s": 6.0
+          },
+          "when": "The drop, and at most one other hit."
+        }
+      },
+      "zoom_pulse": {
+        "kind": "zoom_punch",
+        "about": "A quick zoom pulse in time with a beat (0.25 s, 112%).",
+        "scale": 1.12,
+        "ramp_s": 0.06,
+        "len": 0.25,
+        "rules": {
+          "triggers": [
+            "cut",
+            "emphasis"
+          ],
+          "density": {
+            "per_10s": 3,
+            "min_gap_s": 1.0
+          },
+          "duration_s": [
+            0.15,
+            0.4
+          ],
+          "when": "Inside a held shot during the build, on alternate beats; not every beat."
+        }
+      },
+      "glitch_cut": {
+        "kind": "glitch",
+        "about": "A digital glitch into a cut (0.2 s).",
+        "amount": 0.7,
+        "len": 0.2,
+        "sfx": "glitch",
+        "rules": {
+          "triggers": [
+            "cut",
+            "topic_change"
+          ],
+          "density": {
+            "per_min": 4,
+            "min_gap_s": 5.0
+          },
+          "when": "A change of section in the song (verse to chorus). Rotate with flashes; never both on one cut."
+        }
+      },
+      "riser_build": {
+        "kind": "sfx",
+        "about": "A riser that ends exactly on the drop.",
+        "sfx": "riser",
+        "sfx_offset_s": -1.86,
+        "rules": {
+          "triggers": [
+            "reveal"
+          ],
+          "density": {
+            "per_min": 1
+          },
+          "when": "Only when the song's own build is weak; it ends on the drop."
+        }
+      },
+      "whoosh_cut": {
+        "kind": "whoosh",
+        "about": "A whoosh into a cut between two moving shots.",
+        "sfx": "whoosh",
+        "sfx_offset_s": -0.14,
+        "rules": {
+          "triggers": [
+            "cut"
+          ],
+          "density": {
+            "per_10s": 1,
+            "min_gap_s": 4.0
+          },
+          "when": "Between two shots moving in the same direction (a match on motion); sparingly."
+        }
+      },
+      "transition_wipe": {
+        "kind": "transition",
+        "about": "A short wipe on a section change (0.2 s) [EDS].",
+        "transition": {
+          "type": "bar_horizontal",
+          "len": 0.2
+        },
+        "rules": {
+          "triggers": [
+            "topic_change"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 8.0
+          },
+          "when": "At most once or twice; hard cuts are the default."
+        }
+      }
+    },
+    "fx": {
+      "track": "Effects",
+      "sfx_track": "Effect sounds",
+      "broll_track": "B-roll",
+      "density": {
+        "per_10s": 6,
+        "per_min": null,
+        "min_gap_s": null
+      },
+      "safe_zone": "phone",
+      "never": [
+        "outside_safe_zone"
+      ],
+      "rhythm": "Accents on downbeats and the drop; a quieter bar before the drop; the end on the song's last hit."
+    },
+    "popups": {
+      "track": null,
+      "sfx_track": null,
+      "min_gap_s": 2.0,
+      "max_total": null,
+      "entries": []
+    },
+    "hook": {
+      "max_s": 2.0,
+      "approaches": [
+        "mid_action",
+        "result_first"
+      ],
+      "text": {
+        "max_words": 2,
+        "case": "upper",
+        "position": "center",
+        "size": 0.85,
+        "fill": "light",
+        "stroke": null,
+        "stroke_width": 0,
+        "font": "heading"
+      },
+      "rules": "Frame 0 is the most striking moving shot, on the song's first downbeat, from beat one [EDS]; one title word slams in with it. With no speech, letitedit_hooks offers picture moments only when the footage has picture facts; otherwise pick the opening shot by eye.",
+      "avoid": [
+        "slow fade-ins",
+        "black frames",
+        "a logo first"
+      ]
+    },
+    "broll": {
+      "amount": "some",
+      "kinds": [],
+      "favorites": "",
+      "notes": ""
+    },
+    "shots": {
+      "framing": "medium",
+      "camera": "handheld",
+      "punch_ins": "some",
+      "notes": ""
+    },
+    "signature": {
+      "touches": []
+    },
+    "measured": {},
+    "provenance": {
+      "made_by": "letitedit style library, wave 1",
+      "date": "2026-10-29",
+      "measured": "none yet (no reference videos in style-references)",
+      "sources": [
+        {
+          "url": "https://github.com/mindsurf0176/editstyle/blob/master/awesome-editstyles/presets/music-video.md",
+          "title": "EditStyle music video preset",
+          "used_for": "cut on the beat, cool contrasty look, short transitions, start on beat one, end on the final beat",
+          "licence": "MIT, Copyright (c) 2026 Minseo (consulted only; no text adapted)"
+        }
+      ],
+      "notes": "The speed-change numbers (slow 0.5x, fast 2-3x, short in total) are general practice; the one sports-edit page with numbers refused automated reading, so they are [UNV]/[GEN] and should be tuned on reference montages. The montage rules in letitedit-modes (montage-transformation) come first. Tags in ..\\SOURCES.md."
+    }
+  },
+  "asset_root": "resources",
+  "files": {
+    "assets/bass_hit.wav": "resources/1240a009542e924e7b5dc42b.wav",
+    "assets/glitch.wav": "resources/af003d50c0eb824900229d52.wav",
+    "assets/impact.wav": "resources/1aa30fcce7cfaac7190ca67e.wav",
+    "assets/riser_short_01_0.9-2.95.wav": "resources/ec1a49be5892787e8eeada45.wav",
+    "assets/sub_drop.wav": "resources/1a094d91578b43e3e91ceb67.wav",
+    "assets/whoosh_fast_02.mp3": "resources/b28911d6f30c5f10b353b924.mp3",
+    "assets/whoosh_fast_03.mp3": "resources/68a9be5e205fc0a89d7a429e.mp3",
+    "preview.jpg": "resources/e56e45b9d6e81b0ab0a14e70.jpg",
+    "recipe.md": "recipe.md"
+  },
+  "links": {
+    "recipe": "recipe.md",
+    "preview": "preview.jpg"
+  },
+  "legacy": {
+    "format": "letitedit-style/3",
+    "source": "style.yaml",
+    "pack": "beat-montage",
+    "data": {
+      "format": "letitedit-style/3",
+      "name": "Beat Montage",
+      "label": "Beat-synced montage",
+      "summary": "Music-led - cuts on the beat, speed changes into the drop, flashes and hits on the big moments.",
+      "kind": "short",
+      "tags": [
+        "montage",
+        "music",
+        "beat sync",
+        "velocity",
+        "speed ramps",
+        "no talking",
+        "travel",
+        "shorts"
+      ],
+      "recipe": "recipe.md",
+      "preview": "preview.jpg",
+      "description": "A 10-30 s music-led montage of moving shots, built on one song, with one title word and no captions.",
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#E8FF3A",
+        "accent": "#FF3B30",
+        "dark": "#050505",
+        "light": "#FFFFFF"
+      },
+      "fonts": {
+        "heading": {
+          "family": "Anton",
+          "weight": 400
+        },
+        "body": {
+          "family": "Inter Tight",
+          "weight": 700
+        },
+        "captions": {
+          "family": "Anton",
+          "weight": 400
+        }
+      },
+      "graphics": {},
+      "captions": {
+        "font": "captions",
+        "size": 72,
+        "fill": "light",
+        "outline": {
+          "color": "dark",
+          "width": 6
+        },
+        "position": "middle",
+        "margin": 0.0,
+        "max_chars": 14,
+        "max_lines": 1,
+        "case": "upper"
+      },
+      "text": {
+        "font": "heading",
+        "size": 150,
+        "fill": "light",
+        "outline": null
+      },
+      "editing": {
+        "max_pause": 0.0,
+        "pad_in": 0.0,
+        "pad_out": 0.0,
+        "blur_pad": false,
+        "transitions": "cut",
+        "pace": "fast"
+      },
+      "music": {
+        "zones": {
+          "talk": -20.0,
+          "montage": 0.0,
+          "end": 0.0
+        },
+        "notes": "One energetic song is the soundtrack, full level; it starts on beat one and ends on its own ending or a hard cut on the final beat [EDS, modes]."
+      },
+      "export": {
+        "preset": "social_h264",
+        "loudness": -14.0
+      },
+      "look": {
+        "about": "Cool and contrasty - deeper blacks, punchier colour, slightly darker overall [EDS music video].",
+        "effects": [
+          {
+            "filter": "hue_lightness_saturation",
+            "params": {
+              "av.s": 1.25
+            }
+          },
+          {
+            "filter": "color",
+            "params": {
+              "lift_r": 0.0,
+              "lift_g": 0.0,
+              "lift_b": 0.012,
+              "gamma_r": 0.93,
+              "gamma_g": 0.95,
+              "gamma_b": 0.98,
+              "gain_r": 1.04,
+              "gain_g": 1.05,
+              "gain_b": 1.08
+            }
+          },
+          {
+            "filter": "vignette",
+            "params": {
+              "radius": 1.0,
+              "smooth": 2.0,
+              "opacity": 0.6,
+              "mode": 1
+            }
+          }
+        ]
+      },
+      "sfx": {
+        "gain_db": -8.0,
+        "map": {
+          "bass_hit": "assets/bass_hit.wav",
+          "impact": "assets/impact.wav",
+          "whoosh": "assets/whoosh_fast_03.mp3",
+          "swish": "assets/whoosh_fast_02.mp3",
+          "riser": "assets/riser_short_01_0.9-2.95.wav",
+          "glitch": "assets/glitch.wav",
+          "sub_drop": "assets/sub_drop.wav"
+        },
+        "events": {
+          "flash": "bass_hit",
+          "shake": "impact",
+          "transition": "whoosh",
+          "text": "swish",
+          "reveal": "impact",
+          "hook": "sub_drop"
+        }
+      },
+      "fx": {
+        "track": "Effects",
+        "sfx_track": "Effect sounds",
+        "broll_track": "B-roll",
+        "density": {
+          "per_10s": 6
+        },
+        "safe_zone": "phone",
+        "never": [
+          "outside_safe_zone"
+        ],
+        "rhythm": "Accents on downbeats and the drop; a quieter bar before the drop; the end on the song's last hit."
+      },
+      "effects": {
+        "title_slam": {
+          "kind": "text_pop",
+          "about": "One huge condensed word on a downbeat (the place, the theme), white, no tilt.",
+          "size": 0.85,
+          "font": "heading",
+          "fill": "light",
+          "stroke": null,
+          "stroke_width": 0,
+          "tilt": 0,
+          "shadow": true,
+          "in": "pop",
+          "out": "pop",
+          "in_s": 0.12,
+          "out_s": 0.12,
+          "hold_s": 0.9,
+          "sfx": "bass_hit",
+          "sfx_offset_s": -0.017,
+          "rules": {
+            "triggers": [
+              "hook",
+              "topic_change",
+              "ending"
+            ],
+            "density": {
+              "per_10s": 1,
+              "min_gap_s": 4.0
+            },
+            "placement": {
+              "zone": "center",
+              "avoid": [
+                "covered"
+              ]
+            },
+            "duration_s": [
+              0.5,
+              2.0
+            ],
+            "when": "The opening downbeat and maybe the last; one or two words, upper case."
+          }
+        },
+        "beat_flash": {
+          "kind": "flash",
+          "about": "A white flash on a big downbeat or the drop (0.12 s).",
+          "color": "light",
+          "len": 0.12,
+          "opacity": 0.75,
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "cut",
+              "reveal"
+            ],
+            "density": {
+              "per_10s": 2,
+              "min_gap_s": 1.0
+            },
+            "when": "The drop and two or three big downbeats; never more than three flashes a second [RES], never on every beat."
+          }
+        },
+        "drop_shake": {
+          "kind": "shake",
+          "about": "A hard camera shake on the drop, with an impact.",
+          "amount": 0.7,
+          "len": 0.35,
+          "sfx": "impact",
+          "sfx_offset_s": -0.017,
+          "rules": {
+            "triggers": [
+              "reveal",
+              "cut"
+            ],
+            "density": {
+              "per_min": 4,
+              "min_gap_s": 6.0
+            },
+            "when": "The drop, and at most one other hit."
+          }
+        },
+        "zoom_pulse": {
+          "kind": "zoom_punch",
+          "about": "A quick zoom pulse in time with a beat (0.25 s, 112%).",
+          "scale": 1.12,
+          "ramp_s": 0.06,
+          "len": 0.25,
+          "rules": {
+            "triggers": [
+              "cut",
+              "emphasis"
+            ],
+            "density": {
+              "per_10s": 3,
+              "min_gap_s": 1.0
+            },
+            "duration_s": [
+              0.15,
+              0.4
+            ],
+            "when": "Inside a held shot during the build, on alternate beats; not every beat."
+          }
+        },
+        "glitch_cut": {
+          "kind": "glitch",
+          "about": "A digital glitch into a cut (0.2 s).",
+          "amount": 0.7,
+          "len": 0.2,
+          "sfx": "glitch",
+          "rules": {
+            "triggers": [
+              "cut",
+              "topic_change"
+            ],
+            "density": {
+              "per_min": 4,
+              "min_gap_s": 5.0
+            },
+            "when": "A change of section in the song (verse to chorus). Rotate with flashes; never both on one cut."
+          }
+        },
+        "riser_build": {
+          "kind": "sfx",
+          "about": "A riser that ends exactly on the drop.",
+          "sfx": "riser",
+          "sfx_offset_s": -1.86,
+          "rules": {
+            "triggers": [
+              "reveal"
+            ],
+            "density": {
+              "per_min": 1
+            },
+            "when": "Only when the song's own build is weak; it ends on the drop."
+          }
+        },
+        "whoosh_cut": {
+          "kind": "whoosh",
+          "about": "A whoosh into a cut between two moving shots.",
+          "sfx": "whoosh",
+          "sfx_offset_s": -0.14,
+          "rules": {
+            "triggers": [
+              "cut"
+            ],
+            "density": {
+              "per_10s": 1,
+              "min_gap_s": 4.0
+            },
+            "when": "Between two shots moving in the same direction (a match on motion); sparingly."
+          }
+        },
+        "transition_wipe": {
+          "kind": "transition",
+          "about": "A short wipe on a section change (0.2 s) [EDS].",
+          "transition": {
+            "type": "bar_horizontal",
+            "len": 0.2
+          },
+          "rules": {
+            "triggers": [
+              "topic_change"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 8.0
+            },
+            "when": "At most once or twice; hard cuts are the default."
+          }
+        }
+      },
+      "popups": {
+        "min_gap_s": 2.0,
+        "entries": []
+      },
+      "hook": {
+        "max_s": 2.0,
+        "approaches": [
+          "mid_action",
+          "result_first"
+        ],
+        "text": {
+          "max_words": 2,
+          "case": "upper",
+          "position": "center",
+          "size": 0.85,
+          "fill": "light",
+          "stroke": null,
+          "stroke_width": 0,
+          "font": "heading"
+        },
+        "rules": "Frame 0 is the most striking moving shot, on the song's first downbeat, from beat one [EDS]; one title word slams in with it. With no speech, letitedit_hooks offers picture moments only when the footage has picture facts; otherwise pick the opening shot by eye.",
+        "avoid": [
+          "slow fade-ins",
+          "black frames",
+          "a logo first"
+        ]
+      },
+      "credits": [
+        {
+          "file": "assets/bass_hit.wav",
+          "source": "synthesised by tools\\styles\\sounds.py (bass_hit)",
+          "licence": "letitedit's own (generated)"
+        },
+        {
+          "file": "assets/impact.wav",
+          "source": "synthesised by tools\\styles\\sounds.py (impact)",
+          "licence": "letitedit's own (generated)"
+        },
+        {
+          "file": "assets/glitch.wav",
+          "source": "synthesised by tools\\styles\\sounds.py (glitch)",
+          "licence": "letitedit's own (generated)"
+        },
+        {
+          "file": "assets/sub_drop.wav",
+          "source": "synthesised by tools\\styles\\sounds.py (sub_drop)",
+          "licence": "letitedit's own (generated)"
+        },
+        {
+          "file": "assets/whoosh_fast_03.mp3",
+          "source": "Freesound.org: Swosh / Whoosh / Air Cut by qubodup (freesound #60030) (https://freesound.org/people/qubodup/sounds/60030/); copy of whoosh_fast_03.mp3 from the local sound library (08 Whooshes & Transitions)",
+          "licence": "CC0 1.0 (Creative Commons 0)"
+        },
+        {
+          "file": "assets/whoosh_fast_02.mp3",
+          "source": "Freesound.org: swosh-22.flac by qubodup (freesound #60009) (https://freesound.org/people/qubodup/sounds/60009/); copy of whoosh_fast_02.mp3 from the local sound library (08 Whooshes & Transitions)",
+          "licence": "CC0 1.0 (Creative Commons 0)"
+        },
+        {
+          "file": "assets/riser_short_01_0.9-2.95.wav",
+          "source": "Freesound.org: Riser sound effect short.wav by syntheffects (freesound #685256) (https://freesound.org/people/syntheffects/sounds/685256/); trimmed copy (0.9-2.95 s) of riser_short_01.mp3 from the local sound library (08 Whooshes & Transitions)",
+          "licence": "CC0 1.0 (Creative Commons 0)"
+        },
+        {
+          "file": "preview.jpg",
+          "source": "Original preview imagery; hands, objects, places and titles only",
+          "licence": "Original letitedit footage: hands, objects, places and titles only; no faces"
+        }
+      ],
+      "measured": {},
+      "provenance": {
+        "made_by": "letitedit style library, wave 1",
+        "date": "2026-10-29",
+        "measured": "none yet (no reference videos in style-references)",
+        "sources": [
+          {
+            "url": "https://github.com/mindsurf0176/editstyle/blob/master/awesome-editstyles/presets/music-video.md",
+            "title": "EditStyle music video preset",
+            "used_for": "cut on the beat, cool contrasty look, short transitions, start on beat one, end on the final beat",
+            "licence": "MIT, Copyright (c) 2026 Minseo (consulted only; no text adapted)"
+          }
+        ],
+        "notes": "The speed-change numbers (slow 0.5x, fast 2-3x, short in total) are general practice; the one sports-edit page with numbers refused automated reading, so they are [UNV]/[GEN] and should be tuned on reference montages. The montage rules in letitedit-modes (montage-transformation) come first. Tags in ..\\SOURCES.md."
+      }
+    }
+  }
+}

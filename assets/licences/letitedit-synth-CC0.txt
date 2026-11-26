@@ -1,0 +1,5 @@
+letitedit synthesised sound effects (assets\sfx\synth)
+
+Made from scratch by letitedit's own code (tools\assets\synth_sfx.py: oscillators, filtered noise, envelopes; fixed seeds). No recordings or samples by anyone else are used.
+
+Released under CC0 1.0 Universal (public domain dedication): https://creativecommons.org/publicdomain/zero/1.0/

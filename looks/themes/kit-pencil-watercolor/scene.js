@@ -1,0 +1,6 @@
+const H = M.look.pencilWatercolour.start(c.w, c.h), P = H.paper(), W = H.work('boat'), C = H.palette, S = H.oval(SUN.x, SUN.y, SUN.r, SUN.r, 16);
+[HILL, HULL, SAIL, JIB].forEach((s, i) => H.layIn(W, H.poly(s, 8), {closed: true, seed: 3 + i})); H.layIn(W, S, {closed: true, seed: 9});
+H.wash(W, SKY, C.sky, {alpha: .3, seed: 301, at: [X(300), Y(100)]}); H.wash(W, SEA, C.sea, {alpha: .42, seed: 302, at: [X(500), Y(660)]}); H.wash(W, S, C.butter, {alpha: .8, seed: 303});
+H.form(W, HILL, C.leaf, C.leafShade, {seed: 304, light: [-5,-6]}); H.form(W, H.poly(HULL, 8), C.brick, C.earthShade, {seed: 305, light: [-6,-4]}); H.wash(W, H.poly(SAIL, 8), C.blush, {alpha: .4, seed: 306}); H.wash(W, H.poly(JIB, 8), C.coral, {alpha: .45, seed: 307});
+[HILL, HULL, SAIL, JIB].forEach((s, i) => H.graphite(W, H.poly(s, 8), {closed: true, seed: 22 + i})); H.graphite(W, MAST, {seed: 28, w: 1.8}); WAVES.forEach((w, i) => H.graphite(W, w, {seed: 30 + i, opacity: .45}));
+return (t) => { H.begin(g); P.draw(g); W.draw(g, {p: Math.min(1, t / 5.6)}); H.begin(g); H.finish(g); };

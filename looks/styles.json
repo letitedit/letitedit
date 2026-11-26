@@ -1,0 +1,136 @@
+[
+  {
+    "id": "build-transformation",
+    "title": "Build / transformation",
+    "order": 40,
+    "blurb": "Follow real work and the changes it makes.",
+    "kind": "both",
+    "footage": "yes",
+    "approved": false,
+    "review": "new",
+    "cut": true
+  },
+  {
+    "id": "talking-head",
+    "title": "Talking head",
+    "blurb": "Your footage, with a Look that fits.",
+    "order": 0,
+    "approved": true,
+    "kind": "both",
+    "footage": "yes",
+    "group": "footage",
+    "filmed": "one person talking to the camera"
+  },
+  {
+    "id": "idea",
+    "title": "Made from an idea",
+    "blurb": "Legacy group of the made-with-code Looks; New video shows them under the 100% AI Styles.",
+    "order": 10,
+    "approved": true,
+    "kind": "both",
+    "footage": "no",
+    "hidden": true
+  },
+  {
+    "id": "travel-event",
+    "title": "Travel film",
+    "blurb": "A visit made into a film: movement, discoveries and the sound of the place.",
+    "order": 70,
+    "approved": false,
+    "review": "new",
+    "footage": "yes",
+    "cut": true
+  },
+  {
+    "id": "indie-short-film",
+    "title": "Indie short film",
+    "blurb": "Performance-led scenes: considered light, pace, cuts and framing.",
+    "order": 80,
+    "approved": false,
+    "review": "new",
+    "footage": "yes"
+  },
+  {
+    "id": "event-highlight",
+    "title": "Event highlight",
+    "blurb": "One occasion, from anticipation to its natural release.",
+    "order": 75,
+    "approved": false,
+    "review": "new",
+    "footage": "yes",
+    "cut": true
+  },
+  {
+    "id": "mini-documentary",
+    "title": "Mini-documentary",
+    "blurb": "A factual story from archive pictures and sound.",
+    "order": 60,
+    "footage": "yes",
+    "approved": false,
+    "review": "new",
+    "cut": true
+  },
+  {
+    "id": "ai-explainer",
+    "title": "Explainer",
+    "blurb": "Explains one idea clearly with drawn places and people acting it out.",
+    "order": 10,
+    "approved": true,
+    "kind": "both",
+    "footage": "no",
+    "group": "ai"
+  },
+  {
+    "id": "ai-story",
+    "title": "Story",
+    "blurb": "A told story, drawn as scenes that move, with a narrator.",
+    "order": 11,
+    "approved": true,
+    "kind": "both",
+    "footage": "no",
+    "group": "ai"
+  },
+  {
+    "id": "ai-scrapbook",
+    "title": "Scrapbook",
+    "blurb": "A scrapbook page with your own pictures taped on, told in one camera move.",
+    "order": 12,
+    "approved": true,
+    "kind": "both",
+    "footage": "no",
+    "group": "ai"
+  },
+  {
+    "id": "conversation",
+    "title": "Conversation",
+    "blurb": "Two or more people talking: an interview, a podcast, a chat.",
+    "order": 1,
+    "approved": true,
+    "kind": "both",
+    "footage": "yes",
+    "group": "footage",
+    "filmed": "two or more people talking"
+  },
+  {
+    "id": "activity",
+    "title": "Action or activity",
+    "blurb": "Doing, making or going somewhere, with little talk or talk over the work.",
+    "order": 2,
+    "approved": true,
+    "kind": "both",
+    "footage": "yes",
+    "group": "footage",
+    "filmed": "action or activity, little talk to the camera"
+  },
+  {
+    "id": "screen",
+    "title": "Screen recording",
+    "blurb": "What happens on a screen: an app, a game, a walk-through.",
+    "order": 3,
+    "approved": true,
+    "kind": "both",
+    "footage": "yes",
+    "group": "footage",
+    "filmed": "a screen recording"
+  }
+]

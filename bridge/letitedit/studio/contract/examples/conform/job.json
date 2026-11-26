@@ -1,0 +1,20 @@
+{
+  "contract_version": "1.1",
+  "job_id": "ch-demo-conform-0004",
+  "kind": "conform",
+  "priority": "channel",
+  "requested_by": {
+    "app": "letitedit-channel",
+    "app_version": "0.1.0",
+    "channel_id": "demo"
+  },
+  "output_dir": "C:\\Users\\Sam\\AppData\\Local\\letitedit Channel\\channels\\demo\\studio\\ch-demo-conform-0004",
+  "inputs": {
+    "video": "D:\\Drops\\bath time final HLG.mov",
+    "platforms": [
+      "youtube_shorts",
+      "instagram_reels",
+      "youtube"
+    ]
+  }
+}

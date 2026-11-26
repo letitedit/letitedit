@@ -1,0 +1,6 @@
+const R = M.look.risograph.start(c.w, c.h), I = R.INK, box = {x0: 0, y0: 0, x1: c.w, y1: c.h}, hz = Y(640), inP = R.inside;
+const sheet = R.sheet('poster');
+R.pull(sheet, (G) => { R.screen(G, box, I.yellow, (x, y) => y < hz ? .15 + .6 * Math.pow(Math.max(0, y - Y(0)) / K(640), 1.6) + .5 * Math.exp(-Math.pow(Math.hypot(x - SUN.x, y - SUN.y) / K(280), 2)) : .2 * (1 - (y - hz) / K(440))); }, {off: R.REG.yellow, per: 3});
+R.pull(sheet, (G) => { R.screen(G, box, I.pink, (x, y) => { const d = Math.hypot(x - SUN.x, y - SUN.y); return d < SUN.r ? .8 : y < hz ? .25 * (1 - (y - Y(0)) / K(640)) : .3 * (1 - (y - hz) / K(440)); }); R.solid(G, HULL, I.pink); R.solid(G, JIB, I.pink); }, {off: R.REG.pink, per: 3});
+R.pull(sheet, (G) => { R.screen(G, box, I.blue, (x, y) => y > hz ? .3 + .5 * (y - hz) / K(440) : 0); R.solid(G, HILL, I.blue); R.solid(G, T([[350,780],[790,780],[730,800],[420,800]]), I.blue); R.solid(G, T([[562,300],[570,300],[570,700],[562,700]]), I.blue); R.solid(G, T([[580,620],[752,620],[770,660],[580,660]]), I.blue); }, {per: 3});
+return (t) => { R.begin(g); sheet.draw(g, {p: Math.min(1, t / 5)}); };

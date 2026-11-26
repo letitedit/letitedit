@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://letitedit.app/studio/1/kinds/batch_shorts.schema.json",
+  "title": "batch_shorts: several Shorts from one log and story pass",
+  "description": "The footage is logged once and the stories planned together; each Short is then cut, finished and reviewed on its own (each final keeps its own review). Each item's files are under items/<idea_id>/ and its result is a full short result (items/<idea_id>/result.json). One item failing does not fail the others.",
+  "$defs": {
+    "inputs": {
+      "type": "object",
+      "required": [
+        "tier",
+        "sources",
+        "ideas",
+        "look_id",
+        "platforms"
+      ],
+      "properties": {
+        "tier": {
+          "type": "string",
+          "enum": [
+            "preview",
+            "final"
+          ]
+        },
+        "sources": {
+          "$ref": "short.schema.json#/$defs/sources"
+        },
+        "ideas": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "allOf": [
+              {
+                "$ref": "short.schema.json#/$defs/idea"
+              },
+              {
+                "type": "object",
+                "required": [
+                  "idea_id"
+                ],
+                "properties": {
+                  "look_id": {
+                    "type": "string"
+                  },
+                  "sources": {
+                    "$ref": "short.schema.json#/$defs/sources"
+                  },
+                  "overlay_text": {
+                    "$ref": "../common.schema.json#/$defs/overlay_text"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "look_id": {
+          "type": "string"
+        },
+        "theme_id": {
+          "type": "string"
+        },
+        "brand_kit": {
+          "$ref": "../common.schema.json#/$defs/brand_kit"
+        },
+        "rules": {
+          "type": "array",
+          "items": {
+            "$ref": "../common.schema.json#/$defs/rule"
+          }
+        },
+        "music": {
+          "$ref": "../common.schema.json#/$defs/music_policy"
+        },
+        "captions": {
+          "type": "string"
+        },
+        "platforms": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "../common.schema.json#/$defs/platform_target"
+          }
+        },
+        "deliver": {
+          "$ref": "short.schema.json#/$defs/inputs/properties/deliver"
+        },
+        "no_shared_moments": {
+          "type": "boolean",
+          "default": true,
+          "description": "No two Shorts of the batch use the same moment."
+        },
+        "overlay_text": {
+          "$ref": "../common.schema.json#/$defs/overlay_text",
+          "description": "Words on every Short's picture; an idea's own overlay_text is added to these for that Short."
+        }
+      }
+    },
+    "output": {
+      "type": "object",
+      "required": [
+        "shared",
+        "items"
+      ],
+      "properties": {
+        "shared": {
+          "type": "object",
+          "properties": {
+            "log": {
+              "$ref": "../common.schema.json#/$defs/rel_path"
+            },
+            "story_plan": {
+              "$ref": "../common.schema.json#/$defs/rel_path"
+            },
+            "cost": {
+              "$ref": "../common.schema.json#/$defs/cost"
+            }
+          }
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "idea_id",
+              "state",
+              "result"
+            ],
+            "properties": {
+              "idea_id": {
+                "type": "string"
+              },
+              "state": {
+                "type": "string",
+                "enum": [
+                  "done",
+                  "failed",
+                  "cancelled"
+                ]
+              },
+              "result": {
+                "$ref": "../common.schema.json#/$defs/rel_path",
+                "description": "items/<idea_id>/result.json, a short result (its job_id is '<batch job_id>.<idea_id>', so it can be the from_job of a final, revise or retext)."
+              },
+              "error": {
+                "$ref": "../common.schema.json#/$defs/error"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

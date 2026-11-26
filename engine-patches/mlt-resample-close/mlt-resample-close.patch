@@ -1,0 +1,16 @@
+diff --git a/src/modules/resample/filter_resample.c b/src/modules/resample/filter_resample.c
+index ee8e09f7..96e89ac5 100644
+--- a/src/modules/resample/filter_resample.c
++++ b/src/modules/resample/filter_resample.c
+@@ -238,6 +238,11 @@ static void close_filter(mlt_filter filter)
+         free(pdata);
+         filter->child = NULL;
+     }
++    // Close the filter's own service and properties too, as the other filters' close functions do: without it a
++    // closed resample filter kept its properties (17 Windows handles) for the rest of the process.
++    filter->close = NULL;
++    filter->parent.close = NULL;
++    mlt_service_close(&filter->parent);
+ }
+ 
+ /** Constructor for the filter.

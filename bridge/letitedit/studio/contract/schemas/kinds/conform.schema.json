@@ -1,0 +1,146 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://letitedit.app/studio/1/kinds/conform.schema.json",
+  "title": "conform: per-platform files of a finished video, no creative change",
+  "description": "No AI. H.264, the platform's frame rate (30 fps by default), under its size cap, loudness to -14 LUFS / -1 dBTP unless given, HLG or PQ tone-mapped to SDR, and a cover frame. Never crops, reframes or pads unless fit says so: a platform whose shape differs is refused for that platform. Runs under the PC lock.",
+  "$defs": {
+    "inputs": {
+      "type": "object",
+      "required": [
+        "platforms"
+      ],
+      "properties": {
+        "video": {
+          "$ref": "../common.schema.json#/$defs/abs_path",
+          "description": "The finished video. Or from_job: that job's main video."
+        },
+        "platforms": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "../common.schema.json#/$defs/platform_target"
+          }
+        },
+        "max_mb": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "number",
+            "minimum": 1
+          },
+          "description": "Per platform id; a platform_target's own max_mb wins; absent: the platform preset's cap."
+        },
+        "fps": {
+          "type": "number",
+          "default": 30
+        },
+        "loudness_lufs": {
+          "type": "number",
+          "default": -14
+        },
+        "true_peak_dbtp": {
+          "type": "number",
+          "default": -1
+        },
+        "cover_at_s": {
+          "$ref": "../common.schema.json#/$defs/seconds",
+          "description": "Absent: the sharpest frame of the first 3 s."
+        },
+        "fit": {
+          "type": "string",
+          "enum": [
+            "refuse",
+            "pad"
+          ],
+          "default": "refuse"
+        }
+      }
+    },
+    "output": {
+      "type": "object",
+      "required": [
+        "files",
+        "source"
+      ],
+      "properties": {
+        "source": {
+          "type": "object",
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "properties": {
+            "path": {
+              "type": "string"
+            },
+            "sha256": {
+              "$ref": "../common.schema.json#/$defs/sha256"
+            },
+            "width": {
+              "type": "integer"
+            },
+            "height": {
+              "type": "integer"
+            },
+            "fps": {
+              "type": "number"
+            },
+            "hdr": {
+              "type": "string",
+              "enum": [
+                "sdr",
+                "hlg",
+                "pq",
+                "unknown"
+              ]
+            },
+            "loudness_lufs": {
+              "type": "number"
+            }
+          }
+        },
+        "files": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "platform",
+              "status"
+            ],
+            "properties": {
+              "platform": {
+                "$ref": "../common.schema.json#/$defs/platform"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "made",
+                  "refused"
+                ]
+              },
+              "video": {
+                "$ref": "../common.schema.json#/$defs/rel_path"
+              },
+              "cover": {
+                "$ref": "../common.schema.json#/$defs/rel_path"
+              },
+              "tonemapped": {
+                "type": "boolean"
+              },
+              "reason": {
+                "type": "string",
+                "enum": [
+                  "shape_differs",
+                  "too_long",
+                  "cannot_fit_size"
+                ]
+              },
+              "message": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

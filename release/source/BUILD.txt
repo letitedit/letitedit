@@ -1,0 +1,56 @@
+How the letitedit editor binaries were built (C:\LetItEdit, Windows 11 x64)
+=========================================================================
+
+1. Editor executable (app\letitedit-<yyyymmdd-HHMMSS>.exe; current build 20261020-054716)
+   Source: letitedit-fork-src.tar.gz (= https://github.com/mltframework/shotcut commit
+           325c2cc6422d93567d4edb57f1fee401f73beea1, 2026-09-27, + letitedit-fork.patch).
+   Toolchain: MSYS2 MINGW64 (C:\msys64), gcc 16.2.0, CMake + Ninja, against the MSYS2 packages
+           mingw-w64-x86_64-qt6-base 6.11.2-2 and qt6-{declarative,multimedia,svg,tools,charts,websockets,
+           shadertools,translations} 6.11.2-1, mingw-w64-x86_64-mlt 7.40.0-2 headers (ABI-compatible with the
+           bundled MLT 7.41.0), fftw 3.3.11-1, SDL2 2.32.10-1, whisper.cpp 1~1.9.4.r181.gd09f61a70-1.
+   Commands (C:\LetItEdit\build_and_deploy.ps1):
+     cd src
+     cmake -S . -B build/release -G Ninja -DCMAKE_BUILD_TYPE=RelWithDebInfo -DSHOTCUT_VERSION=26.9.27
+     cmake --build build/release -j 6
+     strip -o app\letitedit-<stamp>.exe build/release/src/shotcut.exe
+   The exe is copied into the official Shotcut 26.9.27 Windows folder layout (app\), next to the DLLs listed in
+   app-binaries-manifest.tsv. Older letitedit-*.exe builds in app\ were built from earlier states of the
+   same tree; their exact source was not kept, so a release should ship only the newest build.
+
+2. MLT modules app\lib\mlt\libmltqt6.dll (text: fonts + weights) and libmltplus.dll (captions to the end), built
+   2026-10-30 (the qt module's fonts + weight patches were first deployed 2026-10-20)
+   Source: mlt-63218a28-letitedit-src.tar.gz (= https://github.com/mltframework/mlt commit
+           63218a28d21f1e64b5b9e6671b4ff9146023282c, the source of the bundled MLT 7.41.0,
+           + mlt-patches\0001-mlt-qt-fontdirs.patch + 0002-mlt-qtext-weight.patch + 0003-mlt-subtitle-feed-range.patch).
+   Build (MSYS2 MINGW64, gcc 16.2.0, Qt 6.11.2, fftw 3.3.11, libexif 0.6.26; C:\LetItEdit\engine-patches\build_modules.sh):
+     cmake -S mlt -B build/qt6 -G Ninja -DCMAKE_BUILD_TYPE=Release -DCLANG_FORMAT=OFF -DBUILD_TESTING=OFF -DGPL=ON
+       -DGPL3=ON -DMOD_QT6=ON (every other MOD_* OFF) -DCMAKE_FIND_LIBRARY_SUFFIXES=.a
+     cmake --build build/qt6 --target mltqt6
+     cmake -S mlt -B build/plus (same options) -DMOD_QT6=OFF -DMOD_PLUS=ON     (FFTW linked as libfftw3-3.dll)
+     cmake --build build/plus --target mltplus
+   Both import exactly the DLLs the shipped Shotcut 26.9.27 modules import (FFTW and libexif static in the qt module,
+   libfftw3-3.dll for plus). The SHA-256 of the built files is in engine-patches\modules\SHA256SUMS.txt.
+
+2b. The MLT framework app\libmlt-7.dll (a clip's normalizer links freed with the clip), built 2026-11-21
+   Source: the same mlt-63218a28-letitedit-src.tar.gz (MLT 63218a28d21f1e64b5b9e6671b4ff9146023282c
+           + mlt-patches\0004-mlt-chain-normalizer-ref.patch + mlt-patches\0005-mlt-cache-held-item.patch, in that order;
+           patches 0001-0003 touch only the qt and plus modules).
+   Build (MSYS2 MINGW64, gcc 16.2.0; C:\LetItEdit\engine-patches\mlt-cache-held-item\build_libmlt.sh, both patches):
+     cmake -S mlt -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DCLANG_FORMAT=OFF -DBUILD_TESTING=OFF -DGPL=ON
+       -DGPL3=ON (every MOD_* OFF, -DSWIG_PYTHON=OFF -DBUILD_DOCS=OFF)
+     cmake --build build --target mlt
+   It imports the same DLLs as the shipped Shotcut 26.9.27 libmlt-7.dll (KERNEL32, libdl, libiconv-2,
+   libwinpthread-1, msvcrt) and exports the same 1,174 functions. Its SHA-256 is in
+   engine-patches\modules\SHA256SUMS.txt. Until it is deployed, app\libmlt-7.dll is the stock one (item 3).
+
+3. Everything else in app\ is the official Shotcut 26.9.27 Windows build (GitHub release v26.9.27,
+   shotcut-win64-26.9.27.zip), unchanged:
+   - 168 DLLs byte-identical to MSYS2 packages (Qt 6.11.2, x264 0.165.r3222.b35605a, x265 4.3, ...):
+     source = https://repo.msys2.org/mingw/sources/<pkg>-<version>.src.tar.zst (msys2-sources.tsv;
+     msys2_sources.py fetch <dir> downloads them: 55 archives, ~730 MB).
+   - the rest (FFmpeg n9.0.2-12-gc867e13549 configured --enable-gpl --enable-version3, MLT 7.41.0, frei0r,
+     movit, rubberband, OpenCV 4.x + contrib 4.12.0, whisper.cpp 1.8.3, dav1d, aom 3.13.1, vmaf 3.0.0,
+     glaxnimate 0.5.4, libspatialaudio, ladspa-swh, rnnoise, SVT-AV1, ...) built by Shotcut's CI with
+     src\shotcut\scripts\build-shotcut-msys2.sh: source = shotcut-src-26.9.27.txz, attached to each letitedit release
+     (sha256 c20cef9e5e23acbbd2ba20a46e53919b923839a7f577584c0f9ec18aefa06576, from
+     https://github.com/mltframework/shotcut/releases/download/v26.9.27/shotcut-src-26.9.27.txz).

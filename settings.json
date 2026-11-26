@@ -1,0 +1,13 @@
+{
+  "footage_log_engine": "auto",
+  "vision_model": "auto",
+  "vision_models": {
+    "gpu8": "Qwen/Qwen3.5-4B",
+    "gpu4": "Qwen/Qwen3.5-2B"
+  },
+  "speech_engine": "auto",
+  "whisper_gpu_mb": 6000,
+  "tier_gpu8_mb": 7600,
+  "tier_gpu4_mb": 3800,
+  "hardware_ttl_s": 300
+}

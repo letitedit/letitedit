@@ -1,0 +1,72 @@
+# letitedit's releases: the public release repository's .github/workflows/release.yml.
+# release/source/make_public_repo.py puts it there. In letitedit's own repositories it is only this template, outside
+# .github, so it never runs.
+#
+# A tag pushed to the release repository (v1.0.0-beta-20261124.12, say) publishes that tag's Release with this
+# workflow's own GITHUB_TOKEN, so the Release shows as made by github-actions[bot]. Its files wait in a draft release
+# named "staging-<tag>" (a draft is never public). This checks that they are exactly the files named in
+# .github/release/assets.txt at the tag, copies them into the Release with SHA256SUMS.txt, and deletes the draft.
+# The Release's text is .github/release/notes.md at the tag; GitHub adds the tag's source archives itself.
+#
+# It runs only on GitHub's own runners (ubuntu-latest), never a self-hosted one: this repository is public.
+# It uses no actions, only the GitHub CLI and jq that GitHub's runners carry, and no secret but its own token.
+name: release
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-${{ github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      GH_TOKEN: ${{ github.token }}
+      REPO: ${{ github.repository }}
+      TAG: ${{ github.ref_name }}
+    steps:
+      - name: Check the tag
+        run: |
+          set -euo pipefail
+          [[ "$TAG" =~ ^v[0-9][0-9A-Za-z.+-]*$ ]] || { echo "not a release tag: $TAG"; exit 1; }
+          if gh api "repos/$REPO/releases/tags/$TAG" --silent 2>/dev/null; then
+            echo "the release $TAG exists already"; exit 1
+          fi
+
+      - name: Fetch the staged files
+        run: |
+          set -euo pipefail
+          raw() { gh api -H 'Accept: application/vnd.github.raw+json' "repos/$REPO/contents/$1?ref=$TAG"; }
+          raw .github/release/assets.txt | sed 's/\r$//' | grep -Ev '^[[:space:]]*(#|$)' | LC_ALL=C sort > expected.txt
+          raw .github/release/notes.md > notes.md
+          gh api --paginate "repos/$REPO/releases?per_page=100" \
+            | jq -r --arg name "staging-$TAG" '.[] | select(.draft and .name == $name) | .id' > drafts.txt
+          [ "$(wc -l < drafts.txt)" -eq 1 ] || { echo "want one draft release named staging-$TAG"; exit 1; }
+          draft="$(cat drafts.txt)"
+          echo "DRAFT=$draft" >> "$GITHUB_ENV"
+          mkdir files
+          gh api --paginate "repos/$REPO/releases/$draft/assets?per_page=100" \
+            | jq -r '.[] | "\(.id) \(.name)"' > staged.txt
+          while read -r id name; do
+            [[ "$id" =~ ^[0-9]+$ && "$name" =~ ^[A-Za-z0-9][A-Za-z0-9._+-]*$ ]] || { echo "unexpected file: $name"; exit 1; }
+            gh api -H 'Accept: application/octet-stream' "repos/$REPO/releases/assets/$id" > "files/$name"
+          done < staged.txt
+          (cd files && ls -1) | LC_ALL=C sort > got.txt
+          diff expected.txt got.txt || { echo "the draft's files differ from .github/release/assets.txt"; exit 1; }
+
+      - name: Publish the release
+        run: |
+          set -euo pipefail
+          (cd files && sha256sum -- *) > SHA256SUMS.txt
+          pre=()
+          case "$TAG" in *-alpha*|*-beta*|*-rc*) pre=(--prerelease) ;; esac
+          gh release create "$TAG" --repo "$REPO" --verify-tag --title "letitedit ${TAG#v}" \
+            --notes-file notes.md "${pre[@]}" files/* SHA256SUMS.txt
+          gh api -X DELETE "repos/$REPO/releases/$DRAFT"

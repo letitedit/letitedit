@@ -1,0 +1,273 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://letitedit.app/studio/1/kinds/inspect.schema.json",
+  "title": "inspect: what is in a finished video made elsewhere",
+  "description": "Local only: no paid service, no new download. Each finding is found, none_found or could_not_check (with a reason). none_found is what letitedit's checks saw, not a guarantee.",
+  "$defs": {
+    "inputs": {
+      "type": "object",
+      "required": [
+        "video"
+      ],
+      "properties": {
+        "video": {
+          "$ref": "../common.schema.json#/$defs/abs_path"
+        },
+        "checks": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "watermarks",
+              "end_cards",
+              "music",
+              "film_tv",
+              "transcript",
+              "choices"
+            ]
+          },
+          "description": "Absent: all."
+        }
+      }
+    },
+    "finding": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "found",
+            "none_found",
+            "could_not_check"
+          ]
+        },
+        "reason": {
+          "type": "string"
+        },
+        "how": {
+          "type": "string",
+          "enum": [
+            "detector",
+            "vision_model",
+            "ai_review",
+            "sound_analysis",
+            "not_checked"
+          ]
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "what",
+              "start",
+              "end"
+            ],
+            "properties": {
+              "what": {
+                "type": "string",
+                "description": "e.g. 'CapCut watermark, bottom right', 'TikTok end card'."
+              },
+              "start": {
+                "$ref": "../common.schema.json#/$defs/seconds"
+              },
+              "end": {
+                "$ref": "../common.schema.json#/$defs/seconds"
+              },
+              "confidence": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "frames": {
+                "type": "array",
+                "maxItems": 3,
+                "items": {
+                  "$ref": "../common.schema.json#/$defs/evidence_frame"
+                }
+              }
+            }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "could_not_check"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "reason"
+            ]
+          }
+        }
+      ]
+    },
+    "output": {
+      "type": "object",
+      "required": [
+        "duration_s",
+        "watermarks",
+        "end_cards",
+        "music",
+        "film_tv",
+        "transcript",
+        "rights",
+        "location_metadata"
+      ],
+      "properties": {
+        "duration_s": {
+          "$ref": "../common.schema.json#/$defs/seconds"
+        },
+        "width": {
+          "type": "integer"
+        },
+        "height": {
+          "type": "integer"
+        },
+        "fps": {
+          "type": "number"
+        },
+        "hdr": {
+          "type": "string",
+          "enum": [
+            "sdr",
+            "hlg",
+            "pq",
+            "unknown"
+          ]
+        },
+        "watermarks": {
+          "$ref": "#/$defs/finding"
+        },
+        "end_cards": {
+          "$ref": "#/$defs/finding"
+        },
+        "music": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/finding"
+            },
+            {
+              "type": "object",
+              "properties": {
+                "looks_like_known_song": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                },
+                "why": {
+                  "type": "string"
+                },
+                "vocals": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "film_tv": {
+          "$ref": "#/$defs/finding"
+        },
+        "transcript": {
+          "type": "object",
+          "required": [
+            "status"
+          ],
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": [
+                "found",
+                "none_found",
+                "could_not_check"
+              ]
+            },
+            "reason": {
+              "type": "string"
+            },
+            "path": {
+              "$ref": "../common.schema.json#/$defs/rel_path"
+            },
+            "language": {
+              "type": "string"
+            },
+            "text": {
+              "type": "string",
+              "description": "The words, up to 4,000 characters; the full words with times are in path."
+            }
+          }
+        },
+        "choices": {
+          "$ref": "../common.schema.json#/$defs/choices"
+        },
+        "rights": {
+          "type": "object",
+          "required": [
+            "risk",
+            "reasons"
+          ],
+          "properties": {
+            "risk": {
+              "type": "string",
+              "enum": [
+                "low",
+                "medium",
+                "high",
+                "unknown"
+              ]
+            },
+            "reasons": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "location_metadata": {
+          "type": "object",
+          "required": [
+            "status"
+          ],
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": [
+                "present",
+                "none",
+                "unknown"
+              ]
+            },
+            "why": {
+              "type": "string",
+              "description": "With unknown: why the file couldn't be read through."
+            },
+            "found": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "The tags found, e.g. location.ISO6709, ©xyz, EXIF GPS. Their values are never copied into the result."
+            }
+          }
+        }
+      }
+    }
+  }
+}

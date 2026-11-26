@@ -1,0 +1,1152 @@
+{
+  "format": "letitedit-look-settings/1",
+  "id": "pack-ugc-product-ad",
+  "defaults_are": "taste",
+  "share": false,
+  "values": {
+    "format": "letitedit-style/3",
+    "name": "UGC Product Ad",
+    "description": "A 20-45 s vertical ad that looks like a person showing a thing they use - native text and captions, quick proof, one call to action.",
+    "colors": {
+      "primary": "#FFFFFF",
+      "secondary": "#FFE14D",
+      "accent": "#FF4D6D",
+      "dark": "#111111",
+      "light": "#FFFFFF",
+      "go": "#2ECC71",
+      "paper": "#FFFFFF"
+    },
+    "fonts": {
+      "heading": {
+        "family": "Inter",
+        "weight": 800
+      },
+      "body": {
+        "family": "Inter",
+        "weight": 600
+      },
+      "captions": {
+        "family": "Inter",
+        "weight": 700
+      }
+    },
+    "captions": {
+      "font": "captions",
+      "size": 44,
+      "fill": "light",
+      "outline": {
+        "color": "dark",
+        "width": 5
+      },
+      "shadow": null,
+      "background": null,
+      "position": "bottom",
+      "margin": 0.33,
+      "max_chars": 16,
+      "max_lines": 1,
+      "case": "as_spoken"
+    },
+    "text": {
+      "font": "heading",
+      "size": 80,
+      "fill": "dark",
+      "outline": null
+    },
+    "graphics": {
+      "word_captions": {
+        "style": "pop",
+        "font": "captions",
+        "size": 44,
+        "fill": "light",
+        "highlight": "secondary",
+        "outline": "dark",
+        "outline_width": 5,
+        "shadow": null,
+        "position": 0.62,
+        "max_width": 0.8,
+        "uppercase": false,
+        "pop_scale": 1.08
+      },
+      "badge": {
+        "font": "heading",
+        "size": 44,
+        "fill": "dark",
+        "background": "paper"
+      },
+      "list_card": {
+        "font": "heading",
+        "body_font": "body",
+        "size": 40,
+        "title_size": 46,
+        "fill": "dark",
+        "title_fill": "dark",
+        "panel": "paper",
+        "panel_opacity": 0.94,
+        "check_color": "go",
+        "cross_color": "accent",
+        "mark_color": "dark",
+        "radius": 26
+      }
+    },
+    "music": {
+      "zones": {
+        "talk": -10.0,
+        "montage": -4.0,
+        "quiet": -24.0,
+        "swell": -3.0,
+        "end": -4.0
+      },
+      "duck_under_speech": true,
+      "merge_gap": 4.0,
+      "attack": 0.3,
+      "release": 0.9,
+      "crossfade": 3.0,
+      "fade_in": 1.5,
+      "fade_out": 3.0,
+      "dialogue_lufs": null,
+      "sources": [],
+      "notes": "An upbeat, light bed without lyrics (music-library: Pop / Bright, Electronic / Upbeat Playful); none in the organic variant [RSL].",
+      "likes": [],
+      "avoid": [],
+      "theme": null
+    },
+    "sfx": {
+      "gain_db": -14.0,
+      "map": {
+        "pop": "library/pop_cartoon_02",
+        "tick": "library/ding_confirm_01",
+        "cash": "library/cash_register_04",
+        "swipe": "library/whoosh_fast_03",
+        "click": "library/click_ui_02",
+        "sparkle": "synth/sparkle",
+        "notify": "synth/notify-up"
+      },
+      "events": {
+        "popup": "pop",
+        "text": "click",
+        "count": "tick",
+        "transition": "swipe",
+        "reveal": "sparkle",
+        "end": "notify"
+      }
+    },
+    "editing": {
+      "max_pause": 0.25,
+      "pad_in": 0.04,
+      "pad_out": 0.12,
+      "blur_pad": true,
+      "transitions": "cut",
+      "pace": "fast",
+      "intro": null,
+      "outro": null
+    },
+    "export": {
+      "preset": "social_h264",
+      "loudness": -14.0
+    },
+    "look": {
+      "about": "True to life and bright - the product's real colours, a little lift and clarity, no stylised grade.",
+      "effects": [
+        {
+          "filter": "hue_lightness_saturation",
+          "params": {
+            "av.s": 1.05
+          }
+        },
+        {
+          "filter": "color",
+          "params": {
+            "lift_r": 0.01,
+            "lift_g": 0.01,
+            "lift_b": 0.01,
+            "gamma_r": 1.03,
+            "gamma_g": 1.03,
+            "gamma_b": 1.03,
+            "gain_r": 1.02,
+            "gain_g": 1.02,
+            "gain_b": 1.02
+          }
+        }
+      ]
+    },
+    "taste": "",
+    "label": "Product ad (UGC)",
+    "summary": "A creator-style product ad - the problem in the first seconds, the product in hand, proof points that tick in, the price, one clear ask.",
+    "kind": "short",
+    "tags": [
+      "product",
+      "ad",
+      "ugc",
+      "review",
+      "unboxing",
+      "demo",
+      "native",
+      "captions",
+      "shorts"
+    ],
+    "preview": "preview.jpg",
+    "recipe": "recipe.md",
+    "credits": [
+      {
+        "file": "preview.jpg",
+        "source": "Original preview imagery; hands, objects, places and titles only",
+        "licence": "Original letitedit footage: hands, objects, places and titles only; no faces"
+      }
+    ],
+    "effects": {
+      "hook_text": {
+        "kind": "graphic",
+        "about": "The hook as native text on a white box near the top, there from frame 0 for the first 2-3 s; not the captions [RSL every video gets a hook overlay that is not the captions].",
+        "template": "badge",
+        "params": {
+          "position": [
+            0.5,
+            0.22
+          ]
+        },
+        "len": 2.8,
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "hook"
+          ],
+          "density": {
+            "per_min": 1
+          },
+          "duration_s": [
+            2.0,
+            3.5
+          ],
+          "when": "The problem, the curiosity or the benefit in seven words or fewer [SGN three hook families]; no brand name, no logo, no greeting [RSL]. Params text."
+        }
+      },
+      "product_punch": {
+        "kind": "zoom_punch",
+        "about": "A punch-in to 112% on every other jump cut, back to 100% on the next [RSL alternate about 1.0 and 1.12].",
+        "scale": 1.12,
+        "ramp_s": 0.05,
+        "rules": {
+          "triggers": [
+            "cut",
+            "emphasis"
+          ],
+          "density": {
+            "per_10s": 3,
+            "min_gap_s": 2.0
+          },
+          "when": "Alternate framings so jump cuts read as edits, not glitches; never two punch-ins in a row."
+        }
+      },
+      "insert": {
+        "kind": "broll",
+        "about": "A close-up of the product or the result over the voice, 1.5-3 s [RSL b-roll holds 1.5-3 s].",
+        "fit": "cover",
+        "len": 2.0,
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "mention",
+            "list_item"
+          ],
+          "density": {
+            "per_10s": 2,
+            "min_gap_s": 3.0
+          },
+          "duration_s": [
+            1.2,
+            3.0
+          ],
+          "never": [
+            {
+              "first_s": 0.8
+            }
+          ],
+          "when": "The exact thing being said (the part, the box, the result); 30-50% of the body covered [RSL]. Never a random shot."
+        }
+      },
+      "proof_points": {
+        "kind": "graphic",
+        "about": "Three proof points that tick in on a white card as they are said (what you get, what it does, what it costs) - the reason to believe.",
+        "template": "list_card",
+        "params": {
+          "position": [
+            0.5,
+            0.3
+          ],
+          "mark": "check"
+        },
+        "len": 6.0,
+        "sfx": "tick",
+        "rules": {
+          "triggers": [
+            "list_item"
+          ],
+          "density": {
+            "per_min": 1
+          },
+          "duration_s": [
+            4.0,
+            15.0
+          ],
+          "when": "Once, over the demo (up as long as the points take to say, the body being 15-25 s [NIN]); params title (short, e.g. \"Why it's worth it\"), items in the speaker's own words, and times so each row lands on its words. Claims only as said and true."
+        }
+      },
+      "tick": {
+        "kind": "popup",
+        "about": "A green tick beside a point as it is said, with a ding.",
+        "asset": "emoji:check mark button",
+        "size": 0.14,
+        "in": "pop",
+        "out": "pop",
+        "hold_s": 1.0,
+        "sfx": "tick",
+        "rules": {
+          "triggers": [
+            "list_item",
+            "reveal"
+          ],
+          "density": {
+            "per_10s": 2,
+            "min_gap_s": 2.0
+          },
+          "placement": {
+            "zone": "opposite_face",
+            "avoid": [
+              "face",
+              "captions",
+              "covered"
+            ]
+          },
+          "duration_s": [
+            0.8,
+            1.6
+          ],
+          "never": [
+            "over_face",
+            "over_captions"
+          ],
+          "when": "Each benefit or included part when there is no proof card on screen."
+        }
+      },
+      "price_pop": {
+        "kind": "text_pop",
+        "about": "The price as big numerals with a till sound [RSL digits with units].",
+        "size": 0.5,
+        "fill": "secondary",
+        "stroke": "dark",
+        "stroke_width": 12,
+        "tilt": -4,
+        "position": [
+          0.5,
+          0.36
+        ],
+        "hold_s": 1.2,
+        "sfx": "cash",
+        "rules": {
+          "triggers": [
+            "number"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 10.0
+          },
+          "placement": {
+            "avoid": [
+              "face",
+              "captions",
+              "covered"
+            ]
+          },
+          "duration_s": [
+            0.8,
+            2.0
+          ],
+          "never": [
+            "over_face"
+          ],
+          "when": "The price or the one number that sells it, written as said ($12, 2 tabs, 10 min)."
+        }
+      },
+      "arrow": {
+        "kind": "popup",
+        "about": "A pointing hand or arrow at the feature being shown.",
+        "asset": "emoji:backhand index pointing down",
+        "size": 0.14,
+        "in": "drop",
+        "out": "pop",
+        "hold_s": 1.0,
+        "sfx": "pop",
+        "rules": {
+          "triggers": [
+            "mention"
+          ],
+          "density": {
+            "per_min": 3,
+            "min_gap_s": 6.0
+          },
+          "placement": {
+            "avoid": [
+              "face",
+              "captions",
+              "covered"
+            ]
+          },
+          "duration_s": [
+            0.7,
+            1.6
+          ],
+          "never": [
+            "over_face",
+            "over_captions"
+          ],
+          "when": "The exact spot of a feature (a switch, a tab, a port), placed just above it."
+        }
+      },
+      "swipe_reveal": {
+        "kind": "whoosh",
+        "about": "A swipe whoosh on the cut to the product reveal.",
+        "sfx": "swipe",
+        "sfx_offset_s": -0.14,
+        "rules": {
+          "triggers": [
+            "reveal",
+            "cut"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 10.0
+          },
+          "when": "Produced variant only; the first look at the product or the result."
+        }
+      },
+      "cta": {
+        "kind": "graphic",
+        "about": "The call to action - one ask on two short lines, in a dark native text box (the hook's box inverted, so it reads on light walls too), over the last 3-5 s [RSL produced end card 3-5 s; NIN one action].",
+        "template": "badge",
+        "params": {
+          "position": [
+            0.5,
+            0.36
+          ],
+          "size": 46,
+          "background": "dark",
+          "fill": "light"
+        },
+        "len": 3.5,
+        "sfx": "notify",
+        "rules": {
+          "triggers": [
+            "ending"
+          ],
+          "density": {
+            "per_min": 1
+          },
+          "duration_s": [
+            3.0,
+            5.0
+          ],
+          "when": "The produced variant ends on it (params text, seven words or fewer) - the brief's ask, never a made-up offer. The organic variant ends on the last spoken line plus about half a second instead [RSL]."
+        }
+      }
+    },
+    "fx": {
+      "track": "Effects",
+      "sfx_track": "Effect sounds",
+      "broll_track": "B-roll",
+      "density": {
+        "per_10s": 5,
+        "per_min": null,
+        "min_gap_s": null
+      },
+      "safe_zone": "phone",
+      "never": [
+        "outside_safe_zone",
+        "overlapping"
+      ],
+      "rhythm": "Something new every 2-3 s - a punch-in, an insert of the product, a tick, the price; quiet on the call to action."
+    },
+    "popups": {
+      "track": null,
+      "sfx_track": null,
+      "min_gap_s": 2.0,
+      "max_total": 4,
+      "entries": [
+        {
+          "id": "money",
+          "words": [
+            "bucks",
+            "dollars",
+            "price",
+            "cheap",
+            "affordable"
+          ],
+          "asset": "emoji:money bag",
+          "zone": "opposite_face",
+          "size": 0.14,
+          "in": "drop",
+          "out": "pop",
+          "hold_s": 1.0,
+          "sfx": "cash",
+          "max_per_video": 1,
+          "cooldown_s": 20,
+          "avoid": [
+            "face",
+            "captions",
+            "covered"
+          ]
+        },
+        {
+          "id": "works",
+          "words": [
+            "it works",
+            "works great",
+            "easy"
+          ],
+          "asset": "emoji:check mark button",
+          "zone": "opposite_face",
+          "size": 0.13,
+          "in": "pop",
+          "out": "pop",
+          "hold_s": 1.0,
+          "sfx": "tick",
+          "max_per_video": 1,
+          "cooldown_s": 20,
+          "avoid": [
+            "face",
+            "captions",
+            "covered"
+          ]
+        }
+      ]
+    },
+    "hook": {
+      "max_s": 3.0,
+      "approaches": [
+        "stakes",
+        "question",
+        "result_first",
+        "number"
+      ],
+      "text": {
+        "max_words": 7,
+        "case": "as_said",
+        "position": "top",
+        "size": 0.5,
+        "fill": "dark",
+        "stroke": null,
+        "stroke_width": 0,
+        "font": "heading"
+      },
+      "rules": "The first frame and the first spoken line both land inside 3 s [NIN], the product already in hand or in frame [SGN]. Make three openings that differ in kind - the problem, curiosity, the direct benefit [SGN] - for the person to test; no logo, brand name or greeting in the first 3 s [RSL].",
+      "avoid": [
+        "greetings",
+        "a logo first",
+        "the brand name first",
+        "a slow unboxing start"
+      ]
+    },
+    "broll": {
+      "amount": "some",
+      "kinds": [],
+      "favorites": "",
+      "notes": ""
+    },
+    "shots": {
+      "framing": "medium",
+      "camera": "handheld",
+      "punch_ins": "some",
+      "notes": ""
+    },
+    "signature": {
+      "touches": []
+    },
+    "measured": {},
+    "provenance": {
+      "made_by": "letitedit style library, wave 2",
+      "date": "2026-10-30",
+      "measured": "none yet (no reference videos in style-references)",
+      "sources": [
+        {
+          "url": "https://github.com/real-simple-labs/agentic-video-editing/blob/main/skills/ve-video-edit-general/references/video-editing-standards.md",
+          "title": "Real Simple Labs UGC editing standards (2026-10-13)",
+          "used_for": "organic vs produced, hook overlay, caption size, place and case, pause caps, punch-ins 1.0/1.12, b-roll 1.5-3 s and 30-50%, a change every 2-3 s, lengths, music level, end card",
+          "licence": "MIT, Copyright (c) 2026 Real Simple Labs (consulted only; no text adapted)"
+        },
+        {
+          "url": "https://shortgenius.com/blog/how-to-make-ugc",
+          "title": "ShortGenius UGC guide",
+          "used_for": "five beats, three hook families, trim the first half-second",
+          "licence": "none found (numbers only)"
+        },
+        {
+          "url": "https://ninefolio.com/resources/how-to-edit-ugc-videos",
+          "title": "Ninefolio UGC editing",
+          "used_for": "3 s hook, 15-25 s body, 3-5 s ask; captions above the middle, 2-4 words; one action",
+          "licence": "none found (numbers only)"
+        }
+      ],
+      "notes": "The sources disagree on caption height (RSL near 62% down, Ninefolio a little above the middle); 62% is used. Tags in ..\\SOURCES.md."
+    }
+  },
+  "asset_root": "resources",
+  "files": {
+    "preview.jpg": "resources/2b037dae08f7ba54ff82439f.jpg",
+    "recipe.md": "recipe.md"
+  },
+  "links": {
+    "recipe": "recipe.md",
+    "preview": "preview.jpg"
+  },
+  "legacy": {
+    "format": "letitedit-style/3",
+    "source": "style.yaml",
+    "pack": "ugc-product-ad",
+    "data": {
+      "format": "letitedit-style/3",
+      "name": "UGC Product Ad",
+      "label": "Product ad (UGC)",
+      "summary": "A creator-style product ad - the problem in the first seconds, the product in hand, proof points that tick in, the price, one clear ask.",
+      "kind": "short",
+      "tags": [
+        "product",
+        "ad",
+        "ugc",
+        "review",
+        "unboxing",
+        "demo",
+        "native",
+        "captions",
+        "shorts"
+      ],
+      "recipe": "recipe.md",
+      "preview": "preview.jpg",
+      "description": "A 20-45 s vertical ad that looks like a person showing a thing they use - native text and captions, quick proof, one call to action.",
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#FFE14D",
+        "accent": "#FF4D6D",
+        "go": "#2ECC71",
+        "paper": "#FFFFFF",
+        "dark": "#111111",
+        "light": "#FFFFFF"
+      },
+      "fonts": {
+        "heading": {
+          "family": "Inter",
+          "weight": 800
+        },
+        "body": {
+          "family": "Inter",
+          "weight": 600
+        },
+        "captions": {
+          "family": "Inter",
+          "weight": 700
+        }
+      },
+      "graphics": {
+        "word_captions": {
+          "style": "pop",
+          "font": "captions",
+          "size": 44,
+          "fill": "light",
+          "highlight": "secondary",
+          "outline": "dark",
+          "outline_width": 5,
+          "shadow": null,
+          "position": 0.62,
+          "max_width": 0.8,
+          "uppercase": false,
+          "pop_scale": 1.08
+        },
+        "badge": {
+          "font": "heading",
+          "size": 44,
+          "fill": "dark",
+          "background": "paper"
+        },
+        "list_card": {
+          "font": "heading",
+          "body_font": "body",
+          "size": 40,
+          "title_size": 46,
+          "fill": "dark",
+          "title_fill": "dark",
+          "panel": "paper",
+          "panel_opacity": 0.94,
+          "check_color": "go",
+          "cross_color": "accent",
+          "mark_color": "dark",
+          "radius": 26
+        }
+      },
+      "captions": {
+        "font": "captions",
+        "size": 44,
+        "fill": "light",
+        "outline": {
+          "color": "dark",
+          "width": 5
+        },
+        "position": "bottom",
+        "margin": 0.33,
+        "max_chars": 16,
+        "max_lines": 1,
+        "case": "as_spoken"
+      },
+      "text": {
+        "font": "heading",
+        "size": 80,
+        "fill": "dark",
+        "outline": null
+      },
+      "editing": {
+        "max_pause": 0.25,
+        "pad_in": 0.04,
+        "pad_out": 0.12,
+        "blur_pad": true,
+        "transitions": "cut",
+        "pace": "fast"
+      },
+      "music": {
+        "zones": {
+          "talk": -10.0,
+          "montage": -4.0,
+          "end": -4.0
+        },
+        "notes": "An upbeat, light bed without lyrics (music-library: Pop / Bright, Electronic / Upbeat Playful); none in the organic variant [RSL]."
+      },
+      "export": {
+        "preset": "social_h264",
+        "loudness": -14.0
+      },
+      "look": {
+        "about": "True to life and bright - the product's real colours, a little lift and clarity, no stylised grade.",
+        "effects": [
+          {
+            "filter": "hue_lightness_saturation",
+            "params": {
+              "av.s": 1.05
+            }
+          },
+          {
+            "filter": "color",
+            "params": {
+              "lift_r": 0.01,
+              "lift_g": 0.01,
+              "lift_b": 0.01,
+              "gamma_r": 1.03,
+              "gamma_g": 1.03,
+              "gamma_b": 1.03,
+              "gain_r": 1.02,
+              "gain_g": 1.02,
+              "gain_b": 1.02
+            }
+          }
+        ]
+      },
+      "sfx": {
+        "gain_db": -14.0,
+        "map": {
+          "pop": "library/pop_cartoon_02",
+          "tick": "library/ding_confirm_01",
+          "cash": "library/cash_register_04",
+          "swipe": "library/whoosh_fast_03",
+          "click": "library/click_ui_02",
+          "sparkle": "synth/sparkle",
+          "notify": "synth/notify-up"
+        },
+        "events": {
+          "popup": "pop",
+          "text": "click",
+          "count": "tick",
+          "transition": "swipe",
+          "reveal": "sparkle",
+          "end": "notify"
+        }
+      },
+      "fx": {
+        "track": "Effects",
+        "sfx_track": "Effect sounds",
+        "broll_track": "B-roll",
+        "density": {
+          "per_10s": 5
+        },
+        "safe_zone": "phone",
+        "never": [
+          "outside_safe_zone",
+          "overlapping"
+        ],
+        "rhythm": "Something new every 2-3 s - a punch-in, an insert of the product, a tick, the price; quiet on the call to action."
+      },
+      "effects": {
+        "hook_text": {
+          "kind": "graphic",
+          "about": "The hook as native text on a white box near the top, there from frame 0 for the first 2-3 s; not the captions [RSL every video gets a hook overlay that is not the captions].",
+          "template": "badge",
+          "params": {
+            "position": [
+              0.5,
+              0.22
+            ]
+          },
+          "len": 2.8,
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "hook"
+            ],
+            "density": {
+              "per_min": 1
+            },
+            "duration_s": [
+              2.0,
+              3.5
+            ],
+            "when": "The problem, the curiosity or the benefit in seven words or fewer [SGN three hook families]; no brand name, no logo, no greeting [RSL]. Params text."
+          }
+        },
+        "product_punch": {
+          "kind": "zoom_punch",
+          "about": "A punch-in to 112% on every other jump cut, back to 100% on the next [RSL alternate about 1.0 and 1.12].",
+          "scale": 1.12,
+          "ramp_s": 0.05,
+          "rules": {
+            "triggers": [
+              "cut",
+              "emphasis"
+            ],
+            "density": {
+              "per_10s": 3,
+              "min_gap_s": 2.0
+            },
+            "when": "Alternate framings so jump cuts read as edits, not glitches; never two punch-ins in a row."
+          }
+        },
+        "insert": {
+          "kind": "broll",
+          "about": "A close-up of the product or the result over the voice, 1.5-3 s [RSL b-roll holds 1.5-3 s].",
+          "fit": "cover",
+          "len": 2.0,
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "mention",
+              "list_item"
+            ],
+            "density": {
+              "per_10s": 2,
+              "min_gap_s": 3.0
+            },
+            "duration_s": [
+              1.2,
+              3.0
+            ],
+            "never": [
+              {
+                "first_s": 0.8
+              }
+            ],
+            "when": "The exact thing being said (the part, the box, the result); 30-50% of the body covered [RSL]. Never a random shot."
+          }
+        },
+        "proof_points": {
+          "kind": "graphic",
+          "about": "Three proof points that tick in on a white card as they are said (what you get, what it does, what it costs) - the reason to believe.",
+          "template": "list_card",
+          "params": {
+            "position": [
+              0.5,
+              0.3
+            ],
+            "mark": "check"
+          },
+          "len": 6.0,
+          "sfx": "tick",
+          "rules": {
+            "triggers": [
+              "list_item"
+            ],
+            "density": {
+              "per_min": 1
+            },
+            "duration_s": [
+              4.0,
+              15.0
+            ],
+            "when": "Once, over the demo (up as long as the points take to say, the body being 15-25 s [NIN]); params title (short, e.g. \"Why it's worth it\"), items in the speaker's own words, and times so each row lands on its words. Claims only as said and true."
+          }
+        },
+        "tick": {
+          "kind": "popup",
+          "about": "A green tick beside a point as it is said, with a ding.",
+          "asset": "emoji:check mark button",
+          "size": 0.14,
+          "in": "pop",
+          "out": "pop",
+          "hold_s": 1.0,
+          "sfx": "tick",
+          "rules": {
+            "triggers": [
+              "list_item",
+              "reveal"
+            ],
+            "density": {
+              "per_10s": 2,
+              "min_gap_s": 2.0
+            },
+            "placement": {
+              "zone": "opposite_face",
+              "avoid": [
+                "face",
+                "captions",
+                "covered"
+              ]
+            },
+            "duration_s": [
+              0.8,
+              1.6
+            ],
+            "never": [
+              "over_face",
+              "over_captions"
+            ],
+            "when": "Each benefit or included part when there is no proof card on screen."
+          }
+        },
+        "price_pop": {
+          "kind": "text_pop",
+          "about": "The price as big numerals with a till sound [RSL digits with units].",
+          "size": 0.5,
+          "fill": "secondary",
+          "stroke": "dark",
+          "stroke_width": 12,
+          "tilt": -4,
+          "position": [
+            0.5,
+            0.36
+          ],
+          "hold_s": 1.2,
+          "sfx": "cash",
+          "rules": {
+            "triggers": [
+              "number"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 10.0
+            },
+            "placement": {
+              "avoid": [
+                "face",
+                "captions",
+                "covered"
+              ]
+            },
+            "duration_s": [
+              0.8,
+              2.0
+            ],
+            "never": [
+              "over_face"
+            ],
+            "when": "The price or the one number that sells it, written as said ($12, 2 tabs, 10 min)."
+          }
+        },
+        "arrow": {
+          "kind": "popup",
+          "about": "A pointing hand or arrow at the feature being shown.",
+          "asset": "emoji:backhand index pointing down",
+          "size": 0.14,
+          "in": "drop",
+          "out": "pop",
+          "hold_s": 1.0,
+          "sfx": "pop",
+          "rules": {
+            "triggers": [
+              "mention"
+            ],
+            "density": {
+              "per_min": 3,
+              "min_gap_s": 6.0
+            },
+            "placement": {
+              "avoid": [
+                "face",
+                "captions",
+                "covered"
+              ]
+            },
+            "duration_s": [
+              0.7,
+              1.6
+            ],
+            "never": [
+              "over_face",
+              "over_captions"
+            ],
+            "when": "The exact spot of a feature (a switch, a tab, a port), placed just above it."
+          }
+        },
+        "swipe_reveal": {
+          "kind": "whoosh",
+          "about": "A swipe whoosh on the cut to the product reveal.",
+          "sfx": "swipe",
+          "sfx_offset_s": -0.14,
+          "rules": {
+            "triggers": [
+              "reveal",
+              "cut"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 10.0
+            },
+            "when": "Produced variant only; the first look at the product or the result."
+          }
+        },
+        "cta": {
+          "kind": "graphic",
+          "about": "The call to action - one ask on two short lines, in a dark native text box (the hook's box inverted, so it reads on light walls too), over the last 3-5 s [RSL produced end card 3-5 s; NIN one action].",
+          "template": "badge",
+          "params": {
+            "position": [
+              0.5,
+              0.36
+            ],
+            "size": 46,
+            "background": "dark",
+            "fill": "light"
+          },
+          "len": 3.5,
+          "sfx": "notify",
+          "rules": {
+            "triggers": [
+              "ending"
+            ],
+            "density": {
+              "per_min": 1
+            },
+            "duration_s": [
+              3.0,
+              5.0
+            ],
+            "when": "The produced variant ends on it (params text, seven words or fewer) - the brief's ask, never a made-up offer. The organic variant ends on the last spoken line plus about half a second instead [RSL]."
+          }
+        }
+      },
+      "popups": {
+        "min_gap_s": 2.0,
+        "max_total": 4,
+        "entries": [
+          {
+            "id": "money",
+            "words": [
+              "bucks",
+              "dollars",
+              "price",
+              "cheap",
+              "affordable"
+            ],
+            "asset": "emoji:money bag",
+            "zone": "opposite_face",
+            "size": 0.14,
+            "in": "drop",
+            "out": "pop",
+            "hold_s": 1.0,
+            "sfx": "cash",
+            "max_per_video": 1,
+            "cooldown_s": 20,
+            "avoid": [
+              "face",
+              "captions",
+              "covered"
+            ]
+          },
+          {
+            "id": "works",
+            "words": [
+              "it works",
+              "works great",
+              "easy"
+            ],
+            "asset": "emoji:check mark button",
+            "zone": "opposite_face",
+            "size": 0.13,
+            "in": "pop",
+            "out": "pop",
+            "hold_s": 1.0,
+            "sfx": "tick",
+            "max_per_video": 1,
+            "cooldown_s": 20,
+            "avoid": [
+              "face",
+              "captions",
+              "covered"
+            ]
+          }
+        ]
+      },
+      "hook": {
+        "max_s": 3.0,
+        "approaches": [
+          "stakes",
+          "question",
+          "result_first",
+          "number"
+        ],
+        "text": {
+          "max_words": 7,
+          "case": "as_said",
+          "position": "top",
+          "size": 0.5,
+          "fill": "dark",
+          "stroke": null,
+          "stroke_width": 0,
+          "font": "heading"
+        },
+        "rules": "The first frame and the first spoken line both land inside 3 s [NIN], the product already in hand or in frame [SGN]. Make three openings that differ in kind - the problem, curiosity, the direct benefit [SGN] - for the person to test; no logo, brand name or greeting in the first 3 s [RSL].",
+        "avoid": [
+          "greetings",
+          "a logo first",
+          "the brand name first",
+          "a slow unboxing start"
+        ]
+      },
+      "credits": [
+        {
+          "file": "preview.jpg",
+          "source": "Original preview imagery; hands, objects, places and titles only",
+          "licence": "Original letitedit footage: hands, objects, places and titles only; no faces"
+        }
+      ],
+      "measured": {},
+      "provenance": {
+        "made_by": "letitedit style library, wave 2",
+        "date": "2026-10-30",
+        "measured": "none yet (no reference videos in style-references)",
+        "sources": [
+          {
+            "url": "https://github.com/real-simple-labs/agentic-video-editing/blob/main/skills/ve-video-edit-general/references/video-editing-standards.md",
+            "title": "Real Simple Labs UGC editing standards (2026-10-13)",
+            "used_for": "organic vs produced, hook overlay, caption size, place and case, pause caps, punch-ins 1.0/1.12, b-roll 1.5-3 s and 30-50%, a change every 2-3 s, lengths, music level, end card",
+            "licence": "MIT, Copyright (c) 2026 Real Simple Labs (consulted only; no text adapted)"
+          },
+          {
+            "url": "https://shortgenius.com/blog/how-to-make-ugc",
+            "title": "ShortGenius UGC guide",
+            "used_for": "five beats, three hook families, trim the first half-second",
+            "licence": "none found (numbers only)"
+          },
+          {
+            "url": "https://ninefolio.com/resources/how-to-edit-ugc-videos",
+            "title": "Ninefolio UGC editing",
+            "used_for": "3 s hook, 15-25 s body, 3-5 s ask; captions above the middle, 2-4 words; one action",
+            "licence": "none found (numbers only)"
+          }
+        ],
+        "notes": "The sources disagree on caption height (RSL near 62% down, Ninefolio a little above the middle); 62% is used. Tags in ..\\SOURCES.md."
+      }
+    }
+  }
+}

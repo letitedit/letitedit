@@ -1,0 +1,17 @@
+{
+  "contract_version": "1.1",
+  "job_id": "ch-demo-2026-11-20-0007-final",
+  "kind": "short",
+  "priority": "channel",
+  "requested_by": {
+    "app": "letitedit-channel",
+    "app_version": "0.1.0",
+    "channel_id": "demo"
+  },
+  "output_dir": "C:\\Users\\Sam\\AppData\\Local\\letitedit Channel\\channels\\demo\\studio\\ch-demo-2026-11-20-0007-final",
+  "from_job": "ch-demo-2026-11-20-0007",
+  "inputs": {
+    "tier": "final",
+    "notes_for_final": "Hold the answer card a beat longer."
+  }
+}

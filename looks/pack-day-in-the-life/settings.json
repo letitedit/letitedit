@@ -1,0 +1,1043 @@
+{
+  "format": "letitedit-look-settings/1",
+  "id": "pack-day-in-the-life",
+  "defaults_are": "taste",
+  "share": false,
+  "values": {
+    "format": "letitedit-style/3",
+    "name": "Day In The Life",
+    "description": "A 30-60 s vertical diary of one day told in small moments, mostly b-roll, with short handwritten-feeling notes and the time of day.",
+    "colors": {
+      "primary": "#FFFDF9",
+      "secondary": "#F3D9C4",
+      "accent": "#C98B7A",
+      "dark": "#2A2422",
+      "light": "#FFFDF9",
+      "sage": "#A3B18A",
+      "cream": "#F6EFE6",
+      "ink": "#3B3030"
+    },
+    "fonts": {
+      "heading": {
+        "family": "Instrument Serif",
+        "weight": 400,
+        "italic": true
+      },
+      "body": {
+        "family": "Quicksand",
+        "weight": 500
+      },
+      "captions": {
+        "family": "Quicksand",
+        "weight": 600
+      },
+      "stamp": {
+        "family": "DM Mono",
+        "weight": 400
+      }
+    },
+    "captions": {
+      "font": "captions",
+      "size": 48,
+      "fill": "light",
+      "outline": null,
+      "shadow": {
+        "color": "#00000080",
+        "x": 2,
+        "y": 3
+      },
+      "background": null,
+      "position": "bottom",
+      "margin": 0.34,
+      "max_chars": 20,
+      "max_lines": 2,
+      "case": "as_spoken"
+    },
+    "text": {
+      "font": "heading",
+      "size": 70,
+      "fill": "light",
+      "outline": null
+    },
+    "graphics": {
+      "word_captions": {
+        "style": "karaoke",
+        "font": "captions",
+        "size": 50,
+        "fill": "light",
+        "highlight": "secondary",
+        "outline": null,
+        "outline_width": 0,
+        "shadow": "#00000080",
+        "position": 0.62,
+        "max_width": 0.78,
+        "uppercase": false,
+        "pop_scale": 1.0
+      },
+      "badge": {
+        "font": "stamp",
+        "size": 30,
+        "fill": "ink",
+        "background": "cream"
+      }
+    },
+    "music": {
+      "zones": {
+        "talk": -18.0,
+        "montage": -4.0,
+        "quiet": -24.0,
+        "swell": -3.0,
+        "end": -4.0
+      },
+      "duck_under_speech": true,
+      "merge_gap": 4.0,
+      "attack": 0.3,
+      "release": 0.9,
+      "crossfade": 3.0,
+      "fade_in": 1.5,
+      "fade_out": 3.0,
+      "dialogue_lufs": null,
+      "sources": [],
+      "notes": "A soft lo-fi, acoustic or dreamy bed (music-library: Lo-fi / Chill, Acoustic / Calm, Electronic / Soft Dreamy); 60-70% level when a voice or the day's own sounds sit on it [HOL]; it carries the montage parts.",
+      "likes": [],
+      "avoid": [],
+      "theme": null
+    },
+    "sfx": {
+      "gain_db": -18.0,
+      "map": {
+        "soft_pop": "library/pop_bloop_02",
+        "shutter": "library/camera-shutter_click_04",
+        "chime": "synth/sparkle",
+        "air": "synth/whoosh-soft",
+        "ding": "library/ding_confirm_01",
+        "bird": "library/songbird_chirp_01"
+      },
+      "events": {
+        "popup": "soft_pop",
+        "text": null,
+        "transition": "air",
+        "reveal": "chime",
+        "end": "chime"
+      }
+    },
+    "editing": {
+      "max_pause": 0.6,
+      "pad_in": 0.12,
+      "pad_out": 0.3,
+      "blur_pad": true,
+      "transitions": "cut",
+      "pace": "slow",
+      "intro": null,
+      "outro": null
+    },
+    "export": {
+      "preset": "social_h264",
+      "loudness": -14.0
+    },
+    "look": {
+      "about": "Soft and warm - lifted shadows, gently desaturated, a little golden, a faint grain [HOL saturation down 10-20, shadows raised a little, grain at low strength].",
+      "effects": [
+        {
+          "filter": "hue_lightness_saturation",
+          "params": {
+            "av.s": 0.86
+          }
+        },
+        {
+          "filter": "color",
+          "params": {
+            "lift_r": 0.035,
+            "lift_g": 0.03,
+            "lift_b": 0.025,
+            "gamma_r": 1.03,
+            "gamma_g": 1.01,
+            "gamma_b": 0.98,
+            "gain_r": 1.02,
+            "gain_g": 1.0,
+            "gain_b": 0.95
+          }
+        },
+        {
+          "filter": "grain",
+          "params": {
+            "noise": 4,
+            "contrast": 100,
+            "brightness": 100
+          }
+        }
+      ]
+    },
+    "taste": "",
+    "label": "Aesthetic day-in-the-life",
+    "summary": "A calm diary of a day - soft warm colour, small lowercase notes and time stamps, the day's own sounds, gentle music.",
+    "kind": "short",
+    "tags": [
+      "day in the life",
+      "vlog",
+      "aesthetic",
+      "lifestyle",
+      "diary",
+      "calm",
+      "time stamps",
+      "b-roll",
+      "lo-fi",
+      "shorts"
+    ],
+    "preview": "preview.jpg",
+    "recipe": "recipe.md",
+    "credits": [
+      {
+        "file": "preview.jpg",
+        "source": "Frames of National Park Service Yosemite b-roll, with this Look's own type; no people",
+        "licence": "Public domain (stated on the source page); courtesy National Park Service, no endorsement"
+      }
+    ],
+    "effects": {
+      "time_stamp": {
+        "kind": "graphic",
+        "about": "The time of day in small monospace type on a cream pill, top left (\"7:40 am\"), as a new part of the day starts.",
+        "template": "badge",
+        "params": {
+          "position": [
+            0.24,
+            0.17
+          ]
+        },
+        "len": 2.6,
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "topic_change",
+            "place"
+          ],
+          "density": {
+            "per_min": 5,
+            "min_gap_s": 5.0
+          },
+          "duration_s": [
+            2.0,
+            3.5
+          ],
+          "when": "When the hour or the place changes (morning, the drive, the afternoon job, the evening). Use the camera's recorded time when the footage has one (letitedit_timeline_read shows `recorded`); never invent a time - say \"morning\" instead. Params text, lowercase."
+        }
+      },
+      "note": {
+        "kind": "text_pop",
+        "about": "A short lowercase diary line in an italic serif, just under the middle, fading in and out (\"slow morning at home\"); clear of the area the phone apps cover at the bottom.",
+        "size": 0.42,
+        "position": [
+          0.5,
+          0.56
+        ],
+        "font": "heading",
+        "fill": "light",
+        "stroke": null,
+        "stroke_width": 0,
+        "tilt": 0,
+        "shadow": true,
+        "in": "fade",
+        "out": "fade",
+        "in_s": 0.45,
+        "out_s": 0.45,
+        "hold_s": 2.0,
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "topic_change",
+            "emphasis",
+            "reaction"
+          ],
+          "density": {
+            "per_min": 5,
+            "min_gap_s": 5.0
+          },
+          "placement": {
+            "avoid": [
+              "face",
+              "covered"
+            ]
+          },
+          "duration_s": [
+            2.0,
+            4.0
+          ],
+          "never": [
+            "over_face",
+            "overlapping"
+          ],
+          "when": "One feeling or fact per moment, five words or fewer, lowercase, written like a diary. Never repeats what the voice says."
+        }
+      },
+      "tiny_sticker": {
+        "kind": "popup",
+        "about": "A small emoji that floats in beside the thing (coffee, a dog, sparkles), with a soft pop.",
+        "size": 0.13,
+        "in": "pop",
+        "out": "fade",
+        "in_s": 0.3,
+        "out_s": 0.35,
+        "hold_s": 1.4,
+        "shadow": true,
+        "outline": 0,
+        "sfx": "soft_pop",
+        "sfx_gain_db": -22,
+        "rules": {
+          "triggers": [
+            "mention",
+            "reaction"
+          ],
+          "density": {
+            "per_min": 3,
+            "min_gap_s": 8.0
+          },
+          "placement": {
+            "zone": "opposite_face",
+            "avoid": [
+              "face",
+              "captions",
+              "covered"
+            ]
+          },
+          "duration_s": [
+            1.0,
+            2.2
+          ],
+          "never": [
+            "over_face",
+            "over_captions"
+          ],
+          "when": "A cosy detail the viewer sees (the dog, the coffee, the sunset); emoji only, small, one at a time."
+        }
+      },
+      "soft_push": {
+        "kind": "zoom_punch",
+        "about": "A gentle push-in (105% over 2.5 s) on a still moment.",
+        "scale": 1.05,
+        "ramp_s": 2.5,
+        "rules": {
+          "triggers": [
+            "cut",
+            "pause"
+          ],
+          "density": {
+            "per_min": 6,
+            "min_gap_s": 5.0
+          },
+          "when": "On held shots without camera movement; never on a shot that already moves [HOL hold still when a move adds nothing]."
+        }
+      },
+      "soft_cut": {
+        "kind": "transition",
+        "about": "A short dissolve between two parts of the day (0.4 s).",
+        "transition": {
+          "type": "dissolve",
+          "len": 0.4
+        },
+        "rules": {
+          "triggers": [
+            "topic_change"
+          ],
+          "density": {
+            "per_min": 3,
+            "min_gap_s": 10.0
+          },
+          "when": "Only where time passes (morning to midday, day to evening); hard cuts inside a part."
+        }
+      },
+      "photo_moment": {
+        "kind": "sfx",
+        "about": "A camera shutter on a still or a held frame.",
+        "sfx": "shutter",
+        "rules": {
+          "triggers": [
+            "cut"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 15.0
+          },
+          "when": "When a frame is frozen or a photo is shown."
+        }
+      },
+      "sweet_end": {
+        "kind": "sfx",
+        "about": "A soft sparkle on the last moment of the day.",
+        "sfx": "chime",
+        "sfx_gain_db": -20,
+        "rules": {
+          "triggers": [
+            "ending"
+          ],
+          "density": {
+            "per_min": 1
+          },
+          "when": "The goodnight shot or the last note."
+        }
+      }
+    },
+    "fx": {
+      "track": "Effects",
+      "sfx_track": "Effect sounds",
+      "broll_track": "B-roll",
+      "density": {
+        "per_10s": 4,
+        "per_min": null,
+        "min_gap_s": null
+      },
+      "safe_zone": "phone",
+      "never": [
+        "outside_safe_zone",
+        "overlapping"
+      ],
+      "rhythm": "A new moment every 2-4 s; a time stamp when the hour changes, a note per moment at most, nothing loud."
+    },
+    "popups": {
+      "track": null,
+      "sfx_track": null,
+      "min_gap_s": 6.0,
+      "max_total": 4,
+      "entries": [
+        {
+          "id": "coffee",
+          "words": [
+            "coffee",
+            "latte",
+            "espresso"
+          ],
+          "asset": "emoji:hot beverage",
+          "zone": "opposite_face",
+          "size": 0.13,
+          "in": "pop",
+          "out": "fade",
+          "hold_s": 1.4,
+          "sfx": "soft_pop",
+          "max_per_video": 1,
+          "cooldown_s": 30,
+          "avoid": [
+            "face",
+            "captions",
+            "covered"
+          ]
+        },
+        {
+          "id": "dog",
+          "words": [
+            "dog",
+            "puppy",
+            "pup"
+          ],
+          "asset": "emoji:dog face",
+          "zone": "opposite_face",
+          "size": 0.13,
+          "in": "pop",
+          "out": "fade",
+          "hold_s": 1.4,
+          "sfx": "soft_pop",
+          "max_per_video": 1,
+          "cooldown_s": 30,
+          "avoid": [
+            "face",
+            "captions",
+            "covered"
+          ]
+        },
+        {
+          "id": "sunset",
+          "words": [
+            "sunset",
+            "golden hour"
+          ],
+          "asset": "emoji:sunset",
+          "zone": "opposite_face",
+          "size": 0.13,
+          "in": "pop",
+          "out": "fade",
+          "hold_s": 1.4,
+          "sfx": "soft_pop",
+          "max_per_video": 1,
+          "cooldown_s": 30,
+          "avoid": [
+            "face",
+            "captions",
+            "covered"
+          ]
+        }
+      ]
+    },
+    "hook": {
+      "max_s": 3.0,
+      "approaches": [
+        "mid_action",
+        "result_first",
+        "question"
+      ],
+      "text": {
+        "max_words": 6,
+        "case": "as_said",
+        "position": "center",
+        "size": 0.5,
+        "fill": "light",
+        "stroke": null,
+        "stroke_width": 0,
+        "font": "heading"
+      },
+      "rules": "Open on the prettiest moving moment of the day with one lowercase line that says what this is (\"a slow morning at home\"); no greeting, no \"hi guys\". The first time stamp follows within a few seconds.",
+      "avoid": [
+        "greetings",
+        "a black start",
+        "loud sounds",
+        "a logo"
+      ]
+    },
+    "broll": {
+      "amount": "some",
+      "kinds": [],
+      "favorites": "",
+      "notes": ""
+    },
+    "shots": {
+      "framing": "medium",
+      "camera": "handheld",
+      "punch_ins": "some",
+      "notes": ""
+    },
+    "signature": {
+      "touches": []
+    },
+    "measured": {},
+    "provenance": {
+      "made_by": "letitedit style library, wave 2",
+      "date": "2026-10-30",
+      "measured": "none yet (no reference videos in style-references)",
+      "sources": [
+        {
+          "url": "https://store.hollyland.com/blogs/creator-hub/make-aesthetic-tiktok-vlogs",
+          "title": "Hollyland aesthetic TikTok vlogs",
+          "used_for": "b-roll shots of 2-4 s, about 70% b-roll, 30-90 s length, saturation down 10-20, lifted shadows, faint grain, music at 60-70% under voice or ambience",
+          "licence": "none found (numbers only)"
+        },
+        {
+          "url": "https://blitzcutai.com/blog/best-caption-style-instagram-reels-2026",
+          "title": "BlitzCut Reels captions",
+          "used_for": "clean sentence captions for lifestyle",
+          "licence": "none found (numbers only)"
+        },
+        {
+          "url": "https://github.com/mindsurf0176/editstyle/blob/master/awesome-editstyles/presets/vlog-casual.md",
+          "title": "EditStyle casual vlog preset",
+          "used_for": "warm colour, hard cuts by default, short transitions",
+          "licence": "MIT, Copyright (c) 2026 Minseo (consulted only; no text adapted)"
+        }
+      ],
+      "notes": "Aesthetic day-in-the-life has the thinnest sources of the library (vendor blogs, no measured study); the numbers are defaults to tune on the person's references. Tags in ..\\SOURCES.md."
+    }
+  },
+  "asset_root": "resources",
+  "files": {
+    "preview.jpg": "resources/bd9969bc4a77f0f1e37629e2.jpg",
+    "recipe.md": "recipe.md"
+  },
+  "links": {
+    "recipe": "recipe.md",
+    "preview": "preview.jpg"
+  },
+  "legacy": {
+    "format": "letitedit-style/3",
+    "source": "style.yaml",
+    "pack": "day-in-the-life",
+    "data": {
+      "format": "letitedit-style/3",
+      "name": "Day In The Life",
+      "label": "Aesthetic day-in-the-life",
+      "summary": "A calm diary of a day - soft warm colour, small lowercase notes and time stamps, the day's own sounds, gentle music.",
+      "kind": "short",
+      "tags": [
+        "day in the life",
+        "vlog",
+        "aesthetic",
+        "lifestyle",
+        "diary",
+        "calm",
+        "time stamps",
+        "b-roll",
+        "lo-fi",
+        "shorts"
+      ],
+      "recipe": "recipe.md",
+      "preview": "preview.jpg",
+      "description": "A 30-60 s vertical diary of one day told in small moments, mostly b-roll, with short handwritten-feeling notes and the time of day.",
+      "colors": {
+        "primary": "#FFFDF9",
+        "secondary": "#F3D9C4",
+        "accent": "#C98B7A",
+        "sage": "#A3B18A",
+        "cream": "#F6EFE6",
+        "ink": "#3B3030",
+        "dark": "#2A2422",
+        "light": "#FFFDF9"
+      },
+      "fonts": {
+        "heading": {
+          "family": "Instrument Serif",
+          "weight": 400,
+          "italic": true
+        },
+        "body": {
+          "family": "Quicksand",
+          "weight": 500
+        },
+        "captions": {
+          "family": "Quicksand",
+          "weight": 600
+        },
+        "stamp": {
+          "family": "DM Mono",
+          "weight": 400
+        }
+      },
+      "graphics": {
+        "word_captions": {
+          "style": "karaoke",
+          "font": "captions",
+          "size": 50,
+          "fill": "light",
+          "highlight": "secondary",
+          "outline": null,
+          "outline_width": 0,
+          "shadow": "#00000080",
+          "position": 0.62,
+          "max_width": 0.78,
+          "uppercase": false,
+          "pop_scale": 1.0
+        },
+        "badge": {
+          "font": "stamp",
+          "size": 30,
+          "fill": "ink",
+          "background": "cream"
+        }
+      },
+      "captions": {
+        "font": "captions",
+        "size": 48,
+        "fill": "light",
+        "outline": null,
+        "shadow": {
+          "color": "#00000080",
+          "x": 2,
+          "y": 3
+        },
+        "position": "bottom",
+        "margin": 0.34,
+        "max_chars": 20,
+        "max_lines": 2,
+        "case": "as_spoken"
+      },
+      "text": {
+        "font": "heading",
+        "size": 70,
+        "fill": "light",
+        "outline": null
+      },
+      "editing": {
+        "max_pause": 0.6,
+        "pad_in": 0.12,
+        "pad_out": 0.3,
+        "blur_pad": true,
+        "transitions": "cut",
+        "pace": "slow"
+      },
+      "music": {
+        "zones": {
+          "talk": -18.0,
+          "montage": -4.0,
+          "end": -4.0
+        },
+        "notes": "A soft lo-fi, acoustic or dreamy bed (music-library: Lo-fi / Chill, Acoustic / Calm, Electronic / Soft Dreamy); 60-70% level when a voice or the day's own sounds sit on it [HOL]; it carries the montage parts."
+      },
+      "export": {
+        "preset": "social_h264",
+        "loudness": -14.0
+      },
+      "look": {
+        "about": "Soft and warm - lifted shadows, gently desaturated, a little golden, a faint grain [HOL saturation down 10-20, shadows raised a little, grain at low strength].",
+        "effects": [
+          {
+            "filter": "hue_lightness_saturation",
+            "params": {
+              "av.s": 0.86
+            }
+          },
+          {
+            "filter": "color",
+            "params": {
+              "lift_r": 0.035,
+              "lift_g": 0.03,
+              "lift_b": 0.025,
+              "gamma_r": 1.03,
+              "gamma_g": 1.01,
+              "gamma_b": 0.98,
+              "gain_r": 1.02,
+              "gain_g": 1.0,
+              "gain_b": 0.95
+            }
+          },
+          {
+            "filter": "grain",
+            "params": {
+              "noise": 4,
+              "contrast": 100,
+              "brightness": 100
+            }
+          }
+        ]
+      },
+      "sfx": {
+        "gain_db": -18.0,
+        "map": {
+          "soft_pop": "library/pop_bloop_02",
+          "shutter": "library/camera-shutter_click_04",
+          "chime": "synth/sparkle",
+          "air": "synth/whoosh-soft",
+          "ding": "library/ding_confirm_01",
+          "bird": "library/songbird_chirp_01"
+        },
+        "events": {
+          "popup": "soft_pop",
+          "text": null,
+          "transition": "air",
+          "reveal": "chime",
+          "end": "chime"
+        }
+      },
+      "fx": {
+        "track": "Effects",
+        "sfx_track": "Effect sounds",
+        "broll_track": "B-roll",
+        "density": {
+          "per_10s": 4
+        },
+        "safe_zone": "phone",
+        "never": [
+          "outside_safe_zone",
+          "overlapping"
+        ],
+        "rhythm": "A new moment every 2-4 s; a time stamp when the hour changes, a note per moment at most, nothing loud."
+      },
+      "effects": {
+        "time_stamp": {
+          "kind": "graphic",
+          "about": "The time of day in small monospace type on a cream pill, top left (\"7:40 am\"), as a new part of the day starts.",
+          "template": "badge",
+          "params": {
+            "position": [
+              0.24,
+              0.17
+            ]
+          },
+          "len": 2.6,
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "topic_change",
+              "place"
+            ],
+            "density": {
+              "per_min": 5,
+              "min_gap_s": 5.0
+            },
+            "duration_s": [
+              2.0,
+              3.5
+            ],
+            "when": "When the hour or the place changes (morning, the drive, the afternoon job, the evening). Use the camera's recorded time when the footage has one (letitedit_timeline_read shows `recorded`); never invent a time - say \"morning\" instead. Params text, lowercase."
+          }
+        },
+        "note": {
+          "kind": "text_pop",
+          "about": "A short lowercase diary line in an italic serif, just under the middle, fading in and out (\"slow morning at home\"); clear of the area the phone apps cover at the bottom.",
+          "size": 0.42,
+          "position": [
+            0.5,
+            0.56
+          ],
+          "font": "heading",
+          "fill": "light",
+          "stroke": null,
+          "stroke_width": 0,
+          "tilt": 0,
+          "shadow": true,
+          "in": "fade",
+          "out": "fade",
+          "in_s": 0.45,
+          "out_s": 0.45,
+          "hold_s": 2.0,
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "topic_change",
+              "emphasis",
+              "reaction"
+            ],
+            "density": {
+              "per_min": 5,
+              "min_gap_s": 5.0
+            },
+            "placement": {
+              "avoid": [
+                "face",
+                "covered"
+              ]
+            },
+            "duration_s": [
+              2.0,
+              4.0
+            ],
+            "never": [
+              "over_face",
+              "overlapping"
+            ],
+            "when": "One feeling or fact per moment, five words or fewer, lowercase, written like a diary. Never repeats what the voice says."
+          }
+        },
+        "tiny_sticker": {
+          "kind": "popup",
+          "about": "A small emoji that floats in beside the thing (coffee, a dog, sparkles), with a soft pop.",
+          "size": 0.13,
+          "in": "pop",
+          "out": "fade",
+          "in_s": 0.3,
+          "out_s": 0.35,
+          "hold_s": 1.4,
+          "shadow": true,
+          "outline": 0,
+          "sfx": "soft_pop",
+          "sfx_gain_db": -22,
+          "rules": {
+            "triggers": [
+              "mention",
+              "reaction"
+            ],
+            "density": {
+              "per_min": 3,
+              "min_gap_s": 8.0
+            },
+            "placement": {
+              "zone": "opposite_face",
+              "avoid": [
+                "face",
+                "captions",
+                "covered"
+              ]
+            },
+            "duration_s": [
+              1.0,
+              2.2
+            ],
+            "never": [
+              "over_face",
+              "over_captions"
+            ],
+            "when": "A cosy detail the viewer sees (the dog, the coffee, the sunset); emoji only, small, one at a time."
+          }
+        },
+        "soft_push": {
+          "kind": "zoom_punch",
+          "about": "A gentle push-in (105% over 2.5 s) on a still moment.",
+          "scale": 1.05,
+          "ramp_s": 2.5,
+          "rules": {
+            "triggers": [
+              "cut",
+              "pause"
+            ],
+            "density": {
+              "per_min": 6,
+              "min_gap_s": 5.0
+            },
+            "when": "On held shots without camera movement; never on a shot that already moves [HOL hold still when a move adds nothing]."
+          }
+        },
+        "soft_cut": {
+          "kind": "transition",
+          "about": "A short dissolve between two parts of the day (0.4 s).",
+          "transition": {
+            "type": "dissolve",
+            "len": 0.4
+          },
+          "rules": {
+            "triggers": [
+              "topic_change"
+            ],
+            "density": {
+              "per_min": 3,
+              "min_gap_s": 10.0
+            },
+            "when": "Only where time passes (morning to midday, day to evening); hard cuts inside a part."
+          }
+        },
+        "photo_moment": {
+          "kind": "sfx",
+          "about": "A camera shutter on a still or a held frame.",
+          "sfx": "shutter",
+          "rules": {
+            "triggers": [
+              "cut"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 15.0
+            },
+            "when": "When a frame is frozen or a photo is shown."
+          }
+        },
+        "sweet_end": {
+          "kind": "sfx",
+          "about": "A soft sparkle on the last moment of the day.",
+          "sfx": "chime",
+          "sfx_gain_db": -20,
+          "rules": {
+            "triggers": [
+              "ending"
+            ],
+            "density": {
+              "per_min": 1
+            },
+            "when": "The goodnight shot or the last note."
+          }
+        }
+      },
+      "popups": {
+        "min_gap_s": 6.0,
+        "max_total": 4,
+        "entries": [
+          {
+            "id": "coffee",
+            "words": [
+              "coffee",
+              "latte",
+              "espresso"
+            ],
+            "asset": "emoji:hot beverage",
+            "zone": "opposite_face",
+            "size": 0.13,
+            "in": "pop",
+            "out": "fade",
+            "hold_s": 1.4,
+            "sfx": "soft_pop",
+            "max_per_video": 1,
+            "cooldown_s": 30,
+            "avoid": [
+              "face",
+              "captions",
+              "covered"
+            ]
+          },
+          {
+            "id": "dog",
+            "words": [
+              "dog",
+              "puppy",
+              "pup"
+            ],
+            "asset": "emoji:dog face",
+            "zone": "opposite_face",
+            "size": 0.13,
+            "in": "pop",
+            "out": "fade",
+            "hold_s": 1.4,
+            "sfx": "soft_pop",
+            "max_per_video": 1,
+            "cooldown_s": 30,
+            "avoid": [
+              "face",
+              "captions",
+              "covered"
+            ]
+          },
+          {
+            "id": "sunset",
+            "words": [
+              "sunset",
+              "golden hour"
+            ],
+            "asset": "emoji:sunset",
+            "zone": "opposite_face",
+            "size": 0.13,
+            "in": "pop",
+            "out": "fade",
+            "hold_s": 1.4,
+            "sfx": "soft_pop",
+            "max_per_video": 1,
+            "cooldown_s": 30,
+            "avoid": [
+              "face",
+              "captions",
+              "covered"
+            ]
+          }
+        ]
+      },
+      "hook": {
+        "max_s": 3.0,
+        "approaches": [
+          "mid_action",
+          "result_first",
+          "question"
+        ],
+        "text": {
+          "max_words": 6,
+          "case": "as_said",
+          "position": "center",
+          "size": 0.5,
+          "fill": "light",
+          "stroke": null,
+          "stroke_width": 0,
+          "font": "heading"
+        },
+        "rules": "Open on the prettiest moving moment of the day with one lowercase line that says what this is (\"a slow morning at home\"); no greeting, no \"hi guys\". The first time stamp follows within a few seconds.",
+        "avoid": [
+          "greetings",
+          "a black start",
+          "loud sounds",
+          "a logo"
+        ]
+      },
+      "credits": [
+        {
+          "file": "preview.jpg",
+          "source": "Original preview imagery; hands, objects, places and titles only",
+          "licence": "Original letitedit footage: hands, objects, places and titles only; no faces"
+        }
+      ],
+      "measured": {},
+      "provenance": {
+        "made_by": "letitedit style library, wave 2",
+        "date": "2026-10-30",
+        "measured": "none yet (no reference videos in style-references)",
+        "sources": [
+          {
+            "url": "https://store.hollyland.com/blogs/creator-hub/make-aesthetic-tiktok-vlogs",
+            "title": "Hollyland aesthetic TikTok vlogs",
+            "used_for": "b-roll shots of 2-4 s, about 70% b-roll, 30-90 s length, saturation down 10-20, lifted shadows, faint grain, music at 60-70% under voice or ambience",
+            "licence": "none found (numbers only)"
+          },
+          {
+            "url": "https://blitzcutai.com/blog/best-caption-style-instagram-reels-2026",
+            "title": "BlitzCut Reels captions",
+            "used_for": "clean sentence captions for lifestyle",
+            "licence": "none found (numbers only)"
+          },
+          {
+            "url": "https://github.com/mindsurf0176/editstyle/blob/master/awesome-editstyles/presets/vlog-casual.md",
+            "title": "EditStyle casual vlog preset",
+            "used_for": "warm colour, hard cuts by default, short transitions",
+            "licence": "MIT, Copyright (c) 2026 Minseo (consulted only; no text adapted)"
+          }
+        ],
+        "notes": "Aesthetic day-in-the-life has the thinnest sources of the library (vendor blogs, no measured study); the numbers are defaults to tune on the person's references. Tags in ..\\SOURCES.md."
+      }
+    }
+  }
+}

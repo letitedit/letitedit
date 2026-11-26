@@ -1,0 +1,852 @@
+{
+  "format": "letitedit-look-settings/1",
+  "id": "pack-podcast-split",
+  "defaults_are": "taste",
+  "share": false,
+  "values": {
+    "format": "letitedit-style/3",
+    "name": "Podcast Split",
+    "description": "A 20-60 s excerpt of a conversation, both faces always on screen, who-said-what told by colour.",
+    "colors": {
+      "primary": "#FFFFFF",
+      "secondary": "#FFD23F",
+      "accent": "#FF7A45",
+      "dark": "#0E0E0E",
+      "light": "#FFFFFF",
+      "speaker_1": "#FFD23F",
+      "speaker_2": "#7FE7F5",
+      "speaker_3": "#B9F27C",
+      "speaker_4": "#FFA3C7",
+      "seam": "#0E0E0E"
+    },
+    "fonts": {
+      "heading": {
+        "family": "Archivo Black",
+        "weight": 400
+      },
+      "body": {
+        "family": "Figtree",
+        "weight": 700
+      },
+      "captions": {
+        "family": "Figtree",
+        "weight": 800
+      }
+    },
+    "captions": {
+      "font": "captions",
+      "size": 62,
+      "fill": "light",
+      "outline": {
+        "color": "dark",
+        "width": 6
+      },
+      "shadow": null,
+      "background": null,
+      "position": "middle",
+      "margin": 0.0,
+      "max_chars": 20,
+      "max_lines": 2,
+      "case": "as_spoken"
+    },
+    "text": {
+      "font": "heading",
+      "size": 72,
+      "fill": "light",
+      "outline": {
+        "color": "dark",
+        "width": 8
+      }
+    },
+    "graphics": {
+      "word_captions": {
+        "style": "pop",
+        "font": "captions",
+        "size": 70,
+        "fill": "speaker_1",
+        "highlight": "speaker_1",
+        "outline": "dark",
+        "outline_width": 7,
+        "shadow": "#000000B0",
+        "position": 0.5,
+        "max_width": 0.82,
+        "uppercase": false,
+        "pop_scale": 1.1
+      },
+      "lower_third": {
+        "font": "heading",
+        "subtitle_font": "body",
+        "size": 48,
+        "subtitle_size": 32,
+        "panel": "dark",
+        "panel_opacity": 0.85,
+        "accent": "secondary"
+      }
+    },
+    "music": {
+      "zones": {
+        "talk": -40.0,
+        "montage": -14.0,
+        "quiet": -24.0,
+        "swell": -3.0,
+        "end": -4.0
+      },
+      "duck_under_speech": true,
+      "merge_gap": 4.0,
+      "attack": 0.3,
+      "release": 0.9,
+      "crossfade": 3.0,
+      "fade_in": 1.5,
+      "fade_out": 3.0,
+      "dialogue_lufs": null,
+      "sources": [],
+      "notes": "None under talk. If the clip opens on a title card or ends on one, a short low sting there only.",
+      "likes": [],
+      "avoid": [],
+      "theme": null
+    },
+    "sfx": {
+      "gain_db": -18.0,
+      "map": {
+        "pop_hi": "assets/pop_pluck_02.mp3",
+        "swish": "assets/whoosh_fast_02.mp3",
+        "click": "assets/click_ui_02.mp3"
+      },
+      "events": {
+        "popup": "pop_hi",
+        "text": "swish",
+        "place": "pop_hi"
+      }
+    },
+    "editing": {
+      "max_pause": 0.45,
+      "pad_in": 0.1,
+      "pad_out": 0.3,
+      "blur_pad": false,
+      "transitions": "cut",
+      "pace": "medium",
+      "intro": null,
+      "outro": null
+    },
+    "export": {
+      "preset": "social_h264",
+      "loudness": -14.0
+    },
+    "look": {
+      "about": "Neutral - the room as it was. Match the two crops if they come from different cameras (letitedit_match_shots).",
+      "effects": []
+    },
+    "taste": "",
+    "label": "Podcast clip, split screen",
+    "summary": "Two people talking, stacked top and bottom, with captions on the seam in each speaker's colour.",
+    "kind": "short",
+    "tags": [
+      "podcast",
+      "interview",
+      "conversation",
+      "two people",
+      "split screen",
+      "captions",
+      "shorts"
+    ],
+    "preview": "preview.jpg",
+    "recipe": "recipe.md",
+    "credits": [
+      {
+        "file": "assets/pop_pluck_02.mp3",
+        "source": "Kenney.nl: Kenney interface-sounds: Audio\\pluck_002.ogg (https://kenney.nl/assets/interface-sounds); copy of pop_pluck_02.mp3 from the local sound library (02 Cartoon & Comedy)",
+        "licence": "CC0 1.0 (public domain)"
+      },
+      {
+        "file": "assets/whoosh_fast_02.mp3",
+        "source": "Freesound.org: swosh-22.flac by qubodup (freesound #60009) (https://freesound.org/people/qubodup/sounds/60009/); copy of whoosh_fast_02.mp3 from the local sound library (08 Whooshes & Transitions)",
+        "licence": "CC0 1.0 (Creative Commons 0)"
+      },
+      {
+        "file": "assets/click_ui_02.mp3",
+        "source": "Kenney.nl: Kenney ui-audio: Audio\\click2.ogg (https://kenney.nl/assets/ui-audio); copy of click_ui_02.mp3 from the local sound library (06 Real World & DIY)",
+        "licence": "CC0 1.0 (public domain)"
+      },
+      {
+        "file": "preview.jpg",
+        "source": "drawn by tools\\styles\\preview.py --drawn split: the style's layout with plain silhouettes (no people), in its own type and colours",
+        "licence": "letitedit's own (drawn)"
+      }
+    ],
+    "effects": {
+      "title_bar": {
+        "kind": "popup",
+        "about": "The clip's topic or hook question in one line above the top pane's face, on for the whole clip.",
+        "position": [
+          0.5,
+          0.19
+        ],
+        "size": 0.66,
+        "in": "fade",
+        "out": "fade",
+        "in_s": 0.25,
+        "out_s": 0.25,
+        "font": "heading",
+        "fill": "light",
+        "stroke": "dark",
+        "stroke_width": 12,
+        "shadow": true,
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "hook"
+          ],
+          "density": {
+            "per_min": 1
+          },
+          "duration_s": [
+            4,
+            180
+          ],
+          "never": [
+            "over_face"
+          ],
+          "when": "Once per clip, from the first frame. The question the clip answers or its topic, seven words or fewer, in the speakers' sense (never a claim they didn't make)."
+        }
+      },
+      "name_tag": {
+        "kind": "popup",
+        "about": "A small name label in a speaker's pane at their first words (3-5 s), names 3-6 s [OVS], every speaker named at first appearance [modes].",
+        "size": 0.22,
+        "in": "slide_right",
+        "out": "fade",
+        "in_s": 0.3,
+        "out_s": 0.25,
+        "hold_s": 3.2,
+        "font": "body",
+        "fill": "dark",
+        "stroke_width": 0,
+        "outline": 14,
+        "outline_color": "light",
+        "shadow": true,
+        "sfx": "pop_hi",
+        "rules": {
+          "density": {
+            "per_10s": 2,
+            "min_gap_s": 0.5
+          },
+          "duration_s": [
+            2.5,
+            6.0
+          ],
+          "never": [
+            "over_face",
+            "over_captions"
+          ],
+          "when": "The first time each person speaks. Their name (and a role only if it matters). Top pane - beside the face, about [0.22, 0.3]; bottom pane - just under the seam captions, about [0.72, 0.625] (lower down and further right is under the apps' buttons); never on the seam."
+        }
+      },
+      "reaction_sticker": {
+        "kind": "popup",
+        "about": "A small emoji when someone really laughs or is surprised.",
+        "size": 0.16,
+        "in": "pop",
+        "out": "shrink",
+        "hold_s": 1.0,
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "reaction"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 10.0
+          },
+          "duration_s": [
+            0.8,
+            1.8
+          ],
+          "never": [
+            "over_face",
+            "over_captions"
+          ],
+          "when": "A real laugh or gasp on screen; put it in that person's pane, beside their face."
+        }
+      },
+      "key_line": {
+        "kind": "text_pop",
+        "about": "The one line worth quoting, a few words big in that speaker's colour.",
+        "size": 0.6,
+        "font": "heading",
+        "fill": "secondary",
+        "stroke": "dark",
+        "stroke_width": 12,
+        "tilt": 0,
+        "in": "pop",
+        "out": "fade",
+        "hold_s": 1.2,
+        "sfx": "swish",
+        "rules": {
+          "triggers": [
+            "punchline",
+            "emphasis"
+          ],
+          "density": {
+            "per_min": 1
+          },
+          "placement": {
+            "avoid": [
+              "face",
+              "captions",
+              "covered"
+            ]
+          },
+          "duration_s": [
+            1.0,
+            2.0
+          ],
+          "never": [
+            "over_face",
+            "over_captions"
+          ],
+          "when": "At most once, the key two to four words, exactly as said, word for word [modes]. Only on a single-crop moment (a solo stretch); on a split there is no free space that isn't a face."
+        }
+      },
+      "cutaway": {
+        "kind": "broll",
+        "about": "A full-frame cutaway when someone describes a thing there is footage of; both voices carry on.",
+        "fit": "cover",
+        "len": 2.0,
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "mention"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 10.0
+          },
+          "duration_s": [
+            1.5,
+            4.0
+          ],
+          "never": [
+            {
+              "first_s": 3.0
+            }
+          ],
+          "when": "Rarely; never over a laugh, a reaction or the last line (the faces carry those [modes])."
+        }
+      }
+    },
+    "fx": {
+      "track": "Effects",
+      "sfx_track": "Effect sounds",
+      "broll_track": "B-roll",
+      "density": {
+        "per_10s": 3,
+        "per_min": null,
+        "min_gap_s": 1.5
+      },
+      "safe_zone": "phone",
+      "never": [
+        "outside_safe_zone",
+        "overlapping"
+      ],
+      "rhythm": "Quiet - a title bar, a name tag per person, a rare reaction sticker. No zooms on a split."
+    },
+    "popups": {
+      "track": null,
+      "sfx_track": null,
+      "min_gap_s": 3.0,
+      "max_total": null,
+      "entries": []
+    },
+    "hook": {
+      "max_s": 4.0,
+      "approaches": [
+        "quote",
+        "question",
+        "stakes",
+        "result_first"
+      ],
+      "text": {
+        "max_words": 7,
+        "case": "as_said",
+        "item": {
+          "graphic": {
+            "template": "popup",
+            "params": {
+              "text": "{text}",
+              "x": 0.5,
+              "y": 0.19,
+              "size": 0.66,
+              "in": "fade",
+              "out": "fade",
+              "font": "heading",
+              "fill": "light",
+              "stroke": "dark",
+              "stroke_width": 12,
+              "shadow": true
+            }
+          }
+        }
+      },
+      "rules": "Open on the strongest line of the excerpt, in the first 3 s [EDS], cut on the gaps around it; no \"welcome to the show\" [modes]. The title bar is the hook text and stays up, so apply the hook with text null.",
+      "avoid": [
+        "greetings",
+        "show intros",
+        "a question nobody answers in the clip"
+      ]
+    },
+    "broll": {
+      "amount": "some",
+      "kinds": [],
+      "favorites": "",
+      "notes": ""
+    },
+    "shots": {
+      "framing": "medium",
+      "camera": "handheld",
+      "punch_ins": "some",
+      "notes": ""
+    },
+    "signature": {
+      "touches": []
+    },
+    "measured": {},
+    "provenance": {
+      "made_by": "letitedit style library, wave 1",
+      "date": "2026-10-29",
+      "measured": "none yet (no reference videos in style-references)",
+      "sources": [
+        {
+          "url": "https://clippod.app/guides/split-screen-podcast-clip",
+          "title": "ClipPod split-screen podcast clip",
+          "used_for": "equal stacked panes, captions on the seam, few layout changes",
+          "licence": "none found (layout facts only)"
+        },
+        {
+          "url": "https://github.com/mindsurf0176/editstyle/blob/master/awesome-editstyles/presets/podcast-clip.md",
+          "title": "EditStyle podcast clip preset",
+          "used_for": "no music, strongest quote first, cut at the punchline, large centred captions",
+          "licence": "MIT, Copyright (c) 2026 Minseo (consulted only; no text adapted)"
+        },
+        {
+          "url": "https://blitzcutai.com/blog/best-caption-style-instagram-reels-2026",
+          "title": "BlitzCut Reels captions",
+          "used_for": "caption size",
+          "licence": "none found (numbers only)"
+        }
+      ],
+      "notes": "Per-speaker caption colours are our own choice; no source gives them. Tags and checks in ..\\SOURCES.md."
+    }
+  },
+  "asset_root": "resources",
+  "files": {
+    "assets/click_ui_02.mp3": "resources/4540dff572fcf57ac2d41cd9.mp3",
+    "assets/pop_pluck_02.mp3": "resources/dd86d57d68f15557861d6553.mp3",
+    "assets/whoosh_fast_02.mp3": "resources/b28911d6f30c5f10b353b924.mp3",
+    "preview.jpg": "resources/1164428595b5fc8651b74cbb.jpg",
+    "recipe.md": "recipe.md"
+  },
+  "links": {
+    "recipe": "recipe.md",
+    "preview": "preview.jpg"
+  },
+  "legacy": {
+    "format": "letitedit-style/3",
+    "source": "style.yaml",
+    "pack": "podcast-split",
+    "data": {
+      "format": "letitedit-style/3",
+      "name": "Podcast Split",
+      "label": "Podcast clip, split screen",
+      "summary": "Two people talking, stacked top and bottom, with captions on the seam in each speaker's colour.",
+      "kind": "short",
+      "tags": [
+        "podcast",
+        "interview",
+        "conversation",
+        "two people",
+        "split screen",
+        "captions",
+        "shorts"
+      ],
+      "recipe": "recipe.md",
+      "preview": "preview.jpg",
+      "description": "A 20-60 s excerpt of a conversation, both faces always on screen, who-said-what told by colour.",
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#FFD23F",
+        "accent": "#FF7A45",
+        "speaker_1": "#FFD23F",
+        "speaker_2": "#7FE7F5",
+        "speaker_3": "#B9F27C",
+        "speaker_4": "#FFA3C7",
+        "seam": "#0E0E0E",
+        "dark": "#0E0E0E",
+        "light": "#FFFFFF"
+      },
+      "fonts": {
+        "heading": {
+          "family": "Archivo Black",
+          "weight": 400
+        },
+        "body": {
+          "family": "Figtree",
+          "weight": 700
+        },
+        "captions": {
+          "family": "Figtree",
+          "weight": 800
+        }
+      },
+      "graphics": {
+        "word_captions": {
+          "style": "pop",
+          "font": "captions",
+          "size": 70,
+          "fill": "speaker_1",
+          "highlight": "speaker_1",
+          "outline": "dark",
+          "outline_width": 7,
+          "shadow": "#000000B0",
+          "position": 0.5,
+          "max_width": 0.82,
+          "uppercase": false,
+          "pop_scale": 1.1
+        },
+        "lower_third": {
+          "font": "heading",
+          "subtitle_font": "body",
+          "size": 48,
+          "subtitle_size": 32,
+          "panel": "dark",
+          "panel_opacity": 0.85,
+          "accent": "secondary"
+        }
+      },
+      "captions": {
+        "font": "captions",
+        "size": 62,
+        "fill": "light",
+        "outline": {
+          "color": "dark",
+          "width": 6
+        },
+        "position": "middle",
+        "margin": 0.0,
+        "max_chars": 20,
+        "max_lines": 2,
+        "case": "as_spoken"
+      },
+      "text": {
+        "font": "heading",
+        "size": 72,
+        "fill": "light",
+        "outline": {
+          "color": "dark",
+          "width": 8
+        }
+      },
+      "editing": {
+        "max_pause": 0.45,
+        "pad_in": 0.1,
+        "pad_out": 0.3,
+        "blur_pad": false,
+        "transitions": "cut",
+        "pace": "medium"
+      },
+      "music": {
+        "zones": {
+          "talk": -40.0,
+          "montage": -14.0
+        },
+        "notes": "None under talk. If the clip opens on a title card or ends on one, a short low sting there only."
+      },
+      "export": {
+        "preset": "social_h264",
+        "loudness": -14.0
+      },
+      "look": {
+        "about": "Neutral - the room as it was. Match the two crops if they come from different cameras (letitedit_match_shots).",
+        "effects": []
+      },
+      "sfx": {
+        "gain_db": -18.0,
+        "map": {
+          "pop_hi": "assets/pop_pluck_02.mp3",
+          "swish": "assets/whoosh_fast_02.mp3",
+          "click": "assets/click_ui_02.mp3"
+        },
+        "events": {
+          "popup": "pop_hi",
+          "text": "swish",
+          "place": "pop_hi"
+        }
+      },
+      "fx": {
+        "track": "Effects",
+        "sfx_track": "Effect sounds",
+        "broll_track": "B-roll",
+        "density": {
+          "per_10s": 3,
+          "min_gap_s": 1.5
+        },
+        "safe_zone": "phone",
+        "never": [
+          "outside_safe_zone",
+          "overlapping"
+        ],
+        "rhythm": "Quiet - a title bar, a name tag per person, a rare reaction sticker. No zooms on a split."
+      },
+      "effects": {
+        "title_bar": {
+          "kind": "popup",
+          "about": "The clip's topic or hook question in one line above the top pane's face, on for the whole clip.",
+          "position": [
+            0.5,
+            0.19
+          ],
+          "size": 0.66,
+          "in": "fade",
+          "out": "fade",
+          "in_s": 0.25,
+          "out_s": 0.25,
+          "font": "heading",
+          "fill": "light",
+          "stroke": "dark",
+          "stroke_width": 12,
+          "shadow": true,
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "hook"
+            ],
+            "density": {
+              "per_min": 1
+            },
+            "duration_s": [
+              4,
+              180
+            ],
+            "never": [
+              "over_face"
+            ],
+            "when": "Once per clip, from the first frame. The question the clip answers or its topic, seven words or fewer, in the speakers' sense (never a claim they didn't make)."
+          }
+        },
+        "name_tag": {
+          "kind": "popup",
+          "about": "A small name label in a speaker's pane at their first words (3-5 s), names 3-6 s [OVS], every speaker named at first appearance [modes].",
+          "size": 0.22,
+          "in": "slide_right",
+          "out": "fade",
+          "in_s": 0.3,
+          "out_s": 0.25,
+          "hold_s": 3.2,
+          "font": "body",
+          "fill": "dark",
+          "stroke_width": 0,
+          "outline": 14,
+          "outline_color": "light",
+          "shadow": true,
+          "sfx": "pop_hi",
+          "rules": {
+            "density": {
+              "per_10s": 2,
+              "min_gap_s": 0.5
+            },
+            "duration_s": [
+              2.5,
+              6.0
+            ],
+            "never": [
+              "over_face",
+              "over_captions"
+            ],
+            "when": "The first time each person speaks. Their name (and a role only if it matters). Top pane - beside the face, about [0.22, 0.3]; bottom pane - just under the seam captions, about [0.72, 0.625] (lower down and further right is under the apps' buttons); never on the seam."
+          }
+        },
+        "reaction_sticker": {
+          "kind": "popup",
+          "about": "A small emoji when someone really laughs or is surprised.",
+          "size": 0.16,
+          "in": "pop",
+          "out": "shrink",
+          "hold_s": 1.0,
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "reaction"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 10.0
+            },
+            "duration_s": [
+              0.8,
+              1.8
+            ],
+            "never": [
+              "over_face",
+              "over_captions"
+            ],
+            "when": "A real laugh or gasp on screen; put it in that person's pane, beside their face."
+          }
+        },
+        "key_line": {
+          "kind": "text_pop",
+          "about": "The one line worth quoting, a few words big in that speaker's colour.",
+          "size": 0.6,
+          "font": "heading",
+          "fill": "secondary",
+          "stroke": "dark",
+          "stroke_width": 12,
+          "tilt": 0,
+          "in": "pop",
+          "out": "fade",
+          "hold_s": 1.2,
+          "sfx": "swish",
+          "rules": {
+            "triggers": [
+              "punchline",
+              "emphasis"
+            ],
+            "density": {
+              "per_min": 1
+            },
+            "placement": {
+              "avoid": [
+                "face",
+                "captions",
+                "covered"
+              ]
+            },
+            "duration_s": [
+              1.0,
+              2.0
+            ],
+            "never": [
+              "over_face",
+              "over_captions"
+            ],
+            "when": "At most once, the key two to four words, exactly as said, word for word [modes]. Only on a single-crop moment (a solo stretch); on a split there is no free space that isn't a face."
+          }
+        },
+        "cutaway": {
+          "kind": "broll",
+          "about": "A full-frame cutaway when someone describes a thing there is footage of; both voices carry on.",
+          "fit": "cover",
+          "len": 2.0,
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "mention"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 10.0
+            },
+            "duration_s": [
+              1.5,
+              4.0
+            ],
+            "never": [
+              {
+                "first_s": 3.0
+              }
+            ],
+            "when": "Rarely; never over a laugh, a reaction or the last line (the faces carry those [modes])."
+          }
+        }
+      },
+      "popups": {
+        "min_gap_s": 3.0,
+        "entries": []
+      },
+      "hook": {
+        "max_s": 4.0,
+        "approaches": [
+          "quote",
+          "question",
+          "stakes",
+          "result_first"
+        ],
+        "text": {
+          "max_words": 7,
+          "case": "as_said",
+          "item": {
+            "graphic": {
+              "template": "popup",
+              "params": {
+                "text": "{text}",
+                "x": 0.5,
+                "y": 0.19,
+                "size": 0.66,
+                "in": "fade",
+                "out": "fade",
+                "font": "heading",
+                "fill": "light",
+                "stroke": "dark",
+                "stroke_width": 12,
+                "shadow": true
+              }
+            }
+          }
+        },
+        "rules": "Open on the strongest line of the excerpt, in the first 3 s [EDS], cut on the gaps around it; no \"welcome to the show\" [modes]. The title bar is the hook text and stays up, so apply the hook with text null.",
+        "avoid": [
+          "greetings",
+          "show intros",
+          "a question nobody answers in the clip"
+        ]
+      },
+      "credits": [
+        {
+          "file": "assets/pop_pluck_02.mp3",
+          "source": "Kenney.nl: Kenney interface-sounds: Audio\\pluck_002.ogg (https://kenney.nl/assets/interface-sounds); copy of pop_pluck_02.mp3 from the local sound library (02 Cartoon & Comedy)",
+          "licence": "CC0 1.0 (public domain)"
+        },
+        {
+          "file": "assets/whoosh_fast_02.mp3",
+          "source": "Freesound.org: swosh-22.flac by qubodup (freesound #60009) (https://freesound.org/people/qubodup/sounds/60009/); copy of whoosh_fast_02.mp3 from the local sound library (08 Whooshes & Transitions)",
+          "licence": "CC0 1.0 (Creative Commons 0)"
+        },
+        {
+          "file": "assets/click_ui_02.mp3",
+          "source": "Kenney.nl: Kenney ui-audio: Audio\\click2.ogg (https://kenney.nl/assets/ui-audio); copy of click_ui_02.mp3 from the local sound library (06 Real World & DIY)",
+          "licence": "CC0 1.0 (public domain)"
+        },
+        {
+          "file": "preview.jpg",
+          "source": "drawn by tools\\styles\\preview.py --drawn split: the style's layout with plain silhouettes (no people), in its own type and colours",
+          "licence": "letitedit's own (drawn)"
+        }
+      ],
+      "measured": {},
+      "provenance": {
+        "made_by": "letitedit style library, wave 1",
+        "date": "2026-10-29",
+        "measured": "none yet (no reference videos in style-references)",
+        "sources": [
+          {
+            "url": "https://clippod.app/guides/split-screen-podcast-clip",
+            "title": "ClipPod split-screen podcast clip",
+            "used_for": "equal stacked panes, captions on the seam, few layout changes",
+            "licence": "none found (layout facts only)"
+          },
+          {
+            "url": "https://github.com/mindsurf0176/editstyle/blob/master/awesome-editstyles/presets/podcast-clip.md",
+            "title": "EditStyle podcast clip preset",
+            "used_for": "no music, strongest quote first, cut at the punchline, large centred captions",
+            "licence": "MIT, Copyright (c) 2026 Minseo (consulted only; no text adapted)"
+          },
+          {
+            "url": "https://blitzcutai.com/blog/best-caption-style-instagram-reels-2026",
+            "title": "BlitzCut Reels captions",
+            "used_for": "caption size",
+            "licence": "none found (numbers only)"
+          }
+        ],
+        "notes": "Per-speaker caption colours are our own choice; no source gives them. Tags and checks in ..\\SOURCES.md."
+      }
+    }
+  }
+}

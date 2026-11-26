@@ -1,0 +1,257 @@
+{
+  "id": "instagram_feed",
+  "name": "Instagram feed video",
+  "schema": "letitedit-platform/1",
+  "checked": "2026-11-19",
+  "video": {
+    "feed_videos_are_reels": {
+      "value": true,
+      "source": "https://business.instagram.com/blog/instagram-video-now-instagram-reels",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "Since July 2022 new video posts under 15 minutes are shared as reels."
+    },
+    "aspect_ratios": {
+      "value": {
+        "feed": [
+          "1:1",
+          "4:5"
+        ],
+        "ads_feed_recommended": "9:16"
+      },
+      "source": "https://www.facebook.com/business/help/103816146375741",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "Meta: feed placements support 1:1 and 4:5 for images and videos; the Instagram feed video ad spec recommends 9:16 at 1080x1920 (https://www.facebook.com/business/ads-guide/update/video/instagram-feed)."
+    },
+    "resolutions": {
+      "value": {
+        "ads_feed_recommended": "1080x1920",
+        "min_width_ads": 250
+      },
+      "source": "https://www.facebook.com/business/ads-guide/update/video/instagram-feed",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "frame_rates": {
+      "value": {
+        "min": 30
+      },
+      "source": "https://help.instagram.com/1038071743007909",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "Reels rule; feed videos are reels."
+    },
+    "max_length_s": {
+      "value": 3600,
+      "source": "https://www.facebook.com/business/ads-guide/update/video/instagram-feed",
+      "checked": "2026-10-19",
+      "status": "official-ads",
+      "note": "Ad spec: 1 s to 60 min; organic videos follow the Reels limits."
+    },
+    "max_file_size_bytes": {
+      "value": 300000000,
+      "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "checked": "2026-11-19",
+      "status": "official",
+      "note": "A video posted to the feed through Meta's content publishing API is published as a Reel, so the Reels cap (300 MB) applies; Meta's ads guide gives 4 GB for feed ads. The stricter value is kept (it was 4 x 1024^3 bytes before 19 Nov)."
+    },
+    "container": {
+      "value": [
+        "MP4",
+        "MOV"
+      ],
+      "source": "https://www.facebook.com/business/ads-guide/update/video/instagram-feed",
+      "checked": "2026-10-19",
+      "status": "official"
+    }
+  },
+  "audio": {
+    "codec": {
+      "value": "AAC, up to 48 kHz",
+      "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "bitrate_kbps": {
+      "value": 128,
+      "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "loudness_normalisation": {
+      "value": null,
+      "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "checked": "2026-10-19",
+      "status": "not documented"
+    }
+  },
+  "safe_zones": {
+    "value": [],
+    "source": "https://www.facebook.com/business/ads-guide/update/video/instagram-feed",
+    "checked": "2026-10-19",
+    "status": "not documented",
+    "note": "No overlay areas published for feed; a 9:16 video shown in a 4:5 or 1:1 feed slot is cropped (crop geometry not published). Profile grid tiles crop to the middle (API: middle 1:1 of the cover when shared to feed).",
+    "confidence": "n/a"
+  },
+  "captions": {
+    "placement": {
+      "value": "Caption text appears below the post in feed, not over the video.",
+      "source": "https://www.facebook.com/business/ads-guide/update/video/instagram-feed",
+      "checked": "2026-10-19",
+      "status": "unconfirmed"
+    }
+  },
+  "thumbnail": {
+    "value": {
+      "format": "JPEG",
+      "max_bytes": 8388608,
+      "feed_crop": "middle 1:1"
+    },
+    "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+    "checked": "2026-10-19",
+    "status": "official"
+  },
+  "text_limits": {
+    "caption_chars": {
+      "value": 2200,
+      "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "primary_text_ads": {
+      "value": 125,
+      "source": "https://www.facebook.com/business/ads-guide/update/video/instagram-feed",
+      "checked": "2026-10-19",
+      "status": "official-ads"
+    },
+    "hashtags": {
+      "value": 5,
+      "source": "https://www.socialmediatoday.com/news/instagram-implements-new-limits-on-hashtag-use/808309/",
+      "checked": "2026-10-19",
+      "status": "unconfirmed",
+      "note": "API reference says 30; reduced to 5 (Dec 2025 press reports)."
+    },
+    "mentions": {
+      "value": 20,
+      "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "checked": "2026-10-19",
+      "status": "official"
+    }
+  },
+  "export_preset": {
+    "width": {
+      "value": 1080,
+      "source": "https://www.facebook.com/business/help/103816146375741",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "4:5 at 1080 wide (feed supports 1:1 and 4:5)."
+    },
+    "height": {
+      "value": 1350,
+      "source": "https://www.facebook.com/business/help/103816146375741",
+      "checked": "2026-10-19",
+      "status": "unconfirmed",
+      "note": "1350 = 1080 x 5/4; size not stated by Meta."
+    },
+    "fps": {
+      "value": 30,
+      "source": "https://help.instagram.com/1038071743007909",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "container": {
+      "value": "mp4",
+      "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "vcodec": {
+      "value": "libx264",
+      "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "pix_fmt": {
+      "value": "yuv420p",
+      "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "video_bitrate_kbps": {
+      "value": 25000,
+      "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "Maximum."
+    },
+    "acodec": {
+      "value": "aac",
+      "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "audio_bitrate_kbps": {
+      "value": 128,
+      "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "sample_rate_hz": {
+      "value": 48000,
+      "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "loudness_lufs": {
+      "value": null,
+      "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "checked": "2026-10-19",
+      "status": "not documented"
+    }
+  },
+  "images": {
+    "aspect_ratios": {
+      "value": [
+        "4:5",
+        "1:1"
+      ],
+      "source": "https://www.facebook.com/business/ads-guide/update/image",
+      "checked": "2026-11-19",
+      "status": "official-ads",
+      "note": "Meta's image ad guide gives 4:5 for the feed (3% tolerance); 1:1 is the other common feed shape, not listed there. Buffer's help centre (checked 2026-11-18, https://support.buffer.com/articles/scheduling-instagram-posts-reels-stories-and-notifications-3XA98S9Q5p) takes 3:4 to 1.91:1 in a carousel, the first item setting the shape for all: both shapes fit."
+    },
+    "sizes": {
+      "value": {
+        "feed_4x5": "1080x1350",
+        "feed_1x1": "1080x1080"
+      },
+      "source": "https://www.facebook.com/business/ads-guide/update/image",
+      "checked": "2026-11-19",
+      "status": "unconfirmed",
+      "note": "The guide recommends 1440x1800 for 4:5 and a 600 px minimum width; 1080 wide is the size the apps show."
+    },
+    "formats": {
+      "value": [
+        "JPG",
+        "PNG"
+      ],
+      "source": "https://www.facebook.com/business/ads-guide/update/image",
+      "checked": "2026-11-19",
+      "status": "official-ads"
+    },
+    "max_file_size_bytes": {
+      "value": 30000000,
+      "source": "https://www.facebook.com/business/ads-guide/update/image",
+      "checked": "2026-11-19",
+      "status": "official-ads"
+    },
+    "max_photos": {
+      "value": 20,
+      "source": "https://support.buffer.com/articles/scheduling-instagram-posts-reels-stories-and-notifications-3XA98S9Q5p",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: up to 20 images or videos in a carousel; a video alone is a Reel."
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://letitedit.app/studio/1/result.schema.json",
+  "title": "result.json: what a job made",
+  "description": "Written once, whole (temporary file, then replace), only when the job reaches a final state. Until it exists, nothing in the folder is final. The shared fields of a making job are at the top level; what is particular to a kind is in 'output'.",
+  "type": "object",
+  "required": ["contract_version", "job_id", "kind", "state", "finished", "versions", "cost", "outputs"],
+  "properties": {
+    "contract_version": {"$ref": "common.schema.json#/$defs/contract_version"},
+    "job_id": {"$ref": "common.schema.json#/$defs/job_id"},
+    "kind": {"$ref": "common.schema.json#/$defs/kind"},
+    "tier": {"type": "string", "enum": ["preview", "final"]},
+    "state": {"type": "string", "enum": ["done", "failed", "cancelled"]},
+    "started": {"$ref": "common.schema.json#/$defs/time"},
+    "finished": {"$ref": "common.schema.json#/$defs/time"},
+    "from_job": {"type": "string"},
+    "attempts": {"type": "integer", "minimum": 1},
+    "versions": {"$ref": "common.schema.json#/$defs/versions"},
+    "cost": {"$ref": "common.schema.json#/$defs/cost"},
+    "outputs": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/output_file"}, "description": "Every file the job made, with its hash. On failure or cancel: the files that were finished (partial), which a later retry may reuse."},
+    "provenance": {"$ref": "common.schema.json#/$defs/provenance"},
+    "ai_labels": {"$ref": "common.schema.json#/$defs/ai_labels"},
+    "music": {"$ref": "common.schema.json#/$defs/music_used"},
+    "rules": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/rule_result"}, "description": "One entry for every rule in job.json, in its order."},
+    "choices": {"$ref": "common.schema.json#/$defs/choices"},
+    "text_items": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/text_item"}},
+    "proxy": {"$ref": "common.schema.json#/$defs/proxy"},
+    "review": {"$ref": "common.schema.json#/$defs/review"},
+    "output": {"type": "object"},
+    "error": {"$ref": "common.schema.json#/$defs/error"},
+    "warnings": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/warning"}}
+  },
+  "allOf": [
+    {"if": {"properties": {"state": {"const": "done"}}}, "then": {"required": ["output"]}},
+    {"if": {"properties": {"state": {"enum": ["failed", "cancelled"]}}}, "then": {"required": ["error"]}},
+    {
+      "if": {"properties": {"state": {"const": "done"}, "kind": {"const": "short"}}, "required": ["state", "kind"]},
+      "then": {"required": ["provenance", "ai_labels", "music", "rules", "choices", "text_items", "proxy", "review"]}
+    },
+    {
+      "description": "Every retext, a still's too, returns the fields it did in 1.0 and 1.1 (a still's retext adds the still's own; contract 1.2).",
+      "if": {"properties": {"state": {"const": "done"}, "kind": {"const": "retext"}}, "required": ["state", "kind"]},
+      "then": {"required": ["provenance", "ai_labels", "music", "rules", "choices", "text_items", "proxy", "review"]}
+    },
+    {
+      "if": {"properties": {"state": {"const": "done"}, "kind": {"const": "revise"}}, "required": ["state", "kind"]},
+      "then": {"required": ["provenance", "ai_labels", "music", "rules", "text_items", "proxy"]}
+    },
+    {
+      "description": "A revise of a video (its output has files) also returns choices and review; a revise of a still returns a still's fields.",
+      "if": {"properties": {"state": {"const": "done"}, "kind": {"const": "revise"}, "output": {"required": ["files"]}}, "required": ["state", "kind", "output"]},
+      "then": {"required": ["choices", "review"]}
+    },
+    {
+      "if": {"properties": {"state": {"const": "done"}, "kind": {"const": "still"}}, "required": ["state", "kind"]},
+      "then": {"required": ["provenance", "ai_labels", "music", "rules", "text_items", "proxy"]}
+    },
+    {
+      "if": {"properties": {"state": {"const": "done"}, "kind": {"const": "conform"}}, "required": ["state", "kind"]},
+      "then": {"required": ["provenance", "proxy"]}
+    },
+    {"if": {"properties": {"kind": {"const": "capabilities"}, "state": {"const": "done"}}, "required": ["kind", "state"]}, "then": {"properties": {"output": {"$ref": "kinds/capabilities.schema.json#/$defs/output"}}}},
+    {"if": {"properties": {"kind": {"const": "index"}, "state": {"const": "done"}}, "required": ["kind", "state"]}, "then": {"properties": {"output": {"$ref": "kinds/index.schema.json#/$defs/output"}}}},
+    {"if": {"properties": {"kind": {"const": "match"}, "state": {"const": "done"}}, "required": ["kind", "state"]}, "then": {"properties": {"output": {"$ref": "kinds/match.schema.json#/$defs/output"}}}},
+    {"if": {"properties": {"kind": {"const": "inspect"}, "state": {"const": "done"}}, "required": ["kind", "state"]}, "then": {"properties": {"output": {"$ref": "kinds/inspect.schema.json#/$defs/output"}}}},
+    {"if": {"properties": {"kind": {"const": "short"}, "state": {"const": "done"}}, "required": ["kind", "state"]}, "then": {"properties": {"output": {"$ref": "kinds/short.schema.json#/$defs/output"}}}},
+    {"if": {"properties": {"kind": {"const": "batch_shorts"}, "state": {"const": "done"}}, "required": ["kind", "state"]}, "then": {"properties": {"output": {"$ref": "kinds/batch_shorts.schema.json#/$defs/output"}}}},
+    {"if": {"properties": {"kind": {"const": "still"}, "state": {"const": "done"}}, "required": ["kind", "state"]}, "then": {"properties": {"output": {"$ref": "kinds/still.schema.json#/$defs/output"}}}},
+    {"if": {"properties": {"kind": {"const": "revise"}, "state": {"const": "done"}}, "required": ["kind", "state"]}, "then": {"properties": {"output": {"$ref": "kinds/revise.schema.json#/$defs/output"}}}},
+    {"if": {"properties": {"kind": {"const": "retext"}, "state": {"const": "done"}}, "required": ["kind", "state"]}, "then": {"properties": {"output": {"$ref": "kinds/retext.schema.json#/$defs/output"}}}},
+    {"if": {"properties": {"kind": {"const": "hooks"}, "state": {"const": "done"}}, "required": ["kind", "state"]}, "then": {"properties": {"output": {"$ref": "kinds/hooks.schema.json#/$defs/output"}}}},
+    {"if": {"properties": {"kind": {"const": "conform"}, "state": {"const": "done"}}, "required": ["kind", "state"]}, "then": {"properties": {"output": {"$ref": "kinds/conform.schema.json#/$defs/output"}}}},
+    {"if": {"properties": {"kind": {"const": "learn"}, "state": {"const": "done"}}, "required": ["kind", "state"]}, "then": {"properties": {"output": {"$ref": "kinds/learn.schema.json#/$defs/output"}}}}
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://letitedit.app/studio/1/kinds/hooks.schema.json",
+  "title": "hooks: other openings for a Short",
+  "description": "From a finished Short (from_job) or a set of moments. Candidates are kept in the project's hooks.json, as New hook keeps them; a revise with hook {from_job, hook_id} puts one in. With previews: true each candidate gets a phone proxy of its first seconds.",
+  "$defs": {
+    "inputs": {
+      "type": "object",
+      "properties": {
+        "moments": {"type": "array", "items": {"$ref": "../common.schema.json#/$defs/source_ref"}, "description": "When there is no from_job."},
+        "count": {"type": "integer", "minimum": 1, "maximum": 10, "default": 3},
+        "avoid_moments": {"type": "array", "items": {"$ref": "../common.schema.json#/$defs/moment_id"}},
+        "previews": {"type": "boolean", "default": false},
+        "kinds": {"type": "array", "items": {"$ref": "../common.schema.json#/$defs/hook_kind"}, "description": "Only these kinds of opening."}
+      }
+    },
+    "output": {
+      "type": "object",
+      "required": ["candidates"],
+      "properties": {
+        "candidates": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["hook_id", "kind", "first_3s", "sources"],
+            "properties": {
+              "hook_id": {"type": "string"},
+              "kind": {"$ref": "../common.schema.json#/$defs/hook_kind"},
+              "line": {"type": "string", "description": "The words said or shown."},
+              "first_3s": {"type": "string"},
+              "why": {"type": "string"},
+              "sources": {"type": "array", "items": {"type": "object", "required": ["file_id", "in", "out"], "properties": {"moment_id": {"$ref": "../common.schema.json#/$defs/moment_id"}, "file_id": {"$ref": "../common.schema.json#/$defs/file_id"}, "path": {"type": "string"}, "in": {"type": "number"}, "out": {"type": "number"}}}},
+              "proxy": {"$ref": "../common.schema.json#/$defs/proxy"}
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+const H = M.look.markerComic.start(c.w, c.h), C = H.c, U = K(1);
+const panel = H.picture('p', (k) => { k.flat(FRAME, C.teal, {width: 70, reach: 420, angle: -.4}); k.shape(SEA, C.tealDark); k.part(); k.speed(SUN.x, SUN.y, K(120), K(800), {n: 30, w: 6, color: C.tealLight}); k.shape(H.blob(SUN.x, SUN.y, SUN.r, SUN.r, 3, .05), C.yellow); k.part();
+  k.cel(HILL, C.white, {shadow: C.whiteShade}); k.line(HILL.slice(1, 7), {w: 8*U}); k.part(); k.cel(SAIL, C.white, {shadow: C.whiteShade}); k.cel(JIB, C.yellow, {shadow: C.yellowShade}); k.cel(HULL, C.red, {shadow: C.ink}); k.line(HULL, {closed: true, w: 10*U}); k.line(SAIL, {closed: true, w: 8*U}); k.line(JIB, {closed: true, w: 8*U}); k.line(MAST, {w: 10*U}); k.part();
+  k.balloon(LABEL, X(280), Y(180), K(34), [X(430), Y(420)]); });
+return (t) => { H.begin(g); g.fillStyle = C.white; g.fillRect(0, 0, c.w, c.h); panel.draw(g, {progress: t / 4.5}); H.begin(g); H.finish(g); };

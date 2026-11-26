@@ -1,0 +1,123 @@
+{
+  "contract_version": "1.1",
+  "job_id": "ch-demo-conform-0004",
+  "kind": "conform",
+  "state": "done",
+  "started": "2026-11-20T01:10:00-08:00",
+  "finished": "2026-11-20T01:40:00-08:00",
+  "attempts": 1,
+  "versions": {
+    "contract": "1.1",
+    "letitedit": "20261118.3",
+    "tools": "7b0da5c5"
+  },
+  "cost": {
+    "wall_s": 150,
+    "waited_s": 0,
+    "measured": true
+  },
+  "outputs": [
+    {
+      "role": "video",
+      "path": "files/youtube_shorts.mp4",
+      "bytes": 12000000,
+      "sha256": "9b83d13d405d0d9923872a8cfa40eb9ae71dbb01235435c20b8e883342516b24",
+      "platform": "youtube_shorts",
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "codec": "h264",
+      "loudness_lufs": -14.0,
+      "true_peak_dbtp": -1.1,
+      "location_metadata": "none"
+    },
+    {
+      "role": "video",
+      "path": "files/instagram_reels.mp4",
+      "bytes": 12000000,
+      "sha256": "7df17495284d7c66d746aa60045599b9668d0dc011b84c37082d9ddadbf9c2ea",
+      "platform": "instagram_reels",
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "codec": "h264",
+      "loudness_lufs": -14.0,
+      "true_peak_dbtp": -1.1,
+      "location_metadata": "none"
+    },
+    {
+      "role": "cover",
+      "path": "files/cover.jpg",
+      "bytes": 200000,
+      "sha256": "9b35ec04394ce6cdd001744ae087b2abc691dcb671dd91c92e73bb7148a699e2",
+      "location_metadata": "none"
+    },
+    {
+      "role": "proxy",
+      "path": "proxy/proxy.mp4",
+      "bytes": 3000000,
+      "sha256": "9cd429eaa897dd0cd8b5326a4368bc9cc906f1c314c4e2eab3df74fd52bd45d0",
+      "location_metadata": "none"
+    },
+    {
+      "role": "poster",
+      "path": "proxy/poster.jpg",
+      "bytes": 50000,
+      "sha256": "a1072a2b6bfa8ea721922abaaaf9a4775cd4e763890acafb03886a397c96c6f5",
+      "location_metadata": "none"
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "path": "D:\\Drops\\bath time final HLG.mov",
+        "file_id": "f_41d7d64da1d1c0fe3549",
+        "in": 0,
+        "out": 31.2,
+        "role": "main"
+      }
+    ],
+    "assets": []
+  },
+  "proxy": {
+    "video": "proxy/proxy.mp4",
+    "poster": "proxy/poster.jpg",
+    "width": 720,
+    "height": 1280,
+    "bytes": 3000000
+  },
+  "output": {
+    "source": {
+      "path": "D:\\Drops\\bath time final HLG.mov",
+      "sha256": "0de8ab6315488d30b61d0cd3d4a99d994bbb781c6efe77147fe3cae8f7a21ad8",
+      "width": 1080,
+      "height": 1920,
+      "fps": 59.94,
+      "hdr": "hlg",
+      "loudness_lufs": -11.2
+    },
+    "files": [
+      {
+        "platform": "youtube_shorts",
+        "status": "made",
+        "video": "files/youtube_shorts.mp4",
+        "cover": "files/cover.jpg",
+        "tonemapped": true
+      },
+      {
+        "platform": "instagram_reels",
+        "status": "made",
+        "video": "files/instagram_reels.mp4",
+        "cover": "files/cover.jpg",
+        "tonemapped": true
+      },
+      {
+        "platform": "youtube",
+        "status": "refused",
+        "reason": "shape_differs",
+        "message": "The video is vertical and YouTube's preset is 16:9; conform never crops or reframes."
+      }
+    ]
+  },
+  "warnings": []
+}

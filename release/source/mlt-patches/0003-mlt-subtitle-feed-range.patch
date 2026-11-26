@@ -1,0 +1,43 @@
+letitedit: subtitle_feed gives every cue that overlaps the producer's in..out range, clipped to it, so a caption that
+runs to the video's last frame or past it (or began before an exported range's in point) is drawn. From
+engine-patches/mlt-subtitle-feed-range; applies on MLT 63218a28d21f1e64b5b9e6671b4ff9146023282c (module plus).
+
+diff --git a/src/modules/plus/filter_subtitle_feed.cpp b/src/modules/plus/filter_subtitle_feed.cpp
+index 96318d86..c42e1fb4 100644
+--- a/src/modules/plus/filter_subtitle_feed.cpp
++++ b/src/modules/plus/filter_subtitle_feed.cpp
+@@ -131,7 +131,8 @@ static mlt_frame filter_process(mlt_filter filter, mlt_frame frame)
+     int out = mlt_properties_get_int(frame_properties, "out");
+     int64_t maxMs = INT64_MAX;
+     if (out > 0) {
+-        maxMs = (int64_t) out * 1000 * profile->frame_rate_den / profile->frame_rate_num;
++        // letitedit: the range ends where the out frame ends (out is inclusive), not where it starts
++        maxMs = ((int64_t) out + 1) * 1000 * profile->frame_rate_den / profile->frame_rate_num;
+     }
+     int prevIndex = mlt_properties_get_int(properties, "_prevIndex");
+     int index = Subtitles::indexForTime(subtitles, frameMs, prevIndex, 0);
+@@ -146,14 +147,23 @@ static mlt_frame filter_process(mlt_filter filter, mlt_frame frame)
+     }
+     mlt_properties feed_properties = mlt_properties_new();
+     mlt_properties_set(feed_properties, "lang", mlt_properties_get(properties, "lang"));
+-    if (index > -1 && subtitles[index].start >= minMs && subtitles[index].end <= maxMs) {
++    // letitedit: a cue that overlaps the in..out range is given, clipped to the range. MLT 7.41 kept only cues lying
++    // wholly inside it (and measured its end at the start of the out frame), so a caption running to the video's
++    // last frame or past it, or one that began before an exported range's in point, was never drawn at all.
++    if (index > -1 && subtitles[index].end > minMs && subtitles[index].start < maxMs) {
+         mlt_position start = subtitles[index].start * profile->frame_rate_num
+                              / profile->frame_rate_den / 1000;
+         start -= in;
++        if (start < 0) {
++            start = 0;
++        }
+         mlt_properties_set_position(feed_properties, "start", start);
+         mlt_position end = subtitles[index].end * profile->frame_rate_num / profile->frame_rate_den
+                            / 1000;
+         end -= in;
++        if (out > 0 && end > out - in + 1) {
++            end = out - in + 1;
++        }
+         mlt_properties_set_position(feed_properties, "end", end);
+         mlt_properties_set(feed_properties, "text", subtitles[index].text.c_str());
+     } else {

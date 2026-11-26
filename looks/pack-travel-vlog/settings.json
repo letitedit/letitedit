@@ -1,0 +1,1051 @@
+{
+  "format": "letitedit-look-settings/1",
+  "id": "pack-travel-vlog",
+  "defaults_are": "taste",
+  "share": false,
+  "values": {
+    "format": "letitedit-style/3",
+    "name": "Travel Vlog",
+    "description": "A 16:9 YouTube vlog (5-20 min) of a trip or a few days on the road - a problem, the pursuit, the resolution - with montages that let the place breathe.",
+    "colors": {
+      "primary": "#FBF7F0",
+      "secondary": "#F2B544",
+      "accent": "#E4572E",
+      "dark": "#16181A",
+      "light": "#FBF7F0",
+      "teal": "#2A8597",
+      "sand": "#EADBC8"
+    },
+    "fonts": {
+      "heading": {
+        "family": "Outfit",
+        "weight": 800
+      },
+      "body": {
+        "family": "Outfit",
+        "weight": 400
+      },
+      "captions": {
+        "family": "Outfit",
+        "weight": 600
+      },
+      "hand": {
+        "family": "Caveat",
+        "weight": 700
+      }
+    },
+    "captions": {
+      "font": "captions",
+      "size": 42,
+      "fill": "light",
+      "outline": null,
+      "shadow": {
+        "color": "#000000CC",
+        "x": 2,
+        "y": 2
+      },
+      "background": null,
+      "position": "bottom",
+      "margin": 0.06,
+      "max_chars": 42,
+      "max_lines": 2,
+      "case": "as_spoken"
+    },
+    "text": {
+      "font": "hand",
+      "size": 90,
+      "fill": "light",
+      "outline": null
+    },
+    "graphics": {
+      "chapter_card": {
+        "font": "hand",
+        "number_size": 120,
+        "size": 84,
+        "kicker_size": 30,
+        "fill": "light",
+        "accent": "secondary",
+        "band": false,
+        "outline": null,
+        "outline_width": 0
+      },
+      "lower_third": {
+        "font": "heading",
+        "subtitle_font": "body",
+        "size": 52,
+        "subtitle_size": 32,
+        "fill": "light",
+        "subtitle_fill": "secondary",
+        "panel": "dark",
+        "panel_opacity": 0.6,
+        "accent": "accent",
+        "margin_y": 0.12
+      },
+      "title_card": {
+        "background": "none",
+        "font": "heading",
+        "subtitle_font": "hand",
+        "size": 130,
+        "subtitle_size": 64,
+        "fill": "light",
+        "subtitle_fill": "secondary",
+        "accent": "accent",
+        "shadow": "#00000099"
+      }
+    },
+    "music": {
+      "zones": {
+        "talk": -22.0,
+        "montage": -3.0,
+        "quiet": -30.0,
+        "swell": -3.0,
+        "end": -4.0
+      },
+      "duck_under_speech": true,
+      "merge_gap": 4.0,
+      "attack": 0.3,
+      "release": 0.9,
+      "crossfade": 3.0,
+      "fade_in": 1.5,
+      "fade_out": 3.0,
+      "dialogue_lufs": null,
+      "sources": [],
+      "notes": "Acoustic, indie or cinematic pieces (music-library: Indie / Bright, Acoustic / Happy Bright, Cinematic / Adventure); a montage is cut to its song; under talk it sits about 22 dB down [AVE].",
+      "likes": [],
+      "avoid": [],
+      "theme": null
+    },
+    "sfx": {
+      "gain_db": -18.0,
+      "map": {
+        "whoosh": "synth/whoosh-soft",
+        "swipe": "library/whoosh_fast_02",
+        "shutter": "library/camera-shutter_click_04",
+        "pop": "library/pop_bloop_02",
+        "ding": "library/ding_confirm_01",
+        "pin": "library/pop_pep_02"
+      },
+      "events": {
+        "transition": "whoosh",
+        "text": "swipe",
+        "place": "pin",
+        "popup": "pop",
+        "reveal": "ding"
+      }
+    },
+    "editing": {
+      "max_pause": 0.5,
+      "pad_in": 0.1,
+      "pad_out": 0.3,
+      "blur_pad": true,
+      "transitions": "cut",
+      "pace": "medium",
+      "intro": null,
+      "outro": null
+    },
+    "export": {
+      "preset": "high_quality_h264",
+      "loudness": -14.0
+    },
+    "look": {
+      "about": "Warm and natural - a touch more colour and warmth than the camera gave, nothing stylised [EDS casual vlog warm, saturation about 1.1, slight lift].",
+      "effects": [
+        {
+          "filter": "hue_lightness_saturation",
+          "params": {
+            "av.s": 1.08
+          }
+        },
+        {
+          "filter": "color",
+          "params": {
+            "lift_r": 0.008,
+            "lift_g": 0.004,
+            "lift_b": 0.0,
+            "gamma_r": 1.02,
+            "gamma_g": 1.01,
+            "gamma_b": 0.99,
+            "gain_r": 1.04,
+            "gain_g": 1.01,
+            "gain_b": 0.97
+          }
+        }
+      ]
+    },
+    "taste": "",
+    "label": "Travel vlog",
+    "summary": "A story-led trip vlog - a cold open, day and place cards, talking parts between music-led montages, warm natural colour.",
+    "kind": "long",
+    "tags": [
+      "travel",
+      "vlog",
+      "story",
+      "day cards",
+      "place tags",
+      "montage",
+      "music",
+      "road trip",
+      "long form",
+      "youtube"
+    ],
+    "preview": "preview.jpg",
+    "recipe": "recipe.md",
+    "credits": [
+      {
+        "file": "preview.jpg",
+        "source": "Frames of National Park Service Yosemite b-roll, with this Look's own type; no people",
+        "licence": "Public domain (stated on the source page); courtesy National Park Service, no endorsement"
+      }
+    ],
+    "effects": {
+      "title": {
+        "kind": "graphic",
+        "about": "The vlog's title over a moving shot after the cold open, with a handwritten line under it.",
+        "template": "title_card",
+        "len": 3.5,
+        "sfx": "whoosh",
+        "sfx_offset_s": -0.51,
+        "rules": {
+          "triggers": [
+            "hook",
+            "topic_change"
+          ],
+          "density": {
+            "per_min": 1
+          },
+          "duration_s": [
+            2.5,
+            4.5
+          ],
+          "when": "Once, right after the cold open (params title, subtitle)."
+        }
+      },
+      "day_card": {
+        "kind": "graphic",
+        "about": "\"Day 1\" in a handwritten face with the date or the place under it, as each day starts.",
+        "template": "chapter_card",
+        "len": 3.0,
+        "sfx": "swipe",
+        "rules": {
+          "triggers": [
+            "topic_change"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 20.0
+          },
+          "duration_s": [
+            2.0,
+            4.0
+          ],
+          "when": "The first shot of each day or leg (params number, title, kicker); true dates from the footage's recorded times. Also the chapter markers (`letitedit_bin` chapter:Day 1) [AVE chapters for long vlogs]."
+        }
+      },
+      "place_tag": {
+        "kind": "location",
+        "about": "A pin drops and the place name slides out, top left - where we are now.",
+        "params": {
+          "position": "top-left"
+        },
+        "len": 4.0,
+        "sfx": "pin",
+        "rules": {
+          "triggers": [
+            "place"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 20.0
+          },
+          "placement": {
+            "avoid": [
+              "face"
+            ]
+          },
+          "when": "Each new place (a town, a beach, a camp); real names only, from the person, the footage's GPS or the brief."
+        }
+      },
+      "map": {
+        "kind": "item",
+        "about": "A route map from the clips' GPS (offline map data) where the trip moves a long way.",
+        "item": {
+          "map": {},
+          "len": 5
+        },
+        "track": "Effects",
+        "sfx": "whoosh",
+        "rules": {
+          "triggers": [
+            "place",
+            "topic_change"
+          ],
+          "density": {
+            "per_min": 1
+          },
+          "when": "Optional - a long drive between places, from the clips' own GPS (letitedit_map); never an exact home or camp location the person hasn't chosen to share."
+        }
+      },
+      "name_tag": {
+        "kind": "graphic",
+        "about": "A person's name at their first appearance.",
+        "template": "lower_third",
+        "len": 4.0,
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "mention"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 30.0
+          },
+          "duration_s": [
+            3.0,
+            5.0
+          ],
+          "when": "The first time someone new appears on camera (params title, subtitle)."
+        }
+      },
+      "aside": {
+        "kind": "text_pop",
+        "about": "A handwritten aside beside the speaker for a funny or telling line (\"narrator - it was not fine\").",
+        "size": 0.38,
+        "zone": "opposite_face",
+        "font": "hand",
+        "fill": "secondary",
+        "stroke": "dark",
+        "stroke_width": 6,
+        "tilt": -4,
+        "in": "pop",
+        "out": "fade",
+        "hold_s": 1.6,
+        "sfx": "pop",
+        "rules": {
+          "triggers": [
+            "punchline",
+            "reaction",
+            "emphasis"
+          ],
+          "density": {
+            "per_min": 1,
+            "min_gap_s": 40.0
+          },
+          "placement": {
+            "zone": "opposite_face",
+            "avoid": [
+              "face",
+              "captions"
+            ]
+          },
+          "duration_s": [
+            1.2,
+            2.5
+          ],
+          "never": [
+            "over_face",
+            "overlapping"
+          ],
+          "when": "Two or three per video at most; the person's humour, never a joke at their expense."
+        }
+      },
+      "establishing_push": {
+        "kind": "zoom_punch",
+        "about": "A slow push into a wide (104% over 4 s) as a new place opens.",
+        "scale": 1.04,
+        "ramp_s": 4.0,
+        "rules": {
+          "triggers": [
+            "place",
+            "cut",
+            "pause"
+          ],
+          "density": {
+            "per_min": 3,
+            "min_gap_s": 15.0
+          },
+          "when": "Wides that set a place, held long enough to read where we are [AVE]."
+        }
+      },
+      "time_dissolve": {
+        "kind": "transition",
+        "about": "A short dissolve where time passes inside a day (0.6 s).",
+        "transition": {
+          "type": "dissolve",
+          "len": 0.6
+        },
+        "rules": {
+          "triggers": [
+            "topic_change"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 20.0
+          },
+          "when": "Morning to evening, the drive to the arrival; cuts everywhere else."
+        }
+      },
+      "whip": {
+        "kind": "whoosh",
+        "about": "A whoosh on a fast cut between places (in place of a whip pan) [VLP whip pans between places].",
+        "sfx": "whoosh",
+        "sfx_offset_s": -0.51,
+        "rules": {
+          "triggers": [
+            "cut",
+            "place"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 20.0
+          },
+          "when": "A cut that jumps place or time inside a montage; sparingly."
+        }
+      },
+      "cutaway": {
+        "kind": "broll",
+        "about": "A shot of the place or the thing over the speaker's words.",
+        "fit": "blur_pad",
+        "len": 3.5,
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "mention",
+            "place"
+          ],
+          "density": {
+            "per_min": 4,
+            "min_gap_s": 8.0
+          },
+          "duration_s": [
+            2.0,
+            6.0
+          ],
+          "when": "Over neutral talk; never over the line that carries the feeling (keep the face) [modes]."
+        }
+      },
+      "photo_moment": {
+        "kind": "sfx",
+        "about": "A camera shutter on a still or a freeze.",
+        "sfx": "shutter",
+        "rules": {
+          "triggers": [
+            "cut"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 15.0
+          },
+          "when": "Only on a still photo or a frozen frame."
+        }
+      }
+    },
+    "fx": {
+      "track": "Effects",
+      "sfx_track": "Effect sounds",
+      "broll_track": "B-roll",
+      "density": {
+        "per_10s": 2,
+        "per_min": 10,
+        "min_gap_s": 2.0
+      },
+      "safe_zone": null,
+      "never": [
+        "overlapping"
+      ],
+      "rhythm": "Talk, montage, talk - a day card at each day, a place tag at each new place, montages cut to their song."
+    },
+    "popups": {
+      "track": null,
+      "sfx_track": null,
+      "min_gap_s": 5.0,
+      "max_total": null,
+      "entries": []
+    },
+    "hook": {
+      "max_s": 30.0,
+      "approaches": [
+        "mid_action",
+        "stakes",
+        "question",
+        "quote"
+      ],
+      "text": {
+        "max_words": 6,
+        "case": "as_said",
+        "position": "bottom",
+        "size": 0.45,
+        "fill": "light",
+        "stroke": null,
+        "stroke_width": 0,
+        "font": "hand"
+      },
+      "rules": "A cold open of a few seconds to half a minute before any introduction - the trip's problem or its best moment [AVE]; the viewer may leave after 5 s, so make those 5 s worth staying for [VLP]; then the title. The end screen lives in the last 5-20 s [AVE].",
+      "avoid": [
+        "greetings",
+        "a channel intro",
+        "a long title sequence",
+        "the ending first"
+      ]
+    },
+    "broll": {
+      "amount": "some",
+      "kinds": [],
+      "favorites": "",
+      "notes": ""
+    },
+    "shots": {
+      "framing": "medium",
+      "camera": "handheld",
+      "punch_ins": "some",
+      "notes": ""
+    },
+    "signature": {
+      "touches": []
+    },
+    "measured": {},
+    "provenance": {
+      "made_by": "letitedit style library, wave 2",
+      "date": "2026-10-30",
+      "measured": "none yet (no reference videos in style-references)",
+      "sources": [
+        {
+          "url": "https://github.com/kmilo93sd/agent-video-editor/blob/main/skills/editing-videos/recipes/vlog.md",
+          "title": "agent-video-editor vlog recipe",
+          "used_for": "cold open, events set the pace, sequences of 3-5 shots, J and L cuts across places, the place sound under b-roll, music 18-25 dB under speech, chapters, end screen",
+          "licence": "MIT, Copyright (c) 2026 kmilo93sd (consulted only; no text adapted)"
+        },
+        {
+          "url": "https://vloggingpro.com/casey-neistat-guide-to-filmmaking/",
+          "title": "VloggingPro guide built from a daily vlogger's interviews",
+          "used_for": "three acts, something visually new every 30 s, music chosen before the edit, jump cuts on a breath, whip pans between places, the first 5 s",
+          "licence": "none found (observations only; the vlogger is not named in the pack)"
+        },
+        {
+          "url": "https://github.com/mindsurf0176/editstyle/blob/master/awesome-editstyles/presets/vlog-casual.md",
+          "title": "EditStyle casual vlog preset",
+          "used_for": "warm colour, about 1.1 saturation, hard cuts by default",
+          "licence": "MIT, Copyright (c) 2026 Minseo (consulted only; no text adapted)"
+        },
+        {
+          "url": "https://air.io/en/youtube-hacks/advanced-retention-editing-cutting-patterns-that-keep-viewers-past-minute-8",
+          "title": "AIR Media-Tech retention editing",
+          "used_for": "picture-change rate in long videos",
+          "licence": "none found (numbers only)"
+        }
+      ],
+      "notes": "The travel-event and story playbooks in letitedit-modes come first. Tags in ..\\SOURCES.md."
+    }
+  },
+  "asset_root": "resources",
+  "files": {
+    "preview.jpg": "resources/5e24ccd18fb036fe32aa4d1d.jpg",
+    "recipe.md": "recipe.md"
+  },
+  "links": {
+    "recipe": "recipe.md",
+    "preview": "preview.jpg"
+  },
+  "legacy": {
+    "format": "letitedit-style/3",
+    "source": "style.yaml",
+    "pack": "travel-vlog",
+    "data": {
+      "format": "letitedit-style/3",
+      "name": "Travel Vlog",
+      "label": "Travel vlog",
+      "summary": "A story-led trip vlog - a cold open, day and place cards, talking parts between music-led montages, warm natural colour.",
+      "kind": "long",
+      "tags": [
+        "travel",
+        "vlog",
+        "story",
+        "day cards",
+        "place tags",
+        "montage",
+        "music",
+        "road trip",
+        "long form",
+        "youtube"
+      ],
+      "recipe": "recipe.md",
+      "preview": "preview.jpg",
+      "description": "A 16:9 YouTube vlog (5-20 min) of a trip or a few days on the road - a problem, the pursuit, the resolution - with montages that let the place breathe.",
+      "colors": {
+        "primary": "#FBF7F0",
+        "secondary": "#F2B544",
+        "accent": "#E4572E",
+        "teal": "#2A8597",
+        "sand": "#EADBC8",
+        "dark": "#16181A",
+        "light": "#FBF7F0"
+      },
+      "fonts": {
+        "heading": {
+          "family": "Outfit",
+          "weight": 800
+        },
+        "body": {
+          "family": "Outfit",
+          "weight": 400
+        },
+        "captions": {
+          "family": "Outfit",
+          "weight": 600
+        },
+        "hand": {
+          "family": "Caveat",
+          "weight": 700
+        }
+      },
+      "graphics": {
+        "chapter_card": {
+          "font": "hand",
+          "number_size": 120,
+          "size": 84,
+          "kicker_size": 30,
+          "fill": "light",
+          "accent": "secondary",
+          "band": false,
+          "outline": null,
+          "outline_width": 0
+        },
+        "lower_third": {
+          "font": "heading",
+          "subtitle_font": "body",
+          "size": 52,
+          "subtitle_size": 32,
+          "fill": "light",
+          "subtitle_fill": "secondary",
+          "panel": "dark",
+          "panel_opacity": 0.6,
+          "accent": "accent",
+          "margin_y": 0.12
+        },
+        "title_card": {
+          "background": "none",
+          "font": "heading",
+          "subtitle_font": "hand",
+          "size": 130,
+          "subtitle_size": 64,
+          "fill": "light",
+          "subtitle_fill": "secondary",
+          "accent": "accent",
+          "shadow": "#00000099"
+        }
+      },
+      "captions": {
+        "font": "captions",
+        "size": 42,
+        "fill": "light",
+        "outline": null,
+        "shadow": {
+          "color": "#000000CC",
+          "x": 2,
+          "y": 2
+        },
+        "position": "bottom",
+        "margin": 0.06,
+        "max_chars": 42,
+        "max_lines": 2,
+        "case": "as_spoken"
+      },
+      "text": {
+        "font": "hand",
+        "size": 90,
+        "fill": "light",
+        "outline": null
+      },
+      "editing": {
+        "max_pause": 0.5,
+        "pad_in": 0.1,
+        "pad_out": 0.3,
+        "blur_pad": true,
+        "transitions": "cut",
+        "pace": "medium"
+      },
+      "music": {
+        "zones": {
+          "talk": -22.0,
+          "montage": -3.0,
+          "quiet": -30.0,
+          "end": -4.0
+        },
+        "notes": "Acoustic, indie or cinematic pieces (music-library: Indie / Bright, Acoustic / Happy Bright, Cinematic / Adventure); a montage is cut to its song; under talk it sits about 22 dB down [AVE]."
+      },
+      "export": {
+        "preset": "high_quality_h264",
+        "loudness": -14.0
+      },
+      "look": {
+        "about": "Warm and natural - a touch more colour and warmth than the camera gave, nothing stylised [EDS casual vlog warm, saturation about 1.1, slight lift].",
+        "effects": [
+          {
+            "filter": "hue_lightness_saturation",
+            "params": {
+              "av.s": 1.08
+            }
+          },
+          {
+            "filter": "color",
+            "params": {
+              "lift_r": 0.008,
+              "lift_g": 0.004,
+              "lift_b": 0.0,
+              "gamma_r": 1.02,
+              "gamma_g": 1.01,
+              "gamma_b": 0.99,
+              "gain_r": 1.04,
+              "gain_g": 1.01,
+              "gain_b": 0.97
+            }
+          }
+        ]
+      },
+      "sfx": {
+        "gain_db": -18.0,
+        "map": {
+          "whoosh": "synth/whoosh-soft",
+          "swipe": "library/whoosh_fast_02",
+          "shutter": "library/camera-shutter_click_04",
+          "pop": "library/pop_bloop_02",
+          "ding": "library/ding_confirm_01",
+          "pin": "library/pop_pep_02"
+        },
+        "events": {
+          "transition": "whoosh",
+          "text": "swipe",
+          "place": "pin",
+          "popup": "pop",
+          "reveal": "ding"
+        }
+      },
+      "fx": {
+        "track": "Effects",
+        "sfx_track": "Effect sounds",
+        "broll_track": "B-roll",
+        "density": {
+          "per_10s": 2,
+          "per_min": 10,
+          "min_gap_s": 2.0
+        },
+        "safe_zone": null,
+        "never": [
+          "overlapping"
+        ],
+        "rhythm": "Talk, montage, talk - a day card at each day, a place tag at each new place, montages cut to their song."
+      },
+      "effects": {
+        "title": {
+          "kind": "graphic",
+          "about": "The vlog's title over a moving shot after the cold open, with a handwritten line under it.",
+          "template": "title_card",
+          "len": 3.5,
+          "sfx": "whoosh",
+          "sfx_offset_s": -0.51,
+          "rules": {
+            "triggers": [
+              "hook",
+              "topic_change"
+            ],
+            "density": {
+              "per_min": 1
+            },
+            "duration_s": [
+              2.5,
+              4.5
+            ],
+            "when": "Once, right after the cold open (params title, subtitle)."
+          }
+        },
+        "day_card": {
+          "kind": "graphic",
+          "about": "\"Day 1\" in a handwritten face with the date or the place under it, as each day starts.",
+          "template": "chapter_card",
+          "len": 3.0,
+          "sfx": "swipe",
+          "rules": {
+            "triggers": [
+              "topic_change"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 20.0
+            },
+            "duration_s": [
+              2.0,
+              4.0
+            ],
+            "when": "The first shot of each day or leg (params number, title, kicker); true dates from the footage's recorded times. Also the chapter markers (`letitedit_bin` chapter:Day 1) [AVE chapters for long vlogs]."
+          }
+        },
+        "place_tag": {
+          "kind": "location",
+          "about": "A pin drops and the place name slides out, top left - where we are now.",
+          "params": {
+            "position": "top-left"
+          },
+          "len": 4.0,
+          "sfx": "pin",
+          "rules": {
+            "triggers": [
+              "place"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 20.0
+            },
+            "placement": {
+              "avoid": [
+                "face"
+              ]
+            },
+            "when": "Each new place (a town, a beach, a camp); real names only, from the person, the footage's GPS or the brief."
+          }
+        },
+        "map": {
+          "kind": "item",
+          "about": "A route map from the clips' GPS (offline map data) where the trip moves a long way.",
+          "item": {
+            "map": {},
+            "len": 5
+          },
+          "track": "Effects",
+          "sfx": "whoosh",
+          "rules": {
+            "triggers": [
+              "place",
+              "topic_change"
+            ],
+            "density": {
+              "per_min": 1
+            },
+            "when": "Optional - a long drive between places, from the clips' own GPS (letitedit_map); never an exact home or camp location the person hasn't chosen to share."
+          }
+        },
+        "name_tag": {
+          "kind": "graphic",
+          "about": "A person's name at their first appearance.",
+          "template": "lower_third",
+          "len": 4.0,
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "mention"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 30.0
+            },
+            "duration_s": [
+              3.0,
+              5.0
+            ],
+            "when": "The first time someone new appears on camera (params title, subtitle)."
+          }
+        },
+        "aside": {
+          "kind": "text_pop",
+          "about": "A handwritten aside beside the speaker for a funny or telling line (\"narrator - it was not fine\").",
+          "size": 0.38,
+          "zone": "opposite_face",
+          "font": "hand",
+          "fill": "secondary",
+          "stroke": "dark",
+          "stroke_width": 6,
+          "tilt": -4,
+          "in": "pop",
+          "out": "fade",
+          "hold_s": 1.6,
+          "sfx": "pop",
+          "rules": {
+            "triggers": [
+              "punchline",
+              "reaction",
+              "emphasis"
+            ],
+            "density": {
+              "per_min": 1,
+              "min_gap_s": 40.0
+            },
+            "placement": {
+              "zone": "opposite_face",
+              "avoid": [
+                "face",
+                "captions"
+              ]
+            },
+            "duration_s": [
+              1.2,
+              2.5
+            ],
+            "never": [
+              "over_face",
+              "overlapping"
+            ],
+            "when": "Two or three per video at most; the person's humour, never a joke at their expense."
+          }
+        },
+        "establishing_push": {
+          "kind": "zoom_punch",
+          "about": "A slow push into a wide (104% over 4 s) as a new place opens.",
+          "scale": 1.04,
+          "ramp_s": 4.0,
+          "rules": {
+            "triggers": [
+              "place",
+              "cut",
+              "pause"
+            ],
+            "density": {
+              "per_min": 3,
+              "min_gap_s": 15.0
+            },
+            "when": "Wides that set a place, held long enough to read where we are [AVE]."
+          }
+        },
+        "time_dissolve": {
+          "kind": "transition",
+          "about": "A short dissolve where time passes inside a day (0.6 s).",
+          "transition": {
+            "type": "dissolve",
+            "len": 0.6
+          },
+          "rules": {
+            "triggers": [
+              "topic_change"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 20.0
+            },
+            "when": "Morning to evening, the drive to the arrival; cuts everywhere else."
+          }
+        },
+        "whip": {
+          "kind": "whoosh",
+          "about": "A whoosh on a fast cut between places (in place of a whip pan) [VLP whip pans between places].",
+          "sfx": "whoosh",
+          "sfx_offset_s": -0.51,
+          "rules": {
+            "triggers": [
+              "cut",
+              "place"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 20.0
+            },
+            "when": "A cut that jumps place or time inside a montage; sparingly."
+          }
+        },
+        "cutaway": {
+          "kind": "broll",
+          "about": "A shot of the place or the thing over the speaker's words.",
+          "fit": "blur_pad",
+          "len": 3.5,
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "mention",
+              "place"
+            ],
+            "density": {
+              "per_min": 4,
+              "min_gap_s": 8.0
+            },
+            "duration_s": [
+              2.0,
+              6.0
+            ],
+            "when": "Over neutral talk; never over the line that carries the feeling (keep the face) [modes]."
+          }
+        },
+        "photo_moment": {
+          "kind": "sfx",
+          "about": "A camera shutter on a still or a freeze.",
+          "sfx": "shutter",
+          "rules": {
+            "triggers": [
+              "cut"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 15.0
+            },
+            "when": "Only on a still photo or a frozen frame."
+          }
+        }
+      },
+      "popups": {
+        "min_gap_s": 5.0,
+        "entries": []
+      },
+      "hook": {
+        "max_s": 30.0,
+        "approaches": [
+          "mid_action",
+          "stakes",
+          "question",
+          "quote"
+        ],
+        "text": {
+          "max_words": 6,
+          "case": "as_said",
+          "position": "bottom",
+          "size": 0.45,
+          "fill": "light",
+          "stroke": null,
+          "stroke_width": 0,
+          "font": "hand"
+        },
+        "rules": "A cold open of a few seconds to half a minute before any introduction - the trip's problem or its best moment [AVE]; the viewer may leave after 5 s, so make those 5 s worth staying for [VLP]; then the title. The end screen lives in the last 5-20 s [AVE].",
+        "avoid": [
+          "greetings",
+          "a channel intro",
+          "a long title sequence",
+          "the ending first"
+        ]
+      },
+      "credits": [
+        {
+          "file": "preview.jpg",
+          "source": "Original preview imagery; hands, objects, places and titles only",
+          "licence": "Original letitedit footage: hands, objects, places and titles only; no faces"
+        }
+      ],
+      "measured": {},
+      "provenance": {
+        "made_by": "letitedit style library, wave 2",
+        "date": "2026-10-30",
+        "measured": "none yet (no reference videos in style-references)",
+        "sources": [
+          {
+            "url": "https://github.com/kmilo93sd/agent-video-editor/blob/main/skills/editing-videos/recipes/vlog.md",
+            "title": "agent-video-editor vlog recipe",
+            "used_for": "cold open, events set the pace, sequences of 3-5 shots, J and L cuts across places, the place sound under b-roll, music 18-25 dB under speech, chapters, end screen",
+            "licence": "MIT, Copyright (c) 2026 kmilo93sd (consulted only; no text adapted)"
+          },
+          {
+            "url": "https://vloggingpro.com/casey-neistat-guide-to-filmmaking/",
+            "title": "VloggingPro guide built from a daily vlogger's interviews",
+            "used_for": "three acts, something visually new every 30 s, music chosen before the edit, jump cuts on a breath, whip pans between places, the first 5 s",
+            "licence": "none found (observations only; the vlogger is not named in the pack)"
+          },
+          {
+            "url": "https://github.com/mindsurf0176/editstyle/blob/master/awesome-editstyles/presets/vlog-casual.md",
+            "title": "EditStyle casual vlog preset",
+            "used_for": "warm colour, about 1.1 saturation, hard cuts by default",
+            "licence": "MIT, Copyright (c) 2026 Minseo (consulted only; no text adapted)"
+          },
+          {
+            "url": "https://air.io/en/youtube-hacks/advanced-retention-editing-cutting-patterns-that-keep-viewers-past-minute-8",
+            "title": "AIR Media-Tech retention editing",
+            "used_for": "picture-change rate in long videos",
+            "licence": "none found (numbers only)"
+          }
+        ],
+        "notes": "The travel-event and story playbooks in letitedit-modes come first. Tags in ..\\SOURCES.md."
+      }
+    }
+  }
+}

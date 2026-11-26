@@ -1,0 +1,14 @@
+diff --git a/src/framework/mlt_chain.c b/src/framework/mlt_chain.c
+index fafb93db..aa3137a3 100644
+--- a/src/framework/mlt_chain.c
++++ b/src/framework/mlt_chain.c
+@@ -476,6 +476,9 @@ extern void mlt_chain_attach_normalizers(mlt_chain self)
+                 mlt_properties_set_int(MLT_LINK_PROPERTIES(link), "_loader", 1);
+                 mlt_chain_attach(self, link);
+                 mlt_chain_move_link(self, mlt_chain_link_count(self) - 1, norm_count);
++                // The chain holds its own reference now (mlt_chain_attach): release the factory's, as every other
++                // caller of mlt_chain_attach does, or the link outlives the chain.
++                mlt_link_close(link);
+                 norm_count++;
+                 break;
+             }

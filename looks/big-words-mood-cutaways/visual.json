@@ -1,0 +1,1964 @@
+{
+ "format": "letitedit-visual-evidence/1",
+ "references": [
+  {
+   "file": "reference",
+   "duration_s": 53.336,
+   "native_effects": {
+    "events": [
+     {
+      "kind": "invert",
+      "start_frame": 85,
+      "end_frame": 87,
+      "t": 1.4166666666666667,
+      "end": 1.45,
+      "len": 0.03333333333333333,
+      "evidence": {
+       "mae": 0.01847,
+       "correlation": -0.9982,
+       "support": 1.0
+      },
+      "status": "measured_candidate"
+     },
+     {
+      "kind": "invert",
+      "start_frame": 90,
+      "end_frame": 92,
+      "t": 1.5,
+      "end": 1.5333333333333334,
+      "len": 0.03333333333333333,
+      "evidence": {
+       "mae": 0.01914,
+       "correlation": -0.99707,
+       "support": 1.0
+      },
+      "status": "measured_candidate"
+     },
+     {
+      "kind": "invert",
+      "start_frame": 397,
+      "end_frame": 399,
+      "t": 6.616666666666666,
+      "end": 6.65,
+      "len": 0.03333333333333333,
+      "evidence": {
+       "mae": 0.01667,
+       "correlation": -0.99359,
+       "support": 1.0
+      },
+      "status": "measured_candidate"
+     },
+     {
+      "kind": "invert",
+      "start_frame": 402,
+      "end_frame": 404,
+      "t": 6.7,
+      "end": 6.733333333333333,
+      "len": 0.03333333333333333,
+      "evidence": {
+       "mae": 0.01651,
+       "correlation": -0.99858,
+       "support": 1.0
+      },
+      "status": "measured_candidate"
+     },
+     {
+      "kind": "invert",
+      "start_frame": 577,
+      "end_frame": 579,
+      "t": 9.616666666666667,
+      "end": 9.65,
+      "len": 0.03333333333333333,
+      "evidence": {
+       "mae": 0.01692,
+       "correlation": -0.99894,
+       "support": 1.0
+      },
+      "status": "measured_candidate"
+     },
+     {
+      "kind": "invert",
+      "start_frame": 582,
+      "end_frame": 584,
+      "t": 9.7,
+      "end": 9.733333333333333,
+      "len": 0.03333333333333333,
+      "evidence": {
+       "mae": 0.01704,
+       "correlation": -0.99922,
+       "support": 1.0
+      },
+      "status": "measured_candidate"
+     },
+     {
+      "kind": "invert",
+      "start_frame": 757,
+      "end_frame": 759,
+      "t": 12.616666666666667,
+      "end": 12.65,
+      "len": 0.03333333333333333,
+      "evidence": {
+       "mae": 0.0197,
+       "correlation": -0.99825,
+       "support": 1.0
+      },
+      "status": "measured_candidate"
+     },
+     {
+      "kind": "invert",
+      "start_frame": 762,
+      "end_frame": 764,
+      "t": 12.7,
+      "end": 12.733333333333333,
+      "len": 0.03333333333333333,
+      "evidence": {
+       "mae": 0.01706,
+       "correlation": -0.99881,
+       "support": 1.0
+      },
+      "status": "measured_candidate"
+     },
+     {
+      "kind": "invert",
+      "start_frame": 1003,
+      "end_frame": 1005,
+      "t": 16.716666666666665,
+      "end": 16.75,
+      "len": 0.03333333333333333,
+      "evidence": {
+       "mae": 0.01847,
+       "correlation": -0.99801,
+       "support": 1.0
+      },
+      "status": "measured_candidate"
+     },
+     {
+      "kind": "invert",
+      "start_frame": 1008,
+      "end_frame": 1010,
+      "t": 16.8,
+      "end": 16.833333333333332,
+      "len": 0.03333333333333333,
+      "evidence": {
+       "mae": 0.01703,
+       "correlation": -0.99932,
+       "support": 1.0
+      },
+      "status": "measured_candidate"
+     },
+     {
+      "kind": "invert",
+      "start_frame": 1427,
+      "end_frame": 1429,
+      "t": 23.783333333333335,
+      "end": 23.816666666666666,
+      "len": 0.03333333333333333,
+      "evidence": {
+       "mae": 0.01749,
+       "correlation": -0.99893,
+       "support": 1.0
+      },
+      "status": "measured_candidate"
+     },
+     {
+      "kind": "invert",
+      "start_frame": 1432,
+      "end_frame": 1434,
+      "t": 23.866666666666667,
+      "end": 23.9,
+      "len": 0.03333333333333333,
+      "evidence": {
+       "mae": 0.0223,
+       "correlation": -0.98461,
+       "support": 0.99542
+      },
+      "status": "measured_candidate"
+     },
+     {
+      "kind": "invert",
+      "start_frame": 1993,
+      "end_frame": 1995,
+      "t": 33.21666666666667,
+      "end": 33.25,
+      "len": 0.03333333333333333,
+      "evidence": {
+       "mae": 0.01735,
+       "correlation": -0.99882,
+       "support": 1.0
+      },
+      "status": "measured_candidate"
+     },
+     {
+      "kind": "invert",
+      "start_frame": 1998,
+      "end_frame": 2000,
+      "t": 33.3,
+      "end": 33.333333333333336,
+      "len": 0.03333333333333333,
+      "evidence": {
+       "mae": 0.0436,
+       "correlation": -0.90199,
+       "support": 0.95951
+      },
+      "status": "measured_candidate"
+     },
+     {
+      "kind": "invert",
+      "start_frame": 2219,
+      "end_frame": 2221,
+      "t": 36.983333333333334,
+      "end": 37.016666666666666,
+      "len": 0.03333333333333333,
+      "evidence": {
+       "mae": 0.01686,
+       "correlation": -0.99841,
+       "support": 1.0
+      },
+      "status": "measured_candidate"
+     },
+     {
+      "kind": "invert",
+      "start_frame": 2224,
+      "end_frame": 2226,
+      "t": 37.06666666666667,
+      "end": 37.1,
+      "len": 0.03333333333333333,
+      "evidence": {
+       "mae": 0.02513,
+       "correlation": -0.98859,
+       "support": 0.98611
+      },
+      "status": "measured_candidate"
+     },
+     {
+      "kind": "invert",
+      "start_frame": 2643,
+      "end_frame": 2645,
+      "t": 44.05,
+      "end": 44.083333333333336,
+      "len": 0.03333333333333333,
+      "evidence": {
+       "mae": 0.01838,
+       "correlation": -0.99092,
+       "support": 0.99868
+      },
+      "status": "measured_candidate"
+     },
+     {
+      "kind": "invert",
+      "start_frame": 2648,
+      "end_frame": 2650,
+      "t": 44.13333333333333,
+      "end": 44.166666666666664,
+      "len": 0.03333333333333333,
+      "evidence": {
+       "mae": 0.0166,
+       "correlation": -0.99909,
+       "support": 1.0
+      },
+      "status": "measured_candidate"
+     },
+     {
+      "kind": "invert",
+      "start_frame": 3043,
+      "end_frame": 3045,
+      "t": 50.71666666666667,
+      "end": 50.75,
+      "len": 0.03333333333333333,
+      "evidence": {
+       "mae": 0.01847,
+       "correlation": -0.99818,
+       "support": 1.0
+      },
+      "status": "measured_candidate"
+     },
+     {
+      "kind": "invert",
+      "start_frame": 3048,
+      "end_frame": 3050,
+      "t": 50.8,
+      "end": 50.833333333333336,
+      "len": 0.03333333333333333,
+      "evidence": {
+       "mae": 0.01825,
+       "correlation": -0.99879,
+       "support": 0.99993
+      },
+      "status": "measured_candidate"
+     }
+    ],
+    "decoded_frames": 3196,
+    "fps": 60.0,
+    "coverage_s": 53.266666666666666,
+    "method": "Every decoded native frame, small RGB pictures; textured negative correlation and inverse residual. Black borders excluded. Half-open native frame intervals; no easing or sound inferred.",
+    "limitations": [
+     "Candidates need inspection; motion/occlusion can hide an inversion or split its span.",
+     "An inverted first frame has no clean predecessor and cannot be established.",
+     "Not a general shot-boundary, wipe, blur or transition-direction classifier."
+    ],
+    "expected_frames": 3196,
+    "decode_complete": true
+   },
+   "review": {
+    "reviewer": "Codex gpt-6.1-sol; sampled private full frames and native boundary sheets",
+    "exhaustive": false,
+    "audio_listened": false,
+    "limits": [
+     "Native-boundary and half-second pages are not an exhaustive audiovisual teardown.",
+     "Subjects are visual annotations. Relationship to exact words, source licensing and origin unestablished.",
+     "Unreviewed container tail excluded; full-runtime semantic share intentionally null.",
+     "repairs inversion and graphic-card cuts only; complete classes, caption truth, subject scoring and sound attribution remain unmeasured."
+    ],
+    "intervals": [
+     {
+      "start_s": 0.0,
+      "end_s": 1.4666666666666666,
+      "role": "talking_head",
+      "subject": "Podcast man",
+      "source_character": "not independently established",
+      "relationship_to_speech": null,
+      "framing_movement_grade": null,
+      "status": "manual visual annotation, not automatic detection"
+     },
+     {
+      "start_s": 1.4666666666666666,
+      "end_s": 6.666666666666667,
+      "role": "broll",
+      "subject": "Seated couple, red-haired woman, monochrome couple",
+      "source_character": "not independently established",
+      "relationship_to_speech": null,
+      "framing_movement_grade": null,
+      "status": "manual visual annotation, not automatic detection"
+     },
+     {
+      "start_s": 6.666666666666667,
+      "end_s": 9.666666666666666,
+      "role": "talking_head",
+      "subject": "Podcast woman",
+      "source_character": "not independently established",
+      "relationship_to_speech": null,
+      "framing_movement_grade": null,
+      "status": "manual visual annotation, not automatic detection"
+     },
+     {
+      "start_s": 9.666666666666666,
+      "end_s": 12.666666666666666,
+      "role": "broll",
+      "subject": "Sunset and bar couple",
+      "source_character": "not independently established",
+      "relationship_to_speech": null,
+      "framing_movement_grade": null,
+      "status": "manual visual annotation, not automatic detection"
+     },
+     {
+      "start_s": 12.666666666666666,
+      "end_s": 13.766666666666667,
+      "role": "talking_head",
+      "subject": "Podcast woman",
+      "source_character": "not independently established",
+      "relationship_to_speech": null,
+      "framing_movement_grade": null,
+      "status": "manual visual annotation, not automatic detection"
+     },
+     {
+      "start_s": 13.766666666666667,
+      "end_s": 16.766666666666666,
+      "role": "broll",
+      "subject": "Cyan-lit intimate couple",
+      "source_character": "not independently established",
+      "relationship_to_speech": null,
+      "framing_movement_grade": null,
+      "status": "manual visual annotation, not automatic detection"
+     },
+     {
+      "start_s": 16.766666666666666,
+      "end_s": 18.5,
+      "role": "talking_head",
+      "subject": "Podcast woman",
+      "source_character": "not independently established",
+      "relationship_to_speech": null,
+      "framing_movement_grade": null,
+      "status": "manual visual annotation, not automatic detection"
+     },
+     {
+      "start_s": 18.5,
+      "end_s": 22.5,
+      "role": "broll",
+      "subject": "Woodland embrace then couple by wall",
+      "source_character": "not independently established",
+      "relationship_to_speech": null,
+      "framing_movement_grade": null,
+      "status": "manual visual annotation, not automatic detection"
+     },
+     {
+      "start_s": 22.5,
+      "end_s": 23.833333333333332,
+      "role": "talking_head",
+      "subject": "Podcast woman",
+      "source_character": "not independently established",
+      "relationship_to_speech": null,
+      "framing_movement_grade": null,
+      "status": "manual visual annotation, not automatic detection"
+     },
+     {
+      "start_s": 23.833333333333332,
+      "end_s": 26.1,
+      "role": "broll",
+      "subject": "Couple and child",
+      "source_character": "not independently established",
+      "relationship_to_speech": null,
+      "framing_movement_grade": null,
+      "status": "manual visual annotation, not automatic detection"
+     },
+     {
+      "start_s": 26.1,
+      "end_s": 28.166666666666668,
+      "role": "talking_head",
+      "subject": "Podcast woman",
+      "source_character": "not independently established",
+      "relationship_to_speech": null,
+      "framing_movement_grade": null,
+      "status": "manual visual annotation, not automatic detection"
+     },
+     {
+      "start_s": 28.166666666666668,
+      "end_s": 30.9,
+      "role": "broll",
+      "subject": "Blue-lit pool couple",
+      "source_character": "not independently established",
+      "relationship_to_speech": null,
+      "framing_movement_grade": null,
+      "status": "manual visual annotation, not automatic detection"
+     },
+     {
+      "start_s": 30.9,
+      "end_s": 33.266666666666666,
+      "role": "talking_head",
+      "subject": "Podcast woman",
+      "source_character": "not independently established",
+      "relationship_to_speech": null,
+      "framing_movement_grade": null,
+      "status": "manual visual annotation, not automatic detection"
+     },
+     {
+      "start_s": 33.266666666666666,
+      "end_s": 37.03333333333333,
+      "role": "broll",
+      "subject": "Close couple then hands of Black couple",
+      "source_character": "not independently established",
+      "relationship_to_speech": null,
+      "framing_movement_grade": null,
+      "status": "manual visual annotation, not automatic detection"
+     },
+     {
+      "start_s": 37.03333333333333,
+      "end_s": 41.1,
+      "role": "talking_head",
+      "subject": "Podcast woman",
+      "source_character": "not independently established",
+      "relationship_to_speech": null,
+      "framing_movement_grade": null,
+      "status": "manual visual annotation, not automatic detection"
+     },
+     {
+      "start_s": 41.1,
+      "end_s": 44.1,
+      "role": "broll",
+      "subject": "Seaside then bathroom couple",
+      "source_character": "not independently established",
+      "relationship_to_speech": null,
+      "framing_movement_grade": null,
+      "status": "manual visual annotation, not automatic detection"
+     },
+     {
+      "start_s": 44.1,
+      "end_s": 45.56666666666667,
+      "role": "talking_head",
+      "subject": "Podcast woman",
+      "source_character": "not independently established",
+      "relationship_to_speech": null,
+      "framing_movement_grade": null,
+      "status": "manual visual annotation, not automatic detection"
+     },
+     {
+      "start_s": 45.56666666666667,
+      "end_s": 47.53333333333333,
+      "role": "broll",
+      "subject": "Green-room film couple",
+      "source_character": "not independently established",
+      "relationship_to_speech": null,
+      "framing_movement_grade": null,
+      "status": "manual visual annotation, not automatic detection"
+     },
+     {
+      "start_s": 47.53333333333333,
+      "end_s": 48.56666666666667,
+      "role": "talking_head",
+      "subject": "Podcast woman",
+      "source_character": "not independently established",
+      "relationship_to_speech": null,
+      "framing_movement_grade": null,
+      "status": "manual visual annotation, not automatic detection"
+     },
+     {
+      "start_s": 48.56666666666667,
+      "end_s": 50.766666666666666,
+      "role": "broll",
+      "subject": "Dark-blue couple",
+      "source_character": "not independently established",
+      "relationship_to_speech": null,
+      "framing_movement_grade": null,
+      "status": "manual visual annotation, not automatic detection"
+     },
+     {
+      "start_s": 50.766666666666666,
+      "end_s": 53.266666666666666,
+      "role": "talking_head",
+      "subject": "Podcast woman",
+      "source_character": "not independently established",
+      "relationship_to_speech": null,
+      "framing_movement_grade": null,
+      "status": "manual visual annotation, not automatic detection"
+     }
+    ],
+    "captions": [
+     {
+      "start_s": 0.11666666666666667,
+      "end_s": 0.36666666666666664,
+      "text": "",
+      "description": "L, F; fully visible by 13; blank frame 22 before next event",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 0.38333333333333336,
+      "end_s": 0.6333333333333333,
+      "text": "",
+      "description": "E, F; settled by 31",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 0.6333333333333333,
+      "end_s": 1.1,
+      "text": "",
+      "description": "E, F; settled by 47; fixed-left append",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 1.1166666666666667,
+      "end_s": 1.4666666666666666,
+      "text": "",
+      "description": "L, F; settled by 73",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 1.4666666666666666,
+      "end_s": 1.9666666666666666,
+      "text": "",
+      "description": "L, D over cutaway",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 1.9666666666666666,
+      "end_s": 3.066666666666667,
+      "text": "",
+      "description": "L, fixed-left append",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 3.066666666666667,
+      "end_s": 3.6666666666666665,
+      "text": "",
+      "description": "E; prior small line briefly remains beneath",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 3.7,
+      "end_s": 3.966666666666667,
+      "text": "",
+      "description": "L",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 3.966666666666667,
+      "end_s": 4.533333333333333,
+      "text": "",
+      "description": "L, fixed-left append",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 4.533333333333333,
+      "end_s": 5.133333333333334,
+      "text": "",
+      "description": "M/E",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 5.133333333333334,
+      "end_s": 5.5,
+      "text": "",
+      "description": "L",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 5.5,
+      "end_s": 6.666666666666667,
+      "text": "",
+      "description": "L, fixed-left append",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 6.733333333333333,
+      "end_s": 7.366666666666666,
+      "text": "",
+      "description": "L, F; settled by 414",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 7.366666666666666,
+      "end_s": 7.966666666666667,
+      "text": "",
+      "description": "E, D, C blue/white inside word",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 7.966666666666667,
+      "end_s": 8.6,
+      "text": "",
+      "description": "E, fixed-left append",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 8.633333333333333,
+      "end_s": 9.666666666666666,
+      "text": "",
+      "description": "L/M, F; settled by 531",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 9.666666666666666,
+      "end_s": 10.1,
+      "text": "",
+      "description": "L, D on cutaway",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 10.1,
+      "end_s": 11.233333333333333,
+      "text": "",
+      "description": "E, scale settles over about 12 frames; starts roughly 1.1-1.2 times final size; curve not fitted",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 11.233333333333333,
+      "end_s": 11.666666666666666,
+      "text": "",
+      "description": "L",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 11.666666666666666,
+      "end_s": 12.666666666666666,
+      "text": "",
+      "description": "L, fixed-left append",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 12.666666666666666,
+      "end_s": 13.766666666666667,
+      "text": "",
+      "description": "S, very large serif, D, C",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 13.766666666666667,
+      "end_s": 14.133333333333333,
+      "text": "",
+      "description": "L, D on cutaway",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 14.133333333333333,
+      "end_s": 15.066666666666666,
+      "text": "",
+      "description": "L, fixed-left append",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 15.066666666666666,
+      "end_s": 16.166666666666668,
+      "text": "",
+      "description": "M/E, C purple/white",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 16.166666666666668,
+      "end_s": 16.766666666666666,
+      "text": "",
+      "description": "L",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 17.166666666666668,
+      "end_s": 17.533333333333335,
+      "text": "",
+      "description": "L, F; settled by 1044",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 17.533333333333335,
+      "end_s": 18.5,
+      "text": "",
+      "description": "L, F",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 18.5,
+      "end_s": 18.866666666666667,
+      "text": "",
+      "description": "L, D on cutaway",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 18.866666666666667,
+      "end_s": 19.4,
+      "text": "",
+      "description": "L, fixed-left append",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 19.4,
+      "end_s": 19.8,
+      "text": "",
+      "description": "E, C lavender/white",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 19.8,
+      "end_s": 20.7,
+      "text": "",
+      "description": "E, fixed-left append",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 20.7,
+      "end_s": 21.166666666666668,
+      "text": "",
+      "description": "L on cutaway",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 21.166666666666668,
+      "end_s": 21.666666666666668,
+      "text": "",
+      "description": "L, fixed-left append",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 21.666666666666668,
+      "end_s": 22.5,
+      "text": "",
+      "description": "L, fixed-left append",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 22.5,
+      "end_s": 23.0,
+      "text": "",
+      "description": "E, C on woman shot; overlaps her face in source, forbidden in ours",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 23.0,
+      "end_s": 23.833333333333332,
+      "text": "",
+      "description": "E, C",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 24.033333333333335,
+      "end_s": 24.6,
+      "text": "",
+      "description": "L",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 24.6,
+      "end_s": 26.1,
+      "text": "",
+      "description": "L, fixed-left append",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 26.1,
+      "end_s": 26.466666666666665,
+      "text": "",
+      "description": "L on woman shot",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 26.466666666666665,
+      "end_s": 26.8,
+      "text": "",
+      "description": "L, fixed-left append",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 26.8,
+      "end_s": 27.3,
+      "text": "",
+      "description": "M/E, W solid white",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 27.3,
+      "end_s": 28.166666666666668,
+      "text": "",
+      "description": "M/E, W",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 28.166666666666668,
+      "end_s": 28.533333333333335,
+      "text": "",
+      "description": "M, C orange over blue cutaway",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 28.533333333333335,
+      "end_s": 29.466666666666665,
+      "text": "",
+      "description": "M/E, C orange/white follows picture",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 29.466666666666665,
+      "end_s": 29.6,
+      "text": "",
+      "description": "L",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 29.6,
+      "end_s": 29.8,
+      "text": "",
+      "description": "L, brief hold; text density spikes",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 29.8,
+      "end_s": 30.233333333333334,
+      "text": "",
+      "description": "E, W solid white",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 30.233333333333334,
+      "end_s": 30.9,
+      "text": "",
+      "description": "L",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 30.933333333333334,
+      "end_s": 31.6,
+      "text": "",
+      "description": "L, F; settled by 1874",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 31.6,
+      "end_s": 32.13333333333333,
+      "text": "",
+      "description": "L, F; settled by 1910",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 32.13333333333333,
+      "end_s": 32.3,
+      "text": "",
+      "description": "E, D",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 32.3,
+      "end_s": 33.266666666666666,
+      "text": "",
+      "description": "E, C white/cyan; spelling kept",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 33.266666666666666,
+      "end_s": 33.86666666666667,
+      "text": "",
+      "description": "L on cutaway; inversion 1998-2000",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 33.86666666666667,
+      "end_s": 35.0,
+      "text": "",
+      "description": "L, fixed-left append",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 35.0,
+      "end_s": 35.36666666666667,
+      "text": "",
+      "description": "L on cutaway",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 35.36666666666667,
+      "end_s": 35.63333333333333,
+      "text": "",
+      "description": "L, fixed-left append",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 35.63333333333333,
+      "end_s": 35.833333333333336,
+      "text": "",
+      "description": "L, fixed-left append",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 35.833333333333336,
+      "end_s": 36.03333333333333,
+      "text": "",
+      "description": "E, F, C grey/orange",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 36.03333333333333,
+      "end_s": 37.03333333333333,
+      "text": "",
+      "description": "E, F; settled by 2175",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 37.03333333333333,
+      "end_s": 37.7,
+      "text": "",
+      "description": "E, D; incomplete word intentionally revealed by syllables; inversion 2224-2226",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 37.7,
+      "end_s": 38.7,
+      "text": "",
+      "description": "Completes communication; fixed position, not a letter-by-letter effect",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 38.71666666666667,
+      "end_s": 39.233333333333334,
+      "text": "",
+      "description": "L, F; settled by 2342",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 39.233333333333334,
+      "end_s": 39.63333333333333,
+      "text": "",
+      "description": "L, F",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 39.63333333333333,
+      "end_s": 39.93333333333333,
+      "text": "",
+      "description": "L, F",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 39.93333333333333,
+      "end_s": 40.5,
+      "text": "",
+      "description": "L, F",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 40.5,
+      "end_s": 41.1,
+      "text": "",
+      "description": "L, F; settled by 2444; single fixed-left line, poor white-on-skin contrast",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 41.1,
+      "end_s": 41.3,
+      "text": "",
+      "description": "L, black on cutaway",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 41.3,
+      "end_s": 41.833333333333336,
+      "text": "",
+      "description": "E, C dark green",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 41.833333333333336,
+      "end_s": 42.3,
+      "text": "",
+      "description": "L, black",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 42.3,
+      "end_s": 43.1,
+      "text": "",
+      "description": "L, black, fixed-left append",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 43.1,
+      "end_s": 44.1,
+      "text": "",
+      "description": "M/E, D, white with slight picture texture",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 44.11666666666667,
+      "end_s": 44.43333333333333,
+      "text": "",
+      "description": "L, F; settled by 2662; inversion 2648-2650",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 44.43333333333333,
+      "end_s": 44.63333333333333,
+      "text": "",
+      "description": "L, F",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 44.63333333333333,
+      "end_s": 45.56666666666667,
+      "text": "",
+      "description": "L, F; settled by 2694",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 45.56666666666667,
+      "end_s": 46.13333333333333,
+      "text": "",
+      "description": "L, white on cutaway",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 46.13333333333333,
+      "end_s": 46.333333333333336,
+      "text": "",
+      "description": "L, white",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 46.333333333333336,
+      "end_s": 46.6,
+      "text": "",
+      "description": "E, giant sans, D, C yellow-green",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 46.6,
+      "end_s": 47.53333333333333,
+      "text": "",
+      "description": "L, white",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 47.55,
+      "end_s": 47.9,
+      "text": "",
+      "description": "L, F; settled by 2871",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 47.9,
+      "end_s": 48.06666666666667,
+      "text": "",
+      "description": "L, F",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 48.06666666666667,
+      "end_s": 48.56666666666667,
+      "text": "",
+      "description": "L, F; settled by 2900",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 48.56666666666667,
+      "end_s": 49.06666666666667,
+      "text": "",
+      "description": "E, D, C orange/white on cutaway",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 49.06666666666667,
+      "end_s": 49.4,
+      "text": "",
+      "description": "L, white",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 49.4,
+      "end_s": 49.56666666666667,
+      "text": "",
+      "description": "L, fixed-left append",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 49.56666666666667,
+      "end_s": 49.766666666666666,
+      "text": "",
+      "description": "L, fixed-left append",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 49.766666666666666,
+      "end_s": 50.766666666666666,
+      "text": "",
+      "description": "L, fixed-left append",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 50.8,
+      "end_s": 51.266666666666666,
+      "text": "",
+      "description": "L, F; settled about 3065; inversion 3048-3050",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 51.266666666666666,
+      "end_s": 51.733333333333334,
+      "text": "",
+      "description": "L, F; settled about 3090",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 51.733333333333334,
+      "end_s": 51.93333333333333,
+      "text": "",
+      "description": "L, F; settled about 3115",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 51.93333333333333,
+      "end_s": 52.233333333333334,
+      "text": "",
+      "description": "L, F; settled about 3130",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 52.233333333333334,
+      "end_s": 52.4,
+      "text": "",
+      "description": "L, F; settled about 3144",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     },
+     {
+      "start_s": 52.4,
+      "end_s": 53.266666666666666,
+      "text": "",
+      "description": "L, F; settled about 3153; poor skin contrast, holds to last decoded frame",
+      "evidence": "native central-band inventory, retained not re-scored",
+      "font_identity": null,
+      "size_px": null,
+      "position_box": null,
+      "spoken_offset_s": null
+     }
+    ],
+    "transitions": [
+     {
+      "start_s": 1.4666666666666666,
+      "end_s": 1.4666666666666666,
+      "kind": "cut",
+      "sound": null,
+      "source": "private native-frame cut inventory"
+     },
+     {
+      "start_s": 3.066666666666667,
+      "end_s": 3.066666666666667,
+      "kind": "cut",
+      "sound": null,
+      "source": "private native-frame cut inventory"
+     },
+     {
+      "start_s": 3.6666666666666665,
+      "end_s": 3.6666666666666665,
+      "kind": "cut",
+      "sound": null,
+      "source": "private native-frame cut inventory"
+     },
+     {
+      "start_s": 6.666666666666667,
+      "end_s": 6.666666666666667,
+      "kind": "cut",
+      "sound": null,
+      "source": "private native-frame cut inventory"
+     },
+     {
+      "start_s": 9.666666666666666,
+      "end_s": 9.666666666666666,
+      "kind": "cut",
+      "sound": null,
+      "source": "private native-frame cut inventory"
+     },
+     {
+      "start_s": 11.233333333333333,
+      "end_s": 11.233333333333333,
+      "kind": "cut",
+      "sound": null,
+      "source": "private native-frame cut inventory"
+     },
+     {
+      "start_s": 12.666666666666666,
+      "end_s": 12.666666666666666,
+      "kind": "cut",
+      "sound": null,
+      "source": "private native-frame cut inventory"
+     },
+     {
+      "start_s": 13.766666666666667,
+      "end_s": 13.766666666666667,
+      "kind": "cut",
+      "sound": null,
+      "source": "private native-frame cut inventory"
+     },
+     {
+      "start_s": 16.766666666666666,
+      "end_s": 16.766666666666666,
+      "kind": "cut",
+      "sound": null,
+      "source": "private native-frame cut inventory"
+     },
+     {
+      "start_s": 18.5,
+      "end_s": 18.5,
+      "kind": "cut",
+      "sound": null,
+      "source": "private native-frame cut inventory"
+     },
+     {
+      "start_s": 20.716666666666665,
+      "end_s": 20.716666666666665,
+      "kind": "cut",
+      "sound": null,
+      "source": "private native-frame cut inventory"
+     },
+     {
+      "start_s": 22.5,
+      "end_s": 22.5,
+      "kind": "cut",
+      "sound": null,
+      "source": "private native-frame cut inventory"
+     },
+     {
+      "start_s": 23.833333333333332,
+      "end_s": 23.833333333333332,
+      "kind": "cut",
+      "sound": null,
+      "source": "private native-frame cut inventory"
+     },
+     {
+      "start_s": 26.1,
+      "end_s": 26.1,
+      "kind": "cut",
+      "sound": null,
+      "source": "private native-frame cut inventory"
+     },
+     {
+      "start_s": 28.166666666666668,
+      "end_s": 28.166666666666668,
+      "kind": "cut",
+      "sound": null,
+      "source": "private native-frame cut inventory"
+     },
+     {
+      "start_s": 30.9,
+      "end_s": 30.9,
+      "kind": "cut",
+      "sound": null,
+      "source": "private native-frame cut inventory"
+     },
+     {
+      "start_s": 33.266666666666666,
+      "end_s": 33.266666666666666,
+      "kind": "cut",
+      "sound": null,
+      "source": "private native-frame cut inventory"
+     },
+     {
+      "start_s": 35.0,
+      "end_s": 35.0,
+      "kind": "cut",
+      "sound": null,
+      "source": "private native-frame cut inventory"
+     },
+     {
+      "start_s": 37.03333333333333,
+      "end_s": 37.03333333333333,
+      "kind": "cut",
+      "sound": null,
+      "source": "private native-frame cut inventory"
+     },
+     {
+      "start_s": 41.1,
+      "end_s": 41.1,
+      "kind": "cut",
+      "sound": null,
+      "source": "private native-frame cut inventory"
+     },
+     {
+      "start_s": 43.1,
+      "end_s": 43.1,
+      "kind": "cut",
+      "sound": null,
+      "source": "private native-frame cut inventory"
+     },
+     {
+      "start_s": 44.1,
+      "end_s": 44.1,
+      "kind": "cut",
+      "sound": null,
+      "source": "private native-frame cut inventory"
+     },
+     {
+      "start_s": 45.56666666666667,
+      "end_s": 45.56666666666667,
+      "kind": "cut",
+      "sound": null,
+      "source": "private native-frame cut inventory"
+     },
+     {
+      "start_s": 47.53333333333333,
+      "end_s": 47.53333333333333,
+      "kind": "cut",
+      "sound": null,
+      "source": "private native-frame cut inventory"
+     },
+     {
+      "start_s": 48.56666666666667,
+      "end_s": 48.56666666666667,
+      "kind": "cut",
+      "sound": null,
+      "source": "private native-frame cut inventory"
+     },
+     {
+      "start_s": 50.766666666666666,
+      "end_s": 50.766666666666666,
+      "kind": "cut",
+      "sound": null,
+      "source": "private native-frame cut inventory"
+     }
+    ],
+    "rules": [
+     "Preserve restrained fixed-left append and selective size hierarchy; serif is an exception, not every word.",
+     "Two-native-frame inversions are picture events, not caption animation. cutaway_negative is a face-safe adaptation only.",
+     "Mixed letter colour follows the picture; Difference/Exclusion remain candidates, not a confirmed source setting."
+    ],
+    "shots": [
+     {
+      "start_s": 1.4666666666666666,
+      "end_s": 3.066666666666667,
+      "subject": "Seated couple, red-haired woman, monochrome couple"
+     },
+     {
+      "start_s": 3.066666666666667,
+      "end_s": 3.6666666666666665,
+      "subject": "Seated couple, red-haired woman, monochrome couple"
+     },
+     {
+      "start_s": 3.6666666666666665,
+      "end_s": 6.666666666666667,
+      "subject": "Seated couple, red-haired woman, monochrome couple"
+     },
+     {
+      "start_s": 9.666666666666666,
+      "end_s": 11.233333333333333,
+      "subject": "Sunset and bar couple"
+     },
+     {
+      "start_s": 11.233333333333333,
+      "end_s": 12.666666666666666,
+      "subject": "Sunset and bar couple"
+     },
+     {
+      "start_s": 13.766666666666667,
+      "end_s": 16.766666666666666,
+      "subject": "Cyan-lit intimate couple"
+     },
+     {
+      "start_s": 18.5,
+      "end_s": 20.716666666666665,
+      "subject": "Woodland embrace then couple by wall"
+     },
+     {
+      "start_s": 20.716666666666665,
+      "end_s": 22.5,
+      "subject": "Woodland embrace then couple by wall"
+     },
+     {
+      "start_s": 23.833333333333332,
+      "end_s": 26.1,
+      "subject": "Couple and child"
+     },
+     {
+      "start_s": 28.166666666666668,
+      "end_s": 30.9,
+      "subject": "Blue-lit pool couple"
+     },
+     {
+      "start_s": 33.266666666666666,
+      "end_s": 35.0,
+      "subject": "Close couple then hands of Black couple"
+     },
+     {
+      "start_s": 35.0,
+      "end_s": 37.03333333333333,
+      "subject": "Close couple then hands of Black couple"
+     },
+     {
+      "start_s": 41.1,
+      "end_s": 43.1,
+      "subject": "Seaside then bathroom couple"
+     },
+     {
+      "start_s": 43.1,
+      "end_s": 44.1,
+      "subject": "Seaside then bathroom couple"
+     },
+     {
+      "start_s": 45.56666666666667,
+      "end_s": 47.53333333333333,
+      "subject": "Green-room film couple"
+     },
+     {
+      "start_s": 48.56666666666667,
+      "end_s": 50.766666666666666,
+      "subject": "Dark-blue couple"
+     }
+    ],
+    "shot_review_method": ": native cut boundaries inside semantic b-roll sequences; all 16 midpoint pictures visually checked in reference-shots.jpg. Two-frame inversions excluded."
+   },
+   "provenance": {
+    "report": "",
+    "report_sha256": "903f58ed617455bd52cef62c777dd64fce17a2958026d404898b9ce78bf70331",
+    "video_sha256": "bb1cc71abcbc6feacb65c0b67546f73645562ed8b3b74e6dad98d00f74fb47e2",
+    "blend_samples": [
+     {
+      "files": {
+       "background": "",
+       "observed": "",
+       "mask": ""
+      },
+      "fit": {
+       "status": "unresolved",
+       "candidates": [],
+       "fits": [
+        {
+         "mode": "difference",
+         "rmse": 0.072073,
+         "colour_rgb": [
+          0.96878,
+          0.98086,
+          0.98451
+         ]
+        },
+        {
+         "mode": "exclusion",
+         "rmse": 0.07564,
+         "colour_rgb": [
+          1.0,
+          1.0,
+          1.0
+         ]
+        },
+        {
+         "mode": "normal",
+         "rmse": 0.335557,
+         "colour_rgb": [
+          0.42118,
+          0.51984,
+          0.56969
+         ]
+        },
+        {
+         "mode": "lighten",
+         "rmse": 0.466057,
+         "colour_rgb": [
+          0.77647,
+          0.65318,
+          0.72022
+         ]
+        },
+        {
+         "mode": "darken",
+         "rmse": 0.504162,
+         "colour_rgb": [
+          0.13236,
+          0.29249,
+          0.36925
+         ]
+        },
+        {
+         "mode": "screen",
+         "rmse": 0.54844,
+         "colour_rgb": [
+          0.62072,
+          0.57898,
+          0.59235
+         ]
+        },
+        {
+         "mode": "multiply",
+         "rmse": 0.555259,
+         "colour_rgb": [
+          0.22276,
+          0.46556,
+          0.62408
+         ]
+        },
+        {
+         "mode": "addition",
+         "rmse": 0.597797,
+         "colour_rgb": [
+          0.81846,
+          0.80863,
+          0.44847
+         ]
+        },
+        {
+         "mode": "overlay",
+         "rmse": 0.636512,
+         "colour_rgb": [
+          0.0,
+          0.33137,
+          0.69059
+         ]
+        }
+       ],
+       "pixels": 200,
+       "background_std": 0.3221061175701578,
+       "scope": "Opaque glyph cores over an independently supplied aligned clean plate. Fits do not prove the plate is clean; alpha, grading and registration can confound them.",
+       "ambiguity": "White Difference and white Exclusion both produce 1-background; baked pixels cannot distinguish them."
+      }
+     }
+    ]
+   },
+   "semantic": {
+    "broll_character": {
+     "reviewed_shots": 0,
+     "total_shots": 16,
+     "idea_feeling_share": null,
+     "literal_share": null,
+     "median_luma": null,
+     "median_saturation": null,
+     "semantic_basis": "caller-reviewed shot character, not inferred from pixel colour"
+    },
+    "broll_rhythm": {
+     "count": 16,
+     "per_minute": 17.99910004499775,
+     "median_s": 1.9833333333333307,
+     "min_s": 0.5999999999999996,
+     "max_s": 3.0000000000000004,
+     "longest_talking_head_s": 4.06666666666667
+    },
+    "cut_flash": {
+     "cuts": 26,
+     "cuts_with_flash": 10,
+     "share": 0.385,
+     "fps": 60.0,
+     "pulse_frames": 2.0,
+     "pulses_per_flashed_cut": 2.0,
+     "frames_before_cut": 1.0,
+     "frames_after_cut": 2.0,
+     "whole_picture_support": 1.0,
+     "speaker_broll": {
+      "cuts": 20,
+      "with_flash": 10
+     },
+     "broll_broll": {
+      "cuts": 6,
+      "with_flash": 0
+     }
+    },
+    "reviewed_share": 0.9987,
+    "broll_seconds": 31.133333,
+    "broll_share": null
+   }
+  }
+ ],
+ "caption_colour_policy": {
+  "mode": "shot_dependent",
+  "near_invisible_floor": 1.5,
+  "majority_fraction": 0.5
+ }
+}

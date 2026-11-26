@@ -1,0 +1,33 @@
+Subject: [PATCH] Release the factory reference of chain normalizer links
+
+mlt_chain_attach_normalizers() creates each normalizer link with
+mlt_factory_link(), which returns a link with one reference, and then
+attaches it with mlt_chain_attach(), which takes its own reference
+(mlt_properties_inc_ref). The factory's reference is never released, so
+when the chain closes the links' reference count drops from 2 to 1 and
+the links (with their properties, scalers and resamplers) are never
+freed.
+
+Every other caller of mlt_chain_attach() releases its own reference
+afterwards (the XML producer's <link> handling, producer_melt and
+Mlt::Chain::attach). Do the same here.
+
+Measured on Windows by opening and closing a chain with the normalizer
+links repeatedly: each closed chain kept about 377 process handles (each
+property owns a mutex) before this change and none after it. Rendered
+frames are unchanged.
+---
+diff --git a/src/framework/mlt_chain.c b/src/framework/mlt_chain.c
+index fafb93db..aa3137a3 100644
+--- a/src/framework/mlt_chain.c
++++ b/src/framework/mlt_chain.c
+@@ -476,6 +476,9 @@ extern void mlt_chain_attach_normalizers(mlt_chain self)
+                 mlt_properties_set_int(MLT_LINK_PROPERTIES(link), "_loader", 1);
+                 mlt_chain_attach(self, link);
+                 mlt_chain_move_link(self, mlt_chain_link_count(self) - 1, norm_count);
++                // The chain holds its own reference now (mlt_chain_attach): release the factory's, as every other
++                // caller of mlt_chain_attach does, or the link outlives the chain.
++                mlt_link_close(link);
+                 norm_count++;
+                 break;
+             }

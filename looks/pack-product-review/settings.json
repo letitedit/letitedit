@@ -1,0 +1,909 @@
+{
+  "format": "letitedit-look-settings/1",
+  "id": "pack-product-review",
+  "defaults_are": "taste",
+  "share": false,
+  "values": {
+    "format": "letitedit-style/3",
+    "name": "Product Review",
+    "description": "A 16:9 YouTube review (4-20 min) of one product - what it is, how it's built, how it does, who it's for - calm, exact and honest.",
+    "colors": {
+      "primary": "#F5F6F7",
+      "secondary": "#C9CDD2",
+      "accent": "#E5322D",
+      "dark": "#0E0F12",
+      "light": "#FFFFFF",
+      "go": "#34C759",
+      "paper": "#FFFFFF"
+    },
+    "fonts": {
+      "heading": {
+        "family": "Geist",
+        "weight": 700
+      },
+      "body": {
+        "family": "Geist",
+        "weight": 500
+      },
+      "captions": {
+        "family": "Inter",
+        "weight": 600
+      }
+    },
+    "captions": {
+      "font": "captions",
+      "size": 40,
+      "fill": "light",
+      "outline": null,
+      "shadow": null,
+      "background": "#000000A6",
+      "position": "bottom",
+      "margin": 0.05,
+      "max_chars": 42,
+      "max_lines": 2,
+      "case": "as_spoken"
+    },
+    "text": {
+      "font": "heading",
+      "size": 64,
+      "fill": "light",
+      "outline": null
+    },
+    "graphics": {
+      "list_card": {
+        "font": "heading",
+        "body_font": "body",
+        "size": 40,
+        "title_size": 50,
+        "fill": "dark",
+        "title_fill": "dark",
+        "panel": "paper",
+        "panel_opacity": 0.96,
+        "check_color": "go",
+        "cross_color": "accent",
+        "mark_color": "dark",
+        "radius": 18
+      },
+      "chapter_card": {
+        "font": "heading",
+        "number_size": 84,
+        "size": 58,
+        "kicker_size": 26,
+        "fill": "light",
+        "accent": "accent",
+        "band": true,
+        "band_color": "dark",
+        "band_opacity": 0.7,
+        "outline": null,
+        "outline_width": 0
+      },
+      "title_card": {
+        "background": "none",
+        "font": "heading",
+        "subtitle_font": "body",
+        "size": 120,
+        "subtitle_size": 40,
+        "fill": "light",
+        "subtitle_fill": "secondary",
+        "accent": "accent",
+        "shadow": "#000000AA"
+      },
+      "badge": {
+        "font": "heading",
+        "size": 26,
+        "fill": "light",
+        "background": "dark"
+      }
+    },
+    "music": {
+      "zones": {
+        "talk": -26.0,
+        "montage": -8.0,
+        "quiet": -40.0,
+        "swell": -3.0,
+        "end": -8.0
+      },
+      "duck_under_speech": true,
+      "merge_gap": 4.0,
+      "attack": 0.3,
+      "release": 0.9,
+      "crossfade": 3.0,
+      "fade_in": 1.5,
+      "fade_out": 3.0,
+      "dialogue_lufs": null,
+      "sources": [],
+      "notes": "Minimal ambient electronic (music-library: Electronic / Calm, Electronic / Chill Dreamy) low under the talk, fading in and out over 2 s [EDS]; up in b-roll montages, out under the verdict.",
+      "likes": [],
+      "avoid": [],
+      "theme": null
+    },
+    "sfx": {
+      "gain_db": -20.0,
+      "map": {
+        "swipe": "library/whoosh_fast_02",
+        "click": "kenney/ui-audio/click4",
+        "tick": "library/ding_confirm_01",
+        "whoosh": "synth/whoosh-soft"
+      },
+      "events": {
+        "text": "click",
+        "transition": "swipe",
+        "count": "tick"
+      }
+    },
+    "editing": {
+      "max_pause": 0.5,
+      "pad_in": 0.1,
+      "pad_out": 0.25,
+      "blur_pad": true,
+      "transitions": "cut",
+      "pace": "medium",
+      "intro": null,
+      "outro": null
+    },
+    "export": {
+      "preset": "high_quality_h264",
+      "loudness": -14.0
+    },
+    "look": {
+      "about": "Neutral and exact - the product's real colours, a touch of contrast and nothing more [EDS no heavy grading, the product must look accurate].",
+      "effects": [
+        {
+          "filter": "color",
+          "params": {
+            "lift_r": 0.0,
+            "lift_g": 0.0,
+            "lift_b": 0.0,
+            "gamma_r": 0.98,
+            "gamma_g": 0.98,
+            "gamma_b": 0.98,
+            "gain_r": 1.03,
+            "gain_g": 1.03,
+            "gain_b": 1.03
+          }
+        }
+      ]
+    },
+    "taste": "",
+    "label": "Product review",
+    "summary": "A clean tech-style review - the product and one opinion up front, design to verdict in clear parts, spec cards, close detail shots, true colour.",
+    "kind": "long",
+    "tags": [
+      "review",
+      "tech",
+      "product",
+      "gadget",
+      "specs",
+      "verdict",
+      "pros and cons",
+      "long form",
+      "youtube",
+      "clean"
+    ],
+    "preview": "preview.jpg",
+    "recipe": "recipe.md",
+    "credits": [
+      {
+        "file": "preview.jpg",
+        "source": "Original preview imagery; hands, objects, places and titles only",
+        "licence": "Original letitedit footage: hands, objects, places and titles only; no faces"
+      }
+    ],
+    "effects": {
+      "title": {
+        "kind": "graphic",
+        "about": "The product's name and the question the review answers, after the cold open (an intro of 3-5 s) [EDS].",
+        "template": "title_card",
+        "len": 3.5,
+        "sfx": "whoosh",
+        "sfx_offset_s": -0.51,
+        "rules": {
+          "triggers": [
+            "hook",
+            "topic_change"
+          ],
+          "density": {
+            "per_min": 1
+          },
+          "duration_s": [
+            2.5,
+            5.0
+          ],
+          "when": "Once, after the hero shot and the first opinion (params title, subtitle)."
+        }
+      },
+      "spec_card": {
+        "kind": "graphic",
+        "about": "One white card with at most four facts (price, what's in the box, size, the key spec), on screen 4 s or more [PND one card of at most 4 bullets about 20 s in; EDS specs visible at least 4 s].",
+        "template": "list_card",
+        "params": {
+          "position": "right",
+          "mark": "dot"
+        },
+        "len": 6.0,
+        "sfx": "click",
+        "rules": {
+          "triggers": [
+            "number",
+            "list_item"
+          ],
+          "density": {
+            "per_min": 1,
+            "min_gap_s": 60.0
+          },
+          "duration_s": [
+            4.0,
+            9.0
+          ],
+          "when": "Early (about 20 s in) when the facts are said; exact values as recorded; params title, items, times."
+        }
+      },
+      "section": {
+        "kind": "graphic",
+        "about": "The part of the review on a band (Design, Fit, Performance, Verdict) as it starts [EDS design to verdict].",
+        "template": "chapter_card",
+        "len": 3.0,
+        "sfx": "swipe",
+        "rules": {
+          "triggers": [
+            "topic_change"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 20.0
+          },
+          "duration_s": [
+            2.0,
+            4.0
+          ],
+          "when": "Each part's first shot, matching the chapter markers; params number, title."
+        }
+      },
+      "part_label": {
+        "kind": "popup",
+        "about": "A small label naming a part on screen (\"Metal tabs\", \"Reversible leads\"), white with a dark edge.",
+        "size": 0.28,
+        "position": "upper_left",
+        "in": "fade",
+        "out": "fade",
+        "in_s": 0.2,
+        "out_s": 0.2,
+        "hold_s": 2.2,
+        "font": "heading",
+        "fill": "dark",
+        "stroke_width": 0,
+        "outline": 12,
+        "outline_color": "paper",
+        "shadow": true,
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "mention",
+            "list_item"
+          ],
+          "density": {
+            "per_min": 3,
+            "min_gap_s": 10.0
+          },
+          "duration_s": [
+            1.5,
+            3.5
+          ],
+          "never": [
+            "overlapping"
+          ],
+          "when": "A part or a feature the viewer must recognise, as it is shown; six words at most, exact names; give asset {text}."
+        }
+      },
+      "detail_push": {
+        "kind": "zoom_punch",
+        "about": "A slow push into a close-up of the product (108% over 2.5 s).",
+        "scale": 1.08,
+        "ramp_s": 2.5,
+        "rules": {
+          "triggers": [
+            "mention",
+            "cut",
+            "pause"
+          ],
+          "density": {
+            "per_min": 4,
+            "min_gap_s": 10.0
+          },
+          "when": "Close detail shots of the product (texture, ports, parts) [EDS include close-up detail shots]; not on the speaker."
+        }
+      },
+      "verdict_card": {
+        "kind": "graphic",
+        "about": "Pros and cons on one white card (green ticks, red crosses) as the verdict starts.",
+        "template": "list_card",
+        "params": {
+          "position": "right"
+        },
+        "len": 8.0,
+        "sfx": "tick",
+        "rules": {
+          "triggers": [
+            "reveal",
+            "ending",
+            "list_item"
+          ],
+          "density": {
+            "per_min": 1
+          },
+          "duration_s": [
+            5.0,
+            12.0
+          ],
+          "when": "At the verdict; items as {text, mark - check or cross} in the reviewer's own words; a score only when the reviewer gives one."
+        }
+      },
+      "credit_tag": {
+        "kind": "graphic",
+        "about": "A small dark tag naming where a borrowed clip or image comes from [PND a credit tag on every borrowed clip].",
+        "template": "badge",
+        "params": {
+          "position": "bottom-right"
+        },
+        "len": 3.0,
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "cut"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 10.0
+          },
+          "when": "Over any footage the reviewer didn't film (params text, e.g. \"Footage - maker's site\"); only footage they may use."
+        }
+      },
+      "cutaway": {
+        "kind": "broll",
+        "about": "Close-up b-roll of the product over the voice.",
+        "fit": "cover",
+        "len": 4.0,
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "mention",
+            "list_item"
+          ],
+          "density": {
+            "per_min": 4,
+            "min_gap_s": 8.0
+          },
+          "duration_s": [
+            2.5,
+            8.0
+          ],
+          "when": "About as much b-roll as talking head [PND 43% b-roll, 48% talking head]; never over the verdict."
+        }
+      }
+    },
+    "fx": {
+      "track": "Effects",
+      "sfx_track": "Effect sounds",
+      "broll_track": "B-roll",
+      "density": {
+        "per_10s": 2,
+        "per_min": 6,
+        "min_gap_s": 1.0
+      },
+      "safe_zone": null,
+      "never": [
+        "overlapping"
+      ],
+      "rhythm": "Talk and close-up b-roll taking turns every 8-10 s at most [EDS]; one spec card early, one verdict card late."
+    },
+    "popups": {
+      "track": null,
+      "sfx_track": null,
+      "min_gap_s": 8.0,
+      "max_total": null,
+      "entries": []
+    },
+    "hook": {
+      "max_s": 10.0,
+      "approaches": [
+        "result_first",
+        "quote",
+        "stakes",
+        "number"
+      ],
+      "text": {
+        "max_words": 6,
+        "case": "as_said",
+        "position": "bottom",
+        "size": 0.4,
+        "fill": "light",
+        "stroke": null,
+        "stroke_width": 0,
+        "font": "heading"
+      },
+      "rules": "A hero shot of the product and one key opinion first [EDS]; the thesis within about 2-3 s, under 10 s at most [PND]; then a brief intro of 3-5 s [EDS]. The ending - the verdict held on one shot, speech ending 4-6 s before the video does, no long subscribe ask [PND, EDS].",
+      "avoid": [
+        "greetings",
+        "an unboxing before the opinion",
+        "a long channel intro"
+      ]
+    },
+    "broll": {
+      "amount": "some",
+      "kinds": [],
+      "favorites": "",
+      "notes": ""
+    },
+    "shots": {
+      "framing": "medium",
+      "camera": "handheld",
+      "punch_ins": "some",
+      "notes": ""
+    },
+    "signature": {
+      "touches": []
+    },
+    "measured": {},
+    "provenance": {
+      "made_by": "letitedit style library, wave 2",
+      "date": "2026-10-30",
+      "measured": "none yet (no reference videos in style-references)",
+      "sources": [
+        {
+          "url": "https://github.com/mindsurf0176/editstyle/blob/master/awesome-editstyles/presets/tech-review.md",
+          "title": "EditStyle tech review preset",
+          "used_for": "constant energy, jump cuts, no speed ramps, neutral accurate colour, design-to-verdict parts, specs visible at least 4 s, cold open with the product and an opinion, 3-5 s intro, talk and b-roll taking turns every 8-10 s, music low with 2 s fades",
+          "licence": "MIT, Copyright (c) 2026 Minseo; preset credited CutAI Community (consulted only; no text adapted)"
+        },
+        {
+          "url": "https://www.writepanda.ai/blog/mkbhd-editing-style-measured/",
+          "title": "PandaStudio measured analysis of a tech reviewer (3 videos)",
+          "used_for": "about 7 cuts a minute, median shot 4-7 s, busy first 30 s, 43% b-roll, one spec card of at most 4 bullets, credit tags, a held verdict, no burned-in captions, thesis by about 2.4 s",
+          "licence": "none found (numbers only; the reviewer is not named in the pack)"
+        }
+      ],
+      "notes": "The measured numbers come from three videos of one channel; tune them on the person's references. EditStyle's own numbers disagree with each other (10 cuts a minute vs a 5 s average). Tags in ..\\SOURCES.md."
+    }
+  },
+  "asset_root": "resources",
+  "files": {
+    "preview.jpg": "resources/855228d51db7e22657fc3476.jpg",
+    "recipe.md": "recipe.md"
+  },
+  "links": {
+    "recipe": "recipe.md",
+    "preview": "preview.jpg"
+  },
+  "legacy": {
+    "format": "letitedit-style/3",
+    "source": "style.yaml",
+    "pack": "product-review",
+    "data": {
+      "format": "letitedit-style/3",
+      "name": "Product Review",
+      "label": "Product review",
+      "summary": "A clean tech-style review - the product and one opinion up front, design to verdict in clear parts, spec cards, close detail shots, true colour.",
+      "kind": "long",
+      "tags": [
+        "review",
+        "tech",
+        "product",
+        "gadget",
+        "specs",
+        "verdict",
+        "pros and cons",
+        "long form",
+        "youtube",
+        "clean"
+      ],
+      "recipe": "recipe.md",
+      "preview": "preview.jpg",
+      "description": "A 16:9 YouTube review (4-20 min) of one product - what it is, how it's built, how it does, who it's for - calm, exact and honest.",
+      "colors": {
+        "primary": "#F5F6F7",
+        "secondary": "#C9CDD2",
+        "accent": "#E5322D",
+        "go": "#34C759",
+        "paper": "#FFFFFF",
+        "dark": "#0E0F12",
+        "light": "#FFFFFF"
+      },
+      "fonts": {
+        "heading": {
+          "family": "Geist",
+          "weight": 700
+        },
+        "body": {
+          "family": "Geist",
+          "weight": 500
+        },
+        "captions": {
+          "family": "Inter",
+          "weight": 600
+        }
+      },
+      "graphics": {
+        "list_card": {
+          "font": "heading",
+          "body_font": "body",
+          "size": 40,
+          "title_size": 50,
+          "fill": "dark",
+          "title_fill": "dark",
+          "panel": "paper",
+          "panel_opacity": 0.96,
+          "check_color": "go",
+          "cross_color": "accent",
+          "mark_color": "dark",
+          "radius": 18
+        },
+        "chapter_card": {
+          "font": "heading",
+          "number_size": 84,
+          "size": 58,
+          "kicker_size": 26,
+          "fill": "light",
+          "accent": "accent",
+          "band": true,
+          "band_color": "dark",
+          "band_opacity": 0.7,
+          "outline": null,
+          "outline_width": 0
+        },
+        "title_card": {
+          "background": "none",
+          "font": "heading",
+          "subtitle_font": "body",
+          "size": 120,
+          "subtitle_size": 40,
+          "fill": "light",
+          "subtitle_fill": "secondary",
+          "accent": "accent",
+          "shadow": "#000000AA"
+        },
+        "badge": {
+          "font": "heading",
+          "size": 26,
+          "fill": "light",
+          "background": "dark"
+        }
+      },
+      "captions": {
+        "font": "captions",
+        "size": 40,
+        "fill": "light",
+        "outline": null,
+        "background": "#000000A6",
+        "position": "bottom",
+        "margin": 0.05,
+        "max_chars": 42,
+        "max_lines": 2,
+        "case": "as_spoken"
+      },
+      "text": {
+        "font": "heading",
+        "size": 64,
+        "fill": "light",
+        "outline": null
+      },
+      "editing": {
+        "max_pause": 0.5,
+        "pad_in": 0.1,
+        "pad_out": 0.25,
+        "blur_pad": true,
+        "transitions": "cut",
+        "pace": "medium"
+      },
+      "music": {
+        "zones": {
+          "talk": -26.0,
+          "montage": -8.0,
+          "quiet": -40.0,
+          "end": -8.0
+        },
+        "notes": "Minimal ambient electronic (music-library: Electronic / Calm, Electronic / Chill Dreamy) low under the talk, fading in and out over 2 s [EDS]; up in b-roll montages, out under the verdict."
+      },
+      "export": {
+        "preset": "high_quality_h264",
+        "loudness": -14.0
+      },
+      "look": {
+        "about": "Neutral and exact - the product's real colours, a touch of contrast and nothing more [EDS no heavy grading, the product must look accurate].",
+        "effects": [
+          {
+            "filter": "color",
+            "params": {
+              "lift_r": 0.0,
+              "lift_g": 0.0,
+              "lift_b": 0.0,
+              "gamma_r": 0.98,
+              "gamma_g": 0.98,
+              "gamma_b": 0.98,
+              "gain_r": 1.03,
+              "gain_g": 1.03,
+              "gain_b": 1.03
+            }
+          }
+        ]
+      },
+      "sfx": {
+        "gain_db": -20.0,
+        "map": {
+          "swipe": "library/whoosh_fast_02",
+          "click": "kenney/ui-audio/click4",
+          "tick": "library/ding_confirm_01",
+          "whoosh": "synth/whoosh-soft"
+        },
+        "events": {
+          "text": "click",
+          "transition": "swipe",
+          "count": "tick"
+        }
+      },
+      "fx": {
+        "track": "Effects",
+        "sfx_track": "Effect sounds",
+        "broll_track": "B-roll",
+        "density": {
+          "per_10s": 2,
+          "per_min": 6,
+          "min_gap_s": 1.0
+        },
+        "safe_zone": null,
+        "never": [
+          "overlapping"
+        ],
+        "rhythm": "Talk and close-up b-roll taking turns every 8-10 s at most [EDS]; one spec card early, one verdict card late."
+      },
+      "effects": {
+        "title": {
+          "kind": "graphic",
+          "about": "The product's name and the question the review answers, after the cold open (an intro of 3-5 s) [EDS].",
+          "template": "title_card",
+          "len": 3.5,
+          "sfx": "whoosh",
+          "sfx_offset_s": -0.51,
+          "rules": {
+            "triggers": [
+              "hook",
+              "topic_change"
+            ],
+            "density": {
+              "per_min": 1
+            },
+            "duration_s": [
+              2.5,
+              5.0
+            ],
+            "when": "Once, after the hero shot and the first opinion (params title, subtitle)."
+          }
+        },
+        "spec_card": {
+          "kind": "graphic",
+          "about": "One white card with at most four facts (price, what's in the box, size, the key spec), on screen 4 s or more [PND one card of at most 4 bullets about 20 s in; EDS specs visible at least 4 s].",
+          "template": "list_card",
+          "params": {
+            "position": "right",
+            "mark": "dot"
+          },
+          "len": 6.0,
+          "sfx": "click",
+          "rules": {
+            "triggers": [
+              "number",
+              "list_item"
+            ],
+            "density": {
+              "per_min": 1,
+              "min_gap_s": 60.0
+            },
+            "duration_s": [
+              4.0,
+              9.0
+            ],
+            "when": "Early (about 20 s in) when the facts are said; exact values as recorded; params title, items, times."
+          }
+        },
+        "section": {
+          "kind": "graphic",
+          "about": "The part of the review on a band (Design, Fit, Performance, Verdict) as it starts [EDS design to verdict].",
+          "template": "chapter_card",
+          "len": 3.0,
+          "sfx": "swipe",
+          "rules": {
+            "triggers": [
+              "topic_change"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 20.0
+            },
+            "duration_s": [
+              2.0,
+              4.0
+            ],
+            "when": "Each part's first shot, matching the chapter markers; params number, title."
+          }
+        },
+        "part_label": {
+          "kind": "popup",
+          "about": "A small label naming a part on screen (\"Metal tabs\", \"Reversible leads\"), white with a dark edge.",
+          "size": 0.28,
+          "position": "upper_left",
+          "in": "fade",
+          "out": "fade",
+          "in_s": 0.2,
+          "out_s": 0.2,
+          "hold_s": 2.2,
+          "font": "heading",
+          "fill": "dark",
+          "stroke_width": 0,
+          "outline": 12,
+          "outline_color": "paper",
+          "shadow": true,
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "mention",
+              "list_item"
+            ],
+            "density": {
+              "per_min": 3,
+              "min_gap_s": 10.0
+            },
+            "duration_s": [
+              1.5,
+              3.5
+            ],
+            "never": [
+              "overlapping"
+            ],
+            "when": "A part or a feature the viewer must recognise, as it is shown; six words at most, exact names; give asset {text}."
+          }
+        },
+        "detail_push": {
+          "kind": "zoom_punch",
+          "about": "A slow push into a close-up of the product (108% over 2.5 s).",
+          "scale": 1.08,
+          "ramp_s": 2.5,
+          "rules": {
+            "triggers": [
+              "mention",
+              "cut",
+              "pause"
+            ],
+            "density": {
+              "per_min": 4,
+              "min_gap_s": 10.0
+            },
+            "when": "Close detail shots of the product (texture, ports, parts) [EDS include close-up detail shots]; not on the speaker."
+          }
+        },
+        "verdict_card": {
+          "kind": "graphic",
+          "about": "Pros and cons on one white card (green ticks, red crosses) as the verdict starts.",
+          "template": "list_card",
+          "params": {
+            "position": "right"
+          },
+          "len": 8.0,
+          "sfx": "tick",
+          "rules": {
+            "triggers": [
+              "reveal",
+              "ending",
+              "list_item"
+            ],
+            "density": {
+              "per_min": 1
+            },
+            "duration_s": [
+              5.0,
+              12.0
+            ],
+            "when": "At the verdict; items as {text, mark - check or cross} in the reviewer's own words; a score only when the reviewer gives one."
+          }
+        },
+        "credit_tag": {
+          "kind": "graphic",
+          "about": "A small dark tag naming where a borrowed clip or image comes from [PND a credit tag on every borrowed clip].",
+          "template": "badge",
+          "params": {
+            "position": "bottom-right"
+          },
+          "len": 3.0,
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "cut"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 10.0
+            },
+            "when": "Over any footage the reviewer didn't film (params text, e.g. \"Footage - maker's site\"); only footage they may use."
+          }
+        },
+        "cutaway": {
+          "kind": "broll",
+          "about": "Close-up b-roll of the product over the voice.",
+          "fit": "cover",
+          "len": 4.0,
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "mention",
+              "list_item"
+            ],
+            "density": {
+              "per_min": 4,
+              "min_gap_s": 8.0
+            },
+            "duration_s": [
+              2.5,
+              8.0
+            ],
+            "when": "About as much b-roll as talking head [PND 43% b-roll, 48% talking head]; never over the verdict."
+          }
+        }
+      },
+      "popups": {
+        "min_gap_s": 8.0,
+        "entries": []
+      },
+      "hook": {
+        "max_s": 10.0,
+        "approaches": [
+          "result_first",
+          "quote",
+          "stakes",
+          "number"
+        ],
+        "text": {
+          "max_words": 6,
+          "case": "as_said",
+          "position": "bottom",
+          "size": 0.4,
+          "fill": "light",
+          "stroke": null,
+          "stroke_width": 0,
+          "font": "heading"
+        },
+        "rules": "A hero shot of the product and one key opinion first [EDS]; the thesis within about 2-3 s, under 10 s at most [PND]; then a brief intro of 3-5 s [EDS]. The ending - the verdict held on one shot, speech ending 4-6 s before the video does, no long subscribe ask [PND, EDS].",
+        "avoid": [
+          "greetings",
+          "an unboxing before the opinion",
+          "a long channel intro"
+        ]
+      },
+      "credits": [
+        {
+          "file": "preview.jpg",
+          "source": "Original preview imagery; hands, objects, places and titles only",
+          "licence": "Original letitedit footage: hands, objects, places and titles only; no faces"
+        }
+      ],
+      "measured": {},
+      "provenance": {
+        "made_by": "letitedit style library, wave 2",
+        "date": "2026-10-30",
+        "measured": "none yet (no reference videos in style-references)",
+        "sources": [
+          {
+            "url": "https://github.com/mindsurf0176/editstyle/blob/master/awesome-editstyles/presets/tech-review.md",
+            "title": "EditStyle tech review preset",
+            "used_for": "constant energy, jump cuts, no speed ramps, neutral accurate colour, design-to-verdict parts, specs visible at least 4 s, cold open with the product and an opinion, 3-5 s intro, talk and b-roll taking turns every 8-10 s, music low with 2 s fades",
+            "licence": "MIT, Copyright (c) 2026 Minseo; preset credited CutAI Community (consulted only; no text adapted)"
+          },
+          {
+            "url": "https://www.writepanda.ai/blog/mkbhd-editing-style-measured/",
+            "title": "PandaStudio measured analysis of a tech reviewer (3 videos)",
+            "used_for": "about 7 cuts a minute, median shot 4-7 s, busy first 30 s, 43% b-roll, one spec card of at most 4 bullets, credit tags, a held verdict, no burned-in captions, thesis by about 2.4 s",
+            "licence": "none found (numbers only; the reviewer is not named in the pack)"
+          }
+        ],
+        "notes": "The measured numbers come from three videos of one channel; tune them on the person's references. EditStyle's own numbers disagree with each other (10 cuts a minute vs a 5 s average). Tags in ..\\SOURCES.md."
+      }
+    }
+  }
+}

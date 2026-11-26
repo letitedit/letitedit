@@ -1,0 +1,20 @@
+{
+  "name": "letitedit-local",
+  "interface": {
+    "displayName": "letitedit (local)"
+  },
+  "plugins": [
+    {
+      "name": "letitedit",
+      "source": {
+        "source": "local",
+        "path": "./plugins/letitedit"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

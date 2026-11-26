@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://letitedit.app/studio/1/kinds/retext.schema.json",
+  "title": "retext: change text items by id and export again, with no AI",
+  "description": "from_job names a finished short, revise, retext, still or batch item. Its project is copied; each change goes to the text item with that id in from_job's text_items. live items change in place; remake items are drawn again from the source letitedit kept; baked items are refused. No AI runs; the export runs under the PC lock. A change that would overflow its box is refused for that item (too_long), the others still apply. A still's or a motion still's retext (contract 1.2) returns a still: its sets, checks and fields. Provenance, ai_labels and music are the earlier job's (only text changed), so an overlay item with if ai_generated_media is decided on them again.",
+  "$defs": {
+    "inputs": {
+      "type": "object",
+      "required": [
+        "changes"
+      ],
+      "properties": {
+        "changes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "text"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "platforms": {
+          "type": "array",
+          "items": {
+            "$ref": "../common.schema.json#/$defs/platform_target"
+          },
+          "description": "Absent: the earlier job's platforms."
+        }
+      }
+    },
+    "output": {
+      "description": "A short's output plus what changed, for every retext. A retext of a still or a motion still (contract 1.2) adds the still's own fields, `sets` and `checks`; its `files` is empty (the pictures are in `sets`).",
+      "allOf": [
+        {
+          "$ref": "short.schema.json#/$defs/output"
+        },
+        {
+          "type": "object",
+          "required": [
+            "applied",
+            "what_changed"
+          ],
+          "properties": {
+            "applied": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "status"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "status": {
+                    "type": "string",
+                    "enum": [
+                      "changed",
+                      "redrawn",
+                      "unchanged_same_text",
+                      "refused"
+                    ]
+                  },
+                  "reason": {
+                    "type": "string",
+                    "enum": [
+                      "baked",
+                      "too_long",
+                      "unknown_id",
+                      "font_missing_glyph"
+                    ]
+                  },
+                  "message": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "what_changed": {
+              "type": "string"
+            },
+            "revision_of": {
+              "type": "string"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "sets": {
+              "$ref": "still.schema.json#/$defs/output/properties/sets"
+            },
+            "checks": {
+              "$ref": "still.schema.json#/$defs/output/properties/checks"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

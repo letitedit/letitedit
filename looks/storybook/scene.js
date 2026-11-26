@@ -1,0 +1,5 @@
+const H = M.look.storybook.start(c.w, c.h), TN = H.TINT, SH = H.SHADE, S = H.oval(SUN.x, SUN.y, SUN.r, SUN.r, 14), paper = H.sheetPlate();
+const pic = H.picture('page', (k) => { k.wash(SKY, TN.sky, {alpha: .35, seed: 4, shrink: .99}); k.wash(S, TN.peach, {alpha: .6}); k.form(HILL, TN.sage, SH.sage, {light: [-4, -18]}); k.wash(SEA, TN.denim, {alpha: .45, seed: 7}); k.part();
+  k.form(H.smooth(HULL, true, 2), TN.rose, SH.rose, {seed: 8}); k.form(SAIL, TN.white, SH.butter, {seed: 9}); k.form(JIB, TN.butter, SH.butter, {seed: 10}); k.part();
+  k.pen(H.poly ? HULL.concat([HULL[0]]) : HULL, {seed: 11}); k.pen(MAST, {w: 3, seed: 12}); k.pen(SAIL.concat([SAIL[0]]), {seed: 13}); k.pen(JIB.concat([JIB[0]]), {seed: 14}); k.pen(HILL.slice(1, 7), {wobble: .5, seed: 15}); WAVES.forEach((w, i) => k.pen(w, {w: 2, seed: 20 + i})); });
+return (t) => { H.begin(g); paper.draw(g); pic.draw(g, {progress: t / 4.5}); H.begin(g); H.finish(g); };

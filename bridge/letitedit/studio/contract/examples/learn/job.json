@@ -1,0 +1,23 @@
+{
+  "contract_version": "1.1",
+  "job_id": "ch-demo-learn-0001",
+  "kind": "learn",
+  "priority": "channel",
+  "requested_by": {
+    "app": "letitedit-channel",
+    "app_version": "0.1.0",
+    "channel_id": "demo"
+  },
+  "output_dir": "C:\\Users\\Sam\\AppData\\Local\\letitedit Channel\\channels\\demo\\studio\\ch-demo-learn-0001",
+  "inputs": {
+    "references": [
+      {
+        "path": "C:\\Users\\Sam\\Videos\\best post 1.mp4"
+      },
+      {
+        "url": "https://www.instagram.com/reel/XXXXXXXX/"
+      }
+    ],
+    "note": "Our three best Reels this year."
+  }
+}

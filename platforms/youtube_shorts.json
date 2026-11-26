@@ -1,0 +1,267 @@
+{
+  "id": "youtube_shorts",
+  "name": "YouTube Shorts",
+  "schema": "letitedit-platform/1",
+  "checked": "2026-10-19",
+  "video": {
+    "aspect_ratios": {
+      "value": [
+        "vertical",
+        "square"
+      ],
+      "source": "https://support.google.com/youtube/answer/12779649",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "\"square or vertical aspect ratio\"; 9:16 is the vertical full-screen shape."
+    },
+    "resolutions": {
+      "value": {
+        "max": "1080p",
+        "common": "1080x1920"
+      },
+      "source": "https://support.google.com/youtube/answer/10059070",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "Max 1080p is from the Shorts help page; 1080x1920 is the 9:16 frame at that size."
+    },
+    "frame_rates": {
+      "value": "Upload at the recorded frame rate (general YouTube upload guidance).",
+      "source": "https://support.google.com/youtube/answer/1722171",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "min_length_s": {
+      "value": null,
+      "source": "https://support.google.com/youtube/answer/10059070",
+      "checked": "2026-10-19",
+      "status": "not documented"
+    },
+    "max_length_s": {
+      "value": 180,
+      "source": "https://support.google.com/youtube/answer/10059070",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "max_file_size_bytes": {
+      "value": 274877906944,
+      "source": "https://support.google.com/youtube/answer/71673",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "General YouTube upload limit."
+    },
+    "container": {
+      "value": "MP4, fast start",
+      "source": "https://support.google.com/youtube/answer/1722171",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "video_codec": {
+      "value": "H.264 High Profile, 4:2:0",
+      "source": "https://support.google.com/youtube/answer/1722171",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "video_bitrate_sdr_mbps": {
+      "value": {
+        "1080p": [
+          8,
+          8,
+          12,
+          12
+        ]
+      },
+      "source": "https://support.google.com/youtube/answer/1722171",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "General YouTube table."
+    }
+  },
+  "audio": {
+    "codec": {
+      "value": "AAC-LC, Opus or Eclipsa Audio",
+      "source": "https://support.google.com/youtube/answer/1722171",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "sample_rate_hz": {
+      "value": 48000,
+      "source": "https://support.google.com/youtube/answer/1722171",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "bitrate_kbps": {
+      "value": {
+        "stereo": 384
+      },
+      "source": "https://support.google.com/youtube/answer/1722171",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "loudness_normalisation": {
+      "value": {
+        "integrated_lufs": -14
+      },
+      "source": "https://productionadvice.co.uk/stats-for-nerds/",
+      "checked": "2026-10-19",
+      "status": "unconfirmed",
+      "note": "Not published by YouTube."
+    }
+  },
+  "safe_zones": {
+    "value": [
+      {
+        "name": "top: status bar / search",
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.0625
+      },
+      {
+        "name": "bottom: title, channel, subscribe, sound",
+        "x": 0,
+        "y": 0.844,
+        "w": 1,
+        "h": 0.156
+      },
+      {
+        "name": "right: like/dislike/comment/share/remix column",
+        "x": 0.911,
+        "y": 0,
+        "w": 0.089,
+        "h": 1
+      }
+    ],
+    "source": "https://postplanify.com/tools/youtube-shorts-safe-zone-checker",
+    "checked": "2026-10-19",
+    "status": "unconfirmed",
+    "note": "YouTube publishes no overlay geometry for Shorts. Third-party figures for a 1080x1920 frame: 120 px top, 300 px bottom (360 px with expanded description), 96 px right; other third-party checkers give 100-288 px top, 180-672 px bottom, 80-192 px right. The UI also differs by device and app version.",
+    "confidence": "low"
+  },
+  "captions": {
+    "placement": {
+      "value": "No platform rule published; burned-in text in the bottom ~16% sits under the title and channel row (see safe_zones).",
+      "source": "https://postplanify.com/tools/youtube-shorts-safe-zone-checker",
+      "checked": "2026-10-19",
+      "status": "unconfirmed"
+    }
+  },
+  "thumbnail": {
+    "value": {
+      "recommended": "2160x3840",
+      "min_height": 640,
+      "aspect": "9:16",
+      "formats": [
+        "JPG",
+        "PNG"
+      ],
+      "max_bytes_desktop": 52428800
+    },
+    "source": "https://support.google.com/youtube/answer/72431",
+    "checked": "2026-10-19",
+    "status": "official"
+  },
+  "text_limits": {
+    "title_chars": {
+      "value": 100,
+      "source": "https://developers.google.com/youtube/v3/docs/videos",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "description_bytes": {
+      "value": 5000,
+      "source": "https://developers.google.com/youtube/v3/docs/videos",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "hashtags": {
+      "value": {
+        "max_before_all_ignored": 60,
+        "shown_above_title": 3
+      },
+      "source": "https://support.google.com/youtube/answer/6390658",
+      "checked": "2026-10-19",
+      "status": "official"
+    }
+  },
+  "export_preset": {
+    "width": {
+      "value": 1080,
+      "source": "https://support.google.com/youtube/answer/10059070",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "height": {
+      "value": 1920,
+      "source": "https://support.google.com/youtube/answer/10059070",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "fps": {
+      "value": "source",
+      "source": "https://support.google.com/youtube/answer/1722171",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "container": {
+      "value": "mp4",
+      "source": "https://support.google.com/youtube/answer/1722171",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "vcodec": {
+      "value": "libx264",
+      "source": "https://support.google.com/youtube/answer/1722171",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "pix_fmt": {
+      "value": "yuv420p",
+      "source": "https://support.google.com/youtube/answer/1722171",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "video_bitrate_kbps": {
+      "value": 8000,
+      "source": "https://support.google.com/youtube/answer/1722171",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "12000 at 48-60 fps."
+    },
+    "video_bitrate_kbps_high_fps": {
+      "value": 12000,
+      "source": "https://support.google.com/youtube/answer/1722171",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "acodec": {
+      "value": "aac",
+      "source": "https://support.google.com/youtube/answer/1722171",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "audio_bitrate_kbps": {
+      "value": 384,
+      "source": "https://support.google.com/youtube/answer/1722171",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "sample_rate_hz": {
+      "value": 48000,
+      "source": "https://support.google.com/youtube/answer/1722171",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "loudness_lufs": {
+      "value": -14,
+      "source": "https://productionadvice.co.uk/stats-for-nerds/",
+      "checked": "2026-10-19",
+      "status": "unconfirmed"
+    },
+    "max_length_s": {
+      "value": 180,
+      "source": "https://support.google.com/youtube/answer/10059070",
+      "checked": "2026-10-19",
+      "status": "official"
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://letitedit.app/studio/1/kinds/index.schema.json",
+  "title": "index: a library of footage folders",
+  "description": "Reads the folders, never writes into them. The library is written into the job folder as JSON Lines files (one record a line, each matching a $defs record below), a full snapshot of the folders asked for plus changes.jsonl against the last index job of the same folders (since_job).",
+  "$defs": {
+    "inputs": {
+      "type": "object",
+      "required": ["folders"],
+      "properties": {
+        "folders": {"type": "array", "minItems": 1, "items": {"$ref": "../common.schema.json#/$defs/abs_path"}},
+        "files": {"type": "array", "items": {"$ref": "../common.schema.json#/$defs/abs_path"}, "description": "Only these files (inside the folders)."},
+        "changed_only": {"type": "boolean", "default": true, "description": "Skip the analysis of files whose size, modification time and analysis settings are unchanged. The snapshot still lists every file."},
+        "since_job": {"type": "string", "description": "The earlier index job that changes.jsonl compares with. Absent: the newest finished index job of the same folders, if any."},
+        "steps": {"type": "array", "items": {"type": "string", "enum": ["files", "transcripts", "moments", "photos", "flags", "vision"]}, "description": "Absent: all but vision. vision (1.2): letitedit's vision pass (a local vision model, about 6 s of graphics card time per 8 s of video) for the moment fields it gives: framing wide, detail and screen, the moving-vehicle camera, subjects and setting. vision brings transcripts and moments with it: a file already indexed is split into the same moments from its cached words, so its moment ids stay."},
+        "recursive": {"type": "boolean", "default": true}
+      }
+    },
+    "fact": {
+      "type": "object",
+      "required": ["value"],
+      "description": "One value of a moment field (1.2), with how sure letitedit is and how it knows. The values listed with each field are an open list.",
+      "properties": {
+        "value": {"type": ["string", "number"]},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "how": {"type": "string", "description": "Open list.", "examples": ["detector", "vision_model", "transcript", "file_metadata"]},
+        "note": {"type": "string"},
+        "at": {"$ref": "../common.schema.json#/$defs/seconds"},
+        "from": {"$ref": "../common.schema.json#/$defs/seconds"},
+        "to": {"$ref": "../common.schema.json#/$defs/seconds"}
+      }
+    },
+    "flag": {
+      "type": "object",
+      "required": ["value"],
+      "properties": {
+        "value": {"type": "string", "enum": ["yes", "no", "unknown"]},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "how": {"type": "string", "enum": ["detector", "vision_model", "transcript", "not_checked"]},
+        "note": {"type": "string"}
+      }
+    },
+    "file_record": {
+      "type": "object",
+      "required": ["file_id", "paths", "kind", "bytes"],
+      "properties": {
+        "file_id": {"$ref": "../common.schema.json#/$defs/file_id"},
+        "paths": {"type": "array", "minItems": 1, "items": {"$ref": "../common.schema.json#/$defs/abs_path"}, "description": "Every path with this content (copies)."},
+        "kind": {"type": "string", "enum": ["video", "audio", "photo", "other"]},
+        "bytes": {"type": "integer"},
+        "duration_s": {"type": ["number", "null"]},
+        "recorded_at": {"type": ["string", "null"], "description": "ISO 8601 with offset when the camera wrote one; null when unknown."},
+        "camera": {"type": ["string", "null"]},
+        "width": {"type": "integer"},
+        "height": {"type": "integer"},
+        "fps": {"type": "number"},
+        "hdr": {"type": "string", "enum": ["sdr", "hlg", "pq", "unknown"]},
+        "talking": {"type": "boolean"},
+        "place": {"type": ["string", "null"]},
+        "transcript": {"$ref": "../common.schema.json#/$defs/rel_path", "description": "transcripts/<file_id>.json: words with times."},
+        "analysed": {"type": "string", "description": "The analysis settings' hash; a change re-analyses."}
+      }
+    },
+    "moment_record": {
+      "type": "object",
+      "required": ["moment_id", "file_id", "in", "out", "what", "state"],
+      "properties": {
+        "moment_id": {"$ref": "../common.schema.json#/$defs/moment_id"},
+        "file_id": {"$ref": "../common.schema.json#/$defs/file_id"},
+        "in": {"$ref": "../common.schema.json#/$defs/seconds"},
+        "out": {"$ref": "../common.schema.json#/$defs/seconds"},
+        "state": {"type": "string", "enum": ["current", "retired"], "description": "retired: a re-index split this part of the file differently; see replaced_by."},
+        "replaced_by": {"type": "array", "items": {"type": "object", "required": ["moment_id", "overlap_s"], "properties": {"moment_id": {"$ref": "../common.schema.json#/$defs/moment_id"}, "overlap_s": {"type": "number"}}}},
+        "what": {"type": "string", "description": "What happens, one line."},
+        "who": {"type": "array", "items": {"type": "string"}},
+        "words": {"type": "string"},
+        "picture_quality": {"type": "object", "properties": {"score": {"type": "number", "minimum": 0, "maximum": 1}, "notes": {"type": "array", "items": {"type": "string"}}}},
+        "hook_value": {"type": "object", "properties": {"score": {"type": "number", "minimum": 0, "maximum": 1}, "why": {"type": "string"}}},
+        "flags": {
+          "type": "object",
+          "properties": {
+            "place_revealing": {"$ref": "#/$defs/flag"},
+            "licence_plate": {"$ref": "#/$defs/flag"},
+            "faces": {"$ref": "#/$defs/flag"},
+            "kids": {"$ref": "#/$defs/flag"}
+          }
+        },
+        "first_indexed": {"$ref": "../common.schema.json#/$defs/time"},
+        "shot": {"type": "object", "description": "1.2. framing: close-up, medium, wide, detail, screen, talking head. camera: still, handheld, pan, tilt, moving vehicle, drone, timelapse, slow motion.", "properties": {"framing": {"$ref": "#/$defs/fact"}, "camera": {"$ref": "#/$defs/fact"}}},
+        "sound": {"type": "object", "description": "1.2. speech and music: yes or no; music_source: scene or added; ambient: a few words (quiet, room tone, steady noise, engine-like hum, rumble, music, loud room); events: what the sound detector heard, in its words (bang, click, thud, clank, repeated hits, engine-like hum, steady noise, rumble, music, beep, quiet), each with at or from and to.", "properties": {"speech": {"$ref": "#/$defs/fact"}, "music": {"$ref": "#/$defs/fact"}, "music_source": {"$ref": "#/$defs/fact"}, "ambient": {"$ref": "#/$defs/fact"}, "events": {"type": "array", "items": {"$ref": "#/$defs/fact"}}}},
+        "subjects": {"type": "array", "items": {"$ref": "#/$defs/fact"}, "description": "1.2. The main people, animals and objects seen (person, animal, vehicle, tool, food, screen ...)."},
+        "setting": {"type": "object", "description": "1.2. indoors_outdoors; place_kind: a kind of place in plain words (kitchen, workshop/garage, road, beach/water ...), never the name of a place (a file's place is in files.jsonl); time_of_day: day, night, dusk or dark.", "properties": {"indoors_outdoors": {"$ref": "#/$defs/fact"}, "place_kind": {"$ref": "#/$defs/fact"}, "time_of_day": {"$ref": "#/$defs/fact"}}},
+        "energy": {"$ref": "#/$defs/fact", "description": "1.2. calm, steady or lively."},
+        "b_roll_fit": {"$ref": "#/$defs/fact", "description": "1.2. yes or no: usable over someone talking (no speech of its own, a usable picture, at least 1.5 s)."},
+        "best_frame_s": {"$ref": "#/$defs/fact", "description": "1.2. The time in the file (seconds) of its best frame: the sharpest that is neither dark nor blown out."}
+      }
+    },
+    "photo_record": {
+      "type": "object",
+      "required": ["file_id", "sharpness", "faces", "subjects"],
+      "properties": {
+        "file_id": {"$ref": "../common.schema.json#/$defs/file_id"},
+        "sharpness": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+        "faces": {"type": ["integer", "null"], "minimum": 0},
+        "kids": {"$ref": "#/$defs/flag"},
+        "subjects": {"type": "array", "items": {"type": "string"}},
+        "place_revealing": {"$ref": "#/$defs/flag"},
+        "licence_plate": {"$ref": "#/$defs/flag"}
+      }
+    },
+    "change_record": {
+      "type": "object",
+      "required": ["what", "id", "change"],
+      "properties": {
+        "what": {"type": "string", "enum": ["file", "moment", "photo"]},
+        "id": {"type": "string"},
+        "change": {"type": "string", "enum": ["added", "changed", "removed", "retired"]}
+      }
+    },
+    "output": {
+      "type": "object",
+      "required": ["files", "moments", "photos", "changes", "counts"],
+      "properties": {
+        "files": {"$ref": "../common.schema.json#/$defs/rel_path", "description": "library/files.jsonl"},
+        "moments": {"$ref": "../common.schema.json#/$defs/rel_path", "description": "library/moments.jsonl: current and retired moments of these folders' files."},
+        "photos": {"$ref": "../common.schema.json#/$defs/rel_path", "description": "library/photos.jsonl"},
+        "changes": {"$ref": "../common.schema.json#/$defs/rel_path", "description": "library/changes.jsonl"},
+        "since_job": {"type": ["string", "null"]},
+        "counts": {
+          "type": "object",
+          "properties": {
+            "files": {"type": "integer"},
+            "analysed": {"type": "integer"},
+            "skipped_unchanged": {"type": "integer"},
+            "unreadable": {"type": "integer"},
+            "moments_current": {"type": "integer"},
+            "moments_retired": {"type": "integer"},
+            "photos": {"type": "integer"}
+          }
+        },
+        "unreadable": {"type": "array", "items": {"type": "object", "required": ["path", "why"], "properties": {"path": {"type": "string"}, "why": {"type": "string"}}}},
+        "steps_skipped": {"type": "array", "items": {"type": "object", "required": ["step", "why"], "properties": {"step": {"type": "string"}, "why": {"type": "string"}}}}
+      }
+    }
+  }
+}

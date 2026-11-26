@@ -1,0 +1,32 @@
+# letitedit tool server (C:\LetItEdit\bridge\letitedit_mcp.py): only what the bridge process imports.
+# Python 3.14 (PSF-2.0). Versions = the ones the bridge was tested with on 2026-10-20.
+# Build with C:\LetItEdit\release\env\build-bridge-clean.ps1 (stage 1 = this file, stage 2 = requirements-bridge-nodeps.txt).
+# No pymupdf (AGPL) or other packages of the person's own global Python.
+# Worker scripts (*_worker.py, fix_nets.py, render3d_blender.py) run in envs\models / envs\voice / Blender, not here.
+mcp==2.3.0                              # MIT - the MCP server
+numpy==2.5.2                            # BSD-3
+scipy==1.18.1                           # BSD-3
+pillow==12.3.0                          # MIT-CMU
+pillow_heif==1.8.0                      # BSD-3 (wheel bundles libheif, LGPL-3.0, and its decoders)
+opencv-contrib-python-headless==5.0.0.93  # Apache-2.0 (VitTrack, FaceRecognizerSF need contrib/5.x)
+onnxruntime-directml==1.24.4            # MIT - provides the 'onnxruntime' module (DirectML + CPU)
+fonttools==4.66.0                       # MIT
+PyYAML==6.0.3                           # MIT
+soundfile==0.14.0                       # BSD-3 (bundles libsndfile LGPL-2.1)
+# dependencies of faster-whisper and kokoro-onnx (those two are installed with --no-deps in stage 2 so that the
+# plain 'onnxruntime' wheel is not pulled in on top of onnxruntime-directml)
+av==18.0.0                              # BSD-3 (wheel bundles FFmpeg 8 with x264/x265: GPL-2.0+ as built)
+ctranslate2==4.8.1                      # MIT
+huggingface_hub==1.27.0                 # Apache-2.0
+tokenizers==0.23.1                      # Apache-2.0
+tqdm==4.70.0                            # MPL-2.0 AND MIT
+colorlog==6.12.0                        # MIT
+espeakng-loader==0.2.4                  # MIT wrapper; bundles espeak-ng (GPL-3.0)
+phonemizer-fork==3.3.1                  # GPL-3.0
+flatbuffers==25.12.19                   # Apache-2.0
+protobuf==7.35.1                        # BSD-3
+sympy==1.14.0                           # BSD-3
+packaging==26.3                         # Apache-2.0 / BSD-2
+setuptools==84.0.0                      # MIT (ctranslate2 needs it)
+truststore==0.10.5                      # MIT - downloads check certificates through Windows (a clean PC; letitedit.core.windows_trust)
+praat-parselmouth==0.4.7                # GPL-3.0-or-later - Praat pitch for timing.prosody (YIN fallback without it); the owner's OK 17 Nov

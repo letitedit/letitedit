@@ -1,0 +1,11 @@
+const H = M.look.woodcut.start(c.w, c.h), C = H.palette, u = K(1);
+const pic = H.print('boat'), I = H.box(pic), hz = Y(640), path = (x, s) => { x.beginPath(); s.forEach(([a, b], i) => i ? x.lineTo(a, b) : x.moveTo(a, b)); x.closePath(); x.fill(); };
+const lines = (x) => { const L = []; L.push(H.carved(HULL.concat([HULL[0]]), 7*u, 3, {smooth: false})); L.push(H.carved(SAIL.concat([SAIL[0]]), 5*u, 4, {smooth: false})); L.push(H.carved(JIB.concat([JIB[0]]), 5*u, 5, {smooth: false})); L.push(H.carved(MAST, 8*u, 6, {smooth: false})); L.push(H.carved(HILL.slice(1, 7), 5*u, 7)); for (let i = 0; i < 9; i++) { const y = hz + 40*u + i * (I.y1 - hz - 40*u) / 9; if (y > Y(690) && y < Y(810)) continue; L.push(H.carved([[I.x0 + (i%2)*80*u, y], [c.w*.4, y + 14*u], [c.w*.65, y - 10*u], [I.x1 - (i%3)*50*u, y + 8*u]], (3 + i*.4)*u, 10 + i)); } H.fillAll(x, L, C.sumi); };
+H.pull(pic, {cut: lines, color: C.sumi, grain: .1, per: 18}); H.ink(pic);
+H.pull(pic, {cut: (x) => { x.fillRect(I.x0, I.y0, I.x1 - I.x0, hz - I.y0); }, color: '#e4d7b4', grain: .3, alpha: .9, per: 8}); H.ink(pic);
+H.pull(pic, {cut: (x) => { x.beginPath(); x.arc(SUN.x, SUN.y, SUN.r, 0, 7); x.fill(); }, color: '#c8452f', grain: .3, per: 4}); H.ink(pic);
+H.pull(pic, {cut: (x) => path(x, HILL), color: C.bank, grain: .4, per: 6}); H.ink(pic);
+H.pull(pic, {cut: (x) => path(x, SEA), color: C.water, grain: .35, per: 8}); H.ink(pic);
+H.pull(pic, {cut: (x) => { path(x, HULL); }, color: '#7a3a2a', grain: .3, per: 3}); H.ink(pic);
+H.pull(pic, {cut: (x) => { H.bokashi(x, I.x0, I.x1, I.y0, I.y0 + K(280), C.beroAi, 7); H.bokashi(x, I.x0, I.x1, I.y1, I.y1 - K(300), C.beroAi, 9); }, grain: .15, per: 8});
+return (t) => { H.begin(g); pic.draw(g, {p: Math.min(1, t / 5)}); };

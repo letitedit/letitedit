@@ -1,0 +1,194 @@
+{
+ "ballpoint": {
+  "moves": "Draws itself line by line: contours, then hatching layer by layer.",
+  "speed": "plays live on a PC with a graphics card (about 15 ms a frame in a small test scene).",
+  "suits": "Essays, explainers, technical notes, a notebook feel.",
+  "what": "Ballpoint sketch: one blue pen on cream paper, tone only from where the hatching sits."
+ },
+ "blueprint": {
+  "moves": "Ruled stroke by stroke, compass circles swung, lettering written.",
+  "speed": "plays live on a PC with a graphics card, with hitches while its big marks go down (about 25 ms a frame in a small test scene).",
+  "suits": "Machines, engineering, how it's made, plans for a build.",
+  "what": "Cyanotype blueprint: ruling pen and compass in white ink on Prussian-blue stock."
+ },
+ "brokenColour": {
+  "moves": "Dabs arrive patch by patch.",
+  "speed": "plays live on a PC with a graphics card (about 21 ms a frame in a small test scene).",
+  "suits": "Sunrise travel, mood, landscape, painting subjects.",
+  "what": "Broken colour: plein-air dabs of unmixed oil on primed linen, side by side for the eye to mix, high key and full of light."
+ },
+ "chalkboard": {
+  "moves": "Written stroke by stroke, tone drag by drag.",
+  "speed": "plays live on a PC with a graphics card (about 12 ms a frame in a small test scene).",
+  "suits": "Lessons, teachers, classrooms, a worked step-by-step.",
+  "what": "Chalkboard: chalk with its dust on a slate carrying the ghosts of old lessons."
+ },
+ "charcoal": {
+  "moves": "Draws, rubs out and redraws on its own residue.",
+  "speed": "plays live on a PC with a graphics card, with hitches while its big marks go down (about 20 ms a frame in a small test scene).",
+  "suits": "Change over time, memory, before and after.",
+  "what": "Charcoal, erased and redrawn: vine and compressed sticks, a stump and a kneaded eraser that never lifts it all."
+ },
+ "colouredPencil": {
+  "moves": "Hatching builds strip by strip, pass by pass.",
+  "speed": "plays live on a PC with a graphics card (about 16 ms a frame in a small test scene).",
+  "suits": "Workshops, how-it-works, children, school, family stories.",
+  "what": "Coloured pencil: wax pencils hatched in one diagonal on toothy cream paper, hues layered."
+ },
+ "crayon": {
+  "moves": "Scribble fills arrive stroke by stroke.",
+  "speed": "plays live on a PC with a graphics card, with hitches while its big marks go down (about 26 ms a frame in a small test scene).",
+  "suits": "Children, school, upbeat and handmade subjects.",
+  "what": "Crayon: wax on toothy paper, back-and-forth scribble fills that skip the valleys, a darker crayon on the shade side, a white one burnishing the light, a fat wobbly contour gone over twice."
+ },
+ "cutPaper": {
+  "moves": "Pieces are laid down one by one and can shift as flats.",
+  "speed": "plays live on a PC with a graphics card (about 13 ms a frame in a small test scene).",
+  "suits": "Playful stories, children, folk tales.",
+  "what": "Cut-paper collage: torn and scissor-cut coloured papers on a backing board, not one drawn line, each piece lowered onto the stack with a shadow that pulls in."
+ },
+ "dreamGlaze": {
+  "moves": "Glazes build up; forms hold still.",
+  "speed": "plays live on a PC with a graphics card (about 24 ms a frame in a small test scene).",
+  "suits": "Surreal, surprising, art-minded pieces.",
+  "what": "Dream glaze: thin oil glazes with no visible stroke, every form turned by one low sun, every edge hard, an impossible picture painted as if it were real."
+ },
+ "embroidery": {
+  "moves": "Stitched in, stitch by stitch; stitches can be re-posed in a loop.",
+  "speed": "plays live on a PC with a graphics card, with hitches while its big marks go down (about 22 ms a frame in a small test scene).",
+  "suits": "Craft, cosy subjects, family, loops.",
+  "what": "Hand embroidery: stranded cotton floss stitched through plain-weave linen in a beech hoop, every mark a length of twisted thread, made stitch by stitch with the needle in view."
+ },
+ "flatVector": {
+  "moves": "Paths draw on; plates move under a camera.",
+  "speed": "plays live on a PC with a graphics card (about 16 ms a frame in a small test scene).",
+  "suits": "Explainers, product, news graphics.",
+  "what": "Flat vector: modern editorial illustration, crisp filled paths with no lines, atmospheric planes, long shadows and a grain brush on the shade side."
+ },
+ "folkTale": {
+  "moves": "Painted from pencil to opaque; depth planes can move.",
+  "speed": "plays live on a PC with a graphics card, with hitches while its big marks go down (about 19 ms a frame in a small test scene).",
+  "suits": "Fairy tales, family stories, long stories with a place.",
+  "what": "Folk-tale storybook: gouache over a pencil drawing, where depth is the medium: rich opaque paint up close thinning to a pale wash and then to bare pencil at the back."
+ },
+ "halftone": {
+  "moves": "Prints on block by block; takes a real photo.",
+  "speed": "plays live on a PC with a graphics card (about 19 ms a frame in a small test scene).",
+  "suits": "News, history, protest, hard facts.",
+  "what": "Newsprint halftone: black on a 45-degree dot screen plus one spot colour, ink gaining into grey groundwood paper, a press coming up to colour."
+ },
+ "inkWash": {
+  "moves": "Washes run down the shape, then the nib draws over them.",
+  "speed": "plays live on a PC with a graphics card, with hitches while its big marks go down (about 19 ms a frame in a small test scene).",
+  "suits": "Field notes, nature journals, travel sketchbooks.",
+  "what": "Ink & line-wash: wet washes that settle and backrun, then a flexible nib over them."
+ },
+ "isometric": {
+  "moves": "Built up piece by piece on the grid.",
+  "speed": "plays live on a PC with a graphics card (about 2 ms a frame in a small test scene).",
+  "suits": "Software, systems, a place with rooms.",
+  "what": "Isometric cutaway: flat vector planes on a true 2:1 grid, three tones per material, crisp edges, built up in a construction order."
+ },
+ "lowPoly": {
+  "moves": "A 3D-looking mesh through a moving pinhole camera.",
+  "speed": "too heavy to play smoothly live; exports normally (about 76 ms a frame in a small test scene).",
+  "suits": "Calm landscapes, tech.",
+  "what": "Low-poly: triangle meshes projected by hand through a pinhole camera, each facet one flat colour from one low sun, sorted far to near, the triangulation the only texture."
+ },
+ "markerComic": {
+  "moves": "Flats laid in chisel passes, then the contour grows.",
+  "speed": "plays live on a PC with a graphics card (about 19 ms a frame in a small test scene).",
+  "suits": "Loud, social, bright Shorts, comics.",
+  "what": "Marker comic: alcohol-marker cel fills laid in chisel passes, a hard shadow edge, and one heavy contour that thickens away from the light."
+ },
+ "midCentury": {
+  "moves": "Flats go on, a dry brush drags, a loose line follows.",
+  "speed": "plays live on a PC with a graphics card (about 19 ms a frame in a small test scene).",
+  "suits": "Travel posters, family stories, warm retro subjects.",
+  "what": "Mid-century gouache: opaque matte flats on warm board, a dry brush dragged across them and a loose ink line printed off register, like a 1950s picture book."
+ },
+ "paintedOil": {
+  "moves": "Block-in to impasto, stroke by stroke.",
+  "speed": "plays live on a PC with a graphics card, with hitches while its big marks go down (about 24 ms a frame in a small test scene).",
+  "suits": "Still life, heritage, calm authority.",
+  "what": "Oil on canvas: opaque paint with hog-bristle brushes on toned linen, lean block-in to fat impasto, painted dark to light in front of the viewer."
+ },
+ "paperCraft": {
+  "moves": "Card flats moved by hand on twos, with shadows between them.",
+  "speed": "plays live on a PC with a graphics card (about 18 ms a frame in a small test scene).",
+  "suits": "Stories behind a speaker, parallax scenes, teachers, families, children.",
+  "what": "Toy-theatre paper collage: a cardboard stage, painted and printed flats with real gaps between them, moved by hand on twos."
+ },
+ "pencilWatercolour": {
+  "moves": "Pencil lay-in, then washes spread from where the brush touched.",
+  "speed": "plays live on a PC with a graphics card (about 20 ms a frame in a small test scene).",
+  "suits": "Gentle nature, recipes, a soft explainer, travel journals.",
+  "what": "Pencil & watercolour: graphite and pan washes on cold-press, paint that misses its outline."
+ },
+ "pixelArt": {
+  "moves": "Cells laid one at a time; sprites can step on a grid.",
+  "speed": "plays live on a PC with a graphics card (about 19 ms a frame in a small test scene).",
+  "suits": "Games, retro, jokes.",
+  "what": "Pixel art: cells laid one at a time on a grid, each exactly one of sixteen palette colours, a staircase for an edge and a dither for a tone."
+ },
+ "risograph": {
+  "moves": "Ink drums print one after another, off-register.",
+  "speed": "plays live on a PC with a graphics card, with hitches while its big marks go down (about 25 ms a frame in a small test scene).",
+  "suits": "Posters, launches, music, loud sales.",
+  "what": "Risograph: soy ink, one drum per colour, each ink multiplied through its own slightly wrong registration, tone made of halftone dots, white is bare paper."
+ },
+ "rubberHose": {
+  "moves": "Boiling ink line, noodle limbs on a beat.",
+  "speed": "plays live on a PC with a graphics card, with hitches while its big marks go down (about 25 ms a frame in a small test scene).",
+  "suits": "Gags, mascots, comedy, 1930s pastiche.",
+  "what": "Rubber hose: a 1930s studio cartoon, India ink at one pressure on a clear cel, flat greys on its back, noodle limbs, printed on black-and-white film."
+ },
+ "scrapbook": {
+  "moves": "Cards laid, tape pulled, letters struck, under a slow camera.",
+  "speed": "plays live on a PC with a graphics card, with hitches while its big marks go down (about 26 ms a frame in a small test scene).",
+  "suits": "Documentary, research, found evidence.",
+  "what": "Archival scrapbook: a page from an old field album, with torn cards, tape, a typewriter, cut letters, a red pen and copperplate lines."
+ },
+ "scratchboard": {
+  "moves": "Cut from black, flick by flick; long lines watched being cut.",
+  "speed": "plays live on a PC with a graphics card (about 14 ms a frame in a small test scene).",
+  "suits": "Animals, night scenes, thrillers, old-book moods.",
+  "what": "Scratchboard: every mark is ink scraped off a black board, white on black."
+ },
+ "singleLine": {
+  "moves": "One line spirals out from the centre, racing through the lights.",
+  "speed": "plays live on a PC with a graphics card, with hitches while its big marks go down (about 25 ms a frame in a small test scene).",
+  "suits": "One big image: a logo, a planet, a coin, a title.",
+  "what": "Single-line engraving: one unbroken line spiralling out, its width carrying the whole picture."
+ },
+ "stipple": {
+  "moves": "Dots accumulate, dark masses first; nothing moves.",
+  "speed": "plays live on a PC with a graphics card (about 15 ms a frame in a small test scene).",
+  "suits": "Science, anatomy, natural history, serious detail.",
+  "what": "Pen-and-ink stipple: thousands of dots from one pen, tone only from how many."
+ },
+ "storybook": {
+  "moves": "Pencil and washes on a page, with a recurring character that can walk.",
+  "speed": "plays live on a PC with a graphics card, with hitches while its big marks go down (about 22 ms a frame in a small test scene).",
+  "suits": "Picture-book stories, one recurring character.",
+  "what": "Storybook pencil and watercolour: soft graphite and gentle pan washes on warm cold-press paper, with a recurring character drawn in a picture-book illustrator's order."
+ },
+ "sumiE": {
+  "moves": "A few strokes from wet to dry; the empty paper stays.",
+  "speed": "plays live on a PC with a graphics card, with hitches while its big marks go down (about 22 ms a frame in a small test scene).",
+  "suits": "Calm, travel, reflective subjects.",
+  "what": "Sumi-e: one loaded brush of black ink on absorbent paper, a few strokes that go from wet to dry-brush, mostly empty sheet, and a cinnabar seal."
+ },
+ "toyBrick": {
+  "moves": "Assembled brick by brick.",
+  "speed": "plays live on a PC with a graphics card (about 15 ms a frame in a small test scene).",
+  "suits": "Build stories, products, playful subjects.",
+  "what": "Toy brick: moulded plastic bricks in an orthographic view, real proportions and studs, assembled step by step like an instruction booklet."
+ },
+ "woodcut": {
+  "moves": "Keyblock and colour blocks print in turn; rain and water can run.",
+  "speed": "plays live on a PC with a graphics card, with hitches while its big marks go down (about 20 ms a frame in a small test scene).",
+  "suits": "Japan, history, travel, rain and water.",
+  "what": "Ukiyo-e woodblock: a carved black keyblock and flat colour blocks printed by hand onto soft washi, with the wood's grain in the colour and graded wipes in sky and water."
+ }
+}

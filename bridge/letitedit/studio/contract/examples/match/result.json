@@ -1,0 +1,70 @@
+{
+  "contract_version": "1.1",
+  "job_id": "ch-demo-match-0042",
+  "kind": "match",
+  "state": "done",
+  "started": "2026-11-20T01:10:00-08:00",
+  "finished": "2026-11-20T01:40:00-08:00",
+  "attempts": 1,
+  "versions": {
+    "contract": "1.1",
+    "letitedit": "20261118.3",
+    "tools": "7b0da5c5"
+  },
+  "cost": {
+    "wall_s": 95,
+    "waited_s": 0,
+    "measured": true
+  },
+  "outputs": [],
+  "output": {
+    "verdict": "partial",
+    "matched_share": 0.71,
+    "video_duration_s": 21.0,
+    "segments": [
+      {
+        "video_in": 0.0,
+        "video_out": 9.4,
+        "candidates": [
+          {
+            "file_id": "f_66ea81670fa7f7885988",
+            "path": "D:\\Footage\\Café days\\IMG_1234.MOV",
+            "moment_ids": [
+              "m_dd7148ba3befeaaeccfc"
+            ],
+            "in": 13.1,
+            "out": 22.5,
+            "confidence": 0.93,
+            "method": "picture_and_sound"
+          }
+        ]
+      },
+      {
+        "video_in": 9.4,
+        "video_out": 15.0,
+        "candidates": [
+          {
+            "file_id": "f_d5b03c866b2289760a3d",
+            "path": "D:\\Footage\\Café days\\IMG_1290.MOV",
+            "in": 2.8,
+            "out": 8.4,
+            "confidence": 0.61,
+            "method": "picture"
+          }
+        ]
+      },
+      {
+        "video_in": 15.0,
+        "video_out": 21.0,
+        "candidates": []
+      }
+    ],
+    "searched": {
+      "files": 214,
+      "folders": [
+        "D:\\Footage\\Café days"
+      ]
+    }
+  },
+  "warnings": []
+}

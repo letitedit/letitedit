@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://letitedit.app/studio/1/kinds/capabilities.schema.json",
+  "title": "capabilities: what this letitedit can do",
+  "description": "Fast (no AI, no render). Also answered at once by the CLI's 'capabilities' command without a job folder. A kind, layout or option is listed only when it runs on this install.",
+  "$defs": {
+    "inputs": {"type": "object", "properties": {"include": {"type": "array", "items": {"type": "string", "enum": ["looks", "platforms", "stills_layouts", "caption_styles", "typical", "limits"]}, "description": "Absent: everything."}, "ai": {"$ref": "../common.schema.json#/$defs/ai_choice", "description": "1.2: the AI the caller plans to run its jobs with; `typical` is for it. Absent: the person's own (`ai.default`)."}}},
+    "typical": {
+      "type": "object",
+      "required": ["minutes", "basis"],
+      "properties": {
+        "minutes": {"type": "number", "minimum": 0, "description": "Median wall time, waits left out."},
+        "minutes_p90": {"type": "number", "minimum": 0},
+        "tokens": {"type": "integer", "minimum": 0},
+        "tokens_p90": {"type": "integer", "minimum": 0},
+        "basis": {"type": "string", "enum": ["measured_here", "reference", "estimate"], "description": "measured_here: the median of this PC's last jobs of this kind and tier (samples); reference: letitedit's own measured runs; estimate: no run measured yet."},
+        "samples": {"type": "integer", "minimum": 0},
+        "as_of": {"type": "string"},
+        "note": {"type": "string"},
+        "ai": {"$ref": "../common.schema.json#/$defs/ai_choice", "description": "1.2: the engine, model and effort the figure was measured with (absent on an estimate)."},
+        "match": {"type": "string", "description": "1.2, kinds that run an AI: exact (measured with the AI asked about) or nearest (no figure for it yet). Open list."},
+        "match_note": {"type": "string", "description": "1.2: with match nearest, what this figure stands in for, in plain words."},
+        "by_ai": {"type": "array", "items": {"$ref": "#/$defs/typical"}, "description": "1.2: every figure of this kind and tier measured with an AI, each with its ai and samples."}
+      }
+    },
+    "output": {
+      "type": "object",
+      "required": ["contract_version", "contract_versions_accepted", "letitedit_version", "kinds", "looks", "platforms", "stills_layouts", "caption_styles", "priorities", "limits", "typical"],
+      "properties": {
+        "contract_version": {"$ref": "../common.schema.json#/$defs/contract_version"},
+        "contract_versions_accepted": {"type": "array", "items": {"type": "string"}, "description": "Majors this install reads, e.g. ['1']."},
+        "letitedit_version": {"type": "string"},
+        "fake": {"type": "boolean", "description": "true only from the reference fake (LETITEDIT_STUDIO_FAKE); absent from letitedit itself."},
+        "kinds": {
+          "type": "object",
+          "description": "Per kind: whether it runs here, its tiers and options.",
+          "additionalProperties": {
+            "type": "object",
+            "required": ["available"],
+            "properties": {
+              "available": {"type": "boolean"},
+              "why_not": {"type": "string"},
+              "tiers": {"type": "array", "items": {"type": "string"}},
+              "options": {"type": "object", "description": "Option name -> its allowed values or a short description."},
+              "uses_ai": {"type": "boolean"},
+              "heavy": {"type": "boolean", "description": "Takes the PC lock for renders or models."}
+            }
+          }
+        },
+        "ai": {
+          "type": "object",
+          "properties": {
+            "default": {"$ref": "../common.schema.json#/$defs/ai_choice"},
+            "available": {"type": "array", "items": {"type": "string", "enum": ["claude", "codex"]}, "description": "AIs installed and signed in on this PC."}
+          }
+        },
+        "looks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "name", "source"],
+            "properties": {
+              "id": {"type": "string"},
+              "name": {"type": "string"},
+              "source": {"type": "string", "enum": ["library", "learned", "shared"]},
+              "styles": {"type": "array", "items": {"type": "string"}, "description": "The kinds of video it fits (Style ids)."},
+              "formats": {"type": "array", "items": {"type": "string", "enum": ["short", "long"]}},
+              "needs_footage": {"type": "boolean"},
+              "fits": {"type": "string", "description": "Its own fit note: what content it is for."},
+              "example": {"type": "string", "description": "An example video's path, when it has one."}
+            }
+          }
+        },
+        "themes": {"type": "array", "items": {"type": "object", "required": ["id", "name"], "properties": {"id": {"type": "string"}, "name": {"type": "string"}}}},
+        "platforms": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "name", "width", "height", "fps"],
+            "properties": {
+              "id": {"$ref": "../common.schema.json#/$defs/platform"},
+              "name": {"type": "string"},
+              "width": {"type": "integer"},
+              "height": {"type": "integer"},
+              "fps": {"type": "number"},
+              "max_bytes": {"type": "integer"},
+              "max_seconds": {"type": "number"},
+              "loudness_lufs": {"type": "number"},
+              "true_peak_dbtp": {"type": "number"},
+              "covered_areas": {"type": "boolean", "description": "letitedit knows where the app's buttons cover the picture."}
+            }
+          }
+        },
+        "still_sizes": {"type": "array", "items": {"type": "object", "required": ["id", "width", "height"], "properties": {"id": {"type": "string"}, "width": {"type": "integer"}, "height": {"type": "integer"}}}},
+        "stills_layouts": {"type": "array", "items": {"type": "object", "required": ["id", "name"], "properties": {"id": {"type": "string"}, "name": {"type": "string"}, "fields": {"type": "object"}, "photos": {"type": "string", "description": "e.g. '0', '1', '2', '1-10'"}, "motion": {"type": "boolean"}}}},
+        "caption_styles": {"type": "array", "items": {"type": "object", "required": ["id", "name"], "properties": {"id": {"type": "string"}, "name": {"type": "string"}}}},
+        "rule_kinds": {"type": "array", "items": {"type": "string"}, "description": "1.5: the rule kinds this install takes in a job's rules (must, never, prefer). Absent (an install before 1.5): must and never only."},
+        "rule_checks": {"type": "array", "items": {"type": "object", "required": ["id", "status"], "properties": {"id": {"type": "string"}, "status": {"type": "string", "enum": ["detector", "ai_review_only"]}, "note": {"type": "string"}}}, "description": "Rule check hints letitedit understands, and whether a detector backs them yet."},
+        "priorities": {"type": "array", "items": {"type": "string"}},
+        "limits": {
+          "type": "object",
+          "properties": {
+            "concurrent_jobs": {"type": "integer", "description": "Studio jobs run one at a time."},
+            "max_short_seconds": {"type": "number"},
+            "max_batch_ideas": {"type": "integer"},
+            "max_still_motion_seconds": {"type": "number"},
+            "max_references": {"type": "integer"},
+            "proxy_max_bytes": {"type": "integer"},
+            "free_disk_gb": {"type": "number"},
+            "free_disk_gb_needed": {"type": "number", "description": "A making job is refused below this."}
+          }
+        },
+        "typical": {
+          "type": "object",
+          "description": "Keys: '<kind>' or '<kind>.<tier>', plus 'batch_shorts.per_short.<tier>'.",
+          "additionalProperties": {"$ref": "#/$defs/typical"}
+        },
+        "entry_points": {
+          "type": "object",
+          "properties": {
+            "cli": {"type": "string", "description": "The command line to run, e.g. \"C:\\Program Files\\letitedit\\env\\Scripts\\python.exe\" \"C:\\Program Files\\letitedit\\bridge\\letitedit_studio.py\""},
+            "inbox": {"$ref": "../common.schema.json#/$defs/abs_path"},
+            "studio_folder": {"$ref": "../common.schema.json#/$defs/abs_path"}
+          }
+        }
+      }
+    }
+  }
+}

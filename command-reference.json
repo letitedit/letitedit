@@ -1,0 +1,324 @@
+[
+  {
+    "id": "new_video",
+    "title": "Make a video from a folder of footage (New video)",
+    "action": "makeFirstCutAction",
+    "selection": "The welcome screen's New video card, the New video button in the header row, or Menu > File > New Video.... Have your footage in one folder and your AI connected.",
+    "behavior": "Five steps: choose the folder (Where is your footage?), say what you're making (Short, YouTube video, both or something else), pick a Look or let the AI choose, add notes (length, anything your AI should know), then Make my video. Your AI makes the first cut and opens it; the Opening panel then opens with other openings to try. It is a new project: nothing in an open video changes.",
+    "example": "Make a 45-second Short from the bus repair folder.",
+    "limits": "Needs Claude Code or Codex connected (Connect Your AI) and not busy with another job. Takes about 10-20 minutes. Back is Alt+Left; Cancel keeps what you chose."
+  },
+  {
+    "id": "new_hook",
+    "title": "Try another opening (New hook)",
+    "action": "hookPanelAction",
+    "selection": "A saved video. The New hook button on the timeline bar (or the AI-live bar), Menu > Edit > Try Another Opening..., or Versions of This Video > Try another opening (New hook)....",
+    "behavior": "The Opening panel swaps in a different opening at once: New hook (the next one), Previous, Other words (the same moment with other on-screen words), Play in my video, Back to my original opening. Each swap is one Undo step: Ctrl+Z puts the last opening back.",
+    "example": "Show me another way to start this video.",
+    "limits": "Save the video first. When the prepared openings run out, Ask my AI for hook ideas asks your AI for more."
+  },
+  {
+    "id": "review",
+    "title": "Watch and mark up the video, then send notes to your AI (Review)",
+    "action": "reviewModeAction",
+    "selection": "A saved project. The Review button in the header row, Menu > File > Review and Mark Up..., or Mark up on the AI-live bar.",
+    "behavior": "Plays the video full screen. Press and draw on the picture (Undo mark Ctrl+Z, Clear this frame), type what should change (About the whole video, Add note) or press Talk and draw (T) to talk while it plays (paused, quarter, half or normal speed), then Send to your AI. Or turn on Live Review: watch and just talk and draw, a pause ends a note, your AI works on a copy while you watch, each note in a list you can cancel or undo, and the changes come in when you are ready. The video as it was is kept as \"<name> vN.mlt\" in Versions of This Video, and each change your AI makes is its own Undo step named \"Review: ...\". Esc goes back to editing.",
+    "example": "This bit drags: cut it, and make that caption bigger.",
+    "limits": "Spoken notes need a microphone; they are written down on this PC. Sending needs your AI connected."
+  },
+  {
+    "id": "my_looks",
+    "title": "Save and use personal Looks (My Looks)",
+    "action": "myStyleAction",
+    "selection": "Menu > File > My Looks..., Menu > AI > My Looks..., or the captions panel. Use on this video needs an open project.",
+    "behavior": "New Look starts personal preferences; Copy a Look makes a private copy. Save writes a new immutable revision. Take the caption look from this video keeps its caption settings. Use on this video selects its Look, updates pause and music defaults, and applies any saved caption appearance as one Undo step. The same personal Looks appear in New video.",
+    "example": "Use my Look on this video.",
+    "limits": "Only personal Looks can be updated. Existing timeline effects are kept; a Look without authored caption settings leaves the captions alone.",
+    "also_called": "My style, My Style, My settings"
+  },
+  {
+    "id": "looks",
+    "title": "Pick a Look for a video",
+    "selection": "New video > Look: choose a card, let the AI pick, or use Freestyle. For an open project, ask your AI or use My Looks > Use on this video for a personal Look.",
+    "behavior": "A Look holds a recipe and defaults for captions, fonts, colours, effects, music, openings and editing. Video-type tabs group the cards. Only approved library Looks and personal Looks are offered. Selecting project defaults keeps existing timeline effects; your AI places any requested new effects.",
+    "example": "Use this Look for my next video.",
+    "limits": "Defaults can be overridden for each edit. Selecting a Look on an open project is one Undo step.",
+    "also_called": "Pick a style, styles"
+  },
+  {
+    "id": "learn_look",
+    "title": "Learn a Look from reference videos",
+    "selection": "Home > Learn from a video, Menu > File > Learn from a Video..., or My Looks > From videos I like.... Choose one to three files or links.",
+    "behavior": "Your connected AI uses Learn to measure references, name their general visual and editing pattern, and save a personal Look in My Looks. Progress shows the learning stages. Reference videos are not included in shared Look payloads; sharing follows your saved choice. Your existing videos do not change.",
+    "example": "Learn a Look from these three reference videos.",
+    "limits": "Measurements are evidence to check. Links are fetched before measurement; learning waits its turn for heavy PC work.",
+    "action": "learnLookAction",
+    "also_called": "Import a style, Make a style from example videos"
+  },
+  {
+    "id": "elements",
+    "title": "Stickers, emoji and sound effects (Stickers & sounds)",
+    "action": "stickersSoundsAction",
+    "selection": "The Media step's Stickers & sounds button, Sound effects... in the Music step, or Menu > Edit > Stickers & Sounds.... The engine's own Elements panel is in Menu > View > Elements.",
+    "behavior": "Search about 8,700 emoji, icons, moving stickers and sound effects by words (fire, wow, arrow, whoosh, ding), or pick a kind. Drag one onto the timeline, or pick it and press Add at playhead (a double-click does the same): pictures and moving stickers go on a Stickers track, sounds on a Sound effects track, one Undo step each. Play (or a click) plays a sound. Your AI can place things at the moment they are said, each as its own clip you can move or delete.",
+    "example": "Pop up a fire emoji when I say hot, and add a whoosh when the bus pulls away.",
+    "limits": "The moving emoji (Google's Noto Emoji Animation, marked ©) are CC BY 4.0: a video that uses them must credit them in its description: \"Animated emoji: Noto Emoji Animation by Google, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)\". The panel shows that credit line with Copy, and the export checklist and the finished export show it again. The rest of the library needs no credit (CC0 and MIT)."
+  },
+  {
+    "id": "effects_in_shot",
+    "title": "Effects added into the shot (3D pop-ups, sky, backgrounds, blur, erase)",
+    "selection": "No button: ask your AI.",
+    "behavior": "Your AI can add a 3D tool that pops up beside you, an explosion behind you, a bus driving across, a new sky or background, text behind you, a clone of you, a blur that follows a face or a number plate, an object erased, or an arrow or ring that follows something. Each lands as its own clip on its own track: hide or delete it and the original is back.",
+    "example": "Put a 3D ratchet next to me when I say ratchet.",
+    "limits": "Stylised, not photoreal. On handheld shots effects may not stick to the scene. Each takes a few minutes to make on this PC."
+  },
+  {
+    "id": "progress_bar",
+    "title": "Add a progress bar",
+    "selection": "No button: ask your AI.",
+    "behavior": "A thin bar that grows across the bottom (or top) of the picture as the video plays, in your style's color, on its own track. Adding it is one Undo step; hide or delete its track to take it away.",
+    "example": "Add a progress bar along the bottom.",
+    "limits": "Keep it clear of the phone apps' buttons (Safe areas shows them)."
+  },
+  {
+    "id": "captions",
+    "title": "Captions from speech",
+    "action": "subtitleSpeechToTextAction",
+    "selection": "The Captions step on the left: Make captions (or Edit captions). In Caption lines: Make captions from speech....",
+    "behavior": "Writes captions of everything said and shows them on the video in a caption look: Bold (the default), Box, Yellow or Classic; changing the look is one Undo step. Making them is one Undo step (\"Import N subtitle items\").",
+    "example": "Add captions.",
+    "limits": "Choose the language spoken. The first time, the speech model is downloaded (from huggingface.co). Captions your AI makes use a larger speech model and your style's spelling list."
+  },
+  {
+    "id": "translate_captions",
+    "title": "Translate captions",
+    "selection": "Captions on the video. In Caption lines: Translate captions....",
+    "behavior": "Your AI translates the captions into a new caption track named after the language. One Undo step (\"Import N subtitle items\").",
+    "example": "Make Spanish captions.",
+    "limits": "Needs your AI connected."
+  },
+  {
+    "id": "dub",
+    "title": "Dub the video into another language",
+    "selection": "A saved project. Captions step > Caption lines: Dub this video... (under Translate captions), or Menu > Edit > Dub This Video....",
+    "behavior": "Choose the language, a man's or a woman's voice and what happens to your own voice (quieter underneath, silent or kept). Your AI lists what is said, translates each line to about the same length and has it spoken on this PC (Spanish, French, Italian, Portuguese, Hindi, Japanese, Chinese or English voices) on a \"Dub (<language>)\" audio track. One Undo step.",
+    "example": "Make a French dub of this video.",
+    "limits": "The voices are made by a voice model, not your own voice. A line that doesn't fit its slot is sped up at most 1.35 times and listed.",
+    "action": "dubVideoAction"
+  },
+  {
+    "id": "remove_pauses",
+    "title": "Remove pauses",
+    "action": "removePausesAction",
+    "selection": "The Remove pauses button on the timeline bar, Menu > Edit > Remove Pauses, or the export checklist.",
+    "behavior": "Cuts the pauses out of the talking on the main video track: Gentle, Normal or Tight, and optionally um and uh. One Undo step.",
+    "example": "Tighten up the talking.",
+    "limits": "Needs sound on the main video track and every track unlocked. Cutting um and uh uses the speech model and works for English."
+  },
+  {
+    "id": "add_music",
+    "title": "Add music",
+    "action": "addMusicAction",
+    "selection": "The Add music button on the timeline bar, Menu > Edit > Add Music..., or the Music step on the left (the Music panel, with Music and Sound effects tabs).",
+    "behavior": "Picks the best-fitting song from your music folder and the free library and keeps it under the talking; a video longer than the song gets other songs one after another, each at its own level. One Undo step. With music already in the video it opens the Music panel instead.",
+    "example": "Add some calm music.",
+    "limits": "Needs clips on the timeline."
+  },
+  {
+    "id": "phone_zones",
+    "title": "See where the phone apps cover the picture (Safe areas)",
+    "action": "phoneZonesAllAction",
+    "selection": "The Safe areas button on the player, or the player's View > Safe Areas (TikTok, Shorts, Reels); Guides shows each app on its own.",
+    "behavior": "Shows where TikTok, YouTube Shorts and Instagram Reels cover the picture with their buttons and text, so captions and faces can stay clear. Display only: nothing in the video changes.",
+    "example": "Are my captions under the TikTok buttons?",
+    "limits": "The areas are the apps' published ones; the apps change them now and then.",
+    "also_called": "Phone zones, Phone App Zones"
+  },
+  {
+    "id": "other_sizes",
+    "title": "Other sizes (square, 4:5, vertical, wide)",
+    "action": "makeOtherSizesAction",
+    "selection": "An exported video. The Export video panel's Other sizes... after an export, or Menu > File > Make Other Sizes....",
+    "behavior": "Makes new video files next to the export at 9:16, 1:1, 4:5 or 16:9: the whole picture with a blurred copy behind it, or filling the frame. Or choose Keep the people in frame: your AI reframes each shot from the project (faces, hands and what is being shown stay in the crop; a split or an inset where two people can't share one), re-fits the captions and exports each size. Your video and project don't change.",
+    "example": "Make a square version for Instagram.",
+    "limits": "The first two crop the finished file. Keep the people in frame needs a saved project and your AI, and takes a few minutes.",
+    "also_called": "Share"
+  },
+  {
+    "id": "chapters",
+    "title": "YouTube chapters",
+    "action": "youtubeChaptersAction",
+    "selection": "Menu > File > YouTube Chapters....",
+    "behavior": "Chapters are \"chapter:\" markers: Add at Playhead, rename one, Ask My AI... for suggestions, then Copy for YouTube puts the list on the clipboard for the description. Each add or rename is one Undo step.",
+    "example": "Make YouTube chapters.",
+    "limits": "YouTube's rules: the first at 0:00, at least 3 chapters, each 10 seconds or longer."
+  },
+  {
+    "id": "versions",
+    "title": "Versions of this video",
+    "selection": "A saved project. Menu > File > Versions of This Video.",
+    "behavior": "Lists this video's versions (copies Review kept, other sizes, Shorts, openings); choosing one opens it and plays it.",
+    "example": "Go back to the version before my notes.",
+    "limits": "Save the project first."
+  },
+  {
+    "id": "vertical_short",
+    "title": "Make a vertical Short from clips",
+    "action": "makeShortAction",
+    "selection": "The welcome screen's Make a vertical Short card, or Menu > File > Make a Vertical Short....",
+    "behavior": "Choose the clips; it makes a new 1080x1920 project with them cropped to fill the frame, then suggests captions. It closes the open project, asking to save it first. Make Shorts from This Video... asks your AI to find Short moments in a long video instead.",
+    "example": "Make a vertical short from these clips.",
+    "limits": "The quick version has no AI and crops to the middle of each clip."
+  },
+  {
+    "id": "timeline_toggle",
+    "title": "Hide or show the timeline (AI-live)",
+    "action": "focusTimelineAction",
+    "selection": "The Timeline button in the header row, or Menu > View > Show Timeline.",
+    "behavior": "With the timeline hidden, the chat takes the right side and a bar offers Mark up, New hook and Play from the start; any step on the left brings the timeline back. Remembered after a restart. Nothing to undo.",
+    "example": "Hide the timeline, I just want to talk to the AI.",
+    "limits": "Layout only."
+  },
+  {
+    "id": "ask_ai",
+    "title": "Ask your AI (the chat)",
+    "action": "aiChatAction",
+    "selection": "Ask the AI in the header row, the AI step on the left, or Menu > AI > Chat with Claude.",
+    "behavior": "Talk to your AI about this video; it edits the open project and each change is one Undo step. Choose the AI (Claude or ChatGPT (Codex)), the model and the effort in the chat's top row: Default uses your own setting. Hold F12 to talk.",
+    "example": "Cut the part where I drop the wrench.",
+    "limits": "Uses your own Claude or Codex subscription. In the chat, your AI can use only letitedit's tools."
+  },
+  {
+    "id": "connect_ai",
+    "title": "Connect Claude Code or Codex (Connect Your AI)",
+    "action": "connectAiAction",
+    "selection": "Menu > AI > Connect Your AI..., or the welcome screen's status line (Connect your AI, Change, Fix it).",
+    "behavior": "Finds Claude Code or Codex on this PC (Get Claude Code or Get Codex when neither is there), adds letitedit's tools and editing skills to it (Set Up) and checks that it works (Test the Connection). Nothing to undo.",
+    "example": "Connect Claude.",
+    "limits": "Claude Code or Codex only; signing in to them is up to you."
+  },
+  {
+    "id": "export",
+    "title": "Export the video",
+    "action": "focusExportAction",
+    "selection": "The Export video button in the header row: Choose location and export....",
+    "behavior": "Checks the video first (Before You Export opens only when something needs a look, with Show Me, Remove Pauses, Add Captions, Go Back and Export Anyway), then exports it. The project doesn't change.",
+    "example": "Export it for YouTube.",
+    "limits": "A video with the animated emoji owes a credit line in its description (see Emoji, stickers, sound effects).",
+    "also_called": "Share, Export"
+  },
+  {
+    "id": "check_video",
+    "title": "Check a finished video (quality check)",
+    "selection": "After an export: Export video > Check my video... (next to Play), or Menu > File > Check My Video... (it starts with your last export; Choose... picks another video).",
+    "behavior": "letitedit watches and listens to the whole export on this computer (pictures of every part, the transcript, loudness, silences, pace, the first 3 seconds, captions) and says in plain words whether it is ready, with what to fix and when, and any credit line the video owes (with Copy). Open the full report shows review.md. Ask my AI for a second opinion sends it to your AI, which judges story, pacing and shots and changes nothing.",
+    "example": "Is this ready to post?",
+    "limits": "About a minute; it waits its turn while another heavy job runs. Without the second opinion it says that nobody has watched it for story and pacing yet.",
+    "action": "checkVideoAction",
+    "also_called": "Share"
+  },
+  {
+    "id": "delete_section",
+    "title": "Delete section and close gap (in sync)",
+    "action": "aiAssistDeleteSectionSync",
+    "selection": "Select a timeline clip or a span, then Menu > AI > Delete section and close gap (in sync).... Your AI can give exact times too.",
+    "behavior": "Deletes that time on ALL tracks and captions; trims items that cross it and moves later items and markers up. One Undo restores the whole edit. A recovery copy is saved without changing the current file.",
+    "example": "Remove this explanation and keep the captions and sound effects lined up.",
+    "limits": "Unlock all tracks. A range overlapping a transition is refused. Effects keyframed on a whole track are not retimed; use effects on the clips."
+  },
+  {
+    "id": "close_gap",
+    "title": "Close selected gap (in sync)",
+    "action": "aiAssistCloseGapSync",
+    "selection": "Select one complete empty gap in the timeline, then Menu > AI > Close selected gap (in sync)....",
+    "behavior": "The same in-sync deletion, using the selected gap. Removes captions still inside the gap and moves later items together.",
+    "example": "I lifted footage and its captions remain. Close this gap and keep everything in sync.",
+    "limits": "Don't run it again once the gap is closed: undo the unsynchronised removal first."
+  },
+  {
+    "id": "captions_only",
+    "title": "Remove captions only",
+    "action": "subtitleRemoveItemAction",
+    "selection": "Select rows in Caption lines (not letters in the text box). Delete works when the caption list has the focus; Shift+E removes the rows too.",
+    "behavior": "Deletes the selected captions only. Video and other caption times do not move. Undo brings them back.",
+    "example": "Remove these captions but keep the footage.",
+    "limits": "Removes exactly the selected rows, even ones not next to each other. Does not close a gap in the video."
+  },
+  {
+    "id": "move_captions",
+    "title": "Move captions to the playhead",
+    "action": "subtitleMoveAction",
+    "selection": "Select caption rows and put the playhead where the first selected caption should start.",
+    "behavior": "Moves the selected group, keeping their spacing. No video moves.",
+    "example": "Move this caption group to where the line starts now.",
+    "limits": "Captions already at the destination can stop the move."
+  },
+  {
+    "id": "wording",
+    "title": "Correct a caption's wording or a name",
+    "selection": "One caption row in Caption lines.",
+    "behavior": "Edit the text in Caption lines, or ask your AI. A name or word added to My Looks' spelling list is spelled that way in every caption your AI makes.",
+    "example": "Change Ac me to Acme everywhere.",
+    "limits": "Changes only the caption, not what is said."
+  },
+  {
+    "id": "what_ai_sees",
+    "title": "Show your AI what you're looking at",
+    "selection": "Any open video, unsaved changes included.",
+    "behavior": "Your AI can read what your window shows: the project and whether it has unsaved changes, the playhead, the selected clips, in and out marks, what's under the playhead on each track, markers and the words said there, and the frame if it asks.",
+    "example": "Trim this clip to where I stop talking.",
+    "limits": "It sees the window now, not your whole undo history."
+  },
+  {
+    "id": "undo",
+    "title": "Undo an edit",
+    "action": "EditUndo",
+    "selection": "The Undo button in the header row, or Menu > Edit > Undo.",
+    "behavior": "Undo reverses the last change. Each change your AI makes, each opening swap, style change and in-sync deletion is a single step.",
+    "example": "Undo your last change."
+  },
+  {
+    "id": "animated_title",
+    "title": "Add an animated title (moving titles, name tags, place names, end cards)",
+    "action": "animatedTitleAction",
+    "selection": "The Captions step: Animated title... under Add text; or Menu > Edit > Animated Title.... Put the playhead where it should start.",
+    "behavior": "Pick a kind (Title, Name and role, Place name, Chapter card, Quote that pops in, Number that counts up, Label with a ring, Steps checklist, Subscribe button, End card, Quick wipe), type the words, press Show preview to see three moments of it, then Add at playhead: it is drawn on this computer in this video's style colors and fonts and goes on a Titles track over the video. One Undo step.",
+    "example": "Add a title that says Day 3: the A/C dies.",
+    "limits": "Draws with this PC's own Edge or Chrome (letitedit brings the motion engine); where neither can run, it says so. Making the clip takes a few seconds to a minute and waits its turn while another heavy job runs."
+  },
+  {
+    "id": "sync_sound",
+    "title": "Line up a separate mic or a second camera",
+    "action": "syncSoundAction",
+    "selection": "The Media step's Line up separate sound... button, or Menu > File > Line Up Separate Sound.... Have the camera clips and the sound recordings in one folder (or pick the files).",
+    "behavior": "letitedit lines everything up by its sound (a clap helps, but isn't needed), shows a picture of the lined-up timeline and makes a new project (in Videos\\letitedit) with every camera on its own track and the recorder's sound under it, the cameras' own sound muted where the recorder covers them, plus copies of the camera clips with the good sound. Open the lined-up project opens it. Your files don't change.",
+    "example": "Line up my lav mic with the two camera angles.",
+    "limits": "Recordings that match nothing (another day, no sound) are listed and left out; a \"likely\" match is worth a look at the joins."
+  },
+  {
+    "id": "clean_voice",
+    "title": "Clean up the voice (noise and room echo)",
+    "action": "cleanVoiceAction",
+    "selection": "A saved project. The Music step: Clean up the voice...; or Menu > Edit > Clean Up the Voice.... Select clips first to clean only those.",
+    "behavior": "Your AI takes background noise and room echo out of the talking with letitedit's gentle voice repair (the voice stays natural), clip by clip, listens before and after and tells you what changed. Each clip is one Undo step; the original files don't change.",
+    "example": "The talking is noisy, clean it up.",
+    "limits": "Needs your AI. Takes a few minutes; very noisy places can't be made studio-clean."
+  },
+  {
+    "id": "effects",
+    "title": "Change the picture: color and effects (Effects)",
+    "action": "focuslookAction",
+    "selection": "Effects on the left. Select a clip on the timeline first.",
+    "behavior": "Opens Picture effects for the selected clip: color, filters and the picture's position and size. Each change is one Undo step. A Look, in New video, is something else: a recipe for a whole video.",
+    "example": "Warm up the color of this clip.",
+    "also_called": "Look, Picture effects, Filters"
+  },
+  {
+    "id": "chat_view",
+    "title": "Chat bubbles or the real program screen (AI settings)",
+    "selection": "AI settings, at the top right of the AI panel: Chat bubbles or Real program screen.",
+    "behavior": "Chat bubbles shows the conversation in letitedit's own panel. Real program screen shows your Claude Code or Codex itself, as it looks in a terminal. Both use the same AI, plan and tools. Changing it stops a request that is running.",
+    "limits": "An AI that connects through a connector, such as Antigravity, shows as chat bubbles only.",
+    "also_called": "Terminal, Real program screen, Chat bubbles, view"
+  }
+]

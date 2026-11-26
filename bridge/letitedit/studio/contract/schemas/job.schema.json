@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://letitedit.app/studio/1/job.schema.json",
+  "title": "job.json: what the caller asks for",
+  "description": "Written by the caller into the job folder (or the inbox). letitedit never changes it.",
+  "type": "object",
+  "required": ["contract_version", "job_id", "kind", "inputs"],
+  "properties": {
+    "contract_version": {"$ref": "common.schema.json#/$defs/contract_version"},
+    "job_id": {"$ref": "common.schema.json#/$defs/job_id"},
+    "kind": {"$ref": "common.schema.json#/$defs/kind"},
+    "priority": {"$ref": "common.schema.json#/$defs/priority", "default": "normal"},
+    "requested_by": {
+      "type": "object",
+      "properties": {
+        "app": {"type": "string", "description": "e.g. letitedit-channel"},
+        "app_version": {"type": "string"},
+        "channel_id": {"type": "string"},
+        "note": {"type": "string"}
+      }
+    },
+    "ai": {"$ref": "common.schema.json#/$defs/ai_choice", "description": "Absent: the person's own New video choice (the chat's saved AI, model and effort), else letitedit's default. Never another provider than the one named."},
+    "output_dir": {"$ref": "common.schema.json#/$defs/abs_path", "description": "The job folder. Absent: the folder job.json is in (CLI) or letitedit's Studio folder (inbox). Refused inside any source folder."},
+    "from_job": {"type": "string", "description": "The job folder or job id of an earlier job this one continues (final from preview, revise, retext, hooks, conform)."},
+    "timeout_s": {"type": "number", "minimum": 60},
+    "max_attempts": {"type": "integer", "minimum": 1, "maximum": 5, "default": 3},
+    "inputs": {"type": "object"}
+  },
+  "allOf": [
+    {"if": {"properties": {"kind": {"const": "capabilities"}}}, "then": {"properties": {"inputs": {"$ref": "kinds/capabilities.schema.json#/$defs/inputs"}}}},
+    {"if": {"properties": {"kind": {"const": "index"}}}, "then": {"properties": {"inputs": {"$ref": "kinds/index.schema.json#/$defs/inputs"}}}},
+    {"if": {"properties": {"kind": {"const": "match"}}}, "then": {"properties": {"inputs": {"$ref": "kinds/match.schema.json#/$defs/inputs"}}}},
+    {"if": {"properties": {"kind": {"const": "inspect"}}}, "then": {"properties": {"inputs": {"$ref": "kinds/inspect.schema.json#/$defs/inputs"}}}},
+    {"if": {"properties": {"kind": {"const": "short"}}}, "then": {"properties": {"inputs": {"$ref": "kinds/short.schema.json#/$defs/inputs"}}}},
+    {"if": {"properties": {"kind": {"const": "batch_shorts"}}}, "then": {"properties": {"inputs": {"$ref": "kinds/batch_shorts.schema.json#/$defs/inputs"}}}},
+    {"if": {"properties": {"kind": {"const": "still"}}}, "then": {"properties": {"inputs": {"$ref": "kinds/still.schema.json#/$defs/inputs"}}}},
+    {"if": {"properties": {"kind": {"const": "revise"}}}, "then": {"required": ["from_job"], "properties": {"inputs": {"$ref": "kinds/revise.schema.json#/$defs/inputs"}}}},
+    {"if": {"properties": {"kind": {"const": "retext"}}}, "then": {"required": ["from_job"], "properties": {"inputs": {"$ref": "kinds/retext.schema.json#/$defs/inputs"}}}},
+    {"if": {"properties": {"kind": {"const": "hooks"}}}, "then": {"properties": {"inputs": {"$ref": "kinds/hooks.schema.json#/$defs/inputs"}}}},
+    {"if": {"properties": {"kind": {"const": "conform"}}}, "then": {"properties": {"inputs": {"$ref": "kinds/conform.schema.json#/$defs/inputs"}}}},
+    {"if": {"properties": {"kind": {"const": "learn"}}}, "then": {"properties": {"inputs": {"$ref": "kinds/learn.schema.json#/$defs/inputs"}}}}
+  ]
+}

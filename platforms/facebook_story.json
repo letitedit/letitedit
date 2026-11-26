@@ -1,0 +1,242 @@
+{
+  "id": "facebook_story",
+  "name": "Facebook Stories",
+  "schema": "letitedit-platform/1",
+  "checked": "2026-11-19",
+  "video": {
+    "aspect_ratios": {
+      "value": {
+        "vertical": "9:16"
+      },
+      "source": "https://support.buffer.com/articles/sharing-videos-through-buffer-LOe2p2rnAI",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: Facebook Stories take one video or one image; videos as for Facebook Reels (MP4, MOV, AVI or M4V, up to 1 GB, 9:16, 1080x1920 recommended and 540x960 at least, 24-60 fps), 3-90 s."
+    },
+    "resolutions": {
+      "value": {
+        "common": "1080x1920",
+        "min": "540x960"
+      },
+      "source": "https://support.buffer.com/articles/sharing-videos-through-buffer-LOe2p2rnAI",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: Facebook Stories take one video or one image; videos as for Facebook Reels (MP4, MOV, AVI or M4V, up to 1 GB, 9:16, 1080x1920 recommended and 540x960 at least, 24-60 fps), 3-90 s."
+    },
+    "frame_rates": {
+      "value": {
+        "common": 30,
+        "min": 24,
+        "max": 60
+      },
+      "source": "https://support.buffer.com/articles/sharing-videos-through-buffer-LOe2p2rnAI",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: Facebook Stories take one video or one image; videos as for Facebook Reels (MP4, MOV, AVI or M4V, up to 1 GB, 9:16, 1080x1920 recommended and 540x960 at least, 24-60 fps), 3-90 s. 30 is the rate letitedit exports."
+    },
+    "min_length_s": {
+      "value": 3,
+      "source": "https://support.buffer.com/articles/sharing-videos-through-buffer-LOe2p2rnAI",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: Facebook Stories take one video or one image; videos as for Facebook Reels (MP4, MOV, AVI or M4V, up to 1 GB, 9:16, 1080x1920 recommended and 540x960 at least, 24-60 fps), 3-90 s."
+    },
+    "max_length_s": {
+      "value": 60,
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "unconfirmed",
+      "note": "Value from letitedit Channel's spec (19 Nov 2026); the page refused automated reading or does not publish it, so it is unconfirmed. Re-check by hand. A longer video is split into 60 s parts. Buffer's help centre allows 3-90 s for Facebook Stories (checked 2026-11-18); the stricter 60 s is kept."
+    },
+    "max_file_size_bytes": {
+      "value": 1000000000,
+      "source": "https://support.buffer.com/articles/sharing-videos-through-buffer-LOe2p2rnAI",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: Facebook Stories take one video or one image; videos as for Facebook Reels (MP4, MOV, AVI or M4V, up to 1 GB, 9:16, 1080x1920 recommended and 540x960 at least, 24-60 fps), 3-90 s."
+    },
+    "container": {
+      "value": "MP4 or MOV",
+      "source": "https://support.buffer.com/articles/sharing-videos-through-buffer-LOe2p2rnAI",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: Facebook Stories take one video or one image; videos as for Facebook Reels (MP4, MOV, AVI or M4V, up to 1 GB, 9:16, 1080x1920 recommended and 540x960 at least, 24-60 fps), 3-90 s."
+    },
+    "video_codec": {
+      "value": "H.264",
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    }
+  },
+  "audio": {
+    "codec": {
+      "value": "AAC",
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "bitrate_kbps": {
+      "value": 128,
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "loudness_normalisation": {
+      "value": null,
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "not documented"
+    }
+  },
+  "safe_zones": {
+    "value": [
+      {
+        "name": "top: profile, progress bar and close button",
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.14
+      },
+      {
+        "name": "bottom: reply box and stickers row",
+        "x": 0,
+        "y": 0.86,
+        "w": 1,
+        "h": 0.14
+      }
+    ],
+    "source": "https://www.facebook.com/business/ads/stories-ad-format",
+    "checked": "2026-11-19",
+    "status": "unconfirmed",
+    "note": "The often-quoted Stories guidance (keep about 14%, 250 px, free at the top and the bottom); not found on a page the lookup could read.",
+    "confidence": "low"
+  },
+  "captions": {
+    "placement": {
+      "value": "Stickers, polls and replies sit over the picture; keep text in the middle band.",
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    }
+  },
+  "thumbnail": {
+    "value": null,
+    "source": "https://www.facebook.com/business/ads/stories-ad-format",
+    "checked": "2026-11-19",
+    "status": "not documented"
+  },
+  "text_limits": {
+    "caption_chars": {
+      "value": null,
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "not documented"
+    }
+  },
+  "export_preset": {
+    "width": {
+      "value": 1080,
+      "source": "https://support.buffer.com/articles/sharing-videos-through-buffer-LOe2p2rnAI",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: Facebook Stories take one video or one image; videos as for Facebook Reels (MP4, MOV, AVI or M4V, up to 1 GB, 9:16, 1080x1920 recommended and 540x960 at least, 24-60 fps), 3-90 s."
+    },
+    "height": {
+      "value": 1920,
+      "source": "https://support.buffer.com/articles/sharing-videos-through-buffer-LOe2p2rnAI",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: Facebook Stories take one video or one image; videos as for Facebook Reels (MP4, MOV, AVI or M4V, up to 1 GB, 9:16, 1080x1920 recommended and 540x960 at least, 24-60 fps), 3-90 s."
+    },
+    "fps": {
+      "value": 30,
+      "source": "https://support.buffer.com/articles/sharing-videos-through-buffer-LOe2p2rnAI",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: Facebook Stories take one video or one image; videos as for Facebook Reels (MP4, MOV, AVI or M4V, up to 1 GB, 9:16, 1080x1920 recommended and 540x960 at least, 24-60 fps), 3-90 s."
+    },
+    "container": {
+      "value": "mp4",
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "vcodec": {
+      "value": "libx264",
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "pix_fmt": {
+      "value": "yuv420p",
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "video_bitrate_kbps": {
+      "value": 8000,
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "acodec": {
+      "value": "aac",
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "audio_bitrate_kbps": {
+      "value": 128,
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "sample_rate_hz": {
+      "value": 48000,
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "loudness_lufs": {
+      "value": null,
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "not documented"
+    }
+  },
+  "images": {
+    "sizes": {
+      "value": {
+        "story_9x16": "1080x1920"
+      },
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "unconfirmed",
+      "note": "Value from letitedit Channel's spec (19 Nov 2026); the page refused automated reading or does not publish it, so it is unconfirmed. Re-check by hand."
+    },
+    "formats": {
+      "value": [
+        "JPG",
+        "PNG"
+      ],
+      "source": "https://www.facebook.com/business/ads-guide/update/image",
+      "checked": "2026-11-19",
+      "status": "official-ads"
+    },
+    "max_photos": {
+      "value": 1,
+      "source": "https://support.buffer.com/articles/attaching-images-videos-and-other-media-to-your-posts-eudySt0TnS",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: one image per Facebook Story."
+    },
+    "max_file_size_bytes": {
+      "value": 8000000,
+      "source": "https://support.buffer.com/articles/attaching-images-videos-and-other-media-to-your-posts-eudySt0TnS",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: Story images up to 8 MB."
+    }
+  }
+}

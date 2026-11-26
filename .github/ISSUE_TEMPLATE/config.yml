@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: letitedit's website
+    url: https://letitedit.app
+    about: The download, what letitedit is, and the e-mail list for Mac and Linux.
+  - name: Questions and ideas to talk over
+    url: https://github.com/letitedit/letitedit/discussions
+    about: Ask how to do something, or share what you made, in Discussions.

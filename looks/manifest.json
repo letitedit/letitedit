@@ -1,0 +1,1317 @@
+{
+  "format": "letitedit-looks/1",
+  "about": "The Looks the New video picker offers. Add, remove or hide one by editing this file; the editor reads it through bridge/looks.py, so no editor build is needed. Paths are relative to this folder. Only entries with approved: true are shown.",
+  "picker": {
+    "library_styles": false,
+    "library_styles_note": "Converted library Looks are offered for new videos only when approved; the rest are hidden from new selections. Existing projects can still read their recipes and defaults by Look id."
+  },
+  "styles": [
+    {
+      "id": "talking-head",
+      "label": "Talking head",
+      "kind": "both",
+      "line": "One person talking to the camera: cut well, with the flavour you pick next.",
+      "approved": true
+    },
+    {
+      "id": "made-with-code",
+      "label": "Made with code",
+      "filter_label": "More looks",
+      "kind": "both",
+      "line": "No footage needed: your AI writes and draws the whole video.",
+      "approved": true
+    }
+  ],
+  "looks": [
+    {
+      "id": "hands-at-work",
+      "style": "build-transformation",
+      "fits": [
+        "build-transformation",
+        "activity"
+      ],
+      "label": "Hands at work",
+      "line": "Real hands, changing material, and an honest stopping point.",
+      "themes": "film",
+      "needs": "The same object or material before, during and after a visible change.",
+      "recipe": "hands-at-work/recipe.md",
+      "works_with": "footage",
+      "approved": false,
+      "review": "new",
+      "asks": [
+        {
+          "id": "about",
+          "kind": "text",
+          "role": "about",
+          "need": "recommended",
+          "label": "What should the viewer understand?",
+          "hint": "The task, change or function; include verified claims or limits."
+        }
+      ],
+      "cut": true
+    },
+    {
+      "id": "clean",
+      "style": "talking-head",
+      "fits": [
+        "talking-head",
+        "conversation"
+      ],
+      "label": "Clean",
+      "line": "Just you, cut well: calm captions, gentle punch-ins, clear sound.",
+      "recipe": "clean/recipe.md",
+      "preview": "clean/preview.mp4",
+      "poster": "clean/poster.jpg",
+      "preview_long": "clean/preview-long.mp4",
+      "poster_long": "clean/poster-long.jpg",
+      "needs": "Any talking head with steady framing and enough resolution to punch in a little. A good speaker carries it.",
+      "approved": true,
+      "themes": "film",
+      "kind": "both"
+    },
+    {
+      "id": "big-letters-behind-you",
+      "style": "talking-head",
+      "fits": [
+        "talking-head"
+      ],
+      "label": "Big Letters Behind You",
+      "line": "On key words the room drops away and a huge word lands behind your head.",
+      "recipe": "big-letters-behind-you/recipe.md",
+      "preview": "big-letters-behind-you/preview.mp4",
+      "poster": "big-letters-behind-you/poster.jpg",
+      "needs": "A steady talking head with headroom above the head, in a place with a few clear colors. Needs the person cut out (the cut-out model runs on this PC).",
+      "approved": true,
+      "themes": "kits",
+      "kind": "short"
+    },
+    {
+      "id": "scenes-behind-you",
+      "style": "talking-head",
+      "fits": [
+        "talking-head"
+      ],
+      "label": "Scenes Behind You",
+      "line": "The wall opens and a drawn world plays out behind you, timed to your words.",
+      "recipe": "scenes-behind-you/recipe.md",
+      "preview": "scenes-behind-you/preview.mp4",
+      "poster": "scenes-behind-you/poster.jpg",
+      "needs": "A steady talking head who stays roughly in place, with a clean outline against the room. Needs the person cut out; the first time takes a while per second of video.",
+      "approved": true,
+      "themes": "kits",
+      "kind": "short"
+    },
+    {
+      "id": "you-plus-visuals",
+      "style": "talking-head",
+      "fits": [
+        "talking-head"
+      ],
+      "label": "You + Visuals On Top",
+      "line": "You sit low; a panel above draws what you are saying as you say it.",
+      "recipe": "you-plus-visuals/recipe.md",
+      "preview": "you-plus-visuals/preview.mp4",
+      "poster": "you-plus-visuals/poster.jpg",
+      "preview_long": "you-plus-visuals/preview-long.mp4",
+      "poster_long": "you-plus-visuals/poster-long.jpg",
+      "poster_long_s": 12.6,
+      "needs": "A steady talking head with headroom, saying things with a shape: lists, processes, comparisons, a problem and its answer. A purely emotional story has nothing to draw.",
+      "approved": true,
+      "themes": "kits",
+      "kind": "both"
+    },
+    {
+      "id": "big-words-mood-cutaways",
+      "style": "talking-head",
+      "fits": [
+        "talking-head"
+      ],
+      "label": "Big words with mood cutaways",
+      "line": "You talk to the camera while your key words pop up big, and short moody clips of what you mean cut in between.",
+      "recipe": "big-words-mood-cutaways/recipe.md",
+      "preview": "big-words-mood-cutaways/preview.mp4",
+      "poster": "big-words-mood-cutaways/poster.jpg",
+      "poster_s": 1.3,
+      "needs": "One person talking to the camera with clear speech about something they feel. Filmed cutaways come from licensed stock or their own filming.",
+      "works_with": "footage",
+      "themes": "none",
+      "kind": "both",
+      "approved": true,
+      "preview_long": "big-words-mood-cutaways/preview-long.mp4",
+      "poster_long": "big-words-mood-cutaways/poster-long.jpg",
+      "poster_long_s": 11.7
+    },
+    {
+      "id": "filmed-scrapbook",
+      "style": "ai-scrapbook",
+      "fits": [
+        "ai-scrapbook"
+      ],
+      "folder": "paper-craft",
+      "label": "Filmed scrapbook",
+      "line": "One camera move over a scrapbook page, your pictures taped on it, a voice telling the story.",
+      "recipe": "filmed-scrapbook/recipe.md",
+      "preview": "filmed-scrapbook/preview.mp4",
+      "poster": "filmed-scrapbook/poster.jpg",
+      "needs": "A description, and 4 to 8 sharp pictures that each show one clear thing. It says only what you tell it and what the pictures show.",
+      "works_with": "no-footage",
+      "asks": [
+        {
+          "id": "about",
+          "kind": "text",
+          "need": "required",
+          "role": "about",
+          "label": "What's it about?",
+          "hint": "Tell the story with the facts in it. It won't add any you don't give."
+        },
+        {
+          "id": "show",
+          "kind": "files",
+          "need": "recommended",
+          "role": "show",
+          "label": "Pictures to show",
+          "hint": "These go on the page. 4 to 8, each showing one clear thing.",
+          "instead": "your AI draws the pictures itself, which looks plainer"
+        },
+        {
+          "id": "style",
+          "kind": "files",
+          "need": "optional",
+          "role": "style",
+          "label": "What it should look like",
+          "hint": "For the feel only: these never appear in the video."
+        },
+        {
+          "id": "voice",
+          "kind": "audio",
+          "need": "optional",
+          "role": "voiceover",
+          "label": "Your voiceover",
+          "hint": "A recording of yours. Empty: your AI writes the script and a voice on this PC reads it."
+        }
+      ],
+      "pace": {
+        "cuts_per_min": "off",
+        "longest_static_s": "off"
+      },
+      "read_also": [
+        "motion/runtime/looks/scrapbook.md"
+      ],
+      "sample": {
+        "video": "tests/t78/video3/filmed-scrapbook-live.mp4"
+      },
+      "approved": true,
+      "was": [
+        "documentary"
+      ]
+    },
+    {
+      "id": "flat-explainer",
+      "style": "ai-explainer",
+      "fits": [
+        "ai-explainer"
+      ],
+      "label": "Flat Explainer",
+      "line": "Name a topic: illustrated places and people act it out while a voice explains.",
+      "recipe": "flat-explainer/recipe.md",
+      "needs": "A topic with places and actions in it: why something happens, how it works, a what-if, a true story. It states only facts it can support.",
+      "works_with": "no-footage",
+      "asks": [
+        {
+          "id": "about",
+          "kind": "text",
+          "need": "required",
+          "role": "about",
+          "label": "What should it explain?",
+          "hint": "A sentence is enough. Add any facts you want used: it won't state what it can't support."
+        },
+        {
+          "id": "voice",
+          "kind": "audio",
+          "need": "optional",
+          "role": "voiceover",
+          "label": "Your voiceover",
+          "hint": "A recording of yours. Empty: your AI writes the script and a voice on this PC reads it."
+        }
+      ],
+      "approved": true,
+      "preview": "flat-explainer/preview.mp4",
+      "poster": "flat-explainer/poster.jpg"
+    },
+    {
+      "id": "drawn-story",
+      "style": "ai-story",
+      "fits": [
+        "ai-story"
+      ],
+      "label": "Drawn Story",
+      "line": "Tell a story: your AI draws it as a comic or storybook that comes alive.",
+      "recipe": "drawn-story/recipe.md",
+      "needs": "A story, from one line up: who it's about, what happens, how it ends. A true story is told only from what you say.",
+      "works_with": "no-footage",
+      "asks": [
+        {
+          "id": "about",
+          "kind": "text",
+          "need": "required",
+          "role": "about",
+          "label": "What's the story?",
+          "hint": "Who it's about, what happens, how it ends. Say if it really happened: it won't add to a true story."
+        },
+        {
+          "id": "voice",
+          "kind": "audio",
+          "need": "optional",
+          "role": "voiceover",
+          "label": "Your voiceover",
+          "hint": "A recording of yours. Empty: your AI writes the script and a voice on this PC reads it."
+        }
+      ],
+      "pace": {
+        "cuts_per_min": "off",
+        "longest_static_s": "off"
+      },
+      "approved": true,
+      "preview": "drawn-story/preview.mp4",
+      "poster": "drawn-story/poster.jpg"
+    },
+    {
+      "id": "orbit-stack",
+      "style": "talking-head",
+      "fits": [
+        "talking-head"
+      ],
+      "label": "Orbit Stack",
+      "line": "A commercial for your software: you talk, and cards of it in use float around you.",
+      "recipe": "orbit-stack/recipe.md",
+      "needs": "A steady talking head about the software, with a clean outline, and a recording of it in use. Needs the person cut out; the first time takes a while per second of video.",
+      "works_with": "footage",
+      "asks": [
+        {
+          "id": "product",
+          "kind": "files",
+          "need": "required",
+          "role": "product",
+          "label": "Your software in use",
+          "hint": "A screen recording, 15 to 60 seconds of what you talk about. Only what's in it gets shown. Screenshots or a logo can go here too."
+        },
+        {
+          "id": "about",
+          "kind": "text",
+          "need": "optional",
+          "role": "about",
+          "label": "Its name, spelled right",
+          "hint": "And anything else it should get right. It claims only what you say, write here or show."
+        }
+      ],
+      "approved": false,
+      "themes": "kits"
+    },
+    {
+      "id": "flat-vector",
+      "style": "made-with-code",
+      "folder": "cartoon-flat",
+      "label": "Flat vector",
+      "line": "Crisp flat shapes, long shadows and a soft grain: your idea as an editorial illustration.",
+      "recipe": "flat-vector/recipe.md",
+      "recipe_shared": "kit-recipe-shared.md",
+      "needs": "A story or an idea, from one line up: your AI writes the script and draws the whole video. It adds nothing to a true story.",
+      "works_with": "no-footage",
+      "asks": [
+        {
+          "id": "about",
+          "kind": "text",
+          "need": "required",
+          "role": "about",
+          "label": "What's it about?",
+          "hint": "A story or an idea, from one line up. Say if it really happened: it won't add to a true story."
+        },
+        {
+          "id": "voice",
+          "kind": "audio",
+          "need": "optional",
+          "role": "voiceover",
+          "label": "Your voiceover",
+          "hint": "A recording of yours. Empty: your AI writes the script and a voice on this PC reads it."
+        }
+      ],
+      "pace": {
+        "cuts_per_min": "off",
+        "longest_static_s": "off"
+      },
+      "read_also": [
+        "motion/runtime/looks/flatVector.md"
+      ],
+      "preview": "flat-vector/preview.mp4",
+      "poster": "flat-vector/poster.jpg",
+      "sample": {
+        "video": "tests/t100/flat-vector/sample.mp4"
+      },
+      "approved": true,
+      "theme_only": true
+    },
+    {
+      "id": "toy-theatre",
+      "style": "made-with-code",
+      "folder": "paper-craft",
+      "label": "Toy-theatre paper",
+      "line": "A cardboard stage with painted paper flats, moved by hand.",
+      "recipe": "toy-theatre/recipe.md",
+      "recipe_shared": "kit-recipe-shared.md",
+      "needs": "A story or an idea, from one line up: your AI writes the script and draws the whole video. It adds nothing to a true story.",
+      "works_with": "no-footage",
+      "asks": [
+        {
+          "id": "about",
+          "kind": "text",
+          "need": "required",
+          "role": "about",
+          "label": "What's it about?",
+          "hint": "A story or an idea, from one line up. Say if it really happened: it won't add to a true story."
+        },
+        {
+          "id": "voice",
+          "kind": "audio",
+          "need": "optional",
+          "role": "voiceover",
+          "label": "Your voiceover",
+          "hint": "A recording of yours. Empty: your AI writes the script and a voice on this PC reads it."
+        }
+      ],
+      "pace": {
+        "cuts_per_min": "off",
+        "longest_static_s": "off"
+      },
+      "read_also": [
+        "motion/runtime/looks/paperCraft.md"
+      ],
+      "preview": "toy-theatre/preview.mp4",
+      "poster": "toy-theatre/poster.jpg",
+      "sample": {
+        "video": "tests/t100/toy-theatre/sample.mp4"
+      },
+      "approved": true,
+      "theme_only": true
+    },
+    {
+      "id": "crayon",
+      "style": "made-with-code",
+      "folder": "cartoon-flat",
+      "label": "Crayon",
+      "line": "Wax on toothy paper, scribbled in front of you.",
+      "recipe": "crayon/recipe.md",
+      "recipe_shared": "kit-recipe-shared.md",
+      "needs": "A story or an idea, from one line up: your AI writes the script and draws the whole video. It adds nothing to a true story.",
+      "works_with": "no-footage",
+      "asks": [
+        {
+          "id": "about",
+          "kind": "text",
+          "need": "required",
+          "role": "about",
+          "label": "What's it about?",
+          "hint": "A story or an idea, from one line up. Say if it really happened: it won't add to a true story."
+        },
+        {
+          "id": "voice",
+          "kind": "audio",
+          "need": "optional",
+          "role": "voiceover",
+          "label": "Your voiceover",
+          "hint": "A recording of yours. Empty: your AI writes the script and a voice on this PC reads it."
+        }
+      ],
+      "pace": {
+        "cuts_per_min": "off",
+        "longest_static_s": "off"
+      },
+      "read_also": [
+        "motion/runtime/looks/crayon.md"
+      ],
+      "preview": "crayon/preview.mp4",
+      "poster": "crayon/poster.jpg",
+      "sample": {
+        "video": "tests/t100/crayon/sample.mp4"
+      },
+      "approved": true,
+      "theme_only": true
+    },
+    {
+      "id": "rubber-hose",
+      "style": "made-with-code",
+      "folder": "cartoon-flat",
+      "label": "Rubber hose",
+      "line": "A 1930s cartoon: boiling ink, noodle limbs, old film.",
+      "recipe": "rubber-hose/recipe.md",
+      "recipe_shared": "kit-recipe-shared.md",
+      "needs": "A story or an idea, from one line up: your AI writes the script and draws the whole video. It adds nothing to a true story.",
+      "works_with": "no-footage",
+      "asks": [
+        {
+          "id": "about",
+          "kind": "text",
+          "need": "required",
+          "role": "about",
+          "label": "What's it about?",
+          "hint": "A story or an idea, from one line up. Say if it really happened: it won't add to a true story."
+        },
+        {
+          "id": "voice",
+          "kind": "audio",
+          "need": "optional",
+          "role": "voiceover",
+          "label": "Your voiceover",
+          "hint": "A recording of yours. Empty: your AI writes the script and a voice on this PC reads it."
+        }
+      ],
+      "pace": {
+        "cuts_per_min": "off",
+        "longest_static_s": "off"
+      },
+      "read_also": [
+        "motion/runtime/looks/rubberHose.md"
+      ],
+      "preview": "rubber-hose/preview.mp4",
+      "poster": "rubber-hose/poster.jpg",
+      "sample": {
+        "video": "tests/t100/rubber-hose/sample.mp4"
+      },
+      "approved": true,
+      "theme_only": true
+    },
+    {
+      "id": "pencil-watercolor",
+      "style": "made-with-code",
+      "folder": "pencil-ink",
+      "label": "Pencil & watercolor",
+      "line": "Pencil first, then washes that spread and miss the line.",
+      "recipe": "pencil-watercolor/recipe.md",
+      "recipe_shared": "kit-recipe-shared.md",
+      "needs": "A story or an idea, from one line up: your AI writes the script and draws the whole video. It adds nothing to a true story.",
+      "works_with": "no-footage",
+      "asks": [
+        {
+          "id": "about",
+          "kind": "text",
+          "need": "required",
+          "role": "about",
+          "label": "What's it about?",
+          "hint": "A story or an idea, from one line up. Say if it really happened: it won't add to a true story."
+        },
+        {
+          "id": "voice",
+          "kind": "audio",
+          "need": "optional",
+          "role": "voiceover",
+          "label": "Your voiceover",
+          "hint": "A recording of yours. Empty: your AI writes the script and a voice on this PC reads it."
+        }
+      ],
+      "pace": {
+        "cuts_per_min": "off",
+        "longest_static_s": "off"
+      },
+      "read_also": [
+        "motion/runtime/looks/pencilWatercolour.md"
+      ],
+      "preview": "pencil-watercolor/preview.mp4",
+      "poster": "pencil-watercolor/poster.jpg",
+      "sample": {
+        "video": "tests/t100/pencil-watercolor/sample.mp4"
+      },
+      "approved": true,
+      "theme_only": true
+    },
+    {
+      "id": "oil-on-canvas",
+      "style": "made-with-code",
+      "folder": "paint",
+      "label": "Oil on canvas",
+      "line": "Painted in front of you, dark to light, stroke by stroke.",
+      "recipe": "oil-on-canvas/recipe.md",
+      "recipe_shared": "kit-recipe-shared.md",
+      "needs": "A story or an idea, from one line up: your AI writes the script and draws the whole video. It adds nothing to a true story.",
+      "works_with": "no-footage",
+      "asks": [
+        {
+          "id": "about",
+          "kind": "text",
+          "need": "required",
+          "role": "about",
+          "label": "What's it about?",
+          "hint": "A story or an idea, from one line up. Say if it really happened: it won't add to a true story."
+        },
+        {
+          "id": "voice",
+          "kind": "audio",
+          "need": "optional",
+          "role": "voiceover",
+          "label": "Your voiceover",
+          "hint": "A recording of yours. Empty: your AI writes the script and a voice on this PC reads it."
+        }
+      ],
+      "pace": {
+        "cuts_per_min": "off",
+        "longest_static_s": "off"
+      },
+      "read_also": [
+        "motion/runtime/looks/paintedOil.md"
+      ],
+      "preview": "oil-on-canvas/preview.mp4",
+      "poster": "oil-on-canvas/poster.jpg",
+      "sample": {
+        "video": "tests/t100/oil-on-canvas/sample.mp4"
+      },
+      "approved": true,
+      "theme_only": true
+    },
+    {
+      "id": "pixel-art",
+      "style": "made-with-code",
+      "folder": "pixel",
+      "label": "Pixel art",
+      "line": "Cells laid one at a time, in sixteen colors.",
+      "recipe": "pixel-art/recipe.md",
+      "recipe_shared": "kit-recipe-shared.md",
+      "needs": "A story or an idea, from one line up: your AI writes the script and draws the whole video. It adds nothing to a true story.",
+      "works_with": "no-footage",
+      "asks": [
+        {
+          "id": "about",
+          "kind": "text",
+          "need": "required",
+          "role": "about",
+          "label": "What's it about?",
+          "hint": "A story or an idea, from one line up. Say if it really happened: it won't add to a true story."
+        },
+        {
+          "id": "voice",
+          "kind": "audio",
+          "need": "optional",
+          "role": "voiceover",
+          "label": "Your voiceover",
+          "hint": "A recording of yours. Empty: your AI writes the script and a voice on this PC reads it."
+        }
+      ],
+      "pace": {
+        "cuts_per_min": "off",
+        "longest_static_s": "off"
+      },
+      "read_also": [
+        "motion/runtime/looks/pixelArt.md"
+      ],
+      "preview": "pixel-art/preview.mp4",
+      "poster": "pixel-art/poster.jpg",
+      "sample": {
+        "video": "tests/t100/pixel-art/sample.mp4"
+      },
+      "approved": true,
+      "theme_only": true
+    },
+    {
+      "id": "archival-scrapbook",
+      "style": "made-with-code",
+      "folder": "paper-craft",
+      "label": "Archival scrapbook",
+      "line": "From an idea alone: your AI draws an old scrapbook page. Filmed scrapbook uses your own pictures.",
+      "recipe": "archival-scrapbook/recipe.md",
+      "recipe_shared": "kit-recipe-shared.md",
+      "needs": "A story or an idea, from one line up: your AI writes the script and draws the whole video. It adds nothing to a true story.",
+      "works_with": "no-footage",
+      "asks": [
+        {
+          "id": "about",
+          "kind": "text",
+          "need": "required",
+          "role": "about",
+          "label": "What's it about?",
+          "hint": "A story or an idea, from one line up. Say if it really happened: it won't add to a true story."
+        },
+        {
+          "id": "voice",
+          "kind": "audio",
+          "need": "optional",
+          "role": "voiceover",
+          "label": "Your voiceover",
+          "hint": "A recording of yours. Empty: your AI writes the script and a voice on this PC reads it."
+        }
+      ],
+      "pace": {
+        "cuts_per_min": "off",
+        "longest_static_s": "off"
+      },
+      "read_also": [
+        "motion/runtime/looks/scrapbook.md"
+      ],
+      "preview": "archival-scrapbook/preview.mp4",
+      "poster": "archival-scrapbook/poster.jpg",
+      "sample": {
+        "video": "tests/t100/filmed-scrapbook/sample.mp4"
+      },
+      "approved": true,
+      "theme_only": true
+    },
+    {
+      "id": "drawn-video",
+      "style": "ai-story",
+      "fits": [
+        "ai-story"
+      ],
+      "label": "Drawn video",
+      "line": "Your idea illustrated in a drawing Theme.",
+      "recipe": "drawn-video/recipe.md",
+      "needs": "A story, from one line up: who it's about, what happens, how it ends. A true story is told only from what you say.",
+      "works_with": "no-footage",
+      "asks": [
+        {
+          "id": "about",
+          "kind": "text",
+          "need": "required",
+          "role": "about",
+          "label": "What's it about?",
+          "hint": "A story or an idea, with the facts you want included."
+        },
+        {
+          "id": "voice",
+          "kind": "audio",
+          "need": "optional",
+          "role": "voiceover",
+          "label": "Your voiceover",
+          "hint": "A recording of yours. Empty: your AI writes the script and a voice on this PC reads it."
+        }
+      ],
+      "pace": {
+        "cuts_per_min": "off",
+        "longest_static_s": "off"
+      },
+      "approved": true,
+      "preview": "drawn-story/preview.mp4",
+      "poster": "drawn-story/poster.jpg",
+      "themes": "kits"
+    },
+    {
+      "id": "one-place-one-moment",
+      "style": "travel-event",
+      "fits": [
+        "travel-event",
+        "activity"
+      ],
+      "label": "One place, one moment",
+      "line": "Recognise the place, watch the event, leave on its natural release. Passed re-review after checker fixes.",
+      "themes": "none",
+      "needs": "One coherent place, an observable action and natural ending; real location sound.",
+      "works_with": "footage",
+      "approved": false,
+      "review": "new",
+      "recipe": "one-place-one-moment/recipe.md",
+      "preview": "../tests/t118/one-place-one-moment/attempt-5/preview.mp4",
+      "poster": "../tests/t118/one-place-one-moment/attempt-5/poster.jpg",
+      "asks": [
+        {
+          "id": "about",
+          "kind": "text",
+          "label": "What's it about?",
+          "role": "about",
+          "need": "required"
+        }
+      ],
+      "cut": true
+    },
+    {
+      "id": "performance-first",
+      "style": "indie-short-film",
+      "fits": [
+        "indie-short-film"
+      ],
+      "label": "Performance first",
+      "line": "The actor leads the cut; light and framing serve the dramatic beat.",
+      "themes": "film",
+      "needs": "A scripted exchange with matching coverage and usable production dialogue.",
+      "works_with": "footage",
+      "approved": false,
+      "review": "new",
+      "recipe": "performance-first/recipe.md",
+      "preview": "../tests/t118/performance-first/attempt-2/preview.mp4",
+      "poster": "../tests/t118/performance-first/attempt-2/poster.jpg",
+      "asks": [
+        {
+          "id": "about",
+          "kind": "text",
+          "label": "What's it about?",
+          "role": "about",
+          "need": "required"
+        }
+      ],
+      "cut": true
+    },
+    {
+      "id": "the-journey",
+      "style": "travel-event",
+      "fits": [
+        "travel-event",
+        "activity"
+      ],
+      "label": "The journey",
+      "line": "Arrive, explore, leave; the place has a voice between the music.",
+      "themes": "none",
+      "approved": false,
+      "review": "new",
+      "recipe": "the-journey/recipe.md",
+      "works_with": "footage",
+      "preview": "../tests/t122/the-journey/attempt-2/preview.mp4",
+      "poster": "../tests/t122/the-journey/attempt-2/poster.jpg",
+      "asks": [
+        {
+          "id": "about",
+          "kind": "text",
+          "label": "What's it about?",
+          "role": "about",
+          "need": "required"
+        }
+      ]
+    },
+    {
+      "id": "highlight-reel",
+      "style": "event-highlight",
+      "fits": [
+        "event-highlight",
+        "activity"
+      ],
+      "label": "Highlight reel",
+      "line": "Anticipation, atmosphere, the peak, and its release.",
+      "themes": "none",
+      "approved": false,
+      "review": "new",
+      "recipe": "highlight-reel/recipe.md",
+      "works_with": "footage",
+      "preview": "../tests/t122/highlight-reel/attempt-2/preview.mp4",
+      "poster": "../tests/t122/highlight-reel/attempt-2/poster.jpg",
+      "asks": [
+        {
+          "id": "about",
+          "kind": "text",
+          "label": "What's it about?",
+          "role": "about",
+          "need": "required"
+        }
+      ]
+    },
+    {
+      "id": "before-and-after",
+      "style": "build-transformation",
+      "fits": [
+        "build-transformation",
+        "activity"
+      ],
+      "label": "Before and after",
+      "line": "Separate Webb assemblies become a telescope element through precision work, lifting and joining.",
+      "recipe": "before-and-after/recipe.md",
+      "themes": "none",
+      "works_with": "footage",
+      "approved": false,
+      "review": "new",
+      "preview": "../tests/t123/before-and-after/attempt-2/preview.mp4",
+      "poster": "../tests/t123/before-and-after/attempt-2/poster.jpg",
+      "asks": [
+        {
+          "id": "about",
+          "kind": "text",
+          "label": "What is it about?",
+          "role": "about",
+          "need": "required"
+        }
+      ]
+    },
+    {
+      "id": "trailer",
+      "style": "indie-short-film",
+      "fits": [
+        "indie-short-film"
+      ],
+      "label": "Trailer",
+      "line": "Newlyweds build a kit house; construction turns into escalating physical comedy, with the ending withheld.",
+      "recipe": "trailer/recipe.md",
+      "themes": "film",
+      "works_with": "footage",
+      "approved": false,
+      "review": "new",
+      "preview": "../tests/t123/trailer/attempt-1/preview.mp4",
+      "poster": "../tests/t123/trailer/attempt-1/poster.jpg",
+      "asks": [
+        {
+          "id": "about",
+          "kind": "text",
+          "label": "What is it about?",
+          "role": "about",
+          "need": "required"
+        }
+      ]
+    },
+    {
+      "id": "archive-story",
+      "style": "mini-documentary",
+      "fits": [
+        "mini-documentary"
+      ],
+      "label": "Archive story",
+      "line": "Apollo 11 through archive pictures and original mission voices.",
+      "themes": "none",
+      "works_with": "footage",
+      "needs": "Apollo 11 through archive pictures and original mission voices.",
+      "approved": false,
+      "review": "new",
+      "recipe": "archive-story/recipe.md",
+      "preview": "../tests/t121/archive-story/attempt-2/preview.mp4",
+      "poster": "../tests/t121/archive-story/attempt-2/poster.jpg",
+      "asks": [
+        {
+          "id": "about",
+          "kind": "text",
+          "label": "What's it about?",
+          "role": "about",
+          "need": "required"
+        }
+      ]
+    },
+    {
+      "id": "pack-beat-montage",
+      "style": "activity",
+      "fits": [
+        "activity",
+        "event-highlight"
+      ],
+      "label": "Beat-synced montage",
+      "line": "Music-led - cuts on the beat, speed changes into the drop, flashes and hits on the big moments.",
+      "kind": "short",
+      "works_with": "footage",
+      "themes": "none",
+      "approved": true,
+      "pack_conversion": true,
+      "settings": "pack-beat-montage/settings.json",
+      "recipe": "pack-beat-montage/recipe.md",
+      "poster": "pack-beat-montage/poster.jpg",
+      "asks": [],
+      "needs": "A song and a run of moving shots: a trip, a place, a day out or an event. No talking needed.",
+      "preview": "pack-beat-montage/preview.mp4",
+      "poster_s": 1.0
+    },
+    {
+      "id": "pack-cinematic-travel",
+      "style": "travel-event",
+      "fits": [
+        "travel-event"
+      ],
+      "label": "Cinematic travel",
+      "line": "A short film of a place - letterbox bars, slow motion, a filmic grade, place names in a corner, music and the place's own sound.",
+      "kind": "short",
+      "works_with": "footage",
+      "themes": "none",
+      "approved": false,
+      "review": "new",
+      "pack_conversion": true,
+      "settings": "pack-cinematic-travel/settings.json",
+      "recipe": "pack-cinematic-travel/recipe.md",
+      "poster": "pack-cinematic-travel/resources/4dcd51b2e262eda9067640a8.jpg",
+      "asks": []
+    },
+    {
+      "id": "pack-clean-explainer",
+      "style": "talking-head",
+      "fits": [
+        "talking-head"
+      ],
+      "label": "Clean explainer",
+      "line": "Calm, clear teaching - chapter cards, labels that point at things, one idea at a time, music only between parts.",
+      "kind": "long",
+      "works_with": "footage",
+      "themes": "none",
+      "approved": false,
+      "review": "new",
+      "pack_conversion": true,
+      "settings": "pack-clean-explainer/settings.json",
+      "recipe": "pack-clean-explainer/recipe.md",
+      "poster": "pack-clean-explainer/resources/4a0a6436f61d836cb7d83510.jpg",
+      "asks": []
+    },
+    {
+      "id": "pack-day-in-the-life",
+      "style": "travel-event",
+      "fits": [
+        "travel-event"
+      ],
+      "label": "Aesthetic day-in-the-life",
+      "line": "A calm diary of a day - soft warm colour, small lowercase notes and time stamps, the day's own sounds, gentle music.",
+      "kind": "short",
+      "works_with": "footage",
+      "themes": "none",
+      "approved": false,
+      "review": "new",
+      "pack_conversion": true,
+      "settings": "pack-day-in-the-life/settings.json",
+      "recipe": "pack-day-in-the-life/recipe.md",
+      "poster": "pack-day-in-the-life/resources/bd9969bc4a77f0f1e37629e2.jpg",
+      "asks": []
+    },
+    {
+      "id": "pack-documentary-essay",
+      "style": "mini-documentary",
+      "fits": [
+        "mini-documentary"
+      ],
+      "label": "Documentary",
+      "line": "A short-film feel - a quiet cold open, date and place cards, serif titles, a muted grade, music that changes by scene.",
+      "kind": "long",
+      "works_with": "footage",
+      "themes": "none",
+      "approved": false,
+      "review": "new",
+      "pack_conversion": true,
+      "settings": "pack-documentary-essay/settings.json",
+      "recipe": "pack-documentary-essay/recipe.md",
+      "poster": "pack-documentary-essay/resources/15eef89ca001d09eb7cda97e.jpg",
+      "asks": []
+    },
+    {
+      "id": "pack-faceless-list",
+      "style": "activity",
+      "fits": [
+        "activity",
+        "mini-documentary"
+      ],
+      "label": "Faceless list",
+      "line": "A voice over b-roll working through a numbered list - big number cards, a progress counter, boxed captions.",
+      "kind": "short",
+      "works_with": "footage",
+      "themes": "none",
+      "approved": true,
+      "pack_conversion": true,
+      "settings": "pack-faceless-list/settings.json",
+      "recipe": "pack-faceless-list/recipe.md",
+      "poster": "pack-faceless-list/poster.jpg",
+      "asks": [],
+      "needs": "A voiceover working through a short list, and clips of the things it names: hands, objects, places or screens. Missing shots come from stock or are made.",
+      "preview": "pack-faceless-list/preview.mp4",
+      "poster_s": 4.0
+    },
+    {
+      "id": "pack-high-energy-challenge",
+      "style": "activity",
+      "fits": [
+        "activity"
+      ],
+      "label": "High-energy challenge",
+      "line": "Retention-style - the goal and what is at stake in the first seconds, a running timer, attempts and setbacks, a re-hook every few seconds, a big result.",
+      "kind": "short",
+      "works_with": "footage",
+      "themes": "none",
+      "approved": false,
+      "review": "new",
+      "pack_conversion": true,
+      "settings": "pack-high-energy-challenge/settings.json",
+      "recipe": "pack-high-energy-challenge/recipe.md",
+      "poster": "pack-high-energy-challenge/resources/e523c1278b34472a01f8f533.jpg",
+      "asks": []
+    },
+    {
+      "id": "pack-lots-going-on",
+      "style": "talking-head",
+      "fits": [
+        "talking-head"
+      ],
+      "label": "Lots going on",
+      "line": "Maximum energy - a zoom, pop-up, sound or layout change every couple of seconds, and fast captions.",
+      "kind": "short",
+      "works_with": "footage",
+      "themes": "none",
+      "approved": false,
+      "review": "new",
+      "pack_conversion": true,
+      "settings": "pack-lots-going-on/settings.json",
+      "recipe": "pack-lots-going-on/recipe.md",
+      "poster": "pack-lots-going-on/resources/bdbffb4fe34f1d2a3e2a0d88.jpg",
+      "asks": []
+    },
+    {
+      "id": "pack-meme-commentary",
+      "style": "talking-head",
+      "fits": [
+        "talking-head"
+      ],
+      "label": "Meme commentary",
+      "line": "Meme-format comedy - a caption bar over the clip, freeze frames, snap zooms with a boom, reaction emoji and sound stings, out on the punchline.",
+      "kind": "short",
+      "works_with": "footage",
+      "themes": "none",
+      "approved": false,
+      "review": "new",
+      "pack_conversion": true,
+      "settings": "pack-meme-commentary/settings.json",
+      "recipe": "pack-meme-commentary/recipe.md",
+      "poster": "pack-meme-commentary/resources/79ac53cd1f880d1f133a7fba.jpg",
+      "asks": []
+    },
+    {
+      "id": "pack-podcast-episode",
+      "style": "conversation",
+      "fits": [
+        "conversation"
+      ],
+      "label": "Podcast episode",
+      "line": "A full video podcast or interview - the best moment as a cold open, the picture on whoever is talking, the wide shot to reset, names and chapters.",
+      "kind": "long",
+      "works_with": "footage",
+      "themes": "none",
+      "approved": false,
+      "review": "new",
+      "pack_conversion": true,
+      "settings": "pack-podcast-episode/settings.json",
+      "recipe": "pack-podcast-episode/recipe.md",
+      "poster": "pack-podcast-episode/resources/83211cdecedca12a6e1a7144.jpg",
+      "asks": []
+    },
+    {
+      "id": "pack-podcast-split",
+      "style": "conversation",
+      "fits": [
+        "conversation"
+      ],
+      "label": "Podcast clip, split screen",
+      "line": "Two people talking, stacked top and bottom, with captions on the seam in each speaker's colour.",
+      "kind": "short",
+      "works_with": "footage",
+      "themes": "none",
+      "approved": false,
+      "review": "new",
+      "pack_conversion": true,
+      "settings": "pack-podcast-split/settings.json",
+      "recipe": "pack-podcast-split/recipe.md",
+      "poster": "pack-podcast-split/resources/1164428595b5fc8651b74cbb.jpg",
+      "asks": []
+    },
+    {
+      "id": "pack-product-review",
+      "style": "talking-head",
+      "fits": [
+        "talking-head"
+      ],
+      "label": "Product review",
+      "line": "A clean tech-style review - the product and one opinion up front, design to verdict in clear parts, spec cards, close detail shots, true colour.",
+      "kind": "long",
+      "works_with": "footage",
+      "themes": "none",
+      "approved": false,
+      "review": "new",
+      "pack_conversion": true,
+      "settings": "pack-product-review/settings.json",
+      "recipe": "pack-product-review/recipe.md",
+      "poster": "pack-product-review/resources/855228d51db7e22657fc3476.jpg",
+      "asks": []
+    },
+    {
+      "id": "pack-storytime",
+      "style": "talking-head",
+      "fits": [
+        "talking-head"
+      ],
+      "label": "Storytime",
+      "line": "One person tells a story to camera - a title line that stays up, calm captions, slight zooms, a beat before the twist.",
+      "kind": "short",
+      "works_with": "footage",
+      "themes": "none",
+      "approved": true,
+      "pack_conversion": true,
+      "settings": "pack-storytime/settings.json",
+      "recipe": "pack-storytime/recipe.md",
+      "poster": "pack-storytime/poster.jpg",
+      "asks": [],
+      "needs": "One person telling something that happened to them, to the camera, with clear speech and a turn or a payoff at the end.",
+      "preview": "pack-storytime/preview.mp4",
+      "poster_s": 0.5
+    },
+    {
+      "id": "pack-travel-vlog",
+      "style": "travel-event",
+      "fits": [
+        "travel-event"
+      ],
+      "label": "Travel vlog",
+      "line": "A story-led trip vlog - a cold open, day and place cards, talking parts between music-led montages, warm natural colour.",
+      "kind": "long",
+      "works_with": "footage",
+      "themes": "none",
+      "approved": false,
+      "review": "new",
+      "pack_conversion": true,
+      "settings": "pack-travel-vlog/settings.json",
+      "recipe": "pack-travel-vlog/recipe.md",
+      "poster": "pack-travel-vlog/resources/5e24ccd18fb036fe32aa4d1d.jpg",
+      "asks": []
+    },
+    {
+      "id": "pack-ugc-product-ad",
+      "style": "talking-head",
+      "fits": [
+        "talking-head"
+      ],
+      "label": "Product ad (UGC)",
+      "line": "A creator-style product ad - the problem in the first seconds, the product in hand, proof points that tick in, the price, one clear ask.",
+      "kind": "short",
+      "works_with": "footage",
+      "themes": "none",
+      "approved": true,
+      "pack_conversion": true,
+      "settings": "pack-ugc-product-ad/settings.json",
+      "recipe": "pack-ugc-product-ad/recipe.md",
+      "poster": "pack-ugc-product-ad/poster.jpg",
+      "asks": [],
+      "needs": "One person showing a product they really use, in hand, with clear speech about what it does, what comes with it and what it costs.",
+      "preview": "pack-ugc-product-ad/preview.mp4",
+      "poster_s": 4.0
+    },
+    {
+      "id": "pack-word-pop",
+      "style": "talking-head",
+      "fits": [
+        "talking-head"
+      ],
+      "label": "Word-pop talking head",
+      "line": "Big word-by-word captions, quick punch-ins and things popping up as they're said.",
+      "kind": "short",
+      "works_with": "footage",
+      "themes": "none",
+      "approved": true,
+      "pack_conversion": true,
+      "settings": "pack-word-pop/settings.json",
+      "recipe": "pack-word-pop/recipe.md",
+      "poster": "pack-word-pop/poster.jpg",
+      "asks": [],
+      "needs": "One person talking to the camera, close enough to punch in a little, with clear speech. Things they name can pop up as emoji, or their own pictures.",
+      "preview": "pack-word-pop/preview.mp4",
+      "poster_s": 1.0
+    },
+    {
+      "id": "step-by-step",
+      "style": "activity",
+      "fits": [
+        "activity",
+        "talking-head"
+      ],
+      "label": "Step by step",
+      "line": "How something is done or made: the result first, then each step with a big number and a few words.",
+      "kind": "short",
+      "works_with": "footage",
+      "themes": "none",
+      "approved": true,
+      "settings": "step-by-step/settings.json",
+      "recipe": "step-by-step/recipe.md",
+      "needs": "Footage of something being done or made, start to finish: hands, tools and the material changing. Someone explaining as they go is welcome, not needed.",
+      "asks": [],
+      "preview": "step-by-step/preview.mp4",
+      "poster": "step-by-step/poster.jpg",
+      "poster_s": 1.0
+    }
+  ],
+  "folders": [
+    {
+      "id": "paper-craft",
+      "style": "made-with-code",
+      "label": "Paper & craft",
+      "line": "Paper, prints and a pen, on one page.",
+      "approved": true
+    },
+    {
+      "id": "cartoon-flat",
+      "style": "made-with-code",
+      "label": "Cartoon & flat",
+      "line": "Cartoons, crayon and flat color.",
+      "approved": true
+    },
+    {
+      "id": "paint",
+      "style": "made-with-code",
+      "label": "Paint",
+      "line": "Brushes and canvas.",
+      "approved": true
+    },
+    {
+      "id": "pencil-ink",
+      "style": "made-with-code",
+      "label": "Pencil & ink",
+      "line": "Pencil, pen and wash on paper.",
+      "approved": true
+    },
+    {
+      "id": "pixel",
+      "style": "made-with-code",
+      "label": "Pixel",
+      "line": "Cells on a grid.",
+      "approved": true
+    }
+  ],
+  "legacy_packs": {
+    "beat-montage": {
+      "look": "pack-beat-montage",
+      "reason": "Distinct resolved settings, recipe and/or asset content; retained."
+    },
+    "cinematic-travel": {
+      "look": "pack-cinematic-travel",
+      "reason": "Distinct resolved settings, recipe and/or asset content; retained."
+    },
+    "clean-explainer": {
+      "look": "pack-clean-explainer",
+      "reason": "Distinct resolved settings, recipe and/or asset content; retained."
+    },
+    "day-in-the-life": {
+      "look": "pack-day-in-the-life",
+      "reason": "Distinct resolved settings, recipe and/or asset content; retained."
+    },
+    "documentary-essay": {
+      "look": "pack-documentary-essay",
+      "reason": "Distinct resolved settings, recipe and/or asset content; retained."
+    },
+    "faceless-list": {
+      "look": "pack-faceless-list",
+      "reason": "Distinct resolved settings, recipe and/or asset content; retained."
+    },
+    "high-energy-challenge": {
+      "look": "pack-high-energy-challenge",
+      "reason": "Distinct resolved settings, recipe and/or asset content; retained."
+    },
+    "lots-going-on": {
+      "look": "pack-lots-going-on",
+      "reason": "Distinct resolved settings, recipe and/or asset content; retained."
+    },
+    "meme-commentary": {
+      "look": "pack-meme-commentary",
+      "reason": "Distinct resolved settings, recipe and/or asset content; retained."
+    },
+    "podcast-episode": {
+      "look": "pack-podcast-episode",
+      "reason": "Distinct resolved settings, recipe and/or asset content; retained."
+    },
+    "podcast-split": {
+      "look": "pack-podcast-split",
+      "reason": "Distinct resolved settings, recipe and/or asset content; retained."
+    },
+    "product-review": {
+      "look": "pack-product-review",
+      "reason": "Distinct resolved settings, recipe and/or asset content; retained."
+    },
+    "storytime": {
+      "look": "pack-storytime",
+      "reason": "Distinct resolved settings, recipe and/or asset content; retained."
+    },
+    "travel-vlog": {
+      "look": "pack-travel-vlog",
+      "reason": "Distinct resolved settings, recipe and/or asset content; retained."
+    },
+    "ugc-product-ad": {
+      "look": "pack-ugc-product-ad",
+      "reason": "Distinct resolved settings, recipe and/or asset content; retained."
+    },
+    "word-pop": {
+      "look": "pack-word-pop",
+      "reason": "Distinct resolved settings, recipe and/or asset content; retained."
+    }
+  }
+}

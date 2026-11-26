@@ -1,0 +1,301 @@
+{
+  "contract_version": "1.4",
+  "job_id": "ch-demo-still-0031-t1",
+  "kind": "retext",
+  "state": "done",
+  "started": "2026-11-20T01:10:00-08:00",
+  "finished": "2026-11-20T01:40:00-08:00",
+  "attempts": 1,
+  "versions": {
+    "contract": "1.4",
+    "letitedit": "20261118.3",
+    "tools": "7b0da5c5",
+    "look": "7ca87163b73d"
+  },
+  "cost": {
+    "wall_s": 18,
+    "waited_s": 0,
+    "measured": true
+  },
+  "outputs": [
+    {
+      "role": "image",
+      "path": "files/story_9x16.png",
+      "bytes": 1900000,
+      "sha256": "7a2b5237e5ae9b725da8e2e3129acc7d6d053b14ca5195705c6da69cf9199726",
+      "size": "story_9x16",
+      "width": 1080,
+      "height": 1920,
+      "location_metadata": "none"
+    },
+    {
+      "role": "poster",
+      "path": "proxy/poster.jpg",
+      "bytes": 50000,
+      "sha256": "a1072a2b6bfa8ea721922abaaaf9a4775cd4e763890acafb03886a397c96c6f5",
+      "width": 720,
+      "height": 1280,
+      "location_metadata": "none"
+    },
+    {
+      "role": "evidence",
+      "path": "evidence/blur-plates-1.jpg",
+      "bytes": 30000,
+      "sha256": "bc6eecfe0d4d85c5b3cfa1a21a3581809e32569161b3b6a41df380958ba70dd7",
+      "width": 360,
+      "height": 640,
+      "location_metadata": "none"
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "path": "D:\\Footage\\Café days\\IMG_1234.MOV",
+        "file_id": "f_66ea81670fa7f7885988",
+        "moment_ids": [
+          "m_dd7148ba3befeaaeccfc"
+        ],
+        "in": 20.0,
+        "out": 20.0,
+        "role": "still_frame"
+      },
+      {
+        "path": "D:\\Photos\\Café days\\IMG_2001.HEIC",
+        "file_id": "f_353d5bfa24cdd7791e96",
+        "in": 0,
+        "out": 0,
+        "role": "photo"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "font",
+        "what": "Montserrat",
+        "source": "installed_font",
+        "ai_generated": false,
+        "licence": {
+          "id": "unknown",
+          "commercial_use": "unknown",
+          "note": "letitedit could not tell what licence this has, so nothing is claimed. Treat it as not cleared. SIL Open Font License 1.1 (OFL-1.1, read from the font's own OFL.txt). Contract 1.2 has no id for it (1.6 adds OFL-1.1), so the id is unknown."
+        }
+      },
+      {
+        "kind": "graphic",
+        "what": "Text panels and layout",
+        "source": "letitedit",
+        "ai_generated": false,
+        "licence": {
+          "id": "made-by-letitedit",
+          "commercial_use": "allowed",
+          "attribution_required": false,
+          "note": "Drawn by letitedit's own code for this video (a scene, a motion clip, a graphic)."
+        }
+      },
+      {
+        "kind": "generated_picture",
+        "what": "the sky behind the two photos",
+        "source": "image_generator",
+        "licence": {
+          "id": "generated",
+          "commercial_use": "allowed",
+          "attribution_required": false,
+          "note": "AI-made by an image service. The makers' terms give the output to the person who asked for it; whether AI-made output can be copyrighted is unsettled in some places, and the platforms ask for a label on realistic AI media (the result's ai_labels)."
+        },
+        "ai_generated": true,
+        "ranges": [
+          {
+            "in": 0,
+            "out": 0
+          }
+        ]
+      }
+    ]
+  },
+  "ai_labels": {
+    "generated_picture": true,
+    "generated_voice": false,
+    "generated_music": false,
+    "altered_real_footage": false,
+    "items": [
+      {
+        "what": "the sky behind the two photos",
+        "kind": "picture",
+        "realistic": true,
+        "start": 0,
+        "end": 0
+      }
+    ],
+    "platforms": {
+      "instagram_story": {
+        "label": "required",
+        "why": "A realistic generated picture."
+      }
+    }
+  },
+  "music": {
+    "tracks": [],
+    "policy_met": "no_policy"
+  },
+  "rules": [
+    {
+      "id": "blur-plates",
+      "status": "applied",
+      "how": "ai_review",
+      "ranges": [],
+      "frames": [
+        {
+          "path": "evidence/blur-plates-1.jpg",
+          "at": 0
+        }
+      ]
+    }
+  ],
+  "text_items": [
+    {
+      "id": "txt-q",
+      "kind": "on_screen",
+      "start": 0,
+      "end": 0,
+      "text": "Roof or engine?",
+      "editable": "remake",
+      "max_chars": 40,
+      "box": {
+        "x": 0.08,
+        "y": 0.16,
+        "w": 0.84,
+        "h": 0.1
+      }
+    },
+    {
+      "id": "txt-l",
+      "kind": "on_screen",
+      "start": 0,
+      "end": 0,
+      "text": "The roof",
+      "editable": "remake"
+    },
+    {
+      "id": "txt-r",
+      "kind": "on_screen",
+      "start": 0,
+      "end": 0,
+      "text": "The engine",
+      "editable": "remake"
+    },
+    {
+      "id": "ovl-001",
+      "kind": "on_screen",
+      "start": 0,
+      "end": 0,
+      "text": "@yourchannel",
+      "editable": "remake",
+      "overlay": {
+        "from": "inputs.overlay_text.0",
+        "placement": "top",
+        "files": [
+          {
+            "platform": "instagram_story",
+            "applied": true,
+            "why": "every file"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ovl-002",
+      "kind": "on_screen",
+      "start": 0,
+      "end": 0,
+      "text": "Made with AI",
+      "editable": "remake",
+      "overlay": {
+        "from": "inputs.overlay_text.1",
+        "placement": "bottom",
+        "platforms": [
+          "instagram_story",
+          "facebook_story"
+        ],
+        "if": [
+          "ai_generated_media"
+        ],
+        "files": [
+          {
+            "platform": "instagram_story",
+            "applied": true,
+            "why": "the result has AI-made media: generated picture (the sky behind the two photos) at 0 s"
+          }
+        ]
+      }
+    }
+  ],
+  "proxy": {
+    "poster": "proxy/poster.jpg",
+    "width": 720,
+    "height": 1280
+  },
+  "output": {
+    "files": [],
+    "project": "work/still.mlt",
+    "sets": [
+      {
+        "size": "story_9x16",
+        "files": [
+          "files/story_9x16.png"
+        ],
+        "alt_text": "Two photos side by side: the bus roof on the left, the bus engine on the right, with the question \"Engine or roof?\" above them.",
+        "sticker_box": {
+          "x": 240,
+          "y": 1180,
+          "w": 600,
+          "h": 260
+        }
+      }
+    ],
+    "checks": {
+      "legible_at_phone_size": "yes",
+      "covered_areas_clear": "yes",
+      "faces_clear": "yes",
+      "notes": []
+    },
+    "post_text": {
+      "instagram_story": "Engine or roof? Vote 👇"
+    },
+    "applied": [
+      {
+        "id": "txt-q",
+        "status": "redrawn"
+      },
+      {
+        "id": "ovl-002",
+        "status": "redrawn"
+      }
+    ],
+    "what_changed": "The question reads \"Roof or engine?\" and the AI line reads \"Made with AI\".",
+    "revision_of": "ch-demo-still-0031"
+  },
+  "warnings": [],
+  "from_job": "ch-demo-still-0031",
+  "choices": {
+    "look_id": "auto",
+    "hook_kind": "other",
+    "first_3s": "A still (story_9x16).",
+    "duration_s": 0.0,
+    "cuts_per_min": 0.0,
+    "words_per_min": 0.0,
+    "caption_style": "none",
+    "music_kind": "none",
+    "broll_share": 0.0,
+    "moments": [
+      {
+        "moment_id": "m_dd7148ba3befeaaeccfc",
+        "file_id": "f_66ea81670fa7f7885988",
+        "in": 20.0,
+        "out": 20.0
+      }
+    ]
+  },
+  "review": {
+    "verdict": "not_reviewed",
+    "plain": "Only text changed; a still has no review of its own."
+  }
+}

@@ -1,0 +1,482 @@
+{
+  "contract_version": "1.6",
+  "job_id": "ch-demo-caps-0001",
+  "kind": "capabilities",
+  "state": "done",
+  "started": "2026-11-20T01:10:00-08:00",
+  "finished": "2026-11-20T01:40:00-08:00",
+  "attempts": 1,
+  "versions": {
+    "contract": "1.6",
+    "letitedit": "20261118.3",
+    "tools": "7b0da5c5"
+  },
+  "cost": {
+    "wall_s": 0.4,
+    "waited_s": 0,
+    "measured": true
+  },
+  "outputs": [],
+  "output": {
+    "contract_version": "1.6",
+    "contract_versions_accepted": [
+      "1"
+    ],
+    "letitedit_version": "20261118.3",
+    "kinds": {
+      "capabilities": {
+        "available": true,
+        "uses_ai": false,
+        "heavy": false
+      },
+      "index": {
+        "available": true,
+        "uses_ai": false,
+        "heavy": true,
+        "options": {
+          "steps": [
+            "files",
+            "transcripts",
+            "moments",
+            "photos",
+            "flags"
+          ]
+        }
+      },
+      "match": {
+        "available": false,
+        "why_not": "Not on this install yet."
+      },
+      "inspect": {
+        "available": false,
+        "why_not": "Not on this install yet."
+      },
+      "short": {
+        "available": true,
+        "tiers": [
+          "preview",
+          "final"
+        ],
+        "uses_ai": true,
+        "heavy": true
+      },
+      "batch_shorts": {
+        "available": false,
+        "why_not": "Not on this install yet."
+      },
+      "still": {
+        "available": true,
+        "uses_ai": true,
+        "heavy": true,
+        "options": {
+          "motion": [
+            true,
+            false
+          ]
+        }
+      },
+      "revise": {
+        "available": true,
+        "uses_ai": true,
+        "heavy": true
+      },
+      "retext": {
+        "available": true,
+        "uses_ai": false,
+        "heavy": true
+      },
+      "hooks": {
+        "available": true,
+        "uses_ai": true,
+        "heavy": false
+      },
+      "conform": {
+        "available": true,
+        "uses_ai": false,
+        "heavy": true,
+        "options": {
+          "fit": [
+            "refuse",
+            "pad"
+          ]
+        }
+      },
+      "learn": {
+        "available": true,
+        "uses_ai": true,
+        "heavy": true
+      }
+    },
+    "ai": {
+      "default": {
+        "engine": "claude",
+        "model": "claude-opus-5-5",
+        "effort": "medium"
+      },
+      "available": [
+        "claude"
+      ]
+    },
+    "looks": [
+      {
+        "id": "bus-life",
+        "name": "Bus life",
+        "source": "learned",
+        "styles": [
+          "talking_head",
+          "action"
+        ],
+        "formats": [
+          "short"
+        ],
+        "needs_footage": true,
+        "fits": "Bus-life clips with someone talking or working."
+      },
+      {
+        "id": "clean",
+        "name": "Clean",
+        "source": "library",
+        "styles": [
+          "talking_head",
+          "conversation"
+        ],
+        "formats": [
+          "short",
+          "long"
+        ],
+        "needs_footage": true
+      }
+    ],
+    "themes": [
+      {
+        "id": "freestyle",
+        "name": "Freestyle"
+      }
+    ],
+    "platforms": [
+      {
+        "id": "youtube_shorts",
+        "name": "YouTube Shorts",
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "max_bytes": 274877906944,
+        "max_seconds": 180,
+        "loudness_lufs": -14,
+        "true_peak_dbtp": -1,
+        "covered_areas": true
+      },
+      {
+        "id": "tiktok",
+        "name": "TikTok",
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "max_bytes": 4294967296,
+        "max_seconds": 600,
+        "loudness_lufs": -14,
+        "true_peak_dbtp": -1,
+        "covered_areas": true
+      },
+      {
+        "id": "instagram_reels",
+        "name": "Instagram Reels",
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "max_bytes": 300000000,
+        "max_seconds": 1200,
+        "loudness_lufs": -14,
+        "true_peak_dbtp": -1,
+        "covered_areas": true
+      },
+      {
+        "id": "facebook_reels",
+        "name": "Facebook Reels",
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "max_bytes": 1000000000,
+        "loudness_lufs": -14,
+        "true_peak_dbtp": -1,
+        "covered_areas": true
+      },
+      {
+        "id": "youtube",
+        "name": "YouTube (long-form)",
+        "width": 1920,
+        "height": 1080,
+        "fps": 30,
+        "max_bytes": 274877906944,
+        "max_seconds": 43200,
+        "loudness_lufs": -14,
+        "true_peak_dbtp": -1,
+        "covered_areas": false
+      },
+      {
+        "id": "x",
+        "name": "X (Twitter) video",
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "max_bytes": 512000000,
+        "max_seconds": 140,
+        "loudness_lufs": -14,
+        "true_peak_dbtp": -1,
+        "covered_areas": false
+      },
+      {
+        "id": "instagram_story",
+        "name": "Instagram Stories",
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "max_bytes": 100000000,
+        "max_seconds": 60,
+        "loudness_lufs": -14,
+        "true_peak_dbtp": -1,
+        "covered_areas": true
+      },
+      {
+        "id": "facebook_story",
+        "name": "Facebook Stories",
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "max_bytes": 1000000000,
+        "max_seconds": 60,
+        "loudness_lufs": -14,
+        "true_peak_dbtp": -1,
+        "covered_areas": true
+      },
+      {
+        "id": "tiktok_photo",
+        "name": "TikTok photo post",
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "loudness_lufs": -14,
+        "true_peak_dbtp": -1,
+        "covered_areas": true
+      },
+      {
+        "id": "instagram_feed",
+        "name": "Instagram feed video",
+        "width": 1080,
+        "height": 1350,
+        "fps": 30,
+        "max_bytes": 300000000,
+        "max_seconds": 3600,
+        "loudness_lufs": -14,
+        "true_peak_dbtp": -1,
+        "covered_areas": false
+      },
+      {
+        "id": "facebook_feed",
+        "name": "Facebook feed video",
+        "width": 1080,
+        "height": 1350,
+        "fps": 30,
+        "max_bytes": 1000000000,
+        "max_seconds": 14400,
+        "loudness_lufs": -14,
+        "true_peak_dbtp": -1,
+        "covered_areas": false
+      }
+    ],
+    "still_sizes": [
+      {
+        "id": "story_9x16",
+        "width": 1080,
+        "height": 1920
+      },
+      {
+        "id": "feed_4x5",
+        "width": 1080,
+        "height": 1350
+      },
+      {
+        "id": "feed_1x1",
+        "width": 1080,
+        "height": 1080
+      }
+    ],
+    "stills_layouts": [
+      {
+        "id": "fact_card",
+        "name": "Fact card",
+        "photos": "0-1",
+        "motion": true,
+        "fields": {
+          "title": "string",
+          "lines": "list of up to 3 strings"
+        }
+      },
+      {
+        "id": "this_or_that",
+        "name": "This or that",
+        "photos": "2",
+        "motion": true,
+        "fields": {
+          "question": "string",
+          "left": "string",
+          "right": "string"
+        }
+      }
+    ],
+    "caption_styles": [
+      {
+        "id": "word-highlight",
+        "name": "Word highlight"
+      },
+      {
+        "id": "calm",
+        "name": "Calm lines"
+      }
+    ],
+    "rule_kinds": [
+      "must",
+      "never",
+      "prefer"
+    ],
+    "rule_checks": [
+      {
+        "id": "blur_plates",
+        "status": "ai_review_only",
+        "note": "No plate detector yet."
+      },
+      {
+        "id": "house_numbers",
+        "status": "ai_review_only"
+      }
+    ],
+    "priorities": [
+      "urgent",
+      "normal",
+      "dev"
+    ],
+    "limits": {
+      "concurrent_jobs": 1,
+      "max_short_seconds": 180,
+      "max_batch_ideas": 8,
+      "max_still_motion_seconds": 60,
+      "max_references": 3,
+      "proxy_max_bytes": 8000000,
+      "free_disk_gb": 212.4,
+      "free_disk_gb_needed": 20
+    },
+    "typical": {
+      "batch_shorts.per_short.final": {
+        "minutes": 60,
+        "tokens": 30000000,
+        "basis": "estimate",
+        "match": "nearest",
+        "match_note": "No job of this kind has been measured with claude-opus-5-5 at medium effort yet; this is letitedit's estimate, not measured with any AI."
+      },
+      "conform": {
+        "minutes": 2,
+        "tokens": 0,
+        "basis": "estimate"
+      },
+      "index": {
+        "minutes": 1.5,
+        "basis": "estimate",
+        "note": "Per hour of new footage."
+      },
+      "retext": {
+        "minutes": 3,
+        "tokens": 0,
+        "basis": "estimate"
+      },
+      "short.final": {
+        "minutes": 71,
+        "minutes_p90": 88,
+        "tokens": 52000000,
+        "tokens_p90": 60000000,
+        "basis": "measured_here",
+        "samples": 4,
+        "as_of": "2026-11-24",
+        "ai": {
+          "engine": "claude",
+          "model": "claude-opus-5-5",
+          "effort": "high"
+        },
+        "match": "nearest",
+        "match_note": "No job of this kind has been measured with claude-opus-5-5 at medium effort yet; this figure is the nearest, measured with claude-opus-5-5 at high effort (measured_here).",
+        "by_ai": [
+          {
+            "minutes": 94,
+            "minutes_p90": 165,
+            "tokens": 79000000,
+            "basis": "reference",
+            "samples": 1,
+            "as_of": "2026-11-19",
+            "ai": {
+              "engine": "claude",
+              "model": "claude-opus-5-5",
+              "effort": "xhigh"
+            },
+            "note": "A final from a preview, at the person's chat setting."
+          },
+          {
+            "minutes": 71,
+            "minutes_p90": 88,
+            "tokens": 52000000,
+            "tokens_p90": 60000000,
+            "basis": "measured_here",
+            "samples": 4,
+            "as_of": "2026-11-24",
+            "ai": {
+              "engine": "claude",
+              "model": "claude-opus-5-5",
+              "effort": "high"
+            }
+          }
+        ]
+      },
+      "short.preview": {
+        "minutes": 24,
+        "tokens": 15900000,
+        "basis": "reference",
+        "samples": 1,
+        "as_of": "2026-11-19",
+        "ai": {
+          "engine": "claude",
+          "model": "claude-opus-5-5",
+          "effort": "xhigh"
+        },
+        "note": "Log, story and rough cut of a 30 s Short with its phone proxy, at the person's chat setting.",
+        "match": "nearest",
+        "match_note": "No job of this kind has been measured with claude-opus-5-5 at medium effort yet; this figure is the nearest, measured with claude-opus-5-5 at extra high effort (reference).",
+        "by_ai": [
+          {
+            "minutes": 24,
+            "tokens": 15900000,
+            "basis": "reference",
+            "samples": 1,
+            "as_of": "2026-11-19",
+            "ai": {
+              "engine": "claude",
+              "model": "claude-opus-5-5",
+              "effort": "xhigh"
+            },
+            "note": "Log, story and rough cut of a 30 s Short with its phone proxy, at the person's chat setting."
+          }
+        ]
+      },
+      "still": {
+        "minutes": 4,
+        "tokens": 2000000,
+        "basis": "estimate",
+        "match": "nearest",
+        "match_note": "No job of this kind has been measured with claude-opus-5-5 at medium effort yet; this is letitedit's estimate, not measured with any AI."
+      }
+    },
+    "entry_points": {
+      "cli": "\"C:\\Program Files\\letitedit\\env\\Scripts\\python.exe\" \"C:\\Program Files\\letitedit\\bridge\\letitedit_studio.py\"",
+      "inbox": "C:\\Users\\Sam\\AppData\\Local\\letitedit\\studio\\inbox",
+      "studio_folder": "C:\\Users\\Sam\\AppData\\Local\\letitedit\\studio"
+    }
+  },
+  "warnings": []
+}

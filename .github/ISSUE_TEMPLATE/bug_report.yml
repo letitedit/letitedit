@@ -1,0 +1,56 @@
+name: Bug report
+description: Something in letitedit didn't work as it should.
+title: "Bug: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to tell us. Please **leave out private footage and personal details**
+        (names, e-mail addresses, folder names with your name in them). A screenshot of the problem helps a lot.
+  - type: input
+    id: version
+    attributes:
+      label: letitedit version
+      description: In letitedit, Help > About, or the installer's file name.
+      placeholder: 1.0.0-beta-20261126.6
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: Windows 11 24H2
+    validations:
+      required: true
+  - type: dropdown
+    id: ai
+    attributes:
+      label: Which AI were you using?
+      options:
+        - Claude Code
+        - Codex
+        - Antigravity
+        - None (editing by hand)
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to make it happen again
+      placeholder: |
+        1. Click New video
+        2. Pick the Word-pop Look
+        3. ...
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
+      description: Screenshots, the error's words, or anything that seems related.

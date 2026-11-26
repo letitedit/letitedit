@@ -1,0 +1,96 @@
+{
+  "contract_version": "1.1",
+  "job_id": "ch-demo-batch-0002",
+  "kind": "batch_shorts",
+  "tier": "preview",
+  "state": "done",
+  "started": "2026-11-20T01:10:00-08:00",
+  "finished": "2026-11-20T01:40:00-08:00",
+  "attempts": 1,
+  "versions": {
+    "contract": "1.1",
+    "letitedit": "20261118.3",
+    "tools": "7b0da5c5"
+  },
+  "cost": {
+    "wall_s": 1100,
+    "waited_s": 0,
+    "measured": true,
+    "ai": {
+      "engine": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "medium"
+    },
+    "tokens": {
+      "input": 26800,
+      "cache_write": 536000,
+      "cache_read": 12730000,
+      "output": 107200,
+      "total": 13400000
+    },
+    "usd_api_equivalent": 5.09,
+    "steps": 58
+  },
+  "outputs": [
+    {
+      "role": "other",
+      "path": "shared/log.json",
+      "bytes": 310000,
+      "sha256": "ff40b00188526582491b91c0bf671bb87caf0310428aa94610d8cb577367c603"
+    },
+    {
+      "role": "other",
+      "path": "shared/story_plan.json",
+      "bytes": 42000,
+      "sha256": "6b899000f36294be39eb09b4128f6e3c701bfd62ab437966dd33625673217efa"
+    }
+  ],
+  "output": {
+    "shared": {
+      "log": "shared/log.json",
+      "story_plan": "shared/story_plan.json",
+      "cost": {
+        "wall_s": 260,
+        "waited_s": 0,
+        "measured": true,
+        "ai": {
+          "engine": "claude",
+          "model": "claude-opus-5-5",
+          "effort": "medium"
+        },
+        "tokens": {
+          "input": 6200,
+          "cache_write": 124000,
+          "cache_read": 2945000,
+          "output": 24800,
+          "total": 3100000
+        },
+        "usd_api_equivalent": 1.18,
+        "steps": 13
+      }
+    },
+    "items": [
+      {
+        "idea_id": "idea-0193",
+        "state": "done",
+        "result": "items/idea-0193/result.json"
+      },
+      {
+        "idea_id": "idea-0194",
+        "state": "done",
+        "result": "items/idea-0194/result.json"
+      },
+      {
+        "idea_id": "idea-0195",
+        "state": "failed",
+        "result": "items/idea-0195/result.json",
+        "error": {
+          "code": "no_footage_for_idea",
+          "message": "The folder has no clip of something going wrong and being fixed, so this idea could not be cut.",
+          "retry": "after_change"
+        }
+      }
+    ]
+  },
+  "warnings": []
+}

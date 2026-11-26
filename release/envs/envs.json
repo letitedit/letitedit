@@ -1,0 +1,343 @@
+{
+ "format": "shotcut-ai-envs/1",
+ "generated": "2026-10-20T11:11:56",
+ "note": "Each environment is built on first use (or from the setup window) by bridge\\env_build.py with uv: Python <python> from python-build-standalone into <root>\\python, a venv in <root>\\envs\\<name>, the listed packages with --no-deps (exactly the set on the build PC). Form cuda on gpu8/gpu4 PCs (torch from the PyTorch CUDA index), cpu where listed on other PCs.",
+ "envs": {
+  "models": {
+   "python": "3.12.10",
+   "tiers": [
+    "gpu8",
+    "gpu4",
+    "cpu"
+   ],
+   "features": [
+    "picture search and speakers (index jobs, letitedit_search, letitedit_speakers)",
+    "sound labels (letitedit_hear)",
+    "music / voice separation (letitedit_separate)",
+    "archive search (letitedit_archive)",
+    "fix-in-post models (letitedit_fix)",
+    "footage log by a local model (shot_log, gpu8)",
+    "official BiRefNet-lite portrait cut-out on CUDA"
+   ],
+   "check": [
+    "torch",
+    "transformers",
+    "open_clip",
+    "speechbrain",
+    "demucs",
+    "nara_wpe",
+    "cv2",
+    "torchvision"
+   ],
+   "optional": false,
+   "packages": 68,
+   "variants": {
+    "cuda": {
+     "file": "models/requirements-cuda.txt",
+     "index": "https://download.pytorch.org/whl/cu128",
+     "installed_bytes": 8077159985,
+     "download_bytes": 3660603787,
+     "packages": 68,
+     "from_source": [],
+     "unknown": [],
+     "largest": [
+      [
+       "torch==2.8.0+cu128",
+       3461384651
+      ],
+      [
+       "opencv-python-headless==5.0.0.93",
+       43825962
+      ],
+      [
+       "bitsandbytes==0.50.2",
+       39096375
+      ],
+      [
+       "scipy==1.18.1",
+       36658278
+      ],
+      [
+       "transformers==5.19.0",
+       12599123
+      ]
+     ]
+    },
+    "cpu": {
+     "file": "models/requirements-cpu.txt",
+     "index": null,
+     "download_bytes": 432432594,
+     "packages": 68,
+     "from_source": [],
+     "unknown": [],
+     "largest": [
+      [
+       "torch==2.8.0",
+       241326087
+      ],
+      [
+       "opencv-python-headless==5.0.0.93",
+       43825962
+      ],
+      [
+       "bitsandbytes==0.50.2",
+       39096375
+      ],
+      [
+       "scipy==1.18.1",
+       36658278
+      ],
+      [
+       "transformers==5.19.0",
+       12599123
+      ]
+     ],
+     "installed_bytes_estimate": 1945946673,
+     "installed_bytes_measured": 1943000000
+    }
+   },
+   "made_from": "envs\\models",
+   "made": "2026-10-20"
+  },
+  "voice": {
+   "python": "3.12.10",
+   "tiers": [
+    "gpu8",
+    "gpu4",
+    "cpu"
+   ],
+   "features": [
+    "voice (letitedit_voice engine chatterbox)"
+   ],
+   "check": [
+    "torch",
+    "torchaudio",
+    "chatterbox"
+   ],
+   "optional": false,
+   "packages": 112,
+   "variants": {
+    "cuda": {
+     "file": "voice/requirements-cuda.txt",
+     "index": "https://download.pytorch.org/whl/cu124",
+     "installed_bytes": 5434623159,
+     "download_bytes": 2780226469,
+     "packages": 112,
+     "from_source": [],
+     "unknown": [],
+     "largest": [
+      [
+       "torch==2.6.0+cu124",
+       2532302369
+      ],
+      [
+       "llvmlite==0.50.0",
+       41865553
+      ],
+      [
+       "scipy==1.17.1",
+       36549682
+      ],
+      [
+       "resemble-perth==1.0.1",
+       34404578
+      ],
+      [
+       "gradio==6.8.0",
+       24162460
+      ]
+     ]
+    },
+    "cpu": {
+     "file": "voice/requirements-cpu.txt",
+     "index": null,
+     "download_bytes": 450335818,
+     "packages": 112,
+     "from_source": [],
+     "unknown": [],
+     "largest": [
+      [
+       "torch==2.6.0",
+       204120469
+      ],
+      [
+       "llvmlite==0.50.0",
+       41865553
+      ],
+      [
+       "scipy==1.17.1",
+       36549682
+      ],
+      [
+       "resemble-perth==1.0.1",
+       34404578
+      ],
+      [
+       "gradio==6.8.0",
+       24162460
+      ]
+     ],
+     "installed_bytes_estimate": 2026511181
+    }
+   },
+   "made_from": "envs\\voice",
+   "made": "2026-10-20"
+  },
+  "voice_dots": {
+   "python": "3.12.10",
+   "tiers": [
+    "gpu8"
+   ],
+   "features": [
+    "voice (letitedit_voice engine dots-tts)"
+   ],
+   "check": [
+    "torch",
+    "dots_tts"
+   ],
+   "optional": false,
+   "packages": 57,
+   "variants": {
+    "cuda": {
+     "file": "voice_dots/requirements-cuda.txt",
+     "index": "https://download.pytorch.org/whl/cu128",
+     "installed_bytes": 8246768378,
+     "download_bytes": 3777638651,
+     "packages": 57,
+     "from_source": [],
+     "unknown": [],
+     "largest": [
+      [
+       "torch==2.8.0+cu128",
+       3461384651
+      ],
+      [
+       "lingua-language-detector==2.2.0",
+       170065705
+      ],
+      [
+       "llvmlite==0.50.0",
+       41865553
+      ],
+      [
+       "scipy==1.18.1",
+       36658278
+      ],
+      [
+       "numpy==2.5.4",
+       12573091
+      ]
+     ]
+    }
+   },
+   "made_from": "envs\\voice_dots",
+   "made": "2026-10-20"
+  },
+  "music_acestep": {
+   "python": "3.12.10",
+   "tiers": [
+    "gpu8"
+   ],
+   "features": [
+    "music made to fit (letitedit_music_make)"
+   ],
+   "check": [
+    "torch",
+    "torchaudio",
+    "diffusers",
+    "transformers",
+    "vector_quantize_pytorch"
+   ],
+   "optional": false,
+   "packages": 74,
+   "variants": {
+    "cuda": {
+     "file": "music_acestep/requirements-cuda.txt",
+     "index": "https://download.pytorch.org/whl/cu128",
+     "installed_bytes": 8029695125,
+     "download_bytes": 3638213758,
+     "packages": 74,
+     "from_source": [],
+     "unknown": [],
+     "largest": [
+      [
+       "torch==2.8.0+cu128",
+       3461384651
+      ],
+      [
+       "llvmlite==0.50.0",
+       41865553
+      ],
+      [
+       "scipy==1.18.1",
+       36658278
+      ],
+      [
+       "numpy==2.5.2",
+       12464674
+      ],
+      [
+       "transformers==4.57.6",
+       11993498
+      ]
+     ]
+    }
+   },
+   "made_from": "envs\\music_acestep",
+   "made": "2026-10-20"
+  },
+  "whisper_gpu": {
+   "python": "3.12.10",
+   "tiers": [
+    "gpu8",
+    "gpu4"
+   ],
+   "features": [
+    "speech to text on the GPU (letitedit_words and every transcript; the CPU engine is used without it)"
+   ],
+   "check": [
+    "torch",
+    "whisper"
+   ],
+   "optional": true,
+   "packages": 24,
+   "variants": {
+    "cuda": {
+     "file": "whisper_gpu/requirements-cuda.txt",
+     "index": "https://download.pytorch.org/whl/cu132",
+     "installed_bytes": 3220235102,
+     "download_bytes": 2064125478,
+     "packages": 24,
+     "from_source": [
+      "openai-whisper"
+     ],
+     "unknown": [],
+     "largest": [
+      [
+       "torch==2.14.0+cu132",
+       1993738732
+      ],
+      [
+       "llvmlite==0.49.0",
+       41865543
+      ],
+      [
+       "numpy==2.5.3",
+       12567828
+      ],
+      [
+       "sympy==1.14.0",
+       6299353
+      ],
+      [
+       "numba==0.67.0",
+       2815645
+      ]
+     ]
+    }
+   },
+   "made_from": "%APPDATA%\\uv\\tools\\openai-whisper",
+   "made": "2026-10-20"
+  }
+ }
+}

@@ -1,0 +1,33 @@
+name: Feature or Look request
+description: An idea for letitedit, or a Look you'd like it to make.
+title: "Idea: "
+labels: [idea]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ideas are welcome, big or small. If you'd like a Look, a link to a public video in that style helps us
+        see it. Please leave out private footage and personal details.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of idea
+      options:
+        - A new Look (a style of video)
+        - A feature in the editor
+        - Something the AI should do better
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: What you'd like, and what you'd make with it.
+    validations:
+      required: true
+  - type: input
+    id: example
+    attributes:
+      label: An example (optional)
+      description: A link to a public video or picture that shows what you mean.

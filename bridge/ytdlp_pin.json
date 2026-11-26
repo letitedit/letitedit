@@ -1,0 +1,14 @@
+{
+  "format": "letitedit-ytdlp-pin/1",
+  "program": "yt-dlp",
+  "version": "2026.10.26",
+  "file": "yt-dlp.exe",
+  "url": "https://github.com/yt-dlp/yt-dlp/releases/download/2026.10.26/yt-dlp.exe",
+  "bytes": 23575744,
+  "sha256": "f5389d3698ecde4ef06f4e6b1ce0294fe9ac1396228c8990b8d3416d6d177a7d",
+  "hash_source": "the release's SHA2-256SUMS and the GitHub asset digest agree",
+  "licence": "Unlicense (public domain); the Windows exe bundles Python and libraries under their own licences (yt-dlp's THIRD_PARTY_LICENSES.txt)",
+  "origin": "https://github.com/yt-dlp/yt-dlp",
+  "releases_api": "https://api.github.com/repos/yt-dlp/yt-dlp/releases/latest",
+  "sums_name": "SHA2-256SUMS"
+}

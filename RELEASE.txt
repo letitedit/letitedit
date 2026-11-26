@@ -1,0 +1,2 @@
+letitedit 1.0.0-beta, based on Shotcut 26.9.27
+Source snapshot: one tree, no history.

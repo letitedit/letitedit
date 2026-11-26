@@ -1,0 +1,24 @@
+{
+  "contract_version": "1.1",
+  "job_id": "ch-demo-2026-11-20-0007-r1",
+  "kind": "revise",
+  "priority": "channel",
+  "requested_by": {
+    "app": "letitedit-channel",
+    "app_version": "0.1.0",
+    "channel_id": "demo"
+  },
+  "output_dir": "C:\\Users\\Sam\\AppData\\Local\\letitedit Channel\\channels\\demo\\studio\\ch-demo-2026-11-20-0007-r1",
+  "from_job": "ch-demo-2026-11-20-0007-final",
+  "inputs": {
+    "notes": [
+      {
+        "text": "Cut the second engine shot, it drags",
+        "at_s": 9.5
+      },
+      {
+        "text": "Make the music a bit quieter"
+      }
+    ]
+  }
+}

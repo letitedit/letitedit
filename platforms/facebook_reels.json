@@ -1,0 +1,253 @@
+{
+  "id": "facebook_reels",
+  "name": "Facebook Reels",
+  "schema": "letitedit-platform/1",
+  "checked": "2026-11-19",
+  "video": {
+    "aspect_ratios": {
+      "value": "any orientation; 9:16 recommended to fill the screen",
+      "source": "https://www.facebook.com/business/help/2683452421955589",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "\"Reels can be any length or orientation\" (since June 2025); 9:16 recommendation from https://www.facebook.com/business/help/103816146375741."
+    },
+    "resolutions": {
+      "value": {
+        "recommended": "1080p",
+        "api_min": "540x960",
+        "api_recommended": "1080x1920",
+        "ads": "1440x2560"
+      },
+      "source": "https://www.facebook.com/business/help/1197310377458196",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "frame_rates": {
+      "value": {
+        "min": 24,
+        "max": 60
+      },
+      "source": "https://www.facebook.com/business/help/1197310377458196",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "min_length_s": {
+      "value": null,
+      "source": "https://www.facebook.com/business/help/2683452421955589",
+      "checked": "2026-10-19",
+      "status": "not documented",
+      "note": "API publishing: 3 s minimum."
+    },
+    "max_length_s": {
+      "value": null,
+      "source": "https://about.fb.com/news/2025/06/making-it-easier-create-videos-facebook/",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "No length restriction since June 2025. API-published reels: 3-90 s (https://developers.facebook.com/docs/video-api/guides/reels-publishing)."
+    },
+    "max_file_size_bytes": {
+      "value": 1000000000,
+      "source": "https://support.buffer.com/articles/sharing-videos-through-buffer-LOe2p2rnAI",
+      "checked": "2026-11-19",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: Facebook Reels and Stories up to 1 GB; Meta's ads guide gives 4 GB for Reels ads and its Reels Publishing API page names no size. The stricter 1 GB is kept (it was 4 x 1024^3 bytes before 19 Nov)."
+    },
+    "container": {
+      "value": ".mp4 recommended",
+      "source": "https://www.facebook.com/business/help/1197310377458196",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "video_codec": {
+      "value": {
+        "recommended": [
+          "H.264",
+          "H.265"
+        ],
+        "supported": [
+          "H.264",
+          "H.265",
+          "VP9",
+          "AV1"
+        ],
+        "gop": "closed, 2-5 s",
+        "chroma": "4:2:0",
+        "scan": "progressive",
+        "hdr": "supported"
+      },
+      "source": "https://www.facebook.com/business/help/1197310377458196",
+      "checked": "2026-10-19",
+      "status": "official"
+    }
+  },
+  "audio": {
+    "codec": {
+      "value": "AAC-LC, stereo",
+      "source": "https://www.facebook.com/business/help/1197310377458196",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "sample_rate_hz": {
+      "value": [
+        44100,
+        48000
+      ],
+      "source": "https://www.facebook.com/business/help/1197310377458196",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "bitrate_kbps": {
+      "value": "128+",
+      "source": "https://www.facebook.com/business/help/1197310377458196",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "loudness_normalisation": {
+      "value": null,
+      "source": "https://www.facebook.com/business/help/1197310377458196",
+      "checked": "2026-10-19",
+      "status": "not documented"
+    }
+  },
+  "safe_zones": {
+    "value": [
+      {
+        "name": "top: profile/status area",
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.14
+      },
+      {
+        "name": "bottom: caption, account name, call-to-action",
+        "x": 0,
+        "y": 0.65,
+        "w": 1,
+        "h": 0.35
+      },
+      {
+        "name": "left edge",
+        "x": 0,
+        "y": 0,
+        "w": 0.06,
+        "h": 1
+      },
+      {
+        "name": "right edge (buttons sit here)",
+        "x": 0.94,
+        "y": 0,
+        "w": 0.06,
+        "h": 1
+      }
+    ],
+    "source": "https://www.facebook.com/business/ads-guide/update/video/facebook-facebook-reels",
+    "checked": "2026-10-19",
+    "status": "official-ads",
+    "note": "Meta's Facebook Reels ad guidance: roughly 14% top, 35% bottom, 6% each side free of text and logos (profile icon, call-to-action). Published for ads.",
+    "confidence": "medium"
+  },
+  "captions": {
+    "placement": {
+      "value": "Description and account row overlay the bottom of the frame.",
+      "source": "https://www.facebook.com/business/ads-guide/update/video/facebook-facebook-reels",
+      "checked": "2026-10-19",
+      "status": "official-ads"
+    }
+  },
+  "thumbnail": {
+    "value": null,
+    "source": "https://developers.facebook.com/docs/video-api/guides/reels-publishing",
+    "checked": "2026-10-19",
+    "status": "not documented",
+    "note": "Cover can be chosen; no size published."
+  },
+  "text_limits": {
+    "description_chars": {
+      "value": null,
+      "source": "https://developers.facebook.com/docs/video-api/guides/reels-publishing",
+      "checked": "2026-10-19",
+      "status": "not documented"
+    },
+    "primary_text_ads": {
+      "value": 40,
+      "source": "https://www.facebook.com/business/ads-guide/update/video/facebook-facebook-reels",
+      "checked": "2026-10-19",
+      "status": "official-ads"
+    },
+    "headline_ads": {
+      "value": 55,
+      "source": "https://www.facebook.com/business/ads-guide/update/video/facebook-facebook-reels",
+      "checked": "2026-10-19",
+      "status": "official-ads"
+    }
+  },
+  "export_preset": {
+    "width": {
+      "value": 1080,
+      "source": "https://developers.facebook.com/docs/video-api/guides/reels-publishing",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "height": {
+      "value": 1920,
+      "source": "https://developers.facebook.com/docs/video-api/guides/reels-publishing",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "fps": {
+      "value": "source (24-60)",
+      "source": "https://www.facebook.com/business/help/1197310377458196",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "container": {
+      "value": "mp4",
+      "source": "https://www.facebook.com/business/help/1197310377458196",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "vcodec": {
+      "value": "libx264",
+      "source": "https://www.facebook.com/business/help/1197310377458196",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "pix_fmt": {
+      "value": "yuv420p",
+      "source": "https://www.facebook.com/business/help/1197310377458196",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "video_bitrate_kbps": {
+      "value": null,
+      "source": "https://www.facebook.com/business/help/1197310377458196",
+      "checked": "2026-10-19",
+      "status": "not documented"
+    },
+    "acodec": {
+      "value": "aac",
+      "source": "https://www.facebook.com/business/help/1197310377458196",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "audio_bitrate_kbps": {
+      "value": 128,
+      "source": "https://www.facebook.com/business/help/1197310377458196",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "Minimum."
+    },
+    "sample_rate_hz": {
+      "value": 48000,
+      "source": "https://www.facebook.com/business/help/1197310377458196",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "loudness_lufs": {
+      "value": null,
+      "source": "https://www.facebook.com/business/help/1197310377458196",
+      "checked": "2026-10-19",
+      "status": "not documented"
+    }
+  }
+}

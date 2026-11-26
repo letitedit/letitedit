@@ -1,0 +1,30 @@
+# One person, one question
+
+Style: Mini-documentary. A small, attributed portrait explores one question with the evidence the footage actually contains. Unlike One clear answer, the film establishes a real context, distinguishes testimony from corroboration, and ends at the limit of what is known. It is not an interview with a different colour filter.
+
+## Evidence and confidence
+
+- **Medium - professional teaching:** Inside the Edit, [How a Documentary Scene Is Built](https://www.youtube.com/watch?v=xZnHgyeZlsU), question at 04:34, spaces between islands at 07:49, and b-roll jobs at 16:35. A question and purposeful coverage can shape a scene. The examples are not proof of a universally optimal sequence or speed.
+- **Medium - practitioner account:** Steve Hullfish's [Art of the Cut: Porcelain War](https://borisfx.com/blog/aotc/art-of-the-cut-porcelain-war/), 13 February 2025, describes structure growing from the subjects' lives and pace from their personalities. This supports observing the subject instead of imposing a trailer rhythm; it does not prescribe war-film aesthetics for an ordinary portrait.
+- **Strong for factual/ethical standards, not a retention claim:** the [BBC Accuracy reference](https://downloads.bbc.co.uk/guidelines/editorialguidelines/pdfs/Section_03_Accuracy.pdf), sections 3.1-3.2, calls for first-hand evidence, clear attribution and honest uncertainty rather than materially misleading editing. This is an editorial reference, not a claim that an older BBC PDF is a current binding rule for every filmmaker. [DAWG Core Values](https://www.docaccountability.org/values), especially 2, 4 and 6, adds transparency and participant/audience care.
+- **Low - design proposals:** an economical context label, a held question, and a quiet return to the subject. Typeface, timings and whether text appears over picture are options to test against the actual film, not evidence-backed constants.
+
+## Make the evidence boundary first
+
+Load documentary mode, craft and the relevant stage skills. Log source picture and sound, not just transcript search hits. List the question, verified identity/time/place, what the participant says, what an independent source establishes, and what remains unknown. Keep source paths and source-time ranges in the plan. Do not upgrade a participant's opinion into the film's established fact. Check language before selecting or translating speech. If meaning cannot be checked, an honest source limitation is better than an invented story.
+
+Choose a narrowly answerable question: for example what this person values about an event, not whether that event changed the world. Establish only enough real context for that question. Give the participant's own reason or detail room to register. The ending can be a limited answer or an unresolved observation; do not manufacture stakes, a setback, a discovery or a triumphant payoff. The subject's natural pace may be gentle. A short contextual portrait is valid when there is no action coverage, but must be described as testimony-led, not an observational scene.
+
+## Possible picture and sound structure
+
+- A real setting/action detail can open the question when that coverage exists. Otherwise keep the face visible with a concise, sourced context label; do not fetch generic event crowds and imply they were there. Opening text may overlap the first shot rather than holding the audience in a long title sequence.
+- Let a continuous answer or a few complete statements develop the question. Preserve qualifications, chronology and who is talking. A source document, still or diagram may clarify a verified point if explicitly identified and readable; illustration is not new evidence. Generated imagery must not impersonate archival material.
+- Return to the person or the actual setting for a natural release. A final fact or source line can delimit the claim without repeating the whole film. Avoid a generic call to action unless requested. Keep detailed credits beside the sample even if a brief on-screen credit is also used.
+- Frame for the subject and context, not automatic centre punches. A portrait crop should not remove relevant hands, artifacts or another speaker. Holding a wide image inside a vertical frame is an option. Film Themes, if offered by a later version of this Look, affect treatment, never the evidence or what happened.
+- Choose calm, weighty access captions when they help. Context text, source labels, existing source lower-thirds and dialogue captions need different jobs and must not collide. Keep all readable on a phone and check reading speed, not just whether the words fit. Extend short cues into available space or regroup complete sense units; check reading speed as well as line fit. Music is optional; true room sound or silence may be the most honest accompaniment. Do not add fabricated work sounds or a dramatic score that asserts facts the footage lacks. Follow the person's Music choice.
+
+An empty vertical canvas with small, faint context lines is a failed layout, not a minimalist success. Use fewer words per heading, stronger contrast, a larger readable size and a hold long enough to understand it. Reserve detailed dates, licence URLs and production notes for accompanying credits when they would turn the picture into fine print. A source label still needs to be legible; shrinking a whole landscape composition into a phone frame does not excuse tiny text. Judge legibility on the actual composition, not a universal type-size rule.
+
+## Proof and limits
+
+Check every context claim against its source and every spoken cut against the surrounding original. Watch the export, inspect at 1 fps, check source labels/caption timing, measure the mix and run the review bundle. Report separately whether this proves a portrait, evidence essay or observed action. A single interview cannot prove the latter two. No unrelated silent interview is a reaction shot or documentary evidence. Record unverified translation, missing coverage, promotional rights and anything not heard. Approval of an edit does not itself clear public marketing use.

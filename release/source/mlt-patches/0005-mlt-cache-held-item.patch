@@ -1,0 +1,70 @@
+letitedit: when a cache item that frames still hold is given new data (an avformat clip decodes again after its
+decoder was pushed out of the cache while a shown frame kept it), mlt_cache_put moves the held item itself to the
+garbage collection and gives the owner a new one, instead of copying it there and updating it in place. The frames
+keep the item's address, so the in-place update made their release decrement the new data and the old data (a whole
+decoder: codec contexts, their threads and a hardware device) was never freed. cache_object_close releases the active
+item only for its own data. From engine-patches/mlt-cache-held-item; applies on MLT
+63218a28d21f1e64b5b9e6671b4ff9146023282c after 0004 (the framework, libmlt-7.dll).
+
+diff --git a/src/framework/mlt_cache.c b/src/framework/mlt_cache.c
+index 938794a7..49e192b7 100644
+--- a/src/framework/mlt_cache.c
++++ b/src/framework/mlt_cache.c
+@@ -131,7 +131,8 @@ static void cache_object_close(mlt_cache cache, void *object, void *data)
+     // Fetch the cache item from the active list by its owner's address
+     sprintf(key, "%p", object);
+     mlt_cache_item item = mlt_properties_get_data(cache->active, key, NULL);
+-    if (item) {
++    // A holder releasing data that is no longer the owner's current data releases its garbage item below.
++    if (item && (!data || item->data == data)) {
+         mlt_log(NULL,
+                 MLT_LOG_DEBUG,
+                 "%s: item %p object %p data %p refcount %d\n",
+@@ -385,29 +386,30 @@ void mlt_cache_put(mlt_cache cache, void *object, void *data, int size, mlt_dest
+     char key[19];
+     sprintf(key, "%p", object);
+     mlt_cache_item item = mlt_properties_get_data(cache->active, key, NULL);
++    if (item && item->refcount > 0 && item->data) {
++        // If updating the cache item but not all references are released, move the item itself
++        // to the garbage collection and give the owner a new one. The holders (frames) keep this
++        // item's address: updating it in place made their release decrement the new data, and
++        // the old data was never freed.
++        char data_key[19];
++        mlt_log(NULL,
++                MLT_LOG_DEBUG,
++                "adding to garbage collection object %p data %p\n",
++                item->object,
++                item->data);
++        sprintf(data_key, "%p", item->data);
++        // We store in the garbage collection by data address, not the owner's!
++        mlt_properties_set_data(cache->garbage, data_key, item, 0, free, NULL);
++        // Detach it from the active list without freeing it (setting the same value drops its destructor).
++        mlt_properties_set_data(cache->active, key, item, 0, NULL, NULL);
++        item = NULL;
++    }
+     if (!item) {
+         item = calloc(1, sizeof(mlt_cache_item_s));
+         if (item)
+             mlt_properties_set_data(cache->active, key, item, 0, free, NULL);
+     }
+     if (item) {
+-        // If updating the cache item but not all references are released
+-        // copy the item to the garbage collection.
+-        if (item->refcount > 0 && item->data) {
+-            mlt_cache_item orphan = calloc(1, sizeof(mlt_cache_item_s));
+-            if (orphan) {
+-                mlt_log(NULL,
+-                        MLT_LOG_DEBUG,
+-                        "adding to garbage collection object %p data %p\n",
+-                        item->object,
+-                        item->data);
+-                *orphan = *item;
+-                sprintf(key, "%p", orphan->data);
+-                // We store in the garbage collection by data address, not the owner's!
+-                mlt_properties_set_data(cache->garbage, key, orphan, 0, free, NULL);
+-            }
+-        }
+-
+         // Set/update the cache item
+         item->cache = cache;
+         item->object = object;

@@ -1,0 +1,20 @@
+letitedit: mlt_chain_attach_normalizers releases the reference mlt_factory_link gave each normalizer link once the
+chain holds its own (mlt_chain_attach), so a clip's links are freed with the clip instead of living for the rest of
+the process (about 377 Windows handles and the links' scalers and resamplers per clip). From
+engine-patches/mlt-chain-normalizer-ref; applies on MLT 63218a28d21f1e64b5b9e6671b4ff9146023282c (the framework,
+libmlt-7.dll).
+
+diff --git a/src/framework/mlt_chain.c b/src/framework/mlt_chain.c
+index fafb93db..aa3137a3 100644
+--- a/src/framework/mlt_chain.c
++++ b/src/framework/mlt_chain.c
+@@ -476,6 +476,9 @@ extern void mlt_chain_attach_normalizers(mlt_chain self)
+                 mlt_properties_set_int(MLT_LINK_PROPERTIES(link), "_loader", 1);
+                 mlt_chain_attach(self, link);
+                 mlt_chain_move_link(self, mlt_chain_link_count(self) - 1, norm_count);
++                // The chain holds its own reference now (mlt_chain_attach): release the factory's, as every other
++                // caller of mlt_chain_attach does, or the link outlives the chain.
++                mlt_link_close(link);
+                 norm_count++;
+                 break;
+             }

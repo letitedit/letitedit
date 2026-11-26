@@ -1,0 +1,54 @@
+{
+  "contract_version": "1.1",
+  "job_id": "ch-demo-learn-0001",
+  "kind": "learn",
+  "state": "done",
+  "started": "2026-11-20T01:10:00-08:00",
+  "finished": "2026-11-20T01:40:00-08:00",
+  "attempts": 1,
+  "versions": {
+    "contract": "1.1",
+    "letitedit": "20261118.3",
+    "tools": "7b0da5c5"
+  },
+  "cost": {
+    "wall_s": 1080,
+    "waited_s": 0,
+    "measured": true,
+    "ai": {
+      "engine": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "medium"
+    },
+    "tokens": {
+      "input": 19200,
+      "cache_write": 384000,
+      "cache_read": 9120000,
+      "output": 76800,
+      "total": 9600000
+    },
+    "usd_api_equivalent": 3.65,
+    "steps": 41
+  },
+  "outputs": [],
+  "output": {
+    "look": {
+      "id": "learned-quick-cut-bus-tour",
+      "name": "Quick-cut bus tour",
+      "styles": [
+        "action",
+        "talking_head"
+      ],
+      "formats": [
+        "short"
+      ],
+      "needs_footage": true,
+      "fits": "Walk-throughs of a space with quick cuts on each thing shown.",
+      "card": "C:\\Users\\Sam\\Documents\\letitedit\\My Looks\\learned-quick-cut-bus-tour"
+    },
+    "left_out": [
+      "Sound effects are not learned yet."
+    ]
+  },
+  "warnings": []
+}

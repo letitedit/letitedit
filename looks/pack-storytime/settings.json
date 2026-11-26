@@ -1,0 +1,1103 @@
+{
+  "format": "letitedit-look-settings/1",
+  "id": "pack-storytime",
+  "defaults_are": "taste",
+  "share": false,
+  "values": {
+    "format": "letitedit-style/3",
+    "name": "Storytime",
+    "description": "A told story with a setup, a build, a turn and a payoff; calm on screen so the story carries it.",
+    "colors": {
+      "primary": "#FFFFFF",
+      "secondary": "#FFD9A8",
+      "accent": "#F08A3C",
+      "dark": "#1A120C",
+      "light": "#FFFFFF",
+      "cream": "#F7EBDD",
+      "brown": "#2B1D14"
+    },
+    "fonts": {
+      "heading": {
+        "family": "Fraunces",
+        "weight": 800
+      },
+      "body": {
+        "family": "Poppins",
+        "weight": 500
+      },
+      "captions": {
+        "family": "Poppins",
+        "weight": 600
+      }
+    },
+    "captions": {
+      "font": "captions",
+      "size": 56,
+      "fill": "light",
+      "outline": {
+        "color": "dark",
+        "width": 3
+      },
+      "shadow": {
+        "color": "#00000099",
+        "x": 2,
+        "y": 3
+      },
+      "background": null,
+      "position": "bottom",
+      "margin": 0.36,
+      "max_chars": 15,
+      "max_lines": 2,
+      "case": "as_spoken"
+    },
+    "text": {
+      "font": "heading",
+      "size": 84,
+      "fill": "cream",
+      "outline": {
+        "color": "brown",
+        "width": 6
+      }
+    },
+    "graphics": {
+      "word_captions": {
+        "style": "karaoke",
+        "font": "captions",
+        "size": 60,
+        "fill": "light",
+        "highlight": "secondary",
+        "outline": "dark",
+        "outline_width": 3,
+        "shadow": "#00000099",
+        "position": 0.58,
+        "max_width": 0.8,
+        "uppercase": false,
+        "pop_scale": 1.0
+      }
+    },
+    "music": {
+      "zones": {
+        "talk": -24.0,
+        "montage": -10.0,
+        "quiet": -24.0,
+        "swell": -3.0,
+        "end": -8.0
+      },
+      "duck_under_speech": true,
+      "merge_gap": 4.0,
+      "attack": 0.3,
+      "release": 0.9,
+      "crossfade": 3.0,
+      "fade_in": 1.5,
+      "fade_out": 3.0,
+      "dialogue_lufs": null,
+      "sources": [],
+      "notes": "A soft acoustic or lo-fi bed, well under the voice [MON, RES]; it drops out for the beat before the turn and comes back for the payoff [ITE].",
+      "likes": [],
+      "avoid": [],
+      "theme": null
+    },
+    "sfx": {
+      "gain_db": -14.0,
+      "map": {
+        "paper": "assets/paper.wav",
+        "swish": "assets/whoosh_fast_02.mp3",
+        "record_scratch": "assets/record-scratch_dj_03.mp3",
+        "rewind": "assets/rewind_tape_02_0.15-1.35.wav",
+        "chime": "assets/chime_sparkle_03.mp3",
+        "thump": "assets/bonk_soft-thud_01.mp3",
+        "pop_hi": "assets/pop_pluck_02.mp3",
+        "heartbeat": "assets/heartbeat.wav"
+      },
+      "events": {
+        "popup": "pop_hi",
+        "text": "paper",
+        "transition": "swish",
+        "punchline": "thump",
+        "reveal": "chime",
+        "place": "paper",
+        "flash": "swish"
+      }
+    },
+    "editing": {
+      "max_pause": 0.5,
+      "pad_in": 0.1,
+      "pad_out": 0.25,
+      "blur_pad": true,
+      "transitions": "cut",
+      "pace": "medium",
+      "intro": null,
+      "outro": null
+    },
+    "export": {
+      "preset": "social_h264",
+      "loudness": -14.0
+    },
+    "look": {
+      "about": "Warm and soft - a little golden, a touch of grain, like a memory being told.",
+      "effects": [
+        {
+          "filter": "color",
+          "params": {
+            "lift_r": 0.01,
+            "lift_g": 0.005,
+            "lift_b": 0.0,
+            "gamma_r": 1.02,
+            "gamma_g": 1.0,
+            "gamma_b": 0.97,
+            "gain_r": 1.04,
+            "gain_g": 1.0,
+            "gain_b": 0.95
+          }
+        },
+        {
+          "filter": "hue_lightness_saturation",
+          "params": {
+            "av.s": 1.04
+          }
+        },
+        {
+          "filter": "grain",
+          "params": {
+            "noise": 6,
+            "contrast": 100,
+            "brightness": 100
+          }
+        }
+      ]
+    },
+    "taste": "",
+    "label": "Storytime",
+    "summary": "One person tells a story to camera - a title line that stays up, calm captions, slight zooms, a beat before the twist.",
+    "kind": "short",
+    "tags": [
+      "storytime",
+      "story",
+      "talking head",
+      "captions",
+      "warm",
+      "shorts"
+    ],
+    "preview": "preview.jpg",
+    "recipe": "recipe.md",
+    "credits": [
+      {
+        "file": "assets/paper.wav",
+        "source": "synthesised by tools\\styles\\sounds.py (paper)",
+        "licence": "letitedit's own (generated)"
+      },
+      {
+        "file": "assets/record-scratch_dj_03.mp3",
+        "source": "Freesound.org: To Hell With Vinyl.wav by dland (freesound #74385) (https://freesound.org/people/dland/sounds/74385/); copy of record-scratch_dj_03.mp3 from the local sound library (02 Cartoon & Comedy)",
+        "licence": "CC0 1.0 (Creative Commons 0)"
+      },
+      {
+        "file": "assets/heartbeat.wav",
+        "source": "synthesised by tools\\styles\\sounds.py (heartbeat)",
+        "licence": "letitedit's own (generated)"
+      },
+      {
+        "file": "assets/whoosh_fast_02.mp3",
+        "source": "Freesound.org: swosh-22.flac by qubodup (freesound #60009) (https://freesound.org/people/qubodup/sounds/60009/); copy of whoosh_fast_02.mp3 from the local sound library (08 Whooshes & Transitions)",
+        "licence": "CC0 1.0 (Creative Commons 0)"
+      },
+      {
+        "file": "assets/rewind_tape_02_0.15-1.35.wav",
+        "source": "Freesound.org: record rewind.mp3 by richienoodles (freesound #178555) (https://freesound.org/people/richienoodles/sounds/178555/); trimmed copy (0.15-1.35 s) of rewind_tape_02.mp3 from the local sound library (08 Whooshes & Transitions)",
+        "licence": "CC0 1.0 (Creative Commons 0)"
+      },
+      {
+        "file": "assets/chime_sparkle_03.mp3",
+        "source": "Freesound.org: Fantasy_ui_Button_1.wav by ZenithInfinitiveStudios (freesound #376747) (https://freesound.org/people/ZenithInfinitiveStudios/sounds/376747/); copy of chime_sparkle_03.mp3 from the local sound library (04 Dings & Sparkles)",
+        "licence": "CC0 1.0 (Creative Commons 0)"
+      },
+      {
+        "file": "assets/bonk_soft-thud_01.mp3",
+        "source": "Kenney.nl: Kenney impact-sounds: Audio\\impactSoft_heavy_000.ogg (https://kenney.nl/assets/impact-sounds); copy of bonk_soft-thud_01.mp3 from the local sound library (02 Cartoon & Comedy)",
+        "licence": "CC0 1.0 (public domain)"
+      },
+      {
+        "file": "assets/pop_pluck_02.mp3",
+        "source": "Kenney.nl: Kenney interface-sounds: Audio\\pluck_002.ogg (https://kenney.nl/assets/interface-sounds); copy of pop_pluck_02.mp3 from the local sound library (02 Cartoon & Comedy)",
+        "licence": "CC0 1.0 (public domain)"
+      },
+      {
+        "file": "preview.jpg",
+        "source": "Original preview imagery; hands, objects, places and titles only",
+        "licence": "Original letitedit footage: hands, objects, places and titles only; no faces"
+      }
+    ],
+    "effects": {
+      "story_label": {
+        "kind": "popup",
+        "about": "The story's name in one short line near the top, on from the end of the hook to the last line [EOP].",
+        "position": [
+          0.5,
+          0.185
+        ],
+        "size": 0.62,
+        "in": "fade",
+        "out": "fade",
+        "in_s": 0.35,
+        "out_s": 0.3,
+        "font": "heading",
+        "fill": "brown",
+        "stroke": null,
+        "stroke_width": 0,
+        "outline": 16,
+        "outline_color": "cream",
+        "shadow": true,
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "hook"
+          ],
+          "density": {
+            "per_min": 1
+          },
+          "duration_s": [
+            5,
+            180
+          ],
+          "never": [
+            "over_face"
+          ],
+          "when": "Once per video. Five to seven words that name the story, not the ending (\"The fan that wouldn't stay fixed\"). Give it as asset {text} and len (to the end of the video)."
+        }
+      },
+      "time_card": {
+        "kind": "text_pop",
+        "about": "A time or place jump as a short card under the label (\"9 DAYS LATER\", \"THAT NIGHT\").",
+        "position": [
+          0.5,
+          0.29
+        ],
+        "size": 0.5,
+        "font": "heading",
+        "fill": "cream",
+        "stroke": "brown",
+        "stroke_width": 10,
+        "tilt": 0,
+        "in": "slide_up",
+        "out": "fade",
+        "hold_s": 1.4,
+        "sfx": "paper",
+        "rules": {
+          "triggers": [
+            "topic_change"
+          ],
+          "density": {
+            "per_min": 3,
+            "min_gap_s": 8.0
+          },
+          "duration_s": [
+            1.2,
+            2.6
+          ],
+          "never": [
+            "over_face",
+            "over_captions"
+          ],
+          "when": "Only where the story jumps in time or place and the words don't say so. Upper case, three words or fewer."
+        }
+      },
+      "slight_zoom": {
+        "kind": "zoom_punch",
+        "about": "A gentle push-in (108%) that holds to the next cut, on every other cut [EOP; CLU 5-10%].",
+        "scale": 1.08,
+        "ramp_s": 0.25,
+        "rules": {
+          "triggers": [
+            "cut",
+            "emphasis"
+          ],
+          "density": {
+            "per_10s": 3,
+            "min_gap_s": 2.0
+          },
+          "when": "Every other cut, so jump cuts read as a change of framing, not a flicker; not on the turn or the payoff line (tight_zoom has those)."
+        }
+      },
+      "tight_zoom": {
+        "kind": "zoom_punch",
+        "about": "A closer push (114%) for the turn and the payoff.",
+        "scale": 1.14,
+        "ramp_s": 0.35,
+        "rules": {
+          "triggers": [
+            "reveal",
+            "punchline",
+            "emphasis"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 10.0
+          },
+          "when": "The line where it turns and the payoff line; never anywhere else, so it means something."
+        }
+      },
+      "turn_sting": {
+        "kind": "sfx",
+        "about": "A record scratch right before the twist, with the music dropping out.",
+        "sfx": "record_scratch",
+        "sfx_offset_s": -0.6,
+        "rules": {
+          "triggers": [
+            "reveal",
+            "topic_change"
+          ],
+          "density": {
+            "per_min": 1
+          },
+          "when": "Once, on the beat before the turn (\"...and then\"); the music drops out under it (protect drop_out). When a time_card marks the turn, give the card this sound instead (sfx record_scratch, sfx_offset_s -0.6) - one beat, one effect."
+        }
+      },
+      "flashback": {
+        "kind": "flash",
+        "about": "A soft flash with a rewind sound when the story jumps back in time.",
+        "color": "cream",
+        "len": 0.3,
+        "opacity": 0.6,
+        "sfx": "rewind",
+        "sfx_offset_s": -1.0,
+        "rules": {
+          "triggers": [
+            "topic_change"
+          ],
+          "density": {
+            "per_min": 1
+          },
+          "when": "Only when the telling goes back in time (a flashback); at most once."
+        }
+      },
+      "payoff_chime": {
+        "kind": "sfx",
+        "about": "A soft chime right after the payoff word.",
+        "sfx": "chime",
+        "sfx_offset_s": 0.15,
+        "rules": {
+          "triggers": [
+            "reveal",
+            "ending",
+            "punchline"
+          ],
+          "density": {
+            "per_min": 1
+          },
+          "when": "After the payoff line lands, never over its words."
+        }
+      },
+      "thing_pop": {
+        "kind": "popup",
+        "about": "An occasional sticker of a key object in the story.",
+        "size": 0.2,
+        "in": "pop",
+        "out": "shrink",
+        "hold_s": 1.2,
+        "outline": 10,
+        "sfx": "pop_hi",
+        "rules": {
+          "triggers": [
+            "mention"
+          ],
+          "density": {
+            "per_min": 3,
+            "min_gap_s": 8.0
+          },
+          "placement": {
+            "zone": [
+              0.78,
+              0.4
+            ],
+            "avoid": [
+              "face",
+              "captions",
+              "covered"
+            ]
+          },
+          "duration_s": [
+            1.0,
+            2.2
+          ],
+          "never": [
+            "over_face",
+            "over_captions"
+          ],
+          "when": "The two or three objects the story turns on (the broken part, the gift); not every noun."
+        }
+      },
+      "cutaway": {
+        "kind": "broll",
+        "about": "A short cutaway to what is being described, the voice carrying on.",
+        "fit": "cover",
+        "len": 2.0,
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "mention",
+            "reveal"
+          ],
+          "density": {
+            "per_min": 4,
+            "min_gap_s": 6.0
+          },
+          "duration_s": [
+            1.2,
+            4.0
+          ],
+          "never": [
+            {
+              "first_s": 2.0
+            }
+          ],
+          "when": "When there is footage of exactly what is told, within 1.5 s of the words [MON]; never over the teller's reaction at the turn or the payoff."
+        }
+      }
+    },
+    "fx": {
+      "track": "Effects",
+      "sfx_track": "Effect sounds",
+      "broll_track": "B-roll",
+      "density": {
+        "per_10s": 3,
+        "per_min": null,
+        "min_gap_s": 1.5
+      },
+      "safe_zone": "phone",
+      "never": [
+        "outside_safe_zone",
+        "overlapping"
+      ],
+      "rhythm": "A slight zoom on every other cut; labels only where time or place jumps; one sting at the turn."
+    },
+    "popups": {
+      "track": null,
+      "sfx_track": null,
+      "min_gap_s": 2.0,
+      "max_total": null,
+      "entries": []
+    },
+    "hook": {
+      "max_s": 3.0,
+      "approaches": [
+        "stakes",
+        "question",
+        "quote",
+        "result_first"
+      ],
+      "text": {
+        "max_words": 7,
+        "case": "as_said",
+        "item": {
+          "graphic": {
+            "template": "popup",
+            "params": {
+              "text": "{text}",
+              "x": 0.5,
+              "y": 0.185,
+              "size": 0.62,
+              "in": "fade",
+              "out": "fade",
+              "font": "heading",
+              "fill": "brown",
+              "stroke_width": 0,
+              "outline": 16,
+              "outline_color": "cream",
+              "shadow": true
+            }
+          }
+        }
+      },
+      "rules": "Open on the line that makes you need the rest (the problem, the strangest moment, the question) - no greeting [EOP, JH]. The story label is the hook text and stays up for the whole video, so the hook itself needs no other text.",
+      "avoid": [
+        "greetings",
+        "so this happened",
+        "backstory first",
+        "logo cards"
+      ]
+    },
+    "broll": {
+      "amount": "some",
+      "kinds": [],
+      "favorites": "",
+      "notes": ""
+    },
+    "shots": {
+      "framing": "medium",
+      "camera": "handheld",
+      "punch_ins": "some",
+      "notes": ""
+    },
+    "signature": {
+      "touches": []
+    },
+    "measured": {},
+    "provenance": {
+      "made_by": "letitedit style library, wave 1",
+      "date": "2026-10-29",
+      "measured": "none yet (no reference videos in style-references\\storytime)",
+      "sources": [
+        {
+          "url": "https://editorop.com/blog/storytime-reels",
+          "title": "EditorOP storytime Reels",
+          "used_for": "the 45 s beat map, the persistent story line, slight zoom every other cut, beats before the turn and payoff",
+          "licence": "none found (structure and numbers only)"
+        },
+        {
+          "url": "https://blitzcutai.com/blog/best-caption-style-instagram-reels-2026",
+          "title": "BlitzCut Reels captions",
+          "used_for": "calm caption look and size",
+          "licence": "none found (numbers only)"
+        },
+        {
+          "url": "https://monty.fast/blog/how-to-edit-talking-head-videos/",
+          "title": "Monty talking-head guide",
+          "used_for": "b-roll timing and music level",
+          "licence": "none found (numbers only)"
+        }
+      ],
+      "notes": "EditorOP's arc is one made-up worked example from a picked sample of winners; the story rules in letitedit-craft and letitedit-modes (story-vlog) carry more weight. Tags and checks in ..\\SOURCES.md."
+    }
+  },
+  "asset_root": "resources",
+  "files": {
+    "assets/bonk_soft-thud_01.mp3": "resources/43c672215aa5cc4bf9434400.mp3",
+    "assets/chime_sparkle_03.mp3": "resources/a428a4933fcc77c6ba33d4ec.mp3",
+    "assets/heartbeat.wav": "resources/391d60aa235b121a212c8983.wav",
+    "assets/paper.wav": "resources/38329503578e5e93e92a58dd.wav",
+    "assets/pop_pluck_02.mp3": "resources/dd86d57d68f15557861d6553.mp3",
+    "assets/record-scratch_dj_03.mp3": "resources/e3f051c2ddebe433302051f7.mp3",
+    "assets/rewind_tape_02_0.15-1.35.wav": "resources/e7dc58fbd0c4d4f920f346f9.wav",
+    "assets/whoosh_fast_02.mp3": "resources/b28911d6f30c5f10b353b924.mp3",
+    "preview.jpg": "resources/b2d1ed772d475d50c6589684.jpg",
+    "recipe.md": "recipe.md"
+  },
+  "links": {
+    "recipe": "recipe.md",
+    "preview": "preview.jpg"
+  },
+  "legacy": {
+    "format": "letitedit-style/3",
+    "source": "style.yaml",
+    "pack": "storytime",
+    "data": {
+      "format": "letitedit-style/3",
+      "name": "Storytime",
+      "label": "Storytime",
+      "summary": "One person tells a story to camera - a title line that stays up, calm captions, slight zooms, a beat before the twist.",
+      "kind": "short",
+      "tags": [
+        "storytime",
+        "story",
+        "talking head",
+        "captions",
+        "warm",
+        "shorts"
+      ],
+      "recipe": "recipe.md",
+      "preview": "preview.jpg",
+      "description": "A told story with a setup, a build, a turn and a payoff; calm on screen so the story carries it.",
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#FFD9A8",
+        "accent": "#F08A3C",
+        "cream": "#F7EBDD",
+        "brown": "#2B1D14",
+        "dark": "#1A120C",
+        "light": "#FFFFFF"
+      },
+      "fonts": {
+        "heading": {
+          "family": "Fraunces",
+          "weight": 800
+        },
+        "body": {
+          "family": "Poppins",
+          "weight": 500
+        },
+        "captions": {
+          "family": "Poppins",
+          "weight": 600
+        }
+      },
+      "graphics": {
+        "word_captions": {
+          "style": "karaoke",
+          "font": "captions",
+          "size": 60,
+          "fill": "light",
+          "highlight": "secondary",
+          "outline": "dark",
+          "outline_width": 3,
+          "shadow": "#00000099",
+          "position": 0.58,
+          "max_width": 0.8,
+          "uppercase": false,
+          "pop_scale": 1.0
+        }
+      },
+      "captions": {
+        "font": "captions",
+        "size": 56,
+        "fill": "light",
+        "outline": {
+          "color": "dark",
+          "width": 3
+        },
+        "shadow": {
+          "color": "#00000099",
+          "x": 2,
+          "y": 3
+        },
+        "position": "bottom",
+        "margin": 0.36,
+        "max_chars": 15,
+        "max_lines": 2,
+        "case": "as_spoken"
+      },
+      "text": {
+        "font": "heading",
+        "size": 84,
+        "fill": "cream",
+        "outline": {
+          "color": "brown",
+          "width": 6
+        }
+      },
+      "editing": {
+        "max_pause": 0.5,
+        "pad_in": 0.1,
+        "pad_out": 0.25,
+        "blur_pad": true,
+        "transitions": "cut",
+        "pace": "medium"
+      },
+      "music": {
+        "zones": {
+          "talk": -24.0,
+          "montage": -10.0,
+          "end": -8.0
+        },
+        "notes": "A soft acoustic or lo-fi bed, well under the voice [MON, RES]; it drops out for the beat before the turn and comes back for the payoff [ITE]."
+      },
+      "export": {
+        "preset": "social_h264",
+        "loudness": -14.0
+      },
+      "look": {
+        "about": "Warm and soft - a little golden, a touch of grain, like a memory being told.",
+        "effects": [
+          {
+            "filter": "color",
+            "params": {
+              "lift_r": 0.01,
+              "lift_g": 0.005,
+              "lift_b": 0.0,
+              "gamma_r": 1.02,
+              "gamma_g": 1.0,
+              "gamma_b": 0.97,
+              "gain_r": 1.04,
+              "gain_g": 1.0,
+              "gain_b": 0.95
+            }
+          },
+          {
+            "filter": "hue_lightness_saturation",
+            "params": {
+              "av.s": 1.04
+            }
+          },
+          {
+            "filter": "grain",
+            "params": {
+              "noise": 6,
+              "contrast": 100,
+              "brightness": 100
+            }
+          }
+        ]
+      },
+      "sfx": {
+        "gain_db": -14.0,
+        "map": {
+          "paper": "assets/paper.wav",
+          "swish": "assets/whoosh_fast_02.mp3",
+          "record_scratch": "assets/record-scratch_dj_03.mp3",
+          "rewind": "assets/rewind_tape_02_0.15-1.35.wav",
+          "chime": "assets/chime_sparkle_03.mp3",
+          "thump": "assets/bonk_soft-thud_01.mp3",
+          "pop_hi": "assets/pop_pluck_02.mp3",
+          "heartbeat": "assets/heartbeat.wav"
+        },
+        "events": {
+          "popup": "pop_hi",
+          "text": "paper",
+          "transition": "swish",
+          "punchline": "thump",
+          "reveal": "chime",
+          "place": "paper",
+          "flash": "swish"
+        }
+      },
+      "fx": {
+        "track": "Effects",
+        "sfx_track": "Effect sounds",
+        "broll_track": "B-roll",
+        "density": {
+          "per_10s": 3,
+          "min_gap_s": 1.5
+        },
+        "safe_zone": "phone",
+        "never": [
+          "outside_safe_zone",
+          "overlapping"
+        ],
+        "rhythm": "A slight zoom on every other cut; labels only where time or place jumps; one sting at the turn."
+      },
+      "effects": {
+        "story_label": {
+          "kind": "popup",
+          "about": "The story's name in one short line near the top, on from the end of the hook to the last line [EOP].",
+          "position": [
+            0.5,
+            0.185
+          ],
+          "size": 0.62,
+          "in": "fade",
+          "out": "fade",
+          "in_s": 0.35,
+          "out_s": 0.3,
+          "font": "heading",
+          "fill": "brown",
+          "stroke": null,
+          "stroke_width": 0,
+          "outline": 16,
+          "outline_color": "cream",
+          "shadow": true,
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "hook"
+            ],
+            "density": {
+              "per_min": 1
+            },
+            "duration_s": [
+              5,
+              180
+            ],
+            "never": [
+              "over_face"
+            ],
+            "when": "Once per video. Five to seven words that name the story, not the ending (\"The fan that wouldn't stay fixed\"). Give it as asset {text} and len (to the end of the video)."
+          }
+        },
+        "time_card": {
+          "kind": "text_pop",
+          "about": "A time or place jump as a short card under the label (\"9 DAYS LATER\", \"THAT NIGHT\").",
+          "position": [
+            0.5,
+            0.29
+          ],
+          "size": 0.5,
+          "font": "heading",
+          "fill": "cream",
+          "stroke": "brown",
+          "stroke_width": 10,
+          "tilt": 0,
+          "in": "slide_up",
+          "out": "fade",
+          "hold_s": 1.4,
+          "sfx": "paper",
+          "rules": {
+            "triggers": [
+              "topic_change"
+            ],
+            "density": {
+              "per_min": 3,
+              "min_gap_s": 8.0
+            },
+            "duration_s": [
+              1.2,
+              2.6
+            ],
+            "never": [
+              "over_face",
+              "over_captions"
+            ],
+            "when": "Only where the story jumps in time or place and the words don't say so. Upper case, three words or fewer."
+          }
+        },
+        "slight_zoom": {
+          "kind": "zoom_punch",
+          "about": "A gentle push-in (108%) that holds to the next cut, on every other cut [EOP; CLU 5-10%].",
+          "scale": 1.08,
+          "ramp_s": 0.25,
+          "rules": {
+            "triggers": [
+              "cut",
+              "emphasis"
+            ],
+            "density": {
+              "per_10s": 3,
+              "min_gap_s": 2.0
+            },
+            "when": "Every other cut, so jump cuts read as a change of framing, not a flicker; not on the turn or the payoff line (tight_zoom has those)."
+          }
+        },
+        "tight_zoom": {
+          "kind": "zoom_punch",
+          "about": "A closer push (114%) for the turn and the payoff.",
+          "scale": 1.14,
+          "ramp_s": 0.35,
+          "rules": {
+            "triggers": [
+              "reveal",
+              "punchline",
+              "emphasis"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 10.0
+            },
+            "when": "The line where it turns and the payoff line; never anywhere else, so it means something."
+          }
+        },
+        "turn_sting": {
+          "kind": "sfx",
+          "about": "A record scratch right before the twist, with the music dropping out.",
+          "sfx": "record_scratch",
+          "sfx_offset_s": -0.6,
+          "rules": {
+            "triggers": [
+              "reveal",
+              "topic_change"
+            ],
+            "density": {
+              "per_min": 1
+            },
+            "when": "Once, on the beat before the turn (\"...and then\"); the music drops out under it (protect drop_out). When a time_card marks the turn, give the card this sound instead (sfx record_scratch, sfx_offset_s -0.6) - one beat, one effect."
+          }
+        },
+        "flashback": {
+          "kind": "flash",
+          "about": "A soft flash with a rewind sound when the story jumps back in time.",
+          "color": "cream",
+          "len": 0.3,
+          "opacity": 0.6,
+          "sfx": "rewind",
+          "sfx_offset_s": -1.0,
+          "rules": {
+            "triggers": [
+              "topic_change"
+            ],
+            "density": {
+              "per_min": 1
+            },
+            "when": "Only when the telling goes back in time (a flashback); at most once."
+          }
+        },
+        "payoff_chime": {
+          "kind": "sfx",
+          "about": "A soft chime right after the payoff word.",
+          "sfx": "chime",
+          "sfx_offset_s": 0.15,
+          "rules": {
+            "triggers": [
+              "reveal",
+              "ending",
+              "punchline"
+            ],
+            "density": {
+              "per_min": 1
+            },
+            "when": "After the payoff line lands, never over its words."
+          }
+        },
+        "thing_pop": {
+          "kind": "popup",
+          "about": "An occasional sticker of a key object in the story.",
+          "size": 0.2,
+          "in": "pop",
+          "out": "shrink",
+          "hold_s": 1.2,
+          "outline": 10,
+          "sfx": "pop_hi",
+          "rules": {
+            "triggers": [
+              "mention"
+            ],
+            "density": {
+              "per_min": 3,
+              "min_gap_s": 8.0
+            },
+            "placement": {
+              "zone": [
+                0.78,
+                0.4
+              ],
+              "avoid": [
+                "face",
+                "captions",
+                "covered"
+              ]
+            },
+            "duration_s": [
+              1.0,
+              2.2
+            ],
+            "never": [
+              "over_face",
+              "over_captions"
+            ],
+            "when": "The two or three objects the story turns on (the broken part, the gift); not every noun."
+          }
+        },
+        "cutaway": {
+          "kind": "broll",
+          "about": "A short cutaway to what is being described, the voice carrying on.",
+          "fit": "cover",
+          "len": 2.0,
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "mention",
+              "reveal"
+            ],
+            "density": {
+              "per_min": 4,
+              "min_gap_s": 6.0
+            },
+            "duration_s": [
+              1.2,
+              4.0
+            ],
+            "never": [
+              {
+                "first_s": 2.0
+              }
+            ],
+            "when": "When there is footage of exactly what is told, within 1.5 s of the words [MON]; never over the teller's reaction at the turn or the payoff."
+          }
+        }
+      },
+      "popups": {
+        "min_gap_s": 2.0,
+        "entries": []
+      },
+      "hook": {
+        "max_s": 3.0,
+        "approaches": [
+          "stakes",
+          "question",
+          "quote",
+          "result_first"
+        ],
+        "text": {
+          "max_words": 7,
+          "case": "as_said",
+          "item": {
+            "graphic": {
+              "template": "popup",
+              "params": {
+                "text": "{text}",
+                "x": 0.5,
+                "y": 0.185,
+                "size": 0.62,
+                "in": "fade",
+                "out": "fade",
+                "font": "heading",
+                "fill": "brown",
+                "stroke_width": 0,
+                "outline": 16,
+                "outline_color": "cream",
+                "shadow": true
+              }
+            }
+          }
+        },
+        "rules": "Open on the line that makes you need the rest (the problem, the strangest moment, the question) - no greeting [EOP, JH]. The story label is the hook text and stays up for the whole video, so the hook itself needs no other text.",
+        "avoid": [
+          "greetings",
+          "so this happened",
+          "backstory first",
+          "logo cards"
+        ]
+      },
+      "credits": [
+        {
+          "file": "assets/paper.wav",
+          "source": "synthesised by tools\\styles\\sounds.py (paper)",
+          "licence": "letitedit's own (generated)"
+        },
+        {
+          "file": "assets/record-scratch_dj_03.mp3",
+          "source": "Freesound.org: To Hell With Vinyl.wav by dland (freesound #74385) (https://freesound.org/people/dland/sounds/74385/); copy of record-scratch_dj_03.mp3 from the local sound library (02 Cartoon & Comedy)",
+          "licence": "CC0 1.0 (Creative Commons 0)"
+        },
+        {
+          "file": "assets/heartbeat.wav",
+          "source": "synthesised by tools\\styles\\sounds.py (heartbeat)",
+          "licence": "letitedit's own (generated)"
+        },
+        {
+          "file": "assets/whoosh_fast_02.mp3",
+          "source": "Freesound.org: swosh-22.flac by qubodup (freesound #60009) (https://freesound.org/people/qubodup/sounds/60009/); copy of whoosh_fast_02.mp3 from the local sound library (08 Whooshes & Transitions)",
+          "licence": "CC0 1.0 (Creative Commons 0)"
+        },
+        {
+          "file": "assets/rewind_tape_02_0.15-1.35.wav",
+          "source": "Freesound.org: record rewind.mp3 by richienoodles (freesound #178555) (https://freesound.org/people/richienoodles/sounds/178555/); trimmed copy (0.15-1.35 s) of rewind_tape_02.mp3 from the local sound library (08 Whooshes & Transitions)",
+          "licence": "CC0 1.0 (Creative Commons 0)"
+        },
+        {
+          "file": "assets/chime_sparkle_03.mp3",
+          "source": "Freesound.org: Fantasy_ui_Button_1.wav by ZenithInfinitiveStudios (freesound #376747) (https://freesound.org/people/ZenithInfinitiveStudios/sounds/376747/); copy of chime_sparkle_03.mp3 from the local sound library (04 Dings & Sparkles)",
+          "licence": "CC0 1.0 (Creative Commons 0)"
+        },
+        {
+          "file": "assets/bonk_soft-thud_01.mp3",
+          "source": "Kenney.nl: Kenney impact-sounds: Audio\\impactSoft_heavy_000.ogg (https://kenney.nl/assets/impact-sounds); copy of bonk_soft-thud_01.mp3 from the local sound library (02 Cartoon & Comedy)",
+          "licence": "CC0 1.0 (public domain)"
+        },
+        {
+          "file": "assets/pop_pluck_02.mp3",
+          "source": "Kenney.nl: Kenney interface-sounds: Audio\\pluck_002.ogg (https://kenney.nl/assets/interface-sounds); copy of pop_pluck_02.mp3 from the local sound library (02 Cartoon & Comedy)",
+          "licence": "CC0 1.0 (public domain)"
+        },
+        {
+          "file": "preview.jpg",
+          "source": "Original preview imagery; hands, objects, places and titles only",
+          "licence": "Original letitedit footage: hands, objects, places and titles only; no faces"
+        }
+      ],
+      "measured": {},
+      "provenance": {
+        "made_by": "letitedit style library, wave 1",
+        "date": "2026-10-29",
+        "measured": "none yet (no reference videos in style-references\\storytime)",
+        "sources": [
+          {
+            "url": "https://editorop.com/blog/storytime-reels",
+            "title": "EditorOP storytime Reels",
+            "used_for": "the 45 s beat map, the persistent story line, slight zoom every other cut, beats before the turn and payoff",
+            "licence": "none found (structure and numbers only)"
+          },
+          {
+            "url": "https://blitzcutai.com/blog/best-caption-style-instagram-reels-2026",
+            "title": "BlitzCut Reels captions",
+            "used_for": "calm caption look and size",
+            "licence": "none found (numbers only)"
+          },
+          {
+            "url": "https://monty.fast/blog/how-to-edit-talking-head-videos/",
+            "title": "Monty talking-head guide",
+            "used_for": "b-roll timing and music level",
+            "licence": "none found (numbers only)"
+          }
+        ],
+        "notes": "EditorOP's arc is one made-up worked example from a picked sample of winners; the story rules in letitedit-craft and letitedit-modes (story-vlog) carry more weight. Tags and checks in ..\\SOURCES.md."
+      }
+    }
+  }
+}

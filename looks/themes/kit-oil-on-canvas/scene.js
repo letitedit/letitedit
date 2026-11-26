@@ -1,0 +1,12 @@
+const O = M.look.paintedOil.start(c.w, c.h), C = O.palette, u = K(1), hz = Y(640), S = O.oval(SUN.x, SUN.y, SUN.r, SUN.r, 22);
+const pic = O.canvas('boat');
+O.drawing(pic, HULL.concat([HULL[0]]), {seed: 2, w: 3*u});
+O.lay(pic, O.strokes({region: SKY, step: 90*u, len: 260*u, w: 90*u, dir: () => -.15, color: (x, y) => O.mix('#3f6f9a', '#e9c58a', (y - Y(0)) / K(640)), seed: 5, load: 1.1, dry: .5, impasto: .05, soft: .3, jit: .08}), {per: 1});
+O.lay(pic, O.strokes({region: SEA, step: 70*u, len: 240*u, w: 60*u, dir: () => .02, color: (x, y) => O.mix('#3a7088', '#17344a', (y - hz) / K(440)), seed: 8, impasto: .2, dry: .4}), {per: .7});
+O.lay(pic, O.strokes({region: HILL, step: 40*u, len: 120*u, w: 40*u, dir: () => -.5, color: (x, y) => O.mix('#8a9a55', '#3f5230', (x - X(0)) / K(640)), seed: 9, impasto: .25, dry: .3}), {clip: HILL, per: .9});
+O.lay(pic, O.strokes({region: S, step: 24*u, len: 60*u, w: 26*u, dir: (x, y) => Math.atan2(y - SUN.y, x - SUN.x) + 1.57, color: () => '#f4e0a0', seed: 10, impasto: .9, dry: .25}), {clip: S, per: 1.2});
+O.lay(pic, O.strokes({region: SAIL, step: 24*u, len: 90*u, w: 28*u, dir: () => 1.2, color: (x, y) => O.mix('#f4ecd8', '#b8a88a', (x - X(580)) / K(190)), seed: 11, impasto: .6, dry: .3}), {clip: SAIL, per: .9});
+O.lay(pic, O.strokes({region: JIB, step: 24*u, len: 80*u, w: 24*u, dir: () => 1.4, color: () => '#c9803f', seed: 12, impasto: .5, dry: .3}), {clip: JIB, per: .9});
+O.lay(pic, O.strokes({region: HULL, step: 24*u, len: 110*u, w: 28*u, dir: () => .02, color: (x, y) => O.mix('#a8402a', '#3a1a12', (y - Y(700)) / K(100)), seed: 13, impasto: .6, dry: .25}), {clip: HULL, per: .9});
+O.lay(pic, [{ctrl: [MAST[1], [X(566), Y(500)], MAST[0]], w: 11*u, c0: '#2e1f13', load: 1, impasto: .6, seed: 90}], {per: 3});
+return (t) => { O.begin(g); pic.draw(g, {p: Math.min(1, t / 5)}); };

@@ -1,0 +1,308 @@
+{
+  "id": "youtube",
+  "name": "YouTube (long-form)",
+  "schema": "letitedit-platform/1",
+  "checked": "2026-10-19",
+  "video": {
+    "aspect_ratios": {
+      "value": [
+        "16:9 (standard on computers)",
+        "vertical and square accepted; player adapts"
+      ],
+      "source": "https://support.google.com/youtube/answer/1722171",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "Help page also says not to add black bars or padding to the file."
+    },
+    "resolutions": {
+      "value": [
+        "7680x4320",
+        "3840x2160",
+        "2560x1440",
+        "1920x1080",
+        "1280x720",
+        "854x480",
+        "640x360",
+        "426x240"
+      ],
+      "source": "https://support.google.com/youtube/answer/6375112",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "Listed as the 16:9 recommended resolutions."
+    },
+    "frame_rates": {
+      "value": "Upload at the recorded frame rate; common: 24, 25, 30, 48, 50, 60 (others accepted). Deinterlace first.",
+      "source": "https://support.google.com/youtube/answer/1722171",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "min_length_s": {
+      "value": null,
+      "source": "https://support.google.com/youtube/answer/71673",
+      "checked": "2026-10-19",
+      "status": "not documented"
+    },
+    "max_length_s": {
+      "value": 43200,
+      "source": "https://support.google.com/youtube/answer/71673",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "256 GB or 12 hours, whichever is less; unverified accounts limited to 15 minutes."
+    },
+    "max_file_size_bytes": {
+      "value": 274877906944,
+      "source": "https://support.google.com/youtube/answer/71673",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "256 GB"
+    },
+    "container": {
+      "value": "MP4, no edit lists, moov atom at the front (fast start)",
+      "source": "https://support.google.com/youtube/answer/1722171",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "video_codec": {
+      "value": "H.264, progressive, High Profile, 2 consecutive B-frames, closed GOP of half the frame rate, CABAC, variable bitrate, 4:2:0",
+      "source": "https://support.google.com/youtube/answer/1722171",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "video_bitrate_sdr_mbps": {
+      "value": {
+        "2160p": [
+          35,
+          45,
+          53,
+          68
+        ],
+        "1440p": [
+          16,
+          16,
+          24,
+          24
+        ],
+        "1080p": [
+          8,
+          8,
+          12,
+          12
+        ],
+        "720p": [
+          5,
+          5,
+          7.5,
+          7.5
+        ],
+        "480p": [
+          2.5,
+          2.5,
+          4,
+          4
+        ],
+        "360p": [
+          1,
+          1,
+          1.5,
+          1.5
+        ]
+      },
+      "source": "https://support.google.com/youtube/answer/1722171",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "Per resolution: [min, max at 24/25/30 fps, min, max at 48/50/60 fps] in Mbps (range where the page gives one)."
+    },
+    "color": {
+      "value": "SDR: BT.709 primaries, transfer and matrix",
+      "source": "https://support.google.com/youtube/answer/1722171",
+      "checked": "2026-10-19",
+      "status": "official"
+    }
+  },
+  "audio": {
+    "codec": {
+      "value": "AAC-LC, Opus or Eclipsa Audio",
+      "source": "https://support.google.com/youtube/answer/1722171",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "sample_rate_hz": {
+      "value": 48000,
+      "source": "https://support.google.com/youtube/answer/1722171",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "bitrate_kbps": {
+      "value": {
+        "mono": 128,
+        "stereo": 384,
+        "5.1": 512
+      },
+      "source": "https://support.google.com/youtube/answer/1722171",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "loudness_normalisation": {
+      "value": {
+        "integrated_lufs": -14
+      },
+      "source": "https://productionadvice.co.uk/stats-for-nerds/",
+      "checked": "2026-10-19",
+      "status": "unconfirmed",
+      "note": "YouTube turns loud videos down for playback (\"Stats for nerds\" shows content loudness); the reference level is not published by YouTube. -14 LUFS is the commonly measured figure from third-party sources."
+    }
+  },
+  "safe_zones": {
+    "value": [],
+    "source": "https://support.google.com/youtube/answer/6388789",
+    "checked": "2026-10-19",
+    "status": "not documented",
+    "note": "No fixed overlay areas are published for long-form. End screen elements are placed by the creator in the last 5-20 s (video must be >= 25 s; up to 4 elements on 16:9). Player controls appear over the bottom while paused or hovered.",
+    "confidence": "n/a"
+  },
+  "captions": {
+    "placement": {
+      "value": "Viewer-controlled caption rendering; caption files can carry position and style info.",
+      "source": "https://support.google.com/youtube/answer/2734796",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "end_screen": {
+      "value": {
+        "last_seconds": [
+          5,
+          20
+        ],
+        "min_video_length_s": 25,
+        "max_elements_16x9": 4
+      },
+      "source": "https://support.google.com/youtube/answer/6388789",
+      "checked": "2026-10-19",
+      "status": "official"
+    }
+  },
+  "thumbnail": {
+    "value": {
+      "recommended": "3840x2160",
+      "min_width": 640,
+      "aspect": "16:9",
+      "formats": [
+        "JPG",
+        "PNG"
+      ],
+      "max_bytes_desktop": 52428800,
+      "max_bytes_mobile": 2097152
+    },
+    "source": "https://support.google.com/youtube/answer/72431",
+    "checked": "2026-10-19",
+    "status": "official"
+  },
+  "text_limits": {
+    "title_chars": {
+      "value": 100,
+      "source": "https://developers.google.com/youtube/v3/docs/videos",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "Cannot contain < or >."
+    },
+    "description_bytes": {
+      "value": 5000,
+      "source": "https://developers.google.com/youtube/v3/docs/videos",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "Measured in UTF-8 bytes by the API."
+    },
+    "tags_total_chars": {
+      "value": 500,
+      "source": "https://developers.google.com/youtube/v3/docs/videos",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "hashtags": {
+      "value": {
+        "max_before_all_ignored": 60,
+        "shown_above_title": 3
+      },
+      "source": "https://support.google.com/youtube/answer/6390658",
+      "checked": "2026-10-19",
+      "status": "official"
+    }
+  },
+  "export_preset": {
+    "width": {
+      "value": 1920,
+      "source": "https://support.google.com/youtube/answer/6375112",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "height": {
+      "value": 1080,
+      "source": "https://support.google.com/youtube/answer/6375112",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "fps": {
+      "value": "source",
+      "source": "https://support.google.com/youtube/answer/1722171",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "Upload at the recorded frame rate."
+    },
+    "container": {
+      "value": "mp4",
+      "source": "https://support.google.com/youtube/answer/1722171",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "vcodec": {
+      "value": "libx264",
+      "source": "https://support.google.com/youtube/answer/1722171",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "H.264 High Profile"
+    },
+    "pix_fmt": {
+      "value": "yuv420p",
+      "source": "https://support.google.com/youtube/answer/1722171",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "video_bitrate_kbps": {
+      "value": 8000,
+      "source": "https://support.google.com/youtube/answer/1722171",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "1080p at 24-30 fps; 12000 at 48-60 fps."
+    },
+    "video_bitrate_kbps_high_fps": {
+      "value": 12000,
+      "source": "https://support.google.com/youtube/answer/1722171",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "acodec": {
+      "value": "aac",
+      "source": "https://support.google.com/youtube/answer/1722171",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "audio_bitrate_kbps": {
+      "value": 384,
+      "source": "https://support.google.com/youtube/answer/1722171",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "sample_rate_hz": {
+      "value": 48000,
+      "source": "https://support.google.com/youtube/answer/1722171",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "loudness_lufs": {
+      "value": -14,
+      "source": "https://productionadvice.co.uk/stats-for-nerds/",
+      "checked": "2026-10-19",
+      "status": "unconfirmed"
+    }
+  }
+}

@@ -1,0 +1,536 @@
+file	bytes	sha256	origin
+avcodec-63.dll	19426304	9eb3c3ea778e9bed28686e1c39f83e48cdfca64e4a6aae1d5c83445704682fcd	shotcut-26.9.27-ci
+avdevice-63.dll	152576	20e6807a758b0abb7e552067af1315d977c032a523b4956a688cc3ce864b2f76	shotcut-26.9.27-ci
+avfilter-12.dll	6368256	2fa06e0d53f96b068d643731c165bc9bf480edc9ffa140674e185c0bebc6516d	shotcut-26.9.27-ci
+avformat-63.dll	2880000	c779e63c5be6c1b3f6d32fdee022dcebb0e60c23c5be597d681a9718d77c133f	shotcut-26.9.27-ci
+avutil-61.dll	1154048	f1e41be8d61c61a7be08b3756cee1860d5a292f4f7ac1472df8eef988110ab38	shotcut-26.9.27-ci
+ffmpeg.exe	474728	758d59d366941063a060a50ce84130a83eae81e8c12ebf89d4c8d14bbaec53db	shotcut-26.9.27-ci
+ffplay.exe	176744	4e27afd8234cc3d944700aa740137173e16fdc40ef59b48537d533a2a2274e8c	shotcut-26.9.27-ci
+ffprobe.exe	226408	10aa04a26399515fcc96310fd904efae46b1092bed795df8ef8e54acf05d097c	shotcut-26.9.27-ci
+ggml-base.dll	825819	ffb3d657465f442c63644d99a7c38f91a23fa98fa101e64fcf9beea9161a6f36	shotcut-26.9.27-ci
+ggml-blas.dll	88213	f387bb86f0cfe207fd26a92f748ca634d69aac783025f29ea36c6d7ceb4f0161	shotcut-26.9.27-ci
+ggml-cpu.dll	896966	51389d55bb53ce0bf9a24e178b0facb37d6fe2baea4a1c61847d25cd088e680e	shotcut-26.9.27-ci
+ggml-vulkan.dll	56891657	67f2800e1319269ad476adbcd629055301a8c2e9f3a4bccdd828d5692e79cefd	shotcut-26.9.27-ci
+ggml.dll	91371	899ecb91014ef5eac32b28e507d879508379597056393819537587285818d2bd	shotcut-26.9.27-ci
+gopro2gpx.exe	317616	891d96879ccd76badab551247f9c5e87e0ef6774dfa4c70fba7a93de842ae906	shotcut-26.9.27-ci
+letitedit-20261118.1.exe	12608527	e422412df66b8394bbd93c18732b8eb842db74782a38364fe94505e481d2821c	letitedit-fork
+letitedit-20261122.2.exe	12806159	b8ea99d9c27b1efb4d1764fea682fb03106ac745e4a23f0956de22418cf897c8	letitedit-fork
+letitedit-20261122.3.exe	12845583	0f8d11108c0514322d6a213e5198d6e92a0b66fc12d2c0fcb5368eae08769c7e	letitedit-fork
+letitedit-20261123.1.exe	12853775	df832325a3525a71d1d0c0d913182f3f27c6db16523cc10b4966fe239f95c5a0	letitedit-fork
+letitedit-20261123.2.exe	12854287	efadbf56454e45dd8c72e19202e52d33fd120f0ca52071504bd411aa24016d51	letitedit-fork
+lib/frei0r-1/3dflippo.dll	29250	171f0ba8dd1d12d56cf2d5c6fd8db135dceacdf628d712611178b1f7c4bfe340	shotcut-26.9.27-ci
+lib/frei0r-1/3dperspective.dll	30863	206ac96223abad18d0fffa455959ed56a267127e72f5c85671946da67ca47308	shotcut-26.9.27-ci
+lib/frei0r-1/addition.dll	37838	a70bf30f38a38a8aef92a6aa817da1b7147f8617b207c3d844cc07a0c55e084b	shotcut-26.9.27-ci
+lib/frei0r-1/addition_alpha.dll	37999	c782ccba63cca263c4d837cf6c285e13e1e9ff93d27a45bd2c5bdc0485a32cba	shotcut-26.9.27-ci
+lib/frei0r-1/aech0r.dll	52379	92a6ffc134870c9367ab3a9f1bbda3c7014fc54d98a26ec2e57b60ff988cb46b	shotcut-26.9.27-ci
+lib/frei0r-1/alpha0ps_alpha0ps.dll	53210	4fbc550563cc2813f9c3167231745eb419a303dffd5e736f1ec80d504728d267	shotcut-26.9.27-ci
+lib/frei0r-1/alpha0ps_alphagrad.dll	28016	3bc151844f3b82784d36791dc86db1790bb76a0c985d1c5b08f4c9d6cba07c59	shotcut-26.9.27-ci
+lib/frei0r-1/alpha0ps_alphaspot.dll	34857	20504673f3ba70a0e2523f1a0090dcd656e20629d2249ea9cbe4d3505d4b45e3	shotcut-26.9.27-ci
+lib/frei0r-1/alphaatop.dll	37308	9124f65a9408684cecfc8f59c2e2a40454abb5452f823a5093e99666c9a3571d	shotcut-26.9.27-ci
+lib/frei0r-1/alphain.dll	36752	03ebfce3f2fd2cbddc629fb1bce231e2d8939f649c6fd62afdd4c9ad56821e1e	shotcut-26.9.27-ci
+lib/frei0r-1/alphainjection.dll	27005	b5ffa8aa68797a6611c29575dab297860c2c42d038369968352d37035ebd2283	shotcut-26.9.27-ci
+lib/frei0r-1/alphaout.dll	36774	c2265f78331833ac80d3a67a83edb7ad0ca8a6453e2bb0cbbd74bec87916db86	shotcut-26.9.27-ci
+lib/frei0r-1/alphaover.dll	37308	650a8501c299655ac387a9053b0985c0276d2896364dab37c507ef522ad69b83	shotcut-26.9.27-ci
+lib/frei0r-1/alphaxor.dll	37286	229f29b9c9185cfbe22559e6e473665592a73906d9cab52e705f314e0256983a	shotcut-26.9.27-ci
+lib/frei0r-1/B.dll	25468	06642f3562369ff37d8a7cbb7febc4229e253086f165b51b2e357e4ed965f508	shotcut-26.9.27-ci
+lib/frei0r-1/balanc0r.dll	37298	62d98ffeb300020bd0c5d7b563ab420314d65417140e797ed85158145dee4d53	shotcut-26.9.27-ci
+lib/frei0r-1/baltan.dll	35904	a0f63c7c1e3fa1d925f336944e7451e7af2b2c95bcfdd313d70af2810f0f52de	shotcut-26.9.27-ci
+lib/frei0r-1/bgsubtract0r.dll	27866	79b9c159d4ef30592ae90041e75165f41b0c3899cc15ec297900ece3db6ba092	shotcut-26.9.27-ci
+lib/frei0r-1/bigsh0t_eq_cap.dll	369080	c83924b3692f3e461b36b800087ada8bcfaaeafdae4ecd7ab8dbc89983149b09	shotcut-26.9.27-ci
+lib/frei0r-1/bigsh0t_eq_mask.dll	350441	5b5c15fc1d4c945ab8834acbae0872f37d1a1bb307689a26bd8801a8f79aee50	shotcut-26.9.27-ci
+lib/frei0r-1/bigsh0t_eq_to_rect.dll	354897	417ff0dac39aeb34a8dd51798274b6fd9be242b0ac40e57b30f078c6235148c5	shotcut-26.9.27-ci
+lib/frei0r-1/bigsh0t_eq_to_stereo.dll	354723	00ccef67eae12000f64b41b21dff78f6caf633d48e8b6ff7230279ac3b801d02	shotcut-26.9.27-ci
+lib/frei0r-1/bigsh0t_eq_wrap.dll	348522	9e5d73d5fc3274733760393b0fdfc00bf55d3728eb4b860d4eeb821535814a1c	shotcut-26.9.27-ci
+lib/frei0r-1/bigsh0t_hemi_to_eq.dll	376159	7996b209d78e79eeba65acc938ce3212c250e7110f0605eed97a6cdd0c61819f	shotcut-26.9.27-ci
+lib/frei0r-1/bigsh0t_rect_to_eq.dll	340680	fd9eca52c4570917f880bb31b75cd1e6d3632ffad5433aa72be05d67960cc567	shotcut-26.9.27-ci
+lib/frei0r-1/bigsh0t_stabilize_360.dll	458471	8dbedbeeff2a3c3800cbbf2b01fda82ef2252e176bdd2978d0f756c25008bb94	shotcut-26.9.27-ci
+lib/frei0r-1/bigsh0t_transform_360.dll	344664	98f975e8514bbde2bba57c7f6693772b7623f725804c9645db3b26426779654c	shotcut-26.9.27-ci
+lib/frei0r-1/bigsh0t_zenith_correction.dll	352599	7b7463b93ca2e3af3e3d1d50830b0d6255abc6ff2b2535d4cfc1cad6196c35c1	shotcut-26.9.27-ci
+lib/frei0r-1/blend.dll	47022	21e817a9aabe66990298045f6672ed7d5820187813e55e9ebb40529b7093a2dc	shotcut-26.9.27-ci
+lib/frei0r-1/bluescreen0r.dll	46349	b9659f5088ed5a206ef4b2665045c28792a312401aab31f540e1372f1082a4ed	shotcut-26.9.27-ci
+lib/frei0r-1/brightness.dll	29647	f6e32a78897f242e16fb0032bf2bb862d40c21e8b048e4350b6dec272408d9ef	shotcut-26.9.27-ci
+lib/frei0r-1/burn.dll	37198	bd6fcd748f67c39ed77cc14c3951255dc6b7aa94bd8358ad48e9a00686026188	shotcut-26.9.27-ci
+lib/frei0r-1/bw0r.dll	27004	4a09246eee08ae3a81725a8a48e3f0d28b11c8fdb45926e78c4521e9e3498a1f	shotcut-26.9.27-ci
+lib/frei0r-1/c0rners.dll	131379	53d3cf5c6af2c09797355cce061f0ec8a062c201709d07a062004bca1f95eeb2	shotcut-26.9.27-ci
+lib/frei0r-1/cairoaffineblend.dll	35508	cf10d4ec0bd48491e861e2dbe7102e87eec6e9fd155f12afcfb11a8de9783343	shotcut-26.9.27-ci
+lib/frei0r-1/cairoblend.dll	32659	c17d9a261c1bda0e86efb4349bacb777434a257bae242414351b1e37187b7425	shotcut-26.9.27-ci
+lib/frei0r-1/cairogradient.dll	35847	43c07d1f6bd200ddc041808cfd167098d7226b43da8812e3e2c1a71c70b5b4aa	shotcut-26.9.27-ci
+lib/frei0r-1/cairoimagegrid.dll	31917	272b0d2bdbbc886d0ec17210ead760cdd09fb1eec6fea66b911a5d736156311d	shotcut-26.9.27-ci
+lib/frei0r-1/camerashake.dll	30824	d2d5faf655088b94226342a1567e21f5decf3f3eedb17715092c2acec8774b07	shotcut-26.9.27-ci
+lib/frei0r-1/cartoon.dll	49615	176599e36712e6b48741234d60baf1b7f850b11722a62d653ad295763771035f	shotcut-26.9.27-ci
+lib/frei0r-1/cluster.dll	28361	3c36ac68b790a14db376178d495e345ab8827acfa3b715d660cde66c5ce0cb41	shotcut-26.9.27-ci
+lib/frei0r-1/colgate.dll	35138	82d55f6d83056c0ab87a4b0fed55252c82a4efb0a62533f626decf6ecba819d5	shotcut-26.9.27-ci
+lib/frei0r-1/color_only.dll	37864	2e683fd985b92d42de9aa13c2677f45f0f18a4e187ce139bd9406d27d6a5b7ce	shotcut-26.9.27-ci
+lib/frei0r-1/coloradj_RGB.dll	36865	2a7752fd4f9563d5907997809ea9e2150a7c4e1f2ddaea5ff05edf9351bdcbe0	shotcut-26.9.27-ci
+lib/frei0r-1/colordistance.dll	31404	3f0fc592188affb0103f8b4a5f9ee8abc8a0f774229b468176a6823d7eff487e	shotcut-26.9.27-ci
+lib/frei0r-1/colorenhance.dll	38467	aa41ce2352222bc49837b08cdeb39c50c9af0298c487b24111dc619ce55dd814	shotcut-26.9.27-ci
+lib/frei0r-1/colorhalftone.dll	28945	1ac1d6c21268030a66fd13e2e9489d73123518b1775bfc85128d7b798c9af0f9	shotcut-26.9.27-ci
+lib/frei0r-1/colorize.dll	29600	f90c5176886ffcfdb7b8e2cb222ddf9acbf93d071d0785335a0a91ce8e876949	shotcut-26.9.27-ci
+lib/frei0r-1/composition.dll	27553	5c9f81e77902993febce3a1e919b601547fe5aeaf745eec6567e72f2dadb0ab7	shotcut-26.9.27-ci
+lib/frei0r-1/contrast0r.dll	30671	3e178c3dd8e83c5421bdda5187df70b61a403bc7561c805668700b32416956e4	shotcut-26.9.27-ci
+lib/frei0r-1/curves.dll	83900	0d3eb247a9ab862c5dd1d2418ddaf8b335777e23a7fce38dcfa11aa44d4d700f	shotcut-26.9.27-ci
+lib/frei0r-1/d90stairsteppingfix.dll	41249	b33ceee067059e9318994f81475d8a320d4e376b9579a63858cbf992f4bd6205	shotcut-26.9.27-ci
+lib/frei0r-1/darken.dll	37242	0e79d1af92b581b69ec6cb049a77c64424bc290aa53031012baf9e274643c0af	shotcut-26.9.27-ci
+lib/frei0r-1/defish0r.dll	125263	85e7b6f60453f58bb20ee0ba79de850838f52e6d2c70a85eb186de5b55ddadd2	shotcut-26.9.27-ci
+lib/frei0r-1/delay0r.dll	44666	75d2897a96c7e68e93bb8e8774c51da91d5575b7df603782ef58f49139377ca7	shotcut-26.9.27-ci
+lib/frei0r-1/delaygrab.dll	41619	d524b68fb0cfdf7187d40debe9aa5d32e38f0e8b424c6e9c4d866adf0b457dc7	shotcut-26.9.27-ci
+lib/frei0r-1/denoise_hqdn3d.dll	37004	e4fa63661cddf8bc654176ed5c70aec0c38111eaa826736c804d9796a455c177	shotcut-26.9.27-ci
+lib/frei0r-1/difference.dll	40424	7c5e1b3c790b63c01f687798051d8b105127f59cb7691ceebb7f164a8942984a	shotcut-26.9.27-ci
+lib/frei0r-1/distort0r.dll	29905	9fb0047ceab394e839d7b027d602930bd129ff366dca8caa1b5b84c518e4d90a	shotcut-26.9.27-ci
+lib/frei0r-1/dither.dll	31838	19091d205aa8e5075bdf8b4db7467fbce3b520a07ed43cb981c1a6a747c5bea3	shotcut-26.9.27-ci
+lib/frei0r-1/divide.dll	36730	45c636b6ee7c30107629323473aef8cc6ccee2bfb8bfba01065695b5af2f8510	shotcut-26.9.27-ci
+lib/frei0r-1/dodge.dll	36708	491816b5c7a27274b19bdcc8209d02a26642efad09d3ebedab18ec12b30a3eec	shotcut-26.9.27-ci
+lib/frei0r-1/edgeglow.dll	47481	82657ef9b85e2792f1608c48d86e82eac3d82d9f04807f906ae31381c3f106aa	shotcut-26.9.27-ci
+lib/frei0r-1/elastic_scale.dll	58437	952c29a0867ec67d6f192b39d25fdb81f843fedcae6f8cfeac787f1137e3bbc5	shotcut-26.9.27-ci
+lib/frei0r-1/emboss.dll	31248	c448878b0e290b4e7a5771109e70c2a611159edc5a5c1d84f2b4e94e200133ba	shotcut-26.9.27-ci
+lib/frei0r-1/equaliz0r.dll	38671	735bf6a088b6c006790d8ab7128c0b121f3d6190f4f1e63970cd31825747c398	shotcut-26.9.27-ci
+lib/frei0r-1/euclid_eraser.dll	48928	a5de128a7fff6daee54097e0866dda11016eb3a5f2ca4aabbcf3a6ee5b619875	shotcut-26.9.27-ci
+lib/frei0r-1/filmgrain.dll	27725	1caeb43812d0505a78e34d91f828321599fb488a1d5c4ba133e8054810ceecd4	shotcut-26.9.27-ci
+lib/frei0r-1/flippo.dll	25980	dfeff0c3697b287a5a23787fbf95c3d451e548d29c9c6f37d2047ed5b6432a26	shotcut-26.9.27-ci
+lib/frei0r-1/G.dll	25468	1f7e95f587b39ef3d28b1713f809682c872ca5d77481d77cb9e506c143ac85c1	shotcut-26.9.27-ci
+lib/frei0r-1/gamma.dll	30939	4474515c96348ad5230f83b05912b3437d444307bd8e52e3c504944182652401	shotcut-26.9.27-ci
+lib/frei0r-1/gateweave.dll	27783	482a781ea559ccae1c3fccd7d4da683413484a846452939eacf667ab183c9991	shotcut-26.9.27-ci
+lib/frei0r-1/glitch0r.dll	26722	5e3947b4b67fa0ec948f951a0ca9d8e9bce427d988a92f4d03c8c43b0ae82567	shotcut-26.9.27-ci
+lib/frei0r-1/glow.dll	26842	4ceab1e4e11e9832b3f70fabc014216eafe30fbe37231c391f6b747caa2614d3	shotcut-26.9.27-ci
+lib/frei0r-1/grain_extract.dll	54826	c72e27f7bece41cd2912577e31cbd1f1273261614e402f5bbf19e3dd138f9a06	shotcut-26.9.27-ci
+lib/frei0r-1/grain_merge.dll	53246	d27d1cfafed968d7ee4d1ba3995425944ab28fbfe362e3d169d93960d83daeb2	shotcut-26.9.27-ci
+lib/frei0r-1/hardlight.dll	50108	9a8dc037fcfd0f65b4007aa116e9485c5abe33996b0cca925f69c4244d78fd3d	shotcut-26.9.27-ci
+lib/frei0r-1/heatmap0r.dll	26528	c75659b27b65051e2d975444c7f27eff052ab6e5ee31e49b027ad80a0d32d8d0	shotcut-26.9.27-ci
+lib/frei0r-1/hue.dll	38479	96bfeff930c395d1ce7e2b021083ebe08b73cee62785a78ae30e984a708a8c8e	shotcut-26.9.27-ci
+lib/frei0r-1/hueshift0r.dll	70271	a6af865167a11ce7e190eda99efca3f04dcbe90bdcef4390e769a5ca5048189d	shotcut-26.9.27-ci
+lib/frei0r-1/IIRblur.dll	86736	5fbbfab41433dbdf50b2def3a151512fb40c0d2f251516ef8f42ea059824302f	shotcut-26.9.27-ci
+lib/frei0r-1/invert0r.dll	25468	4f57466a30026043ba08d6025ecada065edf3c5fa1233d17b08acfe1eac6ff04	shotcut-26.9.27-ci
+lib/frei0r-1/ising0r.dll	28522	492ca47fc305667c8900366b167f4c14ecf950720a6591b3632f2cfeb18a8790	shotcut-26.9.27-ci
+lib/frei0r-1/kaleid0sc0pe.dll	174544	4d28422a07d18235bffc1886c710e8b78702ce47204e16b5db3cb66eb53feac0	shotcut-26.9.27-ci
+lib/frei0r-1/keyspillm0pup.dll	141523	110addc925a42a6556e62f90f45232ffd6e0e8e148760cc33b9f57b5e2c6045f	shotcut-26.9.27-ci
+lib/frei0r-1/lenscorrection.dll	26070	c42c20d11b36fe8b13c5a014b632d01577568d29193ba5c4dbfb1a9a574e7244	shotcut-26.9.27-ci
+lib/frei0r-1/letterb0xed.dll	25468	dd698f578abddf2b24e6adf1f6711eb8d1c72172d928c6a22cc4d82979cf8185	shotcut-26.9.27-ci
+lib/frei0r-1/levels.dll	35451	da776f336396daaaa0eeb25221ea176372cee01b0010525026d71c8410da5ded	shotcut-26.9.27-ci
+lib/frei0r-1/lighten.dll	42384	1afc64fc167aa055d755a80401e72b750d911ffd1ce2974ec5d93f1dbd70c2d1	shotcut-26.9.27-ci
+lib/frei0r-1/lightgraffiti.dll	90851	2d46bfa7b02b5925e60e787b084c9b769027295481cef26fd8843966b0d70957	shotcut-26.9.27-ci
+lib/frei0r-1/lissajous0r.dll	48307	6fc669a9422bd2d70bcd0651816e2846f016723854bc968efea5a1135291d779	shotcut-26.9.27-ci
+lib/frei0r-1/luminance.dll	27040	3e0b15bd1991a93bd1a9720984a7979dbc22c8b2df578ec845014db148e61f04	shotcut-26.9.27-ci
+lib/frei0r-1/mask0mate.dll	27914	166e61db79d8215306c8a0b79f2a954c7fdc9df3eda76a62d99bf72ec7f9a2a9	shotcut-26.9.27-ci
+lib/frei0r-1/measure_pr0be.dll	97545	0309f0d42db19ec6342cd0afd2680bdb832f9cc559b2e2ecad7919fa35885f09	shotcut-26.9.27-ci
+lib/frei0r-1/measure_pr0file.dll	94633	9a124bfec5a3e7f275f61d0ecb2a770b4db845a3d609b8cf700e8ecf7fe8fdd3	shotcut-26.9.27-ci
+lib/frei0r-1/medians.dll	64820	6cf8488b26a74913d580b82b2ab571fb1bc40f62cc9964e495cfad153deeec7e	shotcut-26.9.27-ci
+lib/frei0r-1/mirr0r.dll	54785	649525011514469d230d181b1b5226c26f04d50078790ed3fe68b4b147c9c592	shotcut-26.9.27-ci
+lib/frei0r-1/multiply.dll	46502	231aac33ba8d256dc538e6a6cdd8d359170cc0daca64f0692d4038ba2b387d40	shotcut-26.9.27-ci
+lib/frei0r-1/ndvi.dll	67303	bc5e9e2012742158ee790dafa9a8bb6a178c577d05750e4668f30241debd0eb4	shotcut-26.9.27-ci
+lib/frei0r-1/nervous.dll	76912	38c43039b6deaf3d2c287531d349b89217e134f58736e14fdf4eeeb6127e145e	shotcut-26.9.27-ci
+lib/frei0r-1/nois0r.dll	36147	16352d84e8ded0944613c7139ec91024eb9395667a86beddf5b4aac709ac01b1	shotcut-26.9.27-ci
+lib/frei0r-1/normaliz0r.dll	33389	07e31906c76bb43d1e812e9a51b434571702cd37bf5f4cb857030aec4c60c2e7	shotcut-26.9.27-ci
+lib/frei0r-1/nosync0r.dll	47722	0f363f27d82ec766ba33266884658c8bea499c4efe2fabd895576c31fd2c11d3	shotcut-26.9.27-ci
+lib/frei0r-1/ntsc.dll	33912	960812be8bdaae570a5b15df3e9b8b34867645b1b3ee93025238a61416c867fb	shotcut-26.9.27-ci
+lib/frei0r-1/onecol0r.dll	41222	27f0c45d655256da043e3be37e74bec6165057d4eaff2ca64d0a1787597e561c	shotcut-26.9.27-ci
+lib/frei0r-1/overlay.dll	48528	8846386bfd742c75b76f962ac3e5c3dc939ddb6445bc5b50bf0d703788dfdfa1	shotcut-26.9.27-ci
+lib/frei0r-1/partik0l.dll	51953	ec4cbe8ae666633a998391cc78f3217ee995ba502113cd6f6308529525d523d0	shotcut-26.9.27-ci
+lib/frei0r-1/perspective.dll	26606	f4150bcf6fa80e42ba730a379bca7a883ba70492c5af0297e6fb41f0f84477f4	shotcut-26.9.27-ci
+lib/frei0r-1/pixeliz0r.dll	29600	9432108dc602c19e975011a1a0bee4c603d1a3e3b14fd6c484952e0b9e0cbe10	shotcut-26.9.27-ci
+lib/frei0r-1/pixels0rt.dll	28490	78100a62fec7e52ba185474f562f82edcf7a4e7815a38db38f1dc6a44b950d61	shotcut-26.9.27-ci
+lib/frei0r-1/pixs0r.dll	32461	44f391f3a686cf7bb57fe581897d658e4c8cce5c3e45019d50f6fb0c803d457f	shotcut-26.9.27-ci
+lib/frei0r-1/plasma.dll	56915	ad1261c7809263e606e4874150034a9d67a38ff2d15c9bdda9aee24e76c8c5e2	shotcut-26.9.27-ci
+lib/frei0r-1/posterize.dll	26016	a81f189be07ebb3a212f5b2386c3a19ad445e7eb579365c6961ea6f17229b5d1	shotcut-26.9.27-ci
+lib/frei0r-1/premultiply.dll	48541	b2a96aebc7644c5a852a5159774c520dbf986df11fcc5e5cfeeb42760d923c6f	shotcut-26.9.27-ci
+lib/frei0r-1/primaries.dll	41769	5110f18f90458719c0fdb6499e68bec97f0ff6a1d0b635eb0b9e9688a82623a2	shotcut-26.9.27-ci
+lib/frei0r-1/R.dll	25468	efd8a88c8591788f5ebc253669aabc2c3a9fbfcd4c536da1254d50731c7b973c	shotcut-26.9.27-ci
+lib/frei0r-1/RGB.dll	28541	55fde438ccc6ca44f62a2988d9cf03ff8c784c27b035fc8e1d6b021c754dee7e	shotcut-26.9.27-ci
+lib/frei0r-1/rgbnoise.dll	28081	7984a63000091872b4f56729ea49a347eb1317c51b618784c3a9bd17bd7a5213	shotcut-26.9.27-ci
+lib/frei0r-1/rgbsplit0r.dll	25468	00626bf7cd71ca506af46e022c9ed2fac34fb04bf1f6fdd9e2b69c45f1d4bd4e	shotcut-26.9.27-ci
+lib/frei0r-1/saturat0r.dll	31648	d5e4307d89d20901b202c800bd8d13153d4a1eaadbb6a8320990f9f7c52fb4ff	shotcut-26.9.27-ci
+lib/frei0r-1/saturation.dll	38682	18f63378f2044474a570c717bdf043bd4bd1164afacbe88019ef84009a68f22a	shotcut-26.9.27-ci
+lib/frei0r-1/scanline0r.dll	37805	40459a9960049bf851348ec89215a2de0cb6982b0a4e423bed3c03d91976cf2b	shotcut-26.9.27-ci
+lib/frei0r-1/screen.dll	48506	488e9a7ae5d1189271ca670d8b1ea02c69d954c72ef81ae66ac19aeaba771847	shotcut-26.9.27-ci
+lib/frei0r-1/select0r.dll	53914	781d9a7f55c50c326d60a9d3ac8e75332202611519a26bc0e5d7d32a44adfe51	shotcut-26.9.27-ci
+lib/frei0r-1/shake0scillate.dll	68193	f3375c9d5ee5b1c38a0e57cc5aef8fb7c5c6dfbf432603b158229e1ab78c7cf4	shotcut-26.9.27-ci
+lib/frei0r-1/sharpness.dll	27836	fa861af88e87a847cca5cb4b5c66c645efb7eeb69cd5f4b6a92e0d6e97e032a0	shotcut-26.9.27-ci
+lib/frei0r-1/sigmoidaltransfer.dll	28305	b2dd33cb573173cc4ca368ce825431d758d7e9f112746001eb65bb866b15cd76	shotcut-26.9.27-ci
+lib/frei0r-1/sleid0r_push-down.dll	24977	7d762334526d4782ad394289009194b54e657f0dfe0d588719b582c9b4e8b954	shotcut-26.9.27-ci
+lib/frei0r-1/sleid0r_push-left.dll	25489	ee727d90eb84a6d8bacabb6878296b10f380d6aa188ae213e9b510636b5dc49d	shotcut-26.9.27-ci
+lib/frei0r-1/sleid0r_push-right.dll	25490	57ff702729f0d23c0ac00aa97fa1fb9749df507ce8ba5db241845e569a05ec52	shotcut-26.9.27-ci
+lib/frei0r-1/sleid0r_push-up.dll	24957	9e319fe4a931590dd0d8f01d877dcb06f28e46c7bd4b64bd08617d581ae970a7	shotcut-26.9.27-ci
+lib/frei0r-1/sleid0r_slide-down.dll	25490	6dc25182e138b10ebf4d1e66fa77536602bed39435340496dab72e49b3b933ec	shotcut-26.9.27-ci
+lib/frei0r-1/sleid0r_slide-left.dll	25490	2914141a1202bd6984dc2056b7ebee4a9f1365f73b529b79c1006b936569bf4d	shotcut-26.9.27-ci
+lib/frei0r-1/sleid0r_slide-right.dll	25491	c727209f6095f291a94526f1d6b5ab121846fd1bae408bc7735864218baadbf1	shotcut-26.9.27-ci
+lib/frei0r-1/sleid0r_slide-up.dll	25469	da6ceb4505c2a408dd5b5412435b776fdab8beec21e43c3cff862f7d731cd1cf	shotcut-26.9.27-ci
+lib/frei0r-1/sleid0r_wipe-barn-door-h.dll	26695	1f304d25d4ddcaeacdf0472b989377c6991385434d7679188c46b6ca793304d9	shotcut-26.9.27-ci
+lib/frei0r-1/sleid0r_wipe-barn-door-v.dll	26695	9876e0ea359631f23797e0bf1f087e1e6f60b3afc51dce96a7e67ec65a3e4ba0	shotcut-26.9.27-ci
+lib/frei0r-1/sleid0r_wipe-circle.dll	28213	419a02b9c3e2ed26c74e83e4e20f46d9287a8f536957e61d866ce34c44fd67d8	shotcut-26.9.27-ci
+lib/frei0r-1/sleid0r_wipe-down.dll	26176	876ef631cbdc61701ee58bdeced4e863ffcf8d82c3d6bb32406cda6aa0393c8e	shotcut-26.9.27-ci
+lib/frei0r-1/sleid0r_wipe-left.dll	26176	c23dce77237ff3611d54954302f6d79a6484109e6edba428440884f93583b4d8	shotcut-26.9.27-ci
+lib/frei0r-1/sleid0r_wipe-rect.dll	27712	ed2e40e2a1a5c44c6a0f9294107823029f3c300b3e02df30389047501a5b787e	shotcut-26.9.27-ci
+lib/frei0r-1/sleid0r_wipe-right.dll	26177	a737dafafba9846c92af3ce4026da1ab54e3cb576d0acd4e045c531cf65a84a9	shotcut-26.9.27-ci
+lib/frei0r-1/sleid0r_wipe-up.dll	26156	e78a16cf39326b9468e73aa00f31d15c4d6c983d833ec1afd50e3dc04f040207	shotcut-26.9.27-ci
+lib/frei0r-1/sobel.dll	39432	95fc790f96cd1557eaec31a07d933be5a64885affe2e154e71105cfba074faec	shotcut-26.9.27-ci
+lib/frei0r-1/softglow.dll	47652	b6f8494a5871c098647111be6d1655d9a66b494610f08165f1d874b8d5a300d3	shotcut-26.9.27-ci
+lib/frei0r-1/softlight.dll	52156	761ca071809a643309c9a55321f653e6187f864ea71c8cf1b5915237a53c064a	shotcut-26.9.27-ci
+lib/frei0r-1/sopsat.dll	78637	d875878b97500e1d08992975924cde48e3795ea41d45badb40dce56a46bd8fd8	shotcut-26.9.27-ci
+lib/frei0r-1/spillsupress.dll	30192	306c55a9d50f6ebc220cff1556886f7f769e3896729f246bf7cd941802e21a1a	shotcut-26.9.27-ci
+lib/frei0r-1/squareblur.dll	26842	cb911618e586647e3f77502ab22fdcaf0074c4913b1ea21ebc445dd66c7c48a1	shotcut-26.9.27-ci
+lib/frei0r-1/squigglevision.dll	131939	3d92c9467bc18dca4cfc11622291e9c76ed697bf54f9c33ae483b6312b98168a	shotcut-26.9.27-ci
+lib/frei0r-1/subtract.dll	44966	5c21ccd07ed59404a8df09a422c1045085067801805c3d10b93f3a9ab28dc341	shotcut-26.9.27-ci
+lib/frei0r-1/tehroxx0r.dll	26539	e12f3098c3454b5507762496371f72eaa050a83df831aee5989a0d9c9f5e2e76	shotcut-26.9.27-ci
+lib/frei0r-1/test_pat_B.dll	71300	91f6848198d0a4133fda55d5983519f221bba1d4b66f9d59e680acc3547c8ce0	shotcut-26.9.27-ci
+lib/frei0r-1/test_pat_C.dll	40982	00e90d4fd541feaa94c9f16f10c45c2a66d7dff77c8f914883dfa8c97b2d542a	shotcut-26.9.27-ci
+lib/frei0r-1/test_pat_G.dll	51825	c1b9f025752ee384fee9962eead079f1f256856cfb8a3e579f50e6373c30d8c4	shotcut-26.9.27-ci
+lib/frei0r-1/test_pat_I.dll	44757	5c4fdeaed3d4d6d2dfa0304164026a62c6a54c9c4f948b54028ac6a55a362981	shotcut-26.9.27-ci
+lib/frei0r-1/test_pat_L.dll	99072	6a8cd89be4fe0c56b959129830f4bae13edf8d0930c9dd064d8de3efd9a966d6	shotcut-26.9.27-ci
+lib/frei0r-1/test_pat_R.dll	111492	d15571dbbb076c043d30c37cc9c318f565641688566d2dae9792a67b6ed92bf6	shotcut-26.9.27-ci
+lib/frei0r-1/three_point_balance.dll	28739	18502589021674e2bc7227918c68b057619207e521f91059fca28c138de735fa	shotcut-26.9.27-ci
+lib/frei0r-1/threelay0r.dll	37468	184a8031373930c8cce2d4a8db4a52974cf739b6eb8883057dd1dcea68e93c4e	shotcut-26.9.27-ci
+lib/frei0r-1/threshold0r.dll	27051	3b0ffe1eb9ca2231e89c8a78fa6a2445699796a84961204ecdd33429b2c0176b	shotcut-26.9.27-ci
+lib/frei0r-1/timeout.dll	46559	3af4059f175903ca5442d8d83b7b8d48638f7d2b7dd92bff9dea2ca3f2b9ccb2	shotcut-26.9.27-ci
+lib/frei0r-1/tint0r.dll	26016	d317dba789d328a69e3380f6406779d7e209709b085c98d02da052ddef80702e	shotcut-26.9.27-ci
+lib/frei0r-1/transparency.dll	27040	62f8e0071863b31b707674772ee7abb053d51110996e8831c185917d0acd98c1	shotcut-26.9.27-ci
+lib/frei0r-1/twolay0r.dll	43546	c90626b8eff2f5c36625b9fdf9eedf678620ef99d46fcf513ad40450f86b9886	shotcut-26.9.27-ci
+lib/frei0r-1/uvmap.dll	25757	b88931f58179525b49ea63061c580628071622ebd1782991e0aa99ce80d10daa	shotcut-26.9.27-ci
+lib/frei0r-1/value.dll	38550	eb0b91a2ea44e2d302807b4ec4a3a2e7702e2525d12a6166b57da4226bdf18ef	shotcut-26.9.27-ci
+lib/frei0r-1/vertigo.dll	28822	0494b679f47014f512ae05f2c8f3720e63a2d6c58578a0603ba71b62e1986f95	shotcut-26.9.27-ci
+lib/frei0r-1/vignette.dll	59249	023cffdbbce33414008925b839164931dc623f31c618ab62660c82518885f228	shotcut-26.9.27-ci
+lib/frei0r-1/water.dll	66306	b749838fcd5a370046e4c231a13953d9f72d1d5ce5d589971435950061784777	shotcut-26.9.27-ci
+lib/frei0r-1/xfade0r.dll	43783	e6ba5d16823a30391d2b1d88d2907ef488de0eee3cbf30d83f5c2c74c7bedeab	shotcut-26.9.27-ci
+lib/ladspa/alias_1407.dll	28565	489b837cd26fe2b0856d8cb9edcdfeb39e9c4614e23eff705c608fca86586509	shotcut-26.9.27-ci
+lib/ladspa/allpass_1895.dll	49554	70a2138dd9127c1e47167b05b07ef364ffadc86d6540f4fbe6dcdded6256c301	shotcut-26.9.27-ci
+lib/ladspa/am_pitchshift_1433.dll	32970	581acdb818132bb035c0a5598895ab2f076109cdded6f112914db075bb73f44b	shotcut-26.9.27-ci
+lib/ladspa/amp_1181.dll	29691	753e961e917f4ce3dc0e858ea6027ec5780a3a3159d830751bd7fe69640b999f	shotcut-26.9.27-ci
+lib/ladspa/analogue_osc_1416.dll	75649	0940d63da7e1840af0da5c563730c67dbfe0511f4cca9f5f79090d2ac429aa2d	shotcut-26.9.27-ci
+lib/ladspa/bandpass_a_iir_1893.dll	38866	7daf01cc68e563089f60db24b0f812a4b8e82739dbca6e5b6d779a929fc19129	shotcut-26.9.27-ci
+lib/ladspa/bandpass_iir_1892.dll	40896	878c29050de0545973d66097ce7c671f7ffc1e73e43ac5952e45e99397d30aad	shotcut-26.9.27-ci
+lib/ladspa/bode_shifter_1431.dll	31776	72b90a8fd0c20984f1d77b9c762a512dba1070fdc7598776d1c31cdec070d9b0	shotcut-26.9.27-ci
+lib/ladspa/bode_shifter_cv_1432.dll	32305	a6c3ae4af0ac8de75e2cdd1af3e2a1c29a82bf977fa1d7f61d8392dfad15d4b7	shotcut-26.9.27-ci
+lib/ladspa/butterworth_1902.dll	49098	d5095b98a8d56437eb4a05380388d968d76af7b5f06f86a97e957dd21b33c285	shotcut-26.9.27-ci
+lib/ladspa/chebstortion_1430.dll	28242	e313d50efa8daf8d1e145cd8510b6628919cc049cc0f6898fa41d1870f4a8501	shotcut-26.9.27-ci
+lib/ladspa/comb_1190.dll	27759	bf0b478f416565448722c3b6f4037b33f707d3b7ca405bb6414f302f00f7eacd	shotcut-26.9.27-ci
+lib/ladspa/comb_1887.dll	49446	838e4cf62824dc49a2e31c995f3aebd76d82bfb7cd1aa73b8fa5dbe04b24ea7a	shotcut-26.9.27-ci
+lib/ladspa/comb_splitter_1411.dll	27852	e85b26835ec21f730f07beffb7e99e4e91c095195ca01f78ce0371ed2b2722ce	shotcut-26.9.27-ci
+lib/ladspa/const_1909.dll	28615	463d75439a4292a9cc8a91e28bfb37c5dd56e38243a45254c65ead1a942c2e56	shotcut-26.9.27-ci
+lib/ladspa/crossover_dist_1404.dll	29676	d4a21188d724b3c0c9dbb314d2ce23f6ddfa07bd01c2a7c70e7b8f00111e6cd6	shotcut-26.9.27-ci
+lib/ladspa/dc_remove_1207.dll	27112	2739b474c8a8cc5884939a19872e088d4000a5d4a463bc0f23b6d071ad77a4ff	shotcut-26.9.27-ci
+lib/ladspa/decay_1886.dll	31801	5c5e3c5b4db38ac395807279b3c229688bb6928bd2942f6c3533c2ef3aa0d624	shotcut-26.9.27-ci
+lib/ladspa/decimator_1202.dll	29070	d77d3553e9b5cffe80ec60e049a4be480e4236e6a3e57cea75af52aae7a517ed	shotcut-26.9.27-ci
+lib/ladspa/declip_1195.dll	30117	4ea0d71d3ccf31a4c2a94db70431c10a35e7913e7128a3617f4e8e9dcf303007	shotcut-26.9.27-ci
+lib/ladspa/delay_1898.dll	38674	290bb476e10e3bdae879749f5d16538e7bcb05c3d2574c73d480545754a0fcf0	shotcut-26.9.27-ci
+lib/ladspa/delayorama_1402.dll	43638	6f02908b5370fbfe436a640078a2340620bad145420e8e217f335b26d2f45dc2	shotcut-26.9.27-ci
+lib/ladspa/diode_1185.dll	35221	475a2b2024433bedfb22f6a2f686ab88ef66fc490c781b14380f500a067d63df	shotcut-26.9.27-ci
+lib/ladspa/divider_1186.dll	31660	f38d72fef84a88687956aff9d2635d7792a71a412265202b5dfc444a5da8e2b5	shotcut-26.9.27-ci
+lib/ladspa/dj_eq_1901.dll	40699	fb05ccea79fa2e7be45ac0bc4958184fe68496ca9e09db552e7fb0f66472278e	shotcut-26.9.27-ci
+lib/ladspa/dj_flanger_1438.dll	28319	6ee011bfbf0ccde781df7c2672c89d79acbe26d0e9ec3be9462557e9afee67c3	shotcut-26.9.27-ci
+lib/ladspa/dyson_compress_1403.dll	43250	950ec429b5bd74ccad1758c6d1122885458a8059162d45c155db87a1181fb0c0	shotcut-26.9.27-ci
+lib/ladspa/fad_delay_1192.dll	29449	2db9075e1d9131e8db4d4a51fa6147646184a36b794d002072146d4d0ba6dc9f	shotcut-26.9.27-ci
+lib/ladspa/fast_lookahead_limiter_1913.dll	33446	dcd9aeeb91cd2b01e2242c0cb7a4519dafb70fcbb41d227c1ed325ea6a0f8c97	shotcut-26.9.27-ci
+lib/ladspa/flanger_1191.dll	30012	aae6562410e4765031c68b46d1219206a71f23de6ba94267064391a915ce2a0a	shotcut-26.9.27-ci
+lib/ladspa/fm_osc_1415.dll	74042	1a8eca9ac6a7561e2c63b356cefdd6b78dda90fa2d5f9966a6e21265bccbcae5	shotcut-26.9.27-ci
+lib/ladspa/foldover_1213.dll	28595	8cae1b61b0ac7797063b18d8525b6ebb33a6713b06754457a7a0cb7296b8b85d	shotcut-26.9.27-ci
+lib/ladspa/foverdrive_1196.dll	28609	ece8f281d7a00af75c5a2223fff1a96eb12cf2d4e95cc8832109c87d47a8a4a6	shotcut-26.9.27-ci
+lib/ladspa/freq_tracker_1418.dll	27668	a84f85f20dee742c5d87d835ef8938c0782c5eae07b1e9377298985bda81f5f2	shotcut-26.9.27-ci
+lib/ladspa/gate_1410.dll	34678	507622d7c4ed19bd6330fe67e0a53726f7ca2ea3dba1463ca229dd11562fe314	shotcut-26.9.27-ci
+lib/ladspa/giant_flange_1437.dll	29379	272a6ab7f32119efee4dd8586cc11df1f357bfc0dbb957321534c23e2b7f47c2	shotcut-26.9.27-ci
+lib/ladspa/gong_1424.dll	34866	6eed782d1c109a57660735e836e518c1c30392bc551f3cfaa522846c16387ad4	shotcut-26.9.27-ci
+lib/ladspa/gong_beater_1439.dll	30826	a181486e4fd99b0dde5bd83d25df721d39ee9c3f1d822788ea9cf015b41134d2	shotcut-26.9.27-ci
+lib/ladspa/gsm_1215.dll	110354	e6098596a9809da86810abfd7d8eb6cbfba41934bc55cc4ad473cb28f348d0fd	shotcut-26.9.27-ci
+lib/ladspa/gverb_1216.dll	46034	e70a666613c34f9153a74a5cc5e5af6f7852394468267607c4f4d935da6d92f1	shotcut-26.9.27-ci
+lib/ladspa/hard_limiter_1413.dll	29774	70e11f58185281c94eaadcaa644afc332a4a1ddfc3b7d2877f81efe3ba10ccba	shotcut-26.9.27-ci
+lib/ladspa/harmonic_gen_1220.dll	29752	d13f6df915983788d58fd0213ce3c38489d3aced199f787764e501253bc42ba4	shotcut-26.9.27-ci
+lib/ladspa/hermes_filter_1200.dll	101423	3da9dbefa35bf935842d33edf4c26922abd58c3861748cd90648ad4fd8e8e8f6	shotcut-26.9.27-ci
+lib/ladspa/highpass_iir_1890.dll	39872	cfdf876bcd4ec5ba260874cabbbe66340921ec925795753ff0418c567e7ca850	shotcut-26.9.27-ci
+lib/ladspa/hilbert_1440.dll	27582	55c4510688f6a3ce10f36098700a58259f8846de2c3bb97a3c173b7997e11598	shotcut-26.9.27-ci
+lib/ladspa/imp_1199.dll	335044	369af9e4b54a8b7b2becf701e88dd6ea08dacb9c24db761bc984cfc6a98d4fcb	shotcut-26.9.27-ci
+lib/ladspa/impulse_1885.dll	26616	7107a2658b52d7572af39758a37c8e36192fc7b33bede12d6280889673218fcf	shotcut-26.9.27-ci
+lib/ladspa/inv_1429.dll	27529	cc83c3f2a5d22437826329b33f19452dab0c2665f6921d15dc555a581bbe47f2	shotcut-26.9.27-ci
+lib/ladspa/karaoke_1409.dll	30750	ae71b5997f28204d28c2866c240e69f6a29a3b289cce45fc506c5acca3c18488	shotcut-26.9.27-ci
+lib/ladspa/latency_1914.dll	27634	89af385e4108a26ef1563de3757389c354da9556d7e3b288d4f0785a8463977d	shotcut-26.9.27-ci
+lib/ladspa/lcr_delay_1436.dll	34561	1c5b1a3296c8e853ba81c404ef139bc52994fe1bf4294788c63487ad0fd46a2a	shotcut-26.9.27-ci
+lib/ladspa/lowpass_iir_1891.dll	39844	73d29c69838faa7f3e6b0a54c7c8dc8073b66f395507a549bbe0c1b5f38b1033	shotcut-26.9.27-ci
+lib/ladspa/ls_filter_1908.dll	30681	ba6487f08b2807c8e7dcd2f245765a0c50c569c9e7b57a696a4a8feede10bd75	shotcut-26.9.27-ci
+lib/ladspa/matrix_ms_st_1421.dll	29141	9f8ff4747d8a548ff95d66917670017ba74d260b46d79f0e1580e0698885d274	shotcut-26.9.27-ci
+lib/ladspa/matrix_spatialiser_1422.dll	27722	b61a73209420dc1f90f5b5944ff38f360386a351903a63e88b95362de322dcae	shotcut-26.9.27-ci
+lib/ladspa/matrix_st_ms_1420.dll	28629	8b710f3f480f47bb2561901aa551deadeb79012b5b96afe313336cb2652e4a3b	shotcut-26.9.27-ci
+lib/ladspa/mbeq_1197.dll	40367	e9836e44ef8c4c2708647ce9decc810abc991a9818fac16d2d6b601e61e50a09	shotcut-26.9.27-ci
+lib/ladspa/mod_delay_1419.dll	28087	71862940807aa951fdcd4533beb550e72c9cdd81baafb21b0714ea78e52868bb	shotcut-26.9.27-ci
+lib/ladspa/multivoice_chorus_1201.dll	34319	f374b21695ac271f35d1592ab7e15bbef71a224b6b8db9bf02dedcc2bf6d4924	shotcut-26.9.27-ci
+lib/ladspa/notch_iir_1894.dll	41876	e101cc010c7ef4425b7c9c5d8346a94466e98d37a420bc989aefc968099eea95	shotcut-26.9.27-ci
+lib/ladspa/phasers_1217.dll	39556	dfa41aa34683e4fb68dbcb8721094fb1f6fad2af024e439eff83a6f760c8d3cd	shotcut-26.9.27-ci
+lib/ladspa/pitch_scale_1193.dll	42601	f251c954444a52bd8b05adfcbb8e31dd19e467506ad5f3ac52144cdca0c8146b	shotcut-26.9.27-ci
+lib/ladspa/pitch_scale_1194.dll	42617	0ce6723edce0a7723f871495786fc582d1de0e05e506b168592e7c043995cc38	shotcut-26.9.27-ci
+lib/ladspa/plate_1423.dll	38725	d2038487f274fa652e30a8bb7c1381d27b34bb4aa5c7cb45b90f213116747a33	shotcut-26.9.27-ci
+lib/ladspa/pointer_cast_1910.dll	29269	4bb9ff7556d9a7f3a60a034d9eb81d0a924bcb54e7bc1d5bc7a82c408299ec3b	shotcut-26.9.27-ci
+lib/ladspa/rate_shifter_1417.dll	27331	13eecccf50eea1680a5f4821f28c083c7551eff672a15d1aa8e9674b614a33b0	shotcut-26.9.27-ci
+lib/ladspa/retro_flange_1208.dll	30576	23691ce7048ce145ef13d3742c4141794c02417678a9515d8d8cd3f4866d9c79	shotcut-26.9.27-ci
+lib/ladspa/revdelay_1605.dll	32346	fab377aa1596b4406aad1bee3186287fca907ef56ba19219f5c7f5dbfee7448a	shotcut-26.9.27-ci
+lib/ladspa/ringmod_1188.dll	37343	45d37b74376f117f13c7c681d6b080e8c1a4417f7b13e5f43479d3cc74709f95	shotcut-26.9.27-ci
+lib/ladspa/satan_maximiser_1408.dll	29345	8811caf24fc68696f4072608001bc56b4f6de616675721e492327de8ef7e8c79	shotcut-26.9.27-ci
+lib/ladspa/sc1_1425.dll	35484	5eb323ec9c24de84e60eb5380ac66a1f4615b7a6401cd07461bc04093be475e0	shotcut-26.9.27-ci
+lib/ladspa/sc2_1426.dll	35484	816f1f77d7a281094d3db46a59aa97081efae7237c753fff5009325e743f7a1d	shotcut-26.9.27-ci
+lib/ladspa/sc3_1427.dll	35996	bf4dbed189e654c1697e2b071ff39ffbfd3b81b8f5c52f9e635ce320732c70d1	shotcut-26.9.27-ci
+lib/ladspa/sc4_1882.dll	37532	c28d4c86b6368ef8246e1b0e2860ecc426b9323f5b7cec65515e0f5dfdbc17be	shotcut-26.9.27-ci
+lib/ladspa/sc4m_1916.dll	37026	a5264b7eb83209a7331a1641815616a661559fd702a208c1fa45a87efa303148	shotcut-26.9.27-ci
+lib/ladspa/se4_1883.dll	37020	89c51b68215c18525432f5c4f054dd1d3d0a335beb5aa04c74891948c71ff106	shotcut-26.9.27-ci
+lib/ladspa/shaper_1187.dll	31921	8edf3cfa3427272ac2f05e632a888cf6fb144581d30036ebea2ceb14ac3ebf04	shotcut-26.9.27-ci
+lib/ladspa/sifter_1210.dll	33771	4b560a502f3c210186545a81a1a1d7a98c1650ddcd1f628ec0dae199c99ddcc8	shotcut-26.9.27-ci
+lib/ladspa/sin_cos_1881.dll	28061	cbea5b26e0391de489c0d28d7804857579512ad1f082b5d5c6df4358e538e0c3	shotcut-26.9.27-ci
+lib/ladspa/single_para_1203.dll	31099	101c6d1f88fa8e0dec409214b509b6638c9e3d7a3dc202f8a0608df5d8b6f4f4	shotcut-26.9.27-ci
+lib/ladspa/sinus_wavewrapper_1198.dll	29238	44c0c4f00ffe96f3eb3bbed482e2ebb4b7aa247b814cd33d883c3101b58c5ca4	shotcut-26.9.27-ci
+lib/ladspa/smooth_decimate_1414.dll	27183	b36cf74288f48ccbbc65b6aa5c2577251dd5df399566fa85083c6f00895db44c	shotcut-26.9.27-ci
+lib/ladspa/split_1406.dll	28053	45381b470daabae3607093b1e2fa594a458daf871603fac527f05bcfa251e7c3	shotcut-26.9.27-ci
+lib/ladspa/step_muxer_1212.dll	31728	2639558f267b8a0ecfe6b241d75fa5cc7c5c7def4ca0e07f01664ca61e8dc53d	shotcut-26.9.27-ci
+lib/ladspa/surround_encoder_1401.dll	28409	738707efb4f245decfe5215b92e27d4dbe8e8857819e1de5bc8bc87487299ec9	shotcut-26.9.27-ci
+lib/ladspa/svf_1214.dll	36053	fb85a71b05e97df731cf648301bfb825f8e2933e987c475c72e31b086848254f	shotcut-26.9.27-ci
+lib/ladspa/tape_delay_1211.dll	32017	74d706da8380f2f1d4837dfacfe6eb911fe02736d204ac901d62e6e32b60b025	shotcut-26.9.27-ci
+lib/ladspa/transient_1206.dll	29855	a10c721f5e352200f9ef23fb5c94d3156ce8741dd04499db7bffe5c7fb2a06a3	shotcut-26.9.27-ci
+lib/ladspa/triple_para_1204.dll	37243	abb21babdc8fc24b1117cb168c81364d1a8f0bea68505879461e5ace3124f8ce	shotcut-26.9.27-ci
+lib/ladspa/valve_1209.dll	30151	6dcfdd8f684f16c15ae1e3832a922cba26297bfcb1e747734162c55d1afb8a0d	shotcut-26.9.27-ci
+lib/ladspa/valve_rect_1405.dll	28319	b229a86b45b413b824abbf19a641c1ff846fc2c7c2febadd1744611e70a010de	shotcut-26.9.27-ci
+lib/ladspa/vocoder_1337.dll	38736	b49d46445ea4c7e6268da1a3d3a373b4c4ede9c713acb2ff24107df9886fd4da	shotcut-26.9.27-ci
+lib/ladspa/vynil_1905.dll	39779	2d190245e81b7980d463a352c8e3d0ca283b24d5bbdb0d2a7d5dbdcd23053903	shotcut-26.9.27-ci
+lib/ladspa/wave_terrain_1412.dll	28636	1521baac4aef40dc5793db8ca017f0f53076ce80dc4c73735bfea75e8f6d39b8	shotcut-26.9.27-ci
+lib/ladspa/xfade_1915.dll	30963	d9fa37bd26b27e0b177af90f8fcb77366c2c96089cacd88499db1169bb794e2f	shotcut-26.9.27-ci
+lib/ladspa/zm1_1428.dll	26553	ed6bb1355e12b937288c31dcc9530ede1dbcb65219a85b9d7c38beea24755310	shotcut-26.9.27-ci
+lib/mlt/libmltavformat.dll	367074	86d76612846deca174320f75557919f47485c6381b027e6c99addf4ce9290e15	shotcut-26.9.27-ci
+lib/mlt/libmltcore.dll	456461	9bdd34b668197315f8810b7f7f7f0ced969e7b73fbed54c22ec256272ec092a6	shotcut-26.9.27-ci
+lib/mlt/libmltdecklink.dll	205985	5cf7784d4fea7640ee2561ba6fd74f38ffeaa90716d3af44d1ba68897c1b86b5	shotcut-26.9.27-ci
+lib/mlt/libmltfrei0r.dll	111635	33749c591caf55ee8a80d135b72ba4aa8db24a22df2a576ad761f2f719e7ba95	shotcut-26.9.27-ci
+lib/mlt/libmltglaxnimate-qt6.dll	6906879	01edd26693fd60ed3b1a826b876e60ef6f7941652b9813ab69bf9bff559ad482	shotcut-26.9.27-ci
+lib/mlt/libmltkdenlive.dll	94533	5aec230e784f59105e010f9ce7a19f096240e9a030bac0554887b117c6a0c5b6	shotcut-26.9.27-ci
+lib/mlt/libmltladspa.dll	233687	6667654c96b588c89cecfcb95843ce75866bf64b3d261c4e4d7ed7999a3fc52e	shotcut-26.9.27-ci
+lib/mlt/libmltmovit.dll	4415712	5cee85ef98e6b5a7b704755722d00d69664ef569a2701b76d04157b9a00e627d	shotcut-26.9.27-ci
+lib/mlt/libmltnormalize.dll	103909	2220460a49dbbe608f8e70e83782983594ab603bbafc30068f72c5cbfee7c504	shotcut-26.9.27-ci
+lib/mlt/libmltoldfilm.dll	98269	39826cd15961bd100ae004c446a80d967f4a8ba3ba78c9b5cdf17c15fa116dbd	shotcut-26.9.27-ci
+lib/mlt/libmltopencv.dll	103432	b1830517c7c89efdb96f413fe9b53f9c8cbacd98d501848b6b3c0fdbad8e767d	shotcut-26.9.27-ci
+lib/mlt/libmltopenfx.dll	196329	800aaa22be623e09c71192b8c0f69807d864f75e77ffcb69aef3e9b30cd8894f	shotcut-26.9.27-ci
+lib/mlt/libmltplus.dll	422026	bbb00e4037e8da74154e25a595bc90eb1df28c8db8aeb321cb013b28ed2e0bf7	mlt-patched (engine-patches/build_modules.sh: MLT 63218a28 + mlt-patches 0001-0003)
+lib/mlt/libmltplusgpl.dll	233075	5f4a19652ac4e2428a5e30dda6486a78146a7df72dcf72e1becf22bc46934aa2	shotcut-26.9.27-ci
+lib/mlt/libmltqt6.dll	652833	f814dfd11a537f46d374c7347e0bb48a2f5ed29aff3bd83d54dc83fda133d5b1	mlt-patched (engine-patches/build_modules.sh: MLT 63218a28 + mlt-patches 0001-0003)
+lib/mlt/libmltresample.dll	80661	ee576d30d27e537cbd9e9aed9e59c6b9315ad1ac9056ed31ffe6243de6f299c6	shotcut-26.9.27-ci
+lib/mlt/libmltrnnoise.dll	90117	e1366fc4da09875d23dec85a545717b6a452966f0894c288c7adf83379abe7f8	shotcut-26.9.27-ci
+lib/mlt/libmltrtaudio.dll	470575	5a1d3bca76553e4e900760336cb73bb8b3f4fdc6a7910f914b0e9ed2f86e1cd9	shotcut-26.9.27-ci
+lib/mlt/libmltrubberband.dll	78106	7b1934183b4046fb539eba5fb04918ee256a2434f08c955e647fec7dd7102654	shotcut-26.9.27-ci
+lib/mlt/libmltsdl2.dll	148444	a276f5709570fee523b12ae2a5f1c3656bd2a9fa88c3205789fc7007d5574175	shotcut-26.9.27-ci
+lib/mlt/libmltsox.dll	80390	de658a01659f915b4ffe1cbce3b6328efab91af4e77f2c5d9cd42fee92f3875e	shotcut-26.9.27-ci
+lib/mlt/libmltspatialaudio.dll	111218	7f2b6565ceba56929212714dbff0e4a65a5f677894d893d3fe78bd8199704b5d	shotcut-26.9.27-ci
+lib/mlt/libmltvidstab.dll	95876	b2451e94c559d35f4e24963fa5117ffde1ef76e7d4a957f90e8d0f13ca2f691c	shotcut-26.9.27-ci
+lib/mlt/libmltvorbis.dll	76033	fdcd2485cf6a3c710401bcb5e7f8fcce4c356e557b283c7867dd40a0f7af2160	shotcut-26.9.27-ci
+lib/mlt/libmltxine.dll	103486	5f2477aa3fa7dbc19316282885fbc30f074ab7a84cb3b0f65b93a73febafdb75	shotcut-26.9.27-ci
+lib/mlt/libmltxml.dll	170247	73fd318370166ee19579e2546c04e680137f971d9eb51ce357800bb9dfa3329c	shotcut-26.9.27-ci
+lib/qml/Qt/labs/animation/labsanimationplugin.dll	19478	3342747036f6191724ebd11680be7dd2ae58c4c3b837a8fb936b0b9b52f2142a	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/Qt/labs/folderlistmodel/qmlfolderlistmodelplugin.dll	19496	8c30fa7e989fb11f9aebb9f2fb0e0e527fc5f14ecabd4c8499619179ea72f35d	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/Qt/labs/platform/labsplatformplugin.dll	19475	1f1fe723a1a45b75261f311438748ea900574e28f65bb9d082e482df89bf1016	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/Qt/labs/qmlmodels/labsmodelsplugin.dll	19478	3469de59e62a6792aab7ebe4759ab0d0c23c14e19350e779e03d31270c7d5fbc	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/Qt/labs/settings/qmlsettingsplugin.dll	19475	dc030c058152c037e26e7648dcd5904230503802d0be67f99ac5f2e318a4a25f	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/Qt/labs/sharedimage/sharedimageplugin.dll	22435	d01f5c014bff1b42b809790e10838e8646755732cf8f463eaeb1217ebe5421d1	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/Qt/labs/StyleKit/impl/labsstylekitimplplugin.dll	19488	57da9b79e0f1212ded4f2624e638162c021f28f0b9f03ce7eee8f7ecc0dd593e	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/Qt/labs/StyleKit/labsstylekitplugin.dll	19475	3a35b5f8f80688c0e60f9aa1d005daecbff72fea4051a85652f45d86335c4803	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/Qt/labs/synchronizer/labssynchronizerplugin.dll	19487	1fd69dc2e530a5affe9b890e9259307177e40a7d2cc586c4a7035df97e9cd854	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/Qt/labs/wavefrontmesh/qmlwavefrontmeshplugin.dll	19490	683aeee0c8ac72caf55aa8798e1e5ef507adc091bf765abdb87986503c34a1e7	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/Qt/test/controls/quickcontrolstestutilsprivateplugin.dll	205082	56d5ac5bb192d9e597ebb8cd71af59c683daa3858d4e7044d79351581ad8ec47	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtCore/qtqmlcoreplugin.dll	19455	2bbe69e9f015d4875e07dda0193b5353afb059999619527dc8b874694c68556f	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtMultimedia/quickmultimediaplugin.dll	22373	369bc24577ebbf273f54bddb6e10c3ae50e434143a3ffae10e07e119683df8bc	msys2 mingw-w64-x86_64-qt6-multimedia 6.11.2-1
+lib/qml/QtQml/Models/modelsplugin.dll	19465	f2970982c092e96df6b303bf9f047a55bd81ca869af4ad54f8fc24fa6234f7d5	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtQml/qmlplugin.dll	19454	c8b2626a8668cfef0b8e87460bb91e3d2505922fafa5bec8fedd4453ed97e26a	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtQml/WorkerScript/workerscriptplugin.dll	19483	95a6ea72c376bb11a85ef4818d2134149cf2bb13dbf182457585d2acbec8015e	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtQml/XmlListModel/qmlxmllistmodelplugin.dll	19483	a3a0dc94fd63cbdcd87b5953b6a7fc5b599a22c62ba66c00cc89c06946f7e1f3	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtQuick/Controls/Basic/impl/qtquickcontrols2basicstyleimplplugin.dll	20030	1c4f8a709fef58e7843fa4919574fc2fc6eff272dbc203c1000206f0c0b3b8f8	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtQuick/Controls/Basic/qtquickcontrols2basicstyleplugin.dll	21401	7b115220655043e95d21f313b13003dca6d7c494fe4f0f6e6daa17e8edecc9ba	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtQuick/Controls/FluentWinUI3/impl/qtquickcontrols2fluentwinui3styleimplplugin.dll	20051	5f412e65779c52d6ba6f7a1747066d17bd3aa6f7c302dff4139bfb4ab27414d6	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtQuick/Controls/FluentWinUI3/qtquickcontrols2fluentwinui3styleplugin.dll	3555081	1d6a644469f9cbce9d78a772c228ab75641ffd316e517001b99a9b3816cc15d1	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtQuick/Controls/Fusion/impl/qtquickcontrols2fusionstyleimplplugin.dll	20033	15ec40350591a36886b3ce17c9cbf307e8fcababdd36c4a4034f3df22d4e67a1	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtQuick/Controls/Fusion/qtquickcontrols2fusionstyleplugin.dll	21344	5cd403089b9b22afde1909c361a6668dadbd18c6b40cbd9a77ef65fbff860056	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtQuick/Controls/Imagine/impl/qtquickcontrols2imaginestyleimplplugin.dll	20036	0db99ce15d8ec530060c7ea5fc1cf538661f794c7b96145ba4a68040514d0fa1	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtQuick/Controls/Imagine/qtquickcontrols2imaginestyleplugin.dll	21348	9a55364fc8389f8f944bf76096cfb1851a7a3b311b62a26309f304d05fec7633	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtQuick/Controls/impl/qtquickcontrols2implplugin.dll	19492	909945fdef189fc3a3f255d5e608af96c784418c00f6458718d268518688b1eb	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtQuick/Controls/Material/impl/qtquickcontrols2materialstyleimplplugin.dll	20039	fc2eb0aa1b10a1678bda4ef7ce0921d637c106467b21ee3d180dd0bb41b2e42d	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtQuick/Controls/Material/qtquickcontrols2materialstyleplugin.dll	21480	bb55b12245ca28f7a4dbb547e76962e57e80809c12f369083c4a6c0e4c48fad1	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtQuick/Controls/qtquickcontrols2plugin.dll	43423	55cda8e87972bf6e39edbf3d473990586cbcbad731fddce52174c58c276d8d9b	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtQuick/Controls/Universal/impl/qtquickcontrols2universalstyleimplplugin.dll	20042	363c5ed82da290dbed4be2ff852719301f9d85fedfaecbfae92c20a9acc088fd	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtQuick/Controls/Universal/qtquickcontrols2universalstyleplugin.dll	21998	0d594ab174eca05899a88e0fdc9788c9b2755acfac149965149d8f7cc3a86292	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtQuick/Controls/Windows/impl/qtquickcontrols2windowsstyleimplplugin.dll	20036	9a68837a5837bbff4ddebb3d3e413f75a4dd122d8062875d50490b192019ea28	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtQuick/Controls/Windows/qtquickcontrols2windowsstyleplugin.dll	779353	60b3b898c5ea15e2a56396c6c747915be92a872c36271dd44acef90641675acb	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtQuick/Dialogs/qtquickdialogsplugin.dll	19476	834163ad640b1e509b38553833d4642c356b14243e1588e0644615ba706861de	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtQuick/Dialogs/quickimpl/qtquickdialogs2quickimplplugin.dll	19504	685f7c418251733241a2d3fdb74683fc8a740f6296dfdc836ca7ef15c7384217	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtQuick/Effects/effectsplugin.dll	19474	9167653c747e8a87e0b37914edca2875dd4a11d773cd1c77babf29e509cae1bf	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtQuick/Layouts/qquicklayoutsplugin.dll	19474	e022c8347008df50214473a85faf9c777da69d84da9c101614e9ad2df28e5a88	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtQuick/LocalStorage/qmllocalstorageplugin.dll	19485	0f3118b9b5a2c9f2a94b6590faba87143b4f67dc287a03b86eeef3cae5b8dd29	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtQuick/NativeStyle/qtquickcontrols2nativestyleplugin.dll	1232978	1ce804fe2f7e774fa960c1e7ca1b95053ad0dccea3140679b3eff05b2c8b0c2f	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtQuick/Particles/particlesplugin.dll	19480	1c67e7c99b8c012b6b619449e0351c57895443df21f423eb398ad4c971e4be46	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtQuick/qtquick2plugin.dll	19505	76b9bd0744b2c0ae8a98a8f6868b38b5bc0f16309931c53172f894e19449a51d	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtQuick/Shapes/DesignHelpers/qtquickshapesdesignhelpersplugin.dll	19511	2604e0d411a6b951723f4fb3d5379124aec5312d3bffd18c0cb85632755fa7f4	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtQuick/Shapes/qmlshapesplugin.dll	19530	d027e360bb76012d96626abb298b552e0d779ee3fe08e6b5b754837b249ef546	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtQuick/Templates/qtquicktemplates2plugin.dll	20849	c5b37b2c33cf2dbf727f2d3d9a8744b4e8ddb5b404bdd58e8c3708029bf4a617	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtQuick/tooling/quicktoolingplugin.dll	66196	02d784e81c62e80a6f4227af5a012d81ac041f5406351fdfe594debb98f5ebc2	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtQuick/VectorImage/Helpers/qquickvectorimagehelpersplugin.dll	19508	efbd57382cb8e1bab3589fde97baf86951607bc663e908acb55dbc2a3be18226	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtQuick/VectorImage/qquickvectorimageplugin.dll	19486	c4aaa72091ec74bfa7e71cb5852a2298b58057fb83680ca25218fea48b4c33d8	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qml/QtQuick/Window/quickwindowplugin.dll	21662	8ae2b6cdcfd47f74a482084675ef4ebe40a9d3e40a8b4cc02277fc9eafe3f990	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+lib/qt6/generic/qtuiotouchplugin.dll	98488	3881411f67f210b6d957eb834af15a20c777916ec615850484daf700eb96a4db	msys2 mingw-w64-x86_64-qt6-base 6.11.2-2
+lib/qt6/iconengines/qsvgicon.dll	68970	554a3ed2eef5c8ec28bdb3d56827d469b81fbc458842dc67325d8a4fd3780ad9	msys2 mingw-w64-x86_64-qt6-svg 6.11.2-1
+lib/qt6/imageformats/qgif.dll	39922	0d0f09b8b8ce920ab20ca36a92bd002c9a763350eb3f6de76fd41502f0464314	msys2 mingw-w64-x86_64-qt6-base 6.11.2-2
+lib/qt6/imageformats/qicns.dll	52988	a9ed2bf2bce33ffa931b7672622b81f1bed337d38b4b38bb8efc382ff5199c7d	shotcut-26.9.27-ci
+lib/qt6/imageformats/qico.dll	44169	577e45b0e217b9a5f7ab93160fc75b1fd26c64ec3c9ff20932df3b25aea840a1	msys2 mingw-w64-x86_64-qt6-base 6.11.2-2
+lib/qt6/imageformats/qjp2.dll	46906	042c0ee93677c2c12e603d49ef0a55929da2e32df0809f515c28fe2bf58a1f34	shotcut-26.9.27-ci
+lib/qt6/imageformats/qjpeg.dll	66873	7aca1a483b42176997a9bc6d71d2649b2571d5af322ca0a8643db95fe3ede425	msys2 mingw-w64-x86_64-qt6-base 6.11.2-2
+lib/qt6/imageformats/qmng.dll	34573	b24f0dba864ee993c9642845024d90e477e87115bf1d23717d08b14d6a5d6d61	shotcut-26.9.27-ci
+lib/qt6/imageformats/qsvg.dll	31914	6a560a1b38d89ed24c9d917c879f8eda459c57bce6e6916bbd96ae37ec1591fb	msys2 mingw-w64-x86_64-qt6-svg 6.11.2-1
+lib/qt6/imageformats/qtga.dll	31952	ee477d20196e81f5657d15969468b0d9679bcf3e4807725da90c17d90e1c63b6	shotcut-26.9.27-ci
+lib/qt6/imageformats/qtiff.dll	51305	4392d9d60867d7ab5d6e4e12bc8c2bf098dc945619773f3797489beeef1885a2	shotcut-26.9.27-ci
+lib/qt6/imageformats/qwbmp.dll	29236	91808ee8072eb87cbe0344b91d7b995128019c98692ff7d35ed39887bda63b8a	shotcut-26.9.27-ci
+lib/qt6/imageformats/qwebp.dll	39398	020af1e742e483916e1f46aed744ada264e9793570d6c000b5e2475a482ea513	shotcut-26.9.27-ci
+lib/qt6/multimedia/windowsmediaplugin.dll	506146	20f6768ab21ef8eeac2d8bf3326cc0c1215f722510d10388d5589873c9863284	shotcut-26.9.27-ci
+lib/qt6/platforms/qdirect2d.dll	1636680	fa0d5993662b47f7e8826b5b53ded23e7132dc60dfd5392d455a5b0c1f0c3269	msys2 mingw-w64-x86_64-qt6-base 6.11.2-2
+lib/qt6/platforms/qminimal.dll	42696	d0e488524b9cfd84a2f23fc07f5fe1a80e6d2078503d40d4ddd90232cd566438	msys2 mingw-w64-x86_64-qt6-base 6.11.2-2
+lib/qt6/platforms/qoffscreen.dll	125562	7bd5ec47eeff1015246b8d1a746e7fdde6a7b9e4525d5c29e8b750ee2c46ac16	msys2 mingw-w64-x86_64-qt6-base 6.11.2-2
+lib/qt6/platforms/qwindows.dll	1519944	9b3b3531ccac562a84698eff4761a6966f531bc01b1d56d5fda8c2da9c6424c1	msys2 mingw-w64-x86_64-qt6-base 6.11.2-2
+lib/qt6/sqldrivers/qsqlibase.dll	155764	5652d43e0d70f86eecdc78301c40272a085d407beada4ff96ca337cb030ca189	msys2 mingw-w64-x86_64-qt6-base 6.11.2-2
+lib/qt6/sqldrivers/qsqlite.dll	117367	a6f02d332685fbb24f9bb5cfabcc350e8d89c290e7225bfd3db1f96e675e8937	msys2 mingw-w64-x86_64-qt6-base 6.11.2-2
+lib/qt6/sqldrivers/qsqlmysql.dll	107325	2e11422c563ceca975a4fb220c7b92539e23206d9b022a32b1f8873807146c43	msys2 mingw-w64-x86_64-qt6-base 6.11.2-2
+lib/qt6/styles/qmodernwindowsstyle.dll	300728	3c503401b6c7f7425d7d4826dac0f628efbf5e3b90a900f38d8072af77d81f95	msys2 mingw-w64-x86_64-qt6-base 6.11.2-2
+lib/qt6/tls/qschannelbackend.dll	311450	089f6defc37af741ce0579dc558b9454087430554531eacda6a00e02e8f9ff29	msys2 mingw-w64-x86_64-qt6-base 6.11.2-2
+libao-4.dll	93856	7f69148ff13a1b01767894235c6c8e1b87bf236aea5290d7d5130700c23f4ce8	shotcut-26.9.27-ci
+libaom.dll	10118978	4842ab9d97d1e290ec5a9f8a84ede664221596e2772c1a76fdc1da1f91a91875	shotcut-26.9.27-ci
+libb2-1.dll	34653	77bab532b5421d6cdddb96c3ae9a4bde144eb481ccaf243336c9f8c690a50987	msys2 mingw-w64-x86_64-libb2 0.98.1-3
+libbrotlicommon.dll	143429	ca7bc06ead80259971badf2cd0bfc688db9154dad65f139f49a38b4be9976f97	msys2 mingw-w64-x86_64-brotli 1.2.0-1
+libbrotlidec.dll	62461	a142dc6cfa77cb907028aa9426f486f3d8de37855e8db2ae2894147908121881	msys2 mingw-w64-x86_64-brotli 1.2.0-1
+libbz2-1.dll	108633	a4fbb97c26662d2b8a80bf4597ed3effb69b12048b0cb1eef2c3f211e2e66673	msys2 mingw-w64-x86_64-bzip2 1.0.8-4
+libcairo-2.dll	1250226	aa794d8f62e122d7739523643e293d26e05f2c1c723035079ba01dcaeda0dad6	msys2 mingw-w64-x86_64-cairo 1.18.6-2
+libCuteLogger.dll	5032372	17e191a5a7479c549668c98397917846fe146e924db353bbcafda3a462916be8	shotcut-26.9.27-ci
+libdav1d.dll	2966692	9b47c733cbaf69a77558ad7d9d11cbc7aa4c4ec54c433197a108eb801c05d9ef	shotcut-26.9.27-ci
+libdeflate.dll	95902	4be2ffe36137f533825a853642051f2c1f6ddd2f6515e33c2c32712bc9a6d214	msys2 mingw-w64-x86_64-libdeflate 1.26-1
+libdl.dll	21060	ee76eb77daf435014b5b7a6eeea5a85e0ba4c35fc3114baba537b269e177763a	msys2 mingw-w64-x86_64-dlfcn 1.4.2-1
+libdouble-conversion.dll	77810	925e994660fc9848e1a2c258952d0188043eaa82869ddbc98a54b3ea2a5fec9f	msys2 mingw-w64-x86_64-double-conversion 3.4.0-1
+libepoxy-0.dll	1771389	8e7d48294d79eb5b1f44cd7c2a637239d8ddcdabaedea12bf9fb7ca919d1a37a	shotcut-26.9.27-ci
+libexpat-1.dll	238525	a79b7025c3fdccb6fe38fb560f3b6cfa75c26750052cf6de307816fb7c22faa0	msys2 mingw-w64-x86_64-expat 2.8.5-1
+libfftw3-3.dll	4291210	3cf91e10bd0c715e9e2a8a595d653dfa27252f587861ffbdc321806e1b259c89	msys2 mingw-w64-x86_64-fftw 3.3.11-1
+libfftw3f-3.dll	4553354	0081b2b07af774467e9a8ab3b611834b616b75af8c76a6a6271c9d8fd5dc938a	msys2 mingw-w64-x86_64-fftw 3.3.11-1
+libFLAC.dll	467438	5caf60fb4b4e025bb4708af71b8c70fd2494a1d68aa1e8133c6beb23dab8687f	shotcut-26.9.27-ci
+libfontconfig-1.dll	508462	bed1827dbb226483026b2b33127866ce173aa2423d89ae7da6f88d6328792ec9	msys2 mingw-w64-x86_64-fontconfig 2.18.3-1
+libfreetype-6.dll	790651	bbb3e6390ee229c867ef31f10e42a49a61a92e434a11d40c6139a2608ebc6194	msys2 mingw-w64-x86_64-freetype 2.14.3-1
+libgcc_s_seh-1.dll	149364	d7e343dd266747177c3699bc3201ea36eceef158e98530e089263bc55bb2a6d7	msys2 mingw-w64-x86_64-libgcc 16.2.0-4
+libgfortran-5.dll	3788514	b4ab3b29b2ce40e9b93fea4521ca9c35c563600f46e3c01c9b7dcb1cc9263186	msys2 mingw-w64-x86_64-libgfortran 16.2.0-4
+libglib-2.0-0.dll	1571222	9778ba7e7a3a3e92e7c1802a45cd9350a905ff3fbff193566630b6c47a3e7b9c	msys2 mingw-w64-x86_64-glib2 2.90.0-1
+libgomp-1.dll	328648	2b5d851adc50f14a824a6de902d61ab67fbaee70dfe131850af842049a5612ee	msys2 mingw-w64-x86_64-libgomp 16.2.0-4
+libgraphite2.dll	167155	063a9ad34a5ec87d038b4646660957395224ecf2cf707917256b7d251a7c5f57	msys2 mingw-w64-x86_64-graphite2 1.3.15-1
+libgsm.dll	56554	687f6fd4d7aaa7a725e856000e5e9f3bfb77fcaa554713db432cf6c4f433a3a1	msys2 mingw-w64-x86_64-gsm 1.0.24-1
+libharfbuzz-0.dll	1595984	69622d1b3d6b7f59697f97692f8c0033e373cfec99d4c59760d003d754c6f973	shotcut-26.9.27-ci
+libiconv-2.dll	1143148	7a282a854e01be726c6cccfe46f548c716aa45b3014818468253aaa4efbcd067	msys2 mingw-w64-x86_64-libiconv 1.19-1
+libicudt78.dll	33120806	60255653982986c9fb72ad1b10b8dc502e498d890e0218cb0a47bc5907aa4e43	msys2 mingw-w64-x86_64-icu 78.3-4
+libicuin78.dll	3186867	c9bb34526709a81bfae231d4190f13adad0b4c63e345262f448aaa720291feec	msys2 mingw-w64-x86_64-icu 78.3-4
+libicuuc78.dll	1999466	27edc25710faa3489cd9cbd6cbc64c305b69ce5dbb9e0a29273d85e9badddde9	msys2 mingw-w64-x86_64-icu 78.3-4
+libid3tag-0.dll	82715	7a05285e04e6dc76e4dd365eee1a4737449bc92751e8ccbb0b91081210a777f2	shotcut-26.9.27-ci
+libintl-8.dll	298731	0537c3dd2378218508ebe3cc416d72a99ee2d24ae1c5525e23458f32544ef861	msys2 mingw-w64-x86_64-gettext-runtime 1.0-1
+libjack64.dll	2437120	5e4fee6e11fd3ba74e74ec486778fb4c947c9f2858971a10bae11277a95a9a8d	shotcut-26.9.27-ci
+libjasper.dll	465887	e5311a701e10c85d0c2e8a150699a220a9e90dc8ac057bd71b49893f34b883dc	shotcut-26.9.27-ci
+libjbig-0.dll	60973	9286b1f637ff4a249d81238ea9c9ebf4fb083727dfc4235c750bf749606d85f0	msys2 mingw-w64-x86_64-jbigkit 2.1-6
+libjpeg-8.dll	967968	b564d34adaca83e73af0e2231719dd0198ea6cd074c64b2ba85bfd7182f27db7	msys2 mingw-w64-x86_64-libjpeg-turbo 3.2.0-1
+liblcms2-2.dll	456345	dc241cbdf2d295846ec564c1eb3c01639d43c0d72415a8758e65d71df31cc0ba	msys2 mingw-w64-x86_64-lcms2 2.19.1-1
+libLerc.dll	804265	6887fb5aeabf382a835a4cb693025e8d48d9c90e82ca4eae5d2d8ffb70c6ca9a	msys2 mingw-w64-x86_64-lerc 4.1.1-1
+liblilv-0.dll	171167	03e947a8dff06187aa9241d26ee6ca70da2b1014a4aebde9dfa1263c0f095c35	shotcut-26.9.27-ci
+libltdl-7.dll	76105	b77c20d66c1b360324b179549414360e58ba7c28db0214b4f3364aee12c32414	shotcut-26.9.27-ci
+liblzma-5.dll	190709	ccb6a179acf35e704b2ffd7f232677982c4856bd1dda1341713a27518cf97ce1	msys2 mingw-w64-x86_64-xz 5.8.4-1
+libmad-0.dll	155675	c3132004e5867b91964b04107d4733ccde0d70f1cb4c7b6862a539c87aaa537f	shotcut-26.9.27-ci
+libmd4c.dll	94424	faa0f49ca80bf344f8712c9d327cd380e6d05bfdbcf9c8dd0d0392b151ee5d06	msys2 mingw-w64-x86_64-md4c 0.6.0-1
+libmlt++-7.dll	303879	6e8227898f6425adceae6d33f1a9738f04b00207dce4276b6d51b934a98eb00c	shotcut-26.9.27-ci
+libmlt-7.dll	490868	e54ba7431aab51118f0dfdd573e3730feb8c84223082dd39f9b1cc3e621b4afd	mlt-patched (engine-patches/mlt-cache-held-item/build_libmlt.sh: MLT 63218a28 + mlt-patches 0004-0005)
+libmng-2.dll	429536	d8b3fc0f6aab93bd5bb1aa2a4b34e54ce20fdf4ed81a8229f72a9b4527674444	shotcut-26.9.27-ci
+libmp3lame-0.dll	329506	f40c566b56a97e32036f3d5263fd7dc2dafa6fc7ded326045dd637dd55d68c24	msys2 mingw-w64-x86_64-lame 3.100-3
+libmpg123-0.dll	453200	5d9ccd4c86b75a984044ebe1d4c95afd1e771b74e89c1467bf76a520c37a5299	shotcut-26.9.27-ci
+libmysofa.dll	152646	6cdea0fc53e94a3761a4fa8ca2e3b3d8b25e6c5171ead1c522aa65699ab057f5	msys2 mingw-w64-x86_64-libmysofa 1.3.5-1
+libogg-0.dll	40580	3038ce8d161324a6349bf7c83b78493857ff6a3501e3adb3d541c6a07bd94a57	msys2 mingw-w64-x86_64-libogg 1.3.6-1
+libopenblas.dll	44335329	336e3f763e7564568f3db155d7426e0095a6bf3e8dce15de81e3b3bcade1054a	msys2 mingw-w64-x86_64-openblas 0.3.34-1
+libopencore-amrnb-0.dll	174211	8f9b1fd5fec2042a3b6af15eae54474210569c75bcc482fe702b45dcb3e96397	msys2 mingw-w64-x86_64-opencore-amr 0.1.6-1
+libopencore-amrwb-0.dll	91267	7482267efad926b69c8304ec631fd531a2fc5d99b481b59cb5b34d8540a38dc2	msys2 mingw-w64-x86_64-opencore-amr 0.1.6-1
+libopencv_core4150.dll	11222183	fa740f255fb062026b582fd6a8d14c1739d6dffba1ce43c0c8739020df5b913e	shotcut-26.9.27-ci
+libopencv_imgproc4150.dll	15567663	b61265057110078bdf72b8d1acc9259c70ff9338d503434880013d8c7a1a2f63	shotcut-26.9.27-ci
+libopencv_plot4150.dll	247851	1a4552099e8e4e1db626b064b06634f5862b07e70f7e2ea2278d16c9b05c2b5c	shotcut-26.9.27-ci
+libopencv_tracking4150.dll	3297707	b0c2d57f5c96c53b05e97cb1adce158f3a88398a11bfd41c7d5513c3b8fad183	shotcut-26.9.27-ci
+libopencv_video4150.dll	1531161	4bdf6f7dc63e174bfd481eb629f14764b1ce96a2544ac67b06f50f4bd7fd2e40	shotcut-26.9.27-ci
+libopus-0.dll	500112	90aa25a0a6525d7da48a7ae8dd3306e45b0c28ce09a73d2a02b56cd95418d5be	msys2 mingw-w64-x86_64-opus 1.6.1-1
+libopusfile-0.dll	55884	fc8ff75c5e0180e73b0528dc78c51ed0fb493741375cdc227f50c2a33cabf727	shotcut-26.9.27-ci
+libpcre2-16-0.dll	646468	b2b8aeb2b62fb4cedf89854cd60adc3cbe08aa5c8a60089c0d3aa920c56cb0cc	shotcut-26.9.27-ci
+libpcre2-8-0.dll	707427	ed6f43f96b0891a5b470e724f727bb4c12255354e609b40bd81fd5be6c0b56ac	shotcut-26.9.27-ci
+libpixman-1-0.dll	740378	55ce45825eb8e825c635416171be4736147a6b0b690469f545d8c4ae8e85b4a3	msys2 mingw-w64-x86_64-pixman 0.46.4-3
+libpng16-16.dll	264269	3737838ee8d6b893df7bdabf7439775371a57dce7e17ee6b35586023c64bd9ab	shotcut-26.9.27-ci
+libquadmath-0.dll	413359	658927a823ee98fd65287719586c4c1f68fad5b10d15b6ea86effb99f0d6e739	msys2 mingw-w64-x86_64-libquadmath 16.2.0-4
+librnnoise-0.dll	3698555	b004a4c34b741e18ca1b5fc524a21553a77e8726d9dd8c8d171995d8b58b50b4	shotcut-26.9.27-ci
+librubberband-2.dll	316780	f15b59010dfbebadce5741932a39966ecdf87f9422d2082356c7ddc64928153e	shotcut-26.9.27-ci
+libsamplerate-0.dll	1502619	1e08aeb1fecade2cf2d7a83463a1b375e13d5f2f008cdeea7409a3eff7ed9a0e	msys2 mingw-w64-x86_64-libsamplerate 0.2.2-1
+libserd-0.dll	134384	b31321ca40768cd7360b43e428be8cec7ca3e9cca2b4a42cc214a78d002185b6	shotcut-26.9.27-ci
+libsharpyuv-0.dll	53757	ab0c9f61dc69b6bcdff1011e215f8d5fd6e5096aba9be3386ab87f217fbbeffe	msys2 mingw-w64-x86_64-libwebp 1.6.0-1
+libsndfile-1.dll	715462	9c9928feb89472a2b0ceb9d100141321492bbfbd24ba43c3998090854a1db794	shotcut-26.9.27-ci
+libsord-0.dll	65465	61012182f94d560222e13898882c3dd1373f7cf1368fd4ac15b68592056409b3	shotcut-26.9.27-ci
+libsox-3.dll	692430	8e4f37e137a0cd6635f7fab5b3eb9f5c45d48ab62d4c5efa695aa9575b4c0cf8	shotcut-26.9.27-ci
+libspatialaudio.dll	2330301	85ef29d5e9a367c0d7943402b9b688d8df92ce6997e744cc56be0d86ed87fa6f	shotcut-26.9.27-ci
+libsqlite3-0.dll	1603605	cc70f6965cc7abe3122ecec38981d08c608df2f2ffe423950b5a85e3a3b4ffed	msys2 mingw-w64-x86_64-sqlite3 3.53.4-1
+libsratom-0.dll	73637	6cdcf3c577b48e3e075bc94def87dd19b9d8bff279374a4c28db29a96360d47c	shotcut-26.9.27-ci
+libstdc++-6.dll	2659216	494bd9045948198ef4d3bc838c7362d4cfd49c890b439c096b1817aa7c7fa6ff	msys2 mingw-w64-x86_64-libstdc++ 16.2.0-4
+libSvtAv1Enc-4.dll	7573028	c4d9e2ae03f80d43c0a16d1461503e1768b160cdba9f3fe9e95e339f69fc2b24	msys2 mingw-w64-x86_64-svt-av1 4.2.0-1
+libtheoradec-2.dll	97211	4f75e430b4e9a3e7c5e6d1da1f7999d8d75c5e505b8a34863cb4c6f82236a771	msys2 mingw-w64-x86_64-libtheora 1.2.0-1
+libtheoraenc-2.dll	247180	c8119dcf51d98673cc55ec47fd54ab60e65fbf6191f0b6fc907afa3ebdc26bb9	msys2 mingw-w64-x86_64-libtheora 1.2.0-1
+libtiff-6.dll	625178	47fe69165bf8e211aaa84224f51f145dc894e330fe7ca167f7c99419e0c8c894	msys2 mingw-w64-x86_64-libtiff 4.7.2-1
+libtwolame-0.dll	165781	5bab0822df202e1eaebf25f3c93009f7156711f17b0d297974706606761bfffd	shotcut-26.9.27-ci
+libvidstab.dll	153183	3a2d95ea86bbcf049d90fbaf7a8cf07516464b77d9475246303ced38df17e737	msys2 mingw-w64-x86_64-vid.stab 1.1.2-1
+libvmaf.dll	768856	01658e1f2836688354d2f171dc2c9deed58b79396e11553c7e7090a882f42d8a	shotcut-26.9.27-ci
+libvo-amrwbenc-0.dll	148786	03f99fb57eb5b0f8fcd867db597418cd501a800ae74fe44ba13d3632e9136891	shotcut-26.9.27-ci
+libvorbis-0.dll	184216	3282629e1b5d6ececcfde133b20fe73de5c81b6eadfbb4697e6718886c7c97a6	msys2 mingw-w64-x86_64-libvorbis 1.3.7-3
+libvorbisenc-2.dll	578809	090f0734883464af440eb9084b22384951b95b1bf325236b322dbef7f93530aa	msys2 mingw-w64-x86_64-libvorbis 1.3.7-3
+libvorbisfile-3.dll	38089	78559fbab64af27b66bd0904bdee7afb16190e66ca3d67323958aa59d2687c8d	msys2 mingw-w64-x86_64-libvorbis 1.3.7-3
+libvpl-2.dll	480963	670c4a28094b9f0d2aefe1e666c61e9e5eb7315f1ffd0bf12e4731727c6254e6	msys2 mingw-w64-x86_64-libvpl 2.17.0-1
+libvpx-1.dll	4412330	ce199be3f352d76a1994ca7e4b0549ca6f8a6700ba5f5bbde24adef262256f01	msys2 mingw-w64-x86_64-libvpx 1.17.0-1
+libwavpack-1.dll	228099	98f58782e269d18d5c0d9a2be19993225dcbf46e3b67e06d209ba2b1f9d1990d	shotcut-26.9.27-ci
+libwebp-7.dll	749724	c6c21a10f8cfe13270832e64640b82709e1d87b956b5f15af435a6c25acd6bbf	msys2 mingw-w64-x86_64-libwebp 1.6.0-1
+libwebpdemux-2.dll	25726	10fd43e1820a03dea175e3c4a7c96ba0463d41971f4ec75dbd375d10b585446a	msys2 mingw-w64-x86_64-libwebp 1.6.0-1
+libwebpmux-3.dll	82858	2c8a2e9d7901ec65330f31f9989c2a07ef0506e903b485fcd8b241a6bab9b88f	msys2 mingw-w64-x86_64-libwebp 1.6.0-1
+libwhisper.dll	690832	3f074dba227294ac409ccf95c29e9a256e36fc72dde5fc48e0476cbf52756456	shotcut-26.9.27-ci
+libwinpthread-1.dll	66333	72bf8802de3a99d28f0bc2db9a11f281a9f9f3fa83dab2bc67e69fac3bd3d9c0	msys2 mingw-w64-x86_64-libwinpthread 14.0.0.r426.g4564ee4b5-1
+libx264-165.dll	2024174	0d814d13db7eeac0ff5264ed86d376f9260746323107cb07affb6c306b240329	msys2 mingw-w64-x86_64-libx264 0.165.r3222.b35605a-3
+libx265-217.dll	22667339	23a4579cf07ad233818d53f941e846847876cb68f57e4492f943d26463cc995f	msys2 mingw-w64-x86_64-x265 4.3-1
+libxml2-16.dll	1255475	81e97f59e486f95de3b8b12973860102cddebbaaeedbbc22786aaec0728b2c68	msys2 mingw-w64-x86_64-libxml2 2.15.4-1
+libzimg-2.dll	636837	26ad6d01991171038ca5a4078a3854ea2f7765beb572e567a83ce15d495d75dc	msys2 mingw-w64-x86_64-zimg 3.0.6-3
+libzix-0.dll	56823	37ee4a2fc0795ff32355bc0e51792f2833907ff496eed6f36d42ae5add1e7f70	shotcut-26.9.27-ci
+libzstd.dll	1218273	b95c223a9548a9ecf51377c962e0bc8f0c51eb0c6f67a296dbc885996f0dd40d	msys2 mingw-w64-x86_64-zstd 1.5.7-2
+melt.exe	138008	c1550f360d62473edfd2b68f91e45fdf56e522a0498c442e6e5e5fc7650261da	shotcut-26.9.27-ci
+opengl32sw.dll	42430976	ffd4e1552653086c806174aebf8573e480a77c4e4054057934792762c06f2c31	shotcut-26.9.27-ci
+Qt6Charts.dll	2040220	81c0581ac7e51d1f49bea5e6cd3605b6ad48ce568f4fed72c0122266caa85914	msys2 mingw-w64-x86_64-qt6-charts 6.11.2-1
+Qt6Concurrent.dll	27562	246917c6b30eca71ad96bf9d38f0929af9c463e30ac7d0451acc3dc59517008e	msys2 mingw-w64-x86_64-qt6-base 6.11.2-2
+Qt6Core.dll	7153377	85bd00fb398346adef666fa9275a6c06f0955927e09d7909cd558700f4d92179	msys2 mingw-w64-x86_64-qt6-base 6.11.2-2
+Qt6Gui.dll	10631984	b268755f2cf1c3eb4f25b6b8435481ff91be0f8a16d578f7d88bc413676c1660	msys2 mingw-w64-x86_64-qt6-base 6.11.2-2
+Qt6Multimedia.dll	1504921	9ed62a9c2857bef764ae7297bd1cd83ba6e031387e71d69bf11c1b73e5febf19	msys2 mingw-w64-x86_64-qt6-multimedia 6.11.2-1
+Qt6MultimediaQuick.dll	345628	cb8fa143d6280be0fc288d10281c714d8f79f6ac71ec9fe7ca883842880f786b	msys2 mingw-w64-x86_64-qt6-multimedia 6.11.2-1
+Qt6Network.dll	2161710	3753ee2316fee18282a06be893be4a5b56673cb0334654d34a23a928cb32ff79	msys2 mingw-w64-x86_64-qt6-base 6.11.2-2
+Qt6OpenGL.dll	630806	b4498f5a77438e9bdc04306fde758213e7b10879150d7e7badb8d81da2f0a0f4	msys2 mingw-w64-x86_64-qt6-base 6.11.2-2
+Qt6OpenGLWidgets.dll	63904	56c373436df7eccf8fd9431e40e897f5740998fcade84c19451eec2d9282d10d	msys2 mingw-w64-x86_64-qt6-base 6.11.2-2
+Qt6Qml.dll	6714427	c24778db976d1e59dbfe94d84d6d79f8663c0179177e49c56645759cfb807d40	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+Qt6QmlMeta.dll	191971	6137c752c66be08c606ae650d7f16010d164607f38d8c8847d78ae39cb79d352	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+Qt6QmlModels.dll	1207286	2ee51379f3e7b8b37a398225b1923261b69be87d57c3d16ac4929692ec19866a	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+Qt6QmlWorkerScript.dll	90540	c1da05877640b31b69d54b7f698129ed87dbebe44c5812b72c9b159f91b1bfd4	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+Qt6Quick.dll	7804757	084ce05b2b85b3141317651ee53ffe7ed0037cac5ff89ebf881a771e18c3b995	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+Qt6QuickControls2.dll	110675	f938b3cab20b4880692115d1342b1a724f34b81c0670ae71b4eb4a099d96f240	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+Qt6QuickControls2Basic.dll	2101112	12b896c5916f0a4e8f4a8a49960603729e7f93ed500640d142b5a90a0c63c8d6	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+Qt6QuickControls2BasicStyleImpl.dll	99738	89a3eaac2909adeb0ccf43aeafd63f7b894ee8aa51aa39fb5347a08e0993dc33	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+Qt6QuickControls2FluentWinUI3StyleImpl.dll	247593	e0a81ffa7af26ed85d264d8fbda25ab722428eda0ad22dfd3b6af16bcc5caa3f	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+Qt6QuickControls2Fusion.dll	1679763	cb922cb0d169d605f6ce8dc6de603fe3d8dad68632b8307cb740bc1a87202c71	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+Qt6QuickControls2FusionStyleImpl.dll	203082	71e6518718b6fc32fce853d1b29effb30b852a38d679f9b2bf3cbe9815ae2f45	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+Qt6QuickControls2Imagine.dll	3638613	dadded9716a939190df9a1f666ba4006b931b97ac28513f533ed1414ed62fc1a	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+Qt6QuickControls2ImagineStyleImpl.dll	68694	3467e8aa78fd10888a144fee347a7288320d498fe09e203437b68e5f0a46cf9e	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+Qt6QuickControls2Impl.dll	390728	f5b149bb864f017f21b359b3d30a72df2350f1a7d774f1fbc505e6929deb157b	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+Qt6QuickControls2Material.dll	2148035	c8bb912892af20046c979b9eecb95183f972a12f489239e9ae8ee3c77a820b85	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+Qt6QuickControls2MaterialStyleImpl.dll	356406	dee5578706b07f3ce057eb3560b73303e2ff1e3b60f5e3b365ab176f9b90e1a9	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+Qt6QuickControls2Universal.dll	1786718	517fe52d31068d690823adc19b764bd5e545221f91f28308a381a3239954685f	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+Qt6QuickControls2UniversalStyleImpl.dll	152197	845036ffd37a4d7c28fce6ecc3effdce55e539fd78d78aa621f356f975b7b5ec	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+Qt6QuickControls2WindowsStyleImpl.dll	97442	dabcba08353de17502768f2b31436719656506f686a2d12685e5f15362a11461	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+Qt6QuickDialogs2.dll	189404	48461f39a7fd1809afeb45c5533f9ee1be85a444d6ac5dee10f00396f829dfcb	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+Qt6QuickDialogs2QuickImpl.dll	3306081	197d0e73a4a15528a1255040cf0278d2f023669014d09ec7e9baca859e34c085	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+Qt6QuickDialogs2Utils.dll	48347	e3e95955955d81cbc34983304ec835d0d1883acbc25b548ab36c5235ff865d2a	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+Qt6QuickLayouts.dll	418383	d7b3e9bfb4c31b7d90d26bc1f5b77c7a842e5b405dfc90771cc8a4422bac69c3	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+Qt6QuickShapes.dll	365437	47664b7e89c827d532725843cd6f0bf7cd115fc01d016c0eed6f328e91cadfb5	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+Qt6QuickTemplates2.dll	2506990	f7ce84d25e5cf1aedce79c0f40dd3997c7f26e475630e9e6e960c9561fa6eed5	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+Qt6QuickWidgets.dll	163663	cbfe3f5053805f373e046df2475f0a1cffed3562d6ab4811758f6e22eb31c408	msys2 mingw-w64-x86_64-qt6-declarative 6.11.2-1
+Qt6Sql.dll	355665	08bed261935e7cb374d45e7248ed9f48ba36dc896787e96972906171c3f1a4df	msys2 mingw-w64-x86_64-qt6-base 6.11.2-2
+Qt6Svg.dll	694691	662443f1ea6193e31ec98d0fbf0b0443cc58b31378e3aab75b23d1fad1c37602	msys2 mingw-w64-x86_64-qt6-svg 6.11.2-1
+Qt6SvgWidgets.dll	61503	223d0fd0a47214145e77316b173984076033ca3759f8626686450ccaf772d681	msys2 mingw-w64-x86_64-qt6-svg 6.11.2-1
+Qt6UiTools.dll	708793	444b8626f844120bd91546e436c28230cea72a2b84dc733c22d44489412d087b	msys2 mingw-w64-x86_64-qt6-tools 6.11.2-1
+Qt6WebSockets.dll	250711	1909b9b18af70c009975f1e8d3f65da9221f458b267f38b0c6f1394eef256cbd	msys2 mingw-w64-x86_64-qt6-websockets 6.11.2-1
+Qt6Widgets.dll	7826877	ac1bd54bd2e4eac84e047893e3b0b3b2c9951395bc538552406c6869bb40eb89	msys2 mingw-w64-x86_64-qt6-base 6.11.2-2
+Qt6Xml.dll	162622	42745ee5ea95d433fe9355c32f1acfed3a8c4671584f6e056f859c0475fc5dcd	msys2 mingw-w64-x86_64-qt6-base 6.11.2-2
+SDL2.dll	2412441	47a3b27654832d9f7e5719c88078210a3dbfd6407b559c5a3c4eb8ab7d0ebdb6	msys2 mingw-w64-x86_64-SDL2 2.32.10-1
+swresample-7.dll	177152	bac6c85fb225d738f0e285b2f42d15b4794c448f3af996c623c850ab431e7590	shotcut-26.9.27-ci
+swscale-10.dll	2118656	894c288ed0a0255ec0d800c19bed201db36bb9d7955021a7b5bf7d9d6c267374	shotcut-26.9.27-ci
+WebView2Loader.dll	194912	d3fce90bdeecb08596e377dea6a316354dd8949e32ff09b89d51be00c14e21b6	shotcut-26.9.27-ci
+whisper-cli.exe	1264464	273220801aa67909b95414cc681844be13effd519577d3a012cb77e71a097df6	shotcut-26.9.27-ci
+zlib1.dll	128488	93e9243a44c29200eeacaf9658efe2558581770e4b11ca4b500e18e424a6e3b5	msys2 mingw-w64-x86_64-zlib 1.3.2-2

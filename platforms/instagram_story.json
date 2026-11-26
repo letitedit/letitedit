@@ -1,0 +1,253 @@
+{
+  "id": "instagram_story",
+  "name": "Instagram Stories",
+  "schema": "letitedit-platform/1",
+  "checked": "2026-11-19",
+  "video": {
+    "aspect_ratios": {
+      "value": {
+        "vertical": "9:16"
+      },
+      "source": "https://support.buffer.com/articles/scheduling-instagram-posts-reels-stories-and-notifications-3XA98S9Q5p",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: Instagram Stories take videos of 3-60 s at 23-60 fps, 9:16 recommended."
+    },
+    "resolutions": {
+      "value": {
+        "common": "1080x1920"
+      },
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "unconfirmed",
+      "note": "Value from letitedit Channel's spec (19 Nov 2026); the page refused automated reading or does not publish it, so it is unconfirmed. Re-check by hand."
+    },
+    "frame_rates": {
+      "value": {
+        "common": 30,
+        "min": 23,
+        "max": 60
+      },
+      "source": "https://support.buffer.com/articles/scheduling-instagram-posts-reels-stories-and-notifications-3XA98S9Q5p",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: Instagram Stories take videos of 3-60 s at 23-60 fps, 9:16 recommended. 30 is the rate letitedit exports."
+    },
+    "min_length_s": {
+      "value": 3,
+      "source": "https://support.buffer.com/articles/scheduling-instagram-posts-reels-stories-and-notifications-3XA98S9Q5p",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: Instagram Stories take videos of 3-60 s at 23-60 fps, 9:16 recommended."
+    },
+    "max_length_s": {
+      "value": 60,
+      "source": "https://support.buffer.com/articles/scheduling-instagram-posts-reels-stories-and-notifications-3XA98S9Q5p",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: Instagram Stories take videos of 3-60 s at 23-60 fps, 9:16 recommended."
+    },
+    "max_file_size_bytes": {
+      "value": 100000000,
+      "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "checked": "2026-11-19",
+      "status": "unconfirmed",
+      "note": "Story videos published through Meta's content publishing API: up to 100 MB and 3-60 s, as posting services quote Meta's reference: Ayrshare (https://www.ayrshare.com/docs/media-guidelines/instagram) and Agorapulse (https://support.agorapulse.com/en/articles/8769640-technical-limits-of-instagram-direct-publishing). Meta's ads guides give 4 GB for Story ads (https://www.facebook.com/business/ads/stories-ad-format). The stricter 100 MB is kept. Was not set before 19 Nov."
+    },
+    "container": {
+      "value": "MP4 or MOV",
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "video_codec": {
+      "value": "H.264",
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    }
+  },
+  "audio": {
+    "codec": {
+      "value": "AAC",
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "bitrate_kbps": {
+      "value": 128,
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "loudness_normalisation": {
+      "value": null,
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "not documented"
+    }
+  },
+  "safe_zones": {
+    "value": [
+      {
+        "name": "top: profile, progress bar and close button",
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.14
+      },
+      {
+        "name": "bottom: reply box and stickers row",
+        "x": 0,
+        "y": 0.86,
+        "w": 1,
+        "h": 0.14
+      }
+    ],
+    "source": "https://www.facebook.com/business/ads/stories-ad-format",
+    "checked": "2026-11-19",
+    "status": "unconfirmed",
+    "note": "The often-quoted Stories guidance (keep about 14%, 250 px, free at the top and the bottom); not found on a page the lookup could read.",
+    "confidence": "low"
+  },
+  "captions": {
+    "placement": {
+      "value": "Stickers, polls and replies sit over the picture; keep text in the middle band.",
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    }
+  },
+  "thumbnail": {
+    "value": null,
+    "source": "https://www.facebook.com/business/ads/stories-ad-format",
+    "checked": "2026-11-19",
+    "status": "not documented"
+  },
+  "text_limits": {
+    "caption_chars": {
+      "value": null,
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "not documented"
+    }
+  },
+  "export_preset": {
+    "width": {
+      "value": 1080,
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "unconfirmed",
+      "note": "Value from letitedit Channel's spec (19 Nov 2026); the page refused automated reading or does not publish it, so it is unconfirmed. Re-check by hand."
+    },
+    "height": {
+      "value": 1920,
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "fps": {
+      "value": 30,
+      "source": "https://support.buffer.com/articles/scheduling-instagram-posts-reels-stories-and-notifications-3XA98S9Q5p",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: Instagram Stories take videos of 3-60 s at 23-60 fps, 9:16 recommended."
+    },
+    "container": {
+      "value": "mp4",
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "vcodec": {
+      "value": "libx264",
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "pix_fmt": {
+      "value": "yuv420p",
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "video_bitrate_kbps": {
+      "value": 8000,
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "acodec": {
+      "value": "aac",
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "audio_bitrate_kbps": {
+      "value": 128,
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "sample_rate_hz": {
+      "value": 48000,
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "unconfirmed"
+    },
+    "loudness_lufs": {
+      "value": null,
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "not documented"
+    }
+  },
+  "images": {
+    "sizes": {
+      "value": {
+        "story_9x16": "1080x1920"
+      },
+      "source": "https://www.facebook.com/business/ads/stories-ad-format",
+      "checked": "2026-11-19",
+      "status": "unconfirmed",
+      "note": "Value from letitedit Channel's spec (19 Nov 2026); the page refused automated reading or does not publish it, so it is unconfirmed. Re-check by hand."
+    },
+    "formats": {
+      "value": [
+        "JPG",
+        "PNG"
+      ],
+      "source": "https://www.facebook.com/business/ads-guide/update/image",
+      "checked": "2026-11-19",
+      "status": "official-ads"
+    },
+    "max_photos": {
+      "value": 10,
+      "source": "https://support.buffer.com/articles/scheduling-instagram-posts-reels-stories-and-notifications-3XA98S9Q5p",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: up to 10 images or videos in one Story post."
+    },
+    "max_file_size_bytes": {
+      "value": 8000000,
+      "source": "https://support.buffer.com/articles/scheduling-instagram-posts-reels-stories-and-notifications-3XA98S9Q5p",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: Story images up to 8 MB."
+    },
+    "min_size": {
+      "value": "150x150",
+      "source": "https://support.buffer.com/articles/scheduling-instagram-posts-reels-stories-and-notifications-3XA98S9Q5p",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: Story images at least 150x150."
+    },
+    "color_space": {
+      "value": "sRGB",
+      "source": "https://support.buffer.com/articles/scheduling-instagram-posts-reels-stories-and-notifications-3XA98S9Q5p",
+      "checked": "2026-11-18",
+      "status": "posting-service",
+      "note": "Buffer's help centre, for posting through Buffer: Story images in sRGB."
+    }
+  }
+}

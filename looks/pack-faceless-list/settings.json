@@ -1,0 +1,1035 @@
+{
+  "format": "letitedit-look-settings/1",
+  "id": "pack-faceless-list",
+  "defaults_are": "taste",
+  "share": false,
+  "values": {
+    "format": "letitedit-style/3",
+    "name": "Faceless List",
+    "description": "\"3 things...\" told by a voice over footage of the things: the list itself is what keeps people watching.",
+    "colors": {
+      "primary": "#FFFFFF",
+      "secondary": "#FFC233",
+      "accent": "#FF5C39",
+      "dark": "#121212",
+      "light": "#FFFFFF",
+      "box": "#000000BF"
+    },
+    "fonts": {
+      "heading": {
+        "family": "Anton",
+        "weight": 400
+      },
+      "body": {
+        "family": "Inter",
+        "weight": 700
+      },
+      "captions": {
+        "family": "Inter",
+        "weight": 800
+      }
+    },
+    "captions": {
+      "font": "captions",
+      "size": 56,
+      "fill": "light",
+      "outline": null,
+      "shadow": null,
+      "background": "box",
+      "position": "bottom",
+      "margin": 0.33,
+      "max_chars": 24,
+      "max_lines": 2,
+      "case": "as_spoken"
+    },
+    "text": {
+      "font": "heading",
+      "size": 120,
+      "fill": "light",
+      "outline": {
+        "color": "dark",
+        "width": 8
+      }
+    },
+    "graphics": {
+      "word_captions": {
+        "style": "karaoke",
+        "font": "captions",
+        "size": 62,
+        "fill": "light",
+        "highlight": "secondary",
+        "outline": null,
+        "outline_width": 0,
+        "box": "box",
+        "position": 0.62,
+        "max_width": 0.8,
+        "uppercase": false,
+        "pop_scale": 1.0
+      }
+    },
+    "music": {
+      "zones": {
+        "talk": -20.0,
+        "montage": -9.0,
+        "quiet": -24.0,
+        "swell": -3.0,
+        "end": -6.0
+      },
+      "duck_under_speech": true,
+      "merge_gap": 4.0,
+      "attack": 0.3,
+      "release": 0.9,
+      "crossfade": 3.0,
+      "fade_in": 1.5,
+      "fade_out": 3.0,
+      "dialogue_lufs": null,
+      "sources": [],
+      "notes": "A light beat bed 20 dB under the voice [MON, RES]; up a little under each number card.",
+      "likes": [],
+      "avoid": [],
+      "theme": null
+    },
+    "sfx": {
+      "gain_db": -12.0,
+      "map": {
+        "swish": "assets/whoosh_fast_02.mp3",
+        "paper": "assets/paper.wav",
+        "tick": "assets/click_ui_03.mp3",
+        "ding": "assets/ding_confirm_02.mp3",
+        "chime": "assets/chime_sparkle_03.mp3",
+        "whoosh": "assets/whoosh_fast_03.mp3",
+        "click": "assets/click_ui_02.mp3"
+      },
+      "events": {
+        "popup": "tick",
+        "text": "paper",
+        "transition": "whoosh",
+        "count": "ding",
+        "reveal": "chime",
+        "flash": "whoosh"
+      }
+    },
+    "editing": {
+      "max_pause": 0.35,
+      "pad_in": 0.06,
+      "pad_out": 0.15,
+      "blur_pad": true,
+      "transitions": "cut",
+      "pace": "fast",
+      "intro": null,
+      "outro": null
+    },
+    "export": {
+      "preset": "social_h264",
+      "loudness": -14.0
+    },
+    "look": {
+      "about": "Clean and consistent - mixed footage brought to one exposure and colour [OVS], a touch more saturation.",
+      "effects": [
+        {
+          "filter": "hue_lightness_saturation",
+          "params": {
+            "av.s": 1.06
+          }
+        }
+      ]
+    },
+    "taste": "",
+    "label": "Faceless list",
+    "summary": "A voice over b-roll working through a numbered list - big number cards, a progress counter, boxed captions.",
+    "kind": "short",
+    "tags": [
+      "faceless",
+      "voiceover",
+      "list",
+      "steps",
+      "b-roll",
+      "numbered",
+      "captions",
+      "shorts"
+    ],
+    "preview": "preview.jpg",
+    "recipe": "recipe.md",
+    "credits": [
+      {
+        "file": "assets/paper.wav",
+        "source": "synthesised by tools\\styles\\sounds.py (paper)",
+        "licence": "letitedit's own (generated)"
+      },
+      {
+        "file": "assets/whoosh_fast_02.mp3",
+        "source": "Freesound.org: swosh-22.flac by qubodup (freesound #60009) (https://freesound.org/people/qubodup/sounds/60009/); copy of whoosh_fast_02.mp3 from the local sound library (08 Whooshes & Transitions)",
+        "licence": "CC0 1.0 (Creative Commons 0)"
+      },
+      {
+        "file": "assets/click_ui_03.mp3",
+        "source": "Kenney.nl: Kenney ui-audio: Audio\\click3.ogg (https://kenney.nl/assets/ui-audio); copy of click_ui_03.mp3 from the local sound library (06 Real World & DIY)",
+        "licence": "CC0 1.0 (public domain)"
+      },
+      {
+        "file": "assets/ding_confirm_02.mp3",
+        "source": "Kenney.nl: Kenney interface-sounds: Audio\\confirmation_002.ogg (https://kenney.nl/assets/interface-sounds); copy of ding_confirm_02.mp3 from the local sound library (04 Dings & Sparkles)",
+        "licence": "CC0 1.0 (public domain)"
+      },
+      {
+        "file": "assets/chime_sparkle_03.mp3",
+        "source": "Freesound.org: Fantasy_ui_Button_1.wav by ZenithInfinitiveStudios (freesound #376747) (https://freesound.org/people/ZenithInfinitiveStudios/sounds/376747/); copy of chime_sparkle_03.mp3 from the local sound library (04 Dings & Sparkles)",
+        "licence": "CC0 1.0 (Creative Commons 0)"
+      },
+      {
+        "file": "assets/whoosh_fast_03.mp3",
+        "source": "Freesound.org: Swosh / Whoosh / Air Cut by qubodup (freesound #60030) (https://freesound.org/people/qubodup/sounds/60030/); copy of whoosh_fast_03.mp3 from the local sound library (08 Whooshes & Transitions)",
+        "licence": "CC0 1.0 (Creative Commons 0)"
+      },
+      {
+        "file": "assets/click_ui_02.mp3",
+        "source": "Kenney.nl: Kenney ui-audio: Audio\\click2.ogg (https://kenney.nl/assets/ui-audio); copy of click_ui_02.mp3 from the local sound library (06 Real World & DIY)",
+        "licence": "CC0 1.0 (public domain)"
+      },
+      {
+        "file": "preview.jpg",
+        "source": "Original preview imagery; hands, objects, places and titles only",
+        "licence": "Original letitedit footage: hands, objects, places and titles only; no faces"
+      }
+    ],
+    "effects": {
+      "number_card": {
+        "kind": "popup",
+        "about": "The item's number, huge, as it starts (\"1\", \"2\", \"3\").",
+        "position": [
+          0.5,
+          0.255
+        ],
+        "size": 0.36,
+        "font": "heading",
+        "fill": "secondary",
+        "stroke": "dark",
+        "stroke_width": 14,
+        "in": "pop",
+        "out": "shrink",
+        "in_s": 0.22,
+        "out_s": 0.2,
+        "hold_s": 2.1,
+        "shadow": true,
+        "sfx": "whoosh",
+        "sfx_offset_s": -0.14,
+        "rules": {
+          "triggers": [
+            "list_item"
+          ],
+          "density": {
+            "per_10s": 2,
+            "min_gap_s": 4.0
+          },
+          "duration_s": [
+            1.6,
+            3.2
+          ],
+          "never": [
+            "over_captions"
+          ],
+          "when": "The moment the voice starts a new item. Give asset {text} with the number."
+        }
+      },
+      "item_title": {
+        "kind": "text_pop",
+        "about": "The item in three to five words under the number, upper case [CLU labels 6 words at most].",
+        "position": [
+          0.5,
+          0.445
+        ],
+        "size": 0.84,
+        "font": "heading",
+        "fill": "light",
+        "stroke": "dark",
+        "stroke_width": 12,
+        "tilt": 0,
+        "in": "slide_up",
+        "out": "fade",
+        "hold_s": 2.0,
+        "sfx": "paper",
+        "rules": {
+          "triggers": [
+            "list_item"
+          ],
+          "density": {
+            "per_10s": 2,
+            "min_gap_s": 4.0
+          },
+          "duration_s": [
+            1.5,
+            3.2
+          ],
+          "never": [
+            "over_captions",
+            "overlapping"
+          ],
+          "when": "With every number card, the same `at`. The item's name as the voice says it, not a new claim."
+        }
+      },
+      "counter": {
+        "kind": "popup",
+        "about": "A small progress counter (\"2/3\") in the top-left for the whole item.",
+        "position": [
+          0.2,
+          0.175
+        ],
+        "size": 0.17,
+        "font": "heading",
+        "fill": "dark",
+        "stroke_width": 0,
+        "outline": 12,
+        "outline_color": "secondary",
+        "in": "pop",
+        "out": "fade",
+        "in_s": 0.2,
+        "out_s": 0.2,
+        "shadow": true,
+        "sfx": "tick",
+        "rules": {
+          "triggers": [
+            "list_item"
+          ],
+          "density": {
+            "per_10s": 2,
+            "min_gap_s": 3.0
+          },
+          "duration_s": [
+            2.0,
+            40.0
+          ],
+          "never": [
+            "over_captions",
+            "over_face"
+          ],
+          "when": "From each item's start to the next item; `len` to the next card. It only ever counts up [modes]."
+        }
+      },
+      "key_word": {
+        "kind": "text_pop",
+        "about": "One key word big in amber above the captions.",
+        "size": 0.6,
+        "font": "heading",
+        "fill": "secondary",
+        "stroke": "dark",
+        "stroke_width": 12,
+        "tilt": -3,
+        "hold_s": 0.9,
+        "sfx": "swish",
+        "rules": {
+          "triggers": [
+            "emphasis",
+            "number"
+          ],
+          "density": {
+            "per_10s": 1,
+            "min_gap_s": 4.0
+          },
+          "placement": {
+            "zone": "above_captions",
+            "avoid": [
+              "captions",
+              "covered"
+            ]
+          },
+          "duration_s": [
+            0.7,
+            1.6
+          ],
+          "never": [
+            "over_captions",
+            "overlapping"
+          ],
+          "when": "The word or number the item turns on; numbers as numerals. Not while a number card is up."
+        }
+      },
+      "done_check": {
+        "kind": "popup",
+        "about": "A check mark when an item is done, with a ding.",
+        "asset": "emoji:check mark button",
+        "size": 0.2,
+        "position": [
+          0.8,
+          0.3
+        ],
+        "in": "pop",
+        "out": "shrink",
+        "hold_s": 0.9,
+        "sfx": "ding",
+        "rules": {
+          "triggers": [
+            "list_item",
+            "reveal"
+          ],
+          "density": {
+            "per_10s": 1,
+            "min_gap_s": 5.0
+          },
+          "duration_s": [
+            0.8,
+            1.8
+          ],
+          "never": [
+            "over_captions"
+          ],
+          "when": "The end of an item where the footage shows it done."
+        }
+      },
+      "cutaway": {
+        "kind": "broll",
+        "about": "Another shot of the thing being described, the voice carrying on.",
+        "fit": "cover",
+        "len": 2.5,
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "mention",
+            "list_item"
+          ],
+          "density": {
+            "per_10s": 2,
+            "min_gap_s": 2.0
+          },
+          "duration_s": [
+            1.5,
+            5.0
+          ],
+          "when": "Change the picture every 2-5 s [OVS, MON] with shots of what is being said; never a random pretty shot."
+        }
+      },
+      "result_flash": {
+        "kind": "flash",
+        "about": "A soft flash and a chime on the final result.",
+        "color": "light",
+        "len": 0.25,
+        "opacity": 0.6,
+        "sfx": "chime",
+        "rules": {
+          "triggers": [
+            "reveal",
+            "ending"
+          ],
+          "density": {
+            "per_min": 1
+          },
+          "when": "Once, the moment the end result is shown."
+        }
+      },
+      "whoosh_cut": {
+        "kind": "whoosh",
+        "about": "A whoosh into a new item's first shot.",
+        "sfx": "whoosh",
+        "sfx_offset_s": -0.14,
+        "rules": {
+          "triggers": [
+            "list_item",
+            "topic_change"
+          ],
+          "density": {
+            "per_10s": 1,
+            "min_gap_s": 4.0
+          },
+          "when": "Only where no number card brings its own whoosh."
+        }
+      }
+    },
+    "fx": {
+      "track": "Effects",
+      "sfx_track": "Effect sounds",
+      "broll_track": "B-roll",
+      "density": {
+        "per_10s": 8,
+        "per_min": null,
+        "min_gap_s": null
+      },
+      "safe_zone": "phone",
+      "never": [
+        "outside_safe_zone"
+      ],
+      "rhythm": "A number card at every item (number, title and counter land together), the counter always on; key words and a check at each item's end."
+    },
+    "popups": {
+      "track": null,
+      "sfx_track": null,
+      "min_gap_s": 2.0,
+      "max_total": null,
+      "entries": []
+    },
+    "hook": {
+      "max_s": 3.0,
+      "approaches": [
+        "number",
+        "result_first",
+        "question",
+        "stakes"
+      ],
+      "text": {
+        "max_words": 7,
+        "case": "upper",
+        "position": [
+          0.5,
+          0.3
+        ],
+        "size": 0.86,
+        "fill": "light",
+        "stroke": "dark",
+        "stroke_width": 12,
+        "font": "heading"
+      },
+      "rules": "Say the count and the payoff in the first 3 s (\"3 steps to fix a grinding fan\") over the result or the problem [JH, CLU]. The list appears by about 5 s and every promised item is delivered [JH, modes].",
+      "avoid": [
+        "greetings",
+        "a list longer than the video can show",
+        "padding to a round number"
+      ]
+    },
+    "broll": {
+      "amount": "some",
+      "kinds": [],
+      "favorites": "",
+      "notes": ""
+    },
+    "shots": {
+      "framing": "medium",
+      "camera": "handheld",
+      "punch_ins": "some",
+      "notes": ""
+    },
+    "signature": {
+      "touches": []
+    },
+    "measured": {},
+    "provenance": {
+      "made_by": "letitedit style library, wave 1",
+      "date": "2026-10-29",
+      "measured": "none yet (no reference videos in style-references)",
+      "sources": [
+        {
+          "url": "https://www.overseeros.com/blog/how-to-edit-faceless-youtube-videos",
+          "title": "Overseeros faceless editing guide",
+          "used_for": "scene lengths (median 3.62 s over 4,412 scenes, a production reference), hard cuts, voice-first mix, consistent footage",
+          "licence": "none found (numbers only)"
+        },
+        {
+          "url": "https://blitzcutai.com/blog/best-caption-style-instagram-reels-2026",
+          "title": "BlitzCut Reels captions",
+          "used_for": "highlight-box captions for lists",
+          "licence": "none found (numbers only)"
+        },
+        {
+          "url": "https://www.clueso.io/blog/how-to-make-tasteful-screen-capture-videos",
+          "title": "Clueso screen-capture playbook",
+          "used_for": "labels of six words at most",
+          "licence": "none found (numbers only)"
+        }
+      ],
+      "notes": "The list as the mechanism and a visible count come from letitedit-shorts [JH]. Tags in ..\\SOURCES.md."
+    }
+  },
+  "asset_root": "resources",
+  "files": {
+    "assets/chime_sparkle_03.mp3": "resources/a428a4933fcc77c6ba33d4ec.mp3",
+    "assets/click_ui_02.mp3": "resources/4540dff572fcf57ac2d41cd9.mp3",
+    "assets/click_ui_03.mp3": "resources/c5ebe5643727c731df714f88.mp3",
+    "assets/ding_confirm_02.mp3": "resources/c564d098573828eceaf699e9.mp3",
+    "assets/paper.wav": "resources/38329503578e5e93e92a58dd.wav",
+    "assets/whoosh_fast_02.mp3": "resources/b28911d6f30c5f10b353b924.mp3",
+    "assets/whoosh_fast_03.mp3": "resources/68a9be5e205fc0a89d7a429e.mp3",
+    "preview.jpg": "resources/6bdc46c4ab396fc39a3f070b.jpg",
+    "recipe.md": "recipe.md"
+  },
+  "links": {
+    "recipe": "recipe.md",
+    "preview": "preview.jpg"
+  },
+  "legacy": {
+    "format": "letitedit-style/3",
+    "source": "style.yaml",
+    "pack": "faceless-list",
+    "data": {
+      "format": "letitedit-style/3",
+      "name": "Faceless List",
+      "label": "Faceless list",
+      "summary": "A voice over b-roll working through a numbered list - big number cards, a progress counter, boxed captions.",
+      "kind": "short",
+      "tags": [
+        "faceless",
+        "voiceover",
+        "list",
+        "steps",
+        "b-roll",
+        "numbered",
+        "captions",
+        "shorts"
+      ],
+      "recipe": "recipe.md",
+      "preview": "preview.jpg",
+      "description": "\"3 things...\" told by a voice over footage of the things: the list itself is what keeps people watching.",
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#FFC233",
+        "accent": "#FF5C39",
+        "box": "#000000BF",
+        "dark": "#121212",
+        "light": "#FFFFFF"
+      },
+      "fonts": {
+        "heading": {
+          "family": "Anton",
+          "weight": 400
+        },
+        "body": {
+          "family": "Inter",
+          "weight": 700
+        },
+        "captions": {
+          "family": "Inter",
+          "weight": 800
+        }
+      },
+      "graphics": {
+        "word_captions": {
+          "style": "karaoke",
+          "font": "captions",
+          "size": 62,
+          "fill": "light",
+          "highlight": "secondary",
+          "outline": null,
+          "outline_width": 0,
+          "box": "box",
+          "position": 0.62,
+          "max_width": 0.8,
+          "uppercase": false,
+          "pop_scale": 1.0
+        }
+      },
+      "captions": {
+        "font": "captions",
+        "size": 56,
+        "fill": "light",
+        "outline": null,
+        "background": "box",
+        "position": "bottom",
+        "margin": 0.33,
+        "max_chars": 24,
+        "max_lines": 2,
+        "case": "as_spoken"
+      },
+      "text": {
+        "font": "heading",
+        "size": 120,
+        "fill": "light",
+        "outline": {
+          "color": "dark",
+          "width": 8
+        }
+      },
+      "editing": {
+        "max_pause": 0.35,
+        "pad_in": 0.06,
+        "pad_out": 0.15,
+        "blur_pad": true,
+        "transitions": "cut",
+        "pace": "fast"
+      },
+      "music": {
+        "zones": {
+          "talk": -20.0,
+          "montage": -9.0,
+          "end": -6.0
+        },
+        "notes": "A light beat bed 20 dB under the voice [MON, RES]; up a little under each number card."
+      },
+      "export": {
+        "preset": "social_h264",
+        "loudness": -14.0
+      },
+      "look": {
+        "about": "Clean and consistent - mixed footage brought to one exposure and colour [OVS], a touch more saturation.",
+        "effects": [
+          {
+            "filter": "hue_lightness_saturation",
+            "params": {
+              "av.s": 1.06
+            }
+          }
+        ]
+      },
+      "sfx": {
+        "gain_db": -12.0,
+        "map": {
+          "swish": "assets/whoosh_fast_02.mp3",
+          "paper": "assets/paper.wav",
+          "tick": "assets/click_ui_03.mp3",
+          "ding": "assets/ding_confirm_02.mp3",
+          "chime": "assets/chime_sparkle_03.mp3",
+          "whoosh": "assets/whoosh_fast_03.mp3",
+          "click": "assets/click_ui_02.mp3"
+        },
+        "events": {
+          "popup": "tick",
+          "text": "paper",
+          "transition": "whoosh",
+          "count": "ding",
+          "reveal": "chime",
+          "flash": "whoosh"
+        }
+      },
+      "fx": {
+        "track": "Effects",
+        "sfx_track": "Effect sounds",
+        "broll_track": "B-roll",
+        "density": {
+          "per_10s": 8
+        },
+        "safe_zone": "phone",
+        "never": [
+          "outside_safe_zone"
+        ],
+        "rhythm": "A number card at every item (number, title and counter land together), the counter always on; key words and a check at each item's end."
+      },
+      "effects": {
+        "number_card": {
+          "kind": "popup",
+          "about": "The item's number, huge, as it starts (\"1\", \"2\", \"3\").",
+          "position": [
+            0.5,
+            0.255
+          ],
+          "size": 0.36,
+          "font": "heading",
+          "fill": "secondary",
+          "stroke": "dark",
+          "stroke_width": 14,
+          "in": "pop",
+          "out": "shrink",
+          "in_s": 0.22,
+          "out_s": 0.2,
+          "hold_s": 2.1,
+          "shadow": true,
+          "sfx": "whoosh",
+          "sfx_offset_s": -0.14,
+          "rules": {
+            "triggers": [
+              "list_item"
+            ],
+            "density": {
+              "per_10s": 2,
+              "min_gap_s": 4.0
+            },
+            "duration_s": [
+              1.6,
+              3.2
+            ],
+            "never": [
+              "over_captions"
+            ],
+            "when": "The moment the voice starts a new item. Give asset {text} with the number."
+          }
+        },
+        "item_title": {
+          "kind": "text_pop",
+          "about": "The item in three to five words under the number, upper case [CLU labels 6 words at most].",
+          "position": [
+            0.5,
+            0.445
+          ],
+          "size": 0.84,
+          "font": "heading",
+          "fill": "light",
+          "stroke": "dark",
+          "stroke_width": 12,
+          "tilt": 0,
+          "in": "slide_up",
+          "out": "fade",
+          "hold_s": 2.0,
+          "sfx": "paper",
+          "rules": {
+            "triggers": [
+              "list_item"
+            ],
+            "density": {
+              "per_10s": 2,
+              "min_gap_s": 4.0
+            },
+            "duration_s": [
+              1.5,
+              3.2
+            ],
+            "never": [
+              "over_captions",
+              "overlapping"
+            ],
+            "when": "With every number card, the same `at`. The item's name as the voice says it, not a new claim."
+          }
+        },
+        "counter": {
+          "kind": "popup",
+          "about": "A small progress counter (\"2/3\") in the top-left for the whole item.",
+          "position": [
+            0.2,
+            0.175
+          ],
+          "size": 0.17,
+          "font": "heading",
+          "fill": "dark",
+          "stroke_width": 0,
+          "outline": 12,
+          "outline_color": "secondary",
+          "in": "pop",
+          "out": "fade",
+          "in_s": 0.2,
+          "out_s": 0.2,
+          "shadow": true,
+          "sfx": "tick",
+          "rules": {
+            "triggers": [
+              "list_item"
+            ],
+            "density": {
+              "per_10s": 2,
+              "min_gap_s": 3.0
+            },
+            "duration_s": [
+              2.0,
+              40.0
+            ],
+            "never": [
+              "over_captions",
+              "over_face"
+            ],
+            "when": "From each item's start to the next item; `len` to the next card. It only ever counts up [modes]."
+          }
+        },
+        "key_word": {
+          "kind": "text_pop",
+          "about": "One key word big in amber above the captions.",
+          "size": 0.6,
+          "font": "heading",
+          "fill": "secondary",
+          "stroke": "dark",
+          "stroke_width": 12,
+          "tilt": -3,
+          "hold_s": 0.9,
+          "sfx": "swish",
+          "rules": {
+            "triggers": [
+              "emphasis",
+              "number"
+            ],
+            "density": {
+              "per_10s": 1,
+              "min_gap_s": 4.0
+            },
+            "placement": {
+              "zone": "above_captions",
+              "avoid": [
+                "captions",
+                "covered"
+              ]
+            },
+            "duration_s": [
+              0.7,
+              1.6
+            ],
+            "never": [
+              "over_captions",
+              "overlapping"
+            ],
+            "when": "The word or number the item turns on; numbers as numerals. Not while a number card is up."
+          }
+        },
+        "done_check": {
+          "kind": "popup",
+          "about": "A check mark when an item is done, with a ding.",
+          "asset": "emoji:check mark button",
+          "size": 0.2,
+          "position": [
+            0.8,
+            0.3
+          ],
+          "in": "pop",
+          "out": "shrink",
+          "hold_s": 0.9,
+          "sfx": "ding",
+          "rules": {
+            "triggers": [
+              "list_item",
+              "reveal"
+            ],
+            "density": {
+              "per_10s": 1,
+              "min_gap_s": 5.0
+            },
+            "duration_s": [
+              0.8,
+              1.8
+            ],
+            "never": [
+              "over_captions"
+            ],
+            "when": "The end of an item where the footage shows it done."
+          }
+        },
+        "cutaway": {
+          "kind": "broll",
+          "about": "Another shot of the thing being described, the voice carrying on.",
+          "fit": "cover",
+          "len": 2.5,
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "mention",
+              "list_item"
+            ],
+            "density": {
+              "per_10s": 2,
+              "min_gap_s": 2.0
+            },
+            "duration_s": [
+              1.5,
+              5.0
+            ],
+            "when": "Change the picture every 2-5 s [OVS, MON] with shots of what is being said; never a random pretty shot."
+          }
+        },
+        "result_flash": {
+          "kind": "flash",
+          "about": "A soft flash and a chime on the final result.",
+          "color": "light",
+          "len": 0.25,
+          "opacity": 0.6,
+          "sfx": "chime",
+          "rules": {
+            "triggers": [
+              "reveal",
+              "ending"
+            ],
+            "density": {
+              "per_min": 1
+            },
+            "when": "Once, the moment the end result is shown."
+          }
+        },
+        "whoosh_cut": {
+          "kind": "whoosh",
+          "about": "A whoosh into a new item's first shot.",
+          "sfx": "whoosh",
+          "sfx_offset_s": -0.14,
+          "rules": {
+            "triggers": [
+              "list_item",
+              "topic_change"
+            ],
+            "density": {
+              "per_10s": 1,
+              "min_gap_s": 4.0
+            },
+            "when": "Only where no number card brings its own whoosh."
+          }
+        }
+      },
+      "popups": {
+        "min_gap_s": 2.0,
+        "entries": []
+      },
+      "hook": {
+        "max_s": 3.0,
+        "approaches": [
+          "number",
+          "result_first",
+          "question",
+          "stakes"
+        ],
+        "text": {
+          "max_words": 7,
+          "case": "upper",
+          "position": [
+            0.5,
+            0.3
+          ],
+          "size": 0.86,
+          "fill": "light",
+          "stroke": "dark",
+          "stroke_width": 12,
+          "font": "heading"
+        },
+        "rules": "Say the count and the payoff in the first 3 s (\"3 steps to fix a grinding fan\") over the result or the problem [JH, CLU]. The list appears by about 5 s and every promised item is delivered [JH, modes].",
+        "avoid": [
+          "greetings",
+          "a list longer than the video can show",
+          "padding to a round number"
+        ]
+      },
+      "credits": [
+        {
+          "file": "assets/paper.wav",
+          "source": "synthesised by tools\\styles\\sounds.py (paper)",
+          "licence": "letitedit's own (generated)"
+        },
+        {
+          "file": "assets/whoosh_fast_02.mp3",
+          "source": "Freesound.org: swosh-22.flac by qubodup (freesound #60009) (https://freesound.org/people/qubodup/sounds/60009/); copy of whoosh_fast_02.mp3 from the local sound library (08 Whooshes & Transitions)",
+          "licence": "CC0 1.0 (Creative Commons 0)"
+        },
+        {
+          "file": "assets/click_ui_03.mp3",
+          "source": "Kenney.nl: Kenney ui-audio: Audio\\click3.ogg (https://kenney.nl/assets/ui-audio); copy of click_ui_03.mp3 from the local sound library (06 Real World & DIY)",
+          "licence": "CC0 1.0 (public domain)"
+        },
+        {
+          "file": "assets/ding_confirm_02.mp3",
+          "source": "Kenney.nl: Kenney interface-sounds: Audio\\confirmation_002.ogg (https://kenney.nl/assets/interface-sounds); copy of ding_confirm_02.mp3 from the local sound library (04 Dings & Sparkles)",
+          "licence": "CC0 1.0 (public domain)"
+        },
+        {
+          "file": "assets/chime_sparkle_03.mp3",
+          "source": "Freesound.org: Fantasy_ui_Button_1.wav by ZenithInfinitiveStudios (freesound #376747) (https://freesound.org/people/ZenithInfinitiveStudios/sounds/376747/); copy of chime_sparkle_03.mp3 from the local sound library (04 Dings & Sparkles)",
+          "licence": "CC0 1.0 (Creative Commons 0)"
+        },
+        {
+          "file": "assets/whoosh_fast_03.mp3",
+          "source": "Freesound.org: Swosh / Whoosh / Air Cut by qubodup (freesound #60030) (https://freesound.org/people/qubodup/sounds/60030/); copy of whoosh_fast_03.mp3 from the local sound library (08 Whooshes & Transitions)",
+          "licence": "CC0 1.0 (Creative Commons 0)"
+        },
+        {
+          "file": "assets/click_ui_02.mp3",
+          "source": "Kenney.nl: Kenney ui-audio: Audio\\click2.ogg (https://kenney.nl/assets/ui-audio); copy of click_ui_02.mp3 from the local sound library (06 Real World & DIY)",
+          "licence": "CC0 1.0 (public domain)"
+        },
+        {
+          "file": "preview.jpg",
+          "source": "Original preview imagery; hands, objects, places and titles only",
+          "licence": "Original letitedit footage: hands, objects, places and titles only; no faces"
+        }
+      ],
+      "measured": {},
+      "provenance": {
+        "made_by": "letitedit style library, wave 1",
+        "date": "2026-10-29",
+        "measured": "none yet (no reference videos in style-references)",
+        "sources": [
+          {
+            "url": "https://www.overseeros.com/blog/how-to-edit-faceless-youtube-videos",
+            "title": "Overseeros faceless editing guide",
+            "used_for": "scene lengths (median 3.62 s over 4,412 scenes, a production reference), hard cuts, voice-first mix, consistent footage",
+            "licence": "none found (numbers only)"
+          },
+          {
+            "url": "https://blitzcutai.com/blog/best-caption-style-instagram-reels-2026",
+            "title": "BlitzCut Reels captions",
+            "used_for": "highlight-box captions for lists",
+            "licence": "none found (numbers only)"
+          },
+          {
+            "url": "https://www.clueso.io/blog/how-to-make-tasteful-screen-capture-videos",
+            "title": "Clueso screen-capture playbook",
+            "used_for": "labels of six words at most",
+            "licence": "none found (numbers only)"
+          }
+        ],
+        "notes": "The list as the mechanism and a visible count come from letitedit-shorts [JH]. Tags in ..\\SOURCES.md."
+      }
+    }
+  }
+}

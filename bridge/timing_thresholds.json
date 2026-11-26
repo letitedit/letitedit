@@ -1,0 +1,913 @@
+{
+ "_about": "Thresholds and settings of the timing perception layer (TIMING-SPEC.md). One key per measure: '<lane or view>.<measure>': {value, unit, about}. A lane's effective settings are its code defaults, then these values, then signals(settings={lane: {...}}). Changing a value here recomputes only the lanes that use it (it is part of each lane's cache identity). Calibrate against human choices by editing values, not code. Owners add their own keys (B1: store, frame_features, motion, visual_beats, motion_events, attention, shots, audio, map, slow).",
+ "attention.face_hold_frames": {
+  "about": "a face detection is used for frames up to this far from it (same shot)",
+  "unit": "frames",
+  "value": 6
+ },
+ "attention.motion_norm_px": {
+  "about": "residual motion this strong counts fully",
+  "unit": "px/frame",
+  "value": 2.0
+ },
+ "attention.sharpen": {
+  "about": "the map is raised to this power before its weighted centre is taken",
+  "unit": "power",
+  "value": 2.0
+ },
+ "attention.w_center": {
+  "about": "centre bias",
+  "unit": "weight",
+  "value": 0.35
+ },
+ "attention.w_faces": {
+  "about": "faces (a Gaussian per face by size and score)",
+  "unit": "weight",
+  "value": 2.0
+ },
+ "attention.w_motion": {
+  "about": "residual motion (camera removed), normalised by motion_norm_px",
+  "unit": "weight",
+  "value": 1.5
+ },
+ "attention.w_saliency": {
+  "about": "still-image saliency (normalised to its frame maximum)",
+  "unit": "weight",
+  "value": 1.0
+ },
+ "frame_features.analysis_px": {
+  "about": "long side of decoded frames (faces run at this size)",
+  "unit": "px",
+  "value": 640
+ },
+ "frame_features.border": {
+  "about": "margin of each side left out of the motion measures",
+  "unit": "share",
+  "value": 0.04
+ },
+ "frame_features.face_every": {
+  "about": "faces are detected on every n-th frame (frame index multiple of n)",
+  "unit": "frames",
+  "value": 3
+ },
+ "frame_features.face_score": {
+  "about": "YuNet face score threshold",
+  "unit": "0-1",
+  "value": 0.6
+ },
+ "frame_features.fit_px": {
+  "about": "RANSAC inlier distance of the camera similarity fit (flow size)",
+  "unit": "px",
+  "value": 0.5
+ },
+ "frame_features.fit_step": {
+  "about": "the flow is sampled every this many px for the camera fit",
+  "unit": "px",
+  "value": 6
+ },
+ "frame_features.flow_preset": {
+  "about": "OpenCV DIS preset: ultrafast | fast | medium",
+  "unit": "",
+  "value": "fast"
+ },
+ "frame_features.flow_px": {
+  "about": "long side of the grey frames dense optical flow runs on; motion energy is px/frame at this size",
+  "unit": "px",
+  "value": 256
+ },
+ "frame_features.grid_cells": {
+  "about": "cells of the coarse saliency and motion grids used by attention",
+  "unit": "cells",
+  "value": 144
+ },
+ "frame_features.move_px": {
+  "about": "a pixel moves when its residual flow is at least this (moving share)",
+  "unit": "px/frame",
+  "value": 0.5
+ },
+ "frame_features.region_px": {
+  "about": "strongest moving region: cells moving at least this",
+  "unit": "px/frame",
+  "value": 0.6
+ },
+ "frame_features.region_rel": {
+  "about": "... and at least this share of the strongest cell",
+  "unit": "share",
+  "value": 0.35
+ },
+ "frame_features.sal_px": {
+  "about": "long side of the frame spectral-residual saliency runs on",
+  "unit": "px",
+  "value": 128
+ },
+ "frame_features.workers": {
+  "about": "frame-pair worker threads (OpenCV at 1 thread each; not part of the chunk cache identity). Kept low: the PC hard-crashed under combined load on 28 Oct",
+  "unit": "threads",
+  "value": 3
+ },
+ "joins.click_d2_ratio": {
+  "about": "second-difference ratio (split_edit_measure.click), reported only",
+  "unit": "x",
+  "value": 3.0
+ },
+ "joins.click_min_dbfs": {
+  "about": "a discontinuity quieter than this is not a click",
+  "unit": "dBFS",
+  "value": -60.0
+ },
+ "joins.click_ratio": {
+  "about": "AR(32) prediction-error peak at the join over the typical peaks around it (lossless sound; synthetic joins in real speech: 97% of hard cuts/impulses over it, 1% of untouched positions)",
+  "unit": "x",
+  "value": 6.0
+ },
+ "joins.click_ratio_lossy": {
+  "about": "the same for AAC/MP3/Opus sound (through AAC 128k: 79% recall, 3% false alarms)",
+  "unit": "x",
+  "value": 3.5
+ },
+ "joins.clip_ms": {
+  "about": "the cut takes more than this off the last word's end or the next word's start (measured on the recordings)",
+  "unit": "ms",
+  "value": 40
+ },
+ "joins.floor_jump_db": {
+  "about": "noise floor (room tone) change, non-speech frames within 1.5 s each side",
+  "unit": "dB",
+  "value": 8.0
+ },
+ "joins.floor_window_s": {
+  "about": "noise floor window each side",
+  "unit": "s",
+  "value": 1.5
+ },
+ "joins.level_jump_lu": {
+  "about": "momentary (0.4 s) loudness change; speech next to a pause makes up to 17 LU",
+  "unit": "LU",
+  "value": 18.0
+ },
+ "joins.min_thought_pause_s": {
+  "about": "a thought end left with less pause than this ...",
+  "unit": "s",
+  "value": 0.3
+ },
+ "joins.pitch_jump_st": {
+  "about": "speaking pitch change across a dialogue join (letitedit-fine FINE-4)",
+  "unit": "semitones",
+  "value": 4.0
+ },
+ "joins.room_spectral_jump_db": {
+  "about": "room tone spectral envelope change (quietest non-speech frames)",
+  "unit": "dB",
+  "value": 10.0
+ },
+ "joins.silence_gap_s": {
+  "about": "digital silence (< -90 dBFS) this long touching the join is a hole",
+  "unit": "s",
+  "value": 0.02
+ },
+ "joins.source_pause_ratio": {
+  "about": "... and under this share of the recording's own pause there is tightened (FINE-1)",
+  "unit": "x",
+  "value": 0.6
+ },
+ "joins.spectral_jump_db": {
+  "about": "voice spectral envelope change (median log-mel 100 Hz-8 kHz, level removed, 8 DCT terms)",
+  "unit": "dB",
+  "value": 10.0
+ },
+ "joins.speech_level_jump_lu": {
+  "about": "loudness change of the speech frames within 3 s each side",
+  "unit": "LU",
+  "value": 5.0
+ },
+ "joins.window_s": {
+  "about": "fallback spectra window each side when a side has too little speech",
+  "unit": "s",
+  "value": 0.5
+ },
+ "joins.word_clear_after_s": {
+  "about": "a join closer than this before the next word's start clips its onset",
+  "unit": "s",
+  "value": 0.02
+ },
+ "joins.word_clear_before_s": {
+  "about": "a join closer than this after the last word ends clips its tail (FINE-3)",
+  "unit": "s",
+  "value": 0.03
+ },
+ "meaning.batch": {
+  "about": "items per model forward pass",
+  "unit": "items",
+  "value": 4
+ },
+ "meaning.build": {
+  "about": "False: cached answers only",
+  "unit": "bool",
+  "value": true
+ },
+ "meaning.cam_drift": {
+  "about": "measured camera: net travel above this means handheld",
+  "unit": "frame widths/s",
+  "value": 0.035
+ },
+ "meaning.cam_jitter": {
+  "about": "measured camera: shake above this means handheld",
+  "unit": "frame widths/s",
+  "value": 0.064
+ },
+ "meaning.camera_from": {
+  "about": "'measured' (camera lane / camera shifts) or 'model' for handheld / locked off",
+  "unit": "name",
+  "value": "measured"
+ },
+ "meaning.chunk": {
+  "about": "items per model call; the GPU turn is let go between calls",
+  "unit": "items",
+  "value": 24
+ },
+ "meaning.design": {
+  "about": "frames shown per item: '3f' before/peak/after, '6f' six frames, 'strip' one tiled image",
+  "unit": "name",
+  "value": "6f"
+ },
+ "meaning.fb_cut_guard_s": {
+  "about": "fallback events: frames this close to a cut are not motion",
+  "unit": "s",
+  "value": 0.07
+ },
+ "meaning.fb_floor_pct": {
+  "about": "fallback events: the quiet level percentile",
+  "unit": "percentile",
+  "value": 20.0
+ },
+ "meaning.fb_floor_s": {
+  "about": "fallback events: window of the running quiet level",
+  "unit": "s",
+  "value": 4.0
+ },
+ "meaning.fb_k_on": {
+  "about": "fallback events: rise above the quiet level that starts an event",
+  "unit": "robust spreads",
+  "value": 3.0
+ },
+ "meaning.fb_max_event_s": {
+  "about": "fallback events: longer ones are split at their deepest dips",
+  "unit": "s",
+  "value": 6.0
+ },
+ "meaning.fb_merge_gap_s": {
+  "about": "fallback events: closer events are merged",
+  "unit": "s",
+  "value": 0.3
+ },
+ "meaning.fb_min_dur_s": {
+  "about": "fallback events: shorter ones are dropped",
+  "unit": "s",
+  "value": 0.2
+ },
+ "meaning.fb_min_excess": {
+  "about": "fallback events: smallest rise that starts an event",
+  "unit": "0-255",
+  "value": 1.0
+ },
+ "meaning.fb_off_ratio": {
+  "about": "fallback events: an event lasts while above this share of the rise threshold",
+  "unit": "share",
+  "value": 0.35
+ },
+ "meaning.fb_smooth_s": {
+  "about": "fallback events: residual change smoothed over this",
+  "unit": "s",
+  "value": 0.1
+ },
+ "meaning.max_items": {
+  "about": "most items the model labels in one call (shots first, then events by strength)",
+  "unit": "items",
+  "value": 150
+ },
+ "meaning.max_new_tokens": {
+  "about": "longest model reply",
+  "unit": "tokens",
+  "value": 80
+ },
+ "meaning.min_accuracy": {
+  "about": "label types measured under this are marked ~ and not trusted",
+  "unit": "share",
+  "value": 0.8
+ },
+ "meaning.min_event_s": {
+  "about": "shorter motion events are left unlabelled",
+  "unit": "s",
+  "value": 0.1
+ },
+ "meaning.near_match": {
+  "about": "cached answers are reused for frames whose 16x16 grey thumbnails differ under this",
+  "unit": "0-255",
+  "value": 2.5
+ },
+ "meaning.post_s": {
+  "about": "an event's 'after' frame this long after its end (inside its shot)",
+  "unit": "s",
+  "value": 0.25
+ },
+ "meaning.pre_s": {
+  "about": "an event's 'before' frame this long before its onset (inside its shot)",
+  "unit": "s",
+  "value": 0.25
+ },
+ "meaning.preview_px": {
+  "about": "long side of this module's own project preview (only without the store)",
+  "unit": "px",
+  "value": 640
+ },
+ "meaning.shot_margin_s": {
+  "about": "a shot's first and last frame shown this far inside it",
+  "unit": "s",
+  "value": 0.1
+ },
+ "meaning.shot_max_s": {
+  "about": "shots longer than this are labelled in parts of at most this length",
+  "unit": "s",
+  "value": 8.0
+ },
+ "meaning.strip_n": {
+  "about": "frames tiled into the 'strip' image",
+  "unit": "frames",
+  "value": 8
+ },
+ "meaning.strip_tile": {
+  "about": "width of each 'strip' tile",
+  "unit": "px",
+  "value": 256
+ },
+ "meaning.vocabulary": {
+  "about": "answers offered for what happens (general, repair, travel, talk)",
+  "unit": "name",
+  "value": "general"
+ },
+ "meaning.width": {
+  "about": "width of each frame shown to the model",
+  "unit": "px",
+  "value": 448
+ },
+ "meaning.words": {
+  "about": "give the model the words said in the item as context",
+  "unit": "bool",
+  "value": false
+ },
+ "motion.direction_min_coherence": {
+  "about": "... and its vectors agree this much",
+  "unit": "0-1",
+  "value": 0.5
+ },
+ "motion.direction_min_energy": {
+  "about": "direction only where the strongest region moves at least this ...",
+  "unit": "px/frame",
+  "value": 1.0
+ },
+ "motion.handheld_jitter": {
+  "about": "shake (RMS of the per-frame camera move around its smooth_s mean, over jitter_s) at least this: handheld",
+  "unit": "frame widths/s",
+  "value": 0.03
+ },
+ "motion.handheld_speed": {
+  "about": "otherwise a camera drifting at least this, or shaking at least handheld_jitter: handheld; else static",
+  "unit": "frame widths/s",
+  "value": 0.08
+ },
+ "motion.jitter_s": {
+  "about": "handheld: spread of the frame-to-frame camera motion around that mean, over this",
+  "unit": "s",
+  "value": 0.5
+ },
+ "motion.min_label_s": {
+  "about": "camera label runs shorter than this merge into their neighbours",
+  "unit": "s",
+  "value": 0.3
+ },
+ "motion.min_trust": {
+  "about": "camera estimates where fewer flow samples agree are counted as untrusted",
+  "unit": "share",
+  "value": 0.25
+ },
+ "motion.pan_shake_ratio": {
+  "about": "see pan_speed: a steady move shakes little relative to its speed",
+  "unit": "ratio",
+  "value": 0.5
+ },
+ "motion.pan_speed": {
+  "about": "camera speed at least this with shake under pan_shake_ratio x speed: pan (sideways) or tilt (up/down)",
+  "unit": "frame widths/s",
+  "value": 0.25
+ },
+ "motion.smooth_s": {
+  "about": "camera speed is judged on a centred mean over this (within a shot)",
+  "unit": "s",
+  "value": 0.3
+ },
+ "motion.steady_max_jitter": {
+  "about": "see steady_pan_speed (a tripod or gimbal move, not a hand)",
+  "unit": "frame widths/s",
+  "value": 0.01
+ },
+ "motion.steady_pan_speed": {
+  "about": "a slower camera move is a pan / tilt too when it is steady: speed at least this and shake under steady_max_jitter",
+  "unit": "frame widths/s",
+  "value": 0.12
+ },
+ "motion.unreliable_speed": {
+  "about": "a camera move faster than this with an untrusted fit (motion blur): subject motion cannot be separated; energy there is None (listed in unmeasured)",
+  "unit": "frame widths/s",
+  "value": 0.45
+ },
+ "motion.whip_smooth_s": {
+  "about": "whips are judged on a centred mean over this shorter window (they are fast and short)",
+  "unit": "s",
+  "value": 0.13
+ },
+ "motion.whip_speed": {
+  "about": "camera speed on the whip window (whip_smooth_s) at least this: whip. Calibrated on 221 hand-labelled 0.5 s bins of 8 raw clips",
+  "unit": "frame widths/s",
+  "value": 0.9
+ },
+ "motion.zoom_dominance": {
+  "about": "see zoom_rate",
+  "unit": "ratio",
+  "value": 1.2
+ },
+ "motion.zoom_rate": {
+  "about": "zoom rate at least this, and the zoom motion at the frame corners >= zoom_dominance x camera speed: zoom",
+  "unit": "log scale/s",
+  "value": 0.04
+ },
+ "motion_events.edge_share": {
+  "about": "onset and end: where energy falls back under rest + this share of the rise",
+  "unit": "share of the rise",
+  "value": 0.25
+ },
+ "motion_events.merge_s": {
+  "about": "events closer than this merge",
+  "unit": "s",
+  "value": 0.2
+ },
+ "motion_events.min_peak_px": {
+  "about": "... and peaks at least this",
+  "unit": "px/frame",
+  "value": 0.6
+ },
+ "motion_events.min_s": {
+  "about": "shorter events are dropped",
+  "unit": "s",
+  "value": 0.12
+ },
+ "motion_events.rest_pct": {
+  "about": "a shot's resting motion level: this percentile of its energy",
+  "unit": "percentile",
+  "value": 20
+ },
+ "motion_events.rise_mad": {
+  "about": "... and this many median absolute deviations of the shot's energy",
+  "unit": "x MAD",
+  "value": 3.0
+ },
+ "motion_events.rise_px": {
+  "about": "an event rises at least this above the resting level ...",
+  "unit": "px/frame",
+  "value": 0.5
+ },
+ "motion_events.signal": {
+  "about": "what must rise for an event: energy (the frame mean of residual motion), p90 (its 90th percentile) or rmag (the mean motion of the strongest moving region; catches small movements). On 25 labelled actions: energy with rise_px 0.5 found 23, rmag with rise_px 2.0 found 24, edges alike",
+  "unit": "",
+  "value": "energy"
+ },
+ "motion_events.smooth_s": {
+  "about": "energy smoothed over this (centred mean within a shot)",
+  "unit": "s",
+  "value": 0.1
+ },
+ "shots.black_luma": {
+  "about": "a shot whose median luma is under this ...",
+  "unit": "0-255",
+  "value": 18.0
+ },
+ "shots.black_std": {
+  "about": "... and luma spread under this is black",
+  "unit": "0-255",
+  "value": 6.0
+ },
+ "shots.closeup_face": {
+  "about": "median height of the largest face at least this: closeup",
+  "unit": "share of the shorter side",
+  "value": 0.25
+ },
+ "shots.medium_face": {
+  "about": "... at least this: medium; under it: wide",
+  "unit": "share of the shorter side",
+  "value": 0.1
+ },
+ "shots.min_face_share": {
+  "about": "a face must be found in at least this share of a shot's checked frames, else size unknown",
+  "unit": "share",
+  "value": 0.3
+ },
+ "speech.activity_anchor_s": {
+  "about": "... and within this of voicing (machines and wind far from voice are not speech)",
+  "unit": "s",
+  "value": 0.12
+ },
+ "speech.activity_db": {
+  "about": "speech activity: unvoiced sound at least this far over the local floor ...",
+  "unit": "dB",
+  "value": 6.0
+ },
+ "speech.activity_share": {
+  "about": "... and this share of the way from the floor to the speech level ...",
+  "unit": "0-1",
+  "value": 0.3
+ },
+ "speech.breath.excess_db": {
+  "about": "a breath raises the 400-4000 Hz bands this far over the local noise floor spectrum, unvoiced",
+  "unit": "dB",
+  "value": 4.0
+ },
+ "speech.breath.max_jitter_db": {
+  "about": "median frame-to-frame change of that excess; more is a knock or clicks (fitted on spectrogram labels, 28 Oct 2026)",
+  "unit": "dB",
+  "value": 1.5
+ },
+ "speech.breath.max_s": {
+  "about": "longest breath",
+  "unit": "s",
+  "value": 1.2
+ },
+ "speech.breath.min_breadth": {
+  "about": "share of the 400-4000 Hz bands raised 3 dB or more (0 = off)",
+  "unit": "0-1",
+  "value": 0.0
+ },
+ "speech.breath.min_pause_s": {
+  "about": "pauses shorter than this are not searched for breaths",
+  "unit": "s",
+  "value": 0.2
+ },
+ "speech.breath.min_plateau": {
+  "about": "share of the run's frames within 6 dB of its peak; less is one knock",
+  "unit": "0-1",
+  "value": 0.2
+ },
+ "speech.breath.min_s": {
+  "about": "shortest breath",
+  "unit": "s",
+  "value": 0.1
+ },
+ "speech.key_line_space_s": {
+  "about": "space after a key line under this is noted (craft P4: hold after the line)",
+  "unit": "s",
+  "value": 0.6
+ },
+ "speech.long_pause_s": {
+  "about": "a pause this long inside a thought is listed as drag (letitedit-fine FINE-1)",
+  "unit": "s",
+  "value": 1.0
+ },
+ "speech.no_reset_s": {
+  "about": "craft P5: no stretch this long without a thought end or breath",
+  "unit": "s",
+  "value": 30.0
+ },
+ "speech.pause_min_s": {
+  "about": "a silence between words this long is listed as a pause",
+  "unit": "s",
+  "value": 0.15
+ },
+ "speech.stress.center_z": {
+  "about": "prominence that maps to stress 0.5 (logistic)",
+  "unit": "z",
+  "value": 0.8
+ },
+ "speech.stress.function_word_factor": {
+  "about": "function words' stress is multiplied by this",
+  "unit": "x",
+  "value": 0.6
+ },
+ "speech.stress.min": {
+  "about": "a word with stress at least this is listed as stressed (about 12% of words)",
+  "unit": "0-1",
+  "value": 0.5
+ },
+ "speech.stress.scale_z": {
+  "about": "logistic width",
+  "unit": "z",
+  "value": 0.45
+ },
+ "speech.stress.w_duration": {
+  "about": "lengthening against the syllables' usual time",
+  "unit": "weight",
+  "value": 0.15
+ },
+ "speech.stress.w_energy": {
+  "about": "energy peak over the local speech level",
+  "unit": "weight",
+  "value": 0.35
+ },
+ "speech.stress.w_f0": {
+  "about": "pitch peak over the local median (robust z) in the prominence",
+  "unit": "weight",
+  "value": 0.35
+ },
+ "speech.stress.w_f0_range": {
+  "about": "pitch movement within the word",
+  "unit": "weight",
+  "value": 0.15
+ },
+ "speech.thought_end.fall_st": {
+  "about": "final lowering cue: the last word ends this far under the median pitch of the 1.5 s before",
+  "unit": "semitones",
+  "value": -2.0
+ },
+ "speech.thought_end.incomplete_penalty": {
+  "about": "strength taken off after such a word",
+  "unit": "0-1",
+  "value": 0.5
+ },
+ "speech.thought_end.lengthening": {
+  "about": "slowing cue: the last word lasts this many times its syllables' usual time (pre-boundary lengthening)",
+  "unit": "x",
+  "value": 1.4
+ },
+ "speech.thought_end.lexical": {
+  "about": "1: a boundary after a word that cannot end a phrase (the, and, of, I, to ...) loses incomplete_penalty; 0: acoustic cues only",
+  "unit": "0/1",
+  "value": 1
+ },
+ "speech.thought_end.min_strength": {
+  "about": "a word boundary with this strength or more is a thought end",
+  "unit": "0-1",
+  "value": 0.55
+ },
+ "speech.thought_end.pause_full_s": {
+  "about": "a pause this long scores the full pause cue (0 at 100 ms)",
+  "unit": "s",
+  "value": 0.5
+ },
+ "speech.thought_end.pause_s": {
+  "about": "pause cue of a thought end (Biron et al. 2021: about 300 ms is the best single pause threshold for intonation-unit boundaries)",
+  "unit": "s",
+  "value": 0.3
+ },
+ "speech.thought_end.rate_ratio": {
+  "about": "slowing cue: the last three words' rate under this share of the speaker's median rate",
+  "unit": "x",
+  "value": 0.8
+ },
+ "speech.thought_end.reset_st": {
+  "about": "pitch reset cue: the next words start this much higher",
+  "unit": "semitones",
+  "value": 2.0
+ },
+ "speech.thought_end.w_breath": {
+  "about": "breath-in-the-pause cue weight (0: added nothing on held-out clips)",
+  "unit": "weight",
+  "value": 0.0
+ },
+ "speech.thought_end.w_final_lowering": {
+  "about": "final lowering cue weight (0: added nothing on held-out clips)",
+  "unit": "weight",
+  "value": 0.0
+ },
+ "speech.thought_end.w_pause": {
+  "about": "pause cue weight in the thought-end strength (tuned 28 Oct 2026 on weak text labels of the quick clips)",
+  "unit": "weight",
+  "value": 0.55
+ },
+ "speech.thought_end.w_pitch_reset": {
+  "about": "pitch reset cue weight (0: added nothing on held-out clips)",
+  "unit": "weight",
+  "value": 0.0
+ },
+ "speech.thought_end.w_slowing": {
+  "about": "slowing cue weight",
+  "unit": "weight",
+  "value": 0.3
+ },
+ "store.max_whole_s": {
+  "about": "sources up to this long are analysed whole; longer ones only around the asked range",
+  "unit": "s",
+  "value": 1200.0
+ },
+ "store.pad_s": {
+  "about": "a long source's asked range is widened by this much each side",
+  "unit": "s",
+  "value": 2.0
+ },
+ "store.preview_px": {
+  "about": "long side of a project's preview render (melt)",
+  "unit": "px",
+  "value": 640
+ },
+ "sync.beat_clear_min": {
+  "about": "beat_quality clear at or above this (synthetic and clear songs 0.75-1.0; songs without a steady beat about 0.5)",
+  "unit": "mean Beat This! beat probability at the beats",
+  "value": 0.75
+ },
+ "sync.beat_weak_min": {
+  "about": "beat_quality weak at or above this, none below",
+  "unit": "mean Beat This! beat probability at the beats",
+  "value": 0.45
+ },
+ "sync.gap_min_s": {
+  "about": "speech gaps (between the padded words) shorter than this are not checked for a music swell",
+  "unit": "s",
+  "value": 1.0
+ },
+ "sync.hard_hit_min_strength": {
+  "about": "a downbeat or phrase start at least this strong counts as a hard hit when a cut lands within sync.near_beat_frames of it",
+  "unit": "0-1 onset strength at the beat (song percentile scale)",
+  "value": 0.6
+ },
+ "sync.hard_hit_sound_lead_frames": {
+  "about": "reference, not a rule (AOTC Dune, letitedit-sound): on a hard hit the sound sits about half a frame before the cut",
+  "unit": "frames",
+  "value": 0.5
+ },
+ "sync.monotony_run": {
+  "about": "a run of this many consecutive on-beat cuts is reported as a long run",
+  "unit": "cuts",
+  "value": 8
+ },
+ "sync.monotony_share": {
+  "about": "an on-beat share of cuts at or above this is reported as possibly mechanical (every cut on the beat); reported with its number, not judged",
+  "unit": "share of cuts",
+  "value": 0.7
+ },
+ "sync.motion_peak_rel": {
+  "about": "fallback motion peaks (when the motion lanes are not registered): residual frame difference at least this many times the shot median",
+  "unit": "x the median of the shot",
+  "value": 2.0
+ },
+ "sync.music_under_speech_db": {
+  "about": "music closer than this to the dialogue loudness under words is listed (reference: the score op sits music 18 dB under)",
+  "unit": "dB",
+  "value": 10.0
+ },
+ "sync.near_beat_frames": {
+  "about": "the second, looser share reported",
+  "unit": "frames",
+  "value": 2.0
+ },
+ "sync.on_beat_frames": {
+  "about": "an event at most this far from a beat (either side) is counted as on the beat (monotony runs, on-beat share)",
+  "unit": "frames",
+  "value": 1.0
+ },
+ "sync.section_match_bars": {
+  "about": "a story boundary within this many bars of a song boundary (section, phrase start, drop or join) counts as aligned",
+  "unit": "bars",
+  "value": 1.0
+ },
+ "sync.sfx_match_frames": {
+  "about": "an SFX onset within this of its impact counts as on the impact",
+  "unit": "frames",
+  "value": 2
+ },
+ "sync.sfx_window_frames": {
+  "about": "a motion peak or cut within this of an SFX onset is taken as the impact it belongs to",
+  "unit": "frames",
+  "value": 6
+ },
+ "sync.swell_rise_db": {
+  "about": "the music level in a speech gap this much above its level under the words around it counts as rising in the pause",
+  "unit": "dB",
+  "value": 3.0
+ },
+ "trajectory.breath_dip": {
+  "about": "a dip just before the peak at least this deep counts as a breath",
+  "unit": "index (robust z)",
+  "value": 0.3
+ },
+ "trajectory.breath_window_s": {
+  "about": "just before a planned peak: a dip here is a breath (release before the peak)",
+  "unit": "s",
+  "value": 3.0
+ },
+ "trajectory.gear_rank_min": {
+  "about": "rank correlation between planned gears and the sections' measured index at or above this is reported as matching order",
+  "unit": "Spearman rho",
+  "value": 0.6
+ },
+ "trajectory.music_floor_db": {
+  "about": "music level used for the index where no music plays",
+  "unit": "dB",
+  "value": -60.0
+ },
+ "trajectory.release_min": {
+  "about": "a fall after the peak at least this big counts as a release",
+  "unit": "index (robust z)",
+  "value": 0.3
+ },
+ "trajectory.release_window_s": {
+  "about": "after a planned peak: compared with the peak",
+  "unit": "s",
+  "value": 6.0
+ },
+ "trajectory.rise_min": {
+  "about": "a rise at least this big counts as rising into the peak",
+  "unit": "index (robust z)",
+  "value": 0.3
+ },
+ "trajectory.rise_window_s": {
+  "about": "before a planned peak: the last window is compared with the window before it (rise into the peak)",
+  "unit": "s",
+  "value": 8.0
+ },
+ "trajectory.step_s": {
+  "about": "series step",
+  "unit": "s",
+  "value": 0.5
+ },
+ "trajectory.weights": {
+  "about": "weights of the robust z-scores in the energy index (a measure without variation in this edit is left out)",
+  "unit": "relative weights",
+  "value": {
+   "cut_rate": 1.0,
+   "motion": 1.0,
+   "music": 1.0,
+   "speech_rate": 0.5
+  }
+ },
+ "trajectory.window_s": {
+  "about": "centred window of every series value",
+  "unit": "s",
+  "value": 6.0
+ },
+ "visual_beats.edge_frames": {
+  "about": "no beats this close to a cut, nor inside a transition",
+  "unit": "frames",
+  "value": 2
+ },
+ "visual_beats.min_abs": {
+  "about": "a beat's absolute drop (summed over directions), at least this",
+  "unit": "px/frame",
+  "value": 0.02
+ },
+ "visual_beats.min_gap_s": {
+  "about": "beats closer than this: the stronger is kept",
+  "unit": "s",
+  "value": 0.18
+ },
+ "visual_beats.min_speed_before": {
+  "about": "the most motion within stop_s before a beat must be at least this: a stop needs a movement to stop (still pictures make no beats)",
+  "unit": "px/frame",
+  "value": 0.5
+ },
+ "visual_beats.min_strength": {
+  "about": "a beat's envelope peak relative to the local scale, at least this",
+  "unit": "x local scale",
+  "value": 0.6
+ },
+ "visual_beats.scale_s": {
+  "about": "local scale: the envelope's 90th percentile within +- this",
+  "unit": "s",
+  "value": 3.0
+ },
+ "visual_beats.smooth_frames": {
+  "about": "the impact envelope is smoothed over this many frames",
+  "unit": "frames",
+  "value": 2
+ },
+ "visual_beats.stop_s": {
+  "about": "f_stop: the local minimum of motion speed within this after the peak",
+  "unit": "s",
+  "value": 0.35
+ },
+
+ "cuts.move_speed": {"value": 0.06, "unit": "diag/s", "about": "a pixel moves when its camera-compensated flow is at least this (frame diagonals per second, flow at 256 px): moving share, motion arrows"},
+ "cuts.action_speed": {"value": 0.3, "unit": "diag/s", "about": "a frame has action when its subject speed (median speed of its most moving region, camera removed) is at least this (a talking head moves ~0.15-0.25; 85th percentile of the last frames before 398 professional cuts)"},
+ "cuts.frame_wide_share": {"value": 0.4, "unit": "share", "about": "motion over this share of the frame is frame-wide (camera parallax or a frame-filling subject), not a local action: no direction, no masking"},
+ "cuts.post_motion_masks": {"value": 0.3, "unit": "diag/s", "about": "local motion this fast over B's first 0.3 s lowers eye-trace findings one step (Smith & Martin-Portugues 2017)"},
+ "cuts.eye_jump_noticeable": {"value": 0.25, "unit": "frame diagonals", "about": "the attention point jumps at least this across the cut: noticeable (75th percentile of 398 professional cuts: Tears of Steel, Sintel, Big Buck Bunny, Caminandes)"},
+ "cuts.eye_jump_jarring": {"value": 0.58, "unit": "frame diagonals", "about": "... at least this: jarring (their 99th percentile)"},
+ "cuts.direction_min_coherence": {"value": 0.45, "unit": "0-1", "about": "local motion has a direction when its vectors agree this much"},
+ "cuts.direction_reversed_deg": {"value": 135.0, "unit": "degrees", "about": "directions of local motion this far apart across the cut: screen direction reverses (noticeable)"},
+ "cuts.direction_same_deg": {"value": 60.0, "unit": "degrees", "about": "directions this close: the motion keeps its direction"},
+ "cuts.pan_speed": {"value": 0.08, "unit": "diag/s", "about": "the picture shifts at least this fast: the camera pans or tilts"},
+ "cuts.jump_framing_sim": {"value": 0.55, "unit": "NCC", "about": "A's last and B's first frame match at least this after camera compensation: same framing (jump cut unless the size changes)"},
+ "cuts.jump_layout_sim": {"value": 0.85, "unit": "NCC", "about": "... or their 1/8-size layouts match at least this"},
+ "cuts.jump_max_cells": {"value": 0.5, "unit": "share", "about": "... and at most this share of the 4x4 cells changed their local texture (a shared gradient or vignette alone is not the same framing)"},
+ "cuts.same_size_ratio": {"value": 1.25, "unit": "ratio", "about": "face heights within this ratio: the same shot size"},
+ "cuts.punch_zoom": {"value": 1.12, "unit": "x", "about": "the same picture reframed by at least this zoom: a punch-in"},
+ "cuts.luma_jump_noticeable": {"value": 40.0, "unit": "0-255", "about": "mean brightness changes at least this across the cut: noticeable (75th percentile of 398 professional cuts)"},
+ "cuts.luma_jump_jarring": {"value": 100.0, "unit": "0-255", "about": "... at least this: jarring, a flash (their 99th percentile)"},
+ "cuts.blank_flat_share": {"value": 0.85, "unit": "share", "about": "a frame with at least this share of its pixels within 2 levels of its median is blank (black, white or flat, a caption on it allowed)"},
+ "cuts.blur_mask_ratio": {"value": 0.35, "unit": "ratio", "about": "A's last frames at most this sharp (Laplacian variance) relative to the sharpest frame of its window while the frame moves: the cut hides in motion blur (a whip), eye-trace findings one step lower"},
+ "cuts.scene_hist": {"value": 0.35, "unit": "0-1", "about": "colour histogram change at least this with unrelated framing: a new place or subject (reported, not scored)"},
+ "cuts.flash_frames": {"value": 3, "unit": "frames", "about": "a shot this short or shorter is a flash frame (jarring)"},
+ "cuts.short_shot_frames": {"value": 8, "unit": "frames", "about": "a shot this short or shorter is noticeable"},
+ "cuts.gap_jarring_frames": {"value": 6, "unit": "frames", "about": "empty (black) frames between two shots: fewer than this read as a glitch (jarring), more as a deliberate pause (noticeable)"},
+ "cuts.many_noticeable": {"value": 3, "unit": "findings", "about": "this many noticeable findings at one cut make it jarring"},
+ "cuts.face_min_score": {"value": 0.7, "unit": "0-1", "about": "YuNet face score threshold"},
+ "cuts.face_attention_min_h": {"value": 0.05, "unit": "share of frame height", "about": "a face this tall or taller is the attention point"},
+ "cuts.same_person_cos": {"value": 0.363, "unit": "cosine", "about": "SFace features this similar: the same person (OpenCV threshold)"},
+ "cuts.overlay_diff": {"value": 6.0, "unit": "0-255", "about": "textured pixels this close on both sides of a cut that changes the picture: a static overlay (caption, logo), masked out of the attention point"},
+ "cuts.sound_level_jump_db": {"value": 6.0, "unit": "dB", "about": "used only when the joins view reports a level jump without its own flag"}
+}

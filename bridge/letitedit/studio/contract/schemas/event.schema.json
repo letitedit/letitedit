@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://letitedit.app/studio/1/event.schema.json",
+  "title": "One line of events.jsonl",
+  "description": "events.jsonl is append-only, one JSON object per line, written whole with one write. seq starts at 1 and rises by 1 across attempts. A reader skips a last line that doesn't parse (it is being written); after a crash letitedit ends a broken last line before appending.",
+  "type": "object",
+  "required": ["contract_version", "job_id", "seq", "time", "type"],
+  "properties": {
+    "contract_version": {"$ref": "common.schema.json#/$defs/contract_version"},
+    "job_id": {"$ref": "common.schema.json#/$defs/job_id"},
+    "seq": {"type": "integer", "minimum": 1},
+    "time": {"$ref": "common.schema.json#/$defs/time"},
+    "type": {
+      "type": "string",
+      "minLength": 1,
+      "examples": ["accepted", "rejected", "queued", "started", "stage_started", "stage_done", "progress", "waiting", "waiting_over", "output", "warning", "interrupted", "resumed", "cancel_requested", "cancelled", "failed", "done"],
+      "description": "Open list (CONTRACT.md section 2): a reader ignores types it doesn't know. Known values: accepted, rejected, queued, started, stage_started, stage_done, progress, waiting, waiting_over, output, warning, interrupted, resumed, cancel_requested, cancelled, failed, done."
+    },
+    "attempt": {"type": "integer", "minimum": 0},
+    "stage": {"type": "string"},
+    "progress": {"type": "number", "minimum": 0, "maximum": 1},
+    "message": {"type": "string"},
+    "waiting_on": {"type": "string"},
+    "path": {"$ref": "common.schema.json#/$defs/rel_path", "description": "output: the finished file."},
+    "item": {"type": "string", "description": "batch_shorts: the idea_id this line is about."},
+    "error": {"$ref": "common.schema.json#/$defs/error"},
+    "warning": {"$ref": "common.schema.json#/$defs/warning"}
+  }
+}

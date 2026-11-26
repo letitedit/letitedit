@@ -1,0 +1,264 @@
+{
+  "id": "instagram_reels",
+  "name": "Instagram Reels",
+  "schema": "letitedit-platform/1",
+  "checked": "2026-11-19",
+  "video": {
+    "aspect_ratios": {
+      "value": "between 1.91:1 and 9:16",
+      "source": "https://help.instagram.com/1038071743007909",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "API accepts 0.01:1 to 10:1 and recommends 9:16 to avoid cropping or blank space (https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media)."
+    },
+    "resolutions": {
+      "value": {
+        "min_px": 720,
+        "max_columns": 1920,
+        "ads_recommended": "1440x2560"
+      },
+      "source": "https://help.instagram.com/1038071743007909",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "Min 720 px (help centre); max 1920 columns (API); 1440x2560 (Reels ads guide https://www.facebook.com/business/ads-guide/update/video/instagram-reels)."
+    },
+    "frame_rates": {
+      "value": {
+        "min": 30,
+        "api_range": [
+          23,
+          60
+        ]
+      },
+      "source": "https://help.instagram.com/1038071743007909",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "Help: minimum 30 fps; API: 23-60."
+    },
+    "min_length_s": {
+      "value": 3,
+      "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "API minimum."
+    },
+    "max_length_s": {
+      "value": 1200,
+      "source": "https://help.instagram.com/2720958398006062",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "Record/edit up to 20 minutes; reels over 3 minutes are not recommended to new audiences. API publishing max 15 minutes."
+    },
+    "recommendation_max_s": {
+      "value": 180,
+      "source": "https://help.instagram.com/2720958398006062",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "max_file_size_bytes": {
+      "value": 300000000,
+      "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "checked": "2026-11-19",
+      "status": "official",
+      "note": "Meta's content publishing reference: Reels up to 300 MB (read as 300,000,000 bytes, the stricter reading; it was 300 x 1024 x 1024 before 19 Nov). Buffer's help centre gives the same 300 MB."
+    },
+    "container": {
+      "value": "MOV or MP4, no edit lists, moov atom at the front",
+      "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "video_codec": {
+      "value": "HEVC or H.264, progressive, closed GOP, 4:2:0",
+      "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "video_bitrate": {
+      "value": {
+        "max_mbps": 25,
+        "mode": "VBR"
+      },
+      "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "checked": "2026-10-19",
+      "status": "official"
+    }
+  },
+  "audio": {
+    "codec": {
+      "value": "AAC, up to 48 kHz, mono or stereo",
+      "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "bitrate_kbps": {
+      "value": 128,
+      "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "loudness_normalisation": {
+      "value": null,
+      "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "checked": "2026-10-19",
+      "status": "not documented"
+    }
+  },
+  "safe_zones": {
+    "value": [
+      {
+        "name": "top: profile/status area",
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.14
+      },
+      {
+        "name": "bottom: caption, account name, call-to-action",
+        "x": 0,
+        "y": 0.65,
+        "w": 1,
+        "h": 0.35
+      },
+      {
+        "name": "left edge",
+        "x": 0,
+        "y": 0,
+        "w": 0.06,
+        "h": 1
+      },
+      {
+        "name": "right edge (buttons sit here)",
+        "x": 0.94,
+        "y": 0,
+        "w": 0.06,
+        "h": 1
+      }
+    ],
+    "source": "https://www.facebook.com/business/ads-guide/update/video/instagram-reels",
+    "checked": "2026-10-19",
+    "status": "official-ads",
+    "note": "Meta's Reels ad guidance: leave 14% top, 35% bottom and 6% each side free of text and logos (profile icon, call-to-action, tall screens). Published for ads; organic Reels use the same viewer, but Meta publishes no separate organic figure.",
+    "confidence": "medium"
+  },
+  "captions": {
+    "placement": {
+      "value": "Caption text and account row overlay the bottom of the frame (the 35% bottom zone).",
+      "source": "https://www.facebook.com/business/ads-guide/update/video/instagram-reels",
+      "checked": "2026-10-19",
+      "status": "official-ads"
+    }
+  },
+  "thumbnail": {
+    "value": {
+      "recommended": "420x654 (1:1.55)",
+      "api_aspect": "9:16",
+      "format": "JPEG",
+      "max_bytes": 8388608,
+      "grid_crop": "middle 1:1 square when shared to feed (API)"
+    },
+    "source": "https://help.instagram.com/1038071743007909",
+    "checked": "2026-10-19",
+    "status": "official",
+    "note": "Help centre: 420x654; cover cannot be edited after upload. API: 9:16 recommended, middle 9:16 used if not 9:16, middle 1:1 when shared to feed."
+  },
+  "text_limits": {
+    "caption_chars": {
+      "value": 2200,
+      "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "hashtags": {
+      "value": 5,
+      "source": "https://www.socialmediatoday.com/news/instagram-implements-new-limits-on-hashtag-use/808309/",
+      "checked": "2026-10-19",
+      "status": "unconfirmed",
+      "note": "API reference still says 30; Instagram announced in Dec 2025 a gradual change to 5 per post/reel (press reports quoting Instagram)."
+    },
+    "mentions": {
+      "value": 20,
+      "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "checked": "2026-10-19",
+      "status": "official"
+    }
+  },
+  "export_preset": {
+    "width": {
+      "value": 1080,
+      "source": "https://www.facebook.com/business/ads-guide/update/video/instagram-feed",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "1080x1920 is Meta's 9:16 recommendation for Instagram feed video ads; Reels ads list 1440x2560."
+    },
+    "height": {
+      "value": 1920,
+      "source": "https://www.facebook.com/business/ads-guide/update/video/instagram-feed",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "fps": {
+      "value": 30,
+      "source": "https://help.instagram.com/1038071743007909",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "Minimum 30 fps; up to 60."
+    },
+    "container": {
+      "value": "mp4",
+      "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "vcodec": {
+      "value": "libx264",
+      "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "pix_fmt": {
+      "value": "yuv420p",
+      "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "video_bitrate_kbps": {
+      "value": 25000,
+      "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "checked": "2026-10-19",
+      "status": "official",
+      "note": "Maximum, not a target."
+    },
+    "acodec": {
+      "value": "aac",
+      "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "audio_bitrate_kbps": {
+      "value": 128,
+      "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "sample_rate_hz": {
+      "value": 48000,
+      "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "checked": "2026-10-19",
+      "status": "official"
+    },
+    "loudness_lufs": {
+      "value": null,
+      "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "checked": "2026-10-19",
+      "status": "not documented"
+    },
+    "max_file_size_bytes": {
+      "value": 300000000,
+      "source": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+      "checked": "2026-11-19",
+      "status": "official",
+      "note": "Meta's content publishing reference: Reels up to 300 MB (read as 300,000,000 bytes, the stricter reading; it was 300 x 1024 x 1024 before 19 Nov). Buffer's help centre gives the same 300 MB."
+    }
+  }
+}

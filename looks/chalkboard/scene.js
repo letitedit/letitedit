@@ -1,0 +1,7 @@
+const H = M.look.chalkboard.start(c.w, c.h), B = H.board('board', {ghosts: ['NEWTON', 'HOMEWORK P 42']}), W = H.work('boat'), C = H.palette, s = K(1), S = H.oval(SUN.x, SUN.y, SUN.r, SUN.r, 22);
+H.scumble(W, S, {color: C.yellow, angle: -.5, gap: 6*s, w: 8*s, alpha: .7, seed: 3}); H.chalk(W, S, {closed: true, color: C.yellow, w: 3*s, seed: 4});
+H.scumble(W, HILL, {angle: -1, gap: 9*s, w: 7*s, alpha: .28, seed: 5, keep: (x, y) => H.across(HILL, .3)(x, y) < .75}); H.chalk(W, HILL.slice(1, 7), {w: 3*s, seed: 6});
+H.chalk(W, T([[50,640],[1030,640]]), {color: C.blue, w: 3*s, seed: 7}); WAVES.slice(0, 4).forEach((w, i) => H.chalk(W, w, {color: C.blue, w: 2.4*s, seed: 8 + i}));
+H.scumble(W, HULL, {color: C.pink, angle: .1, gap: 6*s, w: 7*s, alpha: .75, seed: 13}); H.chalk(W, H.poly(HULL, 8).concat([HULL[0]]), {w: 3.4*s, seed: 14}); H.chalk(W, MAST, {w: 4*s, seed: 15}); H.scumble(W, SAIL, {angle: 1, gap: 7*s, w: 7*s, alpha: .55, seed: 16}); H.chalk(W, H.poly(SAIL, 8).concat([SAIL[0]]), {w: 3*s, seed: 17}); H.chalk(W, H.poly(JIB, 8).concat([JIB[0]]), {w: 3*s, seed: 18});
+H.write(W, LABEL, X(80), Y(70), {cap: K(44)}); H.chalk(W, T([[80,132],[600,126]]), {color: C.yellow, w: 3*s, seed: 19});
+return (t) => { H.begin(g); B.draw(g); W.draw(g, {p: Math.min(1, t / 5.6)}); H.begin(g); H.finish(g); };

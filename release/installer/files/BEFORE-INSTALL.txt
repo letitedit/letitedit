@@ -1,0 +1,40 @@
+Before you install letitedit
+
+What you get
+- The editor "letitedit", a version of the free Shotcut video editor.
+- letitedit's tools for Claude Code and Codex, the editing skills and the guide the AI reads, 316 free font
+  families, platform profiles, and the Codex plugin.
+- Sound and picture libraries: emoji, icons, animated stickers, sound effects, and a starter set of 32 songs
+  (about 126 MB, free to use).
+- The animated-title engine (a small copy of Node.js with HyperFrames). It draws with the Microsoft Edge or
+  Google Chrome already on your PC; without one, animated titles are drawn as simple graphics instead.
+- One local AI model: the beat finder (about 43 MB), so any song has beats from the start.
+
+What you need
+- Windows 10 or 11 (64-bit) and about 2.1 GB of free disk space for the install itself (measured on a clean PC).
+  Models and model environments are downloaded later and need more room: see below.
+- The internet during the install: letitedit sets up its own copy of Python (about 30 MB) and the packages
+  its tools use (about 300 MB). Your own Python, if you have one, is not changed.
+- Microsoft's C++ runtime. If Windows doesn't have it, setup installs it and asks for administrator permission once.
+- Claude Code or Codex, to talk to the tools. Setup adds the tools to them; it never signs in for you.
+
+Local AI models (downloaded later, not part of the install)
+- No model besides the beat finder is included. Setup shows which ones suit your PC and their sizes; you choose
+  what to download now. The others are downloaded when a feature first needs one (the size is logged first);
+  setup or settings.json ("model_downloads": "ask") can make letitedit ask instead. Each comes from its
+  maker's own address and is checked after download.
+- Reading what is said in your videos needs the speech model (about 1.5 GB), downloaded the first time it is used.
+  Other models range from a few MB to several GB (for example, picture search 577 MB, sound labels 589 MB, a
+  voice 3.0 GB, a music model 5.9 GB on a PC with a strong NVIDIA graphics card).
+- Features that run torch models (picture search, voices, music, fix-in-post) also need a model environment:
+  Python + torch, built on first use or from setup. Each is a download of 0.4-3.8 GB and takes about 2-8 GB on
+  disk. On a PC without an NVIDIA GPU the smaller CPU forms are used (about 0.4 GB to download, about 2 GB on
+  disk); some voices and music need the GPU.
+- So a PC with no graphics card that only edits talking videos needs roughly 2.1 GB for the install plus 1.5 GB for
+  the speech model; picture search, sound labels, separation and the like add a model environment (about 2 GB on
+  disk) and their own models. A PC with a strong NVIDIA card that uses every feature needs tens of GB.
+
+Default folder: %LOCALAPPDATA%\Programs\letitedit. Any folder works (no quote marks in the name).
+
+Licences: the editor is free software under the GNU GPL v3; Qt and MLT under the GNU LGPL. Full list:
+THIRD-PARTY-NOTICES.md in the install folder.

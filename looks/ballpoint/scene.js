@@ -1,0 +1,12 @@
+const B = M.look.ballpoint.start(c.w, c.h), P = B.paper(), W = B.work('boat');
+B.construct(W, T([[0, 640], [1080, 640]]), {seed: 2}); B.construct(W, B.oval(SUN.x, SUN.y, SUN.r * 1.05, SUN.r, 12), {seed: 3});
+B.stroke(W, B.oval(SUN.x, SUN.y, SUN.r, SUN.r, 14), {closed: true, seed: 4, w: 1.2});
+B.strokes(W, [HILL.slice(0, 7), T([[0, 640], [1080, 640]])], {seed: 5, w: 1.2});
+B.stroke(W, B.poly(HULL, 8), {closed: true, seed: 6, w: 1.5, retrace: true}); B.stroke(W, MAST, {seed: 7, w: 1.6, bead: true}); B.stroke(W, B.poly(SAIL, 8), {closed: true, seed: 8, w: 1.3}); B.stroke(W, B.poly(JIB, 8), {closed: true, seed: 9, w: 1.3});
+B.rest(W);
+B.tone(W, HILL, B.across(HILL, 0.3), {seed: 10, gap: K(9)});
+B.tone(W, SEA, (x, y) => 0.12 + 0.75 * (y - Y(640)) / K(440), {seed: 20, gap: K(10), angle: 0.05});
+B.tone(W, HULL, () => 0.8, {seed: 30, gap: K(6)}); B.tone(W, JIB, B.across(JIB, 0), {seed: 40, gap: K(8)});
+B.tone(W, B.oval(SUN.x, SUN.y, SUN.r * 0.98, SUN.r * 0.98, 24), B.ball(SUN.x, SUN.y, SUN.r), {seed: 50, gap: K(7)});
+B.strokes(W, WAVES, {seed: 60}); B.write(W, LABEL, X(60), Y(60), {cap: K(30)});
+return (t) => { B.begin(g); P.draw(g); W.draw(g, {p: M.prog(t, 0.2, 5.6)}); B.begin(g); B.finish(g); };

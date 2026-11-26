@@ -1,0 +1,311 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://letitedit.app/studio/1/kinds/short.schema.json",
+  "title": "short: one vertical video from an idea",
+  "description": "preview: the log, story and rough cut with draft captions and music, one phone proxy, no review. final: the whole New video (fine cut, finish, sound, captions, the review gate), the per-platform files. A final with from_job continues the preview's project and does not log or plan again.",
+  "$defs": {
+    "idea": {
+      "type": "object",
+      "properties": {
+        "idea_id": {
+          "type": "string"
+        },
+        "pattern": {
+          "type": "string",
+          "description": "The caller's name for the format, e.g. guess-the-price. Echoed in choices."
+        },
+        "hook_line": {
+          "type": "string"
+        },
+        "on_screen_text": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "target_seconds": {
+          "type": "number",
+          "minimum": 3,
+          "maximum": 180
+        },
+        "about": {
+          "type": "string",
+          "description": "What it's about, what must stay in and what must stay out, in the caller's words."
+        },
+        "end_with": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120,
+          "description": "The working title (contract 1.1), used in the made files' names. Absent: the idea_id."
+        }
+      }
+    },
+    "sources": {
+      "description": "The footage: listed pieces, a folder to find them in, or none (a Look that draws everything).",
+      "oneOf": [
+        {
+          "type": "object",
+          "required": [
+            "pieces"
+          ],
+          "properties": {
+            "pieces": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "../common.schema.json#/$defs/source_ref"
+              }
+            },
+            "strict": {
+              "type": "boolean",
+              "default": true,
+              "description": "true: use only these ranges (plus the brand kit, stock and made pieces the Look calls for); false: they are a starting point inside their files."
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "find_in"
+          ],
+          "properties": {
+            "find_in": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "../common.schema.json#/$defs/abs_path"
+              }
+            },
+            "hint": {
+              "type": "string"
+            },
+            "avoid_moments": {
+              "type": "array",
+              "items": {
+                "$ref": "../common.schema.json#/$defs/moment_id"
+              },
+              "description": "Moments not to use (already posted)."
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "none"
+          ],
+          "properties": {
+            "none": {
+              "const": true
+            }
+          }
+        }
+      ]
+    },
+    "inputs": {
+      "type": "object",
+      "required": [
+        "tier"
+      ],
+      "properties": {
+        "tier": {
+          "type": "string",
+          "enum": [
+            "preview",
+            "final"
+          ]
+        },
+        "idea": {
+          "$ref": "#/$defs/idea"
+        },
+        "sources": {
+          "$ref": "#/$defs/sources"
+        },
+        "look_id": {
+          "type": "string",
+          "description": "A Look id from capabilities, or 'auto' (the AI picks one that fits)."
+        },
+        "theme_id": {
+          "type": "string"
+        },
+        "brand_kit": {
+          "$ref": "../common.schema.json#/$defs/brand_kit"
+        },
+        "rules": {
+          "type": "array",
+          "items": {
+            "$ref": "../common.schema.json#/$defs/rule"
+          }
+        },
+        "music": {
+          "$ref": "../common.schema.json#/$defs/music_policy"
+        },
+        "captions": {
+          "type": "string",
+          "description": "A caption style id from capabilities, 'look' (the Look's own, the default) or 'none'."
+        },
+        "platforms": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "../common.schema.json#/$defs/platform_target"
+          }
+        },
+        "deliver": {
+          "type": "object",
+          "properties": {
+            "srt": {
+              "type": "boolean",
+              "default": true
+            },
+            "cover": {
+              "type": "boolean",
+              "default": true
+            },
+            "project": {
+              "type": "boolean",
+              "default": true
+            },
+            "post_text": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        },
+        "references": {
+          "type": "array",
+          "items": {
+            "$ref": "../common.schema.json#/$defs/abs_path"
+          },
+          "description": "Characters, a logo, photos or a script to use; read, never changed."
+        },
+        "notes_for_final": {
+          "type": "string",
+          "description": "final from a preview: the person's notes on the preview, applied in the final. Music and caption changes go in here as notes."
+        },
+        "overlay_text": {
+          "$ref": "../common.schema.json#/$defs/overlay_text"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "tier": {
+                "const": "preview"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "idea",
+              "sources",
+              "look_id",
+              "platforms"
+            ]
+          }
+        }
+      ],
+      "description": "A final from a preview (from_job) changes tier, rules, platforms, deliver and notes_for_final; everything else is the preview's. look_id, sources and idea are refused there (a new preview is needed); any other input is kept, not applied, and named in status.json warnings (input_ignored)."
+    },
+    "platform_file": {
+      "type": "object",
+      "required": [
+        "platform",
+        "status"
+      ],
+      "properties": {
+        "platform": {
+          "$ref": "../common.schema.json#/$defs/platform"
+        },
+        "video": {
+          "$ref": "../common.schema.json#/$defs/rel_path"
+        },
+        "srt": {
+          "$ref": "../common.schema.json#/$defs/rel_path"
+        },
+        "cover": {
+          "$ref": "../common.schema.json#/$defs/rel_path"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "made",
+            "refused"
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "enum": [
+            "cannot_fit_size",
+            "too_long_for_platform",
+            "shape_differs"
+          ]
+        },
+        "message": {
+          "type": "string"
+        },
+        "tonemapped": {
+          "type": "boolean",
+          "description": "1.2. True when HDR footage was tone-mapped to SDR for this file."
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "made"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "video"
+            ]
+          }
+        }
+      ]
+    },
+    "output": {
+      "type": "object",
+      "required": [
+        "files",
+        "project"
+      ],
+      "properties": {
+        "files": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/platform_file"
+          },
+          "description": "preview: empty (the proxy is the preview)."
+        },
+        "project": {
+          "$ref": "../common.schema.json#/$defs/rel_path",
+          "description": "The .mlt a person can open in letitedit; it refers to the footage where it is."
+        },
+        "post_text": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
+          "description": "A hint only: a suggested caption per platform id."
+        },
+        "summary": {
+          "type": "string",
+          "description": "Two plain lines: what was made."
+        },
+        "left_out": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "What the idea asked for that isn't in it, and why."
+        }
+      }
+    }
+  }
+}

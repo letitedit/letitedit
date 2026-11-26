@@ -1,0 +1,236 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://letitedit.app/studio/1/kinds/still.schema.json",
+  "title": "still: a picture post or Story, or a short motion still",
+  "description": "A layout from capabilities.stills_layouts filled with photos, frames and text, drawn for each size asked for. Checked for legibility at phone size, the platform's covered areas, faces not covered, the rules and AI labels.",
+  "$defs": {
+    "picture": {
+      "oneOf": [
+        {
+          "type": "object",
+          "required": [
+            "path"
+          ],
+          "properties": {
+            "path": {
+              "$ref": "../common.schema.json#/$defs/abs_path"
+            },
+            "at": {
+              "$ref": "../common.schema.json#/$defs/seconds",
+              "description": "A video's frame at this time."
+            },
+            "role": {
+              "type": "string",
+              "description": "e.g. before, after, left, right, card_3."
+            }
+          },
+          "not": {
+            "required": [
+              "moment_id"
+            ]
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "moment_id"
+          ],
+          "properties": {
+            "moment_id": {
+              "$ref": "../common.schema.json#/$defs/moment_id"
+            },
+            "at": {
+              "$ref": "../common.schema.json#/$defs/seconds",
+              "description": "Seconds into the moment; absent: its best frame."
+            },
+            "role": {
+              "type": "string"
+            }
+          },
+          "not": {
+            "required": [
+              "path"
+            ]
+          }
+        }
+      ]
+    },
+    "inputs": {
+      "type": "object",
+      "required": [
+        "layout",
+        "sizes"
+      ],
+      "properties": {
+        "layout": {
+          "type": "string",
+          "description": "A layout id from capabilities.stills_layouts, e.g. fact_card, this_or_that, guess_the, quote, before_after, photo_dump, map, countdown, carousel."
+        },
+        "pictures": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/picture"
+          }
+        },
+        "text": {
+          "type": "object",
+          "description": "The layout's text fields (capabilities.stills_layouts[].fields), e.g. {title, lines, answer}.",
+          "additionalProperties": true
+        },
+        "look_id": {
+          "type": "string"
+        },
+        "brand_kit": {
+          "$ref": "../common.schema.json#/$defs/brand_kit"
+        },
+        "sizes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "description": "A still size id from capabilities.still_sizes: story_9x16, feed_4x5, feed_1x1."
+          }
+        },
+        "platforms": {
+          "type": "array",
+          "items": {
+            "$ref": "../common.schema.json#/$defs/platform_target"
+          },
+          "description": "Whose covered areas to keep clear and whose size caps apply (e.g. instagram_story, facebook_story, tiktok_photo, instagram_feed)."
+        },
+        "motion": {
+          "type": "boolean",
+          "default": false
+        },
+        "motion_seconds": {
+          "type": "number",
+          "minimum": 3,
+          "maximum": 60
+        },
+        "music": {
+          "$ref": "../common.schema.json#/$defs/music_policy"
+        },
+        "sticker_room": {
+          "type": "boolean",
+          "default": false,
+          "description": "Leave a clear area for an interactive sticker (poll, quiz) added in the app."
+        },
+        "rules": {
+          "type": "array",
+          "items": {
+            "$ref": "../common.schema.json#/$defs/rule"
+          }
+        },
+        "format": {
+          "type": "string",
+          "enum": [
+            "png",
+            "jpg"
+          ],
+          "default": "png"
+        },
+        "overlay_text": {
+          "$ref": "../common.schema.json#/$defs/overlay_text"
+        }
+      }
+    },
+    "output": {
+      "type": "object",
+      "required": [
+        "sets",
+        "checks"
+      ],
+      "properties": {
+        "sets": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "size",
+              "files"
+            ],
+            "properties": {
+              "size": {
+                "type": "string"
+              },
+              "files": {
+                "type": "array",
+                "items": {
+                  "$ref": "../common.schema.json#/$defs/rel_path"
+                },
+                "description": "One picture, a carousel set in order, or the motion still's MP4."
+              },
+              "sticker_box": {
+                "type": "object",
+                "properties": {
+                  "x": {
+                    "type": "integer"
+                  },
+                  "y": {
+                    "type": "integer"
+                  },
+                  "w": {
+                    "type": "integer"
+                  },
+                  "h": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "alt_text": {
+                "type": "string",
+                "description": "A hint: a plain description of the picture for a screen reader, per set."
+              }
+            }
+          }
+        },
+        "checks": {
+          "type": "object",
+          "properties": {
+            "legible_at_phone_size": {
+              "type": "string",
+              "enum": [
+                "yes",
+                "no",
+                "could_not_check"
+              ]
+            },
+            "covered_areas_clear": {
+              "type": "string",
+              "enum": [
+                "yes",
+                "no",
+                "could_not_check"
+              ]
+            },
+            "faces_clear": {
+              "type": "string",
+              "enum": [
+                "yes",
+                "no",
+                "no_faces",
+                "could_not_check"
+              ]
+            },
+            "notes": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "project": {
+          "$ref": "../common.schema.json#/$defs/rel_path",
+          "description": "The motion still's .mlt, when motion."
+        },
+        "post_text": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

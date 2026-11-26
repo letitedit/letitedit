@@ -1,0 +1,415 @@
+{
+  "contract_version": "1.5",
+  "job_id": "ch-demo-2026-11-20-0007",
+  "kind": "short",
+  "tier": "preview",
+  "state": "done",
+  "started": "2026-11-20T01:10:00-08:00",
+  "finished": "2026-11-20T01:40:00-08:00",
+  "attempts": 1,
+  "versions": {
+    "contract": "1.5",
+    "letitedit": "20261118.3",
+    "tools": "7b0da5c5",
+    "look": "7ca87163b73d"
+  },
+  "cost": {
+    "wall_s": 330,
+    "waited_s": 0,
+    "measured": true,
+    "ai": {
+      "engine": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "medium"
+    },
+    "tokens": {
+      "input": 10200,
+      "cache_write": 204000,
+      "cache_read": 4845000,
+      "output": 40800,
+      "total": 5100000
+    },
+    "usd_api_equivalent": 1.94,
+    "steps": 22,
+    "stages": [
+      {
+        "stage": "log",
+        "wall_s": 90,
+        "tokens": 1700000
+      },
+      {
+        "stage": "story",
+        "wall_s": 50,
+        "tokens": 800000
+      },
+      {
+        "stage": "rough",
+        "wall_s": 175,
+        "tokens": 2600000
+      },
+      {
+        "stage": "proxy",
+        "wall_s": 15
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "role": "project",
+      "path": "project/guess-the-price.mlt",
+      "bytes": 80000,
+      "sha256": "d8229bf8cd7ccd873a7dce04504abe4af046273049e71f6f471225d0860febe8"
+    },
+    {
+      "role": "proxy",
+      "path": "proxy/proxy.mp4",
+      "bytes": 3600000,
+      "sha256": "9cd429eaa897dd0cd8b5326a4368bc9cc906f1c314c4e2eab3df74fd52bd45d0",
+      "width": 720,
+      "height": 1280,
+      "fps": 30,
+      "duration_s": 26.1,
+      "codec": "h264",
+      "location_metadata": "none"
+    },
+    {
+      "role": "poster",
+      "path": "proxy/poster.jpg",
+      "bytes": 60000,
+      "sha256": "a1072a2b6bfa8ea721922abaaaf9a4775cd4e763890acafb03886a397c96c6f5",
+      "width": 720,
+      "height": 1280,
+      "location_metadata": "none"
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "path": "D:\\Footage\\Café days\\IMG_1234.MOV",
+        "file_id": "f_66ea81670fa7f7885988",
+        "moment_ids": [
+          "m_dd7148ba3befeaaeccfc"
+        ],
+        "in": 12.4,
+        "out": 31.0,
+        "role": "main",
+        "at": 0.0
+      },
+      {
+        "path": "D:\\Footage\\Café days\\IMG_1290.MOV",
+        "file_id": "f_d5b03c866b2289760a3d",
+        "moment_ids": [
+          "m_1c46f56715ad4bca0afc"
+        ],
+        "in": 3.0,
+        "out": 6.5,
+        "role": "broll",
+        "at": 9.2
+      }
+    ],
+    "assets": [
+      {
+        "kind": "stock_video",
+        "what": "Price tags in a 1980s shop window",
+        "source": "pixabay",
+        "url": "https://pixabay.com/videos/id-000000/",
+        "path": "project/stock/pixabay-000000.mp4",
+        "licence": {
+          "id": "pixabay-content-licence",
+          "commercial_use": "allowed",
+          "attribution_required": false,
+          "note": "Free for commercial use inside an edited work; credit is not required. Not allowed: selling or giving the file away unaltered, or implying that a person or brand shown endorses something. Take care with identifiable people and brands."
+        },
+        "ai_generated": false,
+        "ranges": [
+          {
+            "in": 6.0,
+            "out": 8.1
+          }
+        ]
+      },
+      {
+        "kind": "drawn_scene",
+        "what": "The \"1984\" price card",
+        "source": "code_scene",
+        "path": "project/scenes/price-card",
+        "licence": {
+          "id": "generated",
+          "commercial_use": "allowed",
+          "attribution_required": false,
+          "note": "AI-made by an image service. The makers' terms give the output to the person who asked for it; whether AI-made output can be copyrighted is unsettled in some places, and the platforms ask for a label on realistic AI media (the result's ai_labels)."
+        },
+        "ai_generated": false,
+        "ranges": [
+          {
+            "in": 17.0,
+            "out": 19.5
+          }
+        ]
+      },
+      {
+        "kind": "library_sound",
+        "what": "Whoosh",
+        "source": "letitedit_library",
+        "licence": {
+          "id": "CC0-1.0",
+          "commercial_use": "allowed",
+          "attribution_required": false
+        },
+        "ai_generated": false,
+        "ranges": [
+          {
+            "in": 16.9,
+            "out": 17.3
+          }
+        ]
+      }
+    ]
+  },
+  "ai_labels": {
+    "generated_picture": false,
+    "generated_voice": false,
+    "generated_music": false,
+    "altered_real_footage": false,
+    "items": [
+      {
+        "what": "The \"1984\" price card",
+        "kind": "drawn_graphic",
+        "realistic": false,
+        "tool": "code_scene",
+        "start": 17.0,
+        "end": 19.5
+      }
+    ],
+    "platforms": {
+      "youtube_shorts": {
+        "label": "not_required",
+        "why": "Only a drawn graphic that could not pass for a recording.",
+        "rule_as_of": "2026-11"
+      },
+      "tiktok": {
+        "label": "not_required",
+        "why": "Only a drawn graphic that could not pass for a recording.",
+        "rule_as_of": "2026-11"
+      },
+      "instagram_reels": {
+        "label": "not_required",
+        "why": "Only a drawn graphic that could not pass for a recording.",
+        "rule_as_of": "2026-11"
+      },
+      "facebook_reels": {
+        "label": "not_required",
+        "why": "Only a drawn graphic that could not pass for a recording.",
+        "rule_as_of": "2026-11"
+      }
+    }
+  },
+  "music": {
+    "tracks": [
+      {
+        "title": "Floating Temple",
+        "artist": "Monplaisir",
+        "source": "letitedit_library",
+        "licence": {
+          "id": "CC0-1.0",
+          "commercial_use": "allowed",
+          "attribution_required": false,
+          "content_id_registered": "no"
+        },
+        "sha256": "8ed64cb4e9ee656910d1d2f205db088bdc12d22ac17ebe84780ec9aa35bf905f",
+        "ranges": [
+          {
+            "in": 0.0,
+            "out": 24.6
+          }
+        ]
+      }
+    ],
+    "policy_met": "yes"
+  },
+  "rules": [
+    {
+      "id": "blur-plates",
+      "status": "could_not_check",
+      "how": "not_checked",
+      "ranges": [],
+      "frames": [],
+      "reason": "Blurs are placed in the final."
+    },
+    {
+      "id": "no-house-numbers",
+      "status": "could_not_check",
+      "how": "not_checked",
+      "reason": "No house-number detector yet; the critic saw none in its frames, but that is not a full check."
+    },
+    {
+      "id": "no-kids-faces",
+      "status": "not_applicable",
+      "how": "ai_review",
+      "reason": "No children are in the footage used."
+    },
+    {
+      "id": "prefer-big-captions",
+      "status": "could_not_check",
+      "how": "not_checked",
+      "reason": "Captions are placed in the final."
+    },
+    {
+      "id": "prefer-street-open",
+      "status": "not_applicable",
+      "how": "ai_review",
+      "reason": "Gave way to no-house-numbers: every wide shot of the street shows a house number.",
+      "gave_way_to": [
+        "no-house-numbers"
+      ]
+    }
+  ],
+  "choices": {
+    "look_id": "bus-life",
+    "look_name": "Bus life",
+    "theme_id": null,
+    "pattern": "guess-the-price",
+    "hook_kind": "guess_or_challenge",
+    "hook_line": "Guess what this cost in 1984",
+    "first_3s": "Close on the bus engine bay; caption \"Guess what this cost in 1984\"; no music for the first second.",
+    "duration_s": 26.1,
+    "cuts_per_min": 24.0,
+    "words_per_min": 152.0,
+    "caption_style": "word-highlight",
+    "music_kind": "library",
+    "music_mood": "light, curious",
+    "broll_share": 0.22,
+    "moments": [
+      {
+        "moment_id": "m_dd7148ba3befeaaeccfc",
+        "file_id": "f_66ea81670fa7f7885988",
+        "in": 12.4,
+        "out": 31.0
+      },
+      {
+        "moment_id": "m_1c46f56715ad4bca0afc",
+        "file_id": "f_d5b03c866b2289760a3d",
+        "in": 3.0,
+        "out": 6.5
+      }
+    ],
+    "measured": [
+      "duration_s",
+      "cuts_per_min",
+      "words_per_min",
+      "broll_share",
+      "moments"
+    ]
+  },
+  "text_items": [
+    {
+      "id": "cap-001",
+      "kind": "caption",
+      "start": 0.2,
+      "end": 1.6,
+      "text": "Guess what this cost",
+      "editable": "live",
+      "box": {
+        "x": 0.12,
+        "y": 0.62,
+        "w": 0.76,
+        "h": 0.07
+      }
+    },
+    {
+      "id": "cap-002",
+      "kind": "caption",
+      "start": 1.6,
+      "end": 2.9,
+      "text": "in 1984",
+      "editable": "live"
+    },
+    {
+      "id": "txt-001",
+      "kind": "on_screen",
+      "start": 0.4,
+      "end": 4.0,
+      "text": "No Googling!",
+      "editable": "live",
+      "max_chars": 24,
+      "box": {
+        "x": 0.2,
+        "y": 0.18,
+        "w": 0.6,
+        "h": 0.06
+      }
+    },
+    {
+      "id": "txt-002",
+      "kind": "on_screen",
+      "start": 17.0,
+      "end": 19.5,
+      "text": "$1,950",
+      "editable": "remake",
+      "max_chars": 10
+    },
+    {
+      "id": "ovl-001",
+      "kind": "on_screen",
+      "start": 0,
+      "end": 26.1,
+      "text": "@yourchannel",
+      "editable": "live",
+      "overlay": {
+        "from": "inputs.overlay_text.0",
+        "placement": "top",
+        "files": [
+          {
+            "proxy": true,
+            "applied": true,
+            "why": "every file"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ovl-002",
+      "kind": "on_screen",
+      "start": 0,
+      "end": 26.1,
+      "text": "Made with AI images",
+      "editable": "live",
+      "overlay": {
+        "from": "inputs.overlay_text.1",
+        "placement": "bottom",
+        "platforms": [
+          "facebook_reels",
+          "facebook_story"
+        ],
+        "if": [
+          "ai_generated_media"
+        ],
+        "files": [
+          {
+            "proxy": true,
+            "applied": false,
+            "why": "the result has no AI-made picture or sound"
+          }
+        ]
+      }
+    }
+  ],
+  "proxy": {
+    "video": "proxy/proxy.mp4",
+    "poster": "proxy/poster.jpg",
+    "width": 720,
+    "height": 1280,
+    "bytes": 3400000
+  },
+  "review": {
+    "verdict": "not_reviewed",
+    "plain": "A preview is not reviewed; the final is."
+  },
+  "output": {
+    "files": [],
+    "project": "project/guess-the-price.mlt",
+    "summary": "A rough 26 s cut: the question, the engine, the answer card; draft captions and music.",
+    "left_out": []
+  },
+  "warnings": []
+}

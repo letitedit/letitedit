@@ -1,0 +1,443 @@
+{
+  "format": "letitedit-look-settings/1",
+  "id": "step-by-step",
+  "defaults_are": "taste",
+  "share": false,
+  "values": {
+    "name": "Step by step",
+    "description": "How something is done or made: the result first, then each step on screen with its number and a few words.",
+    "colors": {
+      "secondary": "#FFC233",
+      "accent": "#FF5C39",
+      "dark": "#121212",
+      "box": "#000000BF"
+    },
+    "fonts": {
+      "heading": {
+        "family": "Anton",
+        "weight": 400
+      },
+      "body": {
+        "weight": 700
+      },
+      "captions": {
+        "weight": 800
+      }
+    },
+    "captions": {
+      "size": 56,
+      "outline": null,
+      "background": "box",
+      "margin": 0.33,
+      "max_chars": 24
+    },
+    "text": {
+      "size": 120,
+      "outline": {
+        "width": 8
+      }
+    },
+    "graphics": {
+      "word_captions": {
+        "style": "karaoke",
+        "font": "captions",
+        "size": 62,
+        "fill": "light",
+        "highlight": "secondary",
+        "outline": null,
+        "outline_width": 0,
+        "box": "box",
+        "position": 0.62,
+        "max_width": 0.8,
+        "uppercase": false,
+        "pop_scale": 1.0
+      }
+    },
+    "music": {
+      "zones": {
+        "talk": -20.0,
+        "montage": -10.0,
+        "end": -6.0
+      },
+      "notes": "Light and steady: about 20 dB under a voice [MON, RES]; in silent stretches it carries the video with the work's own sound under it."
+    },
+    "sfx": {
+      "gain_db": -12.0,
+      "map": {
+        "swish": "assets/whoosh_fast_02.mp3",
+        "paper": "assets/paper.wav",
+        "tick": "assets/click_ui_03.mp3",
+        "ding": "assets/ding_confirm_02.mp3",
+        "chime": "assets/chime_sparkle_03.mp3",
+        "whoosh": "assets/whoosh_fast_03.mp3",
+        "click": "assets/click_ui_02.mp3"
+      },
+      "events": {
+        "popup": "tick",
+        "text": "paper",
+        "transition": "whoosh",
+        "count": "ding",
+        "reveal": "chime",
+        "flash": "whoosh"
+      }
+    },
+    "editing": {
+      "max_pause": 0.4,
+      "pad_in": 0.06,
+      "pad_out": 0.15,
+      "pace": "fast"
+    },
+    "export": {
+      "preset": "social_h264"
+    },
+    "look": {
+      "about": "Clean and true to the material: footage brought to one exposure and colour, a touch more saturation.",
+      "effects": [
+        {
+          "filter": "hue_lightness_saturation",
+          "params": {
+            "av.s": 1.05
+          }
+        }
+      ]
+    },
+    "label": "Step by step",
+    "summary": "How something is done or made, step by step: the result first, numbered step cards, the hands doing the explaining.",
+    "kind": "short",
+    "tags": [
+      "how-to",
+      "steps",
+      "process",
+      "tutorial",
+      "hands",
+      "numbered",
+      "shorts"
+    ],
+    "recipe": "recipe.md",
+    "credits": [
+      {
+        "file": "assets/paper.wav",
+        "source": "synthesised by tools\\styles\\sounds.py (paper)",
+        "licence": "letitedit's own (generated)"
+      },
+      {
+        "file": "assets/whoosh_fast_02.mp3",
+        "source": "Freesound.org: swosh-22.flac by qubodup (freesound #60009) (https://freesound.org/people/qubodup/sounds/60009/); copy of whoosh_fast_02.mp3 from the local sound library (08 Whooshes & Transitions)",
+        "licence": "CC0 1.0 (Creative Commons 0)"
+      },
+      {
+        "file": "assets/click_ui_03.mp3",
+        "source": "Kenney.nl: Kenney ui-audio: Audio\\click3.ogg (https://kenney.nl/assets/ui-audio); copy of click_ui_03.mp3 from the local sound library (06 Real World & DIY)",
+        "licence": "CC0 1.0 (public domain)"
+      },
+      {
+        "file": "assets/ding_confirm_02.mp3",
+        "source": "Kenney.nl: Kenney interface-sounds: Audio\\confirmation_002.ogg (https://kenney.nl/assets/interface-sounds); copy of ding_confirm_02.mp3 from the local sound library (04 Dings & Sparkles)",
+        "licence": "CC0 1.0 (public domain)"
+      },
+      {
+        "file": "assets/chime_sparkle_03.mp3",
+        "source": "Freesound.org: Fantasy_ui_Button_1.wav by ZenithInfinitiveStudios (freesound #376747) (https://freesound.org/people/ZenithInfinitiveStudios/sounds/376747/); copy of chime_sparkle_03.mp3 from the local sound library (04 Dings & Sparkles)",
+        "licence": "CC0 1.0 (Creative Commons 0)"
+      },
+      {
+        "file": "assets/whoosh_fast_03.mp3",
+        "source": "Freesound.org: Swosh / Whoosh / Air Cut by qubodup (freesound #60030) (https://freesound.org/people/qubodup/sounds/60030/); copy of whoosh_fast_03.mp3 from the local sound library (08 Whooshes & Transitions)",
+        "licence": "CC0 1.0 (Creative Commons 0)"
+      },
+      {
+        "file": "assets/click_ui_02.mp3",
+        "source": "Kenney.nl: Kenney ui-audio: Audio\\click2.ogg (https://kenney.nl/assets/ui-audio); copy of click_ui_02.mp3 from the local sound library (06 Real World & DIY)",
+        "licence": "CC0 1.0 (public domain)"
+      }
+    ],
+    "effects": {
+      "done_check": {
+        "kind": "popup",
+        "about": "A check mark where the footage shows a step finished, with a ding.",
+        "asset": "emoji:check mark button",
+        "size": 0.2,
+        "position": [
+          0.8,
+          0.3
+        ],
+        "in": "pop",
+        "out": "shrink",
+        "hold_s": 0.9,
+        "sfx": "ding",
+        "rules": {
+          "triggers": [
+            "list_item",
+            "reveal"
+          ],
+          "density": {
+            "per_10s": 1,
+            "min_gap_s": 5.0
+          },
+          "duration_s": [
+            0.8,
+            1.8
+          ],
+          "never": [
+            "over_captions"
+          ],
+          "when": "The end of a step where its result is visible."
+        }
+      },
+      "cutaway": {
+        "kind": "broll",
+        "about": "Another shot of the same step (the start, the change, the result).",
+        "fit": "cover",
+        "len": 2.5,
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "mention",
+            "list_item"
+          ],
+          "density": {
+            "per_10s": 2,
+            "min_gap_s": 2.0
+          },
+          "duration_s": [
+            1.5,
+            5.0
+          ],
+          "when": "Change the shot every 2-5 s within a step, always showing the step itself [OVS, MON]."
+        }
+      },
+      "result_flash": {
+        "kind": "flash",
+        "about": "A soft flash and a chime on the final result.",
+        "color": "light",
+        "len": 0.25,
+        "opacity": 0.6,
+        "sfx": "chime",
+        "rules": {
+          "triggers": [
+            "reveal",
+            "ending"
+          ],
+          "density": {
+            "per_min": 1
+          },
+          "when": "Once, the moment the finished result is shown."
+        }
+      },
+      "whoosh_cut": {
+        "kind": "whoosh",
+        "about": "A whoosh into a new item's first shot.",
+        "sfx": "whoosh",
+        "sfx_offset_s": -0.14,
+        "rules": {
+          "triggers": [
+            "list_item",
+            "topic_change"
+          ],
+          "density": {
+            "per_10s": 1,
+            "min_gap_s": 4.0
+          },
+          "when": "Only where no step number brings its own whoosh."
+        }
+      },
+      "step_number": {
+        "kind": "popup",
+        "about": "The step's number, huge, as it starts (\"1\", \"2\", \"3\").",
+        "position": [
+          0.5,
+          0.255
+        ],
+        "size": 0.36,
+        "font": "heading",
+        "fill": "secondary",
+        "stroke": "dark",
+        "stroke_width": 14,
+        "in": "pop",
+        "out": "shrink",
+        "in_s": 0.22,
+        "out_s": 0.2,
+        "hold_s": 2.1,
+        "shadow": true,
+        "sfx": "whoosh",
+        "sfx_offset_s": -0.14,
+        "rules": {
+          "triggers": [
+            "list_item"
+          ],
+          "density": {
+            "per_10s": 2,
+            "min_gap_s": 4.0
+          },
+          "duration_s": [
+            1.6,
+            3.2
+          ],
+          "never": [
+            "over_captions",
+            "over_face"
+          ],
+          "when": "The moment a new step starts. Give asset {text} with the number."
+        }
+      },
+      "step_title": {
+        "kind": "text_pop",
+        "about": "The step in two to five words under the number, upper case [CLU labels 6 words at most].",
+        "position": [
+          0.5,
+          0.445
+        ],
+        "size": 0.84,
+        "font": "heading",
+        "fill": "light",
+        "stroke": "dark",
+        "stroke_width": 12,
+        "tilt": 0,
+        "in": "slide_up",
+        "out": "fade",
+        "hold_s": 2.0,
+        "sfx": "paper",
+        "rules": {
+          "triggers": [
+            "list_item"
+          ],
+          "density": {
+            "per_10s": 2,
+            "min_gap_s": 4.0
+          },
+          "duration_s": [
+            1.5,
+            3.2
+          ],
+          "never": [
+            "over_captions",
+            "overlapping",
+            "over_face"
+          ],
+          "when": "With every step number, the same `at`. The action as the speaker names it, or as it is visible when nobody talks; never a claim the picture doesn't show."
+        }
+      },
+      "step_counter": {
+        "kind": "popup",
+        "about": "A small progress counter (\"2/4\") in the top-left for the whole step.",
+        "position": [
+          0.2,
+          0.175
+        ],
+        "size": 0.17,
+        "font": "heading",
+        "fill": "dark",
+        "stroke_width": 0,
+        "outline": 12,
+        "outline_color": "secondary",
+        "in": "pop",
+        "out": "fade",
+        "in_s": 0.2,
+        "out_s": 0.2,
+        "shadow": true,
+        "sfx": "tick",
+        "rules": {
+          "triggers": [
+            "list_item"
+          ],
+          "density": {
+            "per_10s": 2,
+            "min_gap_s": 3.0
+          },
+          "duration_s": [
+            2.0,
+            40.0
+          ],
+          "never": [
+            "over_captions",
+            "over_face"
+          ],
+          "when": "From each step's start to the next step; `len` to the next card. It only ever counts up."
+        }
+      }
+    },
+    "fx": {
+      "density": {
+        "per_10s": 8
+      },
+      "safe_zone": "phone",
+      "never": [
+        "outside_safe_zone"
+      ],
+      "rhythm": "A step number, title and counter at every step (they land together), the counter always on; a check where a step is done."
+    },
+    "popups": {
+      "min_gap_s": 2.0
+    },
+    "hook": {
+      "max_s": 2.5,
+      "approaches": [
+        "result_first",
+        "number",
+        "mid_action",
+        "question"
+      ],
+      "text": {
+        "case": "upper",
+        "position": [
+          0.5,
+          0.3
+        ],
+        "size": 0.86,
+        "fill": "light",
+        "stroke": "dark",
+        "stroke_width": 12,
+        "font": "heading"
+      },
+      "rules": "Open on the finished result or the most surprising moment of the process; the hook text says what it is and how many steps (\"CLAY TO VASE IN 4 STEPS\") [JH]. Step 1 starts by about 3 s.",
+      "avoid": [
+        "greetings",
+        "a step count the footage can't show",
+        "padding to a round number"
+      ]
+    },
+    "shots": {
+      "framing": "close",
+      "notes": "Close on the hands and the material; wide only for where and how big."
+    },
+    "provenance": {
+      "made_by": "letitedit Look library",
+      "date": "2026-11-24",
+      "measured": "none (general practice and the sources in looks/SOURCES.md)",
+      "sources": [
+        {
+          "url": "https://www.overseeros.com/blog/how-to-edit-faceless-youtube-videos",
+          "title": "Overseeros faceless editing guide",
+          "used_for": "scene lengths (median 3.62 s over 4,412 scenes, a production reference), hard cuts, voice-first mix, consistent footage",
+          "licence": "none found (numbers only)"
+        },
+        {
+          "url": "https://blitzcutai.com/blog/best-caption-style-instagram-reels-2026",
+          "title": "BlitzCut Reels captions",
+          "used_for": "highlight-box captions for lists",
+          "licence": "none found (numbers only)"
+        },
+        {
+          "url": "https://www.clueso.io/blog/how-to-make-tasteful-screen-capture-videos",
+          "title": "Clueso screen-capture playbook",
+          "used_for": "labels of six words at most",
+          "licence": "none found (numbers only)"
+        }
+      ]
+    }
+  },
+  "asset_root": "resources",
+  "files": {
+    "assets/chime_sparkle_03.mp3": "resources/a428a4933fcc77c6ba33d4ec.mp3",
+    "assets/click_ui_02.mp3": "resources/4540dff572fcf57ac2d41cd9.mp3",
+    "assets/click_ui_03.mp3": "resources/c5ebe5643727c731df714f88.mp3",
+    "assets/ding_confirm_02.mp3": "resources/c564d098573828eceaf699e9.mp3",
+    "assets/paper.wav": "resources/38329503578e5e93e92a58dd.wav",
+    "assets/whoosh_fast_02.mp3": "resources/b28911d6f30c5f10b353b924.mp3",
+    "assets/whoosh_fast_03.mp3": "resources/68a9be5e205fc0a89d7a429e.mp3",
+    "recipe.md": "recipe.md"
+  },
+  "links": {
+    "recipe": "recipe.md"
+  }
+}

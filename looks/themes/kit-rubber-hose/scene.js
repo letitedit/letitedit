@@ -1,0 +1,5 @@
+const R = M.look.rubberHose.start(c.w, c.h), G = R.G, U = K(1);
+const set = [R.part({fills: [{pts: FRAME, col: G.light}, {pts: R.ell(SUN.x, SUN.y, SUN.r, SUN.r, 0, 28), col: G.white}], outline: [R.ell(SUN.x, SUN.y, SUN.r, SUN.r, 0, 28)], ow: 4}), R.part({fills: [{pts: HILL, col: G.mid}], details: [{pts: HILL.slice(1, 7), w: 4}], knock: false}), R.part({fills: [{pts: SEA, col: G.grey}], details: [{pts: T([[0,640],[1080,640]]), w: 4}], knock: false}),
+  R.part({fills: [{pts: SAIL, col: G.white}, {pts: JIB, col: G.light}], outline: [SAIL, JIB], ow: 4, details: [{pts: MAST, w: 6}]}), R.part({fills: [{pts: HULL, col: G.dark}], outline: [HULL], ow: 5})];
+const eyes = [R.eye(X(520), Y(742), 22*U, 32*U, [.3, .15], {boil: 0}), R.eye(X(590), Y(742), 22*U, 32*U, [.3, .15], {boil: 0})];
+return (t) => { R.begin(g); g.fillStyle = '#e8e2d2'; g.fillRect(0, 0, c.w, c.h); R.cel(g, [...set, ...eyes], {key: 'still', ink: M.prog(t, .1, 2.8), paint: M.prog(t, 2.8, 5.5)}); R.begin(g); R.finish(g, {t, still: true}); };

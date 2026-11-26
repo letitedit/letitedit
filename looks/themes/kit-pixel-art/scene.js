@@ -1,0 +1,4 @@
+const P = M.look.pixelArt.start(c.w, c.h, {palette: 'night'}), G = P.G, H = P.H, gx = (x) => (X(x) / c.w) * G, gy = (y) => (Y(y) / c.h) * H, gp = (s) => s.map(([x, y]) => [(x / c.w) * G, (y / c.h) * H]), horizon = Math.round(gy(640));
+const pic = P.layer('all', (d) => { d.bands(0, horizon, [1, 2, 3, 4]); d.setPass(1); d.disc(SUN.x / c.w * G, SUN.y / c.h * H, SUN.r / c.w * G, 6); d.disc((SUN.x - K(20)) / c.w * G, (SUN.y - K(20)) / c.h * H, SUN.r / c.w * G * .4, 5);
+  d.blob(gp(HILL), 8); d.setPass(0); d.box(0, horizon, G, H - horizon, 7); d.setPass(1); d.dither(gp(SEA), 9, 2); d.setPass(2); d.blob(gp(HULL), 11); d.blob(gp(SAIL), 15); d.blob(gp(JIB), 14); const m = gp(MAST); d.box(m[0][0], m[0][1], 1, m[1][1] - m[0][1], 0); d.rim(5, -1, -1, [8]); });
+return (t) => { P.begin(g); P.clear(g, 0); pic.draw(g, {progress: t / 4}); P.finish(g); };

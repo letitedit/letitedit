@@ -1,0 +1,84 @@
+{
+  "contract_version": "1.2",
+  "job_id": "ch-demo-index-0003",
+  "kind": "index",
+  "state": "done",
+  "started": "2026-11-20T01:10:00-08:00",
+  "finished": "2026-11-20T01:40:00-08:00",
+  "attempts": 1,
+  "versions": {
+    "contract": "1.2",
+    "letitedit": "20261118.3",
+    "tools": "7b0da5c5"
+  },
+  "cost": {
+    "wall_s": 1260,
+    "waited_s": 0,
+    "measured": true
+  },
+  "outputs": [
+    {
+      "role": "index",
+      "path": "library/files.jsonl",
+      "bytes": 180000,
+      "sha256": "ea38dcbb7700ea295cd01a9e39324898087ffe42d7b4020b51fc34998a6be813"
+    },
+    {
+      "role": "index",
+      "path": "library/moments.jsonl",
+      "bytes": 2400000,
+      "sha256": "1a374438161c1db2e15fef09a56ffbd66097731c0890ac7ead43ba7c0675a643"
+    },
+    {
+      "role": "index",
+      "path": "library/photos.jsonl",
+      "bytes": 22000,
+      "sha256": "6ccc21ec4bbf65f7777ec6c499b3ba7c701cc47785973c7e0541e471e88850f3"
+    },
+    {
+      "role": "index",
+      "path": "library/changes.jsonl",
+      "bytes": 3100,
+      "sha256": "d95c913de29901d7b901b30559afb998fa7c1bd4ceecb1428f21b76f74049755"
+    },
+    {
+      "role": "transcript",
+      "path": "transcripts/f_66ea81670fa7f7885988.json",
+      "bytes": 41000,
+      "sha256": "8e0df979d89a865c697d3fdc9204ddb4d6c631a4e3a279c872979e5dd8184bb1"
+    }
+  ],
+  "output": {
+    "files": "library/files.jsonl",
+    "moments": "library/moments.jsonl",
+    "photos": "library/photos.jsonl",
+    "changes": "library/changes.jsonl",
+    "since_job": "ch-demo-index-0002",
+    "counts": {
+      "files": 214,
+      "analysed": 9,
+      "skipped_unchanged": 205,
+      "unreadable": 1,
+      "moments_current": 1630,
+      "moments_retired": 4,
+      "photos": 61
+    },
+    "unreadable": [
+      {
+        "path": "D:\\Footage\\Café days\\IMG_0007.MOV",
+        "why": "The file ends early (an interrupted copy)."
+      }
+    ],
+    "steps_skipped": [
+      {
+        "step": "flags",
+        "why": "No plate or kid detector yet: licence_plate and kids are unknown."
+      },
+      {
+        "step": "vision",
+        "why": "Not asked for: the moment fields only letitedit's vision pass gives (framing wide, detail and screen; the moving-vehicle camera; subjects; setting) are absent on 9 files' new moments."
+      }
+    ]
+  },
+  "warnings": []
+}

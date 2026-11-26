@@ -1,0 +1,1282 @@
+{
+  "format": "letitedit-look-settings/1",
+  "id": "pack-meme-commentary",
+  "defaults_are": "taste",
+  "share": false,
+  "values": {
+    "format": "letitedit-style/3",
+    "name": "Meme Commentary",
+    "description": "A 15-45 s vertical comedy edit - a setup line on a white bar, the clip playing out, the joke landing with a freeze, a zoom, a sound.",
+    "colors": {
+      "primary": "#FFFFFF",
+      "secondary": "#FFE600",
+      "accent": "#FF2D2D",
+      "dark": "#000000",
+      "light": "#FFFFFF",
+      "purple": "#6B2FD6",
+      "paper": "#FFFFFF"
+    },
+    "fonts": {
+      "heading": {
+        "family": "Anton",
+        "weight": 400
+      },
+      "body": {
+        "family": "Arimo",
+        "weight": 500
+      },
+      "captions": {
+        "family": "Arimo",
+        "weight": 700
+      },
+      "cartoon": {
+        "family": "Bangers",
+        "weight": 400
+      }
+    },
+    "captions": {
+      "font": "captions",
+      "size": 50,
+      "fill": "light",
+      "outline": {
+        "color": "dark",
+        "width": 6
+      },
+      "shadow": null,
+      "background": null,
+      "position": "bottom",
+      "margin": 0.3,
+      "max_chars": 18,
+      "max_lines": 2,
+      "case": "as_spoken"
+    },
+    "text": {
+      "font": "heading",
+      "size": 120,
+      "fill": "light",
+      "outline": {
+        "color": "dark",
+        "width": 10
+      }
+    },
+    "graphics": {
+      "word_captions": {
+        "style": "pop",
+        "font": "captions",
+        "size": 50,
+        "fill": "light",
+        "highlight": "secondary",
+        "outline": "dark",
+        "outline_width": 6,
+        "shadow": null,
+        "position": 0.66,
+        "max_width": 0.8,
+        "uppercase": false,
+        "pop_scale": 1.06
+      },
+      "caption_bar": {
+        "font": "body",
+        "size": 50,
+        "fill": "dark",
+        "band": "paper",
+        "margin": 0.11,
+        "max_lines": 3,
+        "align": "left"
+      },
+      "title_card": {
+        "background": "purple",
+        "font": "cartoon",
+        "subtitle_font": "body",
+        "size": 150,
+        "subtitle_size": 44,
+        "fill": "secondary",
+        "subtitle_fill": "light",
+        "accent": "#00000000",
+        "outline": "dark",
+        "outline_width": 8
+      }
+    },
+    "music": {
+      "zones": {
+        "talk": -22.0,
+        "montage": -8.0,
+        "quiet": -24.0,
+        "swell": -3.0,
+        "end": -6.0
+      },
+      "duck_under_speech": true,
+      "merge_gap": 4.0,
+      "attack": 0.3,
+      "release": 0.9,
+      "crossfade": 3.0,
+      "fade_in": 1.5,
+      "fade_out": 3.0,
+      "dialogue_lufs": null,
+      "sources": [],
+      "notes": "Optional - a quirky or playful bed (music-library: Electronic / Quirky, Game & Chiptune / Playful) well under the voice; it stops dead on a record scratch or a freeze and comes back after the joke.",
+      "likes": [],
+      "avoid": [],
+      "theme": null
+    },
+    "sfx": {
+      "gain_db": -10.0,
+      "map": {
+        "boom": "synth/boom-deep",
+        "bonk": "library/bonk_punch-heavy_01",
+        "scratch": "library/record-scratch_dj_01",
+        "trombone": "library/fail_sad-trombone_02",
+        "rimshot": "library/rimshot_ba-dum-tss_02",
+        "laugh": "library/laugh_audience_01",
+        "boing": "library/boing_spring_03",
+        "whistle": "library/slide-whistle_down-blip_01",
+        "gasp": "library/gasp_single_01",
+        "wow": "library/voice_wow_04",
+        "error": "library/fail_error-buzz_05",
+        "tada": "library/sting_ta-da_01",
+        "pop": "library/pop_cartoon_02",
+        "zoom": "synth/zoom-hit"
+      },
+      "events": {
+        "punchline": "boom",
+        "zoom": "zoom",
+        "shake": "bonk",
+        "popup": "pop",
+        "reveal": "tada",
+        "text": "pop",
+        "transition": "whistle"
+      }
+    },
+    "editing": {
+      "max_pause": 0.3,
+      "pad_in": 0.05,
+      "pad_out": 0.15,
+      "blur_pad": true,
+      "transitions": "cut",
+      "pace": "fast",
+      "intro": null,
+      "outro": null
+    },
+    "export": {
+      "preset": "social_h264",
+      "loudness": -14.0
+    },
+    "look": {
+      "about": "As shot - punchy enough for a phone, no grade that makes it look produced.",
+      "effects": [
+        {
+          "filter": "hue_lightness_saturation",
+          "params": {
+            "av.s": 1.08
+          }
+        }
+      ]
+    },
+    "taste": "",
+    "label": "Meme commentary",
+    "summary": "Meme-format comedy - a caption bar over the clip, freeze frames, snap zooms with a boom, reaction emoji and sound stings, out on the punchline.",
+    "kind": "short",
+    "tags": [
+      "meme",
+      "comedy",
+      "commentary",
+      "reaction",
+      "funny",
+      "freeze frame",
+      "caption bar",
+      "sound effects",
+      "shorts"
+    ],
+    "preview": "preview.jpg",
+    "recipe": "recipe.md",
+    "credits": [
+      {
+        "file": "preview.jpg",
+        "source": "Original preview imagery; hands, objects, places and titles only",
+        "licence": "Original letitedit footage: hands, objects, places and titles only; no faces"
+      }
+    ],
+    "effects": {
+      "setup_bar": {
+        "kind": "graphic",
+        "about": "The setup line on a white bar near the top (\"me after fixing the A/C once:\"), lowercase, there while the clip plays out [GEN the caption-meme format].",
+        "template": "caption_bar",
+        "len": 4.0,
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "hook",
+            "topic_change"
+          ],
+          "density": {
+            "per_min": 5,
+            "min_gap_s": 3.0
+          },
+          "duration_s": [
+            2.0,
+            12.0
+          ],
+          "never": [
+            "outside_safe_zone"
+          ],
+          "when": "Every bit starts with one; it says the situation, never the punchline. Params text, lowercase, 12 words at most. Under the phone app's top bar (the pack's margin)."
+        }
+      },
+      "snap_zoom": {
+        "kind": "zoom_punch",
+        "about": "A snap zoom to 145% on a face or the thing at the punchline, with a deep boom.",
+        "scale": 1.45,
+        "ramp_s": 0.04,
+        "len": 1.1,
+        "sfx": "boom",
+        "rules": {
+          "triggers": [
+            "punchline",
+            "reaction",
+            "reveal"
+          ],
+          "density": {
+            "per_min": 4,
+            "min_gap_s": 4.0
+          },
+          "duration_s": [
+            0.6,
+            1.6
+          ],
+          "when": "The look, the line or the moment the joke turns on; focus on it. Two in a row kill it - rotate with freeze and shake."
+        }
+      },
+      "impact_text": {
+        "kind": "text_pop",
+        "about": "Classic meme text - white capitals with a black edge, slammed in under the setup bar (\"NOT AGAIN\").",
+        "size": 0.62,
+        "font": "heading",
+        "fill": "light",
+        "stroke": "dark",
+        "stroke_width": 14,
+        "tilt": 0,
+        "position": [
+          0.5,
+          0.37
+        ],
+        "in": "pop",
+        "out": "none",
+        "hold_s": 1.0,
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "punchline",
+            "reaction"
+          ],
+          "density": {
+            "per_min": 6,
+            "min_gap_s": 4.0
+          },
+          "placement": {
+            "avoid": [
+              "face",
+              "covered"
+            ]
+          },
+          "duration_s": [
+            0.7,
+            1.8
+          ],
+          "never": [
+            "over_face",
+            "overlapping"
+          ],
+          "when": "The reaction in one to three words, or the speaker's own punch word; once per bit."
+        }
+      },
+      "reaction_emoji": {
+        "kind": "popup",
+        "about": "A big reaction emoji on the joke (skull, crying-laughing, clown, eyes), at the side under the setup bar.",
+        "size": 0.26,
+        "position": [
+          0.68,
+          0.47
+        ],
+        "in": "pop",
+        "out": "pop",
+        "hold_s": 0.9,
+        "wiggle": 6,
+        "shadow": true,
+        "sfx": "pop",
+        "rules": {
+          "triggers": [
+            "reaction",
+            "punchline"
+          ],
+          "density": {
+            "per_min": 5,
+            "min_gap_s": 4.0
+          },
+          "placement": {
+            "avoid": [
+              "captions",
+              "covered"
+            ]
+          },
+          "duration_s": [
+            0.6,
+            1.4
+          ],
+          "never": [
+            "over_captions"
+          ],
+          "when": "The audience's reaction, not the speaker's; one at a time; clear of the setup bar and the meme text."
+        }
+      },
+      "shake_hit": {
+        "kind": "shake",
+        "about": "A short hard shake with a bonk.",
+        "amount": 0.7,
+        "len": 0.3,
+        "sfx": "bonk",
+        "rules": {
+          "triggers": [
+            "punchline",
+            "reaction"
+          ],
+          "density": {
+            "per_min": 4,
+            "min_gap_s": 5.0
+          },
+          "when": "Something breaks, falls, or a line hits like a slap."
+        }
+      },
+      "scratch_stop": {
+        "kind": "sfx",
+        "about": "A record scratch where the music stops dead (the freeze-frame \"yep, that's me\" moment).",
+        "sfx": "scratch",
+        "sfx_offset_s": -0.1,
+        "rules": {
+          "triggers": [
+            "reveal",
+            "punchline",
+            "topic_change"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 12.0
+          },
+          "when": "On a freeze frame or the turn; the music is cut at the same frame."
+        }
+      },
+      "fail_sting": {
+        "kind": "sfx",
+        "about": "A sad trombone on a real fail.",
+        "sfx": "trombone",
+        "sfx_gain_db": -12,
+        "rules": {
+          "triggers": [
+            "reaction",
+            "reveal"
+          ],
+          "density": {
+            "per_min": 1
+          },
+          "when": "Something really went wrong on camera; never on a success."
+        }
+      },
+      "rimshot": {
+        "kind": "sfx",
+        "about": "A ba-dum-tss after a pun or a self-own.",
+        "sfx": "rimshot",
+        "rules": {
+          "triggers": [
+            "punchline"
+          ],
+          "density": {
+            "per_min": 1
+          },
+          "when": "After the line, never under it."
+        }
+      },
+      "crowd_laugh": {
+        "kind": "sfx",
+        "about": "A short audience laugh after a joke that lands.",
+        "sfx": "laugh",
+        "sfx_gain_db": -16,
+        "rules": {
+          "triggers": [
+            "punchline",
+            "reaction"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 15.0
+          },
+          "when": "After the last word, never over it; once or twice a video."
+        }
+      },
+      "time_card": {
+        "kind": "graphic",
+        "about": "A full-screen time card (\"9 DAYS LATER\") in a cartoon face on purple, 1.5 s, with a slide whistle.",
+        "template": "title_card",
+        "len": 1.6,
+        "sfx": "whistle",
+        "rules": {
+          "triggers": [
+            "topic_change"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 10.0
+          },
+          "duration_s": [
+            1.2,
+            2.2
+          ],
+          "when": "A jump in time that the joke needs (only true times, from the footage's dates or the person); params title."
+        }
+      },
+      "win_sting": {
+        "kind": "sfx",
+        "about": "A ta-da on the (ironic or real) win.",
+        "sfx": "tada",
+        "rules": {
+          "triggers": [
+            "reveal",
+            "ending"
+          ],
+          "density": {
+            "per_min": 1
+          },
+          "when": "The payoff; a fanfare on a small win is the joke."
+        }
+      }
+    },
+    "fx": {
+      "track": "Effects",
+      "sfx_track": "Effect sounds",
+      "broll_track": "B-roll",
+      "density": {
+        "per_10s": 8,
+        "per_min": null,
+        "min_gap_s": null
+      },
+      "safe_zone": "phone",
+      "never": [
+        "outside_safe_zone"
+      ],
+      "rhythm": "Setup clean, punchline loud - a freeze, a snap zoom, a boom and an emoji within half a second, then on."
+    },
+    "popups": {
+      "track": null,
+      "sfx_track": null,
+      "min_gap_s": 3.0,
+      "max_total": 5,
+      "entries": [
+        {
+          "id": "again",
+          "words": [
+            "again",
+            "another one"
+          ],
+          "asset": "emoji:weary face",
+          "position": [
+            0.68,
+            0.47
+          ],
+          "size": 0.24,
+          "in": "pop",
+          "out": "pop",
+          "hold_s": 0.9,
+          "sfx": "pop",
+          "max_per_video": 1,
+          "cooldown_s": 20,
+          "avoid": [
+            "captions",
+            "covered"
+          ]
+        },
+        {
+          "id": "broke",
+          "words": [
+            "broke",
+            "broken",
+            "failing",
+            "died"
+          ],
+          "asset": "emoji:skull",
+          "position": [
+            0.68,
+            0.47
+          ],
+          "size": 0.24,
+          "in": "spin",
+          "out": "pop",
+          "hold_s": 0.9,
+          "sfx": "boing",
+          "max_per_video": 1,
+          "cooldown_s": 20,
+          "avoid": [
+            "captions",
+            "covered"
+          ]
+        },
+        {
+          "id": "what",
+          "words": [
+            "what",
+            "wait",
+            "huh"
+          ],
+          "asset": "emoji:face with raised eyebrow",
+          "position": [
+            0.68,
+            0.47
+          ],
+          "size": 0.24,
+          "in": "pop",
+          "out": "pop",
+          "hold_s": 0.8,
+          "sfx": "pop",
+          "max_per_video": 1,
+          "cooldown_s": 20,
+          "avoid": [
+            "captions",
+            "covered"
+          ]
+        },
+        {
+          "id": "money",
+          "words": [
+            "bucks",
+            "dollars",
+            "expensive"
+          ],
+          "asset": "emoji:money with wings",
+          "position": [
+            0.68,
+            0.47
+          ],
+          "size": 0.22,
+          "in": "drop",
+          "out": "pop",
+          "hold_s": 0.9,
+          "sfx": "pop",
+          "max_per_video": 1,
+          "cooldown_s": 20,
+          "avoid": [
+            "captions",
+            "covered"
+          ]
+        },
+        {
+          "id": "illegal",
+          "words": [
+            "illegal",
+            "not allowed"
+          ],
+          "asset": "emoji:police car light",
+          "position": [
+            0.68,
+            0.47
+          ],
+          "size": 0.22,
+          "in": "pop",
+          "out": "pop",
+          "hold_s": 0.9,
+          "sfx": "error",
+          "max_per_video": 1,
+          "cooldown_s": 20,
+          "avoid": [
+            "captions",
+            "covered"
+          ]
+        }
+      ]
+    },
+    "hook": {
+      "max_s": 2.0,
+      "approaches": [
+        "quote",
+        "mid_action",
+        "result_first",
+        "stakes"
+      ],
+      "text": {
+        "max_words": 12,
+        "case": "as_said",
+        "position": "top",
+        "size": 0.5,
+        "fill": "dark",
+        "stroke": null,
+        "stroke_width": 0,
+        "font": "body",
+        "item": {
+          "graphic": {
+            "template": "caption_bar",
+            "params": {
+              "text": "{text}"
+            }
+          }
+        }
+      },
+      "rules": "The setup bar is on screen from frame 0 with the clip already moving; the first laugh within about 5 s; the ending is the punchline, cut within half a second of it [JH].",
+      "avoid": [
+        "greetings",
+        "explaining the joke",
+        "a slow build with nothing on screen"
+      ]
+    },
+    "broll": {
+      "amount": "some",
+      "kinds": [],
+      "favorites": "",
+      "notes": ""
+    },
+    "shots": {
+      "framing": "medium",
+      "camera": "handheld",
+      "punch_ins": "some",
+      "notes": ""
+    },
+    "signature": {
+      "touches": []
+    },
+    "measured": {},
+    "provenance": {
+      "made_by": "letitedit style library, wave 2",
+      "date": "2026-10-30",
+      "measured": "none yet (no reference videos in style-references)",
+      "sources": [
+        {
+          "url": "https://umbrellacreators.com/blog/how-to-edit-pop-culture-commentary-videos",
+          "title": "Umbrella Creators commentary editing",
+          "used_for": "restraint with meme inserts (forty in ten minutes buries the point)",
+          "licence": "none found (observations only)"
+        }
+      ],
+      "notes": "No checked source gives meme-comedy timing, captions or sound rules (the research found none complete); the numbers here are general practice [GEN] built on the letitedit-shorts rules (open moving, cut on the payoff) and should be tuned on the person's references. Tags in ..\\SOURCES.md."
+    }
+  },
+  "asset_root": "resources",
+  "files": {
+    "preview.jpg": "resources/79ac53cd1f880d1f133a7fba.jpg",
+    "recipe.md": "recipe.md"
+  },
+  "links": {
+    "recipe": "recipe.md",
+    "preview": "preview.jpg"
+  },
+  "legacy": {
+    "format": "letitedit-style/3",
+    "source": "style.yaml",
+    "pack": "meme-commentary",
+    "data": {
+      "format": "letitedit-style/3",
+      "name": "Meme Commentary",
+      "label": "Meme commentary",
+      "summary": "Meme-format comedy - a caption bar over the clip, freeze frames, snap zooms with a boom, reaction emoji and sound stings, out on the punchline.",
+      "kind": "short",
+      "tags": [
+        "meme",
+        "comedy",
+        "commentary",
+        "reaction",
+        "funny",
+        "freeze frame",
+        "caption bar",
+        "sound effects",
+        "shorts"
+      ],
+      "recipe": "recipe.md",
+      "preview": "preview.jpg",
+      "description": "A 15-45 s vertical comedy edit - a setup line on a white bar, the clip playing out, the joke landing with a freeze, a zoom, a sound.",
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#FFE600",
+        "accent": "#FF2D2D",
+        "purple": "#6B2FD6",
+        "paper": "#FFFFFF",
+        "dark": "#000000",
+        "light": "#FFFFFF"
+      },
+      "fonts": {
+        "heading": {
+          "family": "Anton",
+          "weight": 400
+        },
+        "body": {
+          "family": "Arimo",
+          "weight": 500
+        },
+        "captions": {
+          "family": "Arimo",
+          "weight": 700
+        },
+        "cartoon": {
+          "family": "Bangers",
+          "weight": 400
+        }
+      },
+      "graphics": {
+        "word_captions": {
+          "style": "pop",
+          "font": "captions",
+          "size": 50,
+          "fill": "light",
+          "highlight": "secondary",
+          "outline": "dark",
+          "outline_width": 6,
+          "shadow": null,
+          "position": 0.66,
+          "max_width": 0.8,
+          "uppercase": false,
+          "pop_scale": 1.06
+        },
+        "caption_bar": {
+          "font": "body",
+          "size": 50,
+          "fill": "dark",
+          "band": "paper",
+          "margin": 0.11,
+          "max_lines": 3,
+          "align": "left"
+        },
+        "title_card": {
+          "background": "purple",
+          "font": "cartoon",
+          "subtitle_font": "body",
+          "size": 150,
+          "subtitle_size": 44,
+          "fill": "secondary",
+          "subtitle_fill": "light",
+          "accent": "#00000000",
+          "outline": "dark",
+          "outline_width": 8
+        }
+      },
+      "captions": {
+        "font": "captions",
+        "size": 50,
+        "fill": "light",
+        "outline": {
+          "color": "dark",
+          "width": 6
+        },
+        "position": "bottom",
+        "margin": 0.3,
+        "max_chars": 18,
+        "max_lines": 2,
+        "case": "as_spoken"
+      },
+      "text": {
+        "font": "heading",
+        "size": 120,
+        "fill": "light",
+        "outline": {
+          "color": "dark",
+          "width": 10
+        }
+      },
+      "editing": {
+        "max_pause": 0.3,
+        "pad_in": 0.05,
+        "pad_out": 0.15,
+        "blur_pad": true,
+        "transitions": "cut",
+        "pace": "fast"
+      },
+      "music": {
+        "zones": {
+          "talk": -22.0,
+          "montage": -8.0,
+          "end": -6.0
+        },
+        "notes": "Optional - a quirky or playful bed (music-library: Electronic / Quirky, Game & Chiptune / Playful) well under the voice; it stops dead on a record scratch or a freeze and comes back after the joke."
+      },
+      "export": {
+        "preset": "social_h264",
+        "loudness": -14.0
+      },
+      "look": {
+        "about": "As shot - punchy enough for a phone, no grade that makes it look produced.",
+        "effects": [
+          {
+            "filter": "hue_lightness_saturation",
+            "params": {
+              "av.s": 1.08
+            }
+          }
+        ]
+      },
+      "sfx": {
+        "gain_db": -10.0,
+        "map": {
+          "boom": "synth/boom-deep",
+          "bonk": "library/bonk_punch-heavy_01",
+          "scratch": "library/record-scratch_dj_01",
+          "trombone": "library/fail_sad-trombone_02",
+          "rimshot": "library/rimshot_ba-dum-tss_02",
+          "laugh": "library/laugh_audience_01",
+          "boing": "library/boing_spring_03",
+          "whistle": "library/slide-whistle_down-blip_01",
+          "gasp": "library/gasp_single_01",
+          "wow": "library/voice_wow_04",
+          "error": "library/fail_error-buzz_05",
+          "tada": "library/sting_ta-da_01",
+          "pop": "library/pop_cartoon_02",
+          "zoom": "synth/zoom-hit"
+        },
+        "events": {
+          "punchline": "boom",
+          "zoom": "zoom",
+          "shake": "bonk",
+          "popup": "pop",
+          "reveal": "tada",
+          "text": "pop",
+          "transition": "whistle"
+        }
+      },
+      "fx": {
+        "track": "Effects",
+        "sfx_track": "Effect sounds",
+        "broll_track": "B-roll",
+        "density": {
+          "per_10s": 8
+        },
+        "safe_zone": "phone",
+        "never": [
+          "outside_safe_zone"
+        ],
+        "rhythm": "Setup clean, punchline loud - a freeze, a snap zoom, a boom and an emoji within half a second, then on."
+      },
+      "effects": {
+        "setup_bar": {
+          "kind": "graphic",
+          "about": "The setup line on a white bar near the top (\"me after fixing the A/C once:\"), lowercase, there while the clip plays out [GEN the caption-meme format].",
+          "template": "caption_bar",
+          "len": 4.0,
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "hook",
+              "topic_change"
+            ],
+            "density": {
+              "per_min": 5,
+              "min_gap_s": 3.0
+            },
+            "duration_s": [
+              2.0,
+              12.0
+            ],
+            "never": [
+              "outside_safe_zone"
+            ],
+            "when": "Every bit starts with one; it says the situation, never the punchline. Params text, lowercase, 12 words at most. Under the phone app's top bar (the pack's margin)."
+          }
+        },
+        "snap_zoom": {
+          "kind": "zoom_punch",
+          "about": "A snap zoom to 145% on a face or the thing at the punchline, with a deep boom.",
+          "scale": 1.45,
+          "ramp_s": 0.04,
+          "len": 1.1,
+          "sfx": "boom",
+          "rules": {
+            "triggers": [
+              "punchline",
+              "reaction",
+              "reveal"
+            ],
+            "density": {
+              "per_min": 4,
+              "min_gap_s": 4.0
+            },
+            "duration_s": [
+              0.6,
+              1.6
+            ],
+            "when": "The look, the line or the moment the joke turns on; focus on it. Two in a row kill it - rotate with freeze and shake."
+          }
+        },
+        "impact_text": {
+          "kind": "text_pop",
+          "about": "Classic meme text - white capitals with a black edge, slammed in under the setup bar (\"NOT AGAIN\").",
+          "size": 0.62,
+          "font": "heading",
+          "fill": "light",
+          "stroke": "dark",
+          "stroke_width": 14,
+          "tilt": 0,
+          "position": [
+            0.5,
+            0.37
+          ],
+          "in": "pop",
+          "out": "none",
+          "hold_s": 1.0,
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "punchline",
+              "reaction"
+            ],
+            "density": {
+              "per_min": 6,
+              "min_gap_s": 4.0
+            },
+            "placement": {
+              "avoid": [
+                "face",
+                "covered"
+              ]
+            },
+            "duration_s": [
+              0.7,
+              1.8
+            ],
+            "never": [
+              "over_face",
+              "overlapping"
+            ],
+            "when": "The reaction in one to three words, or the speaker's own punch word; once per bit."
+          }
+        },
+        "reaction_emoji": {
+          "kind": "popup",
+          "about": "A big reaction emoji on the joke (skull, crying-laughing, clown, eyes), at the side under the setup bar.",
+          "size": 0.26,
+          "position": [
+            0.68,
+            0.47
+          ],
+          "in": "pop",
+          "out": "pop",
+          "hold_s": 0.9,
+          "wiggle": 6,
+          "shadow": true,
+          "sfx": "pop",
+          "rules": {
+            "triggers": [
+              "reaction",
+              "punchline"
+            ],
+            "density": {
+              "per_min": 5,
+              "min_gap_s": 4.0
+            },
+            "placement": {
+              "avoid": [
+                "captions",
+                "covered"
+              ]
+            },
+            "duration_s": [
+              0.6,
+              1.4
+            ],
+            "never": [
+              "over_captions"
+            ],
+            "when": "The audience's reaction, not the speaker's; one at a time; clear of the setup bar and the meme text."
+          }
+        },
+        "shake_hit": {
+          "kind": "shake",
+          "about": "A short hard shake with a bonk.",
+          "amount": 0.7,
+          "len": 0.3,
+          "sfx": "bonk",
+          "rules": {
+            "triggers": [
+              "punchline",
+              "reaction"
+            ],
+            "density": {
+              "per_min": 4,
+              "min_gap_s": 5.0
+            },
+            "when": "Something breaks, falls, or a line hits like a slap."
+          }
+        },
+        "scratch_stop": {
+          "kind": "sfx",
+          "about": "A record scratch where the music stops dead (the freeze-frame \"yep, that's me\" moment).",
+          "sfx": "scratch",
+          "sfx_offset_s": -0.1,
+          "rules": {
+            "triggers": [
+              "reveal",
+              "punchline",
+              "topic_change"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 12.0
+            },
+            "when": "On a freeze frame or the turn; the music is cut at the same frame."
+          }
+        },
+        "fail_sting": {
+          "kind": "sfx",
+          "about": "A sad trombone on a real fail.",
+          "sfx": "trombone",
+          "sfx_gain_db": -12,
+          "rules": {
+            "triggers": [
+              "reaction",
+              "reveal"
+            ],
+            "density": {
+              "per_min": 1
+            },
+            "when": "Something really went wrong on camera; never on a success."
+          }
+        },
+        "rimshot": {
+          "kind": "sfx",
+          "about": "A ba-dum-tss after a pun or a self-own.",
+          "sfx": "rimshot",
+          "rules": {
+            "triggers": [
+              "punchline"
+            ],
+            "density": {
+              "per_min": 1
+            },
+            "when": "After the line, never under it."
+          }
+        },
+        "crowd_laugh": {
+          "kind": "sfx",
+          "about": "A short audience laugh after a joke that lands.",
+          "sfx": "laugh",
+          "sfx_gain_db": -16,
+          "rules": {
+            "triggers": [
+              "punchline",
+              "reaction"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 15.0
+            },
+            "when": "After the last word, never over it; once or twice a video."
+          }
+        },
+        "time_card": {
+          "kind": "graphic",
+          "about": "A full-screen time card (\"9 DAYS LATER\") in a cartoon face on purple, 1.5 s, with a slide whistle.",
+          "template": "title_card",
+          "len": 1.6,
+          "sfx": "whistle",
+          "rules": {
+            "triggers": [
+              "topic_change"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 10.0
+            },
+            "duration_s": [
+              1.2,
+              2.2
+            ],
+            "when": "A jump in time that the joke needs (only true times, from the footage's dates or the person); params title."
+          }
+        },
+        "win_sting": {
+          "kind": "sfx",
+          "about": "A ta-da on the (ironic or real) win.",
+          "sfx": "tada",
+          "rules": {
+            "triggers": [
+              "reveal",
+              "ending"
+            ],
+            "density": {
+              "per_min": 1
+            },
+            "when": "The payoff; a fanfare on a small win is the joke."
+          }
+        }
+      },
+      "popups": {
+        "min_gap_s": 3.0,
+        "max_total": 5,
+        "entries": [
+          {
+            "id": "again",
+            "words": [
+              "again",
+              "another one"
+            ],
+            "asset": "emoji:weary face",
+            "position": [
+              0.68,
+              0.47
+            ],
+            "size": 0.24,
+            "in": "pop",
+            "out": "pop",
+            "hold_s": 0.9,
+            "sfx": "pop",
+            "max_per_video": 1,
+            "cooldown_s": 20,
+            "avoid": [
+              "captions",
+              "covered"
+            ]
+          },
+          {
+            "id": "broke",
+            "words": [
+              "broke",
+              "broken",
+              "failing",
+              "died"
+            ],
+            "asset": "emoji:skull",
+            "position": [
+              0.68,
+              0.47
+            ],
+            "size": 0.24,
+            "in": "spin",
+            "out": "pop",
+            "hold_s": 0.9,
+            "sfx": "boing",
+            "max_per_video": 1,
+            "cooldown_s": 20,
+            "avoid": [
+              "captions",
+              "covered"
+            ]
+          },
+          {
+            "id": "what",
+            "words": [
+              "what",
+              "wait",
+              "huh"
+            ],
+            "asset": "emoji:face with raised eyebrow",
+            "position": [
+              0.68,
+              0.47
+            ],
+            "size": 0.24,
+            "in": "pop",
+            "out": "pop",
+            "hold_s": 0.8,
+            "sfx": "pop",
+            "max_per_video": 1,
+            "cooldown_s": 20,
+            "avoid": [
+              "captions",
+              "covered"
+            ]
+          },
+          {
+            "id": "money",
+            "words": [
+              "bucks",
+              "dollars",
+              "expensive"
+            ],
+            "asset": "emoji:money with wings",
+            "position": [
+              0.68,
+              0.47
+            ],
+            "size": 0.22,
+            "in": "drop",
+            "out": "pop",
+            "hold_s": 0.9,
+            "sfx": "pop",
+            "max_per_video": 1,
+            "cooldown_s": 20,
+            "avoid": [
+              "captions",
+              "covered"
+            ]
+          },
+          {
+            "id": "illegal",
+            "words": [
+              "illegal",
+              "not allowed"
+            ],
+            "asset": "emoji:police car light",
+            "position": [
+              0.68,
+              0.47
+            ],
+            "size": 0.22,
+            "in": "pop",
+            "out": "pop",
+            "hold_s": 0.9,
+            "sfx": "error",
+            "max_per_video": 1,
+            "cooldown_s": 20,
+            "avoid": [
+              "captions",
+              "covered"
+            ]
+          }
+        ]
+      },
+      "hook": {
+        "max_s": 2.0,
+        "approaches": [
+          "quote",
+          "mid_action",
+          "result_first",
+          "stakes"
+        ],
+        "text": {
+          "max_words": 12,
+          "case": "as_said",
+          "position": "top",
+          "size": 0.5,
+          "fill": "dark",
+          "stroke": null,
+          "stroke_width": 0,
+          "font": "body",
+          "item": {
+            "graphic": {
+              "template": "caption_bar",
+              "params": {
+                "text": "{text}"
+              }
+            }
+          }
+        },
+        "rules": "The setup bar is on screen from frame 0 with the clip already moving; the first laugh within about 5 s; the ending is the punchline, cut within half a second of it [JH].",
+        "avoid": [
+          "greetings",
+          "explaining the joke",
+          "a slow build with nothing on screen"
+        ]
+      },
+      "credits": [
+        {
+          "file": "preview.jpg",
+          "source": "Original preview imagery; hands, objects, places and titles only",
+          "licence": "Original letitedit footage: hands, objects, places and titles only; no faces"
+        }
+      ],
+      "measured": {},
+      "provenance": {
+        "made_by": "letitedit style library, wave 2",
+        "date": "2026-10-30",
+        "measured": "none yet (no reference videos in style-references)",
+        "sources": [
+          {
+            "url": "https://umbrellacreators.com/blog/how-to-edit-pop-culture-commentary-videos",
+            "title": "Umbrella Creators commentary editing",
+            "used_for": "restraint with meme inserts (forty in ten minutes buries the point)",
+            "licence": "none found (observations only)"
+          }
+        ],
+        "notes": "No checked source gives meme-comedy timing, captions or sound rules (the research found none complete); the numbers here are general practice [GEN] built on the letitedit-shorts rules (open moving, cut on the payoff) and should be tuned on the person's references. Tags in ..\\SOURCES.md."
+      }
+    }
+  }
+}

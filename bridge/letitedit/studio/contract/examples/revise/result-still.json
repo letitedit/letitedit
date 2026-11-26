@@ -1,0 +1,243 @@
+{
+  "contract_version": "1.1",
+  "job_id": "ch-demo-2026-11-20-0012-rev1",
+  "kind": "revise",
+  "state": "done",
+  "started": "2026-11-20T01:10:00-08:00",
+  "finished": "2026-11-20T01:40:00-08:00",
+  "attempts": 1,
+  "versions": {
+    "contract": "1.1",
+    "letitedit": "20261118.3",
+    "tools": "7b0da5c5",
+    "look": "7ca87163b73d"
+  },
+  "cost": {
+    "wall_s": 210,
+    "waited_s": 0,
+    "measured": true,
+    "ai": {
+      "engine": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "medium"
+    },
+    "tokens": {
+      "input": 3600,
+      "cache_write": 72000,
+      "cache_read": 1710000,
+      "output": 14400,
+      "total": 1800000
+    },
+    "usd_api_equivalent": 0.68,
+    "steps": 7
+  },
+  "outputs": [
+    {
+      "role": "image",
+      "path": "files/story_9x16.png",
+      "bytes": 1900000,
+      "sha256": "7a2b5237e5ae9b725da8e2e3129acc7d6d053b14ca5195705c6da69cf9199726",
+      "size": "story_9x16",
+      "width": 1080,
+      "height": 1920,
+      "location_metadata": "none"
+    },
+    {
+      "role": "poster",
+      "path": "proxy/poster.jpg",
+      "bytes": 50000,
+      "sha256": "a1072a2b6bfa8ea721922abaaaf9a4775cd4e763890acafb03886a397c96c6f5",
+      "width": 720,
+      "height": 1280,
+      "location_metadata": "none"
+    },
+    {
+      "role": "evidence",
+      "path": "evidence/blur-plates-1.jpg",
+      "bytes": 30000,
+      "sha256": "bc6eecfe0d4d85c5b3cfa1a21a3581809e32569161b3b6a41df380958ba70dd7",
+      "width": 360,
+      "height": 640,
+      "location_metadata": "none"
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "path": "D:\\Footage\\Café days\\IMG_1234.MOV",
+        "file_id": "f_66ea81670fa7f7885988",
+        "moment_ids": [
+          "m_dd7148ba3befeaaeccfc"
+        ],
+        "in": 20.0,
+        "out": 20.0,
+        "role": "still_frame"
+      },
+      {
+        "path": "D:\\Photos\\Café days\\IMG_2001.HEIC",
+        "file_id": "f_353d5bfa24cdd7791e96",
+        "in": 0,
+        "out": 0,
+        "role": "photo"
+      }
+    ],
+    "assets": []
+  },
+  "ai_labels": {
+    "generated_picture": false,
+    "generated_voice": false,
+    "generated_music": false,
+    "altered_real_footage": false,
+    "items": [],
+    "platforms": {
+      "instagram_story": {
+        "label": "not_required",
+        "why": "No generated or altered pictures."
+      }
+    }
+  },
+  "music": {
+    "tracks": [],
+    "policy_met": "no_policy"
+  },
+  "rules": [
+    {
+      "id": "blur-plates",
+      "status": "applied",
+      "how": "ai_review",
+      "ranges": [],
+      "frames": [
+        {
+          "path": "evidence/blur-plates-1.jpg",
+          "at": 0
+        }
+      ]
+    }
+  ],
+  "text_items": [
+    {
+      "id": "txt-q",
+      "kind": "on_screen",
+      "start": 0,
+      "end": 0,
+      "text": "Engine or roof?",
+      "editable": "remake",
+      "max_chars": 40,
+      "box": {
+        "x": 0.08,
+        "y": 0.16,
+        "w": 0.84,
+        "h": 0.1
+      }
+    },
+    {
+      "id": "txt-l",
+      "kind": "on_screen",
+      "start": 0,
+      "end": 0,
+      "text": "The roof",
+      "editable": "remake"
+    },
+    {
+      "id": "txt-r",
+      "kind": "on_screen",
+      "start": 0,
+      "end": 0,
+      "text": "The engine",
+      "editable": "remake"
+    },
+    {
+      "id": "ovl-001",
+      "kind": "on_screen",
+      "start": 0,
+      "end": 0,
+      "text": "@yourchannel",
+      "editable": "remake",
+      "overlay": {
+        "from": "inputs.overlay_text.0",
+        "placement": "top",
+        "files": [
+          {
+            "platform": "instagram_story",
+            "applied": true,
+            "why": "every file"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ovl-002",
+      "kind": "on_screen",
+      "start": 0,
+      "end": 0,
+      "text": "Made with AI images",
+      "editable": "remake",
+      "overlay": {
+        "from": "inputs.overlay_text.1",
+        "placement": "bottom",
+        "platforms": [
+          "facebook_reels",
+          "facebook_story"
+        ],
+        "if": [
+          "ai_generated_media"
+        ],
+        "files": [
+          {
+            "platform": "instagram_story",
+            "applied": false,
+            "why": "not one of this item's platforms"
+          }
+        ]
+      },
+      "platforms": []
+    }
+  ],
+  "proxy": {
+    "poster": "proxy/poster.jpg",
+    "width": 720,
+    "height": 1280
+  },
+  "output": {
+    "sets": [
+      {
+        "size": "story_9x16",
+        "files": [
+          "files/story_9x16.png"
+        ],
+        "alt_text": "Two photos side by side: the bus roof on the left, the bus engine on the right, with the question \"Engine or roof?\" above them.",
+        "sticker_box": {
+          "x": 240,
+          "y": 1180,
+          "w": 600,
+          "h": 260
+        }
+      }
+    ],
+    "checks": {
+      "legible_at_phone_size": "yes",
+      "covered_areas_clear": "yes",
+      "faces_clear": "yes",
+      "notes": []
+    },
+    "post_text": {
+      "instagram_story": "Engine or roof? Vote 👇"
+    },
+    "what_changed": "The photos swapped sides and the question is shorter.",
+    "changes": [
+      {
+        "note": 0,
+        "done": "yes",
+        "said": "The roof is on the left now."
+      },
+      {
+        "note": 1,
+        "done": "yes",
+        "said": "The question reads \"Engine or roof?\"."
+      }
+    ],
+    "revision_of": "ch-demo-still-0031"
+  },
+  "warnings": [],
+  "from_job": "ch-demo-still-0031"
+}

@@ -1,0 +1,13 @@
+Noto Emoji Animation (the animated emoji in app\share\shotcut\elements\emojis, bundled by Shotcut)
+Copyright Google LLC.
+
+Licence: Creative Commons Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+Google's Noto Emoji Animation site (https://googlefonts.github.io/noto-emoji-animation/), FAQ "Can I use these animated assets commercially: for a video, for broadcast, apps, etc.?": "Animated Noto Emoji is licensed under CC BY 4.0." (read 2026-10-29 from the site's own page script).
+
+Shotcut ships these files with an "SIL Open Font License.txt" (Copyright 2021 Google Inc.). The OFL covers the Noto Emoji font; Google's site gives CC BY 4.0 for the animations, so letitedit treats them as CC BY 4.0: free to use, share and adapt, including commercially, with credit.
+
+Credit line for a video that shows one (description or end credits):
+  Animated emoji: Noto Emoji Animation by Google, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+If an animation is changed (recoloured, cut), CC BY asks that the credit says so.

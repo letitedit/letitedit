@@ -1,0 +1,129 @@
+diff --git a/src/modules/qt/common.cpp b/src/modules/qt/common.cpp
+index 148c3dbb..18192024 100644
+--- a/src/modules/qt/common.cpp
++++ b/src/modules/qt/common.cpp
+@@ -18,14 +18,67 @@
+ 
+ #include "common.h"
+ #include <QApplication>
++#include <QDirIterator>
++#include <QFontDatabase>
+ #include <QImageReader>
+ #include <QLocale>
++#include <QSet>
+ 
+ #if defined(Q_OS_UNIX) && !defined(Q_OS_MAC) && !defined(Q_OS_ANDROID)
+ #include <X11/Xlib.h>
+ #include <cstdlib>
+ #endif
+ 
++// letitedit: load font files from folders into this process (QFontDatabase::addApplicationFont), so text renders
++// in fonts that Windows did not load at sign-in (per-user installs are sometimes not exposed to processes).
++// LETITEDIT_FONT_DIRS lists folders separated by ';' (searched recursively for .ttf/.otf/.ttc/.otc). When it is
++// not set, the per-user font folder (%LOCALAPPDATA%\Microsoft\Windows\Fonts) is used; an empty value loads nothing.
++// A file name already loaded from an earlier folder is skipped. Runs once per process, the first time a text service
++// (qtext producer/filter, kdenlivetitle) starts, and only when this module created the application: a host
++// application such as Shotcut loads its own fonts.
++static bool s_mltCreatedApp = false;
++
++void loadShotcutAiFontsIfNeeded(mlt_service service)
++{
++    static bool done = false;
++    if (done || !s_mltCreatedApp)
++        return;
++    done = true;
++    QStringList dirs;
++    if (qEnvironmentVariableIsSet("LETITEDIT_FONT_DIRS")) {
++        dirs = qEnvironmentVariable("LETITEDIT_FONT_DIRS").split(QLatin1Char(';'), Qt::SkipEmptyParts);
++    } else {
++#if defined(Q_OS_WIN)
++        const QString local = qEnvironmentVariable("LOCALAPPDATA");
++        if (!local.isEmpty())
++            dirs << local + QStringLiteral("/Microsoft/Windows/Fonts");
++#endif
++    }
++    QSet<QString> seen;
++    int loaded = 0, failed = 0;
++    for (const QString &dir : std::as_const(dirs)) {
++        QDirIterator it(dir.trimmed(),
++                        {QStringLiteral("*.ttf"), QStringLiteral("*.otf"), QStringLiteral("*.ttc"),
++                         QStringLiteral("*.otc")},
++                        QDir::Files,
++                        QDirIterator::Subdirectories);
++        while (it.hasNext()) {
++            const QString path = it.next();
++            const QString key = it.fileName().toLower();
++            if (seen.contains(key))
++                continue;
++            seen.insert(key);
++            if (QFontDatabase::addApplicationFont(path) >= 0)
++                ++loaded;
++            else
++                ++failed;
++        }
++    }
++    if (!dirs.isEmpty())
++        mlt_log_verbose(service, "letitedit fonts: loaded %d files (%d failed) from %s%c", loaded, failed,
++                        dirs.join(QLatin1Char(';')).toUtf8().constData(), 10);
++}
++
+ bool createQApplicationIfNeeded(mlt_service service)
+ {
+     if (!qApp) {
+@@ -59,6 +112,7 @@ bool createQApplicationIfNeeded(mlt_service service)
+ #if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+         QImageReader::setAllocationLimit(1024);
+ #endif
++        s_mltCreatedApp = true;
+     }
+     return true;
+ }
+diff --git a/src/modules/qt/common.h b/src/modules/qt/common.h
+index dc4a0c27..6095016a 100644
+--- a/src/modules/qt/common.h
++++ b/src/modules/qt/common.h
+@@ -27,6 +27,8 @@ static constexpr double MLT_QT_MIPMAP_STEP = 0.85;
+ class QImage;
+ 
+ bool createQApplicationIfNeeded(mlt_service service);
++// letitedit: load fonts from LETITEDIT_FONT_DIRS (see common.cpp); call after createQApplicationIfNeeded.
++void loadShotcutAiFontsIfNeeded(mlt_service service);
+ mlt_image_format choose_image_format(mlt_image_format format);
+ void convert_qimage_to_mlt(QImage *qImg, uint8_t *mImg, int width, int height);
+ void convert_mlt_to_qimage(
+diff --git a/src/modules/qt/filter_qtext.cpp b/src/modules/qt/filter_qtext.cpp
+index 7cb6b97d..67f0fc28 100644
+--- a/src/modules/qt/filter_qtext.cpp
++++ b/src/modules/qt/filter_qtext.cpp
+@@ -628,6 +628,7 @@ mlt_filter filter_qtext_init(mlt_profile profile, mlt_service_type type, const c
+         mlt_filter_close(filter);
+         return NULL;
+     }
++    loadShotcutAiFontsIfNeeded(MLT_FILTER_SERVICE(filter));
+ 
+     filter->process = filter_process;
+ 
+diff --git a/src/modules/qt/kdenlivetitle_wrapper.cpp b/src/modules/qt/kdenlivetitle_wrapper.cpp
+index 84191f84..5bf5bfcc 100644
+--- a/src/modules/qt/kdenlivetitle_wrapper.cpp
++++ b/src/modules/qt/kdenlivetitle_wrapper.cpp
+@@ -773,6 +773,7 @@ int initTitleProducer(mlt_producer producer)
+     if (!createQApplicationIfNeeded(MLT_PRODUCER_SERVICE(producer))) {
+         return false;
+     }
++    loadShotcutAiFontsIfNeeded(MLT_PRODUCER_SERVICE(producer));
+ #if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
+     if (!QMetaType::type("QTextCursor")) {
+         qRegisterMetaType<QTextCursor>("QTextCursor");
+diff --git a/src/modules/qt/producer_qtext.cpp b/src/modules/qt/producer_qtext.cpp
+index a6649e23..9954e8e7 100644
+--- a/src/modules/qt/producer_qtext.cpp
++++ b/src/modules/qt/producer_qtext.cpp
+@@ -498,6 +498,7 @@ mlt_producer producer_qtext_init(mlt_profile profile,
+             mlt_producer_close(producer);
+             return NULL;
+         }
++        loadShotcutAiFontsIfNeeded(MLT_PRODUCER_SERVICE(producer));
+ 
+         mlt_properties_set(producer_properties, "text", "");
+         mlt_properties_set(producer_properties, "fgcolour", "0xffffffff");

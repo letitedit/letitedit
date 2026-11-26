@@ -1,0 +1,32 @@
+{
+  "emoji": [
+    "fluent/fire", "fluent/red-heart", "fluent/face-with-tears-of-joy",
+    "fluent/right-arrow", "fluent/star", "fluent/sparkles",
+    "fluent/check-mark", "fluent/money-bag", "fluent/party-popper",
+    "fluent/rocket", "fluent/thumbs-up"
+  ],
+  "animated_emoji": [
+    "noto/travel-fire", "noto/person-heart", "noto/standard-crylaugh",
+    "noto/activity-sparkles", "noto/travel-star", "noto/symbol-green-check",
+    "noto/object-money-bag"
+  ],
+  "icon": [
+    "tabler/arrow-right", "tabler/check", "tabler/star", "tabler/heart",
+    "tabler/currency-dollar", "tabler/sparkles", "tabler/tool"
+  ],
+  "graphic": [
+    "letitedit/3d-title", "letitedit/3d-logo", "letitedit/3d-flip-card", "letitedit/depth-parallax",
+    "letitedit/clean-title-card", "letitedit/modern-lower-third",
+    "letitedit/section-opener", "letitedit/focus-ring",
+    "letitedit/corner-frame", "letitedit/step-progress"
+  ],
+  "transition": [
+    "letitedit/clean-whip-left", "letitedit/light-flash",
+    "letitedit/zoom-cover", "letitedit/clean-whip-right"
+  ],
+  "sfx": [
+    "synth/whoosh-soft", "library/pop_bloop_02", "library/ding_confirm_01",
+    "library/swoosh_transition_03", "library/click_ui_02",
+    "synth/boom-deep", "library/cash_register_01"
+  ]
+}

@@ -1,0 +1,891 @@
+{
+  "format": "letitedit-look-settings/1",
+  "id": "pack-podcast-episode",
+  "defaults_are": "taste",
+  "share": false,
+  "values": {
+    "format": "letitedit-style/3",
+    "name": "Podcast Episode",
+    "description": "A 16:9 YouTube episode of a conversation (10-90 min) - cut like a multi-camera show even from one wide camera, the talk left to breathe.",
+    "colors": {
+      "primary": "#F4EFE6",
+      "secondary": "#E9B44C",
+      "accent": "#C8653B",
+      "dark": "#121417",
+      "light": "#F4EFE6",
+      "teal": "#2A8597",
+      "ink": "#121417"
+    },
+    "fonts": {
+      "heading": {
+        "family": "Manrope",
+        "weight": 800
+      },
+      "body": {
+        "family": "Manrope",
+        "weight": 500
+      },
+      "captions": {
+        "family": "Inter",
+        "weight": 600
+      },
+      "quote": {
+        "family": "Fraunces",
+        "weight": 600,
+        "italic": true
+      }
+    },
+    "captions": {
+      "font": "captions",
+      "size": 40,
+      "fill": "light",
+      "outline": null,
+      "shadow": null,
+      "background": "#000000A6",
+      "position": "bottom",
+      "margin": 0.05,
+      "max_chars": 42,
+      "max_lines": 2,
+      "case": "as_spoken"
+    },
+    "text": {
+      "font": "quote",
+      "size": 64,
+      "fill": "light",
+      "outline": null
+    },
+    "graphics": {
+      "lower_third": {
+        "font": "heading",
+        "subtitle_font": "body",
+        "size": 50,
+        "subtitle_size": 30,
+        "fill": "light",
+        "subtitle_fill": "secondary",
+        "panel": "ink",
+        "panel_opacity": 0.78,
+        "accent": "accent",
+        "margin_y": 0.11
+      },
+      "chapter_card": {
+        "font": "heading",
+        "number_size": 96,
+        "size": 60,
+        "kicker_size": 26,
+        "fill": "light",
+        "accent": "secondary",
+        "band": true,
+        "band_color": "ink",
+        "band_opacity": 0.66,
+        "outline": null,
+        "outline_width": 0
+      },
+      "title_card": {
+        "background": "none",
+        "font": "heading",
+        "subtitle_font": "body",
+        "size": 110,
+        "subtitle_size": 40,
+        "fill": "light",
+        "subtitle_fill": "secondary",
+        "accent": "accent",
+        "shadow": "#000000AA"
+      },
+      "badge": {
+        "font": "heading",
+        "size": 30,
+        "fill": "ink",
+        "background": "secondary"
+      }
+    },
+    "music": {
+      "zones": {
+        "talk": -40.0,
+        "montage": -6.0,
+        "quiet": -40.0,
+        "swell": -3.0,
+        "end": -6.0
+      },
+      "duck_under_speech": true,
+      "merge_gap": 4.0,
+      "attack": 0.3,
+      "release": 0.9,
+      "crossfade": 3.0,
+      "fade_in": 1.5,
+      "fade_out": 3.0,
+      "dialogue_lufs": null,
+      "sources": [],
+      "notes": "A short theme (music-library: Hip Hop & R&B / Chill Groovy, Indie / Warm, Electronic / Calm) under the intro title and the outro, a few seconds of it between chapters; out under talk [SLC].",
+      "likes": [],
+      "avoid": [],
+      "theme": null
+    },
+    "sfx": {
+      "gain_db": -20.0,
+      "map": {
+        "whoosh": "synth/whoosh-soft",
+        "swipe": "library/whoosh_fast_02",
+        "ding": "library/ding_confirm_01"
+      },
+      "events": {
+        "transition": "whoosh",
+        "text": "swipe"
+      }
+    },
+    "editing": {
+      "max_pause": 0.8,
+      "pad_in": 0.12,
+      "pad_out": 0.35,
+      "blur_pad": true,
+      "transitions": "cut",
+      "pace": "medium",
+      "intro": null,
+      "outro": null
+    },
+    "export": {
+      "preset": "high_quality_h264",
+      "loudness": -14.0
+    },
+    "look": {
+      "about": "Clean and warm, skin tones natural, the angles matched to each other (one grade for every camera) [BBX colour pass so the cameras match].",
+      "effects": [
+        {
+          "filter": "hue_lightness_saturation",
+          "params": {
+            "av.s": 1.03
+          }
+        },
+        {
+          "filter": "color",
+          "params": {
+            "lift_r": 0.006,
+            "lift_g": 0.004,
+            "lift_b": 0.0,
+            "gamma_r": 1.01,
+            "gamma_g": 1.0,
+            "gamma_b": 0.99,
+            "gain_r": 1.02,
+            "gain_g": 1.0,
+            "gain_b": 0.98
+          }
+        }
+      ]
+    },
+    "taste": "",
+    "label": "Podcast episode",
+    "summary": "A full video podcast or interview - the best moment as a cold open, the picture on whoever is talking, the wide shot to reset, names and chapters.",
+    "kind": "long",
+    "tags": [
+      "podcast",
+      "interview",
+      "conversation",
+      "multicam",
+      "talk show",
+      "long form",
+      "chapters",
+      "lower thirds",
+      "youtube"
+    ],
+    "preview": "preview.jpg",
+    "recipe": "recipe.md",
+    "credits": [
+      {
+        "file": "preview.jpg",
+        "source": "drawn by tools\\styles\\preview.py --drawn episode: the style's layout with plain silhouettes (no people), in its own type and colours",
+        "licence": "letitedit's own (drawn)"
+      }
+    ],
+    "effects": {
+      "show_title": {
+        "kind": "graphic",
+        "about": "The show's name and the episode on the wide shot, after the cold open (an intro under 20 s) [BBX].",
+        "template": "title_card",
+        "len": 4.0,
+        "sfx": "whoosh",
+        "sfx_offset_s": -0.51,
+        "rules": {
+          "triggers": [
+            "hook",
+            "topic_change"
+          ],
+          "density": {
+            "per_min": 1
+          },
+          "duration_s": [
+            3.0,
+            6.0
+          ],
+          "when": "Once, right after the cold open (params title = the show, subtitle = the episode)."
+        }
+      },
+      "name_tag": {
+        "kind": "graphic",
+        "about": "A person's name and why they're here, at their first appearance and again after a long break [AVE].",
+        "template": "lower_third",
+        "len": 5.0,
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "mention"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 8.0
+          },
+          "duration_s": [
+            3.5,
+            6.0
+          ],
+          "never": [
+            "overlapping"
+          ],
+          "when": "The first time each person talks on their own shot (params title = name, subtitle = role); again after about 15 minutes."
+        }
+      },
+      "chapter": {
+        "kind": "graphic",
+        "about": "The chapter's number and name on a band over the wide shot as a new topic starts.",
+        "template": "chapter_card",
+        "len": 3.5,
+        "sfx": "swipe",
+        "rules": {
+          "triggers": [
+            "topic_change"
+          ],
+          "density": {
+            "per_min": 1,
+            "min_gap_s": 30.0
+          },
+          "duration_s": [
+            2.5,
+            4.5
+          ],
+          "when": "One per topic, matching the chapter markers (the first at 0:00, at least three, each at least 10 s) [AVE]; params number, title."
+        }
+      },
+      "pull_quote": {
+        "kind": "text_pop",
+        "about": "The line that sums up a chapter, in a serif italic beside the speaker, fading in and out.",
+        "size": 0.48,
+        "zone": "opposite_face",
+        "font": "quote",
+        "fill": "light",
+        "stroke": null,
+        "stroke_width": 0,
+        "tilt": 0,
+        "shadow": true,
+        "in": "fade",
+        "out": "fade",
+        "in_s": 0.5,
+        "out_s": 0.5,
+        "hold_s": 3.0,
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "emphasis",
+            "reveal",
+            "punchline"
+          ],
+          "density": {
+            "per_min": 1,
+            "min_gap_s": 120.0
+          },
+          "placement": {
+            "zone": "opposite_face",
+            "avoid": [
+              "face",
+              "captions"
+            ]
+          },
+          "duration_s": [
+            2.5,
+            5.0
+          ],
+          "never": [
+            "over_face",
+            "overlapping"
+          ],
+          "when": "At most one per chapter - the speaker's exact words, shortened, never a new claim."
+        }
+      },
+      "coming_up": {
+        "kind": "graphic",
+        "about": "A small \"Coming up\" label on the cold open, so the viewer knows it's from later.",
+        "template": "badge",
+        "params": {
+          "position": "top-left"
+        },
+        "len": 3.0,
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "hook"
+          ],
+          "density": {
+            "per_min": 1
+          },
+          "when": "Only over a cold open taken from later in the episode."
+        }
+      },
+      "reset_push": {
+        "kind": "zoom_punch",
+        "about": "A slow push on the wide shot (104% over 4 s) after a long single, so the reset still moves.",
+        "scale": 1.04,
+        "ramp_s": 4.0,
+        "rules": {
+          "triggers": [
+            "topic_change",
+            "pause"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 30.0
+          },
+          "when": "On the wide that re-establishes the room after a topic change [AVE]."
+        }
+      },
+      "cutaway": {
+        "kind": "broll",
+        "about": "A shot of what they're talking about (a place, an object, a photo) over the voice.",
+        "fit": "blur_pad",
+        "len": 3.5,
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "mention",
+            "place"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 20.0
+          },
+          "duration_s": [
+            2.0,
+            6.0
+          ],
+          "when": "Only when there's a shot of the exact thing; never over a laugh, an emotional answer or a reaction."
+        }
+      }
+    },
+    "fx": {
+      "track": "Effects",
+      "sfx_track": "Effect sounds",
+      "broll_track": "B-roll",
+      "density": {
+        "per_10s": 2,
+        "per_min": 4,
+        "min_gap_s": 3.0
+      },
+      "safe_zone": null,
+      "never": [
+        "overlapping"
+      ],
+      "rhythm": "The picture follows the talk - the speaker for most of a turn, a reaction when it says something, the wide to reset; graphics only for names, chapters and one quote a chapter at most."
+    },
+    "popups": {
+      "track": null,
+      "sfx_track": null,
+      "min_gap_s": 10.0,
+      "max_total": null,
+      "entries": []
+    },
+    "hook": {
+      "max_s": 60.0,
+      "approaches": [
+        "quote",
+        "stakes",
+        "question"
+      ],
+      "text": {
+        "max_words": 6,
+        "case": "as_said",
+        "position": "bottom",
+        "size": 0.4,
+        "fill": "light",
+        "stroke": null,
+        "stroke_width": 0,
+        "font": "heading"
+      },
+      "rules": "A cold open of 15-60 s - the best exchange from later in the talk, with its own setup and payoff [AVE] - then the intro and show title in under 20 s [BBX]. No \"welcome back to the show\" before the cold open.",
+      "avoid": [
+        "a long intro",
+        "greetings first",
+        "a montage of every clip"
+      ]
+    },
+    "broll": {
+      "amount": "some",
+      "kinds": [],
+      "favorites": "",
+      "notes": ""
+    },
+    "shots": {
+      "framing": "medium",
+      "camera": "handheld",
+      "punch_ins": "some",
+      "notes": ""
+    },
+    "signature": {
+      "touches": []
+    },
+    "measured": {},
+    "provenance": {
+      "made_by": "letitedit style library, wave 2",
+      "date": "2026-10-30",
+      "measured": "none yet (no reference videos in style-references)",
+      "sources": [
+        {
+          "url": "https://github.com/kmilo93sd/agent-video-editor/blob/main/skills/editing-videos/recipes/podcast-to-youtube.md",
+          "title": "agent-video-editor podcast-to-YouTube recipe",
+          "used_for": "speaker, reaction and wide shots and when to use each, monologues, cold open 15-60 s, chapters, lower thirds, caption speaker marks, loudness",
+          "licence": "MIT, Copyright (c) 2026 kmilo93sd (consulted only; no text adapted)"
+        },
+        {
+          "url": "https://blueboxdigital.com/podcast-video-production/",
+          "title": "BlueBox video podcast production",
+          "used_for": "a cut on nearly every speaker change, wide for interplay and singles for stories, punch-in angles, intro under 20 s, -16 / -14 LUFS, 60 min to 45-50 min",
+          "licence": "none found (numbers only)"
+        },
+        {
+          "url": "https://slicecut.io/guides/how-to-edit-a-video-podcast/",
+          "title": "slicecut video podcast editing",
+          "used_for": "speaker, listener, wide; music on intro, outro and transitions only",
+          "licence": "none found (numbers only)"
+        }
+      ],
+      "notes": "One wide camera becomes several angles by punching in on each person (the recipe says how); no source gives how often to switch angles (the MIT recipe says so), so the picture follows the talk. Tags in ..\\SOURCES.md."
+    }
+  },
+  "asset_root": "resources",
+  "files": {
+    "preview.jpg": "resources/83211cdecedca12a6e1a7144.jpg",
+    "recipe.md": "recipe.md"
+  },
+  "links": {
+    "recipe": "recipe.md",
+    "preview": "preview.jpg"
+  },
+  "legacy": {
+    "format": "letitedit-style/3",
+    "source": "style.yaml",
+    "pack": "podcast-episode",
+    "data": {
+      "format": "letitedit-style/3",
+      "name": "Podcast Episode",
+      "label": "Podcast episode",
+      "summary": "A full video podcast or interview - the best moment as a cold open, the picture on whoever is talking, the wide shot to reset, names and chapters.",
+      "kind": "long",
+      "tags": [
+        "podcast",
+        "interview",
+        "conversation",
+        "multicam",
+        "talk show",
+        "long form",
+        "chapters",
+        "lower thirds",
+        "youtube"
+      ],
+      "recipe": "recipe.md",
+      "preview": "preview.jpg",
+      "description": "A 16:9 YouTube episode of a conversation (10-90 min) - cut like a multi-camera show even from one wide camera, the talk left to breathe.",
+      "colors": {
+        "primary": "#F4EFE6",
+        "secondary": "#E9B44C",
+        "accent": "#C8653B",
+        "teal": "#2A8597",
+        "ink": "#121417",
+        "dark": "#121417",
+        "light": "#F4EFE6"
+      },
+      "fonts": {
+        "heading": {
+          "family": "Manrope",
+          "weight": 800
+        },
+        "body": {
+          "family": "Manrope",
+          "weight": 500
+        },
+        "captions": {
+          "family": "Inter",
+          "weight": 600
+        },
+        "quote": {
+          "family": "Fraunces",
+          "weight": 600,
+          "italic": true
+        }
+      },
+      "graphics": {
+        "lower_third": {
+          "font": "heading",
+          "subtitle_font": "body",
+          "size": 50,
+          "subtitle_size": 30,
+          "fill": "light",
+          "subtitle_fill": "secondary",
+          "panel": "ink",
+          "panel_opacity": 0.78,
+          "accent": "accent",
+          "margin_y": 0.11
+        },
+        "chapter_card": {
+          "font": "heading",
+          "number_size": 96,
+          "size": 60,
+          "kicker_size": 26,
+          "fill": "light",
+          "accent": "secondary",
+          "band": true,
+          "band_color": "ink",
+          "band_opacity": 0.66,
+          "outline": null,
+          "outline_width": 0
+        },
+        "title_card": {
+          "background": "none",
+          "font": "heading",
+          "subtitle_font": "body",
+          "size": 110,
+          "subtitle_size": 40,
+          "fill": "light",
+          "subtitle_fill": "secondary",
+          "accent": "accent",
+          "shadow": "#000000AA"
+        },
+        "badge": {
+          "font": "heading",
+          "size": 30,
+          "fill": "ink",
+          "background": "secondary"
+        }
+      },
+      "captions": {
+        "font": "captions",
+        "size": 40,
+        "fill": "light",
+        "outline": null,
+        "background": "#000000A6",
+        "position": "bottom",
+        "margin": 0.05,
+        "max_chars": 42,
+        "max_lines": 2,
+        "case": "as_spoken"
+      },
+      "text": {
+        "font": "quote",
+        "size": 64,
+        "fill": "light",
+        "outline": null
+      },
+      "editing": {
+        "max_pause": 0.8,
+        "pad_in": 0.12,
+        "pad_out": 0.35,
+        "blur_pad": true,
+        "transitions": "cut",
+        "pace": "medium"
+      },
+      "music": {
+        "zones": {
+          "talk": -40.0,
+          "montage": -6.0,
+          "quiet": -40.0,
+          "end": -6.0
+        },
+        "notes": "A short theme (music-library: Hip Hop & R&B / Chill Groovy, Indie / Warm, Electronic / Calm) under the intro title and the outro, a few seconds of it between chapters; out under talk [SLC]."
+      },
+      "export": {
+        "preset": "high_quality_h264",
+        "loudness": -14.0
+      },
+      "look": {
+        "about": "Clean and warm, skin tones natural, the angles matched to each other (one grade for every camera) [BBX colour pass so the cameras match].",
+        "effects": [
+          {
+            "filter": "hue_lightness_saturation",
+            "params": {
+              "av.s": 1.03
+            }
+          },
+          {
+            "filter": "color",
+            "params": {
+              "lift_r": 0.006,
+              "lift_g": 0.004,
+              "lift_b": 0.0,
+              "gamma_r": 1.01,
+              "gamma_g": 1.0,
+              "gamma_b": 0.99,
+              "gain_r": 1.02,
+              "gain_g": 1.0,
+              "gain_b": 0.98
+            }
+          }
+        ]
+      },
+      "sfx": {
+        "gain_db": -20.0,
+        "map": {
+          "whoosh": "synth/whoosh-soft",
+          "swipe": "library/whoosh_fast_02",
+          "ding": "library/ding_confirm_01"
+        },
+        "events": {
+          "transition": "whoosh",
+          "text": "swipe"
+        }
+      },
+      "fx": {
+        "track": "Effects",
+        "sfx_track": "Effect sounds",
+        "broll_track": "B-roll",
+        "density": {
+          "per_10s": 2,
+          "per_min": 4,
+          "min_gap_s": 3.0
+        },
+        "safe_zone": null,
+        "never": [
+          "overlapping"
+        ],
+        "rhythm": "The picture follows the talk - the speaker for most of a turn, a reaction when it says something, the wide to reset; graphics only for names, chapters and one quote a chapter at most."
+      },
+      "effects": {
+        "show_title": {
+          "kind": "graphic",
+          "about": "The show's name and the episode on the wide shot, after the cold open (an intro under 20 s) [BBX].",
+          "template": "title_card",
+          "len": 4.0,
+          "sfx": "whoosh",
+          "sfx_offset_s": -0.51,
+          "rules": {
+            "triggers": [
+              "hook",
+              "topic_change"
+            ],
+            "density": {
+              "per_min": 1
+            },
+            "duration_s": [
+              3.0,
+              6.0
+            ],
+            "when": "Once, right after the cold open (params title = the show, subtitle = the episode)."
+          }
+        },
+        "name_tag": {
+          "kind": "graphic",
+          "about": "A person's name and why they're here, at their first appearance and again after a long break [AVE].",
+          "template": "lower_third",
+          "len": 5.0,
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "mention"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 8.0
+            },
+            "duration_s": [
+              3.5,
+              6.0
+            ],
+            "never": [
+              "overlapping"
+            ],
+            "when": "The first time each person talks on their own shot (params title = name, subtitle = role); again after about 15 minutes."
+          }
+        },
+        "chapter": {
+          "kind": "graphic",
+          "about": "The chapter's number and name on a band over the wide shot as a new topic starts.",
+          "template": "chapter_card",
+          "len": 3.5,
+          "sfx": "swipe",
+          "rules": {
+            "triggers": [
+              "topic_change"
+            ],
+            "density": {
+              "per_min": 1,
+              "min_gap_s": 30.0
+            },
+            "duration_s": [
+              2.5,
+              4.5
+            ],
+            "when": "One per topic, matching the chapter markers (the first at 0:00, at least three, each at least 10 s) [AVE]; params number, title."
+          }
+        },
+        "pull_quote": {
+          "kind": "text_pop",
+          "about": "The line that sums up a chapter, in a serif italic beside the speaker, fading in and out.",
+          "size": 0.48,
+          "zone": "opposite_face",
+          "font": "quote",
+          "fill": "light",
+          "stroke": null,
+          "stroke_width": 0,
+          "tilt": 0,
+          "shadow": true,
+          "in": "fade",
+          "out": "fade",
+          "in_s": 0.5,
+          "out_s": 0.5,
+          "hold_s": 3.0,
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "emphasis",
+              "reveal",
+              "punchline"
+            ],
+            "density": {
+              "per_min": 1,
+              "min_gap_s": 120.0
+            },
+            "placement": {
+              "zone": "opposite_face",
+              "avoid": [
+                "face",
+                "captions"
+              ]
+            },
+            "duration_s": [
+              2.5,
+              5.0
+            ],
+            "never": [
+              "over_face",
+              "overlapping"
+            ],
+            "when": "At most one per chapter - the speaker's exact words, shortened, never a new claim."
+          }
+        },
+        "coming_up": {
+          "kind": "graphic",
+          "about": "A small \"Coming up\" label on the cold open, so the viewer knows it's from later.",
+          "template": "badge",
+          "params": {
+            "position": "top-left"
+          },
+          "len": 3.0,
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "hook"
+            ],
+            "density": {
+              "per_min": 1
+            },
+            "when": "Only over a cold open taken from later in the episode."
+          }
+        },
+        "reset_push": {
+          "kind": "zoom_punch",
+          "about": "A slow push on the wide shot (104% over 4 s) after a long single, so the reset still moves.",
+          "scale": 1.04,
+          "ramp_s": 4.0,
+          "rules": {
+            "triggers": [
+              "topic_change",
+              "pause"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 30.0
+            },
+            "when": "On the wide that re-establishes the room after a topic change [AVE]."
+          }
+        },
+        "cutaway": {
+          "kind": "broll",
+          "about": "A shot of what they're talking about (a place, an object, a photo) over the voice.",
+          "fit": "blur_pad",
+          "len": 3.5,
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "mention",
+              "place"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 20.0
+            },
+            "duration_s": [
+              2.0,
+              6.0
+            ],
+            "when": "Only when there's a shot of the exact thing; never over a laugh, an emotional answer or a reaction."
+          }
+        }
+      },
+      "popups": {
+        "min_gap_s": 10.0,
+        "entries": []
+      },
+      "hook": {
+        "max_s": 60.0,
+        "approaches": [
+          "quote",
+          "stakes",
+          "question"
+        ],
+        "text": {
+          "max_words": 6,
+          "case": "as_said",
+          "position": "bottom",
+          "size": 0.4,
+          "fill": "light",
+          "stroke": null,
+          "stroke_width": 0,
+          "font": "heading"
+        },
+        "rules": "A cold open of 15-60 s - the best exchange from later in the talk, with its own setup and payoff [AVE] - then the intro and show title in under 20 s [BBX]. No \"welcome back to the show\" before the cold open.",
+        "avoid": [
+          "a long intro",
+          "greetings first",
+          "a montage of every clip"
+        ]
+      },
+      "credits": [
+        {
+          "file": "preview.jpg",
+          "source": "drawn by tools\\styles\\preview.py --drawn episode: the style's layout with plain silhouettes (no people), in its own type and colours",
+          "licence": "letitedit's own (drawn)"
+        }
+      ],
+      "measured": {},
+      "provenance": {
+        "made_by": "letitedit style library, wave 2",
+        "date": "2026-10-30",
+        "measured": "none yet (no reference videos in style-references)",
+        "sources": [
+          {
+            "url": "https://github.com/kmilo93sd/agent-video-editor/blob/main/skills/editing-videos/recipes/podcast-to-youtube.md",
+            "title": "agent-video-editor podcast-to-YouTube recipe",
+            "used_for": "speaker, reaction and wide shots and when to use each, monologues, cold open 15-60 s, chapters, lower thirds, caption speaker marks, loudness",
+            "licence": "MIT, Copyright (c) 2026 kmilo93sd (consulted only; no text adapted)"
+          },
+          {
+            "url": "https://blueboxdigital.com/podcast-video-production/",
+            "title": "BlueBox video podcast production",
+            "used_for": "a cut on nearly every speaker change, wide for interplay and singles for stories, punch-in angles, intro under 20 s, -16 / -14 LUFS, 60 min to 45-50 min",
+            "licence": "none found (numbers only)"
+          },
+          {
+            "url": "https://slicecut.io/guides/how-to-edit-a-video-podcast/",
+            "title": "slicecut video podcast editing",
+            "used_for": "speaker, listener, wide; music on intro, outro and transitions only",
+            "licence": "none found (numbers only)"
+          }
+        ],
+        "notes": "One wide camera becomes several angles by punching in on each person (the recipe says how); no source gives how often to switch angles (the MIT recipe says so), so the picture follows the talk. Tags in ..\\SOURCES.md."
+      }
+    }
+  }
+}

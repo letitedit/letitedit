@@ -1,0 +1,104 @@
+{
+  "_about": "The one list of AIs letitedit can run. Python (ai_clis.py) and the editor (aichatpanel.h) both read it. A new AI that speaks the Agent Client Protocol is one more entry here, plus a small adapter only if it has quirks. LETITEDIT_AI_LIST names another file (a test's stand-in AI).",
+  "ais": [
+    {
+      "id": "claude",
+      "name": "Claude Code",
+      "short": "Claude",
+      "picker": {"label": "Claude", "button": "Claude", "tip": "Runs Claude Code on this PC, on your own plan"},
+      "protocol": "claude",
+      "status_args": ["auth", "status"],
+      "api_key_var": "ANTHROPIC_API_KEY",
+      "model_key": "model",
+      "effort_key": "effort",
+      "speed_key": "claude_speed",
+      "speeds": [
+        {"value": "normal", "label": "Normal", "tip": "Normal speed and plan usage. Same model and quality; separate from New video Turbo.", "pass": {"setting": "fastMode", "value": false}},
+        {"value": "fast", "label": "Fast", "models": ["opus", "claude-opus-5-5", "claude-opus-5", "claude-opus-4-8"], "tip": "Faster replies from supported Opus models, with the same quality. Billed as extra usage credits outside your plan's included limits: this costs real money. Not New video Turbo.", "pass": {"setting": "fastMode", "value": true}}
+      ],
+      "reinstall": "open a terminal and run: npm install -g @anthropic-ai/claude-code (or follow https://docs.claude.com/en/docs/claude-code/setup)",
+      "editing_tools": {
+        "_about": "Claude Code's own tools in an editing session (New video's chat, a Studio job), when the switch is on (settings.json editing_builtins_off, or LETITEDIT_EDITING_BUILTINS_OFF). Kept: keep. Off: drop, plus every other tool the probe saw this PC's Claude Code offer (ai_clis.probe_editing_tools, cached beside the chat's history as claude-tools.json). shell_fallback is Claude Code's shell on a Windows PC without Git Bash: it is turned off only when the probe saw Bash offered. ai_clis.py and the editor's newvideotools.h read this.",
+        "flag": "--disallowedTools",
+        "keep": ["Bash", "Read", "Write", "Edit", "Grep", "Glob", "Skill", "ToolSearch"],
+        "shell_fallback": "PowerShell",
+        "drop": ["Agent", "Task", "Workflow", "ScheduleWakeup", "ListAgents", "ReportFindings", "SendMessage", "TaskStop",
+                 "TaskOutput", "Monitor", "CronCreate", "CronDelete", "CronList", "RemoteTrigger", "PushNotification",
+                 "EnterWorktree", "ExitWorktree", "EnterPlanMode", "ExitPlanMode", "AskUserQuestion", "DesignSync",
+                 "NotebookEdit", "TodoWrite", "WebSearch", "WebFetch"]
+      },
+      "routing": {
+        "_about": "Auto model routing within this AI: the model and effort for each role when the person's model choice is Auto (saved as \"auto\"), or when they never chose one and the switch is on (settings.json auto_routing; LETITEDIT_AUTO_ROUTING wins). plan: story, rough cut, fine-cut decisions, the critic and the chat; routine: mechanical finishing. A saved effort is kept for plan, and routine never thinks harder than plan. max: every role, when the gear's Max on every stage is on (panel.json routing_max). A model outside model_pattern is never used: Auto never leaves this AI. ai_clis.py and the editor's aichatsettings.cpp read this.",
+        "model_pattern": "^(fable|opus|sonnet|haiku|claude-[a-z0-9.-]+)$",
+        "roles": {"plan": {"model": "opus", "effort": "medium"}, "routine": {"model": "sonnet", "effort": "medium"}},
+        "max": {"model": "opus", "effort": "max"},
+        "auto": {"label": "Auto (letitedit picks)", "button": "Auto", "tip": "letitedit picks the model for each step: Opus for the story, the cuts, the review and this chat; Sonnet for routine finishing. Your effort choice applies to Opus. Always Claude."}
+      },
+      "can": {"chat": true, "terminal": true, "background": true, "draw": false},
+      "tool_call_limit_s": null
+    },
+    {
+      "id": "codex",
+      "name": "Codex",
+      "short": "Codex",
+      "picker": {"label": "ChatGPT (Codex)", "button": "ChatGPT", "tip": "Runs Codex on this PC, on your own ChatGPT plan"},
+      "protocol": "codex",
+      "status_args": ["login", "status"],
+      "api_key_var": "CODEX_API_KEY",
+      "model_key": "codex_model",
+      "effort_key": "codex_reasoning",
+      "speed_key": "codex_speed",
+      "speed_catalog": "codex_models_cache",
+      "speed_config": {"features.fast_mode": true},
+      "speed_costs": {
+        "fast": "Uses included usage at 2.5x the Normal rate, or purchased credits at 2x. Availability depends on your plan.",
+        "ultrafast": "Uses included usage at 8x the Normal rate, or purchased credits at 6x. Only Pro $500 and eligible Enterprise and Edu plans; workspace permission may be required.",
+        "other": "Check Codex for this tier's usage cost and plan availability."
+      },
+      "speed_tip": "Same model and quality. API-key billing differs. Not New video Turbo.",
+      "speeds": [
+        {"value": "normal", "label": "Normal", "tip": "Normal speed and plan usage, even if your Codex config selects Fast. Same quality; separate from New video Turbo.", "pass": {"config": "service_tier", "value": "default"}}
+      ],
+      "reinstall": "follow https://developers.openai.com/codex/cli",
+      "routing": {
+        "_about": "As Claude's routing above. Codex changes effort per turn (model_reasoning_effort), on the same model.",
+        "model_pattern": "^gpt-[a-z0-9.-]+$",
+        "roles": {"plan": {"model": "gpt-6.1-sol", "effort": "medium"}, "routine": {"model": "gpt-6.1-sol", "effort": "medium"}},
+        "max": {"model": "gpt-6.1-sol", "effort": "xhigh"},
+        "auto": {"label": "Auto (letitedit picks)", "button": "Auto", "tip": "letitedit picks the effort for each step: medium for the story, the cuts, the review and this chat, or the effort you choose; routine finishing never thinks harder than that. Always GPT-6.1-Sol on your ChatGPT plan."}
+      },
+      "can": {"chat": true, "terminal": true, "background": true, "draw": true},
+      "tool_call_limit_s": null
+    },
+    {
+      "id": "antigravity",
+      "name": "Antigravity",
+      "short": "Antigravity",
+      "picker": {"label": "Gemini (Antigravity)", "button": "Gemini", "tip": "Runs Google's Antigravity connector on this PC, on your own Google account"},
+      "protocol": "acp",
+      "adapter": "ai_antigravity",
+      "program": "{ai_home}/connector/agy_acp_server.exe",
+      "signed_in_files": ["antigravity-acp/acp_token.json", "antigravity-acp/acp_business_token.json"],
+      "auth_method": "oauth-personal",
+      "get_label": "Get Antigravity",
+      "first_use_notice": "Antigravity runs on your own Google account, through Google's own connector. Google hasn't fully settled how it treats other apps that use that connector, and its terms say that using other software to reach Antigravity can put an account at risk. What you send goes to Google: your words, what's said in your video, and pictures from it. Google says it may use these to improve its products, and that human reviewers may read them and keep copies for up to 18 months. Its opt-out is in the Settings of Google's own Antigravity app; letitedit can't change it. Don't use this for anything you wouldn't want a reviewer to see. On Google's free plan the allowance can run out partway through a video, with a wait of up to about a week.",
+      "model_key": "antigravity_model",
+      "effort_key": "antigravity_thinking",
+      "default_model": "gemini-3.8-flash",
+      "default_effort": "high",
+      "draw_model": "gemini-3.8-flash",
+      "draw_effort": "low",
+      "models": [
+        {"value": "gemini-3.8-flash", "label": "Gemini 3.8 Flash", "button": "Flash", "tip": "Gemini 3.8 Flash, on every plan"},
+        {"value": "gemini-4-argon", "label": "Gemini 4 Argon", "button": "Argon", "tip": "Gemini 4 Argon, on Google AI Pro and above"}
+      ],
+      "efforts": [
+        {"value": "low", "label": "Low", "button": "Low thinking", "tip": "Quick answers with light thinking"},
+        {"value": "medium", "label": "Medium", "button": "Medium thinking", "tip": "A balance of speed and care"},
+        {"value": "high", "label": "High", "button": "High thinking", "tip": "More careful, for bigger edits"}
+      ],
+      "can": {"chat": true, "terminal": false, "background": false, "draw": true},
+      "tool_call_limit_s": 180
+    }
+  ]
+}

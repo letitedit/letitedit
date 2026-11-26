@@ -1,0 +1,1503 @@
+{
+  "format": "letitedit-look-settings/1",
+  "id": "pack-high-energy-challenge",
+  "defaults_are": "taste",
+  "share": false,
+  "values": {
+    "format": "letitedit-style/3",
+    "name": "High Energy Challenge",
+    "description": "A 30-60 s vertical challenge story - can they do it, what happens if they can't - with a timer, attempt labels and constant re-hooks.",
+    "colors": {
+      "primary": "#FFFFFF",
+      "secondary": "#FFD400",
+      "accent": "#FF2E2E",
+      "dark": "#0A0A0A",
+      "light": "#FFFFFF",
+      "go": "#22E06B",
+      "blue": "#2D9CFF"
+    },
+    "fonts": {
+      "heading": {
+        "family": "Rubik",
+        "weight": 900
+      },
+      "body": {
+        "family": "Rubik",
+        "weight": 700
+      },
+      "captions": {
+        "family": "Montserrat",
+        "weight": 900
+      },
+      "timer": {
+        "family": "Rubik",
+        "weight": 800
+      }
+    },
+    "captions": {
+      "font": "captions",
+      "size": 64,
+      "fill": "light",
+      "outline": {
+        "color": "dark",
+        "width": 8
+      },
+      "shadow": null,
+      "background": null,
+      "position": "bottom",
+      "margin": 0.36,
+      "max_chars": 12,
+      "max_lines": 1,
+      "case": "upper"
+    },
+    "text": {
+      "font": "heading",
+      "size": 120,
+      "fill": "secondary",
+      "outline": {
+        "color": "dark",
+        "width": 10
+      }
+    },
+    "graphics": {
+      "word_captions": {
+        "style": "highlight",
+        "font": "captions",
+        "size": 70,
+        "fill": "light",
+        "highlight": "accent",
+        "outline": "dark",
+        "outline_width": 8,
+        "shadow": null,
+        "position": 0.6,
+        "max_width": 0.8,
+        "uppercase": true,
+        "pop_scale": 1.15
+      },
+      "countdown": {
+        "font": "timer",
+        "size": 80,
+        "label_font": "body",
+        "label_size": 26,
+        "fill": "light",
+        "warn_fill": "accent",
+        "label_fill": "secondary",
+        "panel": "dark",
+        "panel_opacity": 0.75,
+        "position": [
+          0.8,
+          0.29
+        ]
+      },
+      "badge": {
+        "font": "heading",
+        "size": 36,
+        "fill": "dark",
+        "background": "secondary"
+      },
+      "progress_bar": {
+        "color": "secondary",
+        "position": "top",
+        "thickness": 0.012,
+        "margin": 0,
+        "background": "dark",
+        "background_opacity": 0.35
+      },
+      "list_card": {
+        "font": "heading",
+        "body_font": "body",
+        "size": 42,
+        "title_size": 52,
+        "fill": "light",
+        "title_fill": "secondary",
+        "panel": "dark",
+        "panel_opacity": 0.86,
+        "check_color": "go",
+        "cross_color": "accent",
+        "mark_color": "secondary"
+      }
+    },
+    "music": {
+      "zones": {
+        "talk": -16.0,
+        "montage": -6.0,
+        "quiet": -40.0,
+        "swell": -3.0,
+        "end": -4.0
+      },
+      "duck_under_speech": true,
+      "merge_gap": 4.0,
+      "attack": 0.3,
+      "release": 0.9,
+      "crossfade": 3.0,
+      "fade_in": 1.5,
+      "fade_out": 3.0,
+      "dialogue_lufs": null,
+      "sources": [],
+      "notes": "A driving bed (music-library: Electronic / Energetic, Rock & Metal / Energetic) under the voice; it cuts out for half a second before every reveal [MKS] and hits again on the result.",
+      "likes": [],
+      "avoid": [],
+      "theme": null
+    },
+    "sfx": {
+      "gain_db": -10.0,
+      "map": {
+        "whoosh": "library/whoosh_fast_03",
+        "impact": "synth/hit-cinematic",
+        "boom": "synth/boom-short",
+        "riser": "synth/riser-2s",
+        "buzz": "library/fail_error-buzz_05",
+        "levelup": "library/level-up_power-up_01",
+        "tada": "library/sting_ta-da_01",
+        "cash": "library/cash_register_04",
+        "click": "kenney/ui-audio/click4",
+        "heartbeat": "synth/heartbeat",
+        "pop": "library/pop_cartoon_02",
+        "drumroll": "library/drum-roll_snare_03"
+      },
+      "events": {
+        "hook": "impact",
+        "transition": "whoosh",
+        "reveal": "levelup",
+        "punchline": "boom",
+        "text": "whoosh",
+        "count": "click",
+        "popup": "pop",
+        "shake": "boom",
+        "flash": "whoosh"
+      }
+    },
+    "editing": {
+      "max_pause": 0.12,
+      "pad_in": 0.04,
+      "pad_out": 0.08,
+      "blur_pad": true,
+      "transitions": "cut",
+      "pace": "fast",
+      "intro": null,
+      "outro": null
+    },
+    "export": {
+      "preset": "social_h264",
+      "loudness": -14.0
+    },
+    "look": {
+      "about": "Bright and punchy - saturated, a little extra contrast, so it reads as loud as it sounds.",
+      "effects": [
+        {
+          "filter": "hue_lightness_saturation",
+          "params": {
+            "av.s": 1.2
+          }
+        },
+        {
+          "filter": "color",
+          "params": {
+            "lift_r": 0.0,
+            "lift_g": 0.0,
+            "lift_b": 0.0,
+            "gamma_r": 0.96,
+            "gamma_g": 0.96,
+            "gamma_b": 0.96,
+            "gain_r": 1.07,
+            "gain_g": 1.07,
+            "gain_b": 1.07
+          }
+        }
+      ]
+    },
+    "taste": "",
+    "label": "High-energy challenge",
+    "summary": "Retention-style - the goal and what is at stake in the first seconds, a running timer, attempts and setbacks, a re-hook every few seconds, a big result.",
+    "kind": "short",
+    "tags": [
+      "challenge",
+      "retention",
+      "high energy",
+      "countdown",
+      "timer",
+      "stakes",
+      "attempts",
+      "re-hooks",
+      "progress bar",
+      "shorts"
+    ],
+    "preview": "preview.jpg",
+    "recipe": "recipe.md",
+    "credits": [
+      {
+        "file": "preview.jpg",
+        "source": "Original preview imagery; hands, objects, places and titles only",
+        "licence": "Original letitedit footage: hands, objects, places and titles only; no faces"
+      }
+    ],
+    "effects": {
+      "progress": {
+        "kind": "graphic",
+        "about": "A bar along the top that fills as the video plays - how close we are to the end.",
+        "template": "progress_bar",
+        "track": "Progress",
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "hook"
+          ],
+          "density": {
+            "per_min": 1
+          },
+          "when": "Once, at 0, as long as the picture (len = its length); make it before any other overlay."
+        }
+      },
+      "challenge_card": {
+        "kind": "graphic",
+        "about": "The challenge and its rules on a dark card, ticks and crosses building in (\"No pulling the unit\").",
+        "template": "list_card",
+        "params": {
+          "position": [
+            0.5,
+            0.33
+          ],
+          "mark": "cross"
+        },
+        "len": 3.5,
+        "sfx": "impact",
+        "rules": {
+          "triggers": [
+            "hook",
+            "list_item"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 10.0
+          },
+          "duration_s": [
+            2.5,
+            5.0
+          ],
+          "when": "Right after the hook - params title (the goal as a question, e.g. \"Fix it without pulling it?\") and items (the rules or what is at stake, as true facts)."
+        }
+      },
+      "timer": {
+        "kind": "graphic",
+        "about": "A running timer in the top corner, red for the last five seconds - the clock on the attempt.",
+        "template": "countdown",
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "hook",
+            "topic_change"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 10.0
+          },
+          "duration_s": [
+            5.0,
+            60.0
+          ],
+          "never": [
+            "outside_safe_zone"
+          ],
+          "when": "Over an attempt or the whole run (params from_s, to_s, label like \"TIME LEFT\" or \"DAY\"). Only a real limit or the video's own clock - never a fake deadline; say so in the brief."
+        }
+      },
+      "attempt": {
+        "kind": "graphic",
+        "about": "A yellow label for the attempt or the day (\"ATTEMPT 2\", \"DAY 9\"), top left.",
+        "template": "badge",
+        "params": {
+          "position": [
+            0.24,
+            0.19
+          ]
+        },
+        "len": 2.5,
+        "sfx": "whoosh",
+        "rules": {
+          "triggers": [
+            "topic_change"
+          ],
+          "density": {
+            "per_min": 4,
+            "min_gap_s": 4.0
+          },
+          "duration_s": [
+            1.5,
+            3.5
+          ],
+          "when": "Each new attempt, day or round. Params text, upper case."
+        }
+      },
+      "stake": {
+        "kind": "text_pop",
+        "about": "What is at stake in red capitals (\"ILLEGAL?!\", \"$0 BUDGET\"), slammed in with a boom.",
+        "size": 0.62,
+        "fill": "accent",
+        "stroke": "dark",
+        "stroke_width": 14,
+        "tilt": -5,
+        "position": [
+          0.45,
+          0.4
+        ],
+        "hold_s": 1.0,
+        "sfx": "boom",
+        "rules": {
+          "triggers": [
+            "emphasis",
+            "number",
+            "hook"
+          ],
+          "density": {
+            "per_10s": 2,
+            "min_gap_s": 3.0
+          },
+          "placement": {
+            "avoid": [
+              "face",
+              "captions",
+              "covered"
+            ]
+          },
+          "duration_s": [
+            0.7,
+            1.8
+          ],
+          "never": [
+            "over_face"
+          ],
+          "when": "The consequence or the limit as the speaker says it; two or three words."
+        }
+      },
+      "rehook": {
+        "kind": "text_pop",
+        "about": "The re-hook - \"BUT...\" or \"WAIT\" in yellow, with a whoosh, as the story turns.",
+        "size": 0.55,
+        "fill": "secondary",
+        "stroke": "dark",
+        "stroke_width": 12,
+        "tilt": 4,
+        "position": [
+          0.42,
+          0.37
+        ],
+        "hold_s": 0.8,
+        "sfx": "whoosh",
+        "rules": {
+          "triggers": [
+            "topic_change",
+            "reveal",
+            "question"
+          ],
+          "density": {
+            "per_10s": 2,
+            "min_gap_s": 4.0
+          },
+          "placement": {
+            "avoid": [
+              "face",
+              "captions",
+              "covered"
+            ]
+          },
+          "duration_s": [
+            0.5,
+            1.4
+          ],
+          "never": [
+            "over_face"
+          ],
+          "when": "Every 5-8 s something new is promised or goes wrong; one or two words, never the same twice in a row."
+        }
+      },
+      "fail_stamp": {
+        "kind": "text_pop",
+        "about": "A red FAILED stamp with a buzzer, high in the frame (over a selfie it sits above the face).",
+        "size": 0.55,
+        "fill": "accent",
+        "stroke": "light",
+        "stroke_width": 10,
+        "tilt": -8,
+        "position": [
+          0.5,
+          0.2
+        ],
+        "hold_s": 1.0,
+        "sfx": "buzz",
+        "rules": {
+          "triggers": [
+            "reaction",
+            "reveal"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 10.0
+          },
+          "duration_s": [
+            0.8,
+            1.6
+          ],
+          "never": [
+            "over_face"
+          ],
+          "when": "A real setback on camera (it broke again, it didn't fit)."
+        }
+      },
+      "win_stamp": {
+        "kind": "text_pop",
+        "about": "A green result stamp (\"DONE\", \"IT WORKS\") with a level-up sound.",
+        "size": 0.7,
+        "fill": "go",
+        "stroke": "dark",
+        "stroke_width": 12,
+        "tilt": 0,
+        "hold_s": 1.2,
+        "sfx": "levelup",
+        "rules": {
+          "triggers": [
+            "reveal",
+            "ending"
+          ],
+          "density": {
+            "per_min": 1
+          },
+          "duration_s": [
+            0.8,
+            2.0
+          ],
+          "never": [
+            "over_face"
+          ],
+          "when": "The result, once, after the half-second of silence."
+        }
+      },
+      "snap_zoom": {
+        "kind": "zoom_punch",
+        "about": "A snap push-in to 120% on the stressed word or the thing.",
+        "scale": 1.2,
+        "ramp_s": 0.05,
+        "rules": {
+          "triggers": [
+            "emphasis",
+            "punchline",
+            "cut",
+            "question"
+          ],
+          "density": {
+            "per_10s": 3,
+            "min_gap_s": 1.5
+          },
+          "when": "Every other cut or the word the sentence leans on; alternate with no punch [MON two framings]."
+        }
+      },
+      "shake": {
+        "kind": "shake",
+        "about": "A short shake with a boom on a hit or a setback.",
+        "amount": 0.6,
+        "len": 0.3,
+        "sfx": "boom",
+        "rules": {
+          "triggers": [
+            "reaction",
+            "punchline",
+            "reveal"
+          ],
+          "density": {
+            "per_min": 4,
+            "min_gap_s": 5.0
+          },
+          "when": "The setback, a hammer blow, the reveal."
+        }
+      },
+      "riser": {
+        "kind": "sfx",
+        "about": "A riser that ends on the result.",
+        "sfx": "riser",
+        "sfx_offset_s": -1.99,
+        "rules": {
+          "triggers": [
+            "reveal"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 15.0
+          },
+          "when": "Into the test or the result; the music drops out for its last half second [MKS]."
+        }
+      },
+      "flash": {
+        "kind": "flash",
+        "about": "A white flash on the result (0.15 s).",
+        "color": "light",
+        "len": 0.15,
+        "opacity": 0.8,
+        "sfx": null,
+        "rules": {
+          "triggers": [
+            "reveal"
+          ],
+          "density": {
+            "per_min": 2,
+            "min_gap_s": 10.0
+          },
+          "when": "The result and at most one other big moment; never more than three flashes a second [RES]."
+        }
+      },
+      "arrow": {
+        "kind": "popup",
+        "about": "A red arrow pointing at the thing that matters.",
+        "asset": "emoji:backhand index pointing down",
+        "size": 0.16,
+        "in": "drop",
+        "out": "pop",
+        "hold_s": 1.0,
+        "sfx": "pop",
+        "rules": {
+          "triggers": [
+            "mention"
+          ],
+          "density": {
+            "per_min": 4,
+            "min_gap_s": 5.0
+          },
+          "placement": {
+            "avoid": [
+              "face",
+              "captions",
+              "covered"
+            ]
+          },
+          "duration_s": [
+            0.7,
+            1.6
+          ],
+          "never": [
+            "over_face",
+            "over_captions"
+          ],
+          "when": "The exact part or problem being talked about, placed just above it."
+        }
+      }
+    },
+    "fx": {
+      "track": "Effects",
+      "sfx_track": "Effect sounds",
+      "broll_track": "B-roll",
+      "density": {
+        "per_10s": 8,
+        "per_min": null,
+        "min_gap_s": null
+      },
+      "safe_zone": "phone",
+      "never": [
+        "outside_safe_zone",
+        "overlapping"
+      ],
+      "rhythm": "Goal and stakes by 3 s; a timer and a progress bar running; a re-hook every 5-8 s; silence, then the result."
+    },
+    "popups": {
+      "track": null,
+      "sfx_track": null,
+      "min_gap_s": 2.0,
+      "max_total": 5,
+      "entries": [
+        {
+          "id": "money",
+          "words": [
+            "bucks",
+            "dollars",
+            "money",
+            "budget",
+            "cost"
+          ],
+          "asset": "emoji:money bag",
+          "zone": "opposite_face",
+          "size": 0.18,
+          "in": "drop",
+          "out": "pop",
+          "hold_s": 0.9,
+          "sfx": "cash",
+          "max_per_video": 2,
+          "cooldown_s": 12,
+          "avoid": [
+            "face",
+            "captions",
+            "covered"
+          ]
+        },
+        {
+          "id": "illegal",
+          "words": [
+            "illegal",
+            "not allowed",
+            "against the law"
+          ],
+          "asset": "emoji:police car light",
+          "zone": "opposite_face",
+          "size": 0.18,
+          "in": "pop",
+          "out": "pop",
+          "hold_s": 1.0,
+          "sfx": "buzz",
+          "max_per_video": 1,
+          "cooldown_s": 20,
+          "avoid": [
+            "face",
+            "captions",
+            "covered"
+          ]
+        },
+        {
+          "id": "fire",
+          "words": [
+            "hot",
+            "heat",
+            "burning"
+          ],
+          "asset": "emoji:fire",
+          "zone": "opposite_face",
+          "size": 0.18,
+          "in": "pop",
+          "out": "pop",
+          "hold_s": 0.9,
+          "sfx": "pop",
+          "max_per_video": 1,
+          "cooldown_s": 20,
+          "avoid": [
+            "face",
+            "captions",
+            "covered"
+          ]
+        },
+        {
+          "id": "done",
+          "words": [
+            "it works",
+            "fixed",
+            "mission accomplished",
+            "done"
+          ],
+          "asset": "emoji:trophy",
+          "zone": "opposite_face",
+          "size": 0.2,
+          "in": "pop",
+          "out": "pop",
+          "hold_s": 1.0,
+          "sfx": "levelup",
+          "max_per_video": 1,
+          "cooldown_s": 20,
+          "avoid": [
+            "face",
+            "captions",
+            "covered"
+          ]
+        }
+      ]
+    },
+    "hook": {
+      "max_s": 2.5,
+      "approaches": [
+        "stakes",
+        "question",
+        "result_first",
+        "number"
+      ],
+      "text": {
+        "max_words": 6,
+        "case": "upper",
+        "position": "top",
+        "size": 0.7,
+        "fill": "secondary",
+        "stroke": "dark",
+        "stroke_width": 12,
+        "font": "heading"
+      },
+      "rules": "The goal and what happens if it fails, in the first 2-3 s, with the hardest moment or the end result teased (not shown) [MKS open with the climax or the stakes]; by 10 s the viewer knows what this is and why to stay [MKS].",
+      "avoid": [
+        "greetings",
+        "a logo",
+        "a slow setup",
+        "the result shown first"
+      ]
+    },
+    "broll": {
+      "amount": "some",
+      "kinds": [],
+      "favorites": "",
+      "notes": ""
+    },
+    "shots": {
+      "framing": "medium",
+      "camera": "handheld",
+      "punch_ins": "some",
+      "notes": ""
+    },
+    "signature": {
+      "touches": []
+    },
+    "measured": {},
+    "provenance": {
+      "made_by": "letitedit style library, wave 2",
+      "date": "2026-10-30",
+      "measured": "none yet (no reference videos in style-references)",
+      "sources": [
+        {
+          "url": "https://www.markstudios.com/guide",
+          "title": "Mark Studios retention guide",
+          "used_for": "open with the climax or stakes, value by 5-10 s, re-engagement at about a third and two-thirds, half a second of silence before a reveal, pattern-interrupt sounds",
+          "licence": "none found (numbers only)"
+        },
+        {
+          "url": "https://air.io/en/youtube-hacks/advanced-retention-editing-cutting-patterns-that-keep-viewers-past-minute-8",
+          "title": "AIR Media-Tech retention editing",
+          "used_for": "re-hooks and bursts of quick cuts",
+          "licence": "none found (numbers only)"
+        },
+        {
+          "url": "https://blitzcutai.com/blog/best-caption-style-instagram-reels-2026",
+          "title": "BlitzCut Reels captions",
+          "used_for": "highlight-box captions for busy footage, caption size",
+          "licence": "none found (numbers only)"
+        }
+      ],
+      "notes": "The re-hook every 5-8 s is this style's own choice for a Short [GEN] (the sources give minutes-scale numbers for long videos). No creator is named. Tags in ..\\SOURCES.md."
+    }
+  },
+  "asset_root": "resources",
+  "files": {
+    "preview.jpg": "resources/e523c1278b34472a01f8f533.jpg",
+    "recipe.md": "recipe.md"
+  },
+  "links": {
+    "recipe": "recipe.md",
+    "preview": "preview.jpg"
+  },
+  "legacy": {
+    "format": "letitedit-style/3",
+    "source": "style.yaml",
+    "pack": "high-energy-challenge",
+    "data": {
+      "format": "letitedit-style/3",
+      "name": "High Energy Challenge",
+      "label": "High-energy challenge",
+      "summary": "Retention-style - the goal and what is at stake in the first seconds, a running timer, attempts and setbacks, a re-hook every few seconds, a big result.",
+      "kind": "short",
+      "tags": [
+        "challenge",
+        "retention",
+        "high energy",
+        "countdown",
+        "timer",
+        "stakes",
+        "attempts",
+        "re-hooks",
+        "progress bar",
+        "shorts"
+      ],
+      "recipe": "recipe.md",
+      "preview": "preview.jpg",
+      "description": "A 30-60 s vertical challenge story - can they do it, what happens if they can't - with a timer, attempt labels and constant re-hooks.",
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#FFD400",
+        "accent": "#FF2E2E",
+        "go": "#22E06B",
+        "blue": "#2D9CFF",
+        "dark": "#0A0A0A",
+        "light": "#FFFFFF"
+      },
+      "fonts": {
+        "heading": {
+          "family": "Rubik",
+          "weight": 900
+        },
+        "body": {
+          "family": "Rubik",
+          "weight": 700
+        },
+        "captions": {
+          "family": "Montserrat",
+          "weight": 900
+        },
+        "timer": {
+          "family": "Rubik",
+          "weight": 800
+        }
+      },
+      "graphics": {
+        "word_captions": {
+          "style": "highlight",
+          "font": "captions",
+          "size": 70,
+          "fill": "light",
+          "highlight": "accent",
+          "outline": "dark",
+          "outline_width": 8,
+          "shadow": null,
+          "position": 0.6,
+          "max_width": 0.8,
+          "uppercase": true,
+          "pop_scale": 1.15
+        },
+        "countdown": {
+          "font": "timer",
+          "size": 80,
+          "label_font": "body",
+          "label_size": 26,
+          "fill": "light",
+          "warn_fill": "accent",
+          "label_fill": "secondary",
+          "panel": "dark",
+          "panel_opacity": 0.75,
+          "position": [
+            0.8,
+            0.29
+          ]
+        },
+        "badge": {
+          "font": "heading",
+          "size": 36,
+          "fill": "dark",
+          "background": "secondary"
+        },
+        "progress_bar": {
+          "color": "secondary",
+          "position": "top",
+          "thickness": 0.012,
+          "margin": 0,
+          "background": "dark",
+          "background_opacity": 0.35
+        },
+        "list_card": {
+          "font": "heading",
+          "body_font": "body",
+          "size": 42,
+          "title_size": 52,
+          "fill": "light",
+          "title_fill": "secondary",
+          "panel": "dark",
+          "panel_opacity": 0.86,
+          "check_color": "go",
+          "cross_color": "accent",
+          "mark_color": "secondary"
+        }
+      },
+      "captions": {
+        "font": "captions",
+        "size": 64,
+        "fill": "light",
+        "outline": {
+          "color": "dark",
+          "width": 8
+        },
+        "position": "bottom",
+        "margin": 0.36,
+        "max_chars": 12,
+        "max_lines": 1,
+        "case": "upper"
+      },
+      "text": {
+        "font": "heading",
+        "size": 120,
+        "fill": "secondary",
+        "outline": {
+          "color": "dark",
+          "width": 10
+        }
+      },
+      "editing": {
+        "max_pause": 0.12,
+        "pad_in": 0.04,
+        "pad_out": 0.08,
+        "blur_pad": true,
+        "transitions": "cut",
+        "pace": "fast"
+      },
+      "music": {
+        "zones": {
+          "talk": -16.0,
+          "montage": -6.0,
+          "quiet": -40.0,
+          "end": -4.0
+        },
+        "notes": "A driving bed (music-library: Electronic / Energetic, Rock & Metal / Energetic) under the voice; it cuts out for half a second before every reveal [MKS] and hits again on the result."
+      },
+      "export": {
+        "preset": "social_h264",
+        "loudness": -14.0
+      },
+      "look": {
+        "about": "Bright and punchy - saturated, a little extra contrast, so it reads as loud as it sounds.",
+        "effects": [
+          {
+            "filter": "hue_lightness_saturation",
+            "params": {
+              "av.s": 1.2
+            }
+          },
+          {
+            "filter": "color",
+            "params": {
+              "lift_r": 0.0,
+              "lift_g": 0.0,
+              "lift_b": 0.0,
+              "gamma_r": 0.96,
+              "gamma_g": 0.96,
+              "gamma_b": 0.96,
+              "gain_r": 1.07,
+              "gain_g": 1.07,
+              "gain_b": 1.07
+            }
+          }
+        ]
+      },
+      "sfx": {
+        "gain_db": -10.0,
+        "map": {
+          "whoosh": "library/whoosh_fast_03",
+          "impact": "synth/hit-cinematic",
+          "boom": "synth/boom-short",
+          "riser": "synth/riser-2s",
+          "buzz": "library/fail_error-buzz_05",
+          "levelup": "library/level-up_power-up_01",
+          "tada": "library/sting_ta-da_01",
+          "cash": "library/cash_register_04",
+          "click": "kenney/ui-audio/click4",
+          "heartbeat": "synth/heartbeat",
+          "pop": "library/pop_cartoon_02",
+          "drumroll": "library/drum-roll_snare_03"
+        },
+        "events": {
+          "hook": "impact",
+          "transition": "whoosh",
+          "reveal": "levelup",
+          "punchline": "boom",
+          "text": "whoosh",
+          "count": "click",
+          "popup": "pop",
+          "shake": "boom",
+          "flash": "whoosh"
+        }
+      },
+      "fx": {
+        "track": "Effects",
+        "sfx_track": "Effect sounds",
+        "broll_track": "B-roll",
+        "density": {
+          "per_10s": 8
+        },
+        "safe_zone": "phone",
+        "never": [
+          "outside_safe_zone",
+          "overlapping"
+        ],
+        "rhythm": "Goal and stakes by 3 s; a timer and a progress bar running; a re-hook every 5-8 s; silence, then the result."
+      },
+      "effects": {
+        "progress": {
+          "kind": "graphic",
+          "about": "A bar along the top that fills as the video plays - how close we are to the end.",
+          "template": "progress_bar",
+          "track": "Progress",
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "hook"
+            ],
+            "density": {
+              "per_min": 1
+            },
+            "when": "Once, at 0, as long as the picture (len = its length); make it before any other overlay."
+          }
+        },
+        "challenge_card": {
+          "kind": "graphic",
+          "about": "The challenge and its rules on a dark card, ticks and crosses building in (\"No pulling the unit\").",
+          "template": "list_card",
+          "params": {
+            "position": [
+              0.5,
+              0.33
+            ],
+            "mark": "cross"
+          },
+          "len": 3.5,
+          "sfx": "impact",
+          "rules": {
+            "triggers": [
+              "hook",
+              "list_item"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 10.0
+            },
+            "duration_s": [
+              2.5,
+              5.0
+            ],
+            "when": "Right after the hook - params title (the goal as a question, e.g. \"Fix it without pulling it?\") and items (the rules or what is at stake, as true facts)."
+          }
+        },
+        "timer": {
+          "kind": "graphic",
+          "about": "A running timer in the top corner, red for the last five seconds - the clock on the attempt.",
+          "template": "countdown",
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "hook",
+              "topic_change"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 10.0
+            },
+            "duration_s": [
+              5.0,
+              60.0
+            ],
+            "never": [
+              "outside_safe_zone"
+            ],
+            "when": "Over an attempt or the whole run (params from_s, to_s, label like \"TIME LEFT\" or \"DAY\"). Only a real limit or the video's own clock - never a fake deadline; say so in the brief."
+          }
+        },
+        "attempt": {
+          "kind": "graphic",
+          "about": "A yellow label for the attempt or the day (\"ATTEMPT 2\", \"DAY 9\"), top left.",
+          "template": "badge",
+          "params": {
+            "position": [
+              0.24,
+              0.19
+            ]
+          },
+          "len": 2.5,
+          "sfx": "whoosh",
+          "rules": {
+            "triggers": [
+              "topic_change"
+            ],
+            "density": {
+              "per_min": 4,
+              "min_gap_s": 4.0
+            },
+            "duration_s": [
+              1.5,
+              3.5
+            ],
+            "when": "Each new attempt, day or round. Params text, upper case."
+          }
+        },
+        "stake": {
+          "kind": "text_pop",
+          "about": "What is at stake in red capitals (\"ILLEGAL?!\", \"$0 BUDGET\"), slammed in with a boom.",
+          "size": 0.62,
+          "fill": "accent",
+          "stroke": "dark",
+          "stroke_width": 14,
+          "tilt": -5,
+          "position": [
+            0.45,
+            0.4
+          ],
+          "hold_s": 1.0,
+          "sfx": "boom",
+          "rules": {
+            "triggers": [
+              "emphasis",
+              "number",
+              "hook"
+            ],
+            "density": {
+              "per_10s": 2,
+              "min_gap_s": 3.0
+            },
+            "placement": {
+              "avoid": [
+                "face",
+                "captions",
+                "covered"
+              ]
+            },
+            "duration_s": [
+              0.7,
+              1.8
+            ],
+            "never": [
+              "over_face"
+            ],
+            "when": "The consequence or the limit as the speaker says it; two or three words."
+          }
+        },
+        "rehook": {
+          "kind": "text_pop",
+          "about": "The re-hook - \"BUT...\" or \"WAIT\" in yellow, with a whoosh, as the story turns.",
+          "size": 0.55,
+          "fill": "secondary",
+          "stroke": "dark",
+          "stroke_width": 12,
+          "tilt": 4,
+          "position": [
+            0.42,
+            0.37
+          ],
+          "hold_s": 0.8,
+          "sfx": "whoosh",
+          "rules": {
+            "triggers": [
+              "topic_change",
+              "reveal",
+              "question"
+            ],
+            "density": {
+              "per_10s": 2,
+              "min_gap_s": 4.0
+            },
+            "placement": {
+              "avoid": [
+                "face",
+                "captions",
+                "covered"
+              ]
+            },
+            "duration_s": [
+              0.5,
+              1.4
+            ],
+            "never": [
+              "over_face"
+            ],
+            "when": "Every 5-8 s something new is promised or goes wrong; one or two words, never the same twice in a row."
+          }
+        },
+        "fail_stamp": {
+          "kind": "text_pop",
+          "about": "A red FAILED stamp with a buzzer, high in the frame (over a selfie it sits above the face).",
+          "size": 0.55,
+          "fill": "accent",
+          "stroke": "light",
+          "stroke_width": 10,
+          "tilt": -8,
+          "position": [
+            0.5,
+            0.2
+          ],
+          "hold_s": 1.0,
+          "sfx": "buzz",
+          "rules": {
+            "triggers": [
+              "reaction",
+              "reveal"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 10.0
+            },
+            "duration_s": [
+              0.8,
+              1.6
+            ],
+            "never": [
+              "over_face"
+            ],
+            "when": "A real setback on camera (it broke again, it didn't fit)."
+          }
+        },
+        "win_stamp": {
+          "kind": "text_pop",
+          "about": "A green result stamp (\"DONE\", \"IT WORKS\") with a level-up sound.",
+          "size": 0.7,
+          "fill": "go",
+          "stroke": "dark",
+          "stroke_width": 12,
+          "tilt": 0,
+          "hold_s": 1.2,
+          "sfx": "levelup",
+          "rules": {
+            "triggers": [
+              "reveal",
+              "ending"
+            ],
+            "density": {
+              "per_min": 1
+            },
+            "duration_s": [
+              0.8,
+              2.0
+            ],
+            "never": [
+              "over_face"
+            ],
+            "when": "The result, once, after the half-second of silence."
+          }
+        },
+        "snap_zoom": {
+          "kind": "zoom_punch",
+          "about": "A snap push-in to 120% on the stressed word or the thing.",
+          "scale": 1.2,
+          "ramp_s": 0.05,
+          "rules": {
+            "triggers": [
+              "emphasis",
+              "punchline",
+              "cut",
+              "question"
+            ],
+            "density": {
+              "per_10s": 3,
+              "min_gap_s": 1.5
+            },
+            "when": "Every other cut or the word the sentence leans on; alternate with no punch [MON two framings]."
+          }
+        },
+        "shake": {
+          "kind": "shake",
+          "about": "A short shake with a boom on a hit or a setback.",
+          "amount": 0.6,
+          "len": 0.3,
+          "sfx": "boom",
+          "rules": {
+            "triggers": [
+              "reaction",
+              "punchline",
+              "reveal"
+            ],
+            "density": {
+              "per_min": 4,
+              "min_gap_s": 5.0
+            },
+            "when": "The setback, a hammer blow, the reveal."
+          }
+        },
+        "riser": {
+          "kind": "sfx",
+          "about": "A riser that ends on the result.",
+          "sfx": "riser",
+          "sfx_offset_s": -1.99,
+          "rules": {
+            "triggers": [
+              "reveal"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 15.0
+            },
+            "when": "Into the test or the result; the music drops out for its last half second [MKS]."
+          }
+        },
+        "flash": {
+          "kind": "flash",
+          "about": "A white flash on the result (0.15 s).",
+          "color": "light",
+          "len": 0.15,
+          "opacity": 0.8,
+          "sfx": null,
+          "rules": {
+            "triggers": [
+              "reveal"
+            ],
+            "density": {
+              "per_min": 2,
+              "min_gap_s": 10.0
+            },
+            "when": "The result and at most one other big moment; never more than three flashes a second [RES]."
+          }
+        },
+        "arrow": {
+          "kind": "popup",
+          "about": "A red arrow pointing at the thing that matters.",
+          "asset": "emoji:backhand index pointing down",
+          "size": 0.16,
+          "in": "drop",
+          "out": "pop",
+          "hold_s": 1.0,
+          "sfx": "pop",
+          "rules": {
+            "triggers": [
+              "mention"
+            ],
+            "density": {
+              "per_min": 4,
+              "min_gap_s": 5.0
+            },
+            "placement": {
+              "avoid": [
+                "face",
+                "captions",
+                "covered"
+              ]
+            },
+            "duration_s": [
+              0.7,
+              1.6
+            ],
+            "never": [
+              "over_face",
+              "over_captions"
+            ],
+            "when": "The exact part or problem being talked about, placed just above it."
+          }
+        }
+      },
+      "popups": {
+        "min_gap_s": 2.0,
+        "max_total": 5,
+        "entries": [
+          {
+            "id": "money",
+            "words": [
+              "bucks",
+              "dollars",
+              "money",
+              "budget",
+              "cost"
+            ],
+            "asset": "emoji:money bag",
+            "zone": "opposite_face",
+            "size": 0.18,
+            "in": "drop",
+            "out": "pop",
+            "hold_s": 0.9,
+            "sfx": "cash",
+            "max_per_video": 2,
+            "cooldown_s": 12,
+            "avoid": [
+              "face",
+              "captions",
+              "covered"
+            ]
+          },
+          {
+            "id": "illegal",
+            "words": [
+              "illegal",
+              "not allowed",
+              "against the law"
+            ],
+            "asset": "emoji:police car light",
+            "zone": "opposite_face",
+            "size": 0.18,
+            "in": "pop",
+            "out": "pop",
+            "hold_s": 1.0,
+            "sfx": "buzz",
+            "max_per_video": 1,
+            "cooldown_s": 20,
+            "avoid": [
+              "face",
+              "captions",
+              "covered"
+            ]
+          },
+          {
+            "id": "fire",
+            "words": [
+              "hot",
+              "heat",
+              "burning"
+            ],
+            "asset": "emoji:fire",
+            "zone": "opposite_face",
+            "size": 0.18,
+            "in": "pop",
+            "out": "pop",
+            "hold_s": 0.9,
+            "sfx": "pop",
+            "max_per_video": 1,
+            "cooldown_s": 20,
+            "avoid": [
+              "face",
+              "captions",
+              "covered"
+            ]
+          },
+          {
+            "id": "done",
+            "words": [
+              "it works",
+              "fixed",
+              "mission accomplished",
+              "done"
+            ],
+            "asset": "emoji:trophy",
+            "zone": "opposite_face",
+            "size": 0.2,
+            "in": "pop",
+            "out": "pop",
+            "hold_s": 1.0,
+            "sfx": "levelup",
+            "max_per_video": 1,
+            "cooldown_s": 20,
+            "avoid": [
+              "face",
+              "captions",
+              "covered"
+            ]
+          }
+        ]
+      },
+      "hook": {
+        "max_s": 2.5,
+        "approaches": [
+          "stakes",
+          "question",
+          "result_first",
+          "number"
+        ],
+        "text": {
+          "max_words": 6,
+          "case": "upper",
+          "position": "top",
+          "size": 0.7,
+          "fill": "secondary",
+          "stroke": "dark",
+          "stroke_width": 12,
+          "font": "heading"
+        },
+        "rules": "The goal and what happens if it fails, in the first 2-3 s, with the hardest moment or the end result teased (not shown) [MKS open with the climax or the stakes]; by 10 s the viewer knows what this is and why to stay [MKS].",
+        "avoid": [
+          "greetings",
+          "a logo",
+          "a slow setup",
+          "the result shown first"
+        ]
+      },
+      "credits": [
+        {
+          "file": "preview.jpg",
+          "source": "Original preview imagery; hands, objects, places and titles only",
+          "licence": "Original letitedit footage: hands, objects, places and titles only; no faces"
+        }
+      ],
+      "measured": {},
+      "provenance": {
+        "made_by": "letitedit style library, wave 2",
+        "date": "2026-10-30",
+        "measured": "none yet (no reference videos in style-references)",
+        "sources": [
+          {
+            "url": "https://www.markstudios.com/guide",
+            "title": "Mark Studios retention guide",
+            "used_for": "open with the climax or stakes, value by 5-10 s, re-engagement at about a third and two-thirds, half a second of silence before a reveal, pattern-interrupt sounds",
+            "licence": "none found (numbers only)"
+          },
+          {
+            "url": "https://air.io/en/youtube-hacks/advanced-retention-editing-cutting-patterns-that-keep-viewers-past-minute-8",
+            "title": "AIR Media-Tech retention editing",
+            "used_for": "re-hooks and bursts of quick cuts",
+            "licence": "none found (numbers only)"
+          },
+          {
+            "url": "https://blitzcutai.com/blog/best-caption-style-instagram-reels-2026",
+            "title": "BlitzCut Reels captions",
+            "used_for": "highlight-box captions for busy footage, caption size",
+            "licence": "none found (numbers only)"
+          }
+        ],
+        "notes": "The re-hook every 5-8 s is this style's own choice for a Short [GEN] (the sources give minutes-scale numbers for long videos). No creator is named. Tags in ..\\SOURCES.md."
+      }
+    }
+  }
+}

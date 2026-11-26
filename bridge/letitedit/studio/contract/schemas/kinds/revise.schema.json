@@ -1,0 +1,197 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://letitedit.app/studio/1/kinds/revise.schema.json",
+  "title": "revise: change a made video from plain notes",
+  "description": "from_job names a finished short, revise, retext, batch item or (contract 1.1) still. Its project is copied into this job's folder (the earlier job stays as it was) and the notes are applied the way Review applies them (letitedit_review_note). A video's revise returns a full short result at the same tier, plus what changed; an opening from a hooks job is swapped in with hook. A still's revise returns a still: its notes change its text, layout or picture choice.",
+  "$defs": {
+    "note": {
+      "type": "object",
+      "required": [
+        "text"
+      ],
+      "properties": {
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "at_s": {
+          "$ref": "../common.schema.json#/$defs/seconds",
+          "description": "Pinned to this time in the earlier video."
+        },
+        "platform": {
+          "$ref": "../common.schema.json#/$defs/platform"
+        }
+      }
+    },
+    "inputs": {
+      "type": "object",
+      "properties": {
+        "notes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/note"
+          }
+        },
+        "hook": {
+          "type": "object",
+          "required": [
+            "from_job",
+            "hook_id"
+          ],
+          "properties": {
+            "from_job": {
+              "type": "string"
+            },
+            "hook_id": {
+              "type": "string"
+            }
+          }
+        },
+        "tier": {
+          "type": "string",
+          "enum": [
+            "preview",
+            "final"
+          ],
+          "description": "Absent: the earlier job's tier. A still has no tier."
+        },
+        "platforms": {
+          "type": "array",
+          "items": {
+            "$ref": "../common.schema.json#/$defs/platform_target"
+          }
+        },
+        "rules": {
+          "type": "array",
+          "items": {
+            "$ref": "../common.schema.json#/$defs/rule"
+          },
+          "description": "Absent: the earlier job's rules."
+        },
+        "overlay_text": {
+          "$ref": "../common.schema.json#/$defs/overlay_text",
+          "description": "Absent: the earlier job's overlay_text. Given: it replaces them."
+        }
+      },
+      "anyOf": [
+        {
+          "required": [
+            "notes"
+          ]
+        },
+        {
+          "required": [
+            "hook"
+          ]
+        }
+      ]
+    },
+    "output": {
+      "description": "A video: a short's output plus what changed. A still (contract 1.1): a still's output plus what changed.",
+      "anyOf": [
+        {
+          "allOf": [
+            {
+              "$ref": "short.schema.json#/$defs/output"
+            },
+            {
+              "type": "object",
+              "required": [
+                "what_changed",
+                "changes"
+              ],
+              "properties": {
+                "what_changed": {
+                  "type": "string",
+                  "description": "One plain line."
+                },
+                "changes": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "note",
+                      "done"
+                    ],
+                    "properties": {
+                      "note": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "description": "Index into notes."
+                      },
+                      "done": {
+                        "type": "string",
+                        "enum": [
+                          "yes",
+                          "partly",
+                          "no"
+                        ]
+                      },
+                      "said": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "revision_of": {
+                  "type": "string"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "allOf": [
+            {
+              "$ref": "still.schema.json#/$defs/output"
+            },
+            {
+              "type": "object",
+              "required": [
+                "what_changed",
+                "changes"
+              ],
+              "properties": {
+                "what_changed": {
+                  "type": "string",
+                  "description": "One plain line."
+                },
+                "changes": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "note",
+                      "done"
+                    ],
+                    "properties": {
+                      "note": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "description": "Index into notes."
+                      },
+                      "done": {
+                        "type": "string",
+                        "enum": [
+                          "yes",
+                          "partly",
+                          "no"
+                        ]
+                      },
+                      "said": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "revision_of": {
+                  "type": "string"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

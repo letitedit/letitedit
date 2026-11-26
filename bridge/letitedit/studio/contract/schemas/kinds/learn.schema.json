@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://letitedit.app/studio/1/kinds/learn.schema.json",
+  "title": "learn: a Look from reference videos",
+  "description": "The app's Learn from a video: one to three references (files, or links fetched privately with letitedit_fetch). The AI names the Look. It is saved in the person's My Looks and can be picked by look_id at once. Sharing follows the person's own Share learned Looks setting.",
+  "$defs": {
+    "inputs": {
+      "type": "object",
+      "required": ["references"],
+      "properties": {
+        "references": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 3,
+          "items": {
+            "oneOf": [
+              {"type": "object", "required": ["path"], "properties": {"path": {"$ref": "../common.schema.json#/$defs/abs_path"}}},
+              {"type": "object", "required": ["url"], "properties": {"url": {"type": "string", "pattern": "^https?://"}}}
+            ]
+          }
+        },
+        "note": {"type": "string", "description": "What the caller likes about them, in plain words."}
+      }
+    },
+    "output": {
+      "type": "object",
+      "required": ["look"],
+      "properties": {
+        "look": {
+          "type": "object",
+          "required": ["id", "name"],
+          "properties": {
+            "id": {"type": "string"},
+            "name": {"type": "string"},
+            "styles": {"type": "array", "items": {"type": "string"}},
+            "formats": {"type": "array", "items": {"type": "string", "enum": ["short", "long"]}},
+            "needs_footage": {"type": "boolean"},
+            "fits": {"type": "string"},
+            "card": {"type": "string", "description": "The Look's card folder in My Looks (absolute)."}
+          }
+        },
+        "left_out": {"type": "array", "items": {"type": "string"}, "description": "What Learn could not measure in the references."}
+      }
+    }
+  }
+}

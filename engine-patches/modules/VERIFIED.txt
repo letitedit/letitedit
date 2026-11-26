@@ -1,0 +1,13 @@
+# Engine modules that passed every check in check_engine.py (weight, italic, last_cue,
+# range_start, font_dirs). deploy.ps1 and release\installer\build.ps1 take only these.
+# 2026-10-30 18:25:49: all checks passed on C:\LetItEdit\tests\engine-patches\app-new (frames: tests\engine-patches\frames\new)
+f814dfd11a537f46d374c7347e0bb48a2f5ed29aff3bd83d54dc83fda133d5b1 *libmltqt6.dll
+bbb00e4037e8da74154e25a595bc90eb1df28c8db8aeb321cb013b28ed2e0bf7 *libmltplus.dll
+# 2026-11-21 08:29:33: all checks passed on C:\LetItEdit\tests\t314\app-patched (frames: C:\LetItEdit\tests\t314\check-engine-patched)
+8cb30f52cd66075b5fa972f2c21d90cb57f2669dab83d3aeb77881b24bec557e *libmlt-7.dll
+# 2026-11-21 11:19:14: all checks passed on C:\LetItEdit\tests\t315\app-both (frames: C:\LetItEdit\tests\t315\check-engine-both)
+e54ba7431aab51118f0dfdd573e3730feb8c84223082dd39f9b1cc3e621b4afd *libmlt-7.dll
+# 2026-11-21 23:22:42: all checks passed on C:\LetItEdit\tests\t315\app-three (frames: C:\LetItEdit\tests\t315\check-engine-three)
+ee576d30d27e537cbd9e9aed9e59c6b9315ad1ac9056ed31ffe6243de6f299c6 *libmltresample.dll
+# 2026-11-24 16:57:30: all checks passed on C:\LetItEdit\tests\t369\app-engine (frames: C:\LetItEdit\tests\t369\check-engine)
+dadb18e4c9734b5f9125a4bd17100e40eda5949aabc9da30651d0b5bf200072e *libmlt-7.dll

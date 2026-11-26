@@ -1,0 +1,2 @@
+# build_modules.sh runs in bash: keep LF line endings on checkout (core.autocrlf would write CRLF)
+*.sh text eol=lf

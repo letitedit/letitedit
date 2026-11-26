@@ -1,0 +1,590 @@
+{
+  "contract_version": "1.5",
+  "job_id": "ch-demo-2026-11-20-0007-r1",
+  "kind": "revise",
+  "tier": "final",
+  "state": "done",
+  "started": "2026-11-20T01:10:00-08:00",
+  "finished": "2026-11-20T01:40:00-08:00",
+  "attempts": 1,
+  "versions": {
+    "contract": "1.5",
+    "letitedit": "20261118.3",
+    "tools": "7b0da5c5",
+    "look": "7ca87163b73d"
+  },
+  "cost": {
+    "wall_s": 1500,
+    "waited_s": 0,
+    "measured": true,
+    "ai": {
+      "engine": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "medium"
+    },
+    "tokens": {
+      "input": 19600,
+      "cache_write": 392000,
+      "cache_read": 9310000,
+      "output": 78400,
+      "total": 9800000
+    },
+    "usd_api_equivalent": 3.72,
+    "steps": 42
+  },
+  "outputs": [
+    {
+      "role": "video",
+      "path": "files/youtube_shorts.mp4",
+      "bytes": 14800000,
+      "sha256": "9b83d13d405d0d9923872a8cfa40eb9ae71dbb01235435c20b8e883342516b24",
+      "platform": "youtube_shorts",
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "duration_s": 24.6,
+      "codec": "h264",
+      "loudness_lufs": -14.0,
+      "true_peak_dbtp": -1.2,
+      "location_metadata": "none"
+    },
+    {
+      "role": "video",
+      "path": "files/tiktok.mp4",
+      "bytes": 14800000,
+      "sha256": "d3e3b05731a98744e95e0e21bb69c7f190dc4f097ffc1d3a563e5978a501dafa",
+      "platform": "tiktok",
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "duration_s": 24.6,
+      "codec": "h264",
+      "loudness_lufs": -14.0,
+      "true_peak_dbtp": -1.2,
+      "location_metadata": "none"
+    },
+    {
+      "role": "video",
+      "path": "files/instagram_reels.mp4",
+      "bytes": 14800000,
+      "sha256": "7df17495284d7c66d746aa60045599b9668d0dc011b84c37082d9ddadbf9c2ea",
+      "platform": "instagram_reels",
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "duration_s": 24.6,
+      "codec": "h264",
+      "loudness_lufs": -14.0,
+      "true_peak_dbtp": -1.2,
+      "location_metadata": "none"
+    },
+    {
+      "role": "video",
+      "path": "files/facebook_reels.mp4",
+      "bytes": 14800000,
+      "sha256": "c222397dd9d2b7138844758a040f823c546986df6b91129d5708f2bb35d1be3c",
+      "platform": "facebook_reels",
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "duration_s": 24.6,
+      "codec": "h264",
+      "loudness_lufs": -14.0,
+      "true_peak_dbtp": -1.2,
+      "location_metadata": "none"
+    },
+    {
+      "role": "srt",
+      "path": "files/captions.srt",
+      "bytes": 1200,
+      "sha256": "90527cdb2678cd07ffa6d652bb273b6a7473048b38cb69e59aa69c490e0df9a1"
+    },
+    {
+      "role": "cover",
+      "path": "files/cover.jpg",
+      "bytes": 210000,
+      "sha256": "9b35ec04394ce6cdd001744ae087b2abc691dcb671dd91c92e73bb7148a699e2",
+      "width": 1080,
+      "height": 1920,
+      "location_metadata": "none"
+    },
+    {
+      "role": "project",
+      "path": "project/guess-the-price.mlt",
+      "bytes": 88000,
+      "sha256": "d8229bf8cd7ccd873a7dce04504abe4af046273049e71f6f471225d0860febe8"
+    },
+    {
+      "role": "proxy",
+      "path": "proxy/proxy.mp4",
+      "bytes": 3400000,
+      "sha256": "9cd429eaa897dd0cd8b5326a4368bc9cc906f1c314c4e2eab3df74fd52bd45d0",
+      "width": 720,
+      "height": 1280,
+      "fps": 30,
+      "duration_s": 24.6,
+      "codec": "h264",
+      "location_metadata": "none"
+    },
+    {
+      "role": "poster",
+      "path": "proxy/poster.jpg",
+      "bytes": 60000,
+      "sha256": "a1072a2b6bfa8ea721922abaaaf9a4775cd4e763890acafb03886a397c96c6f5",
+      "width": 720,
+      "height": 1280,
+      "location_metadata": "none"
+    },
+    {
+      "role": "review",
+      "path": "project/review.md",
+      "bytes": 5200,
+      "sha256": "e75175f523f5bcacfed391730c9acbdbc3667ac787ca29ff82c874dc950bd526"
+    },
+    {
+      "role": "evidence",
+      "path": "evidence/blur-plates-1.jpg",
+      "bytes": 40000,
+      "sha256": "bc6eecfe0d4d85c5b3cfa1a21a3581809e32569161b3b6a41df380958ba70dd7",
+      "width": 360,
+      "height": 640,
+      "location_metadata": "none"
+    }
+  ],
+  "from_job": "ch-demo-2026-11-20-0007-final",
+  "provenance": {
+    "sources": [
+      {
+        "path": "D:\\Footage\\Café days\\IMG_1234.MOV",
+        "file_id": "f_66ea81670fa7f7885988",
+        "moment_ids": [
+          "m_dd7148ba3befeaaeccfc"
+        ],
+        "in": 12.4,
+        "out": 31.0,
+        "role": "main",
+        "at": 0.0
+      },
+      {
+        "path": "D:\\Footage\\Café days\\IMG_1290.MOV",
+        "file_id": "f_d5b03c866b2289760a3d",
+        "moment_ids": [
+          "m_1c46f56715ad4bca0afc"
+        ],
+        "in": 3.0,
+        "out": 6.5,
+        "role": "broll",
+        "at": 9.2
+      }
+    ],
+    "assets": [
+      {
+        "kind": "stock_video",
+        "what": "Price tags in a 1980s shop window",
+        "source": "pixabay",
+        "url": "https://pixabay.com/videos/id-000000/",
+        "path": "project/stock/pixabay-000000.mp4",
+        "licence": {
+          "id": "pixabay-content-licence",
+          "commercial_use": "allowed",
+          "attribution_required": false,
+          "note": "Free for commercial use inside an edited work; credit is not required. Not allowed: selling or giving the file away unaltered, or implying that a person or brand shown endorses something. Take care with identifiable people and brands."
+        },
+        "ai_generated": false,
+        "ranges": [
+          {
+            "in": 6.0,
+            "out": 8.1
+          }
+        ]
+      },
+      {
+        "kind": "drawn_scene",
+        "what": "The \"1984\" price card",
+        "source": "code_scene",
+        "path": "project/scenes/price-card",
+        "licence": {
+          "id": "generated",
+          "commercial_use": "allowed",
+          "attribution_required": false,
+          "note": "AI-made by an image service. The makers' terms give the output to the person who asked for it; whether AI-made output can be copyrighted is unsettled in some places, and the platforms ask for a label on realistic AI media (the result's ai_labels)."
+        },
+        "ai_generated": false,
+        "ranges": [
+          {
+            "in": 17.0,
+            "out": 19.5
+          }
+        ]
+      },
+      {
+        "kind": "library_sound",
+        "what": "Whoosh",
+        "source": "letitedit_library",
+        "licence": {
+          "id": "CC0-1.0",
+          "commercial_use": "allowed",
+          "attribution_required": false
+        },
+        "ai_generated": false,
+        "ranges": [
+          {
+            "in": 16.9,
+            "out": 17.3
+          }
+        ]
+      }
+    ]
+  },
+  "ai_labels": {
+    "generated_picture": false,
+    "generated_voice": false,
+    "generated_music": false,
+    "altered_real_footage": false,
+    "items": [
+      {
+        "what": "The \"1984\" price card",
+        "kind": "drawn_graphic",
+        "realistic": false,
+        "tool": "code_scene",
+        "start": 17.0,
+        "end": 19.5
+      }
+    ],
+    "platforms": {
+      "youtube_shorts": {
+        "label": "not_required",
+        "why": "Only a drawn graphic that could not pass for a recording.",
+        "rule_as_of": "2026-11"
+      },
+      "tiktok": {
+        "label": "not_required",
+        "why": "Only a drawn graphic that could not pass for a recording.",
+        "rule_as_of": "2026-11"
+      },
+      "instagram_reels": {
+        "label": "not_required",
+        "why": "Only a drawn graphic that could not pass for a recording.",
+        "rule_as_of": "2026-11"
+      },
+      "facebook_reels": {
+        "label": "not_required",
+        "why": "Only a drawn graphic that could not pass for a recording.",
+        "rule_as_of": "2026-11"
+      }
+    }
+  },
+  "music": {
+    "tracks": [
+      {
+        "title": "Floating Temple",
+        "artist": "Monplaisir",
+        "source": "letitedit_library",
+        "licence": {
+          "id": "CC0-1.0",
+          "commercial_use": "allowed",
+          "attribution_required": false,
+          "content_id_registered": "no"
+        },
+        "sha256": "8ed64cb4e9ee656910d1d2f205db088bdc12d22ac17ebe84780ec9aa35bf905f",
+        "ranges": [
+          {
+            "in": 0.0,
+            "out": 24.6
+          }
+        ]
+      }
+    ],
+    "policy_met": "yes"
+  },
+  "rules": [
+    {
+      "id": "blur-plates",
+      "status": "applied",
+      "how": "ai_review",
+      "ranges": [
+        {
+          "start": 4.2,
+          "end": 7.9,
+          "note": "Plate of the parked car, blurred and tracked"
+        }
+      ],
+      "frames": [
+        {
+          "path": "evidence/blur-plates-1.jpg",
+          "at": 5.0,
+          "note": "Plate blurred; engine badge left clear"
+        }
+      ]
+    },
+    {
+      "id": "no-house-numbers",
+      "status": "could_not_check",
+      "how": "not_checked",
+      "reason": "No house-number detector yet; the critic saw none in its frames, but that is not a full check."
+    },
+    {
+      "id": "no-kids-faces",
+      "status": "not_applicable",
+      "how": "ai_review",
+      "reason": "No children are in the footage used."
+    },
+    {
+      "id": "prefer-big-captions",
+      "status": "not_met",
+      "how": "ai_review",
+      "reason": "Captions stayed mid-size so the answer card at 0:17 has room; a missed prefer leaves the verdict as it is.",
+      "ranges": [
+        {
+          "start": 17.0,
+          "end": 22.0,
+          "note": "Mid-size captions beside the answer card"
+        }
+      ]
+    },
+    {
+      "id": "prefer-street-open",
+      "status": "not_applicable",
+      "how": "ai_review",
+      "reason": "Gave way to no-house-numbers: every wide shot of the street shows a house number.",
+      "gave_way_to": [
+        "no-house-numbers"
+      ]
+    }
+  ],
+  "choices": {
+    "look_id": "bus-life",
+    "look_name": "Bus life",
+    "theme_id": null,
+    "pattern": "guess-the-price",
+    "hook_kind": "guess_or_challenge",
+    "hook_line": "Guess what this cost in 1984",
+    "first_3s": "Close on the bus engine bay; caption \"Guess what this cost in 1984\"; no music for the first second.",
+    "duration_s": 22.5,
+    "cuts_per_min": 26.7,
+    "words_per_min": 152.0,
+    "caption_style": "word-highlight",
+    "music_kind": "library",
+    "music_mood": "light, curious",
+    "broll_share": 0.22,
+    "moments": [
+      {
+        "moment_id": "m_dd7148ba3befeaaeccfc",
+        "file_id": "f_66ea81670fa7f7885988",
+        "in": 12.4,
+        "out": 31.0
+      },
+      {
+        "moment_id": "m_1c46f56715ad4bca0afc",
+        "file_id": "f_d5b03c866b2289760a3d",
+        "in": 3.0,
+        "out": 6.5
+      }
+    ],
+    "measured": [
+      "duration_s",
+      "cuts_per_min",
+      "words_per_min",
+      "broll_share",
+      "moments"
+    ]
+  },
+  "text_items": [
+    {
+      "id": "cap-001",
+      "kind": "caption",
+      "start": 0.2,
+      "end": 1.6,
+      "text": "Guess what this cost",
+      "editable": "live",
+      "box": {
+        "x": 0.12,
+        "y": 0.62,
+        "w": 0.76,
+        "h": 0.07
+      }
+    },
+    {
+      "id": "cap-002",
+      "kind": "caption",
+      "start": 1.6,
+      "end": 2.9,
+      "text": "in 1984",
+      "editable": "live"
+    },
+    {
+      "id": "txt-001",
+      "kind": "on_screen",
+      "start": 0.4,
+      "end": 4.0,
+      "text": "No Googling!",
+      "editable": "live",
+      "max_chars": 24,
+      "box": {
+        "x": 0.2,
+        "y": 0.18,
+        "w": 0.6,
+        "h": 0.06
+      }
+    },
+    {
+      "id": "txt-002",
+      "kind": "on_screen",
+      "start": 17.0,
+      "end": 19.5,
+      "text": "$1,950",
+      "editable": "remake",
+      "max_chars": 10
+    },
+    {
+      "id": "ovl-001",
+      "kind": "on_screen",
+      "start": 0,
+      "end": 22.5,
+      "text": "@yourchannel",
+      "editable": "live",
+      "overlay": {
+        "from": "inputs.overlay_text.0",
+        "placement": "top",
+        "files": [
+          {
+            "platform": "youtube_shorts",
+            "applied": true,
+            "why": "every file"
+          },
+          {
+            "platform": "tiktok",
+            "applied": true,
+            "why": "every file"
+          },
+          {
+            "platform": "instagram_reels",
+            "applied": true,
+            "why": "every file"
+          },
+          {
+            "platform": "facebook_reels",
+            "applied": true,
+            "why": "every file"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ovl-002",
+      "kind": "on_screen",
+      "start": 0,
+      "end": 22.5,
+      "text": "Made with AI images",
+      "editable": "live",
+      "overlay": {
+        "from": "inputs.overlay_text.1",
+        "placement": "bottom",
+        "platforms": [
+          "facebook_reels",
+          "facebook_story"
+        ],
+        "if": [
+          "ai_generated_media"
+        ],
+        "files": [
+          {
+            "platform": "youtube_shorts",
+            "applied": false,
+            "why": "not one of this item's platforms"
+          },
+          {
+            "platform": "tiktok",
+            "applied": false,
+            "why": "not one of this item's platforms"
+          },
+          {
+            "platform": "instagram_reels",
+            "applied": false,
+            "why": "not one of this item's platforms"
+          },
+          {
+            "platform": "facebook_reels",
+            "applied": false,
+            "why": "the result has no AI-made picture or sound"
+          }
+        ]
+      },
+      "platforms": []
+    }
+  ],
+  "proxy": {
+    "video": "proxy/proxy.mp4",
+    "poster": "proxy/poster.jpg",
+    "width": 720,
+    "height": 1280,
+    "bytes": 3400000
+  },
+  "review": {
+    "verdict": "ready",
+    "plain": "Ready to post. The guess lands at 0:17 and the answer card reads at phone size; the music sits under the voice.",
+    "path": "project/review.md",
+    "critical": 0,
+    "major": 0,
+    "minor": 2,
+    "critic": {
+      "engine": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "medium"
+    }
+  },
+  "output": {
+    "files": [
+      {
+        "platform": "youtube_shorts",
+        "status": "made",
+        "video": "files/youtube_shorts.mp4",
+        "srt": "files/captions.srt",
+        "cover": "files/cover.jpg"
+      },
+      {
+        "platform": "tiktok",
+        "status": "made",
+        "video": "files/tiktok.mp4",
+        "srt": "files/captions.srt",
+        "cover": "files/cover.jpg"
+      },
+      {
+        "platform": "instagram_reels",
+        "status": "made",
+        "video": "files/instagram_reels.mp4",
+        "srt": "files/captions.srt",
+        "cover": "files/cover.jpg"
+      },
+      {
+        "platform": "facebook_reels",
+        "status": "made",
+        "video": "files/facebook_reels.mp4",
+        "srt": "files/captions.srt",
+        "cover": "files/cover.jpg"
+      }
+    ],
+    "project": "project/guess-the-price.mlt",
+    "post_text": {
+      "youtube_shorts": "Guess what this cost in 1984 👇 #buslife",
+      "tiktok": "No Googling! What did this cost in 1984? #buslife #vanlife"
+    },
+    "summary": "A 25 s guess-the-price Short on the 6V-92 engine: the question, three looks at the engine, the answer card at 0:17, the end card.",
+    "left_out": [],
+    "what_changed": "The second engine shot is gone (the Short is 2.1 s shorter) and the music is 3 dB lower.",
+    "changes": [
+      {
+        "note": 0,
+        "done": "yes",
+        "said": "Removed 9.2-11.3 s."
+      },
+      {
+        "note": 1,
+        "done": "yes",
+        "said": "Music -3 dB under the voice."
+      }
+    ],
+    "revision_of": "ch-demo-2026-11-20-0007-final"
+  },
+  "warnings": []
+}

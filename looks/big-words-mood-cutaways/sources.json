@@ -1,0 +1,1143 @@
+{
+ "format": "letitedit-shot-sources/1",
+ "references": [
+  {
+   "file": "reference",
+   "duration_s": 53.336,
+   "segments": [
+    {
+     "start_s": 0.0,
+     "end_s": 1.4666666666666666,
+     "kind": "live_action",
+     "status": "reviewed",
+     "frames": [
+      "",
+      "",
+      ""
+     ],
+     "evidence": "Reviewed podcast camera footage or cinematic filmed insert, using retained semantic interval observations and shot frames. Visual classification is not independent forensic proof of the original production."
+    },
+    {
+     "start_s": 1.4666666666666666,
+     "end_s": 3.066666666666667,
+     "kind": "film_footage",
+     "status": "reviewed",
+     "frames": [
+      "",
+      "",
+      ""
+     ],
+     "evidence": "Reviewed podcast camera footage or cinematic filmed insert, using retained semantic interval observations and shot frames. Visual classification is not independent forensic proof of the original production."
+    },
+    {
+     "start_s": 3.066666666666667,
+     "end_s": 3.6666666666666665,
+     "kind": "film_footage",
+     "status": "reviewed",
+     "frames": [
+      "",
+      "",
+      ""
+     ],
+     "evidence": "Reviewed podcast camera footage or cinematic filmed insert, using retained semantic interval observations and shot frames. Visual classification is not independent forensic proof of the original production."
+    },
+    {
+     "start_s": 3.6666666666666665,
+     "end_s": 6.666666666666667,
+     "kind": "film_footage",
+     "status": "reviewed",
+     "frames": [
+      "",
+      "",
+      ""
+     ],
+     "evidence": "Reviewed podcast camera footage or cinematic filmed insert, using retained semantic interval observations and shot frames. Visual classification is not independent forensic proof of the original production."
+    },
+    {
+     "start_s": 6.666666666666667,
+     "end_s": 9.666666666666666,
+     "kind": "live_action",
+     "status": "reviewed",
+     "frames": [
+      "",
+      "",
+      ""
+     ],
+     "evidence": "Reviewed podcast camera footage or cinematic filmed insert, using retained semantic interval observations and shot frames. Visual classification is not independent forensic proof of the original production."
+    },
+    {
+     "start_s": 9.666666666666666,
+     "end_s": 11.233333333333333,
+     "kind": "film_footage",
+     "status": "reviewed",
+     "frames": [
+      "",
+      "",
+      ""
+     ],
+     "evidence": "Reviewed podcast camera footage or cinematic filmed insert, using retained semantic interval observations and shot frames. Visual classification is not independent forensic proof of the original production."
+    },
+    {
+     "start_s": 11.233333333333333,
+     "end_s": 12.666666666666666,
+     "kind": "film_footage",
+     "status": "reviewed",
+     "frames": [
+      "",
+      "",
+      ""
+     ],
+     "evidence": "Reviewed podcast camera footage or cinematic filmed insert, using retained semantic interval observations and shot frames. Visual classification is not independent forensic proof of the original production."
+    },
+    {
+     "start_s": 12.666666666666666,
+     "end_s": 13.766666666666667,
+     "kind": "live_action",
+     "status": "reviewed",
+     "frames": [
+      "",
+      "",
+      ""
+     ],
+     "evidence": "Reviewed podcast camera footage or cinematic filmed insert, using retained semantic interval observations and shot frames. Visual classification is not independent forensic proof of the original production."
+    },
+    {
+     "start_s": 13.766666666666667,
+     "end_s": 16.766666666666666,
+     "kind": "film_footage",
+     "status": "reviewed",
+     "frames": [
+      "",
+      "",
+      ""
+     ],
+     "evidence": "Reviewed podcast camera footage or cinematic filmed insert, using retained semantic interval observations and shot frames. Visual classification is not independent forensic proof of the original production."
+    },
+    {
+     "start_s": 16.766666666666666,
+     "end_s": 18.5,
+     "kind": "live_action",
+     "status": "reviewed",
+     "frames": [
+      "",
+      "",
+      ""
+     ],
+     "evidence": "Reviewed podcast camera footage or cinematic filmed insert, using retained semantic interval observations and shot frames. Visual classification is not independent forensic proof of the original production."
+    },
+    {
+     "start_s": 18.5,
+     "end_s": 20.716666666666665,
+     "kind": "film_footage",
+     "status": "reviewed",
+     "frames": [
+      "",
+      "",
+      ""
+     ],
+     "evidence": "Reviewed podcast camera footage or cinematic filmed insert, using retained semantic interval observations and shot frames. Visual classification is not independent forensic proof of the original production."
+    },
+    {
+     "start_s": 20.716666666666665,
+     "end_s": 22.5,
+     "kind": "film_footage",
+     "status": "reviewed",
+     "frames": [
+      "",
+      "",
+      ""
+     ],
+     "evidence": "Reviewed podcast camera footage or cinematic filmed insert, using retained semantic interval observations and shot frames. Visual classification is not independent forensic proof of the original production."
+    },
+    {
+     "start_s": 22.5,
+     "end_s": 23.833333333333332,
+     "kind": "live_action",
+     "status": "reviewed",
+     "frames": [
+      "",
+      "",
+      ""
+     ],
+     "evidence": "Reviewed podcast camera footage or cinematic filmed insert, using retained semantic interval observations and shot frames. Visual classification is not independent forensic proof of the original production."
+    },
+    {
+     "start_s": 23.833333333333332,
+     "end_s": 26.1,
+     "kind": "film_footage",
+     "status": "reviewed",
+     "frames": [
+      "",
+      "",
+      ""
+     ],
+     "evidence": "Reviewed podcast camera footage or cinematic filmed insert, using retained semantic interval observations and shot frames. Visual classification is not independent forensic proof of the original production."
+    },
+    {
+     "start_s": 26.1,
+     "end_s": 28.166666666666668,
+     "kind": "live_action",
+     "status": "reviewed",
+     "frames": [
+      "",
+      "",
+      ""
+     ],
+     "evidence": "Reviewed podcast camera footage or cinematic filmed insert, using retained semantic interval observations and shot frames. Visual classification is not independent forensic proof of the original production."
+    },
+    {
+     "start_s": 28.166666666666668,
+     "end_s": 30.9,
+     "kind": "film_footage",
+     "status": "reviewed",
+     "frames": [
+      "",
+      "",
+      ""
+     ],
+     "evidence": "Reviewed podcast camera footage or cinematic filmed insert, using retained semantic interval observations and shot frames. Visual classification is not independent forensic proof of the original production."
+    },
+    {
+     "start_s": 30.9,
+     "end_s": 33.266666666666666,
+     "kind": "live_action",
+     "status": "reviewed",
+     "frames": [
+      "",
+      "",
+      ""
+     ],
+     "evidence": "Reviewed podcast camera footage or cinematic filmed insert, using retained semantic interval observations and shot frames. Visual classification is not independent forensic proof of the original production."
+    },
+    {
+     "start_s": 33.266666666666666,
+     "end_s": 35.0,
+     "kind": "film_footage",
+     "status": "reviewed",
+     "frames": [
+      "",
+      "",
+      ""
+     ],
+     "evidence": "Reviewed podcast camera footage or cinematic filmed insert, using retained semantic interval observations and shot frames. Visual classification is not independent forensic proof of the original production."
+    },
+    {
+     "start_s": 35.0,
+     "end_s": 37.03333333333333,
+     "kind": "film_footage",
+     "status": "reviewed",
+     "frames": [
+      "",
+      "",
+      ""
+     ],
+     "evidence": "Reviewed podcast camera footage or cinematic filmed insert, using retained semantic interval observations and shot frames. Visual classification is not independent forensic proof of the original production."
+    },
+    {
+     "start_s": 37.03333333333333,
+     "end_s": 41.1,
+     "kind": "live_action",
+     "status": "reviewed",
+     "frames": [
+      "",
+      "",
+      ""
+     ],
+     "evidence": "Reviewed podcast camera footage or cinematic filmed insert, using retained semantic interval observations and shot frames. Visual classification is not independent forensic proof of the original production."
+    },
+    {
+     "start_s": 41.1,
+     "end_s": 43.1,
+     "kind": "film_footage",
+     "status": "reviewed",
+     "frames": [
+      "",
+      "",
+      ""
+     ],
+     "evidence": "Reviewed podcast camera footage or cinematic filmed insert, using retained semantic interval observations and shot frames. Visual classification is not independent forensic proof of the original production."
+    },
+    {
+     "start_s": 43.1,
+     "end_s": 44.1,
+     "kind": "film_footage",
+     "status": "reviewed",
+     "frames": [
+      "",
+      "",
+      ""
+     ],
+     "evidence": "Reviewed podcast camera footage or cinematic filmed insert, using retained semantic interval observations and shot frames. Visual classification is not independent forensic proof of the original production."
+    },
+    {
+     "start_s": 44.1,
+     "end_s": 45.56666666666667,
+     "kind": "live_action",
+     "status": "reviewed",
+     "frames": [
+      "",
+      "",
+      ""
+     ],
+     "evidence": "Reviewed podcast camera footage or cinematic filmed insert, using retained semantic interval observations and shot frames. Visual classification is not independent forensic proof of the original production."
+    },
+    {
+     "start_s": 45.56666666666667,
+     "end_s": 47.53333333333333,
+     "kind": "film_footage",
+     "status": "reviewed",
+     "frames": [
+      "",
+      "",
+      ""
+     ],
+     "evidence": "Reviewed podcast camera footage or cinematic filmed insert, using retained semantic interval observations and shot frames. Visual classification is not independent forensic proof of the original production."
+    },
+    {
+     "start_s": 47.53333333333333,
+     "end_s": 48.56666666666667,
+     "kind": "live_action",
+     "status": "reviewed",
+     "frames": [
+      "",
+      "",
+      ""
+     ],
+     "evidence": "Reviewed podcast camera footage or cinematic filmed insert, using retained semantic interval observations and shot frames. Visual classification is not independent forensic proof of the original production."
+    },
+    {
+     "start_s": 48.56666666666667,
+     "end_s": 50.766666666666666,
+     "kind": "film_footage",
+     "status": "reviewed",
+     "frames": [
+      "",
+      "",
+      ""
+     ],
+     "evidence": "Reviewed podcast camera footage or cinematic filmed insert, using retained semantic interval observations and shot frames. Visual classification is not independent forensic proof of the original production."
+    },
+    {
+     "start_s": 50.766666666666666,
+     "end_s": 53.336,
+     "kind": "live_action",
+     "status": "reviewed",
+     "frames": [
+      "",
+      "",
+      ""
+     ],
+     "evidence": "Reviewed podcast camera footage or cinematic filmed insert, using retained semantic interval observations and shot frames. Visual classification is not independent forensic proof of the original production."
+    }
+   ],
+   "overlays": [
+    {
+     "start_s": 0.11666666666666667,
+     "end_s": 0.36666666666666664,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, F; fully visible by 13; blank frame 22 before next event",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 0.38333333333333336,
+     "end_s": 0.6333333333333333,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: E, F; settled by 31",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 0.6333333333333333,
+     "end_s": 1.1,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: E, F; settled by 47; fixed-left append",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 1.1166666666666667,
+     "end_s": 1.4666666666666666,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, F; settled by 73",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 1.4666666666666666,
+     "end_s": 1.9666666666666666,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, D over cutaway",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 1.9666666666666666,
+     "end_s": 3.066666666666667,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, fixed-left append",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 3.066666666666667,
+     "end_s": 3.6666666666666665,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: E; prior small line briefly remains beneath",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 3.7,
+     "end_s": 3.966666666666667,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 3.966666666666667,
+     "end_s": 4.533333333333333,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, fixed-left append",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 4.533333333333333,
+     "end_s": 5.133333333333334,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: M/E",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 5.133333333333334,
+     "end_s": 5.5,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 5.5,
+     "end_s": 6.666666666666667,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, fixed-left append",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 6.733333333333333,
+     "end_s": 7.366666666666666,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, F; settled by 414",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 7.366666666666666,
+     "end_s": 7.966666666666667,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: E, D, C blue/white inside word",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 7.966666666666667,
+     "end_s": 8.6,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: E, fixed-left append",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 8.633333333333333,
+     "end_s": 9.666666666666666,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L/M, F; settled by 531",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 9.666666666666666,
+     "end_s": 10.1,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, D on cutaway",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 10.1,
+     "end_s": 11.233333333333333,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: E, scale settles over about 12 frames; starts roughly 1.1-1.2 times final size; curve not fitted",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 11.233333333333333,
+     "end_s": 11.666666666666666,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 11.666666666666666,
+     "end_s": 12.666666666666666,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, fixed-left append",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 12.666666666666666,
+     "end_s": 13.766666666666667,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: S, very large serif, D, C",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 13.766666666666667,
+     "end_s": 14.133333333333333,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, D on cutaway",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 14.133333333333333,
+     "end_s": 15.066666666666666,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, fixed-left append",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 15.066666666666666,
+     "end_s": 16.166666666666668,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: M/E, C purple/white",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 16.166666666666668,
+     "end_s": 16.766666666666666,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 17.166666666666668,
+     "end_s": 17.533333333333335,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, F; settled by 1044",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 17.533333333333335,
+     "end_s": 18.5,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, F",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 18.5,
+     "end_s": 18.866666666666667,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, D on cutaway",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 18.866666666666667,
+     "end_s": 19.4,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, fixed-left append",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 19.4,
+     "end_s": 19.8,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: E, C lavender/white",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 19.8,
+     "end_s": 20.7,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: E, fixed-left append",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 20.7,
+     "end_s": 21.166666666666668,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L on cutaway",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 21.166666666666668,
+     "end_s": 21.666666666666668,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, fixed-left append",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 21.666666666666668,
+     "end_s": 22.5,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, fixed-left append",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 22.5,
+     "end_s": 23.0,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: E, C on woman shot; overlaps her face in source, forbidden in ours",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 23.0,
+     "end_s": 23.833333333333332,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: E, C",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 24.033333333333335,
+     "end_s": 24.6,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 24.6,
+     "end_s": 26.1,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, fixed-left append",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 26.1,
+     "end_s": 26.466666666666665,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L on woman shot",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 26.466666666666665,
+     "end_s": 26.8,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, fixed-left append",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 26.8,
+     "end_s": 27.3,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: M/E, W solid white",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 27.3,
+     "end_s": 28.166666666666668,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: M/E, W",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 28.166666666666668,
+     "end_s": 28.533333333333335,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: M, C orange over blue cutaway",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 28.533333333333335,
+     "end_s": 29.466666666666665,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: M/E, C orange/white follows picture",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 29.466666666666665,
+     "end_s": 29.6,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 29.6,
+     "end_s": 29.8,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, brief hold; text density spikes",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 29.8,
+     "end_s": 30.233333333333334,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: E, W solid white",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 30.233333333333334,
+     "end_s": 30.9,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 30.933333333333334,
+     "end_s": 31.6,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, F; settled by 1874",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 31.6,
+     "end_s": 32.13333333333333,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, F; settled by 1910",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 32.13333333333333,
+     "end_s": 32.3,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: E, D",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 32.3,
+     "end_s": 33.266666666666666,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: E, C white/cyan; spelling kept",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 33.266666666666666,
+     "end_s": 33.86666666666667,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L on cutaway; inversion 1998-2000",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 33.86666666666667,
+     "end_s": 35.0,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, fixed-left append",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 35.0,
+     "end_s": 35.36666666666667,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L on cutaway",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 35.36666666666667,
+     "end_s": 35.63333333333333,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, fixed-left append",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 35.63333333333333,
+     "end_s": 35.833333333333336,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, fixed-left append",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 35.833333333333336,
+     "end_s": 36.03333333333333,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: E, F, C grey/orange",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 36.03333333333333,
+     "end_s": 37.03333333333333,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: E, F; settled by 2175",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 37.03333333333333,
+     "end_s": 37.7,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: E, D; incomplete word intentionally revealed by syllables; inversion 2224-2226",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 37.7,
+     "end_s": 38.7,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: Completes communication; fixed position, not a letter-by-letter effect",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 38.71666666666667,
+     "end_s": 39.233333333333334,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, F; settled by 2342",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 39.233333333333334,
+     "end_s": 39.63333333333333,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, F",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 39.63333333333333,
+     "end_s": 39.93333333333333,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, F",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 39.93333333333333,
+     "end_s": 40.5,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, F",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 40.5,
+     "end_s": 41.1,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, F; settled by 2444; single fixed-left line, poor white-on-skin contrast",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 41.1,
+     "end_s": 41.3,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, black on cutaway",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 41.3,
+     "end_s": 41.833333333333336,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: E, C dark green",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 41.833333333333336,
+     "end_s": 42.3,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, black",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 42.3,
+     "end_s": 43.1,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, black, fixed-left append",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 43.1,
+     "end_s": 44.1,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: M/E, D, white with slight picture texture",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 44.11666666666667,
+     "end_s": 44.43333333333333,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, F; settled by 2662; inversion 2648-2650",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 44.43333333333333,
+     "end_s": 44.63333333333333,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, F",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 44.63333333333333,
+     "end_s": 45.56666666666667,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, F; settled by 2694",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 45.56666666666667,
+     "end_s": 46.13333333333333,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, white on cutaway",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 46.13333333333333,
+     "end_s": 46.333333333333336,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, white",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 46.333333333333336,
+     "end_s": 46.6,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: E, giant sans, D, C yellow-green",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 46.6,
+     "end_s": 47.53333333333333,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, white",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 47.55,
+     "end_s": 47.9,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, F; settled by 2871",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 47.9,
+     "end_s": 48.06666666666667,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, F",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 48.06666666666667,
+     "end_s": 48.56666666666667,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, F; settled by 2900",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 48.56666666666667,
+     "end_s": 49.06666666666667,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: E, D, C orange/white on cutaway",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 49.06666666666667,
+     "end_s": 49.4,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, white",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 49.4,
+     "end_s": 49.56666666666667,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, fixed-left append",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 49.56666666666667,
+     "end_s": 49.766666666666666,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, fixed-left append",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 49.766666666666666,
+     "end_s": 50.766666666666666,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, fixed-left append",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 50.8,
+     "end_s": 51.266666666666666,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, F; settled about 3065; inversion 3048-3050",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 51.266666666666666,
+     "end_s": 51.733333333333334,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, F; settled about 3090",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 51.733333333333334,
+     "end_s": 51.93333333333333,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, F; settled about 3115",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 51.93333333333333,
+     "end_s": 52.233333333333334,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, F; settled about 3130",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 52.233333333333334,
+     "end_s": 52.4,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, F; settled about 3144",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 52.4,
+     "end_s": 53.266666666666666,
+     "kind": "caption",
+     "status": "reviewed",
+     "evidence": "Retained native-frame caption inventory, not re-scored: L, F; settled about 3153; poor skin contrast, holds to last decoded frame",
+     "anchor": "Spoken emphasis, re-anchored to the new speaker word timings."
+    },
+    {
+     "start_s": 3.03,
+     "end_s": 4.539,
+     "kind": "sound_effect",
+     "status": "candidate",
+     "evidence": "Offline transient detector candidate (whoosh), low confidence and not auditioned; may be speech or music.",
+     "anchor": "Audition before relating this transient to a meaningful new-story beat."
+    },
+    {
+     "start_s": 3.181,
+     "end_s": 4.6899999999999995,
+     "kind": "sound_effect",
+     "status": "candidate",
+     "evidence": "Offline transient detector candidate (whoosh), low confidence and not auditioned; may be speech or music.",
+     "anchor": "Audition before relating this transient to a meaningful new-story beat."
+    },
+    {
+     "start_s": 3.727,
+     "end_s": 4.482,
+     "kind": "sound_effect",
+     "status": "candidate",
+     "evidence": "Offline transient detector candidate (ding), low confidence and not auditioned; may be speech or music.",
+     "anchor": "Audition before relating this transient to a meaningful new-story beat."
+    },
+    {
+     "start_s": 4.516,
+     "end_s": 6.025,
+     "kind": "sound_effect",
+     "status": "candidate",
+     "evidence": "Offline transient detector candidate (whoosh), low confidence and not auditioned; may be speech or music.",
+     "anchor": "Audition before relating this transient to a meaningful new-story beat."
+    },
+    {
+     "start_s": 4.656,
+     "end_s": 6.164999999999999,
+     "kind": "sound_effect",
+     "status": "candidate",
+     "evidence": "Offline transient detector candidate (ding), low confidence and not auditioned; may be speech or music.",
+     "anchor": "Audition before relating this transient to a meaningful new-story beat."
+    },
+    {
+     "start_s": 4.783,
+     "end_s": 6.292,
+     "kind": "sound_effect",
+     "status": "candidate",
+     "evidence": "Offline transient detector candidate (typing), low confidence and not auditioned; may be speech or music.",
+     "anchor": "Audition before relating this transient to a meaningful new-story beat."
+    },
+    {
+     "start_s": 4.957,
+     "end_s": 6.465999999999999,
+     "kind": "sound_effect",
+     "status": "candidate",
+     "evidence": "Offline transient detector candidate (whoosh), low confidence and not auditioned; may be speech or music.",
+     "anchor": "Audition before relating this transient to a meaningful new-story beat."
+    },
+    {
+     "start_s": 52.28,
+     "end_s": 52.988,
+     "kind": "sound_effect",
+     "status": "candidate",
+     "evidence": "Offline transient detector candidate (ding), low confidence and not auditioned; may be speech or music.",
+     "anchor": "Audition before relating this transient to a meaningful new-story beat."
+    }
+   ],
+   "overlay_coverage": {
+    "caption": "partial",
+    "sticker": "unassessed",
+    "pip": "unassessed",
+    "sound_effect": "partial"
+   }
+  }
+ ]
+}

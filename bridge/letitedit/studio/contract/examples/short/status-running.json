@@ -1,0 +1,38 @@
+{
+  "contract_version": "1.1",
+  "job_id": "ch-demo-2026-11-20-0007-final",
+  "kind": "short",
+  "tier": "final",
+  "state": "running",
+  "stage": "export",
+  "stage_index": 5,
+  "stages_total": 6,
+  "progress": 0.81,
+  "message": "Waiting for the PC: an export of another video is rendering, one ahead in line.",
+  "updated": "2026-11-20T01:31:02-08:00",
+  "heartbeat": "2026-11-20T01:31:02-08:00",
+  "submitted": "2026-11-20T00:20:00-08:00",
+  "started": "2026-11-20T00:22:10-08:00",
+  "attempt": 2,
+  "max_attempts": 3,
+  "resuming": false,
+  "priority": "normal",
+  "queue": {
+    "position": 0,
+    "jobs_ahead": 0,
+    "running_job": "ch-demo-2026-11-20-0007-final"
+  },
+  "waiting_on": {
+    "what": "pc_lock",
+    "since": "2026-11-20T01:29:40-08:00",
+    "ahead": 1,
+    "holder": "letitedit export: Bath Time v5 (the person's own)"
+  },
+  "cancel_requested": false,
+  "events": 41,
+  "outputs_so_far": [
+    "proxy/proxy.mp4",
+    "proxy/poster.jpg"
+  ],
+  "warnings": []
+}

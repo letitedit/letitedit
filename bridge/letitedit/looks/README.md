@@ -1,0 +1,67 @@
+# letitedit\looks
+
+Look recipes and settings, personal revisions, reference measurements, effects and read-only legacy conversion.
+
+- `broll_evidence`: Semantic, export-bound cutaway measurements; face detections are only proxies.
+- `camera_moves`: Camera moves on cutaways: varied, and aware of what each clip already does.
+- `caption_colour`: Whole-caption Difference/white decisions from native frames at phone size.
+- `creative_plan`: Deterministic, footage-grounded candidates for ``{op: fx, auto: true}``.
+- `cut_flashes`: Inverted flashes on the cuts between the speaker and the b-roll.
+- `cutaway_character`: General cutaway properties; semantic character is explicitly caller-reviewed.
+- `cutaway_motion`: Coherent image motion, not proof of a physical camera move.
+- `cutaway_rhythm`: Individual semantic shots, not detector cuts or coverage sequences.
+- `cutaway_slots`: Where the cutaways go: slots planned from the Look's own numbers and the words said.
+- `fx`: Effects at moments: a batch of mixed effects the AI planned (things popping up as they are mentioned, text pops, zoom punches, shakes, flashes, whooshes, sounds, count-ups, place tags, b-roll cutaways...), placed as ONE change and...
+- `kinetic_type`: Measured, face-safe layout for timed phrases; no transcript or emphasis guessing.
+- `learned_looks`: Personal Look revisions, independent of the installed catalog.
+- `learned_sound`: Measured, reusable sound evidence and licensed-library audition plans.
+- `lighting`: Measured scene appearance and face-limited, baked lighting adjustments.
+- `look_check`: Look device receipts checked against the current edit and delivered bytes.
+- `look_choices`: Data-backed New video choices and local owner review (catalog schema v2).
+- `look_inputs`: What the person gave a Look up front: the answers New video's one screen of boxes collected.
+- `look_match`: Private reference/result evidence; measured deltas are not editorial scores.
+- `looks`: the flavours of a Style that New video offers, read from looks\manifest.json.
+- `popups`: Pop-ups triggered by spoken words: when the speaker says a word or phrase, a picture, emoji, text, graphic or motion clip pops onto the screen for a moment, with its sound effect.
+- `product_knowledge`: Limits for reusable editing instructions, separate from private evidence.
+- `sound_sync`: Sounds tied to the picture: a click on each transition and a key tick on each caption word.
+- `style_import`: Learn reference measurements: cached frame, caption, movement, lighting and sound evidence.
+- `style_import_eval`: Ground truth for style_import: the events a letitedit project (.mlt) really holds, compared with what style_import.analyse() finds in the project's rendered video.
+- `style_import_layers`: Overlays for style_import: things laid on top of the footage (stickers, emoji, pictures, icons, text pops, arrows, circles, progress bars, lower thirds), found in the grey analysis frames, with when / where / how big / how they come in...
+- `style_import_motion`: More picture measurements for style_import: how overlays come in and go out, split screens and picture-in-picture, and speed changes.
+- `style_import_report`: Look, structure and pictures for style_import: colour and finish (contrast, saturation, warmth, skin, grain, vignette, bars), the pace curve, sections, the hook and the ending, and the sheets and breakdown a person or the AI reads (hook...
+- `style_import_sound`: Sound for style_import: speech, loudness, music (tempo, beats, cuts on beats, level under speech and in the gaps), sound effects (sharp onsets in the music-and-effects stem away from the beat, sorted by what they sound like with CLAP),...
+- `style_import_sources`: Reviewed base-picture provenance, separate overlays and production routes.
+- `style_import_text`: Text on screen for style_import: faces on the sampled frames, OCR (Windows' own recognizer, bridge/ocr.py), text events, their roles (caption / title / label / text pop / watermark) and the captions' measured style: words per caption,...
+- `style_import_typography`: Private native-resolution text evidence; shape fits are not font identification.
+- `style_import_visual`: Native picture effects, paired-plate lettering fits and reviewed visual evidence.
+- `style_import_write`: From reference reports to a draft letitedit style: merge several references (what they share is the style, what only one does is content), then write a pack with style_pack._legacy_create(): style.yaml (captions, fonts, colours,...
+- `style_pack`: Drawing primitives, neutral defaults, validators and read-only legacy conversion fixtures.
+- `typography_match`: Role/phase-aligned private typography sheets, without automatic editorial scores.
+- `camera_language`: Camera language: a video's mix of shot sizes, of moving against static shots and of plain frames, shot by shot.  (no old name: imported as `letitedit.looks.camera_language`)
+- `caption_timing`: Keep timed caption words on edited speech without changing their layout or grouping.  (no old name: imported as `letitedit.looks.caption_timing`)
+- `catalog`: The catalogue's sources: the one place that knows where New video's Styles, Looks and Themes, and the style packs, come from.  (no old name: imported as `letitedit.looks.catalog`)
+- `grade`: A Look's colour grade: measured from its reference shots and put on every clip of footage as a LUT the editor shows.
+- `grade_match`: One grade across a cut: a Look's measured colour (grade.json samples) against the colour of a cut's shots.  (no old name: imported as `letitedit.looks.grade_match`)
+- `grade_skin`: The skin of a Look's grade: the reference's own faces, and each clip's skin graded toward them.  (no old name: imported as `letitedit.looks.grade_skin`)
+- `graphic_kit`: Portable, content-parameterized drawings and rendered evidence for a personal Look.
+- `kit_likeness`: Measured likeness of a Look kit piece against its reference: numbers, not an AI's eye.
+- `learn_measure`: Learn's reference measurements, with no pack writer or personal publication.
+- `look_library`: Look defaults, personal copies and revisioned settings in the existing catalog.
+- `look_migration`: Opt-in copy/backup migration.  (no old name: imported as `letitedit.looks.look_migration`)
+- `look_place`: Where a learned Look sits in letitedit, the format it follows and what it needs from a new video; the fit check.
+- `look_settings`: Versioned Look defaults and lossless, read-only style-pack conversion.  (no old name: imported as `letitedit.looks.look_settings`)
+- `look_share`: Sharing learned Looks with letitedit: each Look's settings and recipe, sent in the background to letitedit.app.
+- `own_media`: A personal Look's own media: the person's footage folders its cutaways come from first, their own intro and logo.
+- `pace`: A Look's pace section by section: how long its shots are over each stretch of the reference, and of a cut.  (no old name: imported as `letitedit.looks.pace`)
+- `pace_cut`: A Look's shot lengths cut into a timeline by code: each clip of a stretch of the main picture track takes a length from the reference's shots at the same place in its body, so the cut carries the reference's pattern (its quick runs, its...  (no old name: imported as `letitedit.looks.pace_cut`)
+- `project_look`: A Look's exact values from a finished letitedit project: the timeline it was exported from, the AI's route through it (the project's journal) and who chose each value that is in the finished video (the person, the AI or both).
+- `shot_mix`: What a video's shots show, as a mix: people up close, people in a wider frame, close details of things, transport and the road, and places (buildings, landscape, a street without a person as its subject).  (no old name: imported as `letitedit.looks.shot_mix`)
+- `sound_identity`: Local sound names, same-kind library retrieval, and small-speaker screening.  (no old name: imported as `letitedit.looks.sound_identity`)
+- `sound_opening`: How fast a video's sound reaches its main level: a Look's measured opening against an export's.  (no old name: imported as `letitedit.looks.sound_opening`)
+- `sound_shape`: The shape of a video's sound: its opening, its level through the body, its ending and its rate of sharp hits.  (no old name: imported as `letitedit.looks.sound_shape`)
+- `sound_targets`: Picture-bound effect sounds and caption clocks used by the export renderers.  (no old name: imported as `letitedit.looks.sound_targets`)
+- `style_import_marks`: Picture stickers and split screens in a reference video, marked by the person's AI on contact sheets.
+- `style_import_stats`: Numeric helpers shared by the reference analysis modules: summaries and box overlap.  (no old name: imported as `letitedit.looks.style_import_stats`)
+- `title_measure`: A title as it renders: its lines' heights, stroke weight and place on the frame, and how plain the picture behind it is, measured on the export; and the Look recipe's title rule (its "## Title" section's numbers) to check it against.  (no old name: imported as `letitedit.looks.title_measure`)
+
+Each module here also answers to its old name in `bridge\` (a small alias file: one module object under both names); inside the package, import the real name. What the other jobs may use from here: `IMPORTS.md`. The whole map: `CODEMAP.md` at the top of the repository.
